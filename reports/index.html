@@ -85,6 +85,19 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 .choropleth-legend .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
 #dma-city-list{background:#111126;border-radius:6px;padding:10px;margin-top:10px;font-size:12px;color:#ccd;display:none}
 #dma-city-list ul{margin:4px 0 0;padding-left:16px}
+/* Methodology view */
+.methodology{max-width:860px;margin:0 auto;padding:10px 0 40px}
+.methodology h2{font-size:22px;margin-bottom:6px;border-bottom:2px solid #e0e0e0;padding-bottom:10px}
+.methodology h3{font-size:15px;font-weight:700;margin:28px 0 8px;color:#222}
+.methodology p,.methodology li{font-size:14px;line-height:1.7;color:#444;margin-bottom:8px}
+.methodology ul,.methodology ol{padding-left:22px;margin-bottom:12px}
+.method-intro{font-size:15px;color:#333;margin-bottom:20px;line-height:1.8}
+.method-table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:13px}
+.method-table th{background:#f0f4ff;font-weight:700;padding:8px 12px;text-align:left;border-bottom:2px solid #ccd}
+.method-table td{padding:7px 12px;border-bottom:1px solid #eee;vertical-align:top}
+.method-table tr:hover td{background:#f9faff}
+.method-footer{margin-top:32px;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:12px}
+.methodology code{background:#f0f0f0;padding:2px 6px;border-radius:3px;font-size:13px}
 /* Timeline view */
 #timeline-view{background:#111126;color:#dde;min-height:calc(100vh - 100px)}
 #timeline-view h2{color:#dde;border-bottom-color:#2a3a5e}
@@ -103,13 +116,14 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <body>
 <header>
   <h1>🛒 Amazon Same-Day Coverage — City &amp; DMA View</h1>
-  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 22, 2026, 12:33 PM PDT</span>
+  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 22, 2026, 12:45 PM PDT</span>
 </header>
 <nav>
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
   <button onclick="showView('data-view',this)">📊 Data Table</button>
   <button onclick="showView('new-view',this)">🆕 New This Week</button>
   <button onclick="showView('timeline-view',this);initTimeline()">📈 Timeline</button>
+  <button onclick="showView('methodology-view',this)">📋 Methodology</button>
 </nav>
 
 <!-- MAP VIEW -->
@@ -5652,6 +5666,105 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <div class="tl-placeholder" id="tl-signal-placeholder">Multi-day history needed for velocity.<br>Today shown as baseline bar.</div>
       </div>
     </div>
+  </section>
+</div>
+
+<!-- METHODOLOGY VIEW -->
+<div id="methodology-view" class="view">
+  <section class="methodology">
+    <h2>Methodology</h2>
+    <p class="method-intro">This tracker maps Amazon Same-Day perishable grocery delivery coverage across the United States. The following documents our data sources, probe strategies, confidence model, and known limitations.</p>
+
+    <h3>1. What We're Tracking</h3>
+    <p>In December 2025, Amazon announced that Same-Day Delivery for perishable groceries — fresh produce, meat, dairy, and other perishables — was available in <strong>over 2,300 US cities and towns</strong> for Prime members, with further expansion planned for 2026. Amazon does not publish a list of covered cities or zip codes; availability must be checked individually at the zip code level.</p>
+    <p>This tracker attempts to map that coverage by assembling signals from multiple sources and building city- and DMA-level confidence scores.</p>
+
+    <h3>2. Geographic Framework</h3>
+    <p>We organize coverage around three tiers of geography:</p>
+    <ul>
+      <li><strong>City/town</strong> — the unit Amazon uses in its announcement ("2,300 cities and towns"). Our city table contains ~29,700 named places mapped to zip codes.</li>
+      <li><strong>DMA (Designated Market Area)</strong> — the 210 Nielsen television markets, used as the primary analytical unit. DMAs reflect real economic and logistics catchment areas far better than municipal boundaries. Omaha, for example, is DMA #73 and includes Council Bluffs IA, Papillion, Bellevue, Elkhorn, and dozens of other communities.</li>
+      <li><strong>Zip code</strong> — the ground-truth unit Amazon actually checks. Used for validation and for mapping city/DMA assignments.</li>
+    </ul>
+    <p>All 31,913 US zip codes are mapped to their DMA via a spatial centroid crosswalk (zip centroid plotted against DMA boundary polygons). Cities inherit their DMA from the plurality DMA of their zip codes.</p>
+
+    <h3>3. The 50-Mile Radius Assumption</h3>
+    <p>Amazon's same-day delivery sites are purpose-built facilities that serve a defined geographic radius. Multiple Amazon press releases and local news articles have confirmed this radius at <strong>50 miles</strong> for the new same-day delivery facility type:</p>
+    <ul>
+      <li>Council Bluffs, IA facility (serving Omaha metro): "covers a 50-mile radius" — KETV, Dec 2024</li>
+      <li>Ankeny, IA facility (serving Des Moines): "within 50 miles" — Des Moines Register, Dec 2024</li>
+    </ul>
+    <p>This means a single facility can serve an entire DMA. When we confirm coverage in a core city, we treat the surrounding 50-mile area as likely covered and probe suburbs accordingly.</p>
+
+    <h3>4. Probe Strategy by DMA Tier</h3>
+    <p>DMAs are tiered by TV household count and probed with different strategies proportional to their complexity:</p>
+    <table class="method-table">
+      <thead><tr><th>Tier</th><th>DMA Ranks</th><th>TV Homes</th><th>Methods</th><th>Queries/DMA</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Mega</strong></td><td>1–10</td><td>2.5M+</td><td>News · Plain language · Reddit · Facebook · Zip grid</td><td>40</td></tr>
+        <tr><td><strong>Large</strong></td><td>11–35</td><td>1M–2.5M</td><td>News · Plain language · Reddit · Zip grid</td><td>15</td></tr>
+        <tr><td><strong>Mid</strong></td><td>36–80</td><td>400K–1M</td><td>News · Plain language</td><td>6</td></tr>
+        <tr><td><strong>Small</strong></td><td>81–170</td><td>100K–400K</td><td>News only</td><td>2</td></tr>
+        <tr><td><strong>Micro</strong></td><td>171–210</td><td>&lt;100K</td><td>Skipped</td><td>0</td></tr>
+      </tbody>
+    </table>
+    <p>The probe queue processes DMAs in priority order (highest rank first). As of the current run, <strong>10 queries</strong> have been completed and <strong>309 remain queued</strong>.</p>
+
+    <h3>5. Signal Sources</h3>
+    <p>Each data point in our <code>signals</code> table is tagged with a source and type:</p>
+    <table class="method-table">
+      <thead><tr><th>Source</th><th>Signal Types</th><th>Confidence Assigned</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Official announcement</strong></td><td>Confirmed available</td><td>90%</td></tr>
+        <tr><td><strong>Brave search — news</strong></td><td>Confirmed available / unavailable / mention</td><td>70–75% / 40%</td></tr>
+        <tr><td><strong>Brave search — plain language</strong></td><td>"Can I get same-day fresh groceries from Amazon in [city]"</td><td>65–75%</td></tr>
+        <tr><td><strong>Reddit / social</strong></td><td>User-reported availability</td><td>60–70%</td></tr>
+        <tr><td><strong>DMA inference</strong></td><td>Inferred from confirmed neighboring cities within 50mi radius</td><td>50–60%</td></tr>
+        <tr><td><strong>Playwright (manual validation)</strong></td><td>Direct zip check at amazon.com/grocery</td><td>95%+</td></tr>
+      </tbody>
+    </table>
+
+    <h3>6. Confidence Model</h3>
+    <p>Each city-level coverage record carries a confidence score (0–100). Scores are assigned at signal creation and can be upgraded as stronger signals arrive:</p>
+    <ul>
+      <li><strong>50</strong> — Default / single mention with no direct confirmation</li>
+      <li><strong>60–70</strong> — News article or social post mentioning the city</li>
+      <li><strong>75</strong> — Brave search result with explicit availability language</li>
+      <li><strong>90</strong> — Official Amazon press release or announcement</li>
+      <li><strong>95+</strong> — Direct zip-code check via amazon.com/grocery (Playwright validation)</li>
+    </ul>
+    <p>DMA-level coverage is a rollup: the percentage of known cities in that DMA with at least one confirmed signal. DMA confidence reflects the average city confidence within the DMA.</p>
+    <p><em>Current average city confidence: <strong>52.6%</strong></em></p>
+
+    <h3>7. Known Limitations</h3>
+    <ul>
+      <li><strong>Signals are biased toward availability.</strong> People post when a service works, rarely when it doesn't. Confirmed unavailability is harder to find and underrepresented.</li>
+      <li><strong>City count vs. zip code coverage.</strong> Amazon uses zip codes internally. A city may have partial coverage (some zips yes, some no). Our city-level data is a simplification.</li>
+      <li><strong>DMA coverage % is a lower bound.</strong> We have confirmed cities for only a fraction of cities per DMA. The true coverage is almost certainly higher than our current percentage shows — we just haven't probed all cities yet.</li>
+      <li><strong>The 2,300 city figure may already be outdated.</strong> Amazon stated expansion would continue in 2026. The real number is likely higher today.</li>
+      <li><strong>Mega-DMA neighborhood granularity.</strong> In markets like Los Angeles, coverage varies block-by-block. A DMA-level "covered" designation may mask significant intra-DMA gaps.</li>
+    </ul>
+
+    <h3>8. Daily Probe Schedule</h3>
+    <p>The probe pipeline runs automatically at <strong>6:00 AM PT daily</strong>:</p>
+    <ol>
+      <li><code>city_probe.js</code> — Brave search sweep across top metros</li>
+      <li><code>dma_probe.js --max 30</code> — Works 30 queries from the priority queue</li>
+      <li><code>snapshot.js</code> — Captures daily rollup for timeline tracking</li>
+      <li><code>report.js</code> — Regenerates this HTML report</li>
+    </ol>
+    <p>Results are delivered via Telegram and email summary. The timeline chart accumulates one data point per day — projections toward completion will become available after approximately one week of data.</p>
+
+    <h3>9. Technology Stack</h3>
+    <ul>
+      <li><strong>Database:</strong> SQLite (better-sqlite3) — 31,913 zip codes, 29,700 cities, 210 DMAs, cumulative signals log</li>
+      <li><strong>Search API:</strong> Brave Search API — web, news, and social signals</li>
+      <li><strong>Map:</strong> Leaflet.js with OpenStreetMap tiles + US county GeoJSON choropleth</li>
+      <li><strong>Charts:</strong> Chart.js</li>
+      <li><strong>Runtime:</strong> Node.js 22, macOS, OpenClaw AI assistant orchestration</li>
+    </ul>
+
+    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Mar 22, 2026, 12:45 PM PDT.</p>
   </section>
 </div>
 
