@@ -33,6 +33,15 @@ const STATE_CENTROIDS = {
   VT:[44.1,-72.7],VA:[37.8,-78.2],WA:[47.4,-120.5],WV:[38.6,-80.6],WI:[44.3,-89.6],WY:[43.0,-107.6]
 };
 
+// State abbreviation → 2-digit FIPS (for county→DMA choropleth mapping)
+const STATE_FIPS = {
+  AL:'01',AK:'02',AZ:'04',AR:'05',CA:'06',CO:'08',CT:'09',DE:'10',DC:'11',FL:'12',
+  GA:'13',HI:'15',ID:'16',IL:'17',IN:'18',IA:'19',KS:'20',KY:'21',LA:'22',ME:'23',
+  MD:'24',MA:'25',MI:'26',MN:'27',MS:'28',MO:'29',MT:'30',NE:'31',NV:'32',NH:'33',
+  NJ:'34',NM:'35',NY:'36',NC:'37',ND:'38',OH:'39',OK:'40',OR:'41',PA:'42',RI:'44',
+  SC:'45',SD:'46',TN:'47',TX:'48',UT:'49',VT:'50',VA:'51',WA:'53',WV:'54',WI:'55',WY:'56'
+};
+
 function log(msg) {
   console.log(`[report] ${new Date().toISOString()} ${msg}`);
 }
@@ -114,6 +123,58 @@ async function main() {
     ORDER BY zc.first_seen DESC LIMIT 100
   `).all(oneWeekAgo);
 
+  // DMA coverage per retailer
+  const dmaDataByRetailer = {};
+  const topCitiesStmt = db.prepare(`
+    SELECT c.city, c.state FROM cities c
+    JOIN city_coverage cc ON cc.city=c.city AND cc.state=c.state AND cc.retailer_id=? AND cc.available=1
+    WHERE c.dma_id=?
+    LIMIT 5
+  `);
+  for (const r of retailers) {
+    const rows = db.prepare(`
+      SELECT
+        d.id as dma_id, d.name as dma_name, d.tier, d.tv_homes,
+        COUNT(DISTINCT c.id) as cities_total,
+        COUNT(DISTINCT CASE WHEN cc.available=1 THEN c.id END) as cities_confirmed,
+        COUNT(DISTINCT CASE WHEN cc.available=0 THEN c.id END) as cities_unavailable,
+        COUNT(DISTINCT CASE WHEN cc.available IS NOT NULL THEN c.id END) as cities_probed
+      FROM dmas d
+      LEFT JOIN cities c ON c.dma_id = d.id
+      LEFT JOIN city_coverage cc ON cc.city=c.city AND cc.state=c.state AND cc.retailer_id=?
+      GROUP BY d.id
+      ORDER BY d.id ASC
+    `).all(r.id);
+    dmaDataByRetailer[r.id] = rows.map(row => ({
+      ...row,
+      coverage_pct: row.cities_total > 0 ? (row.cities_confirmed / row.cities_total * 100) : 0,
+      top_cities: topCitiesStmt.all(r.id, row.dma_id).map(c => c.city + ', ' + c.state)
+    }));
+  }
+
+  // ZIP → DMA lookup for embedding in report
+  const zipToDma = {};
+  db.prepare('SELECT zip, dma_id FROM zip_master WHERE dma_id IS NOT NULL').all()
+    .forEach(r => { zipToDma[r.zip] = r.dma_id; });
+
+  // County → DMA mapping (majority-vote per state+county) for choropleth
+  const countyDmaVotes = {};
+  db.prepare(`
+    SELECT state, county, dma_id, COUNT(*) as cnt
+    FROM zip_master
+    WHERE dma_id IS NOT NULL AND county IS NOT NULL AND county != ''
+    GROUP BY state, county, dma_id
+  `).all().forEach(row => {
+    const fips = STATE_FIPS[row.state];
+    if (!fips) return;
+    const key = fips + '|' + row.county.toLowerCase().trim();
+    if (!countyDmaVotes[key] || countyDmaVotes[key].cnt < row.cnt) {
+      countyDmaVotes[key] = { dma_id: row.dma_id, cnt: row.cnt };
+    }
+  });
+  const countyToDma = {};
+  Object.entries(countyDmaVotes).forEach(([k, v]) => { countyToDma[k] = v.dma_id; });
+
   db.close();
 
   const generatedAt = new Date().toLocaleString('en-US', {
@@ -187,6 +248,9 @@ async function main() {
   const mapPointsJson = JSON.stringify(mapPoints);
   const locPointsJson = JSON.stringify(locPoints);
   const retailerColorsJson = JSON.stringify(retailerColors);
+  const dmaDataByRetailerJson = JSON.stringify(dmaDataByRetailer);
+  const zipToDmaJson = JSON.stringify(zipToDma);
+  const countyToDmaJson = JSON.stringify(countyToDma);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -239,6 +303,32 @@ tr:hover td{background:#fafbff}
 #row-info{font-size:11px;color:#888;margin-left:4px}
 a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 .badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;background:#e8f5e9;color:#1a8040;margin-left:6px}
+/* DMA view */
+.view-toggle{display:flex;gap:4px;align-items:center}
+.view-toggle button{padding:5px 14px;border:1px solid #555;border-radius:4px;background:#2a2a4e;color:#ccd;font-size:12px;cursor:pointer;transition:background .15s}
+.view-toggle button.active{background:#4a90e2;border-color:#4a90e2;color:#fff}
+.dma-panel-wrap{position:relative}
+#dma-panel{position:fixed;right:0;top:0;width:400px;height:100vh;background:#1a1a2e;color:#dde;overflow-y:auto;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);z-index:2000;padding:20px 20px 40px;box-shadow:-4px 0 20px rgba(0,0,0,.5)}
+#dma-panel.open{transform:translateX(0)}
+#dma-panel h3{font-size:14px;color:#fff;margin:0 0 6px;padding-bottom:8px;border-bottom:1px solid #2a3a5e}
+#dma-panel .dma-stat-row{display:flex;gap:20px;margin-bottom:14px;flex-wrap:wrap}
+#dma-panel .dma-stat{background:#111126;border-radius:6px;padding:10px 14px;flex:1;min-width:100px}
+#dma-panel .dma-stat-n{font-size:26px;font-weight:800;color:#4a90e2}
+#dma-panel .dma-stat-label{font-size:11px;color:#88a;margin-top:2px}
+#dma-panel table{width:100%;border-collapse:collapse;font-size:11px}
+#dma-panel th{background:#0d0d1e;color:#88a;padding:7px 8px;text-align:left;position:sticky;top:0}
+#dma-panel td{padding:6px 8px;border-top:1px solid #1e2a4e;white-space:nowrap}
+#dma-panel tr.dma-row:hover td{background:#252550;cursor:pointer}
+#dma-panel tr.dma-highlighted td{background:#1a3a6e}
+.dma-close-btn{position:absolute;top:14px;right:16px;background:none;border:none;color:#88a;font-size:20px;cursor:pointer;line-height:1}
+.dma-close-btn:hover{color:#fff}
+.dma-toggle-btn{padding:5px 14px;border:1px solid #4a90e2;border-radius:4px;background:#111126;color:#4a90e2;font-size:12px;cursor:pointer;white-space:nowrap}
+.dma-toggle-btn:hover{background:#4a90e2;color:#fff}
+.choropleth-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:#555}
+.choropleth-legend span{display:inline-flex;align-items:center;gap:5px}
+.choropleth-legend .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+#dma-city-list{background:#111126;border-radius:6px;padding:10px;margin-top:10px;font-size:12px;color:#ccd;display:none}
+#dma-city-list ul{margin:4px 0 0;padding-left:16px}
 </style>
 </head>
 <body>
@@ -256,6 +346,10 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <div id="map-view" class="view active">
   <div class="cards">${summaryCards}</div>
   <div class="map-controls">
+    <div class="view-toggle">
+      <button id="btn-city-view" class="active" onclick="setMapView('city')">City View</button>
+      <button id="btn-dma-view" onclick="setMapView('dma')">DMA View</button>
+    </div>
     <select id="map-retailer-filter">
       <option value="">All retailers</option>
       ${retailerFilterOpts}
@@ -268,11 +362,45 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       <input type="checkbox" id="show-locations" checked> Show fulfillment centers
     </label>
     <span style="font-size:11px;color:#888" id="map-count"></span>
+    <button class="dma-toggle-btn" onclick="toggleDmaPanel()">DMA Stats ▶</button>
   </div>
   <div id="map"></div>
-  <div class="legend">
+  <div class="legend" id="city-legend">
     <div class="legend-title">Legend</div>
     ${legendItems}
+  </div>
+  <div class="legend" id="dma-legend" style="display:none">
+    <div class="legend-title">DMA Coverage</div>
+    <div class="choropleth-legend">
+      <span><span class="swatch" style="background:#1a8040"></span>High (&ge;50% cities)</span>
+      <span><span class="swatch" style="background:#3cb371"></span>Some (&lt;50%)</span>
+      <span><span class="swatch" style="background:#b8860b"></span>Probed, 0%</span>
+      <span><span class="swatch" style="background:#444"></span>Not yet probed</span>
+    </div>
+  </div>
+</div>
+
+<!-- DMA Stats Panel -->
+<div id="dma-panel">
+  <button class="dma-close-btn" onclick="toggleDmaPanel()">✕</button>
+  <h3>DMA Coverage Dashboard</h3>
+  <div class="dma-stat-row" id="dma-stat-row">
+    <div class="dma-stat"><div class="dma-stat-n" id="stat-total">—</div><div class="dma-stat-label">Total DMAs</div></div>
+    <div class="dma-stat"><div class="dma-stat-n" id="stat-covered">—</div><div class="dma-stat-label">With Coverage</div></div>
+    <div class="dma-stat"><div class="dma-stat-n" id="stat-pct">—</div><div class="dma-stat-label">Avg Coverage %</div></div>
+  </div>
+  <div id="dma-city-list">
+    <strong id="dma-city-list-title"></strong>
+    <ul id="dma-city-list-ul"></ul>
+  </div>
+  <h3 style="margin-top:14px">Top 20 DMAs by TV Homes</h3>
+  <div style="overflow-x:auto">
+  <table id="dma-stats-table">
+    <thead><tr>
+      <th>#</th><th>DMA</th><th>Tier</th><th>TV Homes</th><th>Confirmed</th><th>Coverage%</th>
+    </tr></thead>
+    <tbody id="dma-stats-body"></tbody>
+  </table>
   </div>
 </div>
 
@@ -335,6 +463,9 @@ function showView(id, btn) {
 const MAP_POINTS = ${mapPointsJson};
 const LOC_POINTS = ${locPointsJson};
 const COLORS = ${retailerColorsJson};
+window.DMA_DATA = ${dmaDataByRetailerJson};
+const ZIP_TO_DMA = ${zipToDmaJson};
+const COUNTY_TO_DMA = ${countyToDmaJson};
 
 const map = L.map('map').setView([38.5, -96], 4);
 window._map = map;
@@ -394,11 +525,188 @@ buildZipLayers('');
 buildLocLayer(true);
 
 document.getElementById('map-retailer-filter').addEventListener('change', function() {
-  buildZipLayers(this.value);
+  if (currentMapView === 'city') buildZipLayers(this.value);
+  else { hideDmaLayer(); showDmaLayer(); }
+  refreshDmaPanel();
 });
 document.getElementById('show-locations').addEventListener('change', function() {
   buildLocLayer(this.checked);
 });
+
+// ── DMA choropleth ─────────────────────────────────────────────────────────────
+let currentMapView = 'city';
+let countyGeoData = null;
+let dmaLayer = null;
+
+function getDmaDataForRetailer() {
+  const rid = document.getElementById('map-retailer-filter').value;
+  const allRetailers = Object.keys(window.DMA_DATA);
+  const key = rid || allRetailers[0];
+  return window.DMA_DATA[key] || [];
+}
+
+function dmaColor(d) {
+  if (!d || d.cities_probed === 0) return '#404060';
+  if (d.cities_confirmed === 0) return '#b8860b';
+  if (d.coverage_pct >= 50) return '#1a8040';
+  return '#3cb371';
+}
+
+function dmaFillOpacity(d) {
+  if (!d || d.cities_probed === 0) return 0.25;
+  return 0.65;
+}
+
+async function showDmaLayer() {
+  if (!countyGeoData) {
+    try {
+      const resp = await fetch('../data/us_counties.geojson');
+      countyGeoData = await resp.json();
+    } catch(e) {
+      console.error('Failed to load county GeoJSON:', e);
+      return;
+    }
+  }
+
+  const dmaArr = getDmaDataForRetailer();
+  const dmaMap = {};
+  dmaArr.forEach(d => { dmaMap[d.dma_id] = d; });
+
+  dmaLayer = L.geoJSON(countyGeoData, {
+    style: feature => {
+      const stateFips = feature.properties.STATE;
+      const countyName = (feature.properties.NAME || '').toLowerCase().trim();
+      const key = stateFips + '|' + countyName;
+      const dmaId = COUNTY_TO_DMA[key];
+      const d = dmaId ? dmaMap[dmaId] : null;
+      return {
+        fillColor: dmaColor(d),
+        fillOpacity: dmaFillOpacity(d),
+        color: '#1a1a2e',
+        weight: 0.4
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const stateFips = feature.properties.STATE;
+      const countyName = (feature.properties.NAME || '').toLowerCase().trim();
+      const key = stateFips + '|' + countyName;
+      const dmaId = COUNTY_TO_DMA[key];
+      const d = dmaId ? dmaMap[dmaId] : null;
+      layer.bindPopup(
+        '<b>' + feature.properties.NAME + ' County</b>' +
+        (d
+          ? '<br>DMA: <b>' + d.dma_name + '</b>' +
+            '<br>Cities confirmed: ' + d.cities_confirmed + ' / ' + d.cities_total +
+            '<br>Coverage: ' + d.coverage_pct.toFixed(1) + '%' +
+            (d.top_cities && d.top_cities.length
+              ? '<br><small>' + d.top_cities.slice(0,3).join(', ') + '</small>'
+              : '')
+          : '<br><i>No DMA data</i>')
+      );
+    }
+  }).addTo(map);
+
+  document.getElementById('map-count').textContent = '3,221 counties colored by DMA';
+}
+
+function hideDmaLayer() {
+  if (dmaLayer) { map.removeLayer(dmaLayer); dmaLayer = null; }
+}
+
+function setMapView(mode) {
+  currentMapView = mode;
+  if (mode === 'dma') {
+    Object.values(zipLayers).forEach(lg => { try { map.removeLayer(lg); } catch(e){} });
+    showDmaLayer();
+    document.getElementById('city-legend').style.display = 'none';
+    document.getElementById('dma-legend').style.display = '';
+    document.getElementById('btn-city-view').classList.remove('active');
+    document.getElementById('btn-dma-view').classList.add('active');
+  } else {
+    hideDmaLayer();
+    Object.values(zipLayers).forEach(lg => { try { lg.addTo(map); } catch(e){} });
+    buildZipLayers(document.getElementById('map-retailer-filter').value);
+    document.getElementById('dma-legend').style.display = 'none';
+    document.getElementById('city-legend').style.display = '';
+    document.getElementById('btn-dma-view').classList.remove('active');
+    document.getElementById('btn-city-view').classList.add('active');
+  }
+}
+
+// ── DMA stats panel ────────────────────────────────────────────────────────────
+function toggleDmaPanel() {
+  const panel = document.getElementById('dma-panel');
+  panel.classList.toggle('open');
+  if (panel.classList.contains('open')) refreshDmaPanel();
+}
+
+function refreshDmaPanel() {
+  const dmaArr = getDmaDataForRetailer();
+  const total = dmaArr.length;
+  const covered = dmaArr.filter(d => d.cities_confirmed > 0).length;
+  const avgPct = total ? (dmaArr.reduce((s,d) => s + d.coverage_pct, 0) / total) : 0;
+
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-covered').textContent = covered;
+  document.getElementById('stat-pct').textContent = avgPct.toFixed(1) + '%';
+
+  const top20 = dmaArr
+    .filter(d => d.tv_homes)
+    .sort((a,b) => b.tv_homes - a.tv_homes)
+    .slice(0, 20);
+
+  const fmt = n => n ? n.toLocaleString() : '—';
+  const tbody = document.getElementById('dma-stats-body');
+  tbody.innerHTML = '';
+  top20.forEach((d, i) => {
+    const pct = d.coverage_pct.toFixed(1);
+    const dotColor = d.cities_confirmed > 0
+      ? (d.coverage_pct >= 50 ? '#1a8040' : '#3cb371')
+      : (d.cities_probed > 0 ? '#b8860b' : '#404060');
+    const tr = document.createElement('tr');
+    tr.className = 'dma-row';
+    tr.innerHTML =
+      '<td style="color:#88a">' + (i+1) + '</td>' +
+      '<td style="color:#eef"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + dotColor + ';margin-right:6px"></span>' + d.dma_name + '</td>' +
+      '<td style="color:#88a">' + d.tier + '</td>' +
+      '<td style="color:#ccd">' + fmt(d.tv_homes) + '</td>' +
+      '<td style="color:#' + (d.cities_confirmed > 0 ? '3cb371' : '666') + '">' + d.cities_confirmed + '</td>' +
+      '<td style="color:#ccd">' + pct + '%</td>';
+    tr.addEventListener('click', () => {
+      document.querySelectorAll('#dma-stats-body .dma-row').forEach(r => r.classList.remove('dma-highlighted'));
+      tr.classList.add('dma-highlighted');
+      showDmaCities(d);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+function showDmaCities(d) {
+  const el = document.getElementById('dma-city-list');
+  const title = document.getElementById('dma-city-list-title');
+  const ul = document.getElementById('dma-city-list-ul');
+  title.textContent = d.dma_name + ' — confirmed cities:';
+  ul.innerHTML = '';
+  if (d.top_cities && d.top_cities.length) {
+    d.top_cities.forEach(c => {
+      const li = document.createElement('li');
+      li.textContent = c;
+      ul.appendChild(li);
+    });
+    if (d.cities_confirmed > d.top_cities.length) {
+      const li = document.createElement('li');
+      li.style.color = '#88a';
+      li.textContent = '… and ' + (d.cities_confirmed - d.top_cities.length) + ' more';
+      ul.appendChild(li);
+    }
+  } else {
+    const li = document.createElement('li');
+    li.style.color = '#88a';
+    li.textContent = 'No confirmed cities yet';
+    ul.appendChild(li);
+  }
+  el.style.display = '';
+}
 
 // ── Data table ────────────────────────────────────────────────────────────────
 (function() {
