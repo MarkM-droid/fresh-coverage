@@ -95,7 +95,8 @@ async function main() {
   const db = new Database(DB_PATH);
   db.pragma('journal_mode = WAL');
 
-  const retailers = db.prepare('SELECT * FROM retailers ORDER BY name').all();
+  // Kroger excluded from visualizer for now — data in DB, re-enable when ready
+  const retailers = db.prepare("SELECT * FROM retailers WHERE id IN ('amazon_fresh','amazon_same_day') ORDER BY name").all();
 
   // Summary stats per retailer (city-first)
   const summaries = {};
