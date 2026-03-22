@@ -97,31 +97,31 @@ async function main() {
 
   const retailers = db.prepare('SELECT * FROM retailers ORDER BY name').all();
 
-  // Summary stats per retailer
+  // Summary stats per retailer (city-first)
   const summaries = {};
   for (const r of retailers) {
     summaries[r.id] = db.prepare(`
       SELECT
-        COUNT(*) FILTER (WHERE zc.available = 1) AS covered,
-        COUNT(DISTINCT zm.state) FILTER (WHERE zc.available = 1) AS states,
-        MAX(zc.last_checked) AS last_checked
-      FROM zip_coverage zc
-      JOIN zip_master zm ON zm.zip = zc.zip
-      WHERE zc.retailer_id = ?
+        COUNT(*) FILTER (WHERE cc.available = 1) AS covered,
+        COUNT(DISTINCT cc.dma_id) FILTER (WHERE cc.available = 1 AND cc.dma_id IS NOT NULL) AS dmas_covered,
+        COUNT(DISTINCT cc.state) FILTER (WHERE cc.available = 1) AS states,
+        MAX(cc.first_seen) AS last_checked
+      FROM city_coverage cc
+      WHERE cc.retailer_id = ?
     `).get(r.id);
   }
 
-  // Coverage rows with coordinates
+  // Coverage rows — city_coverage is primary source
   const coverageRows = db.prepare(`
-    SELECT
-      zc.zip, zm.city, zm.state, zm.lat, zm.lng,
-      zc.retailer_id, r.name AS retailer_name,
-      zc.available, zc.confidence, zc.source, zc.source_url,
-      zc.first_seen, zc.last_checked
-    FROM zip_coverage zc
-    JOIN zip_master zm ON zm.zip = zc.zip
-    JOIN retailers r ON r.id = zc.retailer_id
-    ORDER BY zm.state, zm.city, zc.zip
+    SELECT cc.city, cc.state, cc.available, cc.confidence, cc.source, cc.first_seen,
+           cc.dma_id, d.name AS dma_name, d.tier,
+           c.lat, c.lng,
+           cc.retailer_id, r.name AS retailer_name
+    FROM city_coverage cc
+    LEFT JOIN cities c ON c.city=cc.city AND c.state=cc.state
+    LEFT JOIN dmas d ON d.id=cc.dma_id
+    JOIN retailers r ON r.id=cc.retailer_id
+    ORDER BY cc.state, cc.city
   `).all();
 
   // Locations (store/warehouse addresses)
@@ -136,15 +136,16 @@ async function main() {
     } catch { return []; }
   })();
 
-  // New this week
+  // New this week — from city_coverage
   const oneWeekAgo = Math.floor(Date.now() / 1000) - 86400 * 7;
   const newThisWeek = db.prepare(`
-    SELECT zc.zip, zm.city, zm.state, zc.retailer_id, r.name AS retailer_name, zc.first_seen
-    FROM zip_coverage zc
-    JOIN zip_master zm ON zm.zip = zc.zip
-    JOIN retailers r ON r.id = zc.retailer_id
-    WHERE zc.available = 1 AND zc.first_seen >= ?
-    ORDER BY zc.first_seen DESC LIMIT 100
+    SELECT cc.city, cc.state, cc.retailer_id, r.name AS retailer_name,
+           d.name AS dma_name, cc.first_seen
+    FROM city_coverage cc
+    JOIN retailers r ON r.id = cc.retailer_id
+    LEFT JOIN dmas d ON d.id = cc.dma_id
+    WHERE cc.available = 1 AND cc.first_seen >= ?
+    ORDER BY cc.first_seen DESC LIMIT 100
   `).all(oneWeekAgo);
 
   // DMA coverage per retailer
@@ -213,20 +214,15 @@ async function main() {
   const palette = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c'];
   retailers.forEach((r, i) => { retailerColors[r.id] = palette[i % palette.length]; });
 
-  // Available zip points grouped by retailer
+  // City map points — available cities with coordinates
   const mapPoints = coverageRows
-    .filter(r => r.available === 1)
-    .map(r => {
-      let lat = r.lat, lng = r.lng;
-      if (!lat || !lng) {
-        const c = STATE_CENTROIDS[r.state];
-        if (c) { lat = c[0] + (Math.random() - 0.5) * 0.5; lng = c[1] + (Math.random() - 0.5) * 0.5; }
-      }
-      if (!lat || !lng) return null;
-      return { lat, lng, zip: r.zip, city: r.city, state: r.state,
-               retailer_id: r.retailer_id, retailer_name: r.retailer_name,
-               confidence: r.confidence, first_seen: r.first_seen };
-    }).filter(Boolean);
+    .filter(r => r.available === 1 && r.lat && r.lng)
+    .map(r => ({
+      lat: r.lat, lng: r.lng, city: r.city, state: r.state,
+      retailer_id: r.retailer_id, retailer_name: r.retailer_name,
+      dma_name: r.dma_name, tier: r.tier,
+      confidence: r.confidence, first_seen: r.first_seen
+    }));
 
   const locPoints = locations.map(l => {
     // Try to extract lat/lng from zip if available
@@ -234,32 +230,35 @@ async function main() {
              retailer_id: l.retailer_id, retailer_name: l.retailer_name, zip: l.zip };
   }).filter(l => l.lat && l.lng);
 
-  // Build table rows HTML
+  // Build table rows HTML — city-first
   const tableRows = coverageRows.map(r => `
 <tr data-retailer="${esc(r.retailer_id)}" data-state="${esc(r.state)}" data-avail="${r.available}">
-  <td>${esc(r.zip)}</td>
   <td>${esc(r.city)}</td>
   <td>${esc(r.state)}</td>
+  <td>${esc(r.dma_name) || '—'}</td>
+  <td>${esc(r.tier) || '—'}</td>
   <td>${esc(r.retailer_name)}</td>
   <td class="avail-${r.available===1?'yes':r.available===0?'no':'unk'}">${availLabel(r.available)}</td>
   <td>${r.confidence != null ? r.confidence+'%' : '—'}</td>
+  <td>${esc(r.source) || '—'}</td>
   <td>${fmt(r.first_seen)}</td>
-  <td>${fmt(r.last_checked)}</td>
-  ${r.source_url ? `<td><a href="${esc(r.source_url)}" target="_blank">↗</a></td>` : '<td></td>'}
 </tr>`).join('');
 
   const newRows = newThisWeek.length
-    ? newThisWeek.map(r => `<tr><td>${esc(r.zip)}</td><td>${esc(r.city)}</td><td>${esc(r.state)}</td><td>${esc(r.retailer_name)}</td><td>${fmt(r.first_seen)}</td></tr>`).join('')
+    ? newThisWeek.map(r => `<tr><td>${esc(r.city)}</td><td>${esc(r.state)}</td><td>${esc(r.dma_name) || '—'}</td><td>${esc(r.retailer_name)}</td><td>${fmt(r.first_seen)}</td></tr>`).join('')
     : '<tr><td colspan="5" style="color:#888;text-align:center">No new coverage this week</td></tr>';
 
   const summaryCards = retailers.map(r => {
     const s = summaries[r.id] || {};
+    const covered = s.covered ?? 0;
+    const target = 2300;
+    const pct = (covered / target * 100).toFixed(1);
     return `
     <div class="card" style="border-top:4px solid ${retailerColors[r.id]}">
       <div class="card-name">${esc(r.name)}</div>
-      <div class="card-big">${s.covered ?? 0}</div>
-      <div class="card-sub">zip codes covered</div>
-      <div class="card-meta">${s.states ?? 0} states &nbsp;·&nbsp; updated ${fmt(s.last_checked)}</div>
+      <div class="card-big">${covered}</div>
+      <div class="card-sub">cities confirmed</div>
+      <div class="card-meta">${s.dmas_covered ?? 0} DMAs &nbsp;·&nbsp; ${s.states ?? 0} states &nbsp;·&nbsp; ${pct}% of ${target} target &nbsp;·&nbsp; updated ${fmt(s.last_checked)}</div>
     </div>`;
   }).join('');
 
@@ -285,7 +284,7 @@ async function main() {
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Grocery Delivery Coverage — Rivendell Advisors</title>
+<title>Amazon Same-Day Coverage — City &amp; DMA View</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"><\/script>
@@ -375,7 +374,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 </head>
 <body>
 <header>
-  <h1>🛒 Grocery Delivery Coverage Tracker</h1>
+  <h1>🛒 Amazon Same-Day Coverage — City &amp; DMA View</h1>
   <span>Rivendell Advisors &nbsp;·&nbsp; ${esc(generatedAt)}</span>
 </header>
 <nav>
@@ -398,8 +397,8 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       ${retailerFilterOpts}
     </select>
     <select id="map-avail-filter">
-      <option value="1">Available zips</option>
-      <option value="all">All zips</option>
+      <option value="1">Available cities</option>
+      <option value="all">All cities</option>
     </select>
     <label style="font-size:12px;color:#555">
       <input type="checkbox" id="show-locations" checked> Show fulfillment centers
@@ -450,9 +449,9 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <!-- DATA TABLE VIEW -->
 <div id="data-view" class="view">
   <section>
-    <h2>Coverage Detail</h2>
+    <h2>City Coverage</h2>
     <div class="filters">
-      <input type="text" id="filter-text" placeholder="Search zip, city, state..."/>
+      <input type="text" id="filter-text" placeholder="Search city, state, DMA..."/>
       <select id="filter-state"><option value="">All states</option></select>
       <select id="filter-retailer"><option value="">All retailers</option>${retailerFilterOpts}</select>
       <select id="filter-avail">
@@ -465,10 +464,9 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
     <span id="row-info"></span>
     <table id="cov-table">
       <thead><tr>
-        <th data-col="0">Zip</th><th data-col="1">City</th><th data-col="2">State</th>
-        <th data-col="3">Retailer</th><th data-col="4">Available</th>
-        <th data-col="5">Confidence</th><th data-col="6">First Seen</th>
-        <th data-col="7">Last Checked</th><th>Source</th>
+        <th data-col="0">City</th><th data-col="1">State</th><th data-col="2">DMA</th>
+        <th data-col="3">Tier</th><th data-col="4">Retailer</th><th data-col="5">Available</th>
+        <th data-col="6">Confidence</th><th data-col="7">Source</th><th data-col="8">First Seen</th>
       </tr></thead>
       <tbody id="cov-body">${tableRows}</tbody>
     </table>
@@ -486,7 +484,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
   <section>
     <h2>New Coverage This Week <span class="badge">${newThisWeek.length}</span></h2>
     <table>
-      <thead><tr><th>Zip</th><th>City</th><th>State</th><th>Retailer</th><th>First Seen</th></tr></thead>
+      <thead><tr><th>City</th><th>State</th><th>DMA</th><th>Retailer</th><th>First Seen</th></tr></thead>
       <tbody>${newRows}</tbody>
     </table>
   </section>
@@ -564,7 +562,8 @@ function buildZipLayers(retailerFilter) {
       fillOpacity: 0.7, weight: 1
     });
     marker.bindPopup(
-      '<b>' + p.zip + '</b> — ' + (p.city||'') + ', ' + p.state +
+      '<b>' + (p.city||'') + ', ' + p.state + '</b>' +
+      (p.dma_name ? '<br>DMA: ' + p.dma_name : '') +
       '<br><span style="color:' + color + '">' + p.retailer_name + '</span>' +
       (p.confidence ? '<br>Confidence: ' + p.confidence + '%' : '') +
       (p.first_seen ? '<br>First seen: ' + new Date(p.first_seen*1000).toLocaleDateString() : '')
@@ -572,7 +571,7 @@ function buildZipLayers(retailerFilter) {
     zipLayers[p.retailer_id].addLayer(marker);
   });
 
-  document.getElementById('map-count').textContent = points.length + ' zip codes shown';
+  document.getElementById('map-count').textContent = points.length + ' cities shown';
 }
 
 function buildLocLayer(show) {
@@ -1012,7 +1011,7 @@ function initTimeline() {
   if (!existsSync(REPORTS_DIR)) mkdirSync(REPORTS_DIR, { recursive: true });
   const out = join(REPORTS_DIR, 'index.html');
   writeFileSync(out, html);
-  log(`Report written → ${out} (${coverageRows.length} rows, ${locations.length} locations, ${newThisWeek.length} new this week)`);
+  log(`Report written → ${out} (${coverageRows.length} city rows, ${locations.length} locations, ${newThisWeek.length} new this week)`);
 }
 
 main().catch(err => { console.error('Fatal:', err); process.exit(1); });
