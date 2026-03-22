@@ -62,6 +62,30 @@ function availLabel(a) {
   return 'Unknown';
 }
 
+function computeTimeline(db, retailers) {
+  const byDate = db.prepare(`
+    SELECT snapshot_date, retailer_id, total_cities_confirmed, total_cities_probed,
+           total_signals, dmas_with_coverage
+    FROM snapshot_totals
+    ORDER BY snapshot_date ASC, retailer_id ASC
+  `).all();
+
+  const byDmaFirstSeen = {};
+  for (const r of retailers) {
+    byDmaFirstSeen[r.id] = db.prepare(`
+      SELECT d.id as dma_id, d.name as dma_name, d.tier,
+        MIN(s.snapshot_date) as first_confirmed_date
+      FROM snapshots s
+      JOIN dmas d ON d.id = s.dma_id
+      WHERE s.retailer_id = ? AND s.cities_confirmed > 0
+      GROUP BY s.dma_id
+      ORDER BY first_confirmed_date ASC
+    `).all(r.id);
+  }
+
+  return { byDate, byDmaFirstSeen };
+}
+
 async function main() {
   if (!existsSync(DB_PATH)) {
     console.error('Database not found. Run npm run setup first.');
@@ -175,6 +199,8 @@ async function main() {
   const countyToDma = {};
   Object.entries(countyDmaVotes).forEach(([k, v]) => { countyToDma[k] = v.dma_id; });
 
+  const timeline = computeTimeline(db, retailers);
+
   db.close();
 
   const generatedAt = new Date().toLocaleString('en-US', {
@@ -251,6 +277,8 @@ async function main() {
   const dmaDataByRetailerJson = JSON.stringify(dmaDataByRetailer);
   const zipToDmaJson = JSON.stringify(zipToDma);
   const countyToDmaJson = JSON.stringify(countyToDma);
+  const timelineDataJson = JSON.stringify(timeline.byDate);
+  const dmaFirstSeenJson = JSON.stringify(timeline.byDmaFirstSeen);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -260,6 +288,7 @@ async function main() {
 <title>Grocery Delivery Coverage — Rivendell Advisors</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"><\/script>
 <style>
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;color:#222;background:#f5f6f8}
@@ -329,6 +358,19 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 .choropleth-legend .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
 #dma-city-list{background:#111126;border-radius:6px;padding:10px;margin-top:10px;font-size:12px;color:#ccd;display:none}
 #dma-city-list ul{margin:4px 0 0;padding-left:16px}
+/* Timeline view */
+#timeline-view{background:#111126;color:#dde;min-height:calc(100vh - 100px)}
+#timeline-view h2{color:#dde;border-bottom-color:#2a3a5e}
+.tl-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.tl-chart-box{background:#1a1a2e;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.tl-chart-box.full{grid-column:1/-1}
+.tl-chart-box h3{margin:0 0 14px;font-size:13px;font-weight:700;color:#aac;text-transform:uppercase;letter-spacing:.5px}
+.tl-chart-box canvas{width:100%!important}
+.tl-placeholder{color:#556;font-size:12px;text-align:center;padding:40px 0;border:1px dashed #2a3a5e;border-radius:6px;margin-top:8px}
+.tl-stat-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.tl-stat{background:#1a1a2e;border-radius:8px;padding:14px 18px;flex:1;min-width:140px}
+.tl-stat-n{font-size:28px;font-weight:800;color:#4a90e2}
+.tl-stat-label{font-size:11px;color:#88a;margin-top:3px}
 </style>
 </head>
 <body>
@@ -340,6 +382,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
   <button onclick="showView('data-view',this)">📊 Data Table</button>
   <button onclick="showView('new-view',this)">🆕 New This Week</button>
+  <button onclick="showView('timeline-view',this);initTimeline()">📈 Timeline</button>
 </nav>
 
 <!-- MAP VIEW -->
@@ -449,6 +492,29 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
   </section>
 </div>
 
+<!-- TIMELINE VIEW -->
+<div id="timeline-view" class="view">
+  <section>
+    <h2>Coverage Growth Timeline</h2>
+    <div class="tl-stat-row" id="tl-stats"></div>
+    <div class="tl-grid">
+      <div class="tl-chart-box full">
+        <h3>Coverage Growth — Cities Confirmed Over Time</h3>
+        <canvas id="chart-growth" height="90"></canvas>
+      </div>
+      <div class="tl-chart-box">
+        <h3>New DMAs Unlocked Per Day (by Tier)</h3>
+        <canvas id="chart-dma-unlock" height="200"></canvas>
+      </div>
+      <div class="tl-chart-box">
+        <h3>Signal Velocity (Signals Per Day)</h3>
+        <canvas id="chart-signals" height="200"></canvas>
+        <div class="tl-placeholder" id="tl-signal-placeholder">Multi-day history needed for velocity.<br>Today shown as baseline bar.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
 <script>
 // ── View switcher ─────────────────────────────────────────────────────────────
 function showView(id, btn) {
@@ -466,6 +532,8 @@ const COLORS = ${retailerColorsJson};
 window.DMA_DATA = ${dmaDataByRetailerJson};
 const ZIP_TO_DMA = ${zipToDmaJson};
 const COUNTY_TO_DMA = ${countyToDmaJson};
+window.TIMELINE_DATA = ${timelineDataJson};
+window.DMA_FIRST_SEEN = ${dmaFirstSeenJson};
 
 const map = L.map('map').setView([38.5, -96], 4);
 window._map = map;
@@ -786,6 +854,157 @@ function showDmaCities(d) {
 
   render();
 })();
+
+// ── Timeline charts ────────────────────────────────────────────────────────────
+let _timelineInited = false;
+function initTimeline() {
+  if (_timelineInited) return;
+  _timelineInited = true;
+
+  const tlData = window.TIMELINE_DATA || [];
+  const dmaFirstSeen = window.DMA_FIRST_SEEN || {};
+  const COLORS_MAP = ${retailerColorsJson};
+
+  // Group byDate by retailer
+  const retailerIds = [...new Set(tlData.map(d => d.retailer_id))];
+  const allDates = [...new Set(tlData.map(d => d.snapshot_date))].sort();
+
+  // Populate stat cards for the first retailer with data
+  const statsEl = document.getElementById('tl-stats');
+  statsEl.innerHTML = '';
+  for (const rid of retailerIds) {
+    const latest = tlData.filter(d => d.retailer_id === rid).slice(-1)[0];
+    if (!latest) continue;
+    const color = COLORS_MAP[rid] || '#4a90e2';
+    statsEl.innerHTML += \`
+      <div class="tl-stat" style="border-top:3px solid \${color}">
+        <div class="tl-stat-n">\${latest.total_cities_confirmed}</div>
+        <div class="tl-stat-label">\${rid} — confirmed cities</div>
+      </div>
+      <div class="tl-stat" style="border-top:3px solid \${color}">
+        <div class="tl-stat-n">\${latest.dmas_with_coverage}</div>
+        <div class="tl-stat-label">\${rid} — DMAs with coverage</div>
+      </div>
+      <div class="tl-stat" style="border-top:3px solid \${color}">
+        <div class="tl-stat-n">\${latest.total_signals}</div>
+        <div class="tl-stat-label">\${rid} — total signals</div>
+      </div>
+    \`;
+  }
+
+  const chartDefaults = {
+    plugins: { legend: { labels: { color: '#aac', font: { size: 11 } } } },
+    scales: {
+      x: { ticks: { color: '#88a', font: { size: 10 } }, grid: { color: '#1e2a4e' } },
+      y: { ticks: { color: '#88a', font: { size: 10 } }, grid: { color: '#1e2a4e' } }
+    }
+  };
+
+  // Chart 1: Coverage Growth Line Chart
+  const growthDatasets = retailerIds.map(rid => {
+    const color = COLORS_MAP[rid] || '#4a90e2';
+    return {
+      label: rid,
+      data: allDates.map(d => {
+        const row = tlData.find(r => r.retailer_id === rid && r.snapshot_date === d);
+        return row ? row.total_cities_confirmed : null;
+      }),
+      borderColor: color,
+      backgroundColor: color + '33',
+      pointBackgroundColor: color,
+      pointRadius: 4,
+      tension: 0.3,
+      fill: false,
+      spanGaps: true
+    };
+  });
+  new Chart(document.getElementById('chart-growth'), {
+    type: 'line',
+    data: { labels: allDates, datasets: growthDatasets },
+    options: {
+      responsive: true,
+      ...chartDefaults,
+      plugins: {
+        ...chartDefaults.plugins,
+        title: { display: false },
+        tooltip: {
+          callbacks: {
+            afterBody: (items) => {
+              const d = items[0]?.label;
+              const today = new Date().toISOString().slice(0,10);
+              return d === today ? ['Today'] : [];
+            }
+          }
+        }
+      }
+    }
+  });
+
+  // Chart 2: DMA Unlock Bar Chart (new DMAs per day stacked by tier)
+  const tierColors = { mega: '#e74c3c', large: '#f39c12', mid: '#3498db', small: '#2ecc71' };
+  const tiers = ['mega', 'large', 'mid', 'small'];
+  // For primary retailer (first one with dmaFirstSeen data)
+  const primaryRid = retailerIds.find(r => (dmaFirstSeen[r] || []).length > 0) || retailerIds[0];
+  const firstSeenRows = dmaFirstSeen[primaryRid] || [];
+  const dmaUnlockByDate = {};
+  for (const row of firstSeenRows) {
+    const d = row.first_confirmed_date;
+    if (!d) continue;
+    if (!dmaUnlockByDate[d]) dmaUnlockByDate[d] = { mega:0, large:0, mid:0, small:0 };
+    const tier = row.tier || 'small';
+    dmaUnlockByDate[d][tier] = (dmaUnlockByDate[d][tier] || 0) + 1;
+  }
+  const dmaUnlockDates = Object.keys(dmaUnlockByDate).sort();
+  new Chart(document.getElementById('chart-dma-unlock'), {
+    type: 'bar',
+    data: {
+      labels: dmaUnlockDates.length ? dmaUnlockDates : allDates,
+      datasets: tiers.map(tier => ({
+        label: tier,
+        data: (dmaUnlockDates.length ? dmaUnlockDates : allDates).map(d => dmaUnlockByDate[d]?.[tier] || 0),
+        backgroundColor: tierColors[tier] || '#888',
+        stack: 'dma'
+      }))
+    },
+    options: {
+      responsive: true,
+      ...chartDefaults,
+      plugins: { ...chartDefaults.plugins },
+      scales: {
+        x: { ...chartDefaults.scales.x, stacked: true },
+        y: { ...chartDefaults.scales.y, stacked: true }
+      }
+    }
+  });
+
+  // Chart 3: Signal Velocity
+  const signalDatasets = retailerIds.map(rid => {
+    const color = COLORS_MAP[rid] || '#4a90e2';
+    return {
+      label: rid,
+      data: allDates.map(d => {
+        const row = tlData.find(r => r.retailer_id === rid && r.snapshot_date === d);
+        return row ? row.total_signals : 0;
+      }),
+      backgroundColor: color + 'cc'
+    };
+  });
+  new Chart(document.getElementById('chart-signals'), {
+    type: 'bar',
+    data: { labels: allDates, datasets: signalDatasets },
+    options: {
+      responsive: true,
+      ...chartDefaults,
+      plugins: { ...chartDefaults.plugins }
+    }
+  });
+
+  if (allDates.length <= 1) {
+    document.getElementById('tl-signal-placeholder').style.display = '';
+  } else {
+    document.getElementById('tl-signal-placeholder').style.display = 'none';
+  }
+}
 <\/script>
 </body>
 </html>`;
