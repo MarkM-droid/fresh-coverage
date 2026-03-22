@@ -604,8 +604,9 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
     </ul>
     <p>All 31,913 US zip codes are mapped to their DMA via a spatial centroid crosswalk (zip centroid plotted against DMA boundary polygons). Cities inherit their DMA from the plurality DMA of their zip codes.</p>
 
-    <h3>3. The 50-Mile Radius Assumption</h3>
-    <p>Amazon's same-day delivery sites are purpose-built facilities that serve a defined geographic radius. Multiple Amazon press releases and local news articles have confirmed this radius at <strong>50 miles</strong> for the new same-day delivery facility type:</p>
+    <h3>3. Amazon's Same-Day Delivery Facility Network</h3>
+    <p>Amazon operates a network of <strong>Same-Day Delivery (SSD) sites</strong> — a mix of purpose-built facilities and retrofitted existing distribution centers — that have been upgraded with temperature-controlled zones and specialized cold-chain handling to support perishable grocery fulfillment. These are distinct from Amazon Fresh dark stores and traditional large fulfillment centers. Amazon describes them as its "specialized temperature-controlled fulfillment network," using the same insulated recyclable bags as Amazon Fresh and Whole Foods Market deliveries. Facilities typically run ~150,000–270,000 sq ft and use Amazon Flex contract drivers for final-mile delivery.</p>
+    <p>Multiple Amazon press releases and local news articles have confirmed the service radius at <strong>50 miles</strong> for these facilities:</p>
     <ul>
       <li>Council Bluffs, IA facility (serving Omaha metro): "covers a 50-mile radius" — KETV, Dec 2024</li>
       <li>Ankeny, IA facility (serving Des Moines): "within 50 miles" — Des Moines Register, Dec 2024</li>
