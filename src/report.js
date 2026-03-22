@@ -99,8 +99,12 @@ async function main() {
 
   // Summary stats per retailer (city-first)
   const summaries = {};
+  const CITY_TARGET = 2300;
+  const DMA_ADDRESSABLE = 190; // non-micro DMAs
+  const TOTAL_TV_HOMES = db.prepare('SELECT SUM(tv_homes) as t FROM dmas').get().t || 1;
+
   for (const r of retailers) {
-    summaries[r.id] = db.prepare(`
+    const base = db.prepare(`
       SELECT
         COUNT(*) FILTER (WHERE cc.available = 1) AS covered,
         COUNT(DISTINCT cc.dma_id) FILTER (WHERE cc.available = 1 AND cc.dma_id IS NOT NULL) AS dmas_covered,
@@ -109,6 +113,23 @@ async function main() {
       FROM city_coverage cc
       WHERE cc.retailer_id = ?
     `).get(r.id);
+
+    const coveredTvHomes = db.prepare(`
+      SELECT COALESCE(SUM(d.tv_homes), 0) as tv_homes
+      FROM dmas d
+      WHERE d.id IN (
+        SELECT DISTINCT dma_id FROM city_coverage
+        WHERE retailer_id=? AND available=1 AND dma_id IS NOT NULL
+      )
+    `).get(r.id).tv_homes;
+
+    summaries[r.id] = {
+      ...base,
+      covered_tv_homes: coveredTvHomes,
+      city_pct: ((base.covered / CITY_TARGET) * 100).toFixed(1),
+      dma_pct: ((base.dmas_covered / DMA_ADDRESSABLE) * 100).toFixed(1),
+      pop_pct: ((coveredTvHomes / TOTAL_TV_HOMES) * 100).toFixed(1),
+    };
   }
 
   // Coverage rows — city_coverage is primary source
@@ -251,14 +272,34 @@ async function main() {
   const summaryCards = retailers.map(r => {
     const s = summaries[r.id] || {};
     const covered = s.covered ?? 0;
-    const target = 2300;
-    const pct = (covered / target * 100).toFixed(1);
+    const dmasCovered = s.dmas_covered ?? 0;
+    const cityPct = s.city_pct ?? '0.0';
+    const dmaPct = s.dma_pct ?? '0.0';
+    const popPct = s.pop_pct ?? '0.0';
+    const color = retailerColors[r.id];
     return `
-    <div class="card" style="border-top:4px solid ${retailerColors[r.id]}">
-      <div class="card-name">${esc(r.name)}</div>
-      <div class="card-big">${covered}</div>
-      <div class="card-sub">cities confirmed</div>
-      <div class="card-meta">${s.dmas_covered ?? 0} DMAs &nbsp;·&nbsp; ${s.states ?? 0} states &nbsp;·&nbsp; ${pct}% of ${target} target &nbsp;·&nbsp; updated ${fmt(s.last_checked)}</div>
+    <div class="card-group" style="border-top:4px solid ${color}">
+      <div class="card-group-name">${esc(r.name)} &nbsp;·&nbsp; updated ${fmt(s.last_checked)}</div>
+      <div class="card-trio">
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:${color}">${cityPct}%</div>
+          <div class="tracker-label">City Coverage</div>
+          <div class="tracker-detail">${covered.toLocaleString()} / 2,300 cities confirmed</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(cityPct,100)}%;background:${color}"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:${color}">${dmaPct}%</div>
+          <div class="tracker-label">DMA Reach</div>
+          <div class="tracker-detail">${dmasCovered} / 190 addressable DMAs &nbsp;·&nbsp; ${s.states ?? 0} states</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(dmaPct,100)}%;background:${color}"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:${color}">${popPct}%</div>
+          <div class="tracker-label">Population Reach</div>
+          <div class="tracker-detail">${Math.round((s.covered_tv_homes||0)/1e6*10)/10}M / ${Math.round(TOTAL_TV_HOMES/1e6)}M TV households</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(popPct,100)}%;background:${color}"></div></div>
+        </div>
+      </div>
     </div>`;
   }).join('');
 
@@ -301,6 +342,15 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .view.active{display:block}
 .cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
 .card{background:#fff;border-radius:8px;padding:18px 22px;min-width:200px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.card-group{background:#fff;border-radius:8px;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.1);margin-bottom:18px}
+.card-group-name{font-size:13px;font-weight:700;color:#555;margin-bottom:14px;text-transform:uppercase;letter-spacing:.4px}
+.card-trio{display:flex;gap:24px;flex-wrap:wrap}
+.card-tracker{flex:1;min-width:180px}
+.tracker-pct{font-size:36px;font-weight:800;line-height:1}
+.tracker-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#666;margin:4px 0 2px}
+.tracker-detail{font-size:12px;color:#888;margin-bottom:8px}
+.tracker-bar{height:6px;background:#eee;border-radius:3px;overflow:hidden}
+.tracker-fill{height:100%;border-radius:3px;transition:width .4s ease}
 .card-name{font-size:12px;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 .card-big{font-size:36px;font-weight:800;color:#1a1a2e;line-height:1.1;margin:6px 0 2px}
 .card-sub{font-size:12px;color:#555}

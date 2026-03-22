@@ -20,6 +20,15 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .view.active{display:block}
 .cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
 .card{background:#fff;border-radius:8px;padding:18px 22px;min-width:200px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.card-group{background:#fff;border-radius:8px;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.1);margin-bottom:18px}
+.card-group-name{font-size:13px;font-weight:700;color:#555;margin-bottom:14px;text-transform:uppercase;letter-spacing:.4px}
+.card-trio{display:flex;gap:24px;flex-wrap:wrap}
+.card-tracker{flex:1;min-width:180px}
+.tracker-pct{font-size:36px;font-weight:800;line-height:1}
+.tracker-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#666;margin:4px 0 2px}
+.tracker-detail{font-size:12px;color:#888;margin-bottom:8px}
+.tracker-bar{height:6px;background:#eee;border-radius:3px;overflow:hidden}
+.tracker-fill{height:100%;border-radius:3px;transition:width .4s ease}
 .card-name{font-size:12px;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 .card-big{font-size:36px;font-weight:800;color:#1a1a2e;line-height:1.1;margin:6px 0 2px}
 .card-sub{font-size:12px;color:#555}
@@ -94,7 +103,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <body>
 <header>
   <h1>🛒 Amazon Same-Day Coverage — City &amp; DMA View</h1>
-  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 22, 2026, 12:14 PM PDT</span>
+  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 22, 2026, 12:22 PM PDT</span>
 </header>
 <nav>
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
@@ -106,23 +115,74 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <!-- MAP VIEW -->
 <div id="map-view" class="view active">
   <div class="cards">
-    <div class="card" style="border-top:4px solid #e74c3c">
-      <div class="card-name">Amazon Fresh</div>
-      <div class="card-big">0</div>
-      <div class="card-sub">cities confirmed</div>
-      <div class="card-meta">0 DMAs &nbsp;·&nbsp; 0 states &nbsp;·&nbsp; 0.0% of 2300 target &nbsp;·&nbsp; updated —</div>
+    <div class="card-group" style="border-top:4px solid #e74c3c">
+      <div class="card-group-name">Amazon Fresh &nbsp;·&nbsp; updated —</div>
+      <div class="card-trio">
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#e74c3c">0.0%</div>
+          <div class="tracker-label">City Coverage</div>
+          <div class="tracker-detail">0 / 2,300 cities confirmed</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0%;background:#e74c3c"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#e74c3c">0.0%</div>
+          <div class="tracker-label">DMA Reach</div>
+          <div class="tracker-detail">0 / 190 addressable DMAs &nbsp;·&nbsp; 0 states</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0%;background:#e74c3c"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#e74c3c">0.0%</div>
+          <div class="tracker-label">Population Reach</div>
+          <div class="tracker-detail">0M / 128M TV households</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0%;background:#e74c3c"></div></div>
+        </div>
+      </div>
     </div>
-    <div class="card" style="border-top:4px solid #3498db">
-      <div class="card-name">Amazon Same-Day Grocery</div>
-      <div class="card-big">19</div>
-      <div class="card-sub">cities confirmed</div>
-      <div class="card-meta">10 DMAs &nbsp;·&nbsp; 15 states &nbsp;·&nbsp; 0.8% of 2300 target &nbsp;·&nbsp; updated Mar 22, 2026</div>
+    <div class="card-group" style="border-top:4px solid #3498db">
+      <div class="card-group-name">Amazon Same-Day Grocery &nbsp;·&nbsp; updated Mar 22, 2026</div>
+      <div class="card-trio">
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#3498db">0.8%</div>
+          <div class="tracker-label">City Coverage</div>
+          <div class="tracker-detail">19 / 2,300 cities confirmed</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0.8%;background:#3498db"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#3498db">5.3%</div>
+          <div class="tracker-label">DMA Reach</div>
+          <div class="tracker-detail">10 / 190 addressable DMAs &nbsp;·&nbsp; 15 states</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:5.3%;background:#3498db"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#3498db">16.5%</div>
+          <div class="tracker-label">Population Reach</div>
+          <div class="tracker-detail">21.1M / 128M TV households</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:16.5%;background:#3498db"></div></div>
+        </div>
+      </div>
     </div>
-    <div class="card" style="border-top:4px solid #2ecc71">
-      <div class="card-name">Kroger</div>
-      <div class="card-big">0</div>
-      <div class="card-sub">cities confirmed</div>
-      <div class="card-meta">0 DMAs &nbsp;·&nbsp; 0 states &nbsp;·&nbsp; 0.0% of 2300 target &nbsp;·&nbsp; updated —</div>
+    <div class="card-group" style="border-top:4px solid #2ecc71">
+      <div class="card-group-name">Kroger &nbsp;·&nbsp; updated —</div>
+      <div class="card-trio">
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#2ecc71">0.0%</div>
+          <div class="tracker-label">City Coverage</div>
+          <div class="tracker-detail">0 / 2,300 cities confirmed</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0%;background:#2ecc71"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#2ecc71">0.0%</div>
+          <div class="tracker-label">DMA Reach</div>
+          <div class="tracker-detail">0 / 190 addressable DMAs &nbsp;·&nbsp; 0 states</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0%;background:#2ecc71"></div></div>
+        </div>
+        <div class="card-tracker">
+          <div class="tracker-pct" style="color:#2ecc71">0.0%</div>
+          <div class="tracker-label">Population Reach</div>
+          <div class="tracker-detail">0M / 128M TV households</div>
+          <div class="tracker-bar"><div class="tracker-fill" style="width:0%;background:#2ecc71"></div></div>
+        </div>
+      </div>
     </div></div>
   <div class="map-controls">
     <div class="view-toggle">
