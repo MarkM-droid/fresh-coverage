@@ -1,0 +1,2148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Grocery Delivery Coverage — Rivendell Advisors</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;color:#222;background:#f5f6f8}
+header{background:#1a1a2e;color:#fff;padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+header h1{margin:0;font-size:18px;font-weight:700;letter-spacing:-.3px}
+header span{font-size:11px;color:#8899bb}
+nav{display:flex;gap:2px;background:#111126;padding:0 28px}
+nav button{background:none;border:none;color:#aab;padding:10px 16px;cursor:pointer;font-size:13px;border-bottom:3px solid transparent}
+nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
+.view{display:none;padding:24px 28px}
+.view.active{display:block}
+.cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.card{background:#fff;border-radius:8px;padding:18px 22px;min-width:200px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.card-name{font-size:12px;color:#888;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.card-big{font-size:36px;font-weight:800;color:#1a1a2e;line-height:1.1;margin:6px 0 2px}
+.card-sub{font-size:12px;color:#555}
+.card-meta{font-size:11px;color:#aaa;margin-top:6px}
+#map{height:560px;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.12);margin-bottom:16px}
+.legend{background:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.15);font-size:12px}
+.legend-title{font-weight:700;margin-bottom:6px;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:#555}
+.legend-item{display:flex;align-items:center;margin:3px 0}
+.legend-dot{width:12px;height:12px;border-radius:50%;display:inline-block;margin-right:7px;flex-shrink:0}
+.map-controls{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.map-controls select,.map-controls input{padding:6px 10px;border:1px solid #ccc;border-radius:6px;font-size:12px}
+section{margin-bottom:32px}
+h2{font-size:14px;font-weight:700;color:#333;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #e8e8e8}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+th{background:#f0f2f5;padding:9px 11px;text-align:left;font-size:11px;font-weight:700;color:#555;cursor:pointer;white-space:nowrap;user-select:none}
+th:hover{background:#e4e8ee}
+th.asc::after{content:' ▲';font-size:9px}th.desc::after{content:' ▼';font-size:9px}
+td{padding:7px 11px;border-top:1px solid #f0f0f0}
+tr:hover td{background:#fafbff}
+.avail-yes{color:#1a8040;font-weight:600}
+.avail-no{color:#c0392b}
+.avail-unk{color:#999}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.filters input,.filters select{padding:6px 10px;border:1px solid #ccc;border-radius:6px;font-size:12px;background:#fff}
+.pager{margin-top:10px;display:flex;gap:8px;align-items:center}
+.pager button{padding:4px 12px;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer;font-size:12px}
+.pager button:disabled{opacity:.4;cursor:default}
+#row-info{font-size:11px;color:#888;margin-left:4px}
+a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;background:#e8f5e9;color:#1a8040;margin-left:6px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🛒 Grocery Delivery Coverage Tracker</h1>
+  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 22, 2026, 06:07 AM PDT</span>
+</header>
+<nav>
+  <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
+  <button onclick="showView('data-view',this)">📊 Data Table</button>
+  <button onclick="showView('new-view',this)">🆕 New This Week</button>
+</nav>
+
+<!-- MAP VIEW -->
+<div id="map-view" class="view active">
+  <div class="cards">
+    <div class="card" style="border-top:4px solid #e74c3c">
+      <div class="card-name">Amazon Fresh</div>
+      <div class="card-big">43</div>
+      <div class="card-sub">zip codes covered</div>
+      <div class="card-meta">19 states &nbsp;·&nbsp; updated Mar 22, 2026</div>
+    </div>
+    <div class="card" style="border-top:4px solid #3498db">
+      <div class="card-name">Amazon Same-Day Grocery</div>
+      <div class="card-big">0</div>
+      <div class="card-sub">zip codes covered</div>
+      <div class="card-meta">0 states &nbsp;·&nbsp; updated —</div>
+    </div>
+    <div class="card" style="border-top:4px solid #2ecc71">
+      <div class="card-name">Kroger</div>
+      <div class="card-big">59</div>
+      <div class="card-sub">zip codes covered</div>
+      <div class="card-meta">20 states &nbsp;·&nbsp; updated Mar 22, 2026</div>
+    </div></div>
+  <div class="map-controls">
+    <select id="map-retailer-filter">
+      <option value="">All retailers</option>
+      <option value="amazon_fresh">Amazon Fresh</option><option value="amazon_same_day">Amazon Same-Day Grocery</option><option value="kroger">Kroger</option>
+    </select>
+    <select id="map-avail-filter">
+      <option value="1">Available zips</option>
+      <option value="all">All zips</option>
+    </select>
+    <label style="font-size:12px;color:#555">
+      <input type="checkbox" id="show-locations" checked> Show fulfillment centers
+    </label>
+    <span style="font-size:11px;color:#888" id="map-count"></span>
+  </div>
+  <div id="map"></div>
+  <div class="legend">
+    <div class="legend-title">Legend</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#e74c3c"></span>Amazon Fresh</div><div class="legend-item"><span class="legend-dot" style="background:#3498db"></span>Amazon Same-Day Grocery</div><div class="legend-item"><span class="legend-dot" style="background:#2ecc71"></span>Kroger</div><div class="legend-item"><span class="legend-dot" style="background:#ffffff;border:2px solid #555;width:10px;height:10px;margin-right:6px"></span>Fulfillment center</div>
+  </div>
+</div>
+
+<!-- DATA TABLE VIEW -->
+<div id="data-view" class="view">
+  <section>
+    <h2>Coverage Detail</h2>
+    <div class="filters">
+      <input type="text" id="filter-text" placeholder="Search zip, city, state..."/>
+      <select id="filter-state"><option value="">All states</option></select>
+      <select id="filter-retailer"><option value="">All retailers</option><option value="amazon_fresh">Amazon Fresh</option><option value="amazon_same_day">Amazon Same-Day Grocery</option><option value="kroger">Kroger</option></select>
+      <select id="filter-avail">
+        <option value="">All</option>
+        <option value="1">Available</option>
+        <option value="0">Not available</option>
+        <option value="2">Unknown</option>
+      </select>
+    </div>
+    <span id="row-info"></span>
+    <table id="cov-table">
+      <thead><tr>
+        <th data-col="0">Zip</th><th data-col="1">City</th><th data-col="2">State</th>
+        <th data-col="3">Retailer</th><th data-col="4">Available</th>
+        <th data-col="5">Confidence</th><th data-col="6">First Seen</th>
+        <th data-col="7">Last Checked</th><th>Source</th>
+      </tr></thead>
+      <tbody id="cov-body">
+<tr data-retailer="kroger" data-state="AZ" data-avail="1">
+  <td>85021</td>
+  <td>Phoenix</td>
+  <td>AZ</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Kroger+Delivery&amp;find_loc=Phoenix,+AZ" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="AZ" data-avail="2">
+  <td>85034</td>
+  <td>Phoenix</td>
+  <td>AZ</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/arizona/amazon-fresh-grocery-delivery-543323920" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="AZ" data-avail="1">
+  <td>85712</td>
+  <td>Tucson</td>
+  <td>AZ</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95220</td>
+  <td>Acampo</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>93510</td>
+  <td>Acton</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>93446</td>
+  <td>Adelaide</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92301</td>
+  <td>Adelanto</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>96006</td>
+  <td>Adin</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91350</td>
+  <td>Agua dulce</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92536</td>
+  <td>Aguanga</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>93601</td>
+  <td>Ahwahnee</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>94502</td>
+  <td>Alameda</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Alameda,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>94507</td>
+  <td>Alamo</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>94706</td>
+  <td>Albany</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95410</td>
+  <td>Albion</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95511</td>
+  <td>Alderpoint</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91801</td>
+  <td>Alhambra</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Alhambra,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91803</td>
+  <td>Alhambra</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Alhambra,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92656</td>
+  <td>Aliso viejo</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95910</td>
+  <td>Alleghany</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>93201</td>
+  <td>Alpaugh</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91901</td>
+  <td>Alpine</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95701</td>
+  <td>Alta</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91701</td>
+  <td>Alta loma</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91737</td>
+  <td>Alta loma</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91001</td>
+  <td>Altadena</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://patch.com/california/altadena/altadena-coronavirus-chains-offering-free-food-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95221</td>
+  <td>Altaville</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>96101</td>
+  <td>Alturas</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95002</td>
+  <td>Alviso</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>95601</td>
+  <td>Amador city</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92304</td>
+  <td>Amboy</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>94589</td>
+  <td>American canyon</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92801</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92802</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92804</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92805</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92806</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92807</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92808</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92821</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>92823</td>
+  <td>Anaheim</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Anaheim,+CA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>96007</td>
+  <td>Anderson</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>40%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td></td>
+</tr>
+<tr data-retailer="kroger" data-state="CA" data-avail="1">
+  <td>93727</td>
+  <td>Fresno</td>
+  <td>CA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>90012</td>
+  <td>Los angeles</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-los-angeles-10" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>90045</td>
+  <td>Los angeles</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-los-angeles-10" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91601</td>
+  <td>North hollywood</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-los-angeles-10" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="1">
+  <td>91326</td>
+  <td>Porter ranch</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/fmc/m/30003175?almBrandId=QW1hem9uIEZyZXNo" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="CA" data-avail="1">
+  <td>95823</td>
+  <td>Sacramento</td>
+  <td>CA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/store/kroger/storefront" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="CA" data-avail="1">
+  <td>95828</td>
+  <td>Sacramento</td>
+  <td>CA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/store/kroger/storefront" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="1">
+  <td>92123</td>
+  <td>San diego</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-san-diego-san-diego" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="1">
+  <td>94107</td>
+  <td>San francisco</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.ktvu.com/news/amazon-prime-grocery-same-day-delivery-san-francisco" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="1">
+  <td>95691</td>
+  <td>West sacramento</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/california/amazon-fresh-grocery-delivery-543326855" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CA" data-avail="2">
+  <td>91367</td>
+  <td>Woodland hills</td>
+  <td>CA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-los-angeles-10" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CO" data-avail="1">
+  <td>80014</td>
+  <td>Aurora</td>
+  <td>CO</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/fmc/m/30003175?almBrandId=QW1hem9uIEZyZXNo" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="CO" data-avail="2">
+  <td>80216</td>
+  <td>Denver</td>
+  <td>CO</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/colorado/amazon-fresh-grocery-delivery-543357576" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="DC" data-avail="1">
+  <td>20009</td>
+  <td>Washington</td>
+  <td>DC</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-washington" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="FL" data-avail="2">
+  <td>32218</td>
+  <td>Jacksonville</td>
+  <td>FL</td>
+  <td>Kroger</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/kroger-delivery-jacksonville" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="FL" data-avail="1">
+  <td>33125</td>
+  <td>Miami</td>
+  <td>FL</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/florida/amazon-fresh-grocery-delivery-543323141" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="FL" data-avail="1">
+  <td>32801</td>
+  <td>Orlando</td>
+  <td>FL</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://mymetrocity.com/amazon-fresh/" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="FL" data-avail="1">
+  <td>33602</td>
+  <td>Tampa</td>
+  <td>FL</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.andnowuknow.com/bloom/kroger-announces-grocery-delivery-now-available-tampa-florida-Rodney-McMullen/peggy-packer/73552" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="FL" data-avail="1">
+  <td>33610</td>
+  <td>Tampa</td>
+  <td>FL</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.andnowuknow.com/bloom/kroger-announces-grocery-delivery-now-available-tampa-florida-Rodney-McMullen/peggy-packer/73552" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="FL" data-avail="1">
+  <td>33619</td>
+  <td>Tampa</td>
+  <td>FL</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.andnowuknow.com/bloom/kroger-announces-grocery-delivery-now-available-tampa-florida-Rodney-McMullen/peggy-packer/73552" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="GA" data-avail="1">
+  <td>30315</td>
+  <td>Atlanta</td>
+  <td>GA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/ga/near-me-in-atlanta-ga" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="GA" data-avail="1">
+  <td>30033</td>
+  <td>Decatur</td>
+  <td>GA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Atlanta,+GA" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="IA" data-avail="1">
+  <td>52075</td>
+  <td>Springbrook</td>
+  <td>IA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="IL" data-avail="1">
+  <td>60626</td>
+  <td>Chicago</td>
+  <td>IL</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oak-lawn-2" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="IL" data-avail="1">
+  <td>60053</td>
+  <td>Morton grove</td>
+  <td>IL</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oak-lawn-2" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="IL" data-avail="1">
+  <td>60453</td>
+  <td>Oak lawn</td>
+  <td>IL</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oak-lawn-2" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="IN" data-avail="1">
+  <td>46231</td>
+  <td>Bridgeport</td>
+  <td>IN</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-westside-indy-indianapolis" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="IN" data-avail="1">
+  <td>46219</td>
+  <td>Indianapolis</td>
+  <td>IN</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/in/near-me-in-indianapolis-in" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="IN" data-avail="1">
+  <td>46077</td>
+  <td>Zionsville</td>
+  <td>IN</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-westside-indy-indianapolis" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="KS" data-avail="1">
+  <td>67207</td>
+  <td>Eastborough</td>
+  <td>KS</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="KS" data-avail="1">
+  <td>67203</td>
+  <td>Wichita</td>
+  <td>KS</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="KS" data-avail="1">
+  <td>67205</td>
+  <td>Wichita</td>
+  <td>KS</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="KS" data-avail="1">
+  <td>67208</td>
+  <td>Wichita</td>
+  <td>KS</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="KY" data-avail="1">
+  <td>40220</td>
+  <td>Louisville</td>
+  <td>KY</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/ky/near-me-in-louisville-ky" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="KY" data-avail="1">
+  <td>40219</td>
+  <td>Okolona</td>
+  <td>KY</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/ky/near-me-in-louisville-ky" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="MA" data-avail="0">
+  <td>02108</td>
+  <td>Boston</td>
+  <td>MA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/massachusetts/amazon-fresh-grocery-delivery-543352920" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="MA" data-avail="0">
+  <td>02482</td>
+  <td>Zcta 02482</td>
+  <td>MA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/massachusetts/amazon-fresh-grocery-delivery-543352920" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="MD" data-avail="1">
+  <td>21213</td>
+  <td>Baltimore</td>
+  <td>MD</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Baltimore,+MD+21213" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="MD" data-avail="1">
+  <td>21061</td>
+  <td>Glen burnie</td>
+  <td>MD</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Baltimore,+MD+21213" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="MI" data-avail="1">
+  <td>48104</td>
+  <td>Ann arbor</td>
+  <td>MI</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://eu.freep.com/story/entertainment/dining/2025/12/10/amazon-same-day-perishable-grocery-delivery-detroit/87700295007/" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="MI" data-avail="1">
+  <td>48237</td>
+  <td>Oak park</td>
+  <td>MI</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/mi/near-me-in-detroit-mi" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="MN" data-avail="0">
+  <td>55429</td>
+  <td>Brooklyn center</td>
+  <td>MN</td>
+  <td>Kroger</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/store/kroger/storefront" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="MN" data-avail="0">
+  <td>55435</td>
+  <td>Edina</td>
+  <td>MN</td>
+  <td>Kroger</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="MN" data-avail="1">
+  <td>55414</td>
+  <td>Minneapolis</td>
+  <td>MN</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-minneapolis-minneapolis" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="MO" data-avail="1">
+  <td>64101</td>
+  <td>Kansas city</td>
+  <td>MO</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/store/kroger/storefront" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NC" data-avail="1">
+  <td>28269</td>
+  <td>Charlotte</td>
+  <td>NC</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/north-carolina/amazon-fresh-pickup-charlotte-645566174" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NC" data-avail="1">
+  <td>28278</td>
+  <td>Charlotte</td>
+  <td>NC</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NC" data-avail="1">
+  <td>27609</td>
+  <td>Raleigh</td>
+  <td>NC</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-raleigh-raleigh" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NE" data-avail="1">
+  <td>68108</td>
+  <td>Omaha</td>
+  <td>NE</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 21, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Krogers&amp;find_loc=Omaha,+NE" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NE" data-avail="1">
+  <td>68127</td>
+  <td>Ralston</td>
+  <td>NE</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/fmc/learn-more" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NM" data-avail="1">
+  <td>87107</td>
+  <td>Albuquerque</td>
+  <td>NM</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Kroger&amp;find_loc=Albuquerque,+NM" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NM" data-avail="1">
+  <td>87110</td>
+  <td>Albuquerque</td>
+  <td>NM</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/new-mexico/amazon-counter-546317063" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NM" data-avail="1">
+  <td>87122</td>
+  <td>Albuquerque</td>
+  <td>NM</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Kroger&amp;find_loc=Albuquerque,+NM" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NV" data-avail="1">
+  <td>89115</td>
+  <td>Las vegas</td>
+  <td>NV</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-sunrise-manor-las-vegas" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NV" data-avail="1">
+  <td>89119</td>
+  <td>Las vegas</td>
+  <td>NV</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-sunrise-manor-las-vegas" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NY" data-avail="2">
+  <td>11101</td>
+  <td>Astoria</td>
+  <td>NY</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oceanside" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NY" data-avail="2">
+  <td>10452</td>
+  <td>Bronx</td>
+  <td>NY</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oceanside" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NY" data-avail="2">
+  <td>11694</td>
+  <td>Far rockaway</td>
+  <td>NY</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oceanside" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NY" data-avail="1">
+  <td>12434</td>
+  <td>Grand gorge</td>
+  <td>NY</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NY" data-avail="1">
+  <td>10010</td>
+  <td>New york</td>
+  <td>NY</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NY" data-avail="2">
+  <td>11572</td>
+  <td>Oceanside</td>
+  <td>NY</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oceanside" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NY" data-avail="2">
+  <td>11803</td>
+  <td>Plainview</td>
+  <td>NY</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oceanside" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="NY" data-avail="2">
+  <td>11733</td>
+  <td>Setauket</td>
+  <td>NY</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-oceanside" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NY" data-avail="0">
+  <td>12164</td>
+  <td>Speculator</td>
+  <td>NY</td>
+  <td>Kroger</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/oh/near-me-in-cincinnati-oh" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NY" data-avail="1">
+  <td>11704</td>
+  <td>West babylon</td>
+  <td>NY</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.andnowuknow.com/bloom/kroger-announces-grocery-delivery-now-available-tampa-florida-Rodney-McMullen/peggy-packer/73552" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="NY" data-avail="1">
+  <td>14221</td>
+  <td>Williamsville</td>
+  <td>NY</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="OH" data-avail="0">
+  <td>45251</td>
+  <td>Groesbeck</td>
+  <td>OH</td>
+  <td>Kroger</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/oh/near-me-in-cincinnati-oh" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="OH" data-avail="1">
+  <td>43026</td>
+  <td>Hilliard</td>
+  <td>OH</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/oh/near-me-in-columbus-oh" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="OH" data-avail="1">
+  <td>43228</td>
+  <td>Lincoln village</td>
+  <td>OH</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="OH" data-avail="0">
+  <td>43228</td>
+  <td>Lincoln village</td>
+  <td>OH</td>
+  <td>Kroger</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/oh/near-me-in-columbus-oh" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="OH" data-avail="0">
+  <td>45241</td>
+  <td>Sharonville</td>
+  <td>OH</td>
+  <td>Kroger</td>
+  <td class="avail-no">Not Available</td>
+  <td>60%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/oh/near-me-in-cincinnati-oh" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="OH" data-avail="1">
+  <td>45069</td>
+  <td>West chester</td>
+  <td>OH</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-grocery-delivery-cincinnati" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="OH" data-avail="1">
+  <td>43081</td>
+  <td>Westerville</td>
+  <td>OH</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="OK" data-avail="1">
+  <td>73552</td>
+  <td>Indiahoma</td>
+  <td>OK</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.andnowuknow.com/bloom/kroger-announces-grocery-delivery-now-available-tampa-florida-Rodney-McMullen/peggy-packer/73552" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="PA" data-avail="1">
+  <td>19008</td>
+  <td>Broomall</td>
+  <td>PA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.reddit.com/r/pittsburgh/comments/b9054r/where_exactly_does_amazonfresh_deliver_to_in/" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="PA" data-avail="1">
+  <td>15237</td>
+  <td>Mc knight</td>
+  <td>PA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/pa/near-me-in-pittsburgh-pa" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="PA" data-avail="1">
+  <td>15642</td>
+  <td>North huntingdon</td>
+  <td>PA</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/pa/near-me-in-pittsburgh-pa" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="PA" data-avail="1">
+  <td>19115</td>
+  <td>Philadelphia</td>
+  <td>PA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-philadelphia-29" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="PA" data-avail="1">
+  <td>19123</td>
+  <td>Philadelphia</td>
+  <td>PA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-philadelphia-29" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="PA" data-avail="1">
+  <td>19149</td>
+  <td>Philadelphia</td>
+  <td>PA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-philadelphia-29" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="PA" data-avail="1">
+  <td>18976</td>
+  <td>Warrington</td>
+  <td>PA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.reddit.com/r/pittsburgh/comments/b9054r/where_exactly_does_amazonfresh_deliver_to_in/" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TN" data-avail="1">
+  <td>38117</td>
+  <td>Memphis</td>
+  <td>TN</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tn/near-me-in-memphis-tn" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TN" data-avail="1">
+  <td>38133</td>
+  <td>Memphis</td>
+  <td>TN</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tn/near-me-in-memphis-tn" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TN" data-avail="1">
+  <td>37203</td>
+  <td>Nashville</td>
+  <td>TN</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/fmc/storefront/fresh?almBrandId=QW1hem9uIEZyZXNo" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TN" data-avail="1">
+  <td>37211</td>
+  <td>Nashville</td>
+  <td>TN</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/tennessee/amazon-fresh-grocery-delivery-543350153" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TN" data-avail="1">
+  <td>37217</td>
+  <td>Nashville</td>
+  <td>TN</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/tennessee/amazon-fresh-grocery-delivery-543350153" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TN" data-avail="1">
+  <td>37217</td>
+  <td>Nashville</td>
+  <td>TN</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tn/near-me-in-nashville-tn" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76012</td>
+  <td>Arlington</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-arlington-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76013</td>
+  <td>Arlington</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-arlington-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76014</td>
+  <td>Arlington</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-arlington-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76016</td>
+  <td>Arlington</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-arlington-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76017</td>
+  <td>Arlington</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-arlington-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>78704</td>
+  <td>Austin</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.amazon.com/fmc/m/30003175?almBrandId=QW1hem9uIEZyZXNo" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>78728</td>
+  <td>Austin</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-austin-austin" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77401</td>
+  <td>Bellaire</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>75206</td>
+  <td>Dallas</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-dallas-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>76106</td>
+  <td>Fort worth</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/texas/amazonfresh-distribution-center-401101147" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76116</td>
+  <td>Fort worth</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-fort-worth-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>76131</td>
+  <td>Fort worth</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Amazon+Fresh&amp;find_loc=Fort+Worth,+TX" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76137</td>
+  <td>Fort worth</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-fort-worth-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>76177</td>
+  <td>Fort worth</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-fort-worth-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77005</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77006</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77008</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77025</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77035</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77044</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77065</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77070</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77074</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77086</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>77092</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/texas/amazon-fresh-pickup-houston-427357597" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77095</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.instacart.com/retailer/kroger-delivery/tx/near-me-in-houston-tx" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77096</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>77098</td>
+  <td>Houston</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/i/hc/help/faqs/ways-to-shop/delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="TX" data-avail="1">
+  <td>78219</td>
+  <td>Kirby</td>
+  <td>TX</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.kroger.com/rp/grocery-delivery" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>78205</td>
+  <td>San antonio</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/texas/amazon-fresh-grocery-delivery-543321154" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="TX" data-avail="1">
+  <td>78218</td>
+  <td>San antonio</td>
+  <td>TX</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.mapquest.com/us/texas/amazon-fresh-grocery-delivery-543321154" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="WA" data-avail="2">
+  <td>98107</td>
+  <td>Seattle</td>
+  <td>WA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-seattle-6" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="WA" data-avail="2">
+  <td>98122</td>
+  <td>Seattle</td>
+  <td>WA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-seattle-6" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="WA" data-avail="2">
+  <td>98133</td>
+  <td>Seattle</td>
+  <td>WA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-seattle-6" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="WA" data-avail="2">
+  <td>98144</td>
+  <td>Seattle</td>
+  <td>WA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-seattle-6" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="WA" data-avail="2">
+  <td>98108</td>
+  <td>Tukwila</td>
+  <td>WA</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-unk">Unknown</td>
+  <td>35%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-seattle-6" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="amazon_fresh" data-state="WI" data-avail="1">
+  <td>53215</td>
+  <td>West milwaukee</td>
+  <td>WI</td>
+  <td>Amazon Fresh</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 21, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/biz/amazon-fresh-pickup-milwaukee-milwaukee" target="_blank">↗</a></td>
+</tr>
+<tr data-retailer="kroger" data-state="WI" data-avail="1">
+  <td>53965</td>
+  <td>Wisconsin dells</td>
+  <td>WI</td>
+  <td>Kroger</td>
+  <td class="avail-yes">Available</td>
+  <td>70%</td>
+  <td>Mar 22, 2026</td>
+  <td>Mar 22, 2026</td>
+  <td><a href="https://www.yelp.com/search?find_desc=Kroger+Delivery&amp;find_loc=Milwaukee,+WI" target="_blank">↗</a></td>
+</tr></tbody>
+    </table>
+    <div class="pager">
+      <button id="prev-btn">← Prev</button>
+      <span id="page-info"></span>
+      <button id="next-btn">Next →</button>
+      <span id="row-info2"></span>
+    </div>
+  </section>
+</div>
+
+<!-- NEW THIS WEEK VIEW -->
+<div id="new-view" class="view">
+  <section>
+    <h2>New Coverage This Week <span class="badge">100</span></h2>
+    <table>
+      <thead><tr><th>Zip</th><th>City</th><th>State</th><th>Retailer</th><th>First Seen</th></tr></thead>
+      <tbody><tr><td>43026</td><td>Hilliard</td><td>OH</td><td>Kroger</td><td>Mar 22, 2026</td></tr><tr><td>53965</td><td>Wisconsin dells</td><td>WI</td><td>Kroger</td><td>Mar 22, 2026</td></tr><tr><td>64101</td><td>Kansas city</td><td>MO</td><td>Kroger</td><td>Mar 22, 2026</td></tr><tr><td>15237</td><td>Mc knight</td><td>PA</td><td>Kroger</td><td>Mar 22, 2026</td></tr><tr><td>19008</td><td>Broomall</td><td>PA</td><td>Amazon Fresh</td><td>Mar 22, 2026</td></tr><tr><td>48104</td><td>Ann arbor</td><td>MI</td><td>Amazon Fresh</td><td>Mar 22, 2026</td></tr><tr><td>76131</td><td>Fort worth</td><td>TX</td><td>Amazon Fresh</td><td>Mar 22, 2026</td></tr><tr><td>77401</td><td>Bellaire</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77096</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77005</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77035</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77025</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77098</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77006</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>14221</td><td>Williamsville</td><td>NY</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77044</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77008</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>10010</td><td>New york</td><td>NY</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77070</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77095</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>12434</td><td>Grand gorge</td><td>NY</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77086</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77065</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>52075</td><td>Springbrook</td><td>IA</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>77074</td><td>Houston</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>85021</td><td>Phoenix</td><td>AZ</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>78219</td><td>Kirby</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>75206</td><td>Dallas</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76177</td><td>Fort worth</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76116</td><td>Fort worth</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76137</td><td>Fort worth</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>28278</td><td>Charlotte</td><td>NC</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>46219</td><td>Indianapolis</td><td>IN</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>37217</td><td>Nashville</td><td>TN</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>40219</td><td>Okolona</td><td>KY</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>40220</td><td>Louisville</td><td>KY</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>38117</td><td>Memphis</td><td>TN</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>38133</td><td>Memphis</td><td>TN</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>87107</td><td>Albuquerque</td><td>NM</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>87122</td><td>Albuquerque</td><td>NM</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>85712</td><td>Tucson</td><td>AZ</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>93727</td><td>Fresno</td><td>CA</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>95828</td><td>Sacramento</td><td>CA</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>95823</td><td>Sacramento</td><td>CA</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>73552</td><td>Indiahoma</td><td>OK</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>30315</td><td>Atlanta</td><td>GA</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>68108</td><td>Omaha</td><td>NE</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>67208</td><td>Wichita</td><td>KS</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>67203</td><td>Wichita</td><td>KS</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>67207</td><td>Eastborough</td><td>KS</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>67205</td><td>Wichita</td><td>KS</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76017</td><td>Arlington</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76013</td><td>Arlington</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76012</td><td>Arlington</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76014</td><td>Arlington</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>76016</td><td>Arlington</td><td>TX</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>33610</td><td>Tampa</td><td>FL</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>11704</td><td>West babylon</td><td>NY</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>33619</td><td>Tampa</td><td>FL</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>33602</td><td>Tampa</td><td>FL</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>15642</td><td>North huntingdon</td><td>PA</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>48237</td><td>Oak park</td><td>MI</td><td>Kroger</td><td>Mar 21, 2026</td></tr><tr><td>60453</td><td>Oak lawn</td><td>IL</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>60626</td><td>Chicago</td><td>IL</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>60053</td><td>Morton grove</td><td>IL</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>77092</td><td>Houston</td><td>TX</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>19123</td><td>Philadelphia</td><td>PA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>19115</td><td>Philadelphia</td><td>PA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>19149</td><td>Philadelphia</td><td>PA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>78205</td><td>San antonio</td><td>TX</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>78218</td><td>San antonio</td><td>TX</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>92123</td><td>San diego</td><td>CA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>78728</td><td>Austin</td><td>TX</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>78704</td><td>Austin</td><td>TX</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>76106</td><td>Fort worth</td><td>TX</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>43081</td><td>Westerville</td><td>OH</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>43228</td><td>Lincoln village</td><td>OH</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>28269</td><td>Charlotte</td><td>NC</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>46231</td><td>Bridgeport</td><td>IN</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>46077</td><td>Zionsville</td><td>IN</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>94107</td><td>San francisco</td><td>CA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>80014</td><td>Aurora</td><td>CO</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>37203</td><td>Nashville</td><td>TN</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>37211</td><td>Nashville</td><td>TN</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>37217</td><td>Nashville</td><td>TN</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>20009</td><td>Washington</td><td>DC</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>89115</td><td>Las vegas</td><td>NV</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>89119</td><td>Las vegas</td><td>NV</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>21061</td><td>Glen burnie</td><td>MD</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>21213</td><td>Baltimore</td><td>MD</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>53215</td><td>West milwaukee</td><td>WI</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>87110</td><td>Albuquerque</td><td>NM</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>91326</td><td>Porter ranch</td><td>CA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>95691</td><td>West sacramento</td><td>CA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>30033</td><td>Decatur</td><td>GA</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>68127</td><td>Ralston</td><td>NE</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>27609</td><td>Raleigh</td><td>NC</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>55414</td><td>Minneapolis</td><td>MN</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>33125</td><td>Miami</td><td>FL</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr><tr><td>32801</td><td>Orlando</td><td>FL</td><td>Amazon Fresh</td><td>Mar 21, 2026</td></tr></tbody>
+    </table>
+  </section>
+</div>
+
+<script>
+// ── View switcher ─────────────────────────────────────────────────────────────
+function showView(id, btn) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  if (id === 'map-view' && window._map) window._map.invalidateSize();
+}
+
+// ── Map ───────────────────────────────────────────────────────────────────────
+const MAP_POINTS = [{"lat":34.385929938629445,"lng":-110.98438060363539,"zip":"85021","city":"Phoenix","state":"AZ","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":34.20683396172423,"lng":-110.90880182734635,"zip":"85712","city":"Tucson","state":"AZ","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":37.04356760389905,"lng":-119.58502651246273,"zip":"93727","city":"Fresno","state":"CA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":36.8345980106562,"lng":-119.46183231979482,"zip":"91326","city":"Porter ranch","state":"CA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":36.92674696394773,"lng":-119.22486573022461,"zip":"95823","city":"Sacramento","state":"CA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":36.778690530254565,"lng":-119.29620220065131,"zip":"95828","city":"Sacramento","state":"CA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":36.96281521772812,"lng":-119.47690344777772,"zip":"92123","city":"San diego","state":"CA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":36.66719946376733,"lng":-119.2904703341632,"zip":"94107","city":"San francisco","state":"CA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":37.03702683982083,"lng":-119.23023604200141,"zip":"95691","city":"West sacramento","state":"CA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":39.06005547592881,"lng":-105.32552930316817,"zip":"80014","city":"Aurora","state":"CO","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":38.888006248648594,"lng":-76.84142980311344,"zip":"20009","city":"Washington","state":"DC","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":27.967089014640667,"lng":-81.59510261271163,"zip":"33125","city":"Miami","state":"FL","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":27.72085695277627,"lng":-81.77082506477657,"zip":"32801","city":"Orlando","state":"FL","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":27.90449551289218,"lng":-81.75311564957352,"zip":"33602","city":"Tampa","state":"FL","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":27.700792287937617,"lng":-81.41166233942756,"zip":"33610","city":"Tampa","state":"FL","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":27.86051702509756,"lng":-81.46122699230632,"zip":"33619","city":"Tampa","state":"FL","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":32.724710943303556,"lng":-83.55020433238178,"zip":"30315","city":"Atlanta","state":"GA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":32.72404994981644,"lng":-83.15827209545634,"zip":"30033","city":"Decatur","state":"GA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":42.0156182490627,"lng":-93.7137493645941,"zip":"52075","city":"Springbrook","state":"IA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":40.01758228597846,"lng":-89.2275565436062,"zip":"60626","city":"Chicago","state":"IL","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":39.97855547393723,"lng":-89.24456451958689,"zip":"60053","city":"Morton grove","state":"IL","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":40.14434753865866,"lng":-89.26527596750195,"zip":"60453","city":"Oak lawn","state":"IL","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":39.78221924490219,"lng":-86.4517671236238,"zip":"46231","city":"Bridgeport","state":"IN","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":39.7666293794079,"lng":-86.38989075757142,"zip":"46219","city":"Indianapolis","state":"IN","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":40.104493135909074,"lng":-86.53781730247165,"zip":"46077","city":"Zionsville","state":"IN","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":38.26846706308007,"lng":-98.63597430987305,"zip":"67207","city":"Eastborough","state":"KS","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":38.742920633924726,"lng":-98.55644038732626,"zip":"67203","city":"Wichita","state":"KS","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":38.465305551359,"lng":-98.5440828163455,"zip":"67205","city":"Wichita","state":"KS","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":38.56350552861627,"lng":-98.63905059249734,"zip":"67208","city":"Wichita","state":"KS","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":37.64049180666027,"lng":-85.100869098048,"zip":"40220","city":"Louisville","state":"KY","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":37.737709156164684,"lng":-85.38917657703021,"zip":"40219","city":"Okolona","state":"KY","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":39.10459189194587,"lng":-76.72380342095751,"zip":"21213","city":"Baltimore","state":"MD","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":39.303172235934014,"lng":-76.65057893393839,"zip":"21061","city":"Glen burnie","state":"MD","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":44.43913279113569,"lng":-85.50644224631769,"zip":"48104","city":"Ann arbor","state":"MI","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774184480},{"lat":44.490653356090256,"lng":-85.4175807848768,"zip":"48237","city":"Oak park","state":"MI","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":46.54274728063666,"lng":-92.95687042092429,"zip":"55414","city":"Minneapolis","state":"MN","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":38.59462134171586,"lng":-92.59295939436021,"zip":"64101","city":"Kansas city","state":"MO","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774184661},{"lat":35.585650455741764,"lng":-79.64368425775754,"zip":"28269","city":"Charlotte","state":"NC","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":35.47141857075537,"lng":-79.65666727105803,"zip":"28278","city":"Charlotte","state":"NC","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":35.69858150901098,"lng":-79.5844222436,"zip":"27609","city":"Raleigh","state":"NC","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":41.331040350115714,"lng":-100.03615989746953,"zip":"68108","city":"Omaha","state":"NE","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":41.44460186003375,"lng":-100.05571848077672,"zip":"68127","city":"Ralston","state":"NE","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":34.25328107603977,"lng":-105.87407140976781,"zip":"87107","city":"Albuquerque","state":"NM","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":34.69585246366145,"lng":-106.16944535402403,"zip":"87110","city":"Albuquerque","state":"NM","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":34.71199985331263,"lng":-106.31570994671063,"zip":"87122","city":"Albuquerque","state":"NM","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":38.251766919597344,"lng":-117.24566268471116,"zip":"89115","city":"Las vegas","state":"NV","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":38.39684207968999,"lng":-116.80042036268328,"zip":"89119","city":"Las vegas","state":"NV","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":43.134208664605644,"lng":-75.55165109311152,"zip":"12434","city":"Grand gorge","state":"NY","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":42.69192653462895,"lng":-75.29266538590547,"zip":"10010","city":"New york","state":"NY","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":42.83371997057722,"lng":-75.5095849747006,"zip":"11704","city":"West babylon","state":"NY","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":42.854425710643845,"lng":-75.69020414046801,"zip":"14221","city":"Williamsville","state":"NY","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":40.187607276221556,"lng":-82.68949443649382,"zip":"43026","city":"Hilliard","state":"OH","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774184661},{"lat":40.62702439872382,"lng":-82.80568996701739,"zip":"43228","city":"Lincoln village","state":"OH","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":40.502906599083175,"lng":-82.89565636361334,"zip":"45069","city":"West chester","state":"OH","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":40.413432055092265,"lng":-82.97828405338409,"zip":"43081","city":"Westerville","state":"OH","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":35.639190603019934,"lng":-96.8104435971265,"zip":"73552","city":"Indiahoma","state":"OK","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":41.06412078910538,"lng":-77.63337094342488,"zip":"19008","city":"Broomall","state":"PA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774184480},{"lat":40.861179818325056,"lng":-77.69107018370634,"zip":"15237","city":"Mc knight","state":"PA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774184661},{"lat":40.72416647629286,"lng":-77.76228694881945,"zip":"15642","city":"North huntingdon","state":"PA","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":41.07647257003114,"lng":-78.02320763658886,"zip":"19115","city":"Philadelphia","state":"PA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":40.83041953716851,"lng":-77.89207260580685,"zip":"19123","city":"Philadelphia","state":"PA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":41.11790319007883,"lng":-77.95941330390716,"zip":"19149","city":"Philadelphia","state":"PA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":41.07631441999936,"lng":-77.62496618159808,"zip":"18976","city":"Warrington","state":"PA","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":35.6679468418753,"lng":-86.68652485984347,"zip":"38117","city":"Memphis","state":"TN","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":35.7002288339724,"lng":-86.89300260964025,"zip":"38133","city":"Memphis","state":"TN","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":35.66387864432972,"lng":-86.84242701671346,"zip":"37203","city":"Nashville","state":"TN","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":35.69869050739692,"lng":-86.5735347429191,"zip":"37211","city":"Nashville","state":"TN","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":36.11126664896174,"lng":-86.70720057992017,"zip":"37217","city":"Nashville","state":"TN","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":35.9537556437762,"lng":-86.8917328252451,"zip":"37217","city":"Nashville","state":"TN","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.433571509010772,"lng":-99.16481359481773,"zip":"76012","city":"Arlington","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.575912251624256,"lng":-99.54026206715763,"zip":"76013","city":"Arlington","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.560725285954128,"lng":-99.50632263698684,"zip":"76014","city":"Arlington","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.5095285805102,"lng":-99.30891310492808,"zip":"76016","city":"Arlington","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.32557337573838,"lng":-99.46047796978473,"zip":"76017","city":"Arlington","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.602666601528583,"lng":-99.25511924853808,"zip":"78704","city":"Austin","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":31.532897394788815,"lng":-99.09685801682417,"zip":"78728","city":"Austin","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":31.709080015274033,"lng":-99.1399802551424,"zip":"77401","city":"Bellaire","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.30479402256558,"lng":-99.4056241681725,"zip":"75206","city":"Dallas","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.641339875230013,"lng":-99.14265927569446,"zip":"76106","city":"Fort worth","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":31.475456620504946,"lng":-99.44254340042939,"zip":"76116","city":"Fort worth","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.469700825421583,"lng":-99.29677826304261,"zip":"76131","city":"Fort worth","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774184403},{"lat":31.458368993238565,"lng":-99.49916129460135,"zip":"76137","city":"Fort worth","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.690310094935498,"lng":-99.2420248626618,"zip":"76177","city":"Fort worth","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.66297374285914,"lng":-99.49745580381224,"zip":"77005","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.44350651896589,"lng":-99.2571444438722,"zip":"77006","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.74587017553919,"lng":-99.4761979875493,"zip":"77008","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.711115372422622,"lng":-99.08539972653537,"zip":"77025","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.386028782539903,"lng":-99.20289472929534,"zip":"77035","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.5858550295007,"lng":-99.37913033355834,"zip":"77044","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.46000442445509,"lng":-99.27385891116955,"zip":"77065","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.74380195750928,"lng":-99.19821489023158,"zip":"77070","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.398997069459988,"lng":-99.45883381129846,"zip":"77074","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.271461034216188,"lng":-99.30864849245057,"zip":"77086","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.709232783481795,"lng":-99.28021745063091,"zip":"77092","city":"Houston","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":31.637993136340153,"lng":-99.17287041229046,"zip":"77095","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.344446910526543,"lng":-99.22853114990106,"zip":"77096","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.488278497464943,"lng":-99.33564350167794,"zip":"77098","city":"Houston","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.256048327114794,"lng":-99.16406685894886,"zip":"78219","city":"Kirby","state":"TX","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774149893},{"lat":31.418984267864953,"lng":-99.2125699848228,"zip":"78205","city":"San antonio","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":31.482438358773774,"lng":-99.34470546849396,"zip":"78218","city":"San antonio","state":"TX","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":44.26101179395171,"lng":-89.61870778494226,"zip":"53215","city":"West milwaukee","state":"WI","retailer_id":"amazon_fresh","retailer_name":"Amazon Fresh","confidence":70,"first_seen":1774149609},{"lat":44.33832730883549,"lng":-89.42174156636705,"zip":"53965","city":"Wisconsin dells","state":"WI","retailer_id":"kroger","retailer_name":"Kroger","confidence":70,"first_seen":1774184661}];
+const LOC_POINTS = [];
+const COLORS = {"amazon_fresh":"#e74c3c","amazon_same_day":"#3498db","kroger":"#2ecc71"};
+
+const map = L.map('map').setView([38.5, -96], 4);
+window._map = map;
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© <a href="https://openstreetmap.org">OpenStreetMap</a>',
+  maxZoom: 18
+}).addTo(map);
+
+// Layer groups per retailer
+const zipLayers = {};
+const locLayer = L.layerGroup().addTo(map);
+
+function buildZipLayers(retailerFilter) {
+  Object.values(zipLayers).forEach(lg => lg.clearLayers());
+
+  const points = retailerFilter
+    ? MAP_POINTS.filter(p => p.retailer_id === retailerFilter)
+    : MAP_POINTS;
+
+  points.forEach(p => {
+    if (!zipLayers[p.retailer_id]) {
+      zipLayers[p.retailer_id] = L.layerGroup().addTo(map);
+    }
+    const color = COLORS[p.retailer_id] || '#888';
+    const marker = L.circleMarker([p.lat, p.lng], {
+      radius: 6, color: color, fillColor: color,
+      fillOpacity: 0.7, weight: 1
+    });
+    marker.bindPopup(
+      '<b>' + p.zip + '</b> — ' + (p.city||'') + ', ' + p.state +
+      '<br><span style="color:' + color + '">' + p.retailer_name + '</span>' +
+      (p.confidence ? '<br>Confidence: ' + p.confidence + '%' : '') +
+      (p.first_seen ? '<br>First seen: ' + new Date(p.first_seen*1000).toLocaleDateString() : '')
+    );
+    zipLayers[p.retailer_id].addLayer(marker);
+  });
+
+  document.getElementById('map-count').textContent = points.length + ' zip codes shown';
+}
+
+function buildLocLayer(show) {
+  locLayer.clearLayers();
+  if (!show) return;
+  LOC_POINTS.forEach(p => {
+    const icon = L.divIcon({
+      html: '<div style="background:#fff;border:2px solid #333;border-radius:50%;width:10px;height:10px"></div>',
+      className:'', iconAnchor:[5,5]
+    });
+    L.marker([p.lat, p.lng], {icon})
+      .bindPopup('<b>Fulfillment Center</b><br>' + (p.address||'') + '<br><i>' + p.retailer_name + '</i>')
+      .addTo(locLayer);
+  });
+}
+
+buildZipLayers('');
+buildLocLayer(true);
+
+document.getElementById('map-retailer-filter').addEventListener('change', function() {
+  buildZipLayers(this.value);
+});
+document.getElementById('show-locations').addEventListener('change', function() {
+  buildLocLayer(this.checked);
+});
+
+// ── Data table ────────────────────────────────────────────────────────────────
+(function() {
+  const tbody = document.getElementById('cov-body');
+  const allRows = Array.from(tbody.querySelectorAll('tr'));
+  let filtered = allRows.slice();
+  let sortCol = -1, sortDir = 1, page = 0;
+  const PAGE = 250;
+
+  // State filter options
+  const states = [...new Set(allRows.map(r => r.dataset.state).filter(Boolean))].sort();
+  const stateEl = document.getElementById('filter-state');
+  states.forEach(s => { const o = document.createElement('option'); o.value=s; o.textContent=s; stateEl.appendChild(o); });
+
+  function applyFilter() {
+    const txt = document.getElementById('filter-text').value.toLowerCase();
+    const state = stateEl.value;
+    const retailer = document.getElementById('filter-retailer').value;
+    const avail = document.getElementById('filter-avail').value;
+
+    filtered = allRows.filter(row => {
+      if (state && row.dataset.state !== state) return false;
+      if (retailer && row.dataset.retailer !== retailer) return false;
+      if (avail !== '' && row.dataset.avail !== avail) return false;
+      if (txt) {
+        const t = Array.from(row.cells).map(c=>c.textContent).join(' ').toLowerCase();
+        if (!t.includes(txt)) return false;
+      }
+      return true;
+    });
+    if (sortCol >= 0) doSort();
+    page = 0;
+    render();
+  }
+
+  function doSort() {
+    filtered.sort((a, b) => {
+      const av = a.cells[sortCol]?.innerText?.trim() ?? '';
+      const bv = b.cells[sortCol]?.innerText?.trim() ?? '';
+      const an = parseFloat(av), bn = parseFloat(bv);
+      if (!isNaN(an) && !isNaN(bn)) return sortDir * (an - bn);
+      return sortDir * av.localeCompare(bv);
+    });
+  }
+
+  function render() {
+    const start = page * PAGE;
+    const slice = filtered.slice(start, start + PAGE);
+    tbody.innerHTML = '';
+    slice.forEach(r => tbody.appendChild(r));
+    const end = Math.min(start + slice.length, filtered.length);
+    document.getElementById('row-info').textContent =
+      filtered.length + ' rows matching filters';
+    document.getElementById('page-info').textContent =
+      'Page ' + (page+1) + '/' + Math.max(1, Math.ceil(filtered.length/PAGE));
+    document.getElementById('row-info2').textContent =
+      'Showing ' + (start+1) + '–' + end;
+    document.getElementById('prev-btn').disabled = page === 0;
+    document.getElementById('next-btn').disabled = end >= filtered.length;
+  }
+
+  document.getElementById('cov-table').querySelectorAll('th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = parseInt(th.dataset.col);
+      if (sortCol === col) sortDir *= -1; else { sortCol = col; sortDir = 1; }
+      document.querySelectorAll('#cov-table th').forEach(h => h.classList.remove('asc','desc'));
+      th.classList.add(sortDir===1?'asc':'desc');
+      doSort(); page = 0; render();
+    });
+  });
+
+  document.getElementById('prev-btn').addEventListener('click', () => { page--; render(); });
+  document.getElementById('next-btn').addEventListener('click', () => { page++; render(); });
+  ['filter-text','filter-state','filter-retailer','filter-avail'].forEach(id => {
+    document.getElementById(id).addEventListener('input', applyFilter);
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

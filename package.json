@@ -1,0 +1,19 @@
+{
+  "name": "fresh-coverage",
+  "version": "0.1.0",
+  "description": "Grocery delivery coverage tracker for competitive research",
+  "type": "module",
+  "scripts": {
+    "setup": "node src/setup_db.js",
+    "probe:search": "node src/search_probe.js",
+    "probe:direct": "node src/direct_probe.js",
+    "diff": "node src/diff.js",
+    "report": "node src/report.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "dotenv": "^16.4.1",
+    "node-fetch": "^3.3.2",
+    "undici": "^6.6.2"
+  }
+}
