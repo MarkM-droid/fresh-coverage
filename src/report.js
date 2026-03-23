@@ -67,6 +67,7 @@ function computeTimeline(db, retailers) {
     SELECT snapshot_date, retailer_id, total_cities_confirmed, total_cities_probed,
            total_signals, dmas_with_coverage
     FROM snapshot_totals
+    WHERE retailer_id IN ('amazon_fresh','amazon_same_day')
     ORDER BY snapshot_date ASC, retailer_id ASC
   `).all();
 
