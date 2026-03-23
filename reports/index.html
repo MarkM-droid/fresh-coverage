@@ -114,6 +114,29 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
+<div id="pw-overlay" style="position:fixed;inset:0;background:#0f172a;display:flex;align-items:center;justify-content:center;z-index:9999;font-family:sans-serif;">
+  <div style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:2.5rem 3rem;text-align:center;max-width:360px;width:90%;">
+    <div style="font-size:2rem;margin-bottom:0.5rem;">🛒</div>
+    <h2 style="color:#f1f5f9;margin:0 0 0.25rem;font-size:1.2rem;">Fresh Coverage Tracker</h2>
+    <p style="color:#94a3b8;font-size:0.85rem;margin:0 0 1.5rem;">Rivendell Advisors — Private</p>
+    <input id="pw-input" type="password" placeholder="Password" autofocus
+      style="width:100%;box-sizing:border-box;padding:0.6rem 0.8rem;border-radius:6px;border:1px solid #475569;background:#0f172a;color:#f1f5f9;font-size:1rem;margin-bottom:0.75rem;outline:none;"/>
+    <button onclick="checkPw()"
+      style="width:100%;padding:0.6rem;background:#3b82f6;color:#fff;border:none;border-radius:6px;font-size:1rem;cursor:pointer;">Enter</button>
+    <p id="pw-err" style="color:#f87171;font-size:0.8rem;margin:0.5rem 0 0;visibility:hidden;">Incorrect password</p>
+  </div>
+</div>
+<script>
+(function(){
+  if(sessionStorage.getItem('fc_auth')==='1'){document.getElementById('pw-overlay').style.display='none';}
+  document.getElementById('pw-input').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();});
+})();
+function checkPw(){
+  var v=document.getElementById('pw-input').value;
+  if(v==='Amazon'){sessionStorage.setItem('fc_auth','1');document.getElementById('pw-overlay').style.display='none';}
+  else{document.getElementById('pw-err').style.visibility='visible';document.getElementById('pw-input').value='';}
+}
+</script>
 <header>
   <h1>🛒 Amazon Same-Day Coverage — City &amp; DMA View</h1>
   <span>Rivendell Advisors &nbsp;·&nbsp; Mar 23, 2026, 06:03 AM PDT</span>
