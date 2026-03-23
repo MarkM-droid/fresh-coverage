@@ -1,0 +1,376 @@
+{
+  "amazon_fresh": {
+    "10452": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "11101": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "11572": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "11694": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "11733": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "11803": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "18976": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "19008": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "19115": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "19123": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "19149": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "20009": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "21061": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "21213": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "27609": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "28269": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "30033": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "32801": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "33125": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "37203": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "37211": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "37217": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "43081": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "43228": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "45069": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "46077": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "46231": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "48104": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "53215": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "55414": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "60053": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "60453": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "60626": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "68127": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "76106": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "76131": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "77092": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "78205": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "78218": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "78704": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "78728": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "80014": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "80216": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "85034": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "87110": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "89115": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "89119": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "90012": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "90045": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "91326": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "91367": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "91601": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "92123": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "94107": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "95691": {
+      "available": 1,
+      "confidence": 70,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "98107": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "98108": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "98122": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "98133": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "98144": {
+      "available": 2,
+      "confidence": 35,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "02108": {
+      "available": 0,
+      "confidence": 60,
+      "source": "brave_search",
+      "ts": 1774184480
+    },
+    "02482": {
+      "available": 0,
+      "confidence": 60,
+      "source": "brave_search",
+      "ts": 1774184480
+    }
+  }
+}
