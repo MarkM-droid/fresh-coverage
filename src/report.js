@@ -183,6 +183,7 @@ async function main() {
     const rows = db.prepare(`
       SELECT
         d.id as dma_id, d.name as dma_name, d.tier, d.tv_homes,
+        d.place_probe_status,
         COUNT(DISTINCT c.id) as cities_total,
         COUNT(DISTINCT CASE WHEN cc.available=1 THEN c.id END) as cities_confirmed,
         COUNT(DISTINCT CASE WHEN cc.available=0 THEN c.id END) as cities_unavailable,
@@ -493,10 +494,11 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
   <div class="legend" id="dma-legend" style="display:none">
     <div class="legend-title">DMA Coverage</div>
     <div class="choropleth-legend">
-      <span><span class="swatch" style="background:#1a8040"></span>High (&ge;50% cities)</span>
-      <span><span class="swatch" style="background:#3cb371"></span>Some (&lt;50%)</span>
-      <span><span class="swatch" style="background:#b8860b"></span>Probed, 0%</span>
-      <span><span class="swatch" style="background:#444"></span>Not yet probed</span>
+      <span><span class="swatch" style="background:#10b981"></span>Confirmed coverage</span>
+      <span><span class="swatch" style="background:#f59e0b"></span>Likely (Fresh facility)</span>
+      <span><span class="swatch" style="background:#6366f1"></span>Possible (Amazon facility)</span>
+      <span><span class="swatch" style="background:#374151"></span>Unlikely (no facility)</span>
+      <span><span class="swatch" style="background:#1e293b"></span>Not assessed</span>
     </div>
   </div>
 </div>
@@ -806,16 +808,34 @@ function getDmaDataForRetailer() {
   return window.DMA_DATA[key] || [];
 }
 
+function dmaStatus(d) {
+  // Determines coverage status of a DMA for coloring
+  if (!d) return 'unknown';
+  if (d.cities_confirmed > 0) return 'confirmed';       // At least 1 city confirmed — DMA covered
+  if (d.place_probe_status === 'has_fresh') return 'likely';  // Fresh/SSD facility found
+  if (d.place_probe_status === 'has_facility') return 'possible'; // Other Amazon facility found
+  if (d.place_probe_status === 'no_facility') return 'unlikely'; // Probed, no facility found
+  return 'unknown';  // Not yet probed
+}
+
 function dmaColor(d) {
-  if (!d || d.cities_probed === 0) return '#404060';
-  if (d.cities_confirmed === 0) return '#b8860b';
-  if (d.coverage_pct >= 50) return '#1a8040';
-  return '#3cb371';
+  switch(dmaStatus(d)) {
+    case 'confirmed':  return '#10b981'; // green — at least 1 city confirmed
+    case 'likely':     return '#f59e0b'; // amber — fresh/SSD facility, unconfirmed
+    case 'possible':   return '#6366f1'; // indigo — general Amazon facility, unconfirmed
+    case 'unlikely':   return '#374151'; // dark gray — probed, no facility found
+    default:           return '#1e293b'; // near-black — not yet assessed
+  }
 }
 
 function dmaFillOpacity(d) {
-  if (!d || d.cities_probed === 0) return 0.25;
-  return 0.65;
+  switch(dmaStatus(d)) {
+    case 'confirmed': return 0.75;
+    case 'likely':    return 0.65;
+    case 'possible':  return 0.55;
+    case 'unlikely':  return 0.3;
+    default:          return 0.2;
+  }
 }
 
 async function showDmaLayer() {
@@ -853,15 +873,26 @@ async function showDmaLayer() {
       const key = stateFips + '|' + countyName;
       const dmaId = COUNTY_TO_DMA[key];
       const d = dmaId ? dmaMap[dmaId] : null;
+      const status = dmaStatus(d);
+      const statusLabel = {
+        confirmed: '✅ Confirmed coverage',
+        likely:    '🟡 Likely (Fresh facility found)',
+        possible:  '🔵 Possible (Amazon facility found)',
+        unlikely:  '⚫ Unlikely (no facility found)',
+        unknown:   '⬜ Not yet assessed'
+      }[status] || '';
       layer.bindPopup(
         '<b>' + feature.properties.NAME + ' County</b>' +
         (d
           ? '<br>DMA: <b>' + d.dma_name + '</b>' +
-            '<br>Cities confirmed: ' + d.cities_confirmed + ' / ' + d.cities_total +
-            '<br>Coverage: ' + d.coverage_pct.toFixed(1) + '%' +
-            (d.top_cities && d.top_cities.length
-              ? '<br><small>' + d.top_cities.slice(0,3).join(', ') + '</small>'
-              : '')
+            '<br>' + statusLabel +
+            (d.cities_confirmed > 0
+              ? '<br>Confirmed cities: ' + d.cities_confirmed +
+                (d.top_cities && d.top_cities.length
+                  ? ' <small>(' + d.top_cities.slice(0,3).join(', ') + ')</small>'
+                  : '')
+              : '') +
+            '<br><small>Probed: ' + d.cities_probed + ' / ' + d.cities_total + ' cities</small>'
           : '<br><i>No DMA data</i>')
       );
     }
@@ -904,12 +935,14 @@ function toggleDmaPanel() {
 function refreshDmaPanel() {
   const dmaArr = getDmaDataForRetailer();
   const total = dmaArr.length;
-  const covered = dmaArr.filter(d => d.cities_confirmed > 0).length;
-  const avgPct = total ? (dmaArr.reduce((s,d) => s + d.coverage_pct, 0) / total) : 0;
+  const confirmed = dmaArr.filter(d => d.cities_confirmed > 0).length;
+  const likely = dmaArr.filter(d => dmaStatus(d) === 'likely').length;
+  const possible = dmaArr.filter(d => dmaStatus(d) === 'possible').length;
 
   document.getElementById('stat-total').textContent = total;
-  document.getElementById('stat-covered').textContent = covered;
-  document.getElementById('stat-pct').textContent = avgPct.toFixed(1) + '%';
+  document.getElementById('stat-covered').textContent = confirmed;
+  document.getElementById('stat-pct').textContent =
+    (confirmed + likely) + ' confirmed/likely (' + Math.round((confirmed+likely)/total*100) + '%)';
 
   const top20 = dmaArr
     .filter(d => d.tv_homes)
@@ -917,13 +950,13 @@ function refreshDmaPanel() {
     .slice(0, 20);
 
   const fmt = n => n ? n.toLocaleString() : '—';
+  const statusLabelShort = { confirmed:'✅', likely:'🟡', possible:'🔵', unlikely:'⚫', unknown:'⬜' };
   const tbody = document.getElementById('dma-stats-body');
   tbody.innerHTML = '';
   top20.forEach((d, i) => {
-    const pct = d.coverage_pct.toFixed(1);
-    const dotColor = d.cities_confirmed > 0
-      ? (d.coverage_pct >= 50 ? '#1a8040' : '#3cb371')
-      : (d.cities_probed > 0 ? '#b8860b' : '#404060');
+    const status = dmaStatus(d);
+    const dotColor = dmaColor(d);
+    const statusIcon = statusLabelShort[status] || '';
     const tr = document.createElement('tr');
     tr.className = 'dma-row';
     tr.innerHTML =
@@ -931,8 +964,8 @@ function refreshDmaPanel() {
       '<td style="color:#eef"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + dotColor + ';margin-right:6px"></span>' + d.dma_name + '</td>' +
       '<td style="color:#88a">' + d.tier + '</td>' +
       '<td style="color:#ccd">' + fmt(d.tv_homes) + '</td>' +
-      '<td style="color:#' + (d.cities_confirmed > 0 ? '3cb371' : '666') + '">' + d.cities_confirmed + '</td>' +
-      '<td style="color:#ccd">' + pct + '%</td>';
+      '<td style="color:#' + (d.cities_confirmed > 0 ? '3cb371' : '666') + '">' + statusIcon + ' ' + d.cities_confirmed + '</td>' +
+      '<td style="color:#ccd">' + d.cities_probed + '/' + d.cities_total + '</td>';
     tr.addEventListener('click', () => {
       document.querySelectorAll('#dma-stats-body .dma-row').forEach(r => r.classList.remove('dma-highlighted'));
       tr.classList.add('dma-highlighted');
