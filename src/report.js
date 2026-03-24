@@ -231,6 +231,7 @@ async function main() {
     probesDone: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='done'").get().n,
     probesPending: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='pending'").get().n,
     avgConfidence: db.prepare("SELECT ROUND(AVG(confidence),1) as a FROM city_coverage WHERE available=1").get().a,
+    totalLocations: db.prepare("SELECT COUNT(*) as n FROM locations").get().n,
   };
 
   db.close();
@@ -614,16 +615,45 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
     <p>All 31,913 US zip codes are mapped to their DMA via a spatial centroid crosswalk (zip centroid plotted against DMA boundary polygons). Cities inherit their DMA from the plurality DMA of their zip codes.</p>
 
     <h3>3. Amazon's Same-Day Delivery Facility Network</h3>
-    <p>Amazon operates a network of <strong>Same-Day Delivery (SSD) sites</strong> — a mix of purpose-built facilities and retrofitted existing distribution centers — that have been upgraded with temperature-controlled zones and specialized cold-chain handling to support perishable grocery fulfillment. These are distinct from Amazon Fresh dark stores and traditional large fulfillment centers. Amazon describes them as its "specialized temperature-controlled fulfillment network," using the same insulated recyclable bags as Amazon Fresh and Whole Foods Market deliveries. Facilities typically run ~150,000–270,000 sq ft and use Amazon Flex contract drivers for final-mile delivery.</p>
-    <p>Multiple Amazon press releases and local news articles have confirmed the service radius at <strong>50 miles</strong> for these facilities:</p>
-    <ul>
-      <li>Council Bluffs, IA facility (serving Omaha metro): "covers a 50-mile radius" — KETV, Dec 2024</li>
-      <li>Ankeny, IA facility (serving Des Moines): "within 50 miles" — Des Moines Register, Dec 2024</li>
-    </ul>
-    <p>This means a single facility can serve an entire DMA. When we confirm coverage in a core city, we treat the surrounding 50-mile area as likely covered and probe suburbs accordingly.</p>
+    <p>Amazon operates a network of <strong>Sub-Same-Day (SSD) fulfillment centers</strong> — purpose-built or retrofitted facilities with temperature-controlled zones for perishable grocery fulfillment. These are distinct from standard Amazon delivery stations and traditional large fulfillment centers. Amazon describes them as its "specialized temperature-controlled fulfillment network," using the same insulated recyclable bags as Amazon Fresh and Whole Foods Market deliveries. Facilities typically run ~150,000–270,000 sq ft and use Amazon Flex contract drivers for final-mile delivery.</p>
+    <p>Multiple Amazon press releases and local news articles have confirmed the service radius at <strong>50 miles</strong> for these facilities. This means a single facility can serve an entire DMA — when we confirm coverage in a core city, the surrounding 50-mile area is treated as likely covered and probed accordingly.</p>
+    <p><strong>Important distinction:</strong> The presence of an Amazon facility (fulfillment center, delivery station, warehouse) is a necessary but not sufficient condition for same-day grocery availability. Standard delivery infrastructure does not imply perishable grocery capability. Facility presence is used as a prioritization signal — not as confirmation of grocery coverage.</p>
 
-    <h3>4. Probe Strategy by DMA Tier</h3>
-    <p>DMAs are tiered by TV household count and probed with different strategies proportional to their complexity:</p>
+    <h3>4. Facility Data Sources</h3>
+    <p>We maintain a database of <strong>${methodStats.totalLocations || '1,000+'} Amazon facility locations</strong> across the United States, drawn from three sources with different confidence levels:</p>
+    <table class="method-table">
+      <thead><tr><th>Source</th><th>Confidence Tier</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Brave Place Search API</strong></td><td>🟡 Inferred</td><td>Real-time POI index query (200M+ locations). Searched "Amazon Fresh", "Amazon warehouse", "Amazon fulfillment center", and "Amazon delivery station" within 60km of each DMA centroid. Results cross-referenced against Amazon's naming conventions (station codes: DAL3, BWI1, DPH8, etc.).</td></tr>
+        <tr><td><strong>Community warehouse list</strong></td><td>⚫ External/Unverified</td><td>Crowdsourced US Amazon warehouse address list (~1,042 entries, sourced March 2026). Provides broad geographic coverage but does not indicate facility type or grocery capability. Used as a targeting list only — not as coverage confirmation.</td></tr>
+      </tbody>
+    </table>
+    <p>On the map, facility dots are color-coded by confidence tier: <span style="color:#fbbf24">●</span> Inferred (Place Search) &nbsp; <span style="color:#9ca3af">●</span> External/Unverified.</p>
+
+    <h3>5. DMA Coverage Status Model</h3>
+    <p>Each DMA is assigned one of five coverage statuses, shown as the choropleth color on the DMA map view:</p>
+    <table class="method-table">
+      <thead><tr><th>Status</th><th>Color</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Confirmed</strong></td><td><span style="color:#10b981">●</span> Green</td><td>At least one city in this DMA has confirmed same-day grocery availability via web search evidence or official announcement. Strong signal the DMA is served.</td></tr>
+        <tr><td><strong>Likely</strong></td><td><span style="color:#f59e0b">●</span> Amber</td><td>A Fresh hub, SSD facility, or Amazon Fresh distribution center was found in this DMA via Place Search. High probability of grocery coverage — not yet confirmed by search evidence.</td></tr>
+        <tr><td><strong>Possible</strong></td><td><span style="color:#6366f1">●</span> Indigo</td><td>A general Amazon facility (fulfillment center, delivery station, warehouse) was found in this DMA. Infrastructure is present; grocery-specific capability unconfirmed.</td></tr>
+        <tr><td><strong>Unlikely</strong></td><td><span style="color:#374151">●</span> Dark gray</td><td>DMA was probed via Place Search and no Amazon facilities were found within 60km of the DMA centroid. Low probability of same-day grocery coverage.</td></tr>
+        <tr><td><strong>Not assessed</strong></td><td><span style="color:#1e293b">●</span> Near-black</td><td>DMA has not yet been evaluated via Place Search or web probes.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>6. Probe Strategy and Queue Prioritization</h3>
+    <p>Daily web search probes (Brave Search API) are prioritized by DMA coverage status and tier. DMAs with confirmed Fresh/SSD facilities are probed first, no-facility DMAs are deprioritized.</p>
+    <table class="method-table">
+      <thead><tr><th>DMA Status</th><th>Queue Priority Multiplier</th></tr></thead>
+      <tbody>
+        <tr><td>Confirmed + has_fresh facility</td><td>3× base priority</td></tr>
+        <tr><td>Has general Amazon facility</td><td>1.5× base priority</td></tr>
+        <tr><td>No facility found</td><td>0.3× base priority</td></tr>
+      </tbody>
+    </table>
+    <p>Within each priority band, DMAs are further tiered by TV household count:</p>
     <table class="method-table">
       <thead><tr><th>Tier</th><th>DMA Ranks</th><th>TV Homes</th><th>Methods</th><th>Queries/DMA</th></tr></thead>
       <tbody>
@@ -634,59 +664,48 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <tr><td><strong>Micro</strong></td><td>171–210</td><td>&lt;100K</td><td>Skipped</td><td>0</td></tr>
       </tbody>
     </table>
-    <p>The probe queue processes DMAs in priority order (highest rank first). As of the current run, <strong>${methodStats.probesDone} queries</strong> have been completed and <strong>${methodStats.probesPending} remain queued</strong>.</p>
+    <p>As of the current run, <strong>${methodStats.probesDone} queries</strong> have been completed and <strong>${methodStats.probesPending} remain queued</strong>.</p>
 
-    <h3>5. Signal Sources</h3>
-    <p>Each data point in our <code>signals</code> table is tagged with a source and type:</p>
+    <h3>7. Signal Sources and Confidence</h3>
+    <p>Each city coverage record is tagged with a source and confidence tier:</p>
     <table class="method-table">
-      <thead><tr><th>Source</th><th>Signal Types</th><th>Confidence Assigned</th></tr></thead>
+      <thead><tr><th>Source</th><th>Confidence Tier</th><th>Score</th></tr></thead>
       <tbody>
-        <tr><td><strong>Official announcement</strong></td><td>Confirmed available</td><td>90%</td></tr>
-        <tr><td><strong>Brave search — news</strong></td><td>Confirmed available / unavailable / mention</td><td>70–75% / 40%</td></tr>
-        <tr><td><strong>Brave search — plain language</strong></td><td>"Can I get same-day fresh groceries from Amazon in [city]"</td><td>65–75%</td></tr>
-        <tr><td><strong>Reddit / social</strong></td><td>User-reported availability</td><td>60–70%</td></tr>
-        <tr><td><strong>DMA inference</strong></td><td>Inferred from confirmed neighboring cities within 50mi radius</td><td>50–60%</td></tr>
-        <tr><td><strong>Playwright (manual validation)</strong></td><td>Direct zip check at amazon.com/grocery</td><td>95%+</td></tr>
+        <tr><td><strong>Official Amazon announcement</strong></td><td>✅ Verified</td><td>90%</td></tr>
+        <tr><td><strong>Brave web search — news/plain language</strong></td><td>✅ Verified</td><td>65–75%</td></tr>
+        <tr><td><strong>Reddit / social</strong></td><td>✅ Verified</td><td>60–70%</td></tr>
+        <tr><td><strong>Brave Place Search (facility found)</strong></td><td>🟡 Inferred</td><td>85%</td></tr>
+        <tr><td><strong>Direct zip check via amazon.com/grocery</strong></td><td>✅ Verified</td><td>95%+</td></tr>
       </tbody>
     </table>
-
-    <h3>6. Confidence Model</h3>
-    <p>Each city-level coverage record carries a confidence score (0–100). Scores are assigned at signal creation and can be upgraded as stronger signals arrive:</p>
-    <ul>
-      <li><strong>50</strong> — Default / single mention with no direct confirmation</li>
-      <li><strong>60–70</strong> — News article or social post mentioning the city</li>
-      <li><strong>75</strong> — Brave search result with explicit availability language</li>
-      <li><strong>90</strong> — Official Amazon press release or announcement</li>
-      <li><strong>95+</strong> — Direct zip-code check via amazon.com/grocery (Playwright validation)</li>
-    </ul>
-    <p>DMA-level coverage is a rollup: the percentage of known cities in that DMA with at least one confirmed signal. DMA confidence reflects the average city confidence within the DMA.</p>
     <p><em>Current average city confidence: <strong>${methodStats.avgConfidence}%</strong></em></p>
 
-    <h3>7. Known Limitations</h3>
+    <h3>8. Known Limitations</h3>
     <ul>
-      <li><strong>Signals are biased toward availability.</strong> People post when a service works, rarely when it doesn't. Confirmed unavailability is harder to find and underrepresented.</li>
-      <li><strong>City count vs. zip code coverage.</strong> Amazon uses zip codes internally. A city may have partial coverage (some zips yes, some no). Our city-level data is a simplification.</li>
-      <li><strong>DMA coverage % is a lower bound.</strong> We have confirmed cities for only a fraction of cities per DMA. The true coverage is almost certainly higher than our current percentage shows — we just haven't probed all cities yet.</li>
-      <li><strong>The 2,300 city figure may already be outdated.</strong> Amazon stated expansion would continue in 2026. The real number is likely higher today.</li>
-      <li><strong>Mega-DMA neighborhood granularity.</strong> In markets like Los Angeles, coverage varies block-by-block. A DMA-level "covered" designation may mask significant intra-DMA gaps.</li>
+      <li><strong>Facility presence ≠ grocery coverage.</strong> The most important caveat: Amazon infrastructure dots on the map indicate logistics capability, not confirmed perishable grocery delivery. A standard delivery station handles packages, not cold-chain groceries.</li>
+      <li><strong>Signals are biased toward availability.</strong> People post when a service works, rarely when it doesn't. Confirmed unavailability is underrepresented.</li>
+      <li><strong>City count vs. zip code coverage.</strong> Amazon uses zip codes internally. A city may have partial coverage. Our city-level data is a simplification.</li>
+      <li><strong>DMA confirmed count is a lower bound.</strong> One confirmed city in a DMA is strong evidence the whole metro is served — but we may have only confirmed a fraction of the cities actually covered.</li>
+      <li><strong>The 2,300 city figure may already be outdated.</strong> Amazon stated expansion would continue in 2026. The true number is likely higher.</li>
+      <li><strong>External warehouse list quality.</strong> The community-sourced facility list contains typos, duplicates, and outdated entries. All entries from this source are marked "external/unverified" and treated as targeting signals only.</li>
     </ul>
 
-    <h3>8. Daily Probe Schedule</h3>
-    <p>The probe pipeline runs automatically at <strong>6:00 AM PT daily</strong>:</p>
-    <ol>
-      <li><code>city_probe.js</code> — Brave search sweep across top metros</li>
-      <li><code>dma_probe.js --max 30</code> — Works 30 queries from the priority queue</li>
-      <li><code>snapshot.js</code> — Captures daily rollup for timeline tracking</li>
-      <li><code>report.js</code> — Regenerates this HTML report</li>
-    </ol>
-    <p>Results are delivered via Telegram and email summary. The timeline chart accumulates one data point per day — projections toward completion will become available after approximately one week of data.</p>
-
-    <h3>9. Technology Stack</h3>
+    <h3>9. Daily Operations</h3>
+    <p>The probe pipeline runs automatically four times daily:</p>
     <ul>
-      <li><strong>Database:</strong> SQLite (better-sqlite3) — 31,913 zip codes, 29,700 cities, 210 DMAs, cumulative signals log</li>
-      <li><strong>Search API:</strong> Brave Search API — web, news, and social signals</li>
-      <li><strong>Map:</strong> Leaflet.js with OpenStreetMap tiles + US county GeoJSON choropleth</li>
+      <li><strong>6:00 AM PT</strong> — Full scan: city probe + DMA probe (30 queries) + snapshot + report regeneration + GitHub Pages publish + email summary</li>
+      <li><strong>10:00 AM, 2:00 PM, 6:00 PM PT</strong> — DMA probe only (30 queries each) + snapshot + report</li>
+    </ul>
+    <p>Total: ~120 Brave API queries/day (~$0.60/day at $5/1,000 queries).</p>
+
+    <h3>10. Technology Stack</h3>
+    <ul>
+      <li><strong>Database:</strong> SQLite (better-sqlite3) — 31,666 zip codes with coordinates, ~29,700 cities, 210 DMAs, 1,086 facility locations, cumulative signals log</li>
+      <li><strong>Search:</strong> Brave Search API — web/news search + Place Search (POI discovery)</li>
+      <li><strong>Coordinates:</strong> Kaggle US ZIP Codes dataset (Dec 2023) — centroid lat/lng for 41,483 zip codes</li>
+      <li><strong>Map:</strong> Leaflet.js + OpenStreetMap + US county GeoJSON choropleth</li>
       <li><strong>Charts:</strong> Chart.js</li>
+      <li><strong>Publishing:</strong> GitHub Pages (auto-pushed daily)</li>
       <li><strong>Runtime:</strong> Node.js 22, macOS, OpenClaw AI assistant orchestration</li>
     </ul>
 
