@@ -255,9 +255,10 @@ async function main() {
     }));
 
   const locPoints = locations.map(l => {
-    // Try to extract lat/lng from zip if available
     return { lat: l.lat, lng: l.lng, address: l.address_raw,
-             retailer_id: l.retailer_id, retailer_name: l.retailer_name, zip: l.zip };
+             retailer_id: l.retailer_id, retailer_name: l.retailer_name,
+             zip: l.zip, type: l.type,
+             confidence_tier: l.confidence_tier || 'external_unverified' };
   }).filter(l => l.lat && l.lng);
 
   // Build table rows HTML — city-first
@@ -474,7 +475,12 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       <option value="all">All cities</option>
     </select>
     <label style="font-size:12px;color:#555">
-      <input type="checkbox" id="show-locations" checked> Show fulfillment centers
+      <input type="checkbox" id="show-locations" checked> Show facilities
+      <span style="margin-left:12px;font-size:0.8em;opacity:0.75">
+        <span style="color:#34d399">●</span> Verified &nbsp;
+        <span style="color:#fbbf24">●</span> Inferred &nbsp;
+        <span style="color:#9ca3af">●</span> Unverified
+      </span>
     </label>
     <span style="font-size:11px;color:#888" id="map-count"></span>
     <button class="dma-toggle-btn" onclick="toggleDmaPanel()">DMA Stats ▶</button>
@@ -750,14 +756,29 @@ function buildZipLayers(retailerFilter) {
 function buildLocLayer(show) {
   locLayer.clearLayers();
   if (!show) return;
+
+  // Color and size by confidence tier
+  const tierStyle = {
+    'inferred':             { color: '#f59e0b', fill: '#fbbf24', radius: 6, opacity: 0.85, label: 'Inferred (Place Search)' },
+    'external_unverified':  { color: '#6b7280', fill: '#9ca3af', radius: 4, opacity: 0.55, label: 'External List (Unverified)' },
+    'verified':             { color: '#10b981', fill: '#34d399', radius: 7, opacity: 0.9,  label: 'Verified' },
+  };
+
   LOC_POINTS.forEach(p => {
-    const icon = L.divIcon({
-      html: '<div style="background:#fff;border:2px solid #333;border-radius:50%;width:10px;height:10px"></div>',
-      className:'', iconAnchor:[5,5]
+    const style = tierStyle[p.confidence_tier] || tierStyle['external_unverified'];
+    const marker = L.circleMarker([p.lat, p.lng], {
+      radius: style.radius,
+      color: style.color,
+      fillColor: style.fill,
+      fillOpacity: style.opacity,
+      weight: 1.5
     });
-    L.marker([p.lat, p.lng], {icon})
-      .bindPopup('<b>Fulfillment Center</b><br>' + (p.address||'') + '<br><i>' + p.retailer_name + '</i>')
-      .addTo(locLayer);
+    marker.bindPopup(
+      '<b>' + (p.type || 'Amazon Facility') + '</b>' +
+      '<br>' + (p.address || '') +
+      '<br><span style="font-size:0.85em;color:' + style.color + '">● ' + style.label + '</span>'
+    );
+    locLayer.addLayer(marker);
   });
 }
 
