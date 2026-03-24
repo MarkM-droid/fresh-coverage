@@ -125,27 +125,39 @@ function log(msg, logFile) {
 }
 
 // ─── DB helpers ───────────────────────────────────────────────────────────────
-function upsertCity(db, retailer_id, city, state, available, confidence, source_url, source) {
+function upsertCity(db, retailer_id, city, state, available, confidence, source_url, source, snippet = null, query = null) {
   const now = Math.floor(Date.now() / 1000);
   const existing = db.prepare(
     'SELECT available FROM city_coverage WHERE retailer_id=? AND city=? AND state=?'
   ).get(retailer_id, city, state);
 
+  const confidence_tier = ['dma_probe','brave_search','official_announcement'].includes(source) ? 'verified' : 'inferred';
+
   db.prepare(`
     INSERT INTO city_coverage
-      (retailer_id, city, state, available, first_seen, last_confirmed, source, source_url)
-    VALUES (@retailer_id, @city, @state, @available, @first_seen, @last_confirmed, @source, @source_url)
+      (retailer_id, city, state, available, first_seen, last_confirmed, source, source_url,
+       confidence, confidence_tier, evidence_snippet, evidence_query)
+    VALUES (@retailer_id, @city, @state, @available, @first_seen, @last_confirmed, @source, @source_url,
+            @confidence, @confidence_tier, @evidence_snippet, @evidence_query)
     ON CONFLICT(retailer_id, city, state) DO UPDATE SET
-      available      = excluded.available,
-      last_confirmed = excluded.last_confirmed,
-      source         = excluded.source,
-      source_url     = COALESCE(excluded.source_url, city_coverage.source_url)
+      available         = excluded.available,
+      last_confirmed    = excluded.last_confirmed,
+      source            = excluded.source,
+      source_url        = COALESCE(excluded.source_url, city_coverage.source_url),
+      confidence        = MAX(city_coverage.confidence, excluded.confidence),
+      confidence_tier   = CASE WHEN excluded.confidence_tier='verified' THEN 'verified' ELSE city_coverage.confidence_tier END,
+      evidence_snippet  = COALESCE(excluded.evidence_snippet, city_coverage.evidence_snippet),
+      evidence_query    = COALESCE(excluded.evidence_query, city_coverage.evidence_query)
   `).run({
     retailer_id, city, state, available,
     first_seen: existing ? undefined : now,
     last_confirmed: now,
     source,
     source_url,
+    confidence: confidence || 75,
+    confidence_tier,
+    evidence_snippet: snippet ? snippet.slice(0, 500) : null,
+    evidence_query: query || null,
   });
 
   return !existing && available === 1; // true if newly discovered
@@ -198,7 +210,9 @@ async function main() {
       for (const { city, state: st } of AMAZON_SAME_DAY_KNOWN) {
         const isNew = upsertCity(db, retailer.id, city, st, 1, 95,
           'https://www.aboutamazon.com/news/retail/amazon-same-day-fresh-grocery-delivery-united-states',
-          'official_announcement');
+          'official_announcement',
+          'Confirmed in Amazon official announcement: same-day grocery delivery available in over 2,300 US cities for Prime members.',
+          'Amazon official announcement Dec 2025');
         if (isNew) log(`  + ${city}, ${st} (official)`, logFile);
       }
       log(`Seed complete.`, logFile);
@@ -248,7 +262,8 @@ async function main() {
         const { available, confidence } = scoreResult(results, city, st);
         const sourceUrl = results[0]?.url || null;
 
-        const isNew = upsertCity(db, retailer.id, city, st, available, confidence, sourceUrl, 'brave_search');
+        const topSnippet = results[0]?.description || results[0]?.snippet || null;
+        const isNew = upsertCity(db, retailer.id, city, st, available, confidence, sourceUrl, 'brave_search', topSnippet, query);
 
         if (available === 1) {
           found++;

@@ -148,9 +148,11 @@ async function runQueue(db, retailerId, opts, logFile) {
   `);
   const upsertCity = db.prepare(`
     INSERT OR REPLACE INTO city_coverage
-      (retailer_id, city, state, available, dma_id, source, source_url, confidence, first_seen, last_confirmed)
+      (retailer_id, city, state, available, dma_id, source, source_url, confidence,
+       confidence_tier, evidence_snippet, evidence_query, first_seen, last_confirmed)
     VALUES (
       @retailer_id, @city, @state, 1, @dma_id, 'dma_probe', @source_url, 75,
+      'verified', @evidence_snippet, @evidence_query,
       COALESCE(
         (SELECT first_seen FROM city_coverage WHERE retailer_id=@retailer_id AND city=@city AND state=@state),
         unixepoch()
@@ -233,11 +235,13 @@ async function runQueue(db, retailerId, opts, logFile) {
       // Upsert city_coverage if confirmed available for a specific city
       if (signalType === 'confirmed_available' && taggedCity) {
         upsertCity.run({
-          retailer_id: retailerId,
-          city:        taggedCity,
-          state:       taggedState,
-          dma_id:      row.dma_id,
-          source_url:  sourceUrl,
+          retailer_id:      retailerId,
+          city:             taggedCity,
+          state:            taggedState,
+          dma_id:           row.dma_id,
+          source_url:       sourceUrl,
+          evidence_snippet: rawSnippet.slice(0, 500),
+          evidence_query:   row.query,
         });
         log(`    + city confirmed: ${taggedCity}, ${taggedState}`, logFile);
       }

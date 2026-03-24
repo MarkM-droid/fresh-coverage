@@ -139,7 +139,9 @@ async function main() {
     SELECT cc.city, cc.state, cc.available, cc.confidence, cc.source, cc.first_seen,
            cc.dma_id, d.name AS dma_name, d.tier,
            c.lat, c.lng,
-           cc.retailer_id, r.name AS retailer_name
+           cc.retailer_id, r.name AS retailer_name,
+           cc.source_url, cc.confidence_tier,
+           cc.evidence_snippet, cc.evidence_query
     FROM city_coverage cc
     LEFT JOIN cities c ON c.city=cc.city AND c.state=cc.state
     LEFT JOIN dmas d ON d.id=cc.dma_id
@@ -253,7 +255,11 @@ async function main() {
       lat: r.lat, lng: r.lng, city: r.city, state: r.state,
       retailer_id: r.retailer_id, retailer_name: r.retailer_name,
       dma_name: r.dma_name, tier: r.tier,
-      confidence: r.confidence, first_seen: r.first_seen
+      confidence: r.confidence, first_seen: r.first_seen,
+      confidence_tier: r.confidence_tier, source: r.source,
+      source_url: r.source_url,
+      evidence_snippet: r.evidence_snippet ? r.evidence_snippet.slice(0, 200) : null,
+      evidence_query: r.evidence_query
     }));
 
   const locPoints = locations.map(l => {
@@ -263,9 +269,19 @@ async function main() {
              confidence_tier: l.confidence_tier || 'external_unverified' };
   }).filter(l => l.lat && l.lng);
 
+  // Build provenance tooltip for a row
+  function provenanceHtml(r) {
+    const tierIcon = r.confidence_tier === 'verified' ? '✅' : r.confidence_tier === 'inferred' ? '🟡' : '⚫';
+    const parts = [`${tierIcon} ${esc(r.source) || 'unknown'}`];
+    if (r.evidence_query) parts.push(`Query: <em>${esc(r.evidence_query)}</em>`);
+    if (r.evidence_snippet) parts.push(`"${esc(r.evidence_snippet.slice(0,200))}${r.evidence_snippet.length > 200 ? '…' : ''}"`);
+    if (r.source_url) parts.push(`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">Source ↗</a>`);
+    return parts.join('<br>');
+  }
+
   // Build table rows HTML — city-first
   const tableRows = coverageRows.map(r => `
-<tr data-retailer="${esc(r.retailer_id)}" data-state="${esc(r.state)}" data-avail="${r.available}">
+<tr data-retailer="${esc(r.retailer_id)}" data-state="${esc(r.state)}" data-avail="${r.available}" class="has-provenance">
   <td>${esc(r.city)}</td>
   <td>${esc(r.state)}</td>
   <td>${esc(r.dma_name) || '—'}</td>
@@ -273,7 +289,10 @@ async function main() {
   <td>${esc(r.retailer_name)}</td>
   <td class="avail-${r.available===1?'yes':r.available===0?'no':'unk'}">${availLabel(r.available)}</td>
   <td>${r.confidence != null ? r.confidence+'%' : '—'}</td>
-  <td>${esc(r.source) || '—'}</td>
+  <td class="provenance-cell">
+    ${r.confidence_tier === 'verified' ? '✅' : r.confidence_tier === 'inferred' ? '🟡' : '⚫'} ${esc(r.source) || '—'}
+    <div class="provenance-tooltip">${provenanceHtml(r)}</div>
+  </td>
   <td>${fmt(r.first_seen)}</td>
 </tr>`).join('');
 
@@ -419,6 +438,11 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 .choropleth-legend .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
 #dma-city-list{background:#111126;border-radius:6px;padding:10px;margin-top:10px;font-size:12px;color:#ccd;display:none}
 #dma-city-list ul{margin:4px 0 0;padding-left:16px}
+/* Provenance tooltip */
+.provenance-cell{position:relative;cursor:help}
+.provenance-tooltip{display:none;position:absolute;right:0;top:100%;z-index:999;background:#1e293b;border:1px solid #334155;border-radius:8px;padding:10px 14px;width:340px;font-size:12px;line-height:1.6;color:#cbd5e1;white-space:normal;text-align:left;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.provenance-tooltip a{color:#60a5fa}
+.provenance-cell:hover .provenance-tooltip{display:block}
 /* Methodology view */
 .methodology{max-width:860px;margin:0 auto;padding:10px 0 40px}
 .methodology h2{font-size:22px;margin-bottom:6px;border-bottom:2px solid #e0e0e0;padding-bottom:10px}
@@ -761,12 +785,16 @@ function buildZipLayers(retailerFilter) {
       radius: 6, color: color, fillColor: color,
       fillOpacity: 0.7, weight: 1
     });
+    const tierIcon = p.confidence_tier === 'verified' ? '✅' : p.confidence_tier === 'inferred' ? '🟡' : '';
     marker.bindPopup(
       '<b>' + (p.city||'') + ', ' + p.state + '</b>' +
-      (p.dma_name ? '<br>DMA: ' + p.dma_name : '') +
-      '<br><span style="color:' + color + '">' + p.retailer_name + '</span>' +
-      (p.confidence ? '<br>Confidence: ' + p.confidence + '%' : '') +
-      (p.first_seen ? '<br>First seen: ' + new Date(p.first_seen*1000).toLocaleDateString() : '')
+      (p.dma_name ? '<br><small>DMA: ' + p.dma_name + '</small>' : '') +
+      '<br>' + tierIcon + ' ' + (p.source || '') +
+      (p.confidence ? ' · ' + p.confidence + '% confidence' : '') +
+      (p.evidence_query ? '<br><small>Query: <em>' + p.evidence_query + '</em></small>' : '') +
+      (p.evidence_snippet ? '<br><small style="color:#aaa">"' + p.evidence_snippet + '…"</small>' : '') +
+      (p.source_url ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source ↗</a>' : '') +
+      (p.first_seen ? '<br><small>First seen: ' + new Date(p.first_seen*1000).toLocaleDateString() + '</small>' : '')
     );
     zipLayers[p.retailer_id].addLayer(marker);
   });
