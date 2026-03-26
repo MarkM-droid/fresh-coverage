@@ -20,7 +20,7 @@
 
 import Database from 'better-sqlite3';
 import fetch from 'node-fetch';
-import { existsSync, mkdirSync, appendFileSync } from 'fs';
+import { existsSync, mkdirSync, appendFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -384,6 +384,25 @@ async function main() {
     log(`Top DMAs by confirmed cities:`, logFile);
     for (const d of topDmas) {
       log(`  ${d.name}: ${d.cities_confirmed} cities (${d.coverage_pct}%)`, logFile);
+    }
+  }
+
+  // Log API usage and check budget
+  const COST_PER_QUERY = 0.005;
+  const MONTHLY_BUDGET = 100;
+  if (queried > 0) {
+    const date = new Date().toISOString().slice(0, 10);
+    const cost = queried * COST_PER_QUERY;
+    db.prepare('INSERT INTO api_usage (date, source, queries, cost_usd) VALUES (?, ?, ?, ?)').run(date, 'dma_probe', queried, cost);
+    const month = date.slice(0, 7);
+    const monthTotal = db.prepare('SELECT SUM(queries) as q, SUM(cost_usd) as c FROM api_usage WHERE date LIKE ?').get(month + '%');
+    const pct = (monthTotal.c / MONTHLY_BUDGET * 100).toFixed(1);
+    log(`API usage: ${queried} queries this run | ${monthTotal.q} this month | $${monthTotal.c.toFixed(2)}/$${MONTHLY_BUDGET} (${pct}%)`, logFile);
+    if (monthTotal.c >= MONTHLY_BUDGET * 0.8) {
+      const alertMsg = `⚠️ BRAVE API BUDGET ALERT: $${monthTotal.c.toFixed(2)} of $${MONTHLY_BUDGET} used this month (${pct}%). Consider increasing budget.`;
+      log(alertMsg, logFile);
+      console.warn(alertMsg);
+      writeFileSync(join(PROJECT_ROOT, 'data', 'api_budget_alert.txt'), alertMsg);
     }
   }
 

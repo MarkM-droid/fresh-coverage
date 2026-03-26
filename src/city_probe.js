@@ -100,6 +100,9 @@ function scoreResult(results, city, state) {
 }
 
 // ─── Brave API ────────────────────────────────────────────────────────────────
+const COST_PER_QUERY = 0.005; // $5 per 1,000 queries
+const MONTHLY_BUDGET = 100;   // $100/month cap — alert at 80%
+
 async function braveSearch(query, apiKey) {
   const url = new URL(BRAVE_API_URL);
   url.searchParams.set('q', query);
@@ -114,6 +117,31 @@ async function braveSearch(query, apiKey) {
   if (res.status === 429) throw new Error('RATE_LIMITED');
   if (!res.ok) throw new Error(`Brave API ${res.status}`);
   return res.json();
+}
+
+function logApiUsage(db, source, queries) {
+  const date = new Date().toISOString().slice(0, 10);
+  const cost = queries * COST_PER_QUERY;
+  db.prepare(`
+    INSERT INTO api_usage (date, source, queries, cost_usd)
+    VALUES (?, ?, ?, ?)
+  `).run(date, source, queries, cost);
+
+  // Check monthly spend
+  const month = date.slice(0, 7);
+  const monthTotal = db.prepare(`
+    SELECT SUM(queries) as q, SUM(cost_usd) as cost FROM api_usage WHERE date LIKE ?
+  `).get(month + '%');
+
+  const pct = (monthTotal.cost / MONTHLY_BUDGET * 100).toFixed(1);
+  const alert = monthTotal.cost >= MONTHLY_BUDGET * 0.8;
+  return {
+    todayQueries: queries,
+    monthQueries: monthTotal.q,
+    monthCost: monthTotal.cost.toFixed(2),
+    pct,
+    alert,
+  };
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -218,15 +246,53 @@ async function main() {
       log(`Seed complete.`, logFile);
     }
 
-    // Build city list from cities table (has coordinates, ordered by state/city)
-    // Skip cities already checked within 3 days
-    let cityQuery = `SELECT city, state FROM cities WHERE 1=1`;
-    const params = [];
-    if (state) { cityQuery += ' AND state = ?'; params.push(state); }
-    cityQuery += ` ORDER BY state, city LIMIT ${limit}`;
+    // Build city list — prioritized by facility proximity
+    // Tier 1: cities in DMAs with confirmed Fresh/SSD facilities (has_fresh)
+    // Tier 2: cities in DMAs with any Amazon facility (has_facility)
+    // Tier 3: cities in DMAs with no facility found (no_facility / unprobed)
+    // Within each tier: prefer cities not recently checked (3-day window)
+    // Skip cities already confirmed available
+    const stateFilter = state ? 'AND c.state = ?' : '';
+    const stateParam  = state ? [state] : [];
 
-    const cities = db.prepare(cityQuery).all(...params);
-    log(`${cities.length} cities to probe (min pop: ${minPop}, limit: ${limit})`, logFile);
+    const cityQuery = `
+      SELECT c.city, c.state,
+        CASE d.place_probe_status
+          WHEN 'has_fresh'    THEN 1
+          WHEN 'has_facility' THEN 2
+          ELSE 3
+        END AS facility_tier,
+        -- Distance to nearest facility of any type (km), NULL if none
+        (SELECT MIN(
+            6371 * 2 * ASIN(SQRT(
+              POWER(SIN((RADIANS(l.lat) - RADIANS(c.lat)) / 2), 2) +
+              COS(RADIANS(c.lat)) * COS(RADIANS(l.lat)) *
+              POWER(SIN((RADIANS(l.lng) - RADIANS(c.lng)) / 2), 2)
+            ))
+          )
+          FROM locations l
+          WHERE l.retailer_id = ? AND l.lat IS NOT NULL AND l.lng IS NOT NULL
+            AND c.lat IS NOT NULL AND c.lng IS NOT NULL
+        ) AS dist_km
+      FROM cities c
+      LEFT JOIN dmas d ON d.id = c.dma_id
+      LEFT JOIN city_coverage cc ON cc.city = c.city AND cc.state = c.state
+        AND cc.retailer_id = ?
+      WHERE (cc.available IS NULL OR cc.available = 0)   -- skip already confirmed
+        AND (cc.last_confirmed IS NULL
+             OR cc.last_confirmed < unixepoch() - 86400*3) -- skip recently checked
+        ${stateFilter}
+      ORDER BY
+        facility_tier ASC,                  -- facility DMAs first
+        dist_km ASC NULLS LAST,             -- closest to a facility within tier
+        c.state, c.city
+      LIMIT ?
+    `;
+
+    const cities = db.prepare(cityQuery).all(retailer.id, retailer.id, ...stateParam, limit);
+    const facilityTierCounts = [0,0,0];
+    cities.forEach(c => facilityTierCounts[(c.facility_tier||3)-1]++);
+    log(`${cities.length} cities to probe | has_fresh DMAs: ${facilityTierCounts[0]}, has_facility: ${facilityTierCounts[1]}, other: ${facilityTierCounts[2]}`, logFile);
     if (dryRun) log('DRY RUN — no API calls', logFile);
 
     let checked = 0, found = 0, newFound = 0;
@@ -298,6 +364,19 @@ async function main() {
     log(`States with coverage: ${byState.length}`, logFile);
     log(`This run: checked=${checked}, found available=${found}, newly discovered=${newFound}`, logFile);
     log(`Top states: ${byState.slice(0,5).map(r => `${r.state}(${r.n})`).join(', ')}`, logFile);
+
+    // Log API usage and check budget
+    if (!dryRun && checked > 0) {
+      const usage = logApiUsage(db, 'city_probe', checked);
+      log(`API usage: ${usage.todayQueries} queries this run | ${usage.monthQueries} this month | $${usage.monthCost}/$${MONTHLY_BUDGET} (${usage.pct}%)`, logFile);
+      if (usage.alert) {
+        const alertMsg = `⚠️ BRAVE API BUDGET ALERT: $${usage.monthCost} of $${MONTHLY_BUDGET} used this month (${usage.pct}%). Consider increasing budget or reducing probe frequency.`;
+        log(alertMsg, logFile);
+        console.warn(alertMsg);
+        // Write alert file for cron to pick up
+        writeFileSync(join(PROJECT_ROOT, 'data', 'api_budget_alert.txt'), alertMsg);
+      }
+    }
 
     // Save snapshot
     const snapshot = db.prepare(`
