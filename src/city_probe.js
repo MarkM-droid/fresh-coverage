@@ -250,7 +250,7 @@ async function main() {
     // Tier 1: cities in DMAs with confirmed Fresh/SSD facilities (has_fresh)
     // Tier 2: cities in DMAs with any Amazon facility (has_facility)
     // Tier 3: cities in DMAs with no facility found (no_facility / unprobed)
-    // Within each tier: prefer cities not recently checked (3-day window)
+    // Within each tier: prefer cities not recently checked (14-day window)
     // Skip cities already confirmed available
     const stateFilter = state ? 'AND c.state = ?' : '';
     const stateParam  = state ? [state] : [];
@@ -280,7 +280,7 @@ async function main() {
         AND cc.retailer_id = ?
       WHERE (cc.available IS NULL OR cc.available = 0)   -- skip already confirmed
         AND (cc.last_confirmed IS NULL
-             OR cc.last_confirmed < unixepoch() - 86400*3) -- skip recently checked
+             OR cc.last_confirmed < unixepoch() - 86400*14) -- skip recently checked
         ${stateFilter}
       ORDER BY
         facility_tier ASC,                  -- facility DMAs first
@@ -298,11 +298,11 @@ async function main() {
     let checked = 0, found = 0, newFound = 0;
 
     for (const { city, state: st } of cities) {
-      // Skip if recently checked (within 3 days)
+      // Skip if recently checked (within 14 days)
       const recent = db.prepare(`
         SELECT last_confirmed FROM city_coverage
         WHERE retailer_id=? AND city=? AND state=?
-        AND last_confirmed > unixepoch() - 86400*3
+        AND last_confirmed > unixepoch() - 86400*14
       `).get(retailer.id, city, st);
       if (recent) continue;
 
