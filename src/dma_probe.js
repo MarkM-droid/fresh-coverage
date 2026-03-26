@@ -75,12 +75,39 @@ function buildProbeQueue(db, retailerId, rebuildQueue = false) {
     stratMap[s.tier] = { ...s, methods: JSON.parse(s.methods) };
   }
 
+  // If rebuild requested: reset all done entries back to pending
+  // Priority boost: has_fresh > has_facility > no_facility
+  if (rebuildQueue) {
+    const reset = db.prepare(`
+      UPDATE probe_queue SET
+        status = 'pending',
+        started_at = NULL,
+        finished_at = NULL,
+        result_summary = NULL,
+        priority = (
+          SELECT ROUND(pq2.priority *
+            CASE d.place_probe_status
+              WHEN 'has_fresh'    THEN 3.0
+              WHEN 'has_facility' THEN 1.5
+              WHEN 'no_facility'  THEN 0.3
+              ELSE 1.0
+            END
+          )
+          FROM probe_queue pq2
+          JOIN dmas d ON d.id = pq2.dma_id
+          WHERE pq2.id = probe_queue.id
+        )
+      WHERE retailer_id = ? AND status = 'done'
+    `).run(retailerId);
+    return reset.changes;
+  }
+
   const dmas = db.prepare('SELECT * FROM dmas ORDER BY id ASC').all();
 
   const checkExisting = db.prepare(`
     SELECT COUNT(*) as n FROM probe_queue
     WHERE retailer_id=? AND dma_id=? AND method=?
-    AND status IN (${rebuildQueue ? "'done'" : "'pending','done'"})
+    AND status IN ('pending','done')
   `);
 
   const insert = db.prepare(`
@@ -96,7 +123,7 @@ function buildProbeQueue(db, retailerId, rebuildQueue = false) {
 
     for (const method of strategy.methods) {
       const tmpl = QUERY_TEMPLATES[method];
-      if (!tmpl) continue; // skip zip_grid and unknown methods
+      if (!tmpl) continue;
 
       const existing = checkExisting.get(retailerId, dma.id, method);
       if (existing.n > 0) continue;

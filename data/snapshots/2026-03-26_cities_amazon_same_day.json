@@ -1,0 +1,8181 @@
+{
+  "retailer": "amazon_same_day",
+  "cities": [
+    {
+      "city": "Los Angeles",
+      "state": "CA",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "New York",
+      "state": "NY",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Orlando",
+      "state": "FL",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Kansas City",
+      "state": "MO",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Salt Lake City",
+      "state": "UT",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Fort Collins",
+      "state": "CO",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Omaha",
+      "state": "NE",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Sugar Land",
+      "state": "TX",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Des Moines",
+      "state": "IA",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Kennesaw",
+      "state": "GA",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Gaithersburg",
+      "state": "MD",
+      "available": 1,
+      "confidence": 50,
+      "source": "official_announcement",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Acton",
+      "state": "MT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152547
+    },
+    {
+      "city": "Acushnet",
+      "state": "MA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152549
+    },
+    {
+      "city": "Acworth",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152550
+    },
+    {
+      "city": "Acworth",
+      "state": "NH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152552
+    },
+    {
+      "city": "Ada",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152553
+    },
+    {
+      "city": "Ada",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152555
+    },
+    {
+      "city": "Ada",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152556
+    },
+    {
+      "city": "Adah",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152558
+    },
+    {
+      "city": "Adair",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152560
+    },
+    {
+      "city": "Adair",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152561
+    },
+    {
+      "city": "Adair",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152563
+    },
+    {
+      "city": "Adairsville",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152564
+    },
+    {
+      "city": "Adairville",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152566
+    },
+    {
+      "city": "Adamant",
+      "state": "VT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152567
+    },
+    {
+      "city": "Adams",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152569
+    },
+    {
+      "city": "Adams",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152570
+    },
+    {
+      "city": "Adams",
+      "state": "MA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152572
+    },
+    {
+      "city": "Adams",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152573
+    },
+    {
+      "city": "Adams",
+      "state": "ND",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152575
+    },
+    {
+      "city": "Adams",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152576
+    },
+    {
+      "city": "Adams",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152578
+    },
+    {
+      "city": "Adams",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152579
+    },
+    {
+      "city": "Adams",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152581
+    },
+    {
+      "city": "Adams",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152582
+    },
+    {
+      "city": "Adams center",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152584
+    },
+    {
+      "city": "Adams mills",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152585
+    },
+    {
+      "city": "Adamsburg",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152587
+    },
+    {
+      "city": "Adamstown",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152588
+    },
+    {
+      "city": "Adamsville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152590
+    },
+    {
+      "city": "\"Agoura Hills\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152590
+    },
+    {
+      "city": "Adamsville",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152592
+    },
+    {
+      "city": "\"Aliso Viejo\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152592
+    },
+    {
+      "city": "\"Amador City\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152593
+    },
+    {
+      "city": "Adamsville",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152593
+    },
+    {
+      "city": "Adamsville",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152595
+    },
+    {
+      "city": "\"American Canyon\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152595
+    },
+    {
+      "city": "Addington",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152596
+    },
+    {
+      "city": "\"Angels Camp\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152596
+    },
+    {
+      "city": "Addis",
+      "state": "LA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152598
+    },
+    {
+      "city": "\"Angelus Oaks\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152598
+    },
+    {
+      "city": "Addison",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152599
+    },
+    {
+      "city": "\"Apple Valley\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152599
+    },
+    {
+      "city": "Addison",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152601
+    },
+    {
+      "city": "\"Arroyo Grande\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152601
+    },
+    {
+      "city": "Addison",
+      "state": "ME",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152602
+    },
+    {
+      "city": "\"Avila Beach\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152602
+    },
+    {
+      "city": "Addison",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152604
+    },
+    {
+      "city": "\"Baldwin Park\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152604
+    },
+    {
+      "city": "Addison",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152606
+    },
+    {
+      "city": "\"Bass Lake\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152606
+    },
+    {
+      "city": "Addison",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152607
+    },
+    {
+      "city": "\"Beale Afb\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152607
+    },
+    {
+      "city": "Addison",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152609
+    },
+    {
+      "city": "\"Bell Gardens\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152609
+    },
+    {
+      "city": "\"Bella Vista\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152610
+    },
+    {
+      "city": "Addison township",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152610
+    },
+    {
+      "city": "\"Belvedere Tiburon\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152612
+    },
+    {
+      "city": "Addy",
+      "state": "WA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152612
+    },
+    {
+      "city": "\"Ben Lomond\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152613
+    },
+    {
+      "city": "Addyston",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152613
+    },
+    {
+      "city": "Adel",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152615
+    },
+    {
+      "city": "\"Berry Creek\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152615
+    },
+    {
+      "city": "Adel",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152617
+    },
+    {
+      "city": "\"Bethel Island\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152617
+    },
+    {
+      "city": "Adel",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152618
+    },
+    {
+      "city": "\"Beverly Hills\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152618
+    },
+    {
+      "city": "Adelaide",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152620
+    },
+    {
+      "city": "\"Big Bar\"",
+      "state": "CA",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152620
+    },
+    {
+      "city": "Adelanto",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152621
+    },
+    {
+      "city": "\"Big Bear City\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152622
+    },
+    {
+      "city": "Adell",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152623
+    },
+    {
+      "city": "\"Big Bear Lake\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152623
+    },
+    {
+      "city": "Adelphi",
+      "state": "MD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152624
+    },
+    {
+      "city": "\"Big Bend\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152625
+    },
+    {
+      "city": "Adelphi",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152626
+    },
+    {
+      "city": "\"Big Creek\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152627
+    },
+    {
+      "city": "Adena",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152628
+    },
+    {
+      "city": "\"Big Oak Flat\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152628
+    },
+    {
+      "city": "Adger",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152629
+    },
+    {
+      "city": "\"Big Pine\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152630
+    },
+    {
+      "city": "Adin",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152631
+    },
+    {
+      "city": "\"Big Sur\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152631
+    },
+    {
+      "city": "Adirondack",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152632
+    },
+    {
+      "city": "\"Birds Landing\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152633
+    },
+    {
+      "city": "Adkins",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152634
+    },
+    {
+      "city": "\"Blue Jay\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152634
+    },
+    {
+      "city": "Admire",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152635
+    },
+    {
+      "city": "\"Blue Lake\"",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152636
+    },
+    {
+      "city": "Adolphus",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152637
+    },
+    {
+      "city": "Adona",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152639
+    },
+    {
+      "city": "Adrian",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152640
+    },
+    {
+      "city": "Adrian",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152642
+    },
+    {
+      "city": "Adrian",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152643
+    },
+    {
+      "city": "Adrian",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152645
+    },
+    {
+      "city": "Adrian",
+      "state": "ND",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152646
+    },
+    {
+      "city": "Adrian",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152648
+    },
+    {
+      "city": "Adrian",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152650
+    },
+    {
+      "city": "Adrian",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152651
+    },
+    {
+      "city": "Adrian",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152653
+    },
+    {
+      "city": "Advance",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152654
+    },
+    {
+      "city": "Advance",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152656
+    },
+    {
+      "city": "Advance",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152657
+    },
+    {
+      "city": "Advance mills",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152659
+    },
+    {
+      "city": "Advent",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152661
+    },
+    {
+      "city": "Affton",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152662
+    },
+    {
+      "city": "Afton",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152664
+    },
+    {
+      "city": "Afton",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152665
+    },
+    {
+      "city": "Afton",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152667
+    },
+    {
+      "city": "Afton",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152668
+    },
+    {
+      "city": "Afton",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152670
+    },
+    {
+      "city": "Afton",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152671
+    },
+    {
+      "city": "Afton",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152673
+    },
+    {
+      "city": "Afton",
+      "state": "WY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152675
+    },
+    {
+      "city": "Agar",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152676
+    },
+    {
+      "city": "Agate",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152678
+    },
+    {
+      "city": "Agate",
+      "state": "ND",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152679
+    },
+    {
+      "city": "Agawam",
+      "state": "MA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152681
+    },
+    {
+      "city": "Agency",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152683
+    },
+    {
+      "city": "Agency",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152684
+    },
+    {
+      "city": "Agency village",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152686
+    },
+    {
+      "city": "Agenda",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152687
+    },
+    {
+      "city": "Ages brookside",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152689
+    },
+    {
+      "city": "Agness",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152691
+    },
+    {
+      "city": "Agnew",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152692
+    },
+    {
+      "city": "Agnos",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152694
+    },
+    {
+      "city": "Agra",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152695
+    },
+    {
+      "city": "Agra",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152697
+    },
+    {
+      "city": "Agricola",
+      "state": "MS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152698
+    },
+    {
+      "city": "Agua dulce",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152700
+    },
+    {
+      "city": "Agua dulce",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152701
+    },
+    {
+      "city": "Aguanga",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152703
+    },
+    {
+      "city": "Aguila",
+      "state": "AZ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152704
+    },
+    {
+      "city": "Aguilar",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152706
+    },
+    {
+      "city": "Ahmeek",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152708
+    },
+    {
+      "city": "Ahoskie",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152710
+    },
+    {
+      "city": "Ahsahka",
+      "state": "ID",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152711
+    },
+    {
+      "city": "Ahwahnee",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152713
+    },
+    {
+      "city": "Aiea",
+      "state": "HI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152714
+    },
+    {
+      "city": "Aiken",
+      "state": "SC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152716
+    },
+    {
+      "city": "Ailey",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152717
+    },
+    {
+      "city": "Aimwell",
+      "state": "LA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152719
+    },
+    {
+      "city": "Ainsworth",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152721
+    },
+    {
+      "city": "Ainsworth",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152722
+    },
+    {
+      "city": "Airville",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152724
+    },
+    {
+      "city": "Airway heights",
+      "state": "WA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152725
+    },
+    {
+      "city": "Aitkin",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152727
+    },
+    {
+      "city": "Akaska",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152728
+    },
+    {
+      "city": "Akeley",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152730
+    },
+    {
+      "city": "Akhiok",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152731
+    },
+    {
+      "city": "Akiachak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152733
+    },
+    {
+      "city": "Akiak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152734
+    },
+    {
+      "city": "Akron",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152736
+    },
+    {
+      "city": "Akron",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152738
+    },
+    {
+      "city": "Akron",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152739
+    },
+    {
+      "city": "Akron",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152741
+    },
+    {
+      "city": "Akron",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152743
+    },
+    {
+      "city": "Akron",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152744
+    },
+    {
+      "city": "Akron",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152746
+    },
+    {
+      "city": "Akutan",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152747
+    },
+    {
+      "city": "Aladdin",
+      "state": "WY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152749
+    },
+    {
+      "city": "Alakanuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152750
+    },
+    {
+      "city": "Alameda",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152752
+    },
+    {
+      "city": "Alameda",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152754
+    },
+    {
+      "city": "Alamo",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152755
+    },
+    {
+      "city": "Alamo",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152757
+    },
+    {
+      "city": "Alamo",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152758
+    },
+    {
+      "city": "Alamo",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152760
+    },
+    {
+      "city": "Alamo",
+      "state": "NV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152761
+    },
+    {
+      "city": "Alamo",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152763
+    },
+    {
+      "city": "Alamo",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152764
+    },
+    {
+      "city": "Alamo heights",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152766
+    },
+    {
+      "city": "Alamogordo",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152768
+    },
+    {
+      "city": "Alamosa",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152769
+    },
+    {
+      "city": "Alamota",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152771
+    },
+    {
+      "city": "Alanreed",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152772
+    },
+    {
+      "city": "Alanson",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152774
+    },
+    {
+      "city": "Alapaha",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152775
+    },
+    {
+      "city": "Alba",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152777
+    },
+    {
+      "city": "Alba",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152778
+    },
+    {
+      "city": "Alba",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152780
+    },
+    {
+      "city": "Albany",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152782
+    },
+    {
+      "city": "Albany",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152783
+    },
+    {
+      "city": "Albany",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152785
+    },
+    {
+      "city": "Albany",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152786
+    },
+    {
+      "city": "Albany",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152788
+    },
+    {
+      "city": "Albany",
+      "state": "LA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152789
+    },
+    {
+      "city": "Albany",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152791
+    },
+    {
+      "city": "Albany",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152792
+    },
+    {
+      "city": "Albany",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152794
+    },
+    {
+      "city": "Albany",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152795
+    },
+    {
+      "city": "Albany",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152797
+    },
+    {
+      "city": "Albany",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152798
+    },
+    {
+      "city": "Albany",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152800
+    },
+    {
+      "city": "Albany",
+      "state": "VT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152802
+    },
+    {
+      "city": "Albany",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152803
+    },
+    {
+      "city": "Albee",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152805
+    },
+    {
+      "city": "Albemarle",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152806
+    },
+    {
+      "city": "Alberene",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152808
+    },
+    {
+      "city": "Albers",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152809
+    },
+    {
+      "city": "Albert",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152811
+    },
+    {
+      "city": "Albert",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152813
+    },
+    {
+      "city": "Albert",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152814
+    },
+    {
+      "city": "Albert city",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152816
+    },
+    {
+      "city": "Albert lea",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152817
+    },
+    {
+      "city": "Alberta",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152819
+    },
+    {
+      "city": "Alberta",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152820
+    },
+    {
+      "city": "Alberta",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152822
+    },
+    {
+      "city": "Alberton",
+      "state": "MT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152824
+    },
+    {
+      "city": "Albertson",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152825
+    },
+    {
+      "city": "Albertson",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152827
+    },
+    {
+      "city": "Albertville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152828
+    },
+    {
+      "city": "Albertville",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152830
+    },
+    {
+      "city": "Albia",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152831
+    },
+    {
+      "city": "Albin",
+      "state": "WY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152833
+    },
+    {
+      "city": "Albion",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152834
+    },
+    {
+      "city": "Albion",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152836
+    },
+    {
+      "city": "Albion",
+      "state": "ID",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152838
+    },
+    {
+      "city": "Albion",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152839
+    },
+    {
+      "city": "Albion",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152841
+    },
+    {
+      "city": "Albion",
+      "state": "ME",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152842
+    },
+    {
+      "city": "Albion",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152844
+    },
+    {
+      "city": "Albion",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152846
+    },
+    {
+      "city": "Albion",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152847
+    },
+    {
+      "city": "Albion",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152849
+    },
+    {
+      "city": "Albion",
+      "state": "WA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152850
+    },
+    {
+      "city": "Alborn",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152852
+    },
+    {
+      "city": "Albright",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152853
+    },
+    {
+      "city": "Albrightsville",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152855
+    },
+    {
+      "city": "Albuquerque",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152857
+    },
+    {
+      "city": "Alburg",
+      "state": "VT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152858
+    },
+    {
+      "city": "Alburnett",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152860
+    },
+    {
+      "city": "Alburtis",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152861
+    },
+    {
+      "city": "Alcalde",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152863
+    },
+    {
+      "city": "Alcalde",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152865
+    },
+    {
+      "city": "Alcester",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152866
+    },
+    {
+      "city": "Alco",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152868
+    },
+    {
+      "city": "Alcoa",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152869
+    },
+    {
+      "city": "Alcolu",
+      "state": "SC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152871
+    },
+    {
+      "city": "Alcova",
+      "state": "WY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152873
+    },
+    {
+      "city": "Alda",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152874
+    },
+    {
+      "city": "Alden",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152876
+    },
+    {
+      "city": "Alden",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152877
+    },
+    {
+      "city": "Alden",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152879
+    },
+    {
+      "city": "Alden",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152881
+    },
+    {
+      "city": "Alden",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152882
+    },
+    {
+      "city": "Alden",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152884
+    },
+    {
+      "city": "Alden manor",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152885
+    },
+    {
+      "city": "Alder",
+      "state": "MT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152887
+    },
+    {
+      "city": "Alder creek",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152888
+    },
+    {
+      "city": "Alderpoint",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152890
+    },
+    {
+      "city": "Alderson",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152891
+    },
+    {
+      "city": "Aldrich",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152893
+    },
+    {
+      "city": "Aldrich",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152895
+    },
+    {
+      "city": "Aledo",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152896
+    },
+    {
+      "city": "Aledo",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152898
+    },
+    {
+      "city": "Aleknagik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152899
+    },
+    {
+      "city": "Aleppo",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152901
+    },
+    {
+      "city": "Alex",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152902
+    },
+    {
+      "city": "Alexander",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152904
+    },
+    {
+      "city": "Alexander",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152906
+    },
+    {
+      "city": "Alexander",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152907
+    },
+    {
+      "city": "Alexander",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152909
+    },
+    {
+      "city": "Alexander",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152910
+    },
+    {
+      "city": "Alexander",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152912
+    },
+    {
+      "city": "Alexander mills",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152914
+    },
+    {
+      "city": "Alexandria",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152915
+    },
+    {
+      "city": "Alexandria",
+      "state": "IN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152917
+    },
+    {
+      "city": "Alexandria",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152918
+    },
+    {
+      "city": "Alexandria",
+      "state": "LA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152920
+    },
+    {
+      "city": "Alexandria",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152921
+    },
+    {
+      "city": "Alexandria",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152923
+    },
+    {
+      "city": "Alexandria",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152925
+    },
+    {
+      "city": "Alexandria",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152926
+    },
+    {
+      "city": "Alexandria",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152928
+    },
+    {
+      "city": "Alexandria",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152929
+    },
+    {
+      "city": "Alexis",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152931
+    },
+    {
+      "city": "Alexis",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152933
+    },
+    {
+      "city": "Alford",
+      "state": "FL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152934
+    },
+    {
+      "city": "Alfred",
+      "state": "ME",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152936
+    },
+    {
+      "city": "Alfred",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152937
+    },
+    {
+      "city": "Alfred station",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152939
+    },
+    {
+      "city": "Alger",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152940
+    },
+    {
+      "city": "Alger",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152942
+    },
+    {
+      "city": "Algodones",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152944
+    },
+    {
+      "city": "Algoma",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152945
+    },
+    {
+      "city": "Algoma",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152947
+    },
+    {
+      "city": "Algona",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152948
+    },
+    {
+      "city": "Algona",
+      "state": "WA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152950
+    },
+    {
+      "city": "Algood",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152951
+    },
+    {
+      "city": "Alhambra",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152953
+    },
+    {
+      "city": "Alhambra",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152954
+    },
+    {
+      "city": "Alice",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152956
+    },
+    {
+      "city": "Aliceville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152957
+    },
+    {
+      "city": "Alicia",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152959
+    },
+    {
+      "city": "Aline",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152961
+    },
+    {
+      "city": "Aliso viejo",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152962
+    },
+    {
+      "city": "Alix",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152964
+    },
+    {
+      "city": "Alkabo",
+      "state": "ND",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152965
+    },
+    {
+      "city": "Alkol",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152967
+    },
+    {
+      "city": "Allakaket",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152968
+    },
+    {
+      "city": "Allardt",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152970
+    },
+    {
+      "city": "Alledonia",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152971
+    },
+    {
+      "city": "Alleene",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152973
+    },
+    {
+      "city": "Allegan",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152975
+    },
+    {
+      "city": "Allegany",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152976
+    },
+    {
+      "city": "Alleghany",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152978
+    },
+    {
+      "city": "Alleghany",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152979
+    },
+    {
+      "city": "Allegheny",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152981
+    },
+    {
+      "city": "Alleman",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152982
+    },
+    {
+      "city": "Allen",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152984
+    },
+    {
+      "city": "Allen",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152986
+    },
+    {
+      "city": "Allen",
+      "state": "MD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152987
+    },
+    {
+      "city": "Allen",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152989
+    },
+    {
+      "city": "Allen",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152990
+    },
+    {
+      "city": "Allen",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152992
+    },
+    {
+      "city": "Allen",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152993
+    },
+    {
+      "city": "Allen",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152995
+    },
+    {
+      "city": "Allen park",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152997
+    },
+    {
+      "city": "Allendale",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774152998
+    },
+    {
+      "city": "Allendale",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153000
+    },
+    {
+      "city": "Allendale",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153001
+    },
+    {
+      "city": "Allendale",
+      "state": "SC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153003
+    },
+    {
+      "city": "Allenhurst",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153005
+    },
+    {
+      "city": "Allenhurst",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153006
+    },
+    {
+      "city": "Allenport",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153008
+    },
+    {
+      "city": "Allenspark",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153009
+    },
+    {
+      "city": "Allenstown",
+      "state": "NH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153011
+    },
+    {
+      "city": "Allensville",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153012
+    },
+    {
+      "city": "Allensville",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153014
+    },
+    {
+      "city": "Allensville",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153016
+    },
+    {
+      "city": "Allenton",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153017
+    },
+    {
+      "city": "Allentown",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153019
+    },
+    {
+      "city": "Allentown",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153020
+    },
+    {
+      "city": "Allentown",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153022
+    },
+    {
+      "city": "Allenwood",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153024
+    },
+    {
+      "city": "Allenwood",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153025
+    },
+    {
+      "city": "Allerton",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153027
+    },
+    {
+      "city": "Allerton",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153028
+    },
+    {
+      "city": "Alleyton",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153030
+    },
+    {
+      "city": "Alliance",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153031
+    },
+    {
+      "city": "Alliance",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153033
+    },
+    {
+      "city": "Alligator",
+      "state": "MS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153035
+    },
+    {
+      "city": "Allison",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153036
+    },
+    {
+      "city": "Allison",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153038
+    },
+    {
+      "city": "Allison",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153039
+    },
+    {
+      "city": "Allison park",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153041
+    },
+    {
+      "city": "Allisonia",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153042
+    },
+    {
+      "city": "Allons",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153044
+    },
+    {
+      "city": "Allouez",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153045
+    },
+    {
+      "city": "Allouez",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153047
+    },
+    {
+      "city": "Alloway",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153049
+    },
+    {
+      "city": "Alloy",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153050
+    },
+    {
+      "city": "Allred",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153052
+    },
+    {
+      "city": "Allston",
+      "state": "MA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153053
+    },
+    {
+      "city": "Allyn",
+      "state": "WA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153055
+    },
+    {
+      "city": "Alma",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153056
+    },
+    {
+      "city": "Alma",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153058
+    },
+    {
+      "city": "Alma",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153060
+    },
+    {
+      "city": "Alma",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153061
+    },
+    {
+      "city": "Alma",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153063
+    },
+    {
+      "city": "Alma",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153064
+    },
+    {
+      "city": "Alma",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153066
+    },
+    {
+      "city": "Alma",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153067
+    },
+    {
+      "city": "Alma",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153069
+    },
+    {
+      "city": "Alma",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153070
+    },
+    {
+      "city": "Alma",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153072
+    },
+    {
+      "city": "Alma center",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153074
+    },
+    {
+      "city": "Almena",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153075
+    },
+    {
+      "city": "Almena",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153077
+    },
+    {
+      "city": "Almeria",
+      "state": "NE",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153078
+    },
+    {
+      "city": "Almira",
+      "state": "WA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153080
+    },
+    {
+      "city": "Almo",
+      "state": "ID",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153081
+    },
+    {
+      "city": "Almo",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153083
+    },
+    {
+      "city": "Almond",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153085
+    },
+    {
+      "city": "Almond",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153086
+    },
+    {
+      "city": "Almond",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153088
+    },
+    {
+      "city": "Almont",
+      "state": "CO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153089
+    },
+    {
+      "city": "Almont",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153091
+    },
+    {
+      "city": "Almont",
+      "state": "ND",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153092
+    },
+    {
+      "city": "Almyra",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153094
+    },
+    {
+      "city": "Alna",
+      "state": "ME",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153096
+    },
+    {
+      "city": "Aloha",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153097
+    },
+    {
+      "city": "Aloma",
+      "state": "FL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153099
+    },
+    {
+      "city": "Alorton",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153100
+    },
+    {
+      "city": "Alpaugh",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153102
+    },
+    {
+      "city": "Alpena",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153103
+    },
+    {
+      "city": "Alpena",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153105
+    },
+    {
+      "city": "Alpena",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153107
+    },
+    {
+      "city": "Alpha",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153108
+    },
+    {
+      "city": "Alpha",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153110
+    },
+    {
+      "city": "Alpha",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153111
+    },
+    {
+      "city": "Alpha",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153113
+    },
+    {
+      "city": "Alpha",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153114
+    },
+    {
+      "city": "Alpha",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153116
+    },
+    {
+      "city": "Alpine",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153118
+    },
+    {
+      "city": "Alpine",
+      "state": "AZ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153119
+    },
+    {
+      "city": "Alpine",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153121
+    },
+    {
+      "city": "Alpine",
+      "state": "NJ",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153122
+    },
+    {
+      "city": "Alpine",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153124
+    },
+    {
+      "city": "Alpine",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153126
+    },
+    {
+      "city": "Alpine",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153127
+    },
+    {
+      "city": "Alpine",
+      "state": "UT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153129
+    },
+    {
+      "city": "Alpine",
+      "state": "WY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153130
+    },
+    {
+      "city": "Alplaus",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153132
+    },
+    {
+      "city": "Alsea",
+      "state": "OR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153133
+    },
+    {
+      "city": "Alsey",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153135
+    },
+    {
+      "city": "Alstead",
+      "state": "NH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153137
+    },
+    {
+      "city": "Alston",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153138
+    },
+    {
+      "city": "Alta",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153140
+    },
+    {
+      "city": "Alta",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153141
+    },
+    {
+      "city": "Alta",
+      "state": "UT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153143
+    },
+    {
+      "city": "Alta loma",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153144
+    },
+    {
+      "city": "Alta loma",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153146
+    },
+    {
+      "city": "Alta vista",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153147
+    },
+    {
+      "city": "Alta vista",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153149
+    },
+    {
+      "city": "Altadena",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153151
+    },
+    {
+      "city": "Altair",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153152
+    },
+    {
+      "city": "Altamahaw",
+      "state": "NC",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153154
+    },
+    {
+      "city": "Altamont",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153155
+    },
+    {
+      "city": "Altamont",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153157
+    },
+    {
+      "city": "Altamont",
+      "state": "MO",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153159
+    },
+    {
+      "city": "Altamont",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153160
+    },
+    {
+      "city": "Altamont",
+      "state": "SD",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153162
+    },
+    {
+      "city": "Altamont",
+      "state": "TN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153163
+    },
+    {
+      "city": "Altamont",
+      "state": "UT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153165
+    },
+    {
+      "city": "Altamonte spring",
+      "state": "FL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153166
+    },
+    {
+      "city": "Altaville",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153168
+    },
+    {
+      "city": "Altavista",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153169
+    },
+    {
+      "city": "Altha",
+      "state": "FL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153171
+    },
+    {
+      "city": "Altheimer",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153173
+    },
+    {
+      "city": "Altmar",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153174
+    },
+    {
+      "city": "Alto",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153176
+    },
+    {
+      "city": "Alto",
+      "state": "LA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153177
+    },
+    {
+      "city": "Alto",
+      "state": "MI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153179
+    },
+    {
+      "city": "Alto",
+      "state": "NM",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153180
+    },
+    {
+      "city": "Alto pass",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153182
+    },
+    {
+      "city": "Alton",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153184
+    },
+    {
+      "city": "Alton",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153185
+    },
+    {
+      "city": "Alton",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153187
+    },
+    {
+      "city": "Alton",
+      "state": "NH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153188
+    },
+    {
+      "city": "Alton",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153190
+    },
+    {
+      "city": "Alton",
+      "state": "UT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153192
+    },
+    {
+      "city": "Alton",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153193
+    },
+    {
+      "city": "Alton bay",
+      "state": "NH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153195
+    },
+    {
+      "city": "Altona",
+      "state": "IL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153196
+    },
+    {
+      "city": "Altona",
+      "state": "NY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153198
+    },
+    {
+      "city": "Altonah",
+      "state": "UT",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153199
+    },
+    {
+      "city": "Altoona",
+      "state": "FL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153201
+    },
+    {
+      "city": "Altoona",
+      "state": "IA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153203
+    },
+    {
+      "city": "Altoona",
+      "state": "KS",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153204
+    },
+    {
+      "city": "Altoona",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153206
+    },
+    {
+      "city": "Altoona",
+      "state": "WI",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153207
+    },
+    {
+      "city": "Altura",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153209
+    },
+    {
+      "city": "Alturas",
+      "state": "CA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153210
+    },
+    {
+      "city": "Altus",
+      "state": "AR",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153212
+    },
+    {
+      "city": "Altus",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153213
+    },
+    {
+      "city": "Alum bank",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153215
+    },
+    {
+      "city": "Alum bridge",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153217
+    },
+    {
+      "city": "Alum creek",
+      "state": "WV",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153218
+    },
+    {
+      "city": "Alum ridge",
+      "state": "VA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153220
+    },
+    {
+      "city": "Alva",
+      "state": "FL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153221
+    },
+    {
+      "city": "Alva",
+      "state": "OK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153223
+    },
+    {
+      "city": "Alva",
+      "state": "WY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153225
+    },
+    {
+      "city": "Alvada",
+      "state": "OH",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153226
+    },
+    {
+      "city": "Alvarado",
+      "state": "MN",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153228
+    },
+    {
+      "city": "Alvarado",
+      "state": "TX",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153229
+    },
+    {
+      "city": "Alvaton",
+      "state": "GA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153231
+    },
+    {
+      "city": "Alvaton",
+      "state": "KY",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153232
+    },
+    {
+      "city": "Alverda",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153234
+    },
+    {
+      "city": "Alverton",
+      "state": "PA",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774153235
+    },
+    {
+      "city": "\"Anaktuvuk Pass\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270806
+    },
+    {
+      "city": "\"Anchor Point\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270808
+    },
+    {
+      "city": "\"Arctic Village\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270810
+    },
+    {
+      "city": "\"Auke Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270811
+    },
+    {
+      "city": "\"Bettles Field\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270813
+    },
+    {
+      "city": "\"Big Lake\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270815
+    },
+    {
+      "city": "\"Brevig Mission\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270816
+    },
+    {
+      "city": "\"Chignik Lagoon\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270818
+    },
+    {
+      "city": "\"Chignik Lake\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270820
+    },
+    {
+      "city": "\"Clam Gulch\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270821
+    },
+    {
+      "city": "\"Clarks Point\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270823
+    },
+    {
+      "city": "\"Coffman Cove\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270825
+    },
+    {
+      "city": "\"Cold Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270826
+    },
+    {
+      "city": "\"Cooper Landing\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270828
+    },
+    {
+      "city": "\"Copper Center\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270829
+    },
+    {
+      "city": "\"Crooked Creek\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270831
+    },
+    {
+      "city": "\"Delta Junction\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270833
+    },
+    {
+      "city": "\"Denali National Park\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270834
+    },
+    {
+      "city": "\"Dutch Harbor\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270836
+    },
+    {
+      "city": "\"Eagle River\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270838
+    },
+    {
+      "city": "\"Eielson Afb\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270839
+    },
+    {
+      "city": "\"Elfin Cove\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270841
+    },
+    {
+      "city": "\"Elmendorf Afb\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270843
+    },
+    {
+      "city": "\"False Pass\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270844
+    },
+    {
+      "city": "\"Fort Greely\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270846
+    },
+    {
+      "city": "\"Fort Richardson\"",
+      "state": "AK",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270847
+    },
+    {
+      "city": "\"Fort Wainwright\"",
+      "state": "AK",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270849
+    },
+    {
+      "city": "\"Fort Yukon\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270851
+    },
+    {
+      "city": "\"Goodnews Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270852
+    },
+    {
+      "city": "\"Holy Cross\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270854
+    },
+    {
+      "city": "\"Hooper Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270856
+    },
+    {
+      "city": "\"King Cove\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270857
+    },
+    {
+      "city": "\"King Salmon\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270859
+    },
+    {
+      "city": "\"Lake Minchumina\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270860
+    },
+    {
+      "city": "\"Larsen Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270862
+    },
+    {
+      "city": "\"Lower Kalskag\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270863
+    },
+    {
+      "city": "\"Manley Hot Springs\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270865
+    },
+    {
+      "city": "\"Mc Grath\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270867
+    },
+    {
+      "city": "\"Meyers Chuck\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270868
+    },
+    {
+      "city": "\"Moose Pass\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270870
+    },
+    {
+      "city": "\"Mountain Village\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270872
+    },
+    {
+      "city": "\"New Stuyahok\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270873
+    },
+    {
+      "city": "\"North Pole\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270875
+    },
+    {
+      "city": "\"Nunam Iqua\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270877
+    },
+    {
+      "city": "\"Old Harbor\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270878
+    },
+    {
+      "city": "\"Pedro Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270880
+    },
+    {
+      "city": "\"Pilot Point\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270882
+    },
+    {
+      "city": "\"Pilot Station\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270883
+    },
+    {
+      "city": "\"Point Baker\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270885
+    },
+    {
+      "city": "\"Point Hope\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270887
+    },
+    {
+      "city": "\"Point Lay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270888
+    },
+    {
+      "city": "\"Port Alexander\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270890
+    },
+    {
+      "city": "\"Port Alsworth\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270891
+    },
+    {
+      "city": "\"Port Heiden\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270893
+    },
+    {
+      "city": "\"Port Lions\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270895
+    },
+    {
+      "city": "\"Prudhoe Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270896
+    },
+    {
+      "city": "\"Red Devil\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270898
+    },
+    {
+      "city": "\"Russian Mission\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270900
+    },
+    {
+      "city": "\"Saint George Island\"",
+      "state": "AK",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270901
+    },
+    {
+      "city": "\"Saint Marys\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270903
+    },
+    {
+      "city": "\"Saint Michael\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270904
+    },
+    {
+      "city": "\"Saint Paul Island\"",
+      "state": "AK",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270906
+    },
+    {
+      "city": "\"Sand Point\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270907
+    },
+    {
+      "city": "\"Scammon Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270909
+    },
+    {
+      "city": "\"South Naknek\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270911
+    },
+    {
+      "city": "\"Stevens Village\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270912
+    },
+    {
+      "city": "\"Tenakee Springs\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270914
+    },
+    {
+      "city": "\"Thorne Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270916
+    },
+    {
+      "city": "\"Toksook Bay\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270917
+    },
+    {
+      "city": "\"Trapper Creek\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270919
+    },
+    {
+      "city": "\"Two Rivers\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270920
+    },
+    {
+      "city": "\"Ward Cove\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270922
+    },
+    {
+      "city": "\"White Mountain\"",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270923
+    },
+    {
+      "city": "Adak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774270925
+    },
+    {
+      "city": "Chicago",
+      "state": "IL",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Mazon",
+      "state": "IL",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774201686
+    },
+    {
+      "city": "Dallas",
+      "state": "TX",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Bally",
+      "state": "PA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774270962
+    },
+    {
+      "city": "Philadelphia",
+      "state": "PA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774270964
+    },
+    {
+      "city": "Phoenix",
+      "state": "AZ",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Seattle",
+      "state": "WA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Detroit",
+      "state": "MI",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774285229
+    },
+    {
+      "city": "Erie",
+      "state": "MI",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774285231
+    },
+    {
+      "city": "Minneapolis",
+      "state": "MN",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774285245
+    },
+    {
+      "city": "Vail",
+      "state": "CO",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774285254
+    },
+    {
+      "city": "Rand",
+      "state": "CO",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774285259
+    },
+    {
+      "city": "Erie",
+      "state": "CO",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774285254
+    },
+    {
+      "city": "Miami",
+      "state": "FL",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Paramus",
+      "state": "New Jersey",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774293939
+    },
+    {
+      "city": "Los Angeles",
+      "state": "California",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774293950
+    },
+    {
+      "city": "Atlanta",
+      "state": "Georgia",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294007
+    },
+    {
+      "city": "Eagan",
+      "state": "Minnesota",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294109
+    },
+    {
+      "city": "Carmel",
+      "state": "Indiana",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294212
+    },
+    {
+      "city": "Birmingham",
+      "state": "Alabama",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294437
+    },
+    {
+      "city": "Providence",
+      "state": "Rhode Island",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294515
+    },
+    {
+      "city": "Davenport",
+      "state": "IA",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294681
+    },
+    {
+      "city": "Omaha",
+      "state": "Nebraska",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774294747
+    },
+    {
+      "city": "Jackson",
+      "state": "Mississippi",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774295036
+    },
+    {
+      "city": "Indianapolis",
+      "state": "Indiana",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774295047
+    },
+    {
+      "city": "Salem",
+      "state": "OR",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774295257
+    },
+    {
+      "city": "Philadelphia",
+      "state": "Pennsylvania",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774295486
+    },
+    {
+      "city": "Abilene",
+      "state": "TX",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774295717
+    },
+    {
+      "city": "McClellan",
+      "state": "CA",
+      "available": 1,
+      "confidence": 85,
+      "source": "brave_place",
+      "first_seen": 1774295848
+    },
+    {
+      "city": "Charlotte",
+      "state": "NC",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774299630
+    },
+    {
+      "city": "Portland",
+      "state": "OR",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774299644
+    },
+    {
+      "city": "Only",
+      "state": "TN",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774299710
+    },
+    {
+      "city": "Columbus",
+      "state": "OH",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774299778
+    },
+    {
+      "city": "Lexa",
+      "state": "AR",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314024
+    },
+    {
+      "city": "Milwaukee",
+      "state": "WI",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314052
+    },
+    {
+      "city": "Collins",
+      "state": "IA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314113
+    },
+    {
+      "city": "Ames",
+      "state": "IA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314116
+    },
+    {
+      "city": "Vail",
+      "state": "IA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314119
+    },
+    {
+      "city": "York",
+      "state": "PA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314132
+    },
+    {
+      "city": "Mexico",
+      "state": "NY",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774314146
+    },
+    {
+      "city": "Ambler",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357204
+    },
+    {
+      "city": "Anchorage",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357205
+    },
+    {
+      "city": "Anderson",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357207
+    },
+    {
+      "city": "Angoon",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357209
+    },
+    {
+      "city": "Aniak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357210
+    },
+    {
+      "city": "Anvik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357212
+    },
+    {
+      "city": "Atka",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357214
+    },
+    {
+      "city": "Atqasuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357215
+    },
+    {
+      "city": "Barrow",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357217
+    },
+    {
+      "city": "Beaver",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357218
+    },
+    {
+      "city": "Bethel",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357220
+    },
+    {
+      "city": "Buckland",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357222
+    },
+    {
+      "city": "Cantwell",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357223
+    },
+    {
+      "city": "Central",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357225
+    },
+    {
+      "city": "Chalkyitsik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357227
+    },
+    {
+      "city": "Chefornak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357228
+    },
+    {
+      "city": "Chevak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357230
+    },
+    {
+      "city": "Chicken",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357232
+    },
+    {
+      "city": "Chignik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357233
+    },
+    {
+      "city": "Chitina",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357235
+    },
+    {
+      "city": "Chugiak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357236
+    },
+    {
+      "city": "Circle",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357238
+    },
+    {
+      "city": "Clear",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357240
+    },
+    {
+      "city": "Cordova",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357241
+    },
+    {
+      "city": "Craig",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357243
+    },
+    {
+      "city": "Deering",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357245
+    },
+    {
+      "city": "Dillingham",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357246
+    },
+    {
+      "city": "Douglas",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357248
+    },
+    {
+      "city": "Eagle",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357249
+    },
+    {
+      "city": "Eek",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357251
+    },
+    {
+      "city": "Egegik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357253
+    },
+    {
+      "city": "Ekwok",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357254
+    },
+    {
+      "city": "Elim",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357256
+    },
+    {
+      "city": "Emmonak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357257
+    },
+    {
+      "city": "Ester",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357259
+    },
+    {
+      "city": "Fairbanks",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357261
+    },
+    {
+      "city": "Gakona",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357262
+    },
+    {
+      "city": "Galena",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357264
+    },
+    {
+      "city": "Gambell",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357265
+    },
+    {
+      "city": "Girdwood",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357267
+    },
+    {
+      "city": "Glennallen",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357269
+    },
+    {
+      "city": "Grayling",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357270
+    },
+    {
+      "city": "Gustavus",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357272
+    },
+    {
+      "city": "Haines",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357274
+    },
+    {
+      "city": "Healy",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357275
+    },
+    {
+      "city": "Homer",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357277
+    },
+    {
+      "city": "Hoonah",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357278
+    },
+    {
+      "city": "Hope",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357280
+    },
+    {
+      "city": "Houston",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357282
+    },
+    {
+      "city": "Hughes",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357283
+    },
+    {
+      "city": "Huslia",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357285
+    },
+    {
+      "city": "Hydaburg",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357286
+    },
+    {
+      "city": "Hyder",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357288
+    },
+    {
+      "city": "Iliamna",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357290
+    },
+    {
+      "city": "Indian",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357291
+    },
+    {
+      "city": "Juneau",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357293
+    },
+    {
+      "city": "Kake",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357295
+    },
+    {
+      "city": "Kaktovik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357296
+    },
+    {
+      "city": "Kalskag",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357298
+    },
+    {
+      "city": "Kaltag",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357299
+    },
+    {
+      "city": "Karluk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357301
+    },
+    {
+      "city": "Kasigluk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357303
+    },
+    {
+      "city": "Kasilof",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357304
+    },
+    {
+      "city": "Kenai",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357306
+    },
+    {
+      "city": "Ketchikan",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357308
+    },
+    {
+      "city": "Kiana",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357309
+    },
+    {
+      "city": "Kipnuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357311
+    },
+    {
+      "city": "Kivalina",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357312
+    },
+    {
+      "city": "Klawock",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357314
+    },
+    {
+      "city": "Kobuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357316
+    },
+    {
+      "city": "Kodiak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357317
+    },
+    {
+      "city": "Kongiganak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357319
+    },
+    {
+      "city": "Kotlik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357320
+    },
+    {
+      "city": "Kotzebue",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357322
+    },
+    {
+      "city": "Koyuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357331
+    },
+    {
+      "city": "Koyukuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357332
+    },
+    {
+      "city": "Kwethluk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357334
+    },
+    {
+      "city": "Kwigillingok",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357335
+    },
+    {
+      "city": "Levelock",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357337
+    },
+    {
+      "city": "Manokotak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357339
+    },
+    {
+      "city": "Marshall",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357340
+    },
+    {
+      "city": "Mekoryuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357342
+    },
+    {
+      "city": "Metlakatla",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357343
+    },
+    {
+      "city": "Minto",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357345
+    },
+    {
+      "city": "Naknek",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357347
+    },
+    {
+      "city": "Napakiak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357348
+    },
+    {
+      "city": "Nenana",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357350
+    },
+    {
+      "city": "Nightmute",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357351
+    },
+    {
+      "city": "Nikiski",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357353
+    },
+    {
+      "city": "Nikolai",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357355
+    },
+    {
+      "city": "Nikolski",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357356
+    },
+    {
+      "city": "Ninilchik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357358
+    },
+    {
+      "city": "Noatak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357360
+    },
+    {
+      "city": "Nome",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357361
+    },
+    {
+      "city": "Nondalton",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357363
+    },
+    {
+      "city": "Noorvik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357365
+    },
+    {
+      "city": "Northway",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357366
+    },
+    {
+      "city": "Nuiqsut",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357368
+    },
+    {
+      "city": "Nulato",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357369
+    },
+    {
+      "city": "Nunapitchuk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357371
+    },
+    {
+      "city": "Ouzinkie",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357373
+    },
+    {
+      "city": "Palmer",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357374
+    },
+    {
+      "city": "Pelican",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357376
+    },
+    {
+      "city": "Perryville",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357378
+    },
+    {
+      "city": "Petersburg",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357379
+    },
+    {
+      "city": "Platinum",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357381
+    },
+    {
+      "city": "Quinhagak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357382
+    },
+    {
+      "city": "Rampart",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357384
+    },
+    {
+      "city": "Ruby",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357386
+    },
+    {
+      "city": "Salcha",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357387
+    },
+    {
+      "city": "Savoonga",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357389
+    },
+    {
+      "city": "Selawik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357391
+    },
+    {
+      "city": "Seldovia",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357392
+    },
+    {
+      "city": "Seward",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357394
+    },
+    {
+      "city": "Shageluk",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357396
+    },
+    {
+      "city": "Shaktoolik",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357397
+    },
+    {
+      "city": "Shishmaref",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357399
+    },
+    {
+      "city": "Shungnak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357400
+    },
+    {
+      "city": "Sitka",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357402
+    },
+    {
+      "city": "Skagway",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357404
+    },
+    {
+      "city": "Skwentna",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357405
+    },
+    {
+      "city": "Sleetmute",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357407
+    },
+    {
+      "city": "Soldotna",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357409
+    },
+    {
+      "city": "Stebbins",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357410
+    },
+    {
+      "city": "Sterling",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357412
+    },
+    {
+      "city": "Sutton",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357413
+    },
+    {
+      "city": "Takotna",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357415
+    },
+    {
+      "city": "Talkeetna",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357417
+    },
+    {
+      "city": "Tanacross",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357418
+    },
+    {
+      "city": "Tanana",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357420
+    },
+    {
+      "city": "Tatitlek",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357422
+    },
+    {
+      "city": "Teller",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357423
+    },
+    {
+      "city": "Togiak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357425
+    },
+    {
+      "city": "Tok",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357426
+    },
+    {
+      "city": "Tuluksak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357428
+    },
+    {
+      "city": "Tuntutuliak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357430
+    },
+    {
+      "city": "Tununak",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357431
+    },
+    {
+      "city": "Tyonek",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357433
+    },
+    {
+      "city": "Unalakleet",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357435
+    },
+    {
+      "city": "Unalaska",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357436
+    },
+    {
+      "city": "Valdez",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357438
+    },
+    {
+      "city": "Venetie",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357440
+    },
+    {
+      "city": "Wainwright",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357441
+    },
+    {
+      "city": "Wales",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357443
+    },
+    {
+      "city": "Wasilla",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357445
+    },
+    {
+      "city": "Whittier",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357446
+    },
+    {
+      "city": "Willow",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357448
+    },
+    {
+      "city": "Wrangell",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357449
+    },
+    {
+      "city": "Yakutat",
+      "state": "AK",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357451
+    },
+    {
+      "city": "\"Alexander City\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357453
+    },
+    {
+      "city": "\"Auburn University\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357454
+    },
+    {
+      "city": "\"Bay Minette\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357456
+    },
+    {
+      "city": "\"Bayou La Batre\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357458
+    },
+    {
+      "city": "\"Bear Creek\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357459
+    },
+    {
+      "city": "\"Belle Mina\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357461
+    },
+    {
+      "city": "\"Bon Air\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357462
+    },
+    {
+      "city": "\"Bon Secour\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357464
+    },
+    {
+      "city": "\"Burnt Corn\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357466
+    },
+    {
+      "city": "\"Camp Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357467
+    },
+    {
+      "city": "\"Carbon Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357469
+    },
+    {
+      "city": "\"Cedar Bluff\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357471
+    },
+    {
+      "city": "\"Coffee Springs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357472
+    },
+    {
+      "city": "\"Cook Springs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357474
+    },
+    {
+      "city": "\"Crane Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357476
+    },
+    {
+      "city": "\"Dauphin Island\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357477
+    },
+    {
+      "city": "\"De Armanville\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357479
+    },
+    {
+      "city": "\"Deer Park\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357480
+    },
+    {
+      "city": "\"Dixons Mills\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357482
+    },
+    {
+      "city": "\"Double Springs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357484
+    },
+    {
+      "city": "\"East Tallassee\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357485
+    },
+    {
+      "city": "\"Eight Mile\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357487
+    },
+    {
+      "city": "\"Five Points\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357489
+    },
+    {
+      "city": "\"Flat Rock\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357490
+    },
+    {
+      "city": "\"Forest Home\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357492
+    },
+    {
+      "city": "\"Fort Davis\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357494
+    },
+    {
+      "city": "\"Fort Deposit\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357495
+    },
+    {
+      "city": "\"Fort Mitchell\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357497
+    },
+    {
+      "city": "\"Fort Payne\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357499
+    },
+    {
+      "city": "\"Fort Rucker\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357500
+    },
+    {
+      "city": "\"Frisco City\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357502
+    },
+    {
+      "city": "\"Garden City\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357503
+    },
+    {
+      "city": "\"Glen Allen\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357505
+    },
+    {
+      "city": "\"Grand Bay\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357507
+    },
+    {
+      "city": "\"Green Pond\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357508
+    },
+    {
+      "city": "\"Grove Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357510
+    },
+    {
+      "city": "\"Gulf Shores\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357512
+    },
+    {
+      "city": "\"Hazel Green\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357513
+    },
+    {
+      "city": "\"Highland Home\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357515
+    },
+    {
+      "city": "\"Holly Pond\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357517
+    },
+    {
+      "city": "\"Holy Trinity\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357518
+    },
+    {
+      "city": "\"Hope Hull\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357520
+    },
+    {
+      "city": "\"Jacksons Gap\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357521
+    },
+    {
+      "city": "\"Laceys Spring\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357523
+    },
+    {
+      "city": "\"Little River\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357525
+    },
+    {
+      "city": "\"Locust Fork\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357526
+    },
+    {
+      "city": "\"Lower Peach Tree\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357528
+    },
+    {
+      "city": "\"Magnolia Springs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357530
+    },
+    {
+      "city": "\"Marion Junction\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357531
+    },
+    {
+      "city": "\"Mc Calla\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357533
+    },
+    {
+      "city": "\"Mc Intosh\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357535
+    },
+    {
+      "city": "\"Mc Kenzie\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357537
+    },
+    {
+      "city": "\"Mc Shan\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357538
+    },
+    {
+      "city": "\"Mc Williams\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357540
+    },
+    {
+      "city": "\"Midland City\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357541
+    },
+    {
+      "city": "\"Mount Hope\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357543
+    },
+    {
+      "city": "\"Mount Meigs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357544
+    },
+    {
+      "city": "\"Mount Olive\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357546
+    },
+    {
+      "city": "\"Mount Vernon\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357548
+    },
+    {
+      "city": "\"Muscle Shoals\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357549
+    },
+    {
+      "city": "\"Natural Bridge\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357551
+    },
+    {
+      "city": "\"New Brockton\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357553
+    },
+    {
+      "city": "\"New Castle\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357554
+    },
+    {
+      "city": "\"New Hope\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357556
+    },
+    {
+      "city": "\"New Market\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357558
+    },
+    {
+      "city": "\"Oak Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357559
+    },
+    {
+      "city": "\"Orange Beach\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357561
+    },
+    {
+      "city": "\"Owens Cross Roads\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357563
+    },
+    {
+      "city": "\"Paint Rock\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357564
+    },
+    {
+      "city": "\"Pell City\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357566
+    },
+    {
+      "city": "\"Perdue Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357568
+    },
+    {
+      "city": "\"Phenix City\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357569
+    },
+    {
+      "city": "\"Phil Campbell\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357571
+    },
+    {
+      "city": "\"Pike Road\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357573
+    },
+    {
+      "city": "\"Pine Apple\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357574
+    },
+    {
+      "city": "\"Pine Hill\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357576
+    },
+    {
+      "city": "\"Pine Level\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357577
+    },
+    {
+      "city": "\"Pleasant Grove\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357579
+    },
+    {
+      "city": "\"Point Clear\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357581
+    },
+    {
+      "city": "\"Red Bay\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357582
+    },
+    {
+      "city": "\"Red Level\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357584
+    },
+    {
+      "city": "\"River Falls\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357585
+    },
+    {
+      "city": "\"Saint Elmo\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357587
+    },
+    {
+      "city": "\"Saint Stephens\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357589
+    },
+    {
+      "city": "\"Smiths Station\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357590
+    },
+    {
+      "city": "\"Spanish Fort\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357592
+    },
+    {
+      "city": "\"Spring Garden\"",
+      "state": "AL",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357594
+    },
+    {
+      "city": "\"Spruce Pine\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357595
+    },
+    {
+      "city": "\"Sweet Water\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357597
+    },
+    {
+      "city": "\"Town Creek\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357599
+    },
+    {
+      "city": "\"Tuskegee Institute\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357600
+    },
+    {
+      "city": "\"Union Grove\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357602
+    },
+    {
+      "city": "\"Union Springs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357604
+    },
+    {
+      "city": "\"Valhermoso Springs\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357605
+    },
+    {
+      "city": "\"Valley Head\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357607
+    },
+    {
+      "city": "\"Vinegar Bend\"",
+      "state": "AL",
+      "available": 1,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357608
+    },
+    {
+      "city": "\"Walnut Grove\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357610
+    },
+    {
+      "city": "\"West Blocton\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357612
+    },
+    {
+      "city": "\"West Greene\"",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357613
+    },
+    {
+      "city": "Abbeville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357615
+    },
+    {
+      "city": "Abernant",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357617
+    },
+    {
+      "city": "Akron",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357618
+    },
+    {
+      "city": "Alabaster",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357620
+    },
+    {
+      "city": "Allgood",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357621
+    },
+    {
+      "city": "Alton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357623
+    },
+    {
+      "city": "Altoona",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357625
+    },
+    {
+      "city": "Andalusia",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357626
+    },
+    {
+      "city": "Anderson",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357628
+    },
+    {
+      "city": "Annemanie",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357629
+    },
+    {
+      "city": "Anniston",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357631
+    },
+    {
+      "city": "Arab",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357633
+    },
+    {
+      "city": "Ardmore",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357634
+    },
+    {
+      "city": "Ariton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357636
+    },
+    {
+      "city": "Arley",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357637
+    },
+    {
+      "city": "Arlington",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357639
+    },
+    {
+      "city": "Ashford",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357641
+    },
+    {
+      "city": "Ashland",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357642
+    },
+    {
+      "city": "Ashville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357644
+    },
+    {
+      "city": "Athens",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357646
+    },
+    {
+      "city": "Atmore",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357647
+    },
+    {
+      "city": "Attalla",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357649
+    },
+    {
+      "city": "Auburn",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357650
+    },
+    {
+      "city": "Autaugaville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357652
+    },
+    {
+      "city": "Axis",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357654
+    },
+    {
+      "city": "Baileyton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357655
+    },
+    {
+      "city": "Banks",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357657
+    },
+    {
+      "city": "Bankston",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357659
+    },
+    {
+      "city": "Beatrice",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357660
+    },
+    {
+      "city": "Beaverton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357662
+    },
+    {
+      "city": "Belk",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357664
+    },
+    {
+      "city": "Bellamy",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357665
+    },
+    {
+      "city": "Bellwood",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357667
+    },
+    {
+      "city": "Berry",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357668
+    },
+    {
+      "city": "Bessemer",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357670
+    },
+    {
+      "city": "Billingsley",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357672
+    },
+    {
+      "city": "Birmingham",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357673
+    },
+    {
+      "city": "Black",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357675
+    },
+    {
+      "city": "Blountsville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357676
+    },
+    {
+      "city": "Boaz",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357678
+    },
+    {
+      "city": "Boligee",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357680
+    },
+    {
+      "city": "Booth",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357681
+    },
+    {
+      "city": "Boykin",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357683
+    },
+    {
+      "city": "Brantley",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357685
+    },
+    {
+      "city": "Bremen",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357686
+    },
+    {
+      "city": "Brent",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357688
+    },
+    {
+      "city": "Brewton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357690
+    },
+    {
+      "city": "Bridgeport",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357691
+    },
+    {
+      "city": "Brierfield",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357693
+    },
+    {
+      "city": "Brilliant",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357695
+    },
+    {
+      "city": "Brooklyn",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357696
+    },
+    {
+      "city": "Brookside",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357698
+    },
+    {
+      "city": "Brookwood",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357699
+    },
+    {
+      "city": "Brownsboro",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357701
+    },
+    {
+      "city": "Brundidge",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357703
+    },
+    {
+      "city": "Bryant",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357704
+    },
+    {
+      "city": "Bucks",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357706
+    },
+    {
+      "city": "Buhl",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357707
+    },
+    {
+      "city": "Burnwell",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357709
+    },
+    {
+      "city": "Butler",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357711
+    },
+    {
+      "city": "Bynum",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357712
+    },
+    {
+      "city": "Calera",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357714
+    },
+    {
+      "city": "Calvert",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357716
+    },
+    {
+      "city": "Camden",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357717
+    },
+    {
+      "city": "Campbell",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357719
+    },
+    {
+      "city": "Capshaw",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357720
+    },
+    {
+      "city": "Cardiff",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357722
+    },
+    {
+      "city": "Carlton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357724
+    },
+    {
+      "city": "Carrollton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357725
+    },
+    {
+      "city": "Castleberry",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357727
+    },
+    {
+      "city": "Catherine",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357728
+    },
+    {
+      "city": "Cecil",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357730
+    },
+    {
+      "city": "Centre",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357731
+    },
+    {
+      "city": "Centreville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357733
+    },
+    {
+      "city": "Chancellor",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357735
+    },
+    {
+      "city": "Chapman",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357736
+    },
+    {
+      "city": "Chatom",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357738
+    },
+    {
+      "city": "Chelsea",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357739
+    },
+    {
+      "city": "Cherokee",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357741
+    },
+    {
+      "city": "Childersburg",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357743
+    },
+    {
+      "city": "Choccolocco",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357744
+    },
+    {
+      "city": "Chunchula",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357746
+    },
+    {
+      "city": "Citronelle",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357748
+    },
+    {
+      "city": "Clanton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357749
+    },
+    {
+      "city": "Clay",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357751
+    },
+    {
+      "city": "Clayton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357752
+    },
+    {
+      "city": "Cleveland",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357754
+    },
+    {
+      "city": "Clinton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357756
+    },
+    {
+      "city": "Clio",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357757
+    },
+    {
+      "city": "Clopton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357759
+    },
+    {
+      "city": "Cloverdale",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357761
+    },
+    {
+      "city": "Coaling",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357762
+    },
+    {
+      "city": "Coden",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357764
+    },
+    {
+      "city": "Coffeeville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357765
+    },
+    {
+      "city": "Coker",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357767
+    },
+    {
+      "city": "Collinsville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357769
+    },
+    {
+      "city": "Columbia",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357770
+    },
+    {
+      "city": "Columbiana",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357772
+    },
+    {
+      "city": "Coosada",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357774
+    },
+    {
+      "city": "Cordova",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357775
+    },
+    {
+      "city": "Cottondale",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357777
+    },
+    {
+      "city": "Cottonton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357778
+    },
+    {
+      "city": "Cottonwood",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357780
+    },
+    {
+      "city": "Courtland",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357782
+    },
+    {
+      "city": "Cowarts",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357783
+    },
+    {
+      "city": "Coy",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357785
+    },
+    {
+      "city": "Cragford",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357787
+    },
+    {
+      "city": "Creola",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357788
+    },
+    {
+      "city": "Cropwell",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357790
+    },
+    {
+      "city": "Crossville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357791
+    },
+    {
+      "city": "Cuba",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357793
+    },
+    {
+      "city": "Cullman",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357795
+    },
+    {
+      "city": "Cusseta",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357796
+    },
+    {
+      "city": "Dadeville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357798
+    },
+    {
+      "city": "Daleville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357799
+    },
+    {
+      "city": "Danville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357801
+    },
+    {
+      "city": "Daphne",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357802
+    },
+    {
+      "city": "Daviston",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357804
+    },
+    {
+      "city": "Dawson",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357806
+    },
+    {
+      "city": "Deatsville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357807
+    },
+    {
+      "city": "Decatur",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357809
+    },
+    {
+      "city": "Delmar",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357811
+    },
+    {
+      "city": "Delta",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357812
+    },
+    {
+      "city": "Demopolis",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357814
+    },
+    {
+      "city": "Detroit",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357815
+    },
+    {
+      "city": "Dickinson",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357817
+    },
+    {
+      "city": "Docena",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357819
+    },
+    {
+      "city": "Dolomite",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357820
+    },
+    {
+      "city": "Dora",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357822
+    },
+    {
+      "city": "Dothan",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357823
+    },
+    {
+      "city": "Douglas",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357825
+    },
+    {
+      "city": "Dozier",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357827
+    },
+    {
+      "city": "Duncanville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357828
+    },
+    {
+      "city": "Dutton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357830
+    },
+    {
+      "city": "Eastaboga",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357831
+    },
+    {
+      "city": "Echola",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357833
+    },
+    {
+      "city": "Eclectic",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357834
+    },
+    {
+      "city": "Edwardsville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357836
+    },
+    {
+      "city": "Elba",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357838
+    },
+    {
+      "city": "Elberta",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357839
+    },
+    {
+      "city": "Eldridge",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357841
+    },
+    {
+      "city": "Elkmont",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357843
+    },
+    {
+      "city": "Elmore",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357844
+    },
+    {
+      "city": "Elrod",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357846
+    },
+    {
+      "city": "Emelle",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357847
+    },
+    {
+      "city": "Empire",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357849
+    },
+    {
+      "city": "Enterprise",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357851
+    },
+    {
+      "city": "Epes",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357852
+    },
+    {
+      "city": "Equality",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357854
+    },
+    {
+      "city": "Estillfork",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357855
+    },
+    {
+      "city": "Ethelsville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357857
+    },
+    {
+      "city": "Eufaula",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357859
+    },
+    {
+      "city": "Eutaw",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357860
+    },
+    {
+      "city": "Eva",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357862
+    },
+    {
+      "city": "Excel",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357864
+    },
+    {
+      "city": "Fackler",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357865
+    },
+    {
+      "city": "Fairfield",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357867
+    },
+    {
+      "city": "Fairhope",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357868
+    },
+    {
+      "city": "Falkville",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357870
+    },
+    {
+      "city": "Faunsdale",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357871
+    },
+    {
+      "city": "Fayette",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357873
+    },
+    {
+      "city": "Fitzpatrick",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357875
+    },
+    {
+      "city": "Flomaton",
+      "state": "AL",
+      "available": 2,
+      "confidence": 50,
+      "source": "brave_search",
+      "first_seen": 1774357876
+    },
+    {
+      "city": "Noti",
+      "state": "OR",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774360921
+    },
+    {
+      "city": "Louisville",
+      "state": "KY",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774360930
+    },
+    {
+      "city": "Pensacola",
+      "state": "FL",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774360941
+    },
+    {
+      "city": "Vail",
+      "state": "AZ",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774360963
+    },
+    {
+      "city": "Omer",
+      "state": "MI",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774360972
+    },
+    {
+      "city": "Tome",
+      "state": "NM",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774371623
+    },
+    {
+      "city": "Portland",
+      "state": "ME",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774371694
+    },
+    {
+      "city": "Chattanooga",
+      "state": "TN",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774371717
+    },
+    {
+      "city": "Boise",
+      "state": "ID",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774152546
+    },
+    {
+      "city": "Day",
+      "state": "FL",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774386031
+    },
+    {
+      "city": "Columbus",
+      "state": "MS",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774386039
+    },
+    {
+      "city": "Columbus",
+      "state": "GA",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774400413
+    },
+    {
+      "city": "Lake",
+      "state": "MI",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774400455
+    },
+    {
+      "city": "Ava",
+      "state": "NY",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774400492
+    },
+    {
+      "city": "Strong",
+      "state": "AR",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774400512
+    },
+    {
+      "city": "Biloxi",
+      "state": "MS",
+      "available": 1,
+      "confidence": 75,
+      "source": "dma_probe",
+      "first_seen": 1774400528
+    }
+  ]
+}
