@@ -143,6 +143,7 @@ async function main() {
     SELECT address_raw, city, state, type, lat, lng, confidence_tier, source_url, dma_id
     FROM locations
     WHERE lat IS NOT NULL AND lng IS NOT NULL
+      AND type != 'corporate'
     ORDER BY type, id
   `).all().map(l => ({
     lat: l.lat, lng: l.lng,
