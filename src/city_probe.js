@@ -278,9 +278,11 @@ async function main() {
       LEFT JOIN dmas d ON d.id = c.dma_id
       LEFT JOIN city_coverage cc ON cc.city = c.city AND cc.state = c.state
         AND cc.retailer_id = ?
-      WHERE (cc.available IS NULL OR cc.available = 0)   -- skip already confirmed
+      WHERE (cc.available IS NULL OR cc.available = 0)   -- skip already confirmed available
+        AND (cc.available != 0 OR cc.last_confirmed < unixepoch() - 86400*14) -- recheck negatives after 14 days
         AND (cc.last_confirmed IS NULL
-             OR cc.last_confirmed < unixepoch() - 86400*14) -- skip recently checked
+             OR cc.available = 0                          -- negatives: use 14-day window above
+             OR cc.last_confirmed < unixepoch() - 86400*14) -- positives already filtered above
         ${stateFilter}
       ORDER BY
         facility_tier ASC,                  -- facility DMAs first
@@ -298,10 +300,12 @@ async function main() {
     let checked = 0, found = 0, newFound = 0;
 
     for (const { city, state: st } of cities) {
-      // Skip if recently checked (within 14 days)
+      // Skip if recently confirmed (positive or negative) within 14 days
+      // Inconclusive (available=2) results were not written, so they're always eligible to retry
       const recent = db.prepare(`
         SELECT last_confirmed FROM city_coverage
         WHERE retailer_id=? AND city=? AND state=?
+        AND available IN (0, 1)
         AND last_confirmed > unixepoch() - 86400*14
       `).get(retailer.id, city, st);
       if (recent) continue;
@@ -327,18 +331,24 @@ async function main() {
         const results = data?.web?.results || [];
         const { available, confidence } = scoreResult(results, city, st);
         const sourceUrl = results[0]?.url || null;
-
         const topSnippet = results[0]?.description || results[0]?.snippet || null;
-        const isNew = upsertCity(db, retailer.id, city, st, available, confidence, sourceUrl, 'brave_search', topSnippet, query);
 
         if (available === 1) {
+          // Confirmed available — write to DB
+          const isNew = upsertCity(db, retailer.id, city, st, 1, confidence, sourceUrl, 'brave_search', topSnippet, query);
           found++;
           if (isNew) {
             newFound++;
             log(`  ✅ ${city}, ${st} — AVAILABLE (confidence: ${confidence}%)`, logFile);
           }
-        } else if (available === 2) {
-          log(`  ❓ ${city}, ${st} — unknown`, logFile);
+        } else if (available === 0) {
+          // Confirmed unavailable — write to DB
+          upsertCity(db, retailer.id, city, st, 0, confidence, sourceUrl, 'brave_search', topSnippet, query);
+          log(`  ❌ ${city}, ${st} — NOT AVAILABLE`, logFile);
+        } else {
+          // Inconclusive — do NOT update last_confirmed so we can retry sooner
+          // Only log at debug level
+          log(`  ❓ ${city}, ${st} — inconclusive (no signal)`, logFile);
         }
 
         await sleep(RATE_LIMIT_MS);
