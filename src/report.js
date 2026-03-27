@@ -259,15 +259,51 @@ async function main() {
     }
   }
 
+  // Facility counts by type for intro panel
+  const facilityByType = db.prepare(`
+    SELECT type, COUNT(*) as n FROM locations
+    WHERE retailer_id='amazon_same_day' AND type != 'corporate' AND lat IS NOT NULL
+    GROUP BY type ORDER BY n DESC
+  `).all();
+  const facilityMap = {};
+  facilityByType.forEach(r => facilityMap[r.type] = r.n);
+
+  // ZIP coverage stats
+  const zipStats = db.prepare(`
+    SELECT 
+      COUNT(*) as total_zips,
+      SUM(CASE WHEN d2.cities_confirmed > 0 OR dm.place_probe_status='has_fresh' THEN 1 ELSE 0 END) as covered_zips,
+      SUM(z.population) as total_pop,
+      SUM(CASE WHEN d2.cities_confirmed > 0 OR dm.place_probe_status='has_fresh' THEN z.population ELSE 0 END) as covered_pop
+    FROM zip_master z
+    LEFT JOIN dmas dm ON dm.id = z.dma_id
+    LEFT JOIN dma_coverage d2 ON d2.dma_id = z.dma_id AND d2.retailer_id = 'amazon_same_day'
+    WHERE z.population > 0
+  `).get();
+
+  const tvStats = db.prepare(`
+    SELECT 
+      SUM(tv_homes) as total_tv,
+      SUM(CASE WHEN d2.cities_confirmed > 0 OR d.place_probe_status='has_fresh' THEN tv_homes ELSE 0 END) as covered_tv
+    FROM dmas d
+    LEFT JOIN dma_coverage d2 ON d2.dma_id = d.id AND d2.retailer_id = 'amazon_same_day'
+  `).get();
+
+  const zipCovPct = Math.round(zipStats.covered_zips / zipStats.total_zips * 100);
+  const popCovPct2 = Math.round(zipStats.covered_pop / zipStats.total_pop * 100);
+  const tvCovPct = Math.round(tvStats.covered_tv / tvStats.total_tv * 100);
+
   const methodStats = {
     probesDone: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='done'").get().n,
     probesPending: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='pending'").get().n,
     avgConfidence: db.prepare("SELECT ROUND(AVG(confidence),1) as a FROM city_coverage WHERE available=1").get().a,
-    totalLocations: db.prepare("SELECT COUNT(*) as n FROM locations").get().n,
+    totalLocations: db.prepare("SELECT COUNT(*) as n FROM locations WHERE type != 'corporate'").get().n,
     dmas_assessed, dmas_confirmed, dmas_probable,
     dmas_total: 209,
     population_covered,
-    total_us_population
+    total_us_population,
+    facilityMap,
+    zipStats, tvStats, zipCovPct, popCovPct2, tvCovPct
   };
 
   // ── New this week ─────────────────────────────────────────────────────────────
@@ -445,13 +481,27 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .tracker-bar{height:6px;background:#eee;border-radius:3px;overflow:hidden}
 .tracker-fill{height:100%;border-radius:3px;transition:width .4s ease}
 /* Completeness banner */
-.completeness-banner{background:linear-gradient(135deg,#1a1a2e 0%,#162040 100%);color:#dde;border-radius:10px;padding:16px 22px;margin-bottom:14px;display:flex;gap:32px;flex-wrap:wrap;align-items:center}
-.completeness-banner .cb-item{text-align:center}
-.completeness-banner .cb-num{font-size:28px;font-weight:800;color:#4a90e2;line-height:1}
-.completeness-banner .cb-label{font-size:11px;color:#88a;margin-top:3px}
-.completeness-banner .cb-divider{width:1px;background:#2a3a5e;align-self:stretch}
-.completeness-banner .cb-title{font-size:13px;font-weight:700;color:#ccd;margin-bottom:4px}
-.completeness-banner .cb-sub{font-size:11px;color:#88a}
+/* Intro panel */
+.intro-panel{background:linear-gradient(135deg,#1a1a2e 0%,#162040 100%);color:#dde;border-radius:10px;padding:18px 22px;margin-bottom:14px}
+.intro-purpose{font-size:13px;color:#aac;margin-bottom:14px;line-height:1.6;border-bottom:1px solid #2a3a5e;padding-bottom:12px}
+.intro-purpose strong{color:#cde}
+.intro-stats-grid{display:flex;gap:0;flex-wrap:wrap;align-items:flex-start}
+.intro-stat-block{flex:1;min-width:200px;padding:0 20px}
+.intro-stat-block:first-child{padding-left:0}
+.intro-stat-title{font-size:11px;font-weight:700;color:#88a;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.intro-stat-big{font-size:36px;font-weight:800;color:#4a90e2;line-height:1}
+.intro-stat-sub{font-size:11px;color:#88a;margin-top:2px}
+.intro-fac-breakdown{margin-top:8px;display:flex;flex-direction:column;gap:3px}
+.fac-tag{font-size:12px;color:#bbd}.fac-tag.ssd{color:#ef4444}.fac-tag.fresh{color:#f97316}.fac-tag.wf{color:#22c55e}.fac-tag.fd{color:#fb923c}.fac-tag.fc{color:#9ca3af}.fac-tag.ds{color:#6b7280}
+.intro-divider{width:1px;background:#2a3a5e;align-self:stretch;margin:0 4px}
+.intro-reach-row{display:flex;gap:20px;flex-wrap:wrap}
+.reach-item{text-align:center}
+.reach-num{font-size:28px;font-weight:800;color:#10b981;line-height:1}
+.reach-label{font-size:11px;color:#88a;margin-top:2px;line-height:1.4}
+.dl-btn{display:inline-block;margin-top:8px;padding:10px 18px;background:#3b82f6;color:#fff;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:background .15s}
+.dl-btn:hover{background:#2563eb}
+/* Legacy completeness banner refs */
+.completeness-banner{display:none}
 /* Map */
 #map{height:560px;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.12);margin-bottom:12px}
 .choropleth-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:#555}
@@ -534,33 +584,64 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <div id="map-view" class="view active">
   ${summaryCards}
 
-  <!-- Completeness Banner -->
-  <div class="completeness-banner">
-    <div class="cb-item">
-      <div class="cb-title">DMA Analysis Progress</div>
-      <div class="cb-sub">${esc(generatedDate)} — Analysis ongoing</div>
+  <!-- Intro Panel -->
+  <div class="intro-panel">
+    <div class="intro-purpose">
+      <strong>Purpose:</strong> Analyze Amazon&#39;s Same-Day fresh grocery delivery coverage in the U.S. using publicly available information.
+      For a full description of methodology and confidence in the analysis, see the <strong>Methodology</strong> tab above.
+      &nbsp;·&nbsp; <em>${esc(generatedDate)}</em>
     </div>
-    <div class="cb-divider"></div>
-    <div class="cb-item">
-      <div class="cb-num">${methodStats.dmas_assessed}</div>
-      <div class="cb-label">of ${methodStats.dmas_total} DMAs assessed (${dmasAssessedPct}%)</div>
-    </div>
-    <div class="cb-item">
-      <div class="cb-num" style="color:#10b981">${methodStats.dmas_confirmed}</div>
-      <div class="cb-label">Confirmed coverage</div>
-    </div>
-    <div class="cb-item">
-      <div class="cb-num" style="color:#f59e0b">${methodStats.dmas_probable}</div>
-      <div class="cb-label">Probable (Fresh facility)</div>
-    </div>
-    <div class="cb-item">
-      <div class="cb-num" style="color:#6b7280">${methodStats.dmas_total - methodStats.dmas_assessed}</div>
-      <div class="cb-label">Unknown / unassessed</div>
-    </div>
-    <div class="cb-divider"></div>
-    <div class="cb-item">
-      <div class="cb-num">${popCovPct}%</div>
-      <div class="cb-label">US pop near fresh facility</div>
+
+    <div class="intro-stats-grid">
+
+      <!-- Facility inventory -->
+      <div class="intro-stat-block">
+        <div class="intro-stat-title">Amazon Facility Network</div>
+        <div class="intro-stat-big">${methodStats.totalLocations.toLocaleString()}</div>
+        <div class="intro-stat-sub">facilities identified</div>
+        <div class="intro-fac-breakdown">
+          ${methodStats.facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${methodStats.facilityMap.ssd_fulfillment} SSD Fulfillment</span>` : ''}
+          ${methodStats.facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${methodStats.facilityMap.fresh_hub} Fresh Hubs</span>` : ''}
+          ${methodStats.facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${methodStats.facilityMap.whole_foods_node} Whole Foods Nodes</span>` : ''}
+          ${methodStats.facilityMap.fresh_distribution ? `<span class="fac-tag fd">&#9679; ${methodStats.facilityMap.fresh_distribution} Fresh Distribution</span>` : ''}
+          ${methodStats.facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.fulfillment_center} Fulfillment Centers</span>` : ''}
+          ${methodStats.facilityMap.delivery_station ? `<span class="fac-tag ds">&#9679; ${methodStats.facilityMap.delivery_station} Delivery Stations</span>` : ''}
+        </div>
+      </div>
+
+      <div class="intro-divider"></div>
+
+      <!-- Coverage reach -->
+      <div class="intro-stat-block">
+        <div class="intro-stat-title">Estimated Coverage Reach</div>
+        <div class="intro-stat-sub" style="margin-bottom:8px">Confirmed + Likely coverage (${methodStats.dmas_confirmed + methodStats.dmas_probable} of 209 DMAs)</div>
+        <div class="intro-reach-row">
+          <div class="reach-item">
+            <div class="reach-num">${methodStats.zipCovPct}%</div>
+            <div class="reach-label">of US ZIP codes<br><small>${Math.round(methodStats.zipStats.covered_zips/1000)}k of ${Math.round(methodStats.zipStats.total_zips/1000)}k</small></div>
+          </div>
+          <div class="reach-item">
+            <div class="reach-num">${methodStats.tvCovPct}%</div>
+            <div class="reach-label">of US TV households<br><small>${Math.round(methodStats.tvStats.covered_tv/1e6)}M of ${Math.round(methodStats.tvStats.total_tv/1e6)}M</small></div>
+          </div>
+          <div class="reach-item">
+            <div class="reach-num">${methodStats.popCovPct2}%</div>
+            <div class="reach-label">of US population<br><small>${Math.round(methodStats.zipStats.covered_pop/1e6)}M of ${Math.round(methodStats.zipStats.total_pop/1e6)}M</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-divider"></div>
+
+      <!-- Download -->
+      <div class="intro-stat-block" style="justify-content:center;text-align:center">
+        <div class="intro-stat-title">Data Export</div>
+        <a href="amazon-sameday-coverage-by-zip.csv" download class="dl-btn">
+          &#8595; Download ZIP Code Coverage List
+        </a>
+        <div class="intro-stat-sub" style="margin-top:6px">${methodStats.zipStats.total_zips.toLocaleString()} ZIPs &nbsp;·&nbsp; confirmed / likely / possible / unknown</div>
+      </div>
+
     </div>
   </div>
 
