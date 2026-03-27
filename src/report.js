@@ -414,8 +414,8 @@ async function main() {
       <div class="card-trio">
         <div class="card-tracker">
           <div class="tracker-pct" style="color:${color}">${cityPct}%</div>
-          <div class="tracker-label">City Coverage</div>
-          <div class="tracker-detail">${covered.toLocaleString()} / 2,300 cities confirmed</div>
+          <div class="tracker-label">DMA Coverage</div>
+          <div class="tracker-detail">${covered.toLocaleString()} confirmed locations</div>
           <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(cityPct,100)}%;background:${color}"></div></div>
         </div>
         <div class="card-tracker">
@@ -660,7 +660,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <!-- DATA TABLE VIEW -->
 <div id="data-view" class="view">
   <section>
-    <h2>City Coverage &nbsp;<span class="badge">${coverageRows.length} cities</span></h2>
+    <h2>Coverage by Location &nbsp;<span class="badge">${coverageRows.length} confirmed locations</span></h2>
     <div class="filters">
       <input type="text" id="filter-text" placeholder="Search city, state, DMA..."/>
       <select id="filter-state"><option value="">All states</option></select>
@@ -729,7 +729,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
     <h2>Methodology</h2>
 
     <h3>What We're Tracking</h3>
-    <p class="method-intro">In December 2025, Amazon announced same-day perishable grocery delivery in over 2,300 US cities for Prime members — then subsequently announced the closure of all Amazon Fresh physical stores to double down on Whole Foods + delivery infrastructure. This tracker maps that footprint: which DMAs have confirmed coverage, which have the physical infrastructure that likely enables it, and how the picture is evolving.</p>
+    <p class="method-intro">In December 2025, Amazon announced same-day perishable grocery delivery across the US for Prime members — then subsequently closed all Amazon Fresh physical stores to double down on Whole Foods + delivery infrastructure. This tracker maps that footprint using publicly available data: which DMAs have confirmed coverage, which have the physical infrastructure that likely enables it, and how the picture is evolving.</p>
 
     <h3>How We Know What We Know</h3>
     <div class="method-cols">
@@ -773,7 +773,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
     <h3>Known Limitations</h3>
     <ul>
       <li><strong>Facility presence ≠ grocery coverage.</strong> The most important caveat — SSD facilities enable grocery delivery, but standard fulfillment centers and delivery stations do not.</li>
-      <li><strong>Amazon's coverage expands continuously.</strong> The 2,300-city figure was accurate as of December 2025; the actual footprint today is likely larger. Data has a date.</li>
+      <li><strong>Amazon&#39;s coverage expands continuously.</strong> The stated coverage figures from December 2025 are likely already outdated; the actual footprint today is larger. Data has a date.</li>
       <li><strong>DMA-level assessment may miss sub-DMA variation.</strong> In large metros (New York, LA), coverage may be uneven across zip codes and boroughs. DMA-confirmed means at least one city in the DMA has evidence — not necessarily universal coverage throughout.</li>
     </ul>
 
@@ -788,7 +788,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <tr><td>Facility locations tracked</td><td>${methodStats.totalLocations.toLocaleString()}</td></tr>
         <tr><td>Search probes completed</td><td>${methodStats.probesDone.toLocaleString()}</td></tr>
         <tr><td>Search probes queued</td><td>${methodStats.probesPending.toLocaleString()}</td></tr>
-        <tr><td>Avg city confidence score</td><td>${methodStats.avgConfidence}%</td></tr>
+        <tr><td>Avg confidence score (confirmed locations)</td><td>${methodStats.avgConfidence}%</td></tr>
       </tbody>
     </table>
 
@@ -941,7 +941,7 @@ async function initDmaLayer() {
           '<b>' + (feature.properties.name || d?.dma_name || 'DMA ' + dmaId) + '</b>' +
           '<br>' + statusLabel +
           (d && d.cities_confirmed > 0
-            ? '<br>Confirmed cities: <b>' + d.cities_confirmed + '</b>' +
+            ? '<br>Confirmed locations: <b>' + d.cities_confirmed + '</b>' +
               (d.top_cities && d.top_cities.length ? ' <small>(' + d.top_cities.slice(0,3).join(', ') + ')</small>' : '')
             : '') +
           (d?.evidence_snippet ? '<br><small style="color:#888">"' + d.evidence_snippet.slice(0,150) + '…"</small>' : '') +
@@ -991,7 +991,7 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   circle.bindPopup(
     '<b>50-mile service radius</b>' +
     '<br>' + (p.facility_code || p.address_raw || '') +
-    '<br><em style="font-size:11px;color:#888">20-mile service radius &#8212; calibrated to Amazon&#39;s ~2,300 city claim</em>'
+    '<br><em style="font-size:11px;color:#888">20-mile service radius &#8212; calibrated against Amazon&#39;s stated coverage</em>'
   );
   reachLayer.addLayer(circle);
 });
@@ -1122,7 +1122,7 @@ function initTimeline() {
     statsEl.innerHTML += \`
       <div class="tl-stat" style="border-top:3px solid \${color}">
         <div class="tl-stat-n">\${latest.total_cities_confirmed}</div>
-        <div class="tl-stat-label">\${rid} — confirmed cities</div>
+        <div class="tl-stat-label">\${rid} — confirmed locations</div>
       </div>
       <div class="tl-stat" style="border-top:3px solid \${color}">
         <div class="tl-stat-n">\${latest.dmas_with_coverage}</div>
