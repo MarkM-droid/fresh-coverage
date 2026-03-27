@@ -572,9 +572,6 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 </header>
 <nav>
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
-  <button onclick="showView('data-view',this)">📊 Data</button>
-  <button onclick="showView('new-view',this)">🆕 New This Week</button>
-  <button onclick="showView('timeline-view',this);initTimeline()">📈 Timeline</button>
   <button onclick="showView('methodology-view',this)">📋 Methodology</button>
 </nav>
 
@@ -658,71 +655,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 
 <!-- DATA TABLE VIEW -->
 <div id="data-view" class="view">
-  <section>
-    <h2>Coverage by Location &nbsp;<span class="badge">${coverageRows.length} confirmed locations</span></h2>
-    <div class="filters">
-      <input type="text" id="filter-text" placeholder="Search city, state, DMA..."/>
-      <select id="filter-state"><option value="">All states</option></select>
-      <select id="filter-retailer"><option value="">All retailers</option>${retailerFilterOpts}</select>
-      <select id="filter-avail">
-        <option value="">All</option>
-        <option value="1">Available</option>
-        <option value="0">Not available</option>
-        <option value="2">Unknown</option>
-      </select>
-    </div>
-    <span id="row-info"></span>
-    <table id="cov-table">
-      <thead><tr>
-        <th data-col="0">City</th><th data-col="1">State</th><th data-col="2">DMA</th>
-        <th data-col="3">Tier</th><th data-col="4">Retailer</th><th data-col="5">Available</th>
-        <th data-col="6">Confidence</th><th data-col="7">Source</th><th data-col="8">First Seen</th>
-      </tr></thead>
-      <tbody id="cov-body">${tableRows}</tbody>
-    </table>
-    <div class="pager">
-      <button id="prev-btn">← Prev</button>
-      <span id="page-info"></span>
-      <button id="next-btn">Next →</button>
-      <span id="row-info2"></span>
-    </div>
-  </section>
-</div>
-
-<!-- NEW THIS WEEK -->
-<div id="new-view" class="view">
-  <section>
-    <h2>New Coverage This Week <span class="badge">${newThisWeek.length}</span></h2>
-    <table>
-      <thead><tr><th>City</th><th>State</th><th>DMA</th><th>Retailer</th><th>First Seen</th></tr></thead>
-      <tbody>${newRows}</tbody>
-    </table>
-  </section>
-</div>
-
-<!-- TIMELINE -->
-<div id="timeline-view" class="view">
-  <section>
-    <h2>Coverage Growth Timeline</h2>
-    <div class="tl-stat-row" id="tl-stats"></div>
-    <div class="tl-grid">
-      <div class="tl-chart-box full">
-        <h3>Coverage Growth — Cities Confirmed Over Time</h3>
-        <canvas id="chart-growth" height="90"></canvas>
-      </div>
-      <div class="tl-chart-box">
-        <h3>New DMAs Unlocked Per Day (by Tier)</h3>
-        <canvas id="chart-dma-unlock" height="200"></canvas>
-      </div>
-      <div class="tl-chart-box">
-        <h3>Signal Velocity (Signals Per Snapshot)</h3>
-        <canvas id="chart-signals" height="200"></canvas>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- METHODOLOGY -->
+  <!-- METHODOLOGY -->
 <div id="methodology-view" class="view">
   <section class="methodology">
     <h2>Methodology</h2>
