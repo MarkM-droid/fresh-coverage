@@ -582,7 +582,6 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 
 <!-- MAP VIEW -->
 <div id="map-view" class="view active">
-  ${summaryCards}
 
   <!-- Intro Panel -->
   <div class="intro-panel">
