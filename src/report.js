@@ -899,7 +899,7 @@ const reachLayer = L.layerGroup();
 const REACH_TYPES = new Set(['ssd_fulfillment','fresh_hub','fresh_distribution','same_day_facility']);
 LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   const circle = L.circle([p.lat, p.lng], {
-    radius: 80467,  // 50 miles in meters
+    radius: 32187,  // 20 miles in meters (calibrated to match Amazon's ~2,300 city claim)
     color: '#ef4444',
     weight: 1.5,
     dashArray: '6 4',
@@ -909,7 +909,7 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   circle.bindPopup(
     '<b>50-mile service radius</b>' +
     '<br>' + (p.facility_code || p.address_raw || '') +
-    '<br><em style="font-size:11px;color:#888">Hypothesis — not confirmed by Amazon</em>'
+    '<br><em style="font-size:11px;color:#888">20-mile service radius — calibrated to Amazon\'s ~2,300 city claim</em>'
   );
   reachLayer.addLayer(circle);
 });
