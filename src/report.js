@@ -338,7 +338,7 @@ async function main() {
     const parts = [`${tierIcon} ${esc(r.source) || 'unknown'}`];
     if (r.evidence_query) parts.push(`Query: <em>${esc(r.evidence_query)}</em>`);
     if (r.evidence_snippet) parts.push(`"${esc(r.evidence_snippet.slice(0,200))}${r.evidence_snippet.length > 200 ? '…' : ''}"`);
-    if (r.source_url) parts.push(`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">Source ↗</a>`);
+    if (r.source_url) parts.push(`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">Source &rarr;</a>`);
     return parts.join('<br>');
   }
 
@@ -790,8 +790,8 @@ LOC_POINTS.forEach(p => {
     (cityState ? '<br>' + cityState : '') +
     '<br><small style="color:#888">' + (p.address_raw || '') + '</small>' +
     '<br>' + tierBadge +
-    '<br><em style="font-size:11px;color:#6b7280">' + p.capability_note + '</em>' +
-    (p.source_url && !p.source_url.startsWith('brave_') ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source ↗</a>' : '')
+    (p.capability_note ? '<br><em style="font-size:11px;color:#6b7280">' + p.capability_note + '</em>' : '') +
+    (p.source_url && !p.source_url.startsWith('brave_') ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source &rarr;</a>' : '')
   );
 
   facilityLayerGroups[layerKey].addLayer(marker);
@@ -864,7 +864,7 @@ async function initDmaLayer() {
               (d.top_cities && d.top_cities.length ? ' <small>(' + d.top_cities.slice(0,3).join(', ') + ')</small>' : '')
             : '') +
           (d?.evidence_snippet ? '<br><small style="color:#888">"' + d.evidence_snippet.slice(0,150) + '…"</small>' : '') +
-          (d?.evidence_url ? '<br><a href="' + d.evidence_url + '" target="_blank" style="font-size:11px">Evidence ↗</a>' : '')
+          (d?.evidence_url ? '<br><a href="' + d.evidence_url + '" target="_blank" style="font-size:11px">Evidence &rarr;</a>' : '')
         );
         layer.on('mouseover', function() { layer.setStyle({ weight: 2, color: '#fff' }); });
         layer.on('mouseout', function() { layer.setStyle({ weight: 0.5, color: '#fff' }); });
@@ -889,7 +889,7 @@ MAP_POINTS.forEach(p => {
       (p.confidence_tier === 'verified' ? '✅ Verified' : '🟡 Inferred') + '</span>' +
     '<br><small style="color:#888">' + (p.source || '') + '</small>' +
     (p.evidence_snippet ? '<br><small style="color:#aaa">"' + p.evidence_snippet + '…"</small>' : '') +
-    (p.source_url ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source ↗</a>' : '') +
+    (p.source_url ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source &rarr;</a>' : '') +
     (p.first_seen ? '<br><small style="color:#aaa">First seen: ' + new Date(p.first_seen*1000).toLocaleDateString() + '</small>' : '')
   );
   citiesLayer.addLayer(marker);
@@ -910,7 +910,7 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   circle.bindPopup(
     '<b>50-mile service radius</b>' +
     '<br>' + (p.facility_code || p.address_raw || '') +
-    '<br><em style="font-size:11px;color:#888">20-mile service radius — calibrated to Amazon\'s ~2,300 city claim</em>'
+    '<br><em style="font-size:11px;color:#888">20-mile service radius &#8212; calibrated to Amazon&#39;s ~2,300 city claim</em>'
   );
   reachLayer.addLayer(circle);
 });
