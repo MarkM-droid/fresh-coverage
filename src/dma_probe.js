@@ -41,7 +41,7 @@ const FACILITY_TYPES_WFN = new Set(['whole_foods_node']);
 const FACILITY_TYPES_STD = new Set(['delivery_station', 'fulfillment_center']);
 
 // Regex to extract Amazon facility codes (e.g. VCO1, UAB1, DII3)
-const FACILITY_CODE_RE = /\b([VU][A-Z]{2,3}\d{1,2})\b/i;
+const FACILITY_CODE_RE = /\b([VU][A-Z0-9]{2,4})\b/;
 
 // ─── Query templates per method ───────────────────────────────────────────────
 // facility_code is handled specially in buildProbeQueue (code extracted at build time)
