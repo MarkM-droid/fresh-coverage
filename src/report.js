@@ -831,27 +831,21 @@ async function initDmaLayer() {
   if (dmaGeoLoaded) return;
   dmaGeoLoaded = true;
   try {
-    // Try docs-relative path first (GitHub Pages), fall back to data/
     const geoUrl = (window.location.hostname === 'localhost' || window.location.protocol === 'file:')
-      ? '../data/us_counties.geojson'
-      : 'us_counties.geojson';
+      ? '../data/us_dmas.geojson'
+      : 'us_dmas.geojson';
     const resp = await fetch(geoUrl);
     const geojson = await resp.json();
 
     L.geoJSON(geojson, {
       style: feature => {
-        const stateFips = feature.properties.STATE;
-        const countyName = (feature.properties.NAME || '').toLowerCase().trim();
-        const key = stateFips + '|' + countyName;
-        const dmaId = COUNTY_TO_DMA[key];
+        // DMA GeoJSON — each feature IS a DMA, dma_id is a direct property
+        const dmaId = feature.properties.dma_id;
         const d = dmaId ? DMA_MAP[dmaId] : null;
-        return { fillColor: dmaColor(d), fillOpacity: dmaOpacity(d), color: '#1a1a2e', weight: 0.4 };
+        return { fillColor: dmaColor(d), fillOpacity: dmaOpacity(d), color: '#fff', weight: 0.5 };
       },
       onEachFeature: (feature, layer) => {
-        const stateFips = feature.properties.STATE;
-        const countyName = (feature.properties.NAME || '').toLowerCase().trim();
-        const key = stateFips + '|' + countyName;
-        const dmaId = COUNTY_TO_DMA[key];
+        const dmaId = feature.properties.dma_id;
         const d = dmaId ? DMA_MAP[dmaId] : null;
         const status = dmaStatus(d);
         const statusLabel = {
@@ -862,18 +856,17 @@ async function initDmaLayer() {
           unknown:   '⬜ Not yet assessed'
         }[status] || '—';
         layer.bindPopup(
-          '<b>' + feature.properties.NAME + ' County</b>' +
-          (d
-            ? '<br>DMA: <b>' + d.dma_name + '</b>' +
-              '<br>' + statusLabel +
-              (d.cities_confirmed > 0
-                ? '<br>Confirmed cities: <b>' + d.cities_confirmed + '</b>' +
-                  (d.top_cities && d.top_cities.length ? ' <small>(' + d.top_cities.slice(0,3).join(', ') + ')</small>' : '')
-                : '') +
-              (d.evidence_snippet ? '<br><small style="color:#888">"' + d.evidence_snippet.slice(0,150) + '…"</small>' : '') +
-              (d.evidence_url ? '<br><a href="' + d.evidence_url + '" target="_blank" style="font-size:11px">Evidence ↗</a>' : '')
-            : '<br><i style="color:#999">No DMA data</i>')
+          '<b>' + (feature.properties.name || d?.dma_name || 'DMA ' + dmaId) + '</b>' +
+          '<br>' + statusLabel +
+          (d && d.cities_confirmed > 0
+            ? '<br>Confirmed cities: <b>' + d.cities_confirmed + '</b>' +
+              (d.top_cities && d.top_cities.length ? ' <small>(' + d.top_cities.slice(0,3).join(', ') + ')</small>' : '')
+            : '') +
+          (d?.evidence_snippet ? '<br><small style="color:#888">"' + d.evidence_snippet.slice(0,150) + '…"</small>' : '') +
+          (d?.evidence_url ? '<br><a href="' + d.evidence_url + '" target="_blank" style="font-size:11px">Evidence ↗</a>' : '')
         );
+        layer.on('mouseover', function() { layer.setStyle({ weight: 2, color: '#fff' }); });
+        layer.on('mouseout', function() { layer.setStyle({ weight: 0.5, color: '#fff' }); });
       }
     }).addTo(dmaLayer);
   } catch(e) {
