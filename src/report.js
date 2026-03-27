@@ -597,12 +597,14 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <div class="intro-stat-big">${methodStats.totalLocations.toLocaleString()}</div>
         <div class="intro-stat-sub">facilities identified</div>
         <div class="intro-fac-breakdown">
-          ${methodStats.facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${methodStats.facilityMap.ssd_fulfillment} SSD Fulfillment</span>` : ''}
-          ${methodStats.facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${methodStats.facilityMap.fresh_hub} Fresh Hubs</span>` : ''}
-          ${methodStats.facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${methodStats.facilityMap.whole_foods_node} Whole Foods Nodes</span>` : ''}
+          ${methodStats.facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${methodStats.facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
+          ${methodStats.facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${methodStats.facilityMap.fresh_hub} Amazon Fresh Hubs</span>` : ''}
+          ${methodStats.facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${methodStats.facilityMap.whole_foods_node} Whole Foods Stores</span>` : ''}
           ${methodStats.facilityMap.fresh_distribution ? `<span class="fac-tag fd">&#9679; ${methodStats.facilityMap.fresh_distribution} Fresh Distribution</span>` : ''}
           ${methodStats.facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.fulfillment_center} Fulfillment Centers</span>` : ''}
-          ${methodStats.facilityMap.delivery_station ? `<span class="fac-tag ds">&#9679; ${methodStats.facilityMap.delivery_station} Delivery Stations</span>` : ''}
+          ${methodStats.facilityMap.same_day_facility ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.same_day_facility} Same-Day Facilities</span>` : ''}
+          ${methodStats.facilityMap.amazon_facility ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.amazon_facility} Other Amazon Facilities</span>` : ''}
+          ${(methodStats.facilityMap.sortation_center||0) + (methodStats.facilityMap.distribution_center||0) + (methodStats.facilityMap.delivery_station||0) + (methodStats.facilityMap.warehouse||0) > 0 ? `<span class="fac-tag ds">&#9679; ${(methodStats.facilityMap.sortation_center||0)+(methodStats.facilityMap.distribution_center||0)+(methodStats.facilityMap.delivery_station||0)+(methodStats.facilityMap.warehouse||0)} Sortation / Delivery / DC</span>` : ''}
         </div>
       </div>
 
