@@ -63,14 +63,14 @@ const AMAZON_SAME_DAY_KNOWN = [
 // ─── Query builder ────────────────────────────────────────────────────────────
 function buildQuery(retailerName, city, state) {
   if (retailerName === 'Amazon Same-Day Grocery') {
-    // Target local news, Reddit, community posts — highest signal
-    return `"Amazon" "same day delivery" groceries "${city}, ${state}" available 2025 OR 2026`;
+    // Simple natural-language query performs much better than over-quoted strings
+    return `Amazon same day grocery delivery ${city} ${state}`;
   } else if (retailerName === 'Amazon Fresh') {
-    return `"Amazon Fresh" delivery "${city}, ${state}" available`;
+    return `Amazon Fresh same day delivery ${city} ${state}`;
   } else if (retailerName === 'Kroger') {
-    return `"Kroger" same day grocery delivery "${city}, ${state}"`;
+    return `Kroger same day grocery delivery ${city} ${state}`;
   }
-  return `"${retailerName}" same day grocery delivery "${city}, ${state}"`;
+  return `${retailerName} same day grocery delivery ${city} ${state}`;
 }
 
 // ─── Signal scoring ───────────────────────────────────────────────────────────
@@ -82,6 +82,9 @@ function scoreResult(results, city, state) {
     'same-day delivery', 'same day delivery', 'now available', 'available in',
     'delivers to', 'delivery available', 'launched in', 'expanding to',
     'now delivering', 'get it today', 'order today',
+    'customers can now', 'now offers', 'has expanded', 'is now available',
+    'fresh groceries now', 'grocery delivery to', 'perishable', 'fresh produce',
+    'amazon fresh', 'prime members can',
   ];
   const negative = [
     'not available', 'not yet', 'coming soon', 'unavailable', 'does not deliver',
