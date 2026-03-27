@@ -278,11 +278,9 @@ async function main() {
       LEFT JOIN dmas d ON d.id = c.dma_id
       LEFT JOIN city_coverage cc ON cc.city = c.city AND cc.state = c.state
         AND cc.retailer_id = ?
-      WHERE (cc.available IS NULL OR cc.available = 0)   -- skip already confirmed available
-        AND (cc.available != 0 OR cc.last_confirmed < unixepoch() - 86400*14) -- recheck negatives after 14 days
-        AND (cc.last_confirmed IS NULL
-             OR cc.available = 0                          -- negatives: use 14-day window above
-             OR cc.last_confirmed < unixepoch() - 86400*14) -- positives already filtered above
+      WHERE cc.available IS NULL                          -- never checked
+         OR (cc.available = 0                             -- was negative, recheck after 14 days
+             AND cc.last_confirmed < unixepoch() - 86400*14)
         ${stateFilter}
       ORDER BY
         facility_tier ASC,                  -- facility DMAs first
@@ -300,15 +298,16 @@ async function main() {
     let checked = 0, found = 0, newFound = 0;
 
     for (const { city, state: st } of cities) {
-      // Skip if recently confirmed (positive or negative) within 14 days
-      // Inconclusive (available=2) results were not written, so they're always eligible to retry
-      const recent = db.prepare(`
-        SELECT last_confirmed FROM city_coverage
+      // Skip if already confirmed available (available=1)
+      // Skip if confirmed negative (available=0) within last 14 days
+      const existing = db.prepare(`
+        SELECT available, last_confirmed FROM city_coverage
         WHERE retailer_id=? AND city=? AND state=?
-        AND available IN (0, 1)
-        AND last_confirmed > unixepoch() - 86400*14
       `).get(retailer.id, city, st);
-      if (recent) continue;
+      if (existing) {
+        if (existing.available === 1) continue; // already confirmed, skip
+        if (existing.available === 0 && existing.last_confirmed > (Date.now()/1000 - 86400*14)) continue; // recent negative
+      }
 
       const query = buildQuery(retailer.name, city, st);
       log(`  [${checked+1}] ${city}, ${st}`, logFile);
