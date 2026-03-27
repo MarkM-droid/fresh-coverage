@@ -831,7 +831,11 @@ async function initDmaLayer() {
   if (dmaGeoLoaded) return;
   dmaGeoLoaded = true;
   try {
-    const resp = await fetch('../data/us_counties.geojson');
+    // Try docs-relative path first (GitHub Pages), fall back to data/
+    const geoUrl = (window.location.hostname === 'localhost' || window.location.protocol === 'file:')
+      ? '../data/us_counties.geojson'
+      : 'us_counties.geojson';
+    const resp = await fetch(geoUrl);
     const geojson = await resp.json();
 
     L.geoJSON(geojson, {
@@ -935,8 +939,7 @@ const overlayMaps = {
   '<span style="color:#f97316">●</span> Fresh Hubs': facilityLayerGroups['fresh_hub'],
   '<span style="color:#fb923c">●</span> Fresh Distribution': facilityLayerGroups['fresh_distribution'],
   '<span style="color:#22c55e">●</span> Whole Foods Nodes': facilityLayerGroups['whole_foods_node'],
-  '<span style="color:#3b82f6">●</span> Amazon Fresh Stores (Closing)': facilityLayerGroups['amazon_fresh_store'],
-  '<span style="color:#a855f7">●</span> Same-Day Facilities': facilityLayerGroups['same_day_facility'],
+  '<span style="color:#a855f7">●</span> Same-Day Facilities (unclassified)': facilityLayerGroups['same_day_facility'],
   '<span style="color:#6b7280">●</span> Other Amazon Facilities': facilityLayerGroups['other'],
   '<span style="color:#ef4444">○</span> 50-Mile Service Reach (hypothesis)': reachLayer
 };
