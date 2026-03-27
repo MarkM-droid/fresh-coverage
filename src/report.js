@@ -269,29 +269,27 @@ async function main() {
   facilityByType.forEach(r => facilityMap[r.type] = r.n);
 
   // ZIP coverage stats
-  const zipStats = db.prepare(`
-    SELECT 
-      COUNT(*) as total_zips,
-      SUM(CASE WHEN d2.cities_confirmed > 0 OR dm.place_probe_status='has_fresh' THEN 1 ELSE 0 END) as covered_zips,
-      SUM(z.population) as total_pop,
-      SUM(CASE WHEN d2.cities_confirmed > 0 OR dm.place_probe_status='has_fresh' THEN z.population ELSE 0 END) as covered_pop
-    FROM zip_master z
-    LEFT JOIN dmas dm ON dm.id = z.dma_id
-    LEFT JOIN dma_coverage d2 ON d2.dma_id = z.dma_id AND d2.retailer_id = 'amazon_same_day'
-    WHERE z.population > 0
-  `).get();
+  // Coverage stats based on Amazon's stated 50-mile service radius from confirmed SSD/Fresh facilities
+  // Pre-computed by scripts — see data/coverage_stats_50mi.json
+  let covStats50mi = { coveredZips:9539, totalZips:31095, zipPct:31, coveredPop:193000000, totalPop:317333551, popPct:61, coveredTV:95000000, totalTV:127956490, tvPct:74 };
+  try {
+    const { readFileSync: rfs } = await import('fs');
+    covStats50mi = JSON.parse(rfs(join(PROJECT_ROOT,'data','coverage_stats_50mi.json'),'utf8'));
+  } catch(e) {}
 
-  const tvStats = db.prepare(`
-    SELECT 
-      SUM(tv_homes) as total_tv,
-      SUM(CASE WHEN d2.cities_confirmed > 0 OR d.place_probe_status='has_fresh' THEN tv_homes ELSE 0 END) as covered_tv
-    FROM dmas d
-    LEFT JOIN dma_coverage d2 ON d2.dma_id = d.id AND d2.retailer_id = 'amazon_same_day'
-  `).get();
-
-  const zipCovPct = Math.round(zipStats.covered_zips / zipStats.total_zips * 100);
-  const popCovPct2 = Math.round(zipStats.covered_pop / zipStats.total_pop * 100);
-  const tvCovPct = Math.round(tvStats.covered_tv / tvStats.total_tv * 100);
+  const zipStats = {
+    total_zips: covStats50mi.totalZips,
+    covered_zips: covStats50mi.coveredZips,
+    total_pop: covStats50mi.totalPop,
+    covered_pop: covStats50mi.coveredPop
+  };
+  const tvStats = {
+    total_tv: covStats50mi.totalTV,
+    covered_tv: covStats50mi.coveredTV
+  };
+  const zipCovPct = covStats50mi.zipPct;
+  const popCovPct2 = covStats50mi.popPct;
+  const tvCovPct = covStats50mi.tvPct;
 
   const methodStats = {
     probesDone: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='done'").get().n,
@@ -613,7 +611,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       <!-- Coverage reach -->
       <div class="intro-stat-block">
         <div class="intro-stat-title">Estimated Coverage Reach</div>
-        <div class="intro-stat-sub" style="margin-bottom:8px">Confirmed + Likely coverage (${methodStats.dmas_confirmed + methodStats.dmas_probable} of 209 DMAs)</div>
+        <div class="intro-stat-sub" style="margin-bottom:8px">Within 50-mile radius of confirmed SSD or Fresh Hub facility<br><small style="color:#667">(Amazon&#39;s publicly stated service range)</small></div>
         <div class="intro-reach-row">
           <div class="reach-item">
             <div class="reach-num">${methodStats.zipCovPct}%</div>
@@ -638,7 +636,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <a href="amazon-sameday-coverage-by-zip.csv" download class="dl-btn">
           &#8595; Download ZIP Code Coverage List
         </a>
-        <div class="intro-stat-sub" style="margin-top:6px">${methodStats.zipStats.total_zips.toLocaleString()} ZIPs &nbsp;·&nbsp; confirmed / likely / possible / unknown</div>
+        <div class="intro-stat-sub" style="margin-top:6px">${methodStats.zipStats.total_zips.toLocaleString()} ZIPs &nbsp;·&nbsp; within 50mi of SSD facility / outside radius</div>
       </div>
 
     </div>
@@ -980,7 +978,7 @@ const reachLayer = L.layerGroup();
 const REACH_TYPES = new Set(['ssd_fulfillment','fresh_hub','fresh_distribution','same_day_facility']);
 LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   const circle = L.circle([p.lat, p.lng], {
-    radius: 32187,  // 20 miles in meters (calibrated to match Amazon's ~2,300 city claim)
+    radius: 80467,  // 50 miles in meters (Amazon's publicly stated service radius)
     color: '#ef4444',
     weight: 1.5,
     dashArray: '6 4',
@@ -990,7 +988,7 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   circle.bindPopup(
     '<b>50-mile service radius</b>' +
     '<br>' + (p.facility_code || p.address_raw || '') +
-    '<br><em style="font-size:11px;color:#888">20-mile service radius &#8212; calibrated against Amazon&#39;s stated coverage</em>'
+    '<br><em style="font-size:11px;color:#888">50-mile service radius &#8212; per Amazon&#39;s publicly stated range</em>'
   );
   reachLayer.addLayer(circle);
 });
