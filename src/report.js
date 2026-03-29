@@ -653,9 +653,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
   </div>
 </div>
 
-<!-- DATA TABLE VIEW -->
-<div id="data-view" class="view">
-  <!-- METHODOLOGY -->
+<!-- METHODOLOGY -->
 <div id="methodology-view" class="view">
   <section class="methodology">
     <h2>Methodology</h2>
