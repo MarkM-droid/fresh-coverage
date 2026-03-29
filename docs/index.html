@@ -119,7 +119,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <body>
 <header>
   <h1>🛒 Amazon Same-Day Grocery Coverage</h1>
-  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 29, 2026, 02:02 PM PDT</span>
+  <span>Rivendell Advisors &nbsp;·&nbsp; Mar 29, 2026, 02:07 PM PDT</span>
 </header>
 <nav>
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
@@ -218,11 +218,11 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <h4>🏭 Physical Infrastructure</h4>
         <p>We mapped Amazon's facility network from multiple sources: community-maintained facility lists, Brave Place Search POI data, and Amazon job postings. Key facility types:</p>
         <ul>
-          <li><strong>SSD fulfillment centers</strong> (V-prefix codes) — primary grocery nodes with temperature-controlled zones</li>
-          <li><strong>Amazon Fresh Online hubs</strong> (U-prefix) — dedicated perishable fulfillment</li>
-          <li><strong>Whole Foods stores</strong> (C-prefix) — now serving as microfulfillment nodes since Fresh stores closed</li>
+          <li><strong>Sub-Same-Day (SSD) fulfillment centers</strong> (V-prefix codes) — Amazon's dedicated same-day grocery nodes, featuring temperature-controlled zones for perishables. These are the primary facilities enabling fresh grocery delivery and are the most reliable indicator of coverage.</li>
+          <li><strong>Amazon Fresh Online hubs</strong> (U-prefix) — standalone perishable fulfillment warehouses predating the SSD build-out</li>
+          <li><strong>Whole Foods stores</strong> (C-prefix) — now serving as microfulfillment nodes following Amazon's January 2026 decision to close all Amazon Fresh physical stores and consolidate grocery delivery through Whole Foods</li>
         </ul>
-        <p style="font-size:12px;color:#888;margin-top:8px">Facility presence is a strong signal but not confirmation — standard delivery stations do not handle perishables.</p>
+        <p style="font-size:12px;color:#888;margin-top:8px">Facility presence is a strong signal but not confirmation — standard delivery stations and fulfillment centers for general merchandise do not handle perishables.</p>
       </div>
       <div class="method-col">
         <h4>🔍 Coverage Verification</h4>
@@ -244,7 +244,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
       <tbody>
         <tr><td><span style="color:#10b981;font-size:16px">●</span> <strong>Confirmed</strong></td><td>Direct evidence: news article, Amazon announcement, or community report of same-day grocery delivery in this area</td></tr>
-        <tr><td><span style="color:#f59e0b;font-size:16px">●</span> <strong>Probable</strong></td><td>SSD or Fresh facility found in DMA; coverage not yet confirmed by external evidence</td></tr>
+        <tr><td><span style="color:#f59e0b;font-size:16px">●</span> <strong>Probable</strong></td><td>Sub-Same-Day (SSD) or Fresh facility found in DMA; coverage not yet confirmed by external evidence</td></tr>
         <tr><td><span style="color:#6366f1;font-size:16px">●</span> <strong>Possible</strong></td><td>Amazon logistics facility present in DMA; no fresh-capable infrastructure confirmed</td></tr>
         <tr><td><span style="color:#374151;font-size:16px">●</span> <strong>Unlikely</strong></td><td>No Amazon facility found within this DMA after Place Search</td></tr>
         <tr><td><span style="color:#888;font-size:16px">●</span> <strong>Unknown</strong></td><td>DMA not yet assessed</td></tr>
@@ -253,10 +253,22 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 
     <h3>Known Limitations</h3>
     <ul>
-      <li><strong>Facility presence ≠ grocery coverage.</strong> The most important caveat — SSD facilities enable grocery delivery, but standard fulfillment centers and delivery stations do not.</li>
+      <li><strong>Facility presence ≠ grocery coverage.</strong> The most important caveat — Sub-Same-Day (SSD) facilities enable grocery delivery, but standard fulfillment centers and delivery stations do not.</li>
       <li><strong>Amazon&#39;s coverage expands continuously.</strong> The stated coverage figures from December 2025 are likely already outdated; the actual footprint today is larger. Data has a date.</li>
       <li><strong>DMA-level assessment may miss sub-DMA variation.</strong> In large metros (New York, LA), coverage may be uneven across zip codes and boroughs. DMA-confirmed means at least one city in the DMA has evidence — not necessarily universal coverage throughout.</li>
     </ul>
+
+    <h3>Downloadable ZIP Code Coverage File</h3>
+    <p>The <strong>Download ZIP Code Coverage List</strong> button on the map view exports a CSV file containing every US ZIP code with a population record (31,095 ZIPs) and its assessed Amazon same-day grocery coverage status.</p>
+    <p><strong>How it was built:</strong> Coverage status is assigned based on proximity to confirmed Amazon Sub-Same-Day (SSD) or Fresh Hub facilities using Amazon's publicly stated 50-mile service radius. Each ZIP code centroid is compared against the coordinates of all known SSD and Fresh Hub locations. ZIPs whose centroids fall within 50 miles of a confirmed facility are classified as <em>within_50mi_of_ssd_facility</em>; all others are classified as <em>outside_50mi_radius</em>.</p>
+    <p><strong>How clients can use it:</strong> The file is designed to be joined directly to internal customer or store databases using ZIP code as the key. A retailer can, for example:</p>
+    <ul>
+      <li>Join to their customer address table to quantify what share of their customer base is currently in Amazon's same-day grocery service area</li>
+      <li>Join to their store location file to identify which stores compete with Amazon same-day delivery today</li>
+      <li>Filter to <em>outside_50mi_radius</em> ZIPs to identify markets where Amazon is not yet competing — potential expansion or acquisition targets</li>
+      <li>Use the DMA and facility status columns to prioritize market analysis by competitive intensity</li>
+    </ul>
+    <p style="font-size:12px;color:#888">Note: the 50-mile radius is Amazon's stated service range. Actual delivery boundaries may vary by specific zip code. This file should be treated as a directional competitive intelligence tool, not a definitive delivery availability check.</p>
 
     <h3>Coverage Statistics</h3>
     <table class="method-table">
@@ -267,13 +279,13 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <tr><td>DMAs with Fresh/SSD facility (probable)</td><td>28</td></tr>
         <tr><td>US population near a Fresh/SSD facility</td><td>~220M of 317M (69%)</td></tr>
         <tr><td>Facility locations tracked</td><td>1,751</td></tr>
-        <tr><td>Search probes completed</td><td>540</td></tr>
-        <tr><td>Search probes queued</td><td>191</td></tr>
+        <tr><td>Search probes completed</td><td>593</td></tr>
+        <tr><td>Search probes queued</td><td>138</td></tr>
         <tr><td>Avg confidence score (confirmed locations)</td><td>70.9%</td></tr>
       </tbody>
     </table>
 
-    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Mar 29, 2026, 02:02 PM PDT.</p>
+    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Mar 29, 2026, 02:07 PM PDT.</p>
   </section>
 </div>
 
