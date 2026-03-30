@@ -479,6 +479,19 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .tracker-bar{height:6px;background:#eee;border-radius:3px;overflow:hidden}
 .tracker-fill{height:100%;border-radius:3px;transition:width .4s ease}
 /* Completeness banner */
+/* Project summary */
+.proj-grid{display:flex;flex-direction:column;gap:20px;margin-top:16px}
+.proj-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:18px 22px}
+.proj-card-full{background:#f0f4ff;border-color:#c7d2fe}
+.proj-card-title{font-size:14px;font-weight:700;color:#1e293b;margin-bottom:12px;text-transform:uppercase;letter-spacing:.04em}
+.proj-table{width:100%;border-collapse:collapse;font-size:13px}
+.proj-table td{padding:5px 0;vertical-align:top;color:#374151}
+.proj-table td:first-child{width:45%;color:#64748b;padding-right:16px}
+.proj-table strong{color:#1e293b}
+.proj-sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:4px}
+.proj-source{background:#fff;border:1px solid #e2e8f0;border-radius:6px;padding:12px 14px}
+.proj-source-name{font-size:13px;font-weight:700;color:#1e293b;margin-bottom:4px}
+.proj-source-desc{font-size:12px;color:#64748b;line-height:1.5}
 /* Intro panel */
 .intro-panel{background:linear-gradient(135deg,#1a1a2e 0%,#162040 100%);color:#dde;border-radius:10px;padding:18px 22px;margin-bottom:14px}
 .intro-purpose{font-size:13px;color:#aac;margin-bottom:14px;line-height:1.6;border-bottom:1px solid #2a3a5e;padding-bottom:12px}
@@ -573,6 +586,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <nav>
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
   <button onclick="showView('methodology-view',this)">📋 Methodology</button>
+  <button onclick="showView('project-view',this)">⚡ Project Summary</button>
 </nav>
 
 <!-- MAP VIEW -->
@@ -651,6 +665,102 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
     <span><span class="swatch" style="background:#374151"></span>Unlikely (no facility)</span>
     <span><span class="swatch" style="background:#1e293b"></span>Not assessed</span>
   </div>
+</div>
+
+<!-- PROJECT SUMMARY -->
+<div id="project-view" class="view">
+  <section class="methodology">
+    <h2>Project Summary</h2>
+    <p class="method-intro">This page documents the scope and scale of the analysis — both to illustrate the exhaustiveness of the research and to demonstrate what modern AI-assisted development makes possible.</p>
+
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <div class="proj-card-title">⏱ Time Investment</div>
+        <table class="proj-table">
+          <tr><td>Project duration</td><td><strong>8 days</strong> (March 22–29, 2026)</td></tr>
+          <tr><td>Human direction &amp; review</td><td><strong>~15–20 hours</strong> — strategic framing, validation, spot-checks, methodology decisions</td></tr>
+          <tr><td>AI execution</td><td><strong>~continuous</strong> — coding, data pipelines, web probing, debugging, report generation</td></tr>
+          <tr><td>Estimated traditional team cost</td><td><strong>$200,000–$500,000+</strong> — 3–4 engineers, 2–3 months, standard consulting rates</td></tr>
+          <tr><td>Actual API cost</td><td><strong>$15.20</strong> in Brave Search API queries</td></tr>
+        </table>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-title">💻 Code &amp; Development</div>
+        <table class="proj-table">
+          <tr><td>Lines of code written</td><td><strong>5,487</strong> lines of JavaScript</td></tr>
+          <tr><td>Git commits</td><td><strong>75</strong> iterative releases</td></tr>
+          <tr><td>Source files</td><td><strong>12</strong> scripts (data pipelines, probes, report generator)</td></tr>
+          <tr><td>Dashboard</td><td>Single-file HTML/CSS/JS report with Leaflet maps, auto-published to GitHub Pages</td></tr>
+        </table>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-title">🗄 Database Scale</div>
+        <table class="proj-table">
+          <tr><td>Total database rows</td><td><strong>83,198</strong> across 10 tables</td></tr>
+          <tr><td>US ZIP codes</td><td><strong>31,913</strong> with DMA assignment and population</td></tr>
+          <tr><td>US cities/towns</td><td><strong>29,738</strong> with geospatial coordinates</td></tr>
+          <tr><td>Nielsen DMA markets</td><td><strong>209</strong> fully mapped to county boundaries</td></tr>
+          <tr><td>Amazon facility locations</td><td><strong>1,530+</strong> with coordinates and type classification</td></tr>
+          <tr><td>Coverage signals logged</td><td><strong>13,411</strong> web search results analyzed</td></tr>
+          <tr><td>Confirmed coverage locations</td><td><strong>362</strong> verified by evidence</td></tr>
+        </table>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-card-title">🔍 Research Scope</div>
+        <table class="proj-table">
+          <tr><td>Total web searches executed</td><td><strong>3,040</strong> targeted Brave API queries</td></tr>
+          <tr><td>DMAs probed</td><td><strong>190 of 209</strong> (19 micro-markets skipped, &lt;100K TV homes)</td></tr>
+          <tr><td>Search methods per DMA</td><td><strong>6</strong> — news, Amazon newsroom, facility codes, Reddit, job postings, Facebook</td></tr>
+          <tr><td>Place Search sweeps</td><td><strong>300+</strong> geographic POI queries for facility discovery</td></tr>
+        </table>
+      </div>
+
+      <div class="proj-card proj-card-full">
+        <div class="proj-card-title">📚 Data Sources</div>
+        <div class="proj-sources-grid">
+          <div class="proj-source">
+            <div class="proj-source-name">US ZIP Code Database</div>
+            <div class="proj-source-desc">31,913 ZIP codes with city, state, county, DMA assignment. Population data from 2020 US Census (41,483 ZCTAs via Kaggle). Centroid coordinates for geospatial analysis.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">Nielsen DMA Boundaries</div>
+            <div class="proj-source-desc">All 209 US Designated Market Areas mapped to county-level polygons. Used as the primary geographic unit for market analysis — reflects real logistics catchment areas.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">Amazon Facility Network</div>
+            <div class="proj-source-desc">Community-maintained warehouse list (~1,042 entries from gortofreight.com); r/AmazonFlexDrivers wiki (2,007 US entries with GPS and type labels including V-prefix SSD codes); Brave Place Search POI index (200M+ locations). Combined: 1,530+ facilities classified by type.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">Whole Foods Store Locations</div>
+            <div class="proj-source-desc">532 US store locations assembled via Brave Place Search sweeps across all major DMAs. Verified against Amazon and Whole Foods press releases. Near-complete coverage of the ~530 US store network.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">Amazon Sub-Same-Day (SSD) Network</div>
+            <div class="proj-source-desc">75 confirmed SSD fulfillment centers (V-prefix codes) and 65 Amazon Fresh Online hubs (U-prefix) with GPS coordinates from the Amazon Flex Drivers community wiki. Cross-referenced against MWPVL research, TaxJar, Wikipedia, and news sources.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">Web Search Signals</div>
+            <div class="proj-source-desc">13,411 signals from targeted Brave Search API queries — local news, Amazon newsroom (aboutamazon.com), Reddit communities (r/AmazonFlexDrivers, r/FASCAmazon), Amazon job postings, and public social media. Used to confirm or infer coverage in each DMA.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">Amazon Public Statements</div>
+            <div class="proj-source-desc">Amazon press releases confirming same-day grocery launch cities; Amazon&#39;s January 2026 announcement closing all Amazon Fresh stores; Business Insider analysis of internal Amazon documents on the SSD network expansion.</div>
+          </div>
+          <div class="proj-source">
+            <div class="proj-source-name">US City &amp; Geographic Data</div>
+            <div class="proj-source-desc">29,738 US cities and towns with geospatial coordinates. US county GeoJSON dissolved into 188 DMA polygon shapes for the choropleth map. ZIP centroid data for proximity calculations.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated ${esc(generatedAt)}.</p>
+  </section>
 </div>
 
 <!-- METHODOLOGY -->
