@@ -52,7 +52,7 @@ function extractFacilityCode(addr) {
 function facilityCapabilityNote(type) {
   switch (type) {
     case 'ssd_fulfillment':   return 'Primary grocery node — SSD facility with temperature-controlled zones';
-    case 'fresh_hub':         return 'Amazon Fresh Online hub — dedicated perishable fulfillment';
+    case 'fresh_hub':         return 'Amazon Fresh dark store — purpose-built fulfillment-only perishable facility';
     case 'whole_foods_node':  return 'Whole Foods store serving as microfulfillment node';
     case 'amazon_fresh_store':return 'Amazon Fresh store (closing) — may transition to online-only hub';
     case 'fresh_distribution':return 'Fresh distribution — likely grocery-capable';
@@ -609,7 +609,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <div class="intro-stat-sub">facilities identified</div>
         <div class="intro-fac-breakdown">
           ${methodStats.facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${methodStats.facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
-          ${methodStats.facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${methodStats.facilityMap.fresh_hub} Amazon Fresh Hubs</span>` : ''}
+          ${methodStats.facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${methodStats.facilityMap.fresh_hub} Amazon Fresh Dark Stores</span>` : ''}
           ${methodStats.facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${methodStats.facilityMap.whole_foods_node} Whole Foods Stores</span>` : ''}
           ${methodStats.facilityMap.fresh_distribution ? `<span class="fac-tag fd">&#9679; ${methodStats.facilityMap.fresh_distribution} Fresh Distribution</span>` : ''}
           ${methodStats.facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.fulfillment_center} Fulfillment Centers</span>` : ''}
@@ -624,7 +624,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       <!-- Coverage reach -->
       <div class="intro-stat-block">
         <div class="intro-stat-title">Estimated Coverage Reach</div>
-        <div class="intro-stat-sub" style="margin-bottom:8px">Within 50-mile radius of confirmed SSD or Fresh Hub facility<br><small style="color:#667">(Amazon&#39;s publicly stated service range)</small></div>
+        <div class="intro-stat-sub" style="margin-bottom:8px">Within 50-mile radius of confirmed SSD or Fresh dark store facility<br><small style="color:#667">(Amazon&#39;s publicly stated service range)</small></div>
         <div class="intro-reach-row">
           <div class="reach-item">
             <div class="reach-num">${methodStats.zipCovPct}%</div>
@@ -740,7 +740,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
           </div>
           <div class="proj-source">
             <div class="proj-source-name">Amazon Sub-Same-Day (SSD) Network</div>
-            <div class="proj-source-desc">75 confirmed SSD fulfillment centers (V-prefix codes) and 65 Amazon Fresh Online hubs (U-prefix) with GPS coordinates from the Amazon Flex Drivers community wiki. Cross-referenced against MWPVL research, TaxJar, Wikipedia, and news sources.</div>
+            <div class="proj-source-desc">67 unique SSD fulfillment centers (V-prefix codes) and 65 Amazon Fresh dark stores (U-prefix) with GPS coordinates from the Amazon Flex Drivers community wiki. Cross-referenced against MWPVL research, TaxJar, Wikipedia, and news sources.</div>
           </div>
           <div class="proj-source">
             <div class="proj-source-name">Web Search Signals</div>
@@ -778,7 +778,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <p>We mapped Amazon's facility network from multiple sources: community-maintained facility lists, Brave Place Search POI data, and Amazon job postings. Key facility types:</p>
         <ul>
           <li><strong>Sub-Same-Day (SSD) fulfillment centers</strong> (V-prefix codes) — Amazon's dedicated same-day grocery nodes, featuring temperature-controlled zones for perishables. These are the primary facilities enabling fresh grocery delivery and are the most reliable indicator of coverage.</li>
-          <li><strong>Amazon Fresh Online hubs</strong> (U-prefix) — standalone perishable fulfillment warehouses predating the SSD build-out</li>
+          <li><strong>Amazon Fresh dark stores</strong> (U-prefix) — purpose-built fulfillment-only facilities for perishable grocery with no customer-facing retail presence, predating the SSD build-out</li>
           <li><strong>Whole Foods stores</strong> (C-prefix) — now serving as microfulfillment nodes following Amazon's January 2026 decision to close all Amazon Fresh physical stores and consolidate grocery delivery through Whole Foods</li>
         </ul>
         <p style="font-size:12px;color:#888;margin-top:8px">Facility presence is a strong signal but not confirmation — standard delivery stations and fulfillment centers for general merchandise do not handle perishables.</p>
@@ -819,7 +819,7 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 
     <h3>Downloadable ZIP Code Coverage File</h3>
     <p>The <strong>Download ZIP Code Coverage List</strong> button on the map view exports a CSV file containing every US ZIP code with a population record (${methodStats.zipStats.total_zips.toLocaleString()} ZIPs) and its assessed Amazon same-day grocery coverage status.</p>
-    <p><strong>How it was built:</strong> Coverage status is assigned based on proximity to confirmed Amazon Sub-Same-Day (SSD) or Fresh Hub facilities using Amazon's publicly stated 50-mile service radius. Each ZIP code centroid is compared against the coordinates of all known SSD and Fresh Hub locations. ZIPs whose centroids fall within 50 miles of a confirmed facility are classified as <em>within_50mi_of_ssd_facility</em>; all others are classified as <em>outside_50mi_radius</em>.</p>
+    <p><strong>How it was built:</strong> Coverage status is assigned based on proximity to confirmed Amazon Sub-Same-Day (SSD) or Fresh dark store facilities using Amazon's publicly stated 50-mile service radius. Each ZIP code centroid is compared against the coordinates of all known SSD and Fresh dark store locations. ZIPs whose centroids fall within 50 miles of a confirmed facility are classified as <em>within_50mi_of_ssd_facility</em>; all others are classified as <em>outside_50mi_radius</em>.</p>
     <p><strong>How clients can use it:</strong> The file is designed to be joined directly to internal customer or store databases using ZIP code as the key. A retailer can, for example:</p>
     <ul>
       <li>Join to their customer address table to quantify what share of their customer base is currently in Amazon's same-day grocery service area</li>
@@ -883,7 +883,7 @@ const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 // ── Layer 1: Facility network (per-type layer groups) ─────────────────────────
 const facilityTypes = {
   ssd_fulfillment:    { label:'SSD Fulfillment',        color:'#ef4444', radius:10 },
-  fresh_hub:          { label:'Fresh Hubs',             color:'#f97316', radius:8 },
+  fresh_hub:          { label:'Fresh Dark Stores',             color:'#f97316', radius:8 },
   fresh_distribution: { label:'Fresh Distribution',     color:'#fb923c', radius:8 },
   whole_foods_node:   { label:'Whole Foods Nodes',      color:'#22c55e', radius:6 },
   amazon_fresh_store: { label:'Amazon Fresh (Closing)', color:'#3b82f6', radius:6 },
@@ -1063,7 +1063,7 @@ const overlayMaps = {
   '<span style="color:#1a1a2e">▦</span> DMA Boundaries': dmaLayer,
   '<span style="color:#10b981">●</span> Confirmed Cities': citiesLayer,
   '<span style="color:#ef4444">●</span> SSD Fulfillment Centers': facilityLayerGroups['ssd_fulfillment'],
-  '<span style="color:#f97316">●</span> Fresh Hubs': facilityLayerGroups['fresh_hub'],
+  '<span style="color:#f97316">●</span> Fresh Dark Stores': facilityLayerGroups['fresh_hub'],
   '<span style="color:#fb923c">●</span> Fresh Distribution': facilityLayerGroups['fresh_distribution'],
   '<span style="color:#22c55e">●</span> Whole Foods Nodes': facilityLayerGroups['whole_foods_node'],
   '<span style="color:#a855f7">●</span> Same-Day Facilities (unclassified)': facilityLayerGroups['same_day_facility'],
