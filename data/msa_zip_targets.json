@@ -1,0 +1,2563 @@
+{
+  "10420": {
+    "msa_id": "10420",
+    "msa_name": "Akron, OH",
+    "msa_population": 698398,
+    "zips": [
+      "44203",
+      "44310",
+      "44240"
+    ],
+    "zip_csv": "44203",
+    "zip_centroid": "44310",
+    "zip_urban": "44240"
+  },
+  "10580": {
+    "msa_id": "10580",
+    "msa_name": "Albany-Schenectady-Troy, NY",
+    "msa_population": 904682,
+    "zips": [
+      "12180",
+      "12150",
+      "12065"
+    ],
+    "zip_csv": "12180",
+    "zip_centroid": "12150",
+    "zip_urban": "12065"
+  },
+  "10740": {
+    "msa_id": "10740",
+    "msa_name": "Albuquerque, NM",
+    "msa_population": 923518,
+    "zips": [
+      "87121",
+      "87053",
+      "87114"
+    ],
+    "zip_csv": "87121",
+    "zip_centroid": "87053",
+    "zip_urban": "87114"
+  },
+  "10900": {
+    "msa_id": "10900",
+    "msa_name": "Allentown-Bethlehem-Easton, PA-NJ",
+    "msa_population": 873555,
+    "zips": [
+      "18102",
+      "18333",
+      "18103"
+    ],
+    "zip_csv": "18102",
+    "zip_centroid": "18333",
+    "zip_urban": "18103"
+  },
+  "11100": {
+    "msa_id": "11100",
+    "msa_name": "Amarillo, TX",
+    "msa_population": 273100,
+    "zips": [
+      "79109",
+      "79092",
+      "79107"
+    ],
+    "zip_csv": "79109",
+    "zip_centroid": "79092",
+    "zip_urban": "79107"
+  },
+  "11260": {
+    "msa_id": "11260",
+    "msa_name": "Anchorage, AK",
+    "msa_population": 401314,
+    "zips": [
+      "99654",
+      "99687",
+      "99504"
+    ],
+    "zip_csv": "99654",
+    "zip_centroid": "99687",
+    "zip_urban": "99504"
+  },
+  "11460": {
+    "msa_id": "11460",
+    "msa_name": "Ann Arbor, MI",
+    "msa_population": 365536,
+    "zips": [
+      "48197",
+      "48158",
+      "48103"
+    ],
+    "zip_csv": "48197",
+    "zip_centroid": "48158",
+    "zip_urban": "48103"
+  },
+  "11540": {
+    "msa_id": "11540",
+    "msa_name": "Appleton, WI",
+    "msa_population": 246433,
+    "zips": [
+      "54915",
+      "54952",
+      "54914"
+    ],
+    "zip_csv": "54915",
+    "zip_centroid": "54952",
+    "zip_urban": "54914"
+  },
+  "11700": {
+    "msa_id": "11700",
+    "msa_name": "Asheville, NC",
+    "msa_population": 417202,
+    "zips": [
+      "28806",
+      "28804",
+      "28792"
+    ],
+    "zip_csv": "28806",
+    "zip_centroid": "28804",
+    "zip_urban": "28792"
+  },
+  "12060": {
+    "msa_id": "12060",
+    "msa_name": "Atlanta-Sandy Springs-Roswell, GA",
+    "msa_population": 6305839,
+    "zips": [
+      "30044",
+      "30340",
+      "30043"
+    ],
+    "zip_csv": "30044",
+    "zip_centroid": "30340",
+    "zip_urban": "30043"
+  },
+  "12100": {
+    "msa_id": "12100",
+    "msa_name": "Atlantic City-Hammonton, NJ",
+    "msa_population": 369823,
+    "zips": [
+      "08234",
+      "08330",
+      "08401"
+    ],
+    "zip_csv": "08234",
+    "zip_centroid": "08330",
+    "zip_urban": "08401"
+  },
+  "12260": {
+    "msa_id": "12260",
+    "msa_name": "Augusta-Richmond County, GA-SC",
+    "msa_population": 628186,
+    "zips": [
+      "30906",
+      "30809",
+      "30907"
+    ],
+    "zip_csv": "30906",
+    "zip_centroid": "30809",
+    "zip_urban": "30907"
+  },
+  "12420": {
+    "msa_id": "12420",
+    "msa_name": "Austin-Round Rock-San Marcos, TX",
+    "msa_population": 2473275,
+    "zips": [
+      "78660",
+      "78704",
+      "78613"
+    ],
+    "zip_csv": "78660",
+    "zip_centroid": "78704",
+    "zip_urban": "78613"
+  },
+  "12540": {
+    "msa_id": "12540",
+    "msa_name": "Bakersfield-Delano, CA",
+    "msa_population": 913820,
+    "zips": [
+      "93307",
+      "93224",
+      "93306"
+    ],
+    "zip_csv": "93307",
+    "zip_centroid": "93224",
+    "zip_urban": "93306"
+  },
+  "12580": {
+    "msa_id": "12580",
+    "msa_name": "Baltimore-Columbia-Towson, MD",
+    "msa_population": 2834316,
+    "zips": [
+      "21234",
+      "21226",
+      "21122"
+    ],
+    "zip_csv": "21234",
+    "zip_centroid": "21226",
+    "zip_urban": "21122"
+  },
+  "12940": {
+    "msa_id": "12940",
+    "msa_name": "Baton Rouge, LA",
+    "msa_population": 873661,
+    "zips": [
+      "70726",
+      "70710",
+      "70769"
+    ],
+    "zip_csv": "70726",
+    "zip_centroid": "70710",
+    "zip_urban": "70769"
+  },
+  "13140": {
+    "msa_id": "13140",
+    "msa_name": "Beaumont-Port Arthur, TX",
+    "msa_population": 395479,
+    "zips": [
+      "77705",
+      "77708",
+      "77642"
+    ],
+    "zip_csv": "77705",
+    "zip_centroid": "77708",
+    "zip_urban": "77642"
+  },
+  "13460": {
+    "msa_id": "13460",
+    "msa_name": "Bend, OR",
+    "msa_population": 260919,
+    "zips": [
+      "97701",
+      "97753",
+      "97702"
+    ],
+    "zip_csv": "97701",
+    "zip_centroid": "97753",
+    "zip_urban": "97702"
+  },
+  "13820": {
+    "msa_id": "13820",
+    "msa_name": "Birmingham, AL",
+    "msa_population": 1184290,
+    "zips": [
+      "35242",
+      "35209",
+      "35215"
+    ],
+    "zip_csv": "35242",
+    "zip_centroid": "35209",
+    "zip_urban": "35215"
+  },
+  "14260": {
+    "msa_id": "14260",
+    "msa_name": "Boise City, ID",
+    "msa_population": 826521,
+    "zips": [
+      "83709",
+      "83631",
+      "83686"
+    ],
+    "zip_csv": "83709",
+    "zip_centroid": "83631",
+    "zip_urban": "83686"
+  },
+  "14460": {
+    "msa_id": "14460",
+    "msa_name": "Boston-Cambridge-Newton, MA-NH",
+    "msa_population": 4919179,
+    "zips": [
+      "02301",
+      "02150",
+      "02360"
+    ],
+    "zip_csv": "02301",
+    "zip_centroid": "02150",
+    "zip_urban": "02360"
+  },
+  "14500": {
+    "msa_id": "14500",
+    "msa_name": "Boulder, CO",
+    "msa_population": 326831,
+    "zips": [
+      "80501",
+      "80455",
+      "80503"
+    ],
+    "zip_csv": "80501",
+    "zip_centroid": "80455",
+    "zip_urban": "80503"
+  },
+  "14740": {
+    "msa_id": "14740",
+    "msa_name": "Bremerton-Silverdale-Port Orchard, WA",
+    "msa_population": 277658,
+    "zips": [
+      "98366",
+      "98311",
+      "98370"
+    ],
+    "zip_csv": "98366",
+    "zip_centroid": "98311",
+    "zip_urban": "98370"
+  },
+  "14860": {
+    "msa_id": "14860",
+    "msa_name": "Bridgeport-Stamford-Danbury, CT",
+    "msa_population": 951558,
+    "zips": [
+      "06902",
+      "06883",
+      "06810"
+    ],
+    "zip_csv": "06902",
+    "zip_centroid": "06883",
+    "zip_urban": "06810"
+  },
+  "15180": {
+    "msa_id": "15180",
+    "msa_name": "Brownsville-Harlingen, TX",
+    "msa_population": 426710,
+    "zips": [
+      "78521",
+      "78566",
+      "78520"
+    ],
+    "zip_csv": "78521",
+    "zip_centroid": "78566",
+    "zip_urban": "78520"
+  },
+  "15380": {
+    "msa_id": "15380",
+    "msa_name": "Buffalo-Cheektowaga, NY",
+    "msa_population": 1155604,
+    "zips": [
+      "14221",
+      "14220",
+      "14094"
+    ],
+    "zip_csv": "14221",
+    "zip_centroid": "14220",
+    "zip_urban": "14094"
+  },
+  "15940": {
+    "msa_id": "15940",
+    "msa_name": "Canton-Massillon, OH",
+    "msa_population": 399474,
+    "zips": [
+      "44646",
+      "44688",
+      "44720"
+    ],
+    "zip_csv": "44646",
+    "zip_centroid": "44688",
+    "zip_urban": "44720"
+  },
+  "15980": {
+    "msa_id": "15980",
+    "msa_name": "Cape Coral-Fort Myers, FL",
+    "msa_population": 834573,
+    "zips": [
+      "34135",
+      "33919",
+      "33914"
+    ],
+    "zip_csv": "34135",
+    "zip_centroid": "33919",
+    "zip_urban": "33914"
+  },
+  "16300": {
+    "msa_id": "16300",
+    "msa_name": "Cedar Rapids, IA",
+    "msa_population": 275668,
+    "zips": [
+      "52302",
+      "52411",
+      "52402"
+    ],
+    "zip_csv": "52302",
+    "zip_centroid": "52411",
+    "zip_urban": "52402"
+  },
+  "16700": {
+    "msa_id": "16700",
+    "msa_name": "Charleston-North Charleston, SC",
+    "msa_population": 849417,
+    "zips": [
+      "29483",
+      "29456",
+      "29485"
+    ],
+    "zip_csv": "29483",
+    "zip_centroid": "29456",
+    "zip_urban": "29485"
+  },
+  "16740": {
+    "msa_id": "16740",
+    "msa_name": "Charlotte-Concord-Gastonia, NC-SC",
+    "msa_population": 2805115,
+    "zips": [
+      "28269",
+      "28105",
+      "28277"
+    ],
+    "zip_csv": "28269",
+    "zip_centroid": "28105",
+    "zip_urban": "28277"
+  },
+  "16860": {
+    "msa_id": "16860",
+    "msa_name": "Chattanooga, TN-GA",
+    "msa_population": 580353,
+    "zips": [
+      "37421",
+      "37377",
+      "30736"
+    ],
+    "zip_csv": "37421",
+    "zip_centroid": "37377",
+    "zip_urban": "30736"
+  },
+  "16980": {
+    "msa_id": "16980",
+    "msa_name": "Chicago-Naperville-Elgin, IL-IN",
+    "msa_population": 9262559,
+    "zips": [
+      "60629",
+      "60477",
+      "60618"
+    ],
+    "zip_csv": "60629",
+    "zip_centroid": "60477",
+    "zip_urban": "60618"
+  },
+  "17140": {
+    "msa_id": "17140",
+    "msa_name": "Cincinnati, OH-KY-IN",
+    "msa_population": 2272910,
+    "zips": [
+      "45011",
+      "41051",
+      "45140"
+    ],
+    "zip_csv": "45011",
+    "zip_centroid": "41051",
+    "zip_urban": "45140"
+  },
+  "17300": {
+    "msa_id": "17300",
+    "msa_name": "Clarksville, TN-KY",
+    "msa_population": 336861,
+    "zips": [
+      "37042",
+      "42236",
+      "37040"
+    ],
+    "zip_csv": "37042",
+    "zip_centroid": "42236",
+    "zip_urban": "37040"
+  },
+  "17410": {
+    "msa_id": "17410",
+    "msa_name": "Cleveland, OH",
+    "msa_population": 2158932,
+    "zips": [
+      "44256",
+      "44131",
+      "44035"
+    ],
+    "zip_csv": "44256",
+    "zip_centroid": "44131",
+    "zip_urban": "44035"
+  },
+  "17780": {
+    "msa_id": "17780",
+    "msa_name": "College Station-Bryan, TX",
+    "msa_population": 280939,
+    "zips": [
+      "77845",
+      "77807",
+      "77840"
+    ],
+    "zip_csv": "77845",
+    "zip_centroid": "77807",
+    "zip_urban": "77840"
+  },
+  "17820": {
+    "msa_id": "17820",
+    "msa_name": "Colorado Springs, CO",
+    "msa_population": 768832,
+    "zips": [
+      "80918",
+      "80829",
+      "80916"
+    ],
+    "zip_csv": "80918",
+    "zip_centroid": "80829",
+    "zip_urban": "80916"
+  },
+  "17900": {
+    "msa_id": "17900",
+    "msa_name": "Columbia, SC",
+    "msa_population": 856889,
+    "zips": [
+      "29072",
+      "29207",
+      "29223"
+    ],
+    "zip_csv": "29072",
+    "zip_centroid": "29207",
+    "zip_urban": "29223"
+  },
+  "17980": {
+    "msa_id": "17980",
+    "msa_name": "Columbus, GA-AL",
+    "msa_population": 329047,
+    "zips": [
+      "31907",
+      "31905",
+      "31909"
+    ],
+    "zip_csv": "31907",
+    "zip_centroid": "31905",
+    "zip_urban": "31909"
+  },
+  "18140": {
+    "msa_id": "18140",
+    "msa_name": "Columbus, OH",
+    "msa_population": 2180271,
+    "zips": [
+      "43123",
+      "43068",
+      "43081"
+    ],
+    "zip_csv": "43123",
+    "zip_centroid": "43068",
+    "zip_urban": "43081"
+  },
+  "18580": {
+    "msa_id": "18580",
+    "msa_name": "Corpus Christi, TX",
+    "msa_population": 446041,
+    "zips": [
+      "78414",
+      "78390",
+      "78412"
+    ],
+    "zip_csv": "78414",
+    "zip_centroid": "78390",
+    "zip_urban": "78412"
+  },
+  "18880": {
+    "msa_id": "18880",
+    "msa_name": "Crestview-Fort Walton Beach-Destin, FL",
+    "msa_population": 304818,
+    "zips": [
+      "32547",
+      "32439",
+      "32578"
+    ],
+    "zip_csv": "32547",
+    "zip_centroid": "32439",
+    "zip_urban": "32578"
+  },
+  "19100": {
+    "msa_id": "19100",
+    "msa_name": "Dallas-Fort Worth-Arlington, TX",
+    "msa_population": 8100037,
+    "zips": [
+      "75034",
+      "75051",
+      "75070"
+    ],
+    "zip_csv": "75034",
+    "zip_centroid": "75051",
+    "zip_urban": "75070"
+  },
+  "19300": {
+    "msa_id": "19300",
+    "msa_name": "Daphne-Fairhope-Foley, AL",
+    "msa_population": 253507,
+    "zips": [
+      "36532",
+      "36578",
+      "36526"
+    ],
+    "zip_csv": "36532",
+    "zip_centroid": "36578",
+    "zip_urban": "36526"
+  },
+  "19340": {
+    "msa_id": "19340",
+    "msa_name": "Davenport-Moline-Rock Island, IA-IL",
+    "msa_population": 379869,
+    "zips": [
+      "61265",
+      "52802",
+      "61201"
+    ],
+    "zip_csv": "61265",
+    "zip_centroid": "52802",
+    "zip_urban": "61201"
+  },
+  "19430": {
+    "msa_id": "19430",
+    "msa_name": "Dayton-Kettering-Beavercreek, OH",
+    "msa_population": 814363,
+    "zips": [
+      "45424",
+      "45377",
+      "45324"
+    ],
+    "zip_csv": "45424",
+    "zip_centroid": "45377",
+    "zip_urban": "45324"
+  },
+  "19660": {
+    "msa_id": "19660",
+    "msa_name": "Deltona-Daytona Beach-Ormond Beach, FL",
+    "msa_population": 721796,
+    "zips": [
+      "32174",
+      "32130",
+      "32725"
+    ],
+    "zip_csv": "32174",
+    "zip_centroid": "32130",
+    "zip_urban": "32725"
+  },
+  "19740": {
+    "msa_id": "19740",
+    "msa_name": "Denver-Aurora-Centennial, CO",
+    "msa_population": 3005131,
+    "zips": [
+      "80013",
+      "80421",
+      "80219"
+    ],
+    "zip_csv": "80013",
+    "zip_centroid": "80421",
+    "zip_urban": "80219"
+  },
+  "19780": {
+    "msa_id": "19780",
+    "msa_name": "Des Moines-West Des Moines, IA",
+    "msa_population": 737164,
+    "zips": [
+      "50317",
+      "50069",
+      "50315"
+    ],
+    "zip_csv": "50317",
+    "zip_centroid": "50069",
+    "zip_urban": "50315"
+  },
+  "19820": {
+    "msa_id": "19820",
+    "msa_name": "Detroit-Warren-Dearborn, MI",
+    "msa_population": 4342304,
+    "zips": [
+      "48180",
+      "48316",
+      "48044"
+    ],
+    "zip_csv": "48180",
+    "zip_centroid": "48316",
+    "zip_urban": "48044"
+  },
+  "20260": {
+    "msa_id": "20260",
+    "msa_name": "Duluth, MN-WI",
+    "msa_population": 281603,
+    "zips": [
+      "54880",
+      "55790",
+      "55811"
+    ],
+    "zip_csv": "54880",
+    "zip_centroid": "55790",
+    "zip_urban": "55811"
+  },
+  "20500": {
+    "msa_id": "20500",
+    "msa_name": "Durham-Chapel Hill, NC",
+    "msa_population": 608879,
+    "zips": [
+      "27703",
+      "27510",
+      "27713"
+    ],
+    "zip_csv": "27703",
+    "zip_centroid": "27510",
+    "zip_urban": "27713"
+  },
+  "21340": {
+    "msa_id": "21340",
+    "msa_name": "El Paso, TX",
+    "msa_population": 872063,
+    "zips": [
+      "79936",
+      "79839",
+      "79938"
+    ],
+    "zip_csv": "79936",
+    "zip_centroid": "79839",
+    "zip_urban": "79938"
+  },
+  "21500": {
+    "msa_id": "21500",
+    "msa_name": "Erie, PA",
+    "msa_population": 267571,
+    "zips": [
+      "16509",
+      "16508",
+      "16510"
+    ],
+    "zip_csv": "16509",
+    "zip_centroid": "16508",
+    "zip_urban": "16510"
+  },
+  "21660": {
+    "msa_id": "21660",
+    "msa_name": "Eugene-Springfield, OR",
+    "msa_population": 381181,
+    "zips": [
+      "97402",
+      "97455",
+      "97401"
+    ],
+    "zip_csv": "97402",
+    "zip_centroid": "97455",
+    "zip_urban": "97401"
+  },
+  "21780": {
+    "msa_id": "21780",
+    "msa_name": "Evansville, IN",
+    "msa_population": 270717,
+    "zips": [
+      "47630",
+      "47720",
+      "47714"
+    ],
+    "zip_csv": "47630",
+    "zip_centroid": "47720",
+    "zip_urban": "47714"
+  },
+  "22020": {
+    "msa_id": "22020",
+    "msa_name": "Fargo, ND-MN",
+    "msa_population": 262620,
+    "zips": [
+      "58103",
+      "58004",
+      "56560"
+    ],
+    "zip_csv": "58103",
+    "zip_centroid": "58004",
+    "zip_urban": "56560"
+  },
+  "22180": {
+    "msa_id": "22180",
+    "msa_name": "Fayetteville, NC",
+    "msa_population": 392336,
+    "zips": [
+      "28314",
+      "28304",
+      "28376"
+    ],
+    "zip_csv": "28314",
+    "zip_centroid": "28304",
+    "zip_urban": "28376"
+  },
+  "22220": {
+    "msa_id": "22220",
+    "msa_name": "Fayetteville-Springdale-Rogers, AR",
+    "msa_population": 590295,
+    "zips": [
+      "72712",
+      "72738",
+      "72764"
+    ],
+    "zip_csv": "72712",
+    "zip_centroid": "72738",
+    "zip_urban": "72764"
+  },
+  "22420": {
+    "msa_id": "22420",
+    "msa_name": "Flint, MI",
+    "msa_population": 401522,
+    "zips": [
+      "48439",
+      "48507",
+      "48430"
+    ],
+    "zip_csv": "48439",
+    "zip_centroid": "48507",
+    "zip_urban": "48430"
+  },
+  "22660": {
+    "msa_id": "22660",
+    "msa_name": "Fort Collins-Loveland, CO",
+    "msa_population": 370771,
+    "zips": [
+      "80525",
+      "80532",
+      "80538"
+    ],
+    "zip_csv": "80525",
+    "zip_centroid": "80532",
+    "zip_urban": "80538"
+  },
+  "23060": {
+    "msa_id": "23060",
+    "msa_name": "Fort Wayne, IN",
+    "msa_population": 457842,
+    "zips": [
+      "46835",
+      "46783",
+      "46815"
+    ],
+    "zip_csv": "46835",
+    "zip_centroid": "46783",
+    "zip_urban": "46815"
+  },
+  "23420": {
+    "msa_id": "23420",
+    "msa_name": "Fresno, CA",
+    "msa_population": 1180020,
+    "zips": [
+      "93722",
+      "93611",
+      "93727"
+    ],
+    "zip_csv": "93722",
+    "zip_centroid": "93611",
+    "zip_urban": "93727"
+  },
+  "23540": {
+    "msa_id": "23540",
+    "msa_name": "Gainesville, FL",
+    "msa_population": 350203,
+    "zips": [
+      "32608",
+      "32621",
+      "32607"
+    ],
+    "zip_csv": "32608",
+    "zip_centroid": "32621",
+    "zip_urban": "32607"
+  },
+  "24340": {
+    "msa_id": "24340",
+    "msa_name": "Grand Rapids-Wyoming-Kentwood, MI",
+    "msa_population": 1162950,
+    "zips": [
+      "49424",
+      "49525",
+      "49423"
+    ],
+    "zip_csv": "49424",
+    "zip_centroid": "49525",
+    "zip_urban": "49423"
+  },
+  "24540": {
+    "msa_id": "24540",
+    "msa_name": "Greeley, CO",
+    "msa_population": 359442,
+    "zips": [
+      "80634",
+      "80631",
+      "80504"
+    ],
+    "zip_csv": "80634",
+    "zip_centroid": "80631",
+    "zip_urban": "80504"
+  },
+  "24580": {
+    "msa_id": "24580",
+    "msa_name": "Green Bay, WI",
+    "msa_population": 331882,
+    "zips": [
+      "54115",
+      "54154",
+      "54313"
+    ],
+    "zip_csv": "54115",
+    "zip_centroid": "54154",
+    "zip_urban": "54313"
+  },
+  "24660": {
+    "msa_id": "24660",
+    "msa_name": "Greensboro-High Point, NC",
+    "msa_population": 789842,
+    "zips": [
+      "27406",
+      "27350",
+      "27410"
+    ],
+    "zip_csv": "27406",
+    "zip_centroid": "27350",
+    "zip_urban": "27410"
+  },
+  "24860": {
+    "msa_id": "24860",
+    "msa_name": "Greenville-Anderson-Greer, SC",
+    "msa_population": 975480,
+    "zips": [
+      "29681",
+      "29673",
+      "29621"
+    ],
+    "zip_csv": "29681",
+    "zip_centroid": "29673",
+    "zip_urban": "29621"
+  },
+  "25060": {
+    "msa_id": "25060",
+    "msa_name": "Gulfport-Biloxi, MS",
+    "msa_population": 421916,
+    "zips": [
+      "39503",
+      "39571",
+      "39564"
+    ],
+    "zip_csv": "39503",
+    "zip_centroid": "39571",
+    "zip_urban": "39564"
+  },
+  "25180": {
+    "msa_id": "25180",
+    "msa_name": "Hagerstown-Martinsburg, MD-WV",
+    "msa_population": 304506,
+    "zips": [
+      "21740",
+      "25427",
+      "21742"
+    ],
+    "zip_csv": "21740",
+    "zip_centroid": "25427",
+    "zip_urban": "21742"
+  },
+  "25420": {
+    "msa_id": "25420",
+    "msa_name": "Harrisburg-Carlisle, PA",
+    "msa_population": 606055,
+    "zips": [
+      "17011",
+      "17090",
+      "17055"
+    ],
+    "zip_csv": "17011",
+    "zip_centroid": "17090",
+    "zip_urban": "17055"
+  },
+  "25540": {
+    "msa_id": "25540",
+    "msa_name": "Hartford-West Hartford-East Hartford, CT",
+    "msa_population": 1151543,
+    "zips": [
+      "06457",
+      "06073",
+      "06082"
+    ],
+    "zip_csv": "06457",
+    "zip_centroid": "06073",
+    "zip_urban": "06082"
+  },
+  "25860": {
+    "msa_id": "25860",
+    "msa_name": "Hickory-Lenoir-Morganton, NC",
+    "msa_population": 370030,
+    "zips": [
+      "28655",
+      "28645",
+      "28601"
+    ],
+    "zip_csv": "28655",
+    "zip_centroid": "28645",
+    "zip_urban": "28601"
+  },
+  "26420": {
+    "msa_id": "26420",
+    "msa_name": "Houston-Pasadena-The Woodlands, TX",
+    "msa_population": 7510252,
+    "zips": [
+      "77494",
+      "77026",
+      "77449"
+    ],
+    "zip_csv": "77494",
+    "zip_centroid": "77026",
+    "zip_urban": "77449"
+  },
+  "26580": {
+    "msa_id": "26580",
+    "msa_name": "Huntington-Ashland, WV-KY-OH",
+    "msa_population": 367192,
+    "zips": [
+      "25526",
+      "25507",
+      "45638"
+    ],
+    "zip_csv": "25526",
+    "zip_centroid": "25507",
+    "zip_urban": "45638"
+  },
+  "26620": {
+    "msa_id": "26620",
+    "msa_name": "Huntsville, AL",
+    "msa_population": 527254,
+    "zips": [
+      "35758",
+      "35805",
+      "35810"
+    ],
+    "zip_csv": "35758",
+    "zip_centroid": "35805",
+    "zip_urban": "35810"
+  },
+  "26900": {
+    "msa_id": "26900",
+    "msa_name": "Indianapolis-Carmel-Greenwood, IN",
+    "msa_population": 2139689,
+    "zips": [
+      "46143",
+      "46241",
+      "46227"
+    ],
+    "zip_csv": "46143",
+    "zip_centroid": "46241",
+    "zip_urban": "46227"
+  },
+  "27140": {
+    "msa_id": "27140",
+    "msa_name": "Jackson, MS",
+    "msa_population": 609582,
+    "zips": [
+      "39110",
+      "39040",
+      "39047"
+    ],
+    "zip_csv": "39110",
+    "zip_centroid": "39040",
+    "zip_urban": "39047"
+  },
+  "27260": {
+    "msa_id": "27260",
+    "msa_name": "Jacksonville, FL",
+    "msa_population": 1713240,
+    "zips": [
+      "32218",
+      "32221",
+      "32210"
+    ],
+    "zip_csv": "32218",
+    "zip_centroid": "32221",
+    "zip_urban": "32210"
+  },
+  "28020": {
+    "msa_id": "28020",
+    "msa_name": "Kalamazoo-Portage, MI",
+    "msa_population": 262215,
+    "zips": [
+      "49009",
+      "49008",
+      "49024"
+    ],
+    "zip_csv": "49009",
+    "zip_centroid": "49008",
+    "zip_urban": "49024"
+  },
+  "28140": {
+    "msa_id": "28140",
+    "msa_name": "Kansas City, MO-KS",
+    "msa_population": 2219865,
+    "zips": [
+      "66062",
+      "64081",
+      "66061"
+    ],
+    "zip_csv": "66062",
+    "zip_centroid": "64081",
+    "zip_urban": "66061"
+  },
+  "28420": {
+    "msa_id": "28420",
+    "msa_name": "Kennewick-Richland, WA",
+    "msa_population": 314253,
+    "zips": [
+      "99301",
+      "99330",
+      "99336"
+    ],
+    "zip_csv": "99301",
+    "zip_centroid": "99330",
+    "zip_urban": "99336"
+  },
+  "28660": {
+    "msa_id": "28660",
+    "msa_name": "Killeen-Temple, TX",
+    "msa_population": 501334,
+    "zips": [
+      "76549",
+      "76539",
+      "76542"
+    ],
+    "zip_csv": "76549",
+    "zip_centroid": "76539",
+    "zip_urban": "76542"
+  },
+  "28700": {
+    "msa_id": "28700",
+    "msa_name": "Kingsport-Bristol, TN-VA",
+    "msa_population": 312490,
+    "zips": [
+      "37660",
+      "37665",
+      "37620"
+    ],
+    "zip_csv": "37660",
+    "zip_centroid": "37665",
+    "zip_urban": "37620"
+  },
+  "28880": {
+    "msa_id": "28880",
+    "msa_name": "Kiryas Joel-Poughkeepsie-Newburgh, NY",
+    "msa_population": 704620,
+    "zips": [
+      "12550",
+      "12589",
+      "10950"
+    ],
+    "zip_csv": "12550",
+    "zip_centroid": "12589",
+    "zip_urban": "10950"
+  },
+  "28940": {
+    "msa_id": "28940",
+    "msa_name": "Knoxville, TN",
+    "msa_population": 947017,
+    "zips": [
+      "37918",
+      "37849",
+      "37920"
+    ],
+    "zip_csv": "37918",
+    "zip_centroid": "37849",
+    "zip_urban": "37920"
+  },
+  "29180": {
+    "msa_id": "29180",
+    "msa_name": "Lafayette, LA",
+    "msa_population": 414288,
+    "zips": [
+      "70506",
+      "70558",
+      "70508"
+    ],
+    "zip_csv": "70506",
+    "zip_centroid": "70558",
+    "zip_urban": "70508"
+  },
+  "29460": {
+    "msa_id": "29460",
+    "msa_name": "Lakeland-Winter Haven, FL",
+    "msa_population": 818330,
+    "zips": [
+      "33810",
+      "33844",
+      "33880"
+    ],
+    "zip_csv": "33810",
+    "zip_centroid": "33844",
+    "zip_urban": "33880"
+  },
+  "29540": {
+    "msa_id": "29540",
+    "msa_name": "Lancaster, PA",
+    "msa_population": 558589,
+    "zips": [
+      "17603",
+      "17584",
+      "17601"
+    ],
+    "zip_csv": "17603",
+    "zip_centroid": "17584",
+    "zip_urban": "17601"
+  },
+  "29620": {
+    "msa_id": "29620",
+    "msa_name": "Lansing-East Lansing, MI",
+    "msa_population": 473177,
+    "zips": [
+      "48823",
+      "48837",
+      "48911"
+    ],
+    "zip_csv": "48823",
+    "zip_centroid": "48837",
+    "zip_urban": "48911"
+  },
+  "29700": {
+    "msa_id": "29700",
+    "msa_name": "Laredo, TX",
+    "msa_population": 269148,
+    "zips": [
+      "78046",
+      "78045",
+      "78041"
+    ],
+    "zip_csv": "78046",
+    "zip_centroid": "78045",
+    "zip_urban": "78041"
+  },
+  "29820": {
+    "msa_id": "29820",
+    "msa_name": "Las Vegas-Henderson-North Las Vegas, NV",
+    "msa_population": 2336573,
+    "zips": [
+      "89108",
+      "89005",
+      "89110"
+    ],
+    "zip_csv": "89108",
+    "zip_centroid": "89005",
+    "zip_urban": "89110"
+  },
+  "30460": {
+    "msa_id": "30460",
+    "msa_name": "Lexington-Fayette, KY",
+    "msa_population": 520045,
+    "zips": [
+      "40324",
+      "40509",
+      "40356"
+    ],
+    "zip_csv": "40324",
+    "zip_centroid": "40509",
+    "zip_urban": "40356"
+  },
+  "30700": {
+    "msa_id": "30700",
+    "msa_name": "Lincoln, NE",
+    "msa_population": 343620,
+    "zips": [
+      "68516",
+      "68405",
+      "68521"
+    ],
+    "zip_csv": "68516",
+    "zip_centroid": "68405",
+    "zip_urban": "68521"
+  },
+  "30780": {
+    "msa_id": "30780",
+    "msa_name": "Little Rock-North Little Rock-Conway, AR",
+    "msa_population": 764582,
+    "zips": [
+      "72076",
+      "72212",
+      "72023"
+    ],
+    "zip_csv": "72076",
+    "zip_centroid": "72212",
+    "zip_urban": "72023"
+  },
+  "30980": {
+    "msa_id": "30980",
+    "msa_name": "Longview, TX",
+    "msa_population": 293498,
+    "zips": [
+      "75605",
+      "75650",
+      "75604"
+    ],
+    "zip_csv": "75605",
+    "zip_centroid": "75650",
+    "zip_urban": "75604"
+  },
+  "31080": {
+    "msa_id": "31080",
+    "msa_name": "Los Angeles-Long Beach-Anaheim, CA",
+    "msa_population": 12799100,
+    "zips": [
+      "90011",
+      "90262",
+      "90650"
+    ],
+    "zip_csv": "90011",
+    "zip_centroid": "90262",
+    "zip_urban": "90650"
+  },
+  "31140": {
+    "msa_id": "31140",
+    "msa_name": "Louisville/Jefferson County, KY-IN",
+    "msa_population": 1364742,
+    "zips": [
+      "47150",
+      "40228",
+      "47130"
+    ],
+    "zip_csv": "47150",
+    "zip_centroid": "40228",
+    "zip_urban": "47130"
+  },
+  "31180": {
+    "msa_id": "31180",
+    "msa_name": "Lubbock, TX",
+    "msa_population": 360342,
+    "zips": [
+      "79424",
+      "79358",
+      "79423"
+    ],
+    "zip_csv": "79424",
+    "zip_centroid": "79358",
+    "zip_urban": "79423"
+  },
+  "31340": {
+    "msa_id": "31340",
+    "msa_name": "Lynchburg, VA",
+    "msa_population": 265565,
+    "zips": [
+      "24502",
+      "24551",
+      "24501"
+    ],
+    "zip_csv": "24502",
+    "zip_centroid": "24551",
+    "zip_urban": "24501"
+  },
+  "31540": {
+    "msa_id": "31540",
+    "msa_name": "Madison, WI",
+    "msa_population": 694345,
+    "zips": [
+      "53711",
+      "53560",
+      "53704"
+    ],
+    "zip_csv": "53711",
+    "zip_centroid": "53560",
+    "zip_urban": "53704"
+  },
+  "31700": {
+    "msa_id": "31700",
+    "msa_name": "Manchester-Nashua, NH",
+    "msa_population": 427354,
+    "zips": [
+      "03103",
+      "03070",
+      "03102"
+    ],
+    "zip_csv": "03103",
+    "zip_centroid": "03070",
+    "zip_urban": "03102"
+  },
+  "32580": {
+    "msa_id": "32580",
+    "msa_name": "McAllen-Edinburg-Mission, TX",
+    "msa_population": 898471,
+    "zips": [
+      "78572",
+      "78539",
+      "78577"
+    ],
+    "zip_csv": "78572",
+    "zip_centroid": "78539",
+    "zip_urban": "78577"
+  },
+  "32820": {
+    "msa_id": "32820",
+    "msa_name": "Memphis, TN-MS-AR",
+    "msa_population": 1335549,
+    "zips": [
+      "38017",
+      "38671",
+      "38654"
+    ],
+    "zip_csv": "38017",
+    "zip_centroid": "38671",
+    "zip_urban": "38654"
+  },
+  "32900": {
+    "msa_id": "32900",
+    "msa_name": "Merced, CA",
+    "msa_population": 291920,
+    "zips": [
+      "93635",
+      "95322",
+      "95301"
+    ],
+    "zip_csv": "93635",
+    "zip_centroid": "95322",
+    "zip_urban": "95301"
+  },
+  "33100": {
+    "msa_id": "33100",
+    "msa_name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+    "msa_population": 6183199,
+    "zips": [
+      "33311",
+      "33187",
+      "33024"
+    ],
+    "zip_csv": "33311",
+    "zip_centroid": "33187",
+    "zip_urban": "33024"
+  },
+  "33340": {
+    "msa_id": "33340",
+    "msa_name": "Milwaukee-Waukesha, WI",
+    "msa_population": 1560424,
+    "zips": [
+      "53215",
+      "53046",
+      "53209"
+    ],
+    "zip_csv": "53215",
+    "zip_centroid": "53046",
+    "zip_urban": "53209"
+  },
+  "33460": {
+    "msa_id": "33460",
+    "msa_name": "Minneapolis-St. Paul-Bloomington, MN-WI",
+    "msa_population": 3712020,
+    "zips": [
+      "55106",
+      "55446",
+      "55044"
+    ],
+    "zip_csv": "55106",
+    "zip_centroid": "55446",
+    "zip_urban": "55044"
+  },
+  "33660": {
+    "msa_id": "33660",
+    "msa_name": "Mobile, AL",
+    "msa_population": 411640,
+    "zips": [
+      "36695",
+      "36571",
+      "36608"
+    ],
+    "zip_csv": "36695",
+    "zip_centroid": "36571",
+    "zip_urban": "36608"
+  },
+  "33700": {
+    "msa_id": "33700",
+    "msa_name": "Modesto, CA",
+    "msa_population": 551430,
+    "zips": [
+      "95355",
+      "95363",
+      "95350"
+    ],
+    "zip_csv": "95355",
+    "zip_centroid": "95363",
+    "zip_urban": "95350"
+  },
+  "33860": {
+    "msa_id": "33860",
+    "msa_name": "Montgomery, AL",
+    "msa_population": 385463,
+    "zips": [
+      "36117",
+      "36108",
+      "36116"
+    ],
+    "zip_csv": "36117",
+    "zip_centroid": "36108",
+    "zip_urban": "36116"
+  },
+  "34820": {
+    "msa_id": "34820",
+    "msa_name": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+    "msa_population": 397478,
+    "zips": [
+      "29526",
+      "29527",
+      "29579"
+    ],
+    "zip_csv": "29526",
+    "zip_centroid": "29527",
+    "zip_urban": "29579"
+  },
+  "34940": {
+    "msa_id": "34940",
+    "msa_name": "Naples-Marco Island, FL",
+    "msa_population": 404310,
+    "zips": [
+      "34116",
+      "34142",
+      "34120"
+    ],
+    "zip_csv": "34116",
+    "zip_centroid": "34142",
+    "zip_urban": "34120"
+  },
+  "34980": {
+    "msa_id": "34980",
+    "msa_name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+    "msa_population": 2104235,
+    "zips": [
+      "37013",
+      "37067",
+      "37211"
+    ],
+    "zip_csv": "37013",
+    "zip_centroid": "37067",
+    "zip_urban": "37211"
+  },
+  "35300": {
+    "msa_id": "35300",
+    "msa_name": "New Haven, CT",
+    "msa_population": 568158,
+    "zips": [
+      "06516",
+      "06513",
+      "06511"
+    ],
+    "zip_csv": "06516",
+    "zip_centroid": "06513",
+    "zip_urban": "06511"
+  },
+  "35380": {
+    "msa_id": "35380",
+    "msa_name": "New Orleans-Metairie, LA",
+    "msa_population": 962165,
+    "zips": [
+      "70072",
+      "70082",
+      "70065"
+    ],
+    "zip_csv": "70072",
+    "zip_centroid": "70082",
+    "zip_urban": "70065"
+  },
+  "35620": {
+    "msa_id": "35620",
+    "msa_name": "New York-Newark-Jersey City, NY-NJ",
+    "msa_population": 19498249,
+    "zips": [
+      "11368",
+      "11375",
+      "11385"
+    ],
+    "zip_csv": "11368",
+    "zip_centroid": "11375",
+    "zip_urban": "11385"
+  },
+  "35840": {
+    "msa_id": "35840",
+    "msa_name": "North Port-Bradenton-Sarasota, FL",
+    "msa_population": 910108,
+    "zips": [
+      "34221",
+      "34241",
+      "34293"
+    ],
+    "zip_csv": "34221",
+    "zip_centroid": "34241",
+    "zip_urban": "34293"
+  },
+  "35980": {
+    "msa_id": "35980",
+    "msa_name": "Norwich-New London-Willimantic, CT",
+    "msa_population": 279634,
+    "zips": [
+      "06360",
+      "06382",
+      "06340"
+    ],
+    "zip_csv": "06360",
+    "zip_centroid": "06382",
+    "zip_urban": "06340"
+  },
+  "36100": {
+    "msa_id": "36100",
+    "msa_name": "Ocala, FL",
+    "msa_population": 409959,
+    "zips": [
+      "34472",
+      "32617",
+      "34491"
+    ],
+    "zip_csv": "34472",
+    "zip_centroid": "32617",
+    "zip_urban": "34491"
+  },
+  "36260": {
+    "msa_id": "36260",
+    "msa_name": "Ogden, UT",
+    "msa_population": 658013,
+    "zips": [
+      "84015",
+      "84050",
+      "84404"
+    ],
+    "zip_csv": "84015",
+    "zip_centroid": "84050",
+    "zip_urban": "84404"
+  },
+  "36420": {
+    "msa_id": "36420",
+    "msa_name": "Oklahoma City, OK",
+    "msa_population": 1477926,
+    "zips": [
+      "73099",
+      "73102",
+      "73160"
+    ],
+    "zip_csv": "73099",
+    "zip_centroid": "73102",
+    "zip_urban": "73160"
+  },
+  "36500": {
+    "msa_id": "36500",
+    "msa_name": "Olympia-Lacey-Tumwater, WA",
+    "msa_population": 299003,
+    "zips": [
+      "98501",
+      "98503",
+      "98513"
+    ],
+    "zip_csv": "98501",
+    "zip_centroid": "98503",
+    "zip_urban": "98513"
+  },
+  "36540": {
+    "msa_id": "36540",
+    "msa_name": "Omaha, NE-IA",
+    "msa_population": 984548,
+    "zips": [
+      "68104",
+      "68122",
+      "51503"
+    ],
+    "zip_csv": "68104",
+    "zip_centroid": "68122",
+    "zip_urban": "51503"
+  },
+  "36740": {
+    "msa_id": "36740",
+    "msa_name": "Orlando-Kissimmee-Sanford, FL",
+    "msa_population": 2817933,
+    "zips": [
+      "34787",
+      "32809",
+      "32828"
+    ],
+    "zip_csv": "34787",
+    "zip_centroid": "32809",
+    "zip_urban": "32828"
+  },
+  "37100": {
+    "msa_id": "37100",
+    "msa_name": "Oxnard-Thousand Oaks-Ventura, CA",
+    "msa_population": 829590,
+    "zips": [
+      "93033",
+      "93060",
+      "93065"
+    ],
+    "zip_csv": "93033",
+    "zip_centroid": "93060",
+    "zip_urban": "93065"
+  },
+  "37340": {
+    "msa_id": "37340",
+    "msa_name": "Palm Bay-Melbourne-Titusville, FL",
+    "msa_population": 643979,
+    "zips": [
+      "32907",
+      "32926",
+      "32940"
+    ],
+    "zip_csv": "32907",
+    "zip_centroid": "32926",
+    "zip_urban": "32940"
+  },
+  "37860": {
+    "msa_id": "37860",
+    "msa_name": "Pensacola-Ferry Pass-Brent, FL",
+    "msa_population": 530090,
+    "zips": [
+      "32514",
+      "32533",
+      "32566"
+    ],
+    "zip_csv": "32514",
+    "zip_centroid": "32533",
+    "zip_urban": "32566"
+  },
+  "37900": {
+    "msa_id": "37900",
+    "msa_name": "Peoria, IL",
+    "msa_population": 361989,
+    "zips": [
+      "61554",
+      "61548",
+      "61604"
+    ],
+    "zip_csv": "61554",
+    "zip_centroid": "61548",
+    "zip_urban": "61604"
+  },
+  "37980": {
+    "msa_id": "37980",
+    "msa_name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+    "msa_population": 6246160,
+    "zips": [
+      "19120",
+      "08067",
+      "19124"
+    ],
+    "zip_csv": "19120",
+    "zip_centroid": "08067",
+    "zip_urban": "19124"
+  },
+  "38060": {
+    "msa_id": "38060",
+    "msa_name": "Phoenix-Mesa-Chandler, AZ",
+    "msa_population": 5070110,
+    "zips": [
+      "85032",
+      "85259",
+      "85204"
+    ],
+    "zip_csv": "85032",
+    "zip_centroid": "85259",
+    "zip_urban": "85204"
+  },
+  "38300": {
+    "msa_id": "38300",
+    "msa_name": "Pittsburgh, PA",
+    "msa_population": 2422725,
+    "zips": [
+      "15601",
+      "15668",
+      "15301"
+    ],
+    "zip_csv": "15601",
+    "zip_centroid": "15668",
+    "zip_urban": "15301"
+  },
+  "38860": {
+    "msa_id": "38860",
+    "msa_name": "Portland-South Portland, ME",
+    "msa_population": 566329,
+    "zips": [
+      "04103",
+      "04021",
+      "04106"
+    ],
+    "zip_csv": "04103",
+    "zip_centroid": "04021",
+    "zip_urban": "04106"
+  },
+  "38900": {
+    "msa_id": "38900",
+    "msa_name": "Portland-Vancouver-Hillsboro, OR-WA",
+    "msa_population": 2509925,
+    "zips": [
+      "97006",
+      "97216",
+      "97007"
+    ],
+    "zip_csv": "97006",
+    "zip_centroid": "97216",
+    "zip_urban": "97007"
+  },
+  "38940": {
+    "msa_id": "38940",
+    "msa_name": "Port St. Lucie, FL",
+    "msa_population": 536901,
+    "zips": [
+      "34953",
+      "34987",
+      "34997"
+    ],
+    "zip_csv": "34953",
+    "zip_centroid": "34987",
+    "zip_urban": "34997"
+  },
+  "39150": {
+    "msa_id": "39150",
+    "msa_name": "Prescott Valley-Prescott, AZ",
+    "msa_population": 249081,
+    "zips": [
+      "86314",
+      "86327",
+      "86326"
+    ],
+    "zip_csv": "86314",
+    "zip_centroid": "86327",
+    "zip_urban": "86326"
+  },
+  "39300": {
+    "msa_id": "39300",
+    "msa_name": "Providence-Warwick, RI-MA",
+    "msa_population": 1677803,
+    "zips": [
+      "02780",
+      "02871",
+      "02860"
+    ],
+    "zip_csv": "02780",
+    "zip_centroid": "02871",
+    "zip_urban": "02860"
+  },
+  "39340": {
+    "msa_id": "39340",
+    "msa_name": "Provo-Orem-Lehi, UT",
+    "msa_population": 733218,
+    "zips": [
+      "84043",
+      "84626",
+      "84003"
+    ],
+    "zip_csv": "84043",
+    "zip_centroid": "84626",
+    "zip_urban": "84003"
+  },
+  "39580": {
+    "msa_id": "39580",
+    "msa_name": "Raleigh-Cary, NC",
+    "msa_population": 1509231,
+    "zips": [
+      "27610",
+      "27545",
+      "27587"
+    ],
+    "zip_csv": "27610",
+    "zip_centroid": "27545",
+    "zip_urban": "27587"
+  },
+  "39740": {
+    "msa_id": "39740",
+    "msa_name": "Reading, PA",
+    "msa_population": 432821,
+    "zips": [
+      "19606",
+      "19516",
+      "19601"
+    ],
+    "zip_csv": "19606",
+    "zip_centroid": "19516",
+    "zip_urban": "19601"
+  },
+  "39900": {
+    "msa_id": "39900",
+    "msa_name": "Reno, NV",
+    "msa_population": 564527,
+    "zips": [
+      "89502",
+      "89429",
+      "89436"
+    ],
+    "zip_csv": "89502",
+    "zip_centroid": "89429",
+    "zip_urban": "89436"
+  },
+  "40060": {
+    "msa_id": "40060",
+    "msa_name": "Richmond, VA",
+    "msa_population": 1350123,
+    "zips": [
+      "23112",
+      "23228",
+      "23223"
+    ],
+    "zip_csv": "23112",
+    "zip_centroid": "23228",
+    "zip_urban": "23223"
+  },
+  "40140": {
+    "msa_id": "40140",
+    "msa_name": "Riverside-San Bernardino-Ontario, CA",
+    "msa_population": 4688053,
+    "zips": [
+      "92335",
+      "92278",
+      "92336"
+    ],
+    "zip_csv": "92335",
+    "zip_centroid": "92278",
+    "zip_urban": "92336"
+  },
+  "40220": {
+    "msa_id": "40220",
+    "msa_name": "Roanoke, VA",
+    "msa_population": 313786,
+    "zips": [
+      "24018",
+      "24017",
+      "24153"
+    ],
+    "zip_csv": "24018",
+    "zip_centroid": "24017",
+    "zip_urban": "24153"
+  },
+  "40380": {
+    "msa_id": "40380",
+    "msa_name": "Rochester, NY",
+    "msa_population": 1052087,
+    "zips": [
+      "14580",
+      "14543",
+      "14450"
+    ],
+    "zip_csv": "14580",
+    "zip_centroid": "14543",
+    "zip_urban": "14450"
+  },
+  "40420": {
+    "msa_id": "40420",
+    "msa_name": "Rockford, IL",
+    "msa_population": 334124,
+    "zips": [
+      "61008",
+      "61101",
+      "61107"
+    ],
+    "zip_csv": "61008",
+    "zip_centroid": "61101",
+    "zip_urban": "61107"
+  },
+  "40900": {
+    "msa_id": "40900",
+    "msa_name": "Sacramento-Roseville-Folsom, CA",
+    "msa_population": 2420608,
+    "zips": [
+      "95823",
+      "95841",
+      "95630"
+    ],
+    "zip_csv": "95823",
+    "zip_centroid": "95841",
+    "zip_urban": "95630"
+  },
+  "41180": {
+    "msa_id": "41180",
+    "msa_name": "St. Louis, MO-IL",
+    "msa_population": 2795504,
+    "zips": [
+      "63376",
+      "63031",
+      "63021"
+    ],
+    "zip_csv": "63376",
+    "zip_centroid": "63031",
+    "zip_urban": "63021"
+  },
+  "41420": {
+    "msa_id": "41420",
+    "msa_name": "Salem, OR",
+    "msa_population": 436546,
+    "zips": [
+      "97301",
+      "97381",
+      "97305"
+    ],
+    "zip_csv": "97301",
+    "zip_centroid": "97381",
+    "zip_urban": "97305"
+  },
+  "41500": {
+    "msa_id": "41500",
+    "msa_name": "Salinas, CA",
+    "msa_population": 430723,
+    "zips": [
+      "93906",
+      "93927",
+      "93905"
+    ],
+    "zip_csv": "93906",
+    "zip_centroid": "93927",
+    "zip_urban": "93905"
+  },
+  "41620": {
+    "msa_id": "41620",
+    "msa_name": "Salt Lake City-Murray, UT",
+    "msa_population": 1267864,
+    "zips": [
+      "84095",
+      "84071",
+      "84118"
+    ],
+    "zip_csv": "84095",
+    "zip_centroid": "84071",
+    "zip_urban": "84118"
+  },
+  "41700": {
+    "msa_id": "41700",
+    "msa_name": "San Antonio-New Braunfels, TX",
+    "msa_population": 2703999,
+    "zips": [
+      "78130",
+      "78240",
+      "78245"
+    ],
+    "zip_csv": "78130",
+    "zip_centroid": "78240",
+    "zip_urban": "78245"
+  },
+  "41740": {
+    "msa_id": "41740",
+    "msa_name": "San Diego-Chula Vista-Carlsbad, CA",
+    "msa_population": 3269973,
+    "zips": [
+      "92154",
+      "92078",
+      "91911"
+    ],
+    "zip_csv": "92154",
+    "zip_centroid": "92078",
+    "zip_urban": "91911"
+  },
+  "41860": {
+    "msa_id": "41860",
+    "msa_name": "San Francisco-Oakland-Fremont, CA",
+    "msa_population": 4566961,
+    "zips": [
+      "94565",
+      "94507",
+      "94112"
+    ],
+    "zip_csv": "94565",
+    "zip_centroid": "94507",
+    "zip_urban": "94112"
+  },
+  "41940": {
+    "msa_id": "41940",
+    "msa_name": "San Jose-Sunnyvale-Santa Clara, CA",
+    "msa_population": 1945767,
+    "zips": [
+      "95035",
+      "95023",
+      "95123"
+    ],
+    "zip_csv": "95035",
+    "zip_centroid": "95023",
+    "zip_urban": "95123"
+  },
+  "42020": {
+    "msa_id": "42020",
+    "msa_name": "San Luis Obispo-Paso Robles, CA",
+    "msa_population": 281639,
+    "zips": [
+      "93446",
+      "93453",
+      "93405"
+    ],
+    "zip_csv": "93446",
+    "zip_centroid": "93453",
+    "zip_urban": "93405"
+  },
+  "42100": {
+    "msa_id": "42100",
+    "msa_name": "Santa Cruz-Watsonville, CA",
+    "msa_population": 261547,
+    "zips": [
+      "95076",
+      "95065",
+      "95060"
+    ],
+    "zip_csv": "95076",
+    "zip_centroid": "95065",
+    "zip_urban": "95060"
+  },
+  "42200": {
+    "msa_id": "42200",
+    "msa_name": "Santa Maria-Santa Barbara, CA",
+    "msa_population": 441257,
+    "zips": [
+      "93117",
+      "93440",
+      "93458"
+    ],
+    "zip_csv": "93117",
+    "zip_centroid": "93440",
+    "zip_urban": "93458"
+  },
+  "42220": {
+    "msa_id": "42220",
+    "msa_name": "Santa Rosa-Petaluma, CA",
+    "msa_population": 481812,
+    "zips": [
+      "95403",
+      "95436",
+      "94928"
+    ],
+    "zip_csv": "95403",
+    "zip_centroid": "95436",
+    "zip_urban": "94928"
+  },
+  "42340": {
+    "msa_id": "42340",
+    "msa_name": "Savannah, GA",
+    "msa_population": 424935,
+    "zips": [
+      "31419",
+      "31322",
+      "31405"
+    ],
+    "zip_csv": "31419",
+    "zip_centroid": "31322",
+    "zip_urban": "31405"
+  },
+  "42540": {
+    "msa_id": "42540",
+    "msa_name": "Scranton--Wilkes-Barre, PA",
+    "msa_population": 569413,
+    "zips": [
+      "18702",
+      "18706",
+      "18704"
+    ],
+    "zip_csv": "18702",
+    "zip_centroid": "18706",
+    "zip_urban": "18704"
+  },
+  "42660": {
+    "msa_id": "42660",
+    "msa_name": "Seattle-Tacoma-Bellevue, WA",
+    "msa_population": 4044837,
+    "zips": [
+      "98052",
+      "98065",
+      "98012"
+    ],
+    "zip_csv": "98052",
+    "zip_centroid": "98065",
+    "zip_urban": "98012"
+  },
+  "43340": {
+    "msa_id": "43340",
+    "msa_name": "Shreveport-Bossier City, LA",
+    "msa_population": 383295,
+    "zips": [
+      "71111",
+      "71115",
+      "71106"
+    ],
+    "zip_csv": "71111",
+    "zip_centroid": "71115",
+    "zip_urban": "71106"
+  },
+  "43620": {
+    "msa_id": "43620",
+    "msa_name": "Sioux Falls, SD-MN",
+    "msa_population": 303827,
+    "zips": [
+      "57106",
+      "57039",
+      "57103"
+    ],
+    "zip_csv": "57106",
+    "zip_centroid": "57039",
+    "zip_urban": "57103"
+  },
+  "43640": {
+    "msa_id": "43640",
+    "msa_name": "Slidell-Mandeville-Covington, LA",
+    "msa_population": 275583,
+    "zips": [
+      "70433",
+      "70445",
+      "70458"
+    ],
+    "zip_csv": "70433",
+    "zip_centroid": "70445",
+    "zip_urban": "70458"
+  },
+  "43780": {
+    "msa_id": "43780",
+    "msa_name": "South Bend-Mishawaka, IN-MI",
+    "msa_population": 324490,
+    "zips": [
+      "46530",
+      "46556",
+      "46544"
+    ],
+    "zip_csv": "46530",
+    "zip_centroid": "46556",
+    "zip_urban": "46544"
+  },
+  "43900": {
+    "msa_id": "43900",
+    "msa_name": "Spartanburg, SC",
+    "msa_population": 383327,
+    "zips": [
+      "29651",
+      "29321",
+      "29301"
+    ],
+    "zip_csv": "29651",
+    "zip_centroid": "29321",
+    "zip_urban": "29301"
+  },
+  "44060": {
+    "msa_id": "44060",
+    "msa_name": "Spokane-Spokane Valley, WA",
+    "msa_population": 600292,
+    "zips": [
+      "99208",
+      "99101",
+      "99205"
+    ],
+    "zip_csv": "99208",
+    "zip_centroid": "99101",
+    "zip_urban": "99205"
+  },
+  "44140": {
+    "msa_id": "44140",
+    "msa_name": "Springfield, MA",
+    "msa_population": 460291,
+    "zips": [
+      "01085",
+      "01073",
+      "01040"
+    ],
+    "zip_csv": "01085",
+    "zip_centroid": "01073",
+    "zip_urban": "01040"
+  },
+  "44180": {
+    "msa_id": "44180",
+    "msa_name": "Springfield, MO",
+    "msa_population": 490886,
+    "zips": [
+      "65807",
+      "65725",
+      "65802"
+    ],
+    "zip_csv": "65807",
+    "zip_centroid": "65725",
+    "zip_urban": "65802"
+  },
+  "44700": {
+    "msa_id": "44700",
+    "msa_name": "Stockton-Lodi, CA",
+    "msa_population": 800965,
+    "zips": [
+      "95206",
+      "95219",
+      "95376"
+    ],
+    "zip_csv": "95206",
+    "zip_centroid": "95219",
+    "zip_urban": "95376"
+  },
+  "45060": {
+    "msa_id": "45060",
+    "msa_name": "Syracuse, NY",
+    "msa_population": 652956,
+    "zips": [
+      "13126",
+      "13030",
+      "13027"
+    ],
+    "zip_csv": "13126",
+    "zip_centroid": "13030",
+    "zip_urban": "13027"
+  },
+  "45220": {
+    "msa_id": "45220",
+    "msa_name": "Tallahassee, FL",
+    "msa_population": 393414,
+    "zips": [
+      "32304",
+      "32327",
+      "32303"
+    ],
+    "zip_csv": "32304",
+    "zip_centroid": "32327",
+    "zip_urban": "32303"
+  },
+  "45300": {
+    "msa_id": "45300",
+    "msa_name": "Tampa-St. Petersburg-Clearwater, FL",
+    "msa_population": 3342963,
+    "zips": [
+      "33647",
+      "33625",
+      "33511"
+    ],
+    "zip_csv": "33647",
+    "zip_centroid": "33625",
+    "zip_urban": "33511"
+  },
+  "45780": {
+    "msa_id": "45780",
+    "msa_name": "Toledo, OH",
+    "msa_population": 600141,
+    "zips": [
+      "43615",
+      "43571",
+      "43551"
+    ],
+    "zip_csv": "43615",
+    "zip_centroid": "43571",
+    "zip_urban": "43551"
+  },
+  "45940": {
+    "msa_id": "45940",
+    "msa_name": "Trenton-Princeton, NJ",
+    "msa_population": 381671,
+    "zips": [
+      "08540",
+      "08625",
+      "08618"
+    ],
+    "zip_csv": "08540",
+    "zip_centroid": "08625",
+    "zip_urban": "08618"
+  },
+  "46060": {
+    "msa_id": "46060",
+    "msa_name": "Tucson, AZ",
+    "msa_population": 1063162,
+    "zips": [
+      "85706",
+      "85639",
+      "85705"
+    ],
+    "zip_csv": "85706",
+    "zip_centroid": "85639",
+    "zip_urban": "85705"
+  },
+  "46140": {
+    "msa_id": "46140",
+    "msa_name": "Tulsa, OK",
+    "msa_population": 1044287,
+    "zips": [
+      "74012",
+      "74063",
+      "74055"
+    ],
+    "zip_csv": "74012",
+    "zip_centroid": "74063",
+    "zip_urban": "74055"
+  },
+  "46220": {
+    "msa_id": "46220",
+    "msa_name": "Tuscaloosa, AL",
+    "msa_population": 271223,
+    "zips": [
+      "35405",
+      "35463",
+      "35401"
+    ],
+    "zip_csv": "35405",
+    "zip_centroid": "35463",
+    "zip_urban": "35401"
+  },
+  "46340": {
+    "msa_id": "46340",
+    "msa_name": "Tyler, TX",
+    "msa_population": 245209,
+    "zips": [
+      "75703",
+      "75706",
+      "75701"
+    ],
+    "zip_csv": "75703",
+    "zip_centroid": "75706",
+    "zip_urban": "75701"
+  },
+  "46520": {
+    "msa_id": "46520",
+    "msa_name": "Urban Honolulu, HI",
+    "msa_population": 989408,
+    "zips": [
+      "96706",
+      "96701",
+      "96797"
+    ],
+    "zip_csv": "96706",
+    "zip_centroid": "96701",
+    "zip_urban": "96797"
+  },
+  "46540": {
+    "msa_id": "46540",
+    "msa_name": "Utica-Rome, NY",
+    "msa_population": 287039,
+    "zips": [
+      "13440",
+      "13354",
+      "13501"
+    ],
+    "zip_csv": "13440",
+    "zip_centroid": "13354",
+    "zip_urban": "13501"
+  },
+  "46700": {
+    "msa_id": "46700",
+    "msa_name": "Vallejo, CA",
+    "msa_population": 449218,
+    "zips": [
+      "94533",
+      "94535",
+      "95687"
+    ],
+    "zip_csv": "94533",
+    "zip_centroid": "94535",
+    "zip_urban": "95687"
+  },
+  "47260": {
+    "msa_id": "47260",
+    "msa_name": "Virginia Beach-Chesapeake-Norfolk, VA-NC",
+    "msa_population": 1781671,
+    "zips": [
+      "23464",
+      "23323",
+      "23462"
+    ],
+    "zip_csv": "23464",
+    "zip_centroid": "23323",
+    "zip_urban": "23462"
+  },
+  "47300": {
+    "msa_id": "47300",
+    "msa_name": "Visalia, CA",
+    "msa_population": 479468,
+    "zips": [
+      "93257",
+      "93271",
+      "93274"
+    ],
+    "zip_csv": "93257",
+    "zip_centroid": "93271",
+    "zip_urban": "93274"
+  },
+  "47380": {
+    "msa_id": "47380",
+    "msa_name": "Waco, TX",
+    "msa_population": 305370,
+    "zips": [
+      "76706",
+      "76634",
+      "76705"
+    ],
+    "zip_csv": "76706",
+    "zip_centroid": "76634",
+    "zip_urban": "76705"
+  },
+  "47900": {
+    "msa_id": "47900",
+    "msa_name": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+    "msa_population": 6304449,
+    "zips": [
+      "22193",
+      "20110",
+      "22191"
+    ],
+    "zip_csv": "22193",
+    "zip_centroid": "20110",
+    "zip_urban": "22191"
+  },
+  "47930": {
+    "msa_id": "47930",
+    "msa_name": "Waterbury-Shelton, CT",
+    "msa_population": 456128,
+    "zips": [
+      "06010",
+      "06770",
+      "06484"
+    ],
+    "zip_csv": "06010",
+    "zip_centroid": "06770",
+    "zip_urban": "06484"
+  },
+  "48620": {
+    "msa_id": "48620",
+    "msa_name": "Wichita, KS",
+    "msa_population": 652939,
+    "zips": [
+      "67212",
+      "67213",
+      "67217"
+    ],
+    "zip_csv": "67212",
+    "zip_centroid": "67213",
+    "zip_urban": "67217"
+  },
+  "48900": {
+    "msa_id": "48900",
+    "msa_name": "Wilmington, NC",
+    "msa_population": 467337,
+    "zips": [
+      "28403",
+      "28436",
+      "28412"
+    ],
+    "zip_csv": "28403",
+    "zip_centroid": "28436",
+    "zip_urban": "28412"
+  },
+  "49180": {
+    "msa_id": "49180",
+    "msa_name": "Winston-Salem, NC",
+    "msa_population": 695630,
+    "zips": [
+      "27284",
+      "27006",
+      "27107"
+    ],
+    "zip_csv": "27284",
+    "zip_centroid": "27006",
+    "zip_urban": "27107"
+  },
+  "49340": {
+    "msa_id": "49340",
+    "msa_name": "Worcester, MA",
+    "msa_population": 866866,
+    "zips": [
+      "01453",
+      "01522",
+      "01420"
+    ],
+    "zip_csv": "01453",
+    "zip_centroid": "01522",
+    "zip_urban": "01420"
+  },
+  "49420": {
+    "msa_id": "49420",
+    "msa_name": "Yakima, WA",
+    "msa_population": 256643,
+    "zips": [
+      "98902",
+      "98937",
+      "98908"
+    ],
+    "zip_csv": "98902",
+    "zip_centroid": "98937",
+    "zip_urban": "98908"
+  },
+  "49620": {
+    "msa_id": "49620",
+    "msa_name": "York-Hanover, PA",
+    "msa_population": 464640,
+    "zips": [
+      "17331",
+      "17315",
+      "17403"
+    ],
+    "zip_csv": "17331",
+    "zip_centroid": "17315",
+    "zip_urban": "17403"
+  },
+  "49660": {
+    "msa_id": "49660",
+    "msa_name": "Youngstown-Warren, OH",
+    "msa_population": 425969,
+    "zips": [
+      "44512",
+      "44401",
+      "44515"
+    ],
+    "zip_csv": "44512",
+    "zip_centroid": "44401",
+    "zip_urban": "44515"
+  }
+}
