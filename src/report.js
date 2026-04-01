@@ -312,7 +312,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .intro-stat-sub{font-size:11px;color:#88a;margin-top:2px}
 .intro-fac-breakdown{margin-top:8px;display:flex;flex-direction:column;gap:3px}
 .fac-tag{font-size:12px;color:#bbd}
-.fac-tag.ssd{color:#ef4444}.fac-tag.fresh{color:#f97316}.fac-tag.wf{color:#22c55e}
+.fac-tag.ssd{color:#ef4444}.fac-tag.fresh{color:#f97316}.fac-tag.wf{color:#166534}
 .fac-tag.fc{color:#9ca3af}.fac-tag.ds{color:#6b7280}
 .intro-divider{width:1px;background:#2a3a5e;align-self:stretch;margin:0 4px}
 .intro-msa-stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:4px}
@@ -330,6 +330,12 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .map-legend span{display:inline-flex;align-items:center;gap:5px}
 .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
 
+/* Highlights rows */
+.intro-highlights{margin-top:6px}
+.highlight-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:13px;color:#374151}
+.hl-num{font-size:22px;font-weight:800;color:#1e40af;min-width:48px}
+.hl-label{line-height:1.4}
+.hl-guide{font-size:12px;color:#374151;display:flex;align-items:center}
 /* Project summary */
 .proj-grid{display:flex;flex-direction:column;gap:20px;margin-top:16px}
 .proj-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:18px 22px}
@@ -399,7 +405,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
   <div class="intro-panel">
     <div class="intro-purpose">
       <strong>Purpose:</strong> Confirm Amazon's same-day perishable grocery delivery coverage across the top 200 US MSAs using direct Amazon.com product probes.
-      Pass criterion: strawberries available for same-day delivery (cold chain confirmed).
+      Pass criterion: bananas and/or strawberries available for same-day delivery — bananas confirm ambient fresh capability; strawberries confirm cold-chain capability.
       &nbsp;·&nbsp; <em>Probe date: ${esc(probeDate)}</em>
     </div>
 
@@ -422,11 +428,30 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 
       <div class="intro-divider"></div>
 
-      <!-- Facility network -->
+      <!-- Scope + Map Guide -->
       <div class="intro-stat-block">
-        <div class="intro-stat-title">Amazon Facility Network</div>
-        <div class="intro-stat-big">${totalLocations.toLocaleString()}</div>
-        <div class="intro-stat-sub">facilities mapped &nbsp;<small style="color:#888">(${totalLocationsAll.toLocaleString()} total identified)</small></div>
+        <div class="intro-stat-title">Scope &amp; How to Use</div>
+        <div class="intro-highlights">
+          <div class="highlight-row">
+            <span class="hl-num">${msaTotal}</span>
+            <span class="hl-label">MSAs probed — representing <strong>${Math.round(263041023/335000000*100)}%</strong> of the US population</span>
+          </div>
+          <div class="highlight-row">
+            <span class="hl-num">${Math.round(240034724/1000000)}M</span>
+            <span class="hl-label">Americans in confirmed coverage areas (<strong>${Math.round(240034724/335000000*100)}%</strong> of US)</span>
+          </div>
+          <div class="highlight-row" style="margin-top:10px;border-top:1px solid #e2e8f0;padding-top:10px">
+            <span class="hl-guide"><span style="display:inline-block;width:12px;height:12px;background:#10b981;border-radius:2px;margin-right:6px;vertical-align:middle"></span><strong>Green</strong> — MSA with verified same-day fresh grocery in at least 1 ZIP code</span>
+          </div>
+          <div class="highlight-row">
+            <span class="hl-guide"><span style="display:inline-block;width:12px;height:12px;background:#374151;border-radius:2px;margin-right:6px;vertical-align:middle"></span><strong>Gray</strong> — No confirmed coverage at tested ZIP codes</span>
+          </div>
+          <div class="highlight-row" style="color:#64748b;font-size:12px;margin-top:6px">
+            Click any green MSA to see confirmed coverage type and nearby facilities
+          </div>
+        </div>
+
+        <div class="intro-stat-title" style="margin-top:14px">Amazon Facility Network</div>
         <div class="intro-fac-breakdown">
           ${facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
           ${facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${facilityMap.fresh_hub} Amazon Fresh Dark Stores</span>` : ''}
@@ -460,7 +485,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 
     <h3>2. How We Confirmed Coverage</h3>
     <p>We probed Amazon.com directly for each MSA. For 3 ZIP codes per MSA (near the city center), we searched for <strong>bananas</strong> and <strong>strawberries</strong> (fresh produce) and examined the main offer panel plus the "Other sellers" listing for same-day delivery options.</p>
-    <p><strong>Pass criteria:</strong> Strawberries available for same-day delivery — cold chain confirmed. This is the most reliable proxy for Amazon's fresh grocery coverage because strawberries require refrigeration and cannot be shipped via standard ground carriers.</p>
+    <p><strong>Pass criteria:</strong> Bananas and/or strawberries available for same-day delivery. Bananas confirm ambient fresh capability (not refrigerated, but never shipped via standard ground). Strawberries confirm cold-chain capability — they require refrigeration and are the stronger signal for SSD or dark store fulfillment. An MSA is marked confirmed if either product returns a same-day offer.</p>
     <ul>
       <li>3 ZIP codes tested per MSA, selected near each city center</li>
       <li>Both products (bananas + strawberries) checked per ZIP</li>
@@ -523,30 +548,32 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
       <div class="proj-card">
         <div class="proj-card-title">⏱ Time Investment</div>
         <table class="proj-table">
-          <tr><td>Project duration</td><td><strong>~10 days</strong> (March–April 2026)</td></tr>
-          <tr><td>Human direction &amp; review</td><td><strong>~15–20 hours</strong> — strategic framing, validation, spot-checks, methodology decisions</td></tr>
-          <tr><td>AI execution</td><td><strong>~continuous</strong> — coding, data pipelines, web probing, debugging, report generation</td></tr>
+          <tr><td>Project duration</td><td><strong>~11 days</strong> (March 22 – April 1, 2026)</td></tr>
+          <tr><td>Human direction &amp; review</td><td><strong>~20–25 hours</strong> — strategic framing, methodology decisions, validation, spot-checks</td></tr>
+          <tr><td>AI execution</td><td><strong>~continuous</strong> — coding, data pipelines, Amazon probing, debugging, map generation</td></tr>
           <tr><td>Estimated traditional team cost</td><td><strong>$200,000–$500,000+</strong> — 3–4 engineers, 2–3 months, standard consulting rates</td></tr>
-          <tr><td>Actual API cost</td><td><strong>&lt; $20</strong> in search API queries</td></tr>
+          <tr><td>Actual API cost</td><td><strong>&lt; $25</strong> in search API queries (Brave Search)</td></tr>
         </table>
       </div>
 
       <div class="proj-card">
         <div class="proj-card-title">💻 Code &amp; Development</div>
         <table class="proj-table">
-          <tr><td>Lines of code written</td><td><strong>5,000+</strong> lines of JavaScript</td></tr>
-          <tr><td>Source files</td><td><strong>12+</strong> scripts (data pipelines, probes, report generator)</td></tr>
-          <tr><td>Dashboard</td><td>Single-file HTML/CSS/JS report with Leaflet maps, auto-published to GitHub Pages</td></tr>
+          <tr><td>Lines of code written</td><td><strong>5,000+</strong> lines of JavaScript + Python</td></tr>
+          <tr><td>Source files</td><td><strong>15+</strong> scripts (data pipelines, Amazon probe, facility enrichment, report generator)</td></tr>
+          <tr><td>Git commits</td><td><strong>80+</strong> iterative releases over 11 days</td></tr>
+          <tr><td>Dashboard</td><td>Single-file HTML/CSS/JS with Leaflet maps, auto-published to GitHub Pages daily</td></tr>
         </table>
       </div>
 
       <div class="proj-card">
         <div class="proj-card-title">🗄 Coverage Data</div>
         <table class="proj-table">
-          <tr><td>MSAs directly probed</td><td><strong>${msaTotal}</strong> of top 200 US metro areas</td></tr>
-          <tr><td>MSAs confirmed with fresh delivery</td><td><strong>${msaConfirmed}</strong> (${Math.round(msaConfirmed/msaTotal*100)}%)</td></tr>
-          <tr><td>Amazon facility locations mapped</td><td><strong>${totalLocations.toLocaleString()}+</strong> with coordinates and type classification</td></tr>
-          <tr><td>US ZIP codes assessed</td><td><strong>${csvTotalZips.toLocaleString()}</strong> with 50-mile coverage proximity</td></tr>
+          <tr><td>MSAs directly probed</td><td><strong>${msaTotal}</strong> of top 200 US metro areas (~78% of US population)</td></tr>
+          <tr><td>MSAs confirmed with fresh delivery</td><td><strong>${msaConfirmed}</strong> (${Math.round(msaConfirmed/msaTotal*100)}%) — representing ~72% of US population</td></tr>
+          <tr><td>ZIP codes tested per MSA</td><td><strong>3</strong> city-center ZIPs, bananas + strawberries each</td></tr>
+          <tr><td>Amazon facility locations mapped</td><td><strong>${totalLocations.toLocaleString()}</strong> with coordinates (${totalLocationsAll.toLocaleString()} total identified)</td></tr>
+          <tr><td>Whole Foods stores mapped</td><td><strong>${facilityMap.whole_foods_node || 551}</strong> of ~553 US locations</td></tr>
         </table>
       </div>
 
@@ -719,7 +746,7 @@ initMsaLayer();
 const facilityTypes = {
   ssd_fulfillment:    { label:'SSD Fulfillment Centers',       color:'#ef4444', radius:8,  grocery:true  },
   fresh_hub:          { label:'Amazon Fresh Dark Stores',      color:'#f97316', radius:7,  grocery:true  },
-  whole_foods_node:   { label:'Whole Foods Stores',            color:'#22c55e', radius:5,  grocery:true  },
+  whole_foods_node:   { label:'Whole Foods Stores',            color:'#166534', radius:5,  grocery:true  },
   fulfillment_center: { label:'Standard Fulfillment Centers',  color:'#6366f1', radius:5,  grocery:false },
   other:              { label:'Other Amazon Facilities',       color:'#6b7280', radius:3,  grocery:false }
 };
@@ -796,7 +823,7 @@ const overlayMaps = {
   '▦ MSA Coverage':                                    msaLayer,
   '<span style="color:#ef4444">●</span> SSD Fulfillment Centers':      facilityLayerGroups['ssd_fulfillment'],
   '<span style="color:#f97316">●</span> Amazon Fresh Dark Stores':    facilityLayerGroups['fresh_hub'],
-  '<span style="color:#22c55e">●</span> Whole Foods Stores':           facilityLayerGroups['whole_foods_node'],
+  '<span style="color:#166534">●</span> Whole Foods Stores':           facilityLayerGroups['whole_foods_node'],
   '<span style="color:#6366f1">●</span> Standard Fulfillment Centers': facilityLayerGroups['fulfillment_center'],
   '<span style="color:#6b7280">●</span> Other Amazon Facilities':      facilityLayerGroups['other'],
   '<span style="color:#ef4444">○</span> 50-Mile Service Circles': reachLayer
