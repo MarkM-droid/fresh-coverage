@@ -151,12 +151,36 @@ async function main() {
     seenFacCoords.add(key); return true;
   });
 
+  // Load ZIP coords for confirmed ZIPs
+  const zipCoords = {};
+  const allZipsList = [...new Set(msaProbeArr.flatMap(m => m.zips_tested || []))];
+  if (allZipsList.length) {
+    const placeholders = allZipsList.map(() => '?').join(',');
+    db.prepare(`SELECT zip, lat, lng FROM zip_master WHERE zip IN (${placeholders}) AND lat IS NOT NULL`)
+      .all(...allZipsList)
+      .forEach(r => { zipCoords[r.zip] = [r.lat, r.lng]; });
+  }
+
   Object.keys(msaDataForMap).forEach(msaId => {
-    const centroid = msaCentroids[msaId];
-    if (!centroid) return;
-    const [clat, clng] = centroid;
+    const msa = msaDataForMap[msaId];
+
+    // Find best reference point: nearest confirmed ZIP with coords, else centroid
+    let refLat, refLng, refLabel;
+    const confirmedZips = (msa.zips_tested || []).filter(z => zipCoords[z]);
+    if (confirmedZips.length) {
+      // Use the first confirmed ZIP (probe tested in order, first is usually most central)
+      const [lat, lng] = zipCoords[confirmedZips[0]];
+      refLat = lat; refLng = lng;
+      refLabel = 'nearest confirmed ZIP (' + confirmedZips[0] + ')';
+    } else {
+      const centroid = msaCentroids[msaId];
+      if (!centroid) return;
+      [refLat, refLng] = centroid;
+      refLabel = 'MSA centroid (est.)';
+    }
+
     const nearby = uniqueFacilities
-      .map(f => ({ ...f, dist: Math.round(distMi(clat,clng,f.lat,f.lng)) }))
+      .map(f => ({ ...f, dist: Math.round(distMi(refLat, refLng, f.lat, f.lng)) }))
       .filter(f => f.dist <= 60)
       .sort((a,b) => a.dist - b.dist)
       .slice(0, 8)
@@ -165,7 +189,9 @@ async function main() {
         const loc = [f.city, f.state].filter(Boolean).join(', ') || f.address_raw.slice(0,30);
         return { type: typeLabel[f.type] || f.type, code, loc, dist: f.dist };
       });
+
     msaDataForMap[msaId].nearby_facilities = nearby;
+    msaDataForMap[msaId].distance_ref = refLabel;
   });
 
   // ── Load facility data from SQLite ────────────────────────────────────────
@@ -674,6 +700,7 @@ async function initMsaLayer() {
           '<br>' + statusLabel +
           (d.status !== 'none' && offers !== '—' ? '<br><small style="color:#aaa">Service types: ' + offers + '</small>' : '') +
           '<br><b style="font-size:11px;color:#ccc">Facilities presumed serving this MSA:</b>' +
+          '<br><span style="font-size:10px;color:#6b7280;font-style:italic">Distances from ' + (d.distance_ref || 'MSA centroid') + '</span>' +
           facilityHtml;
         layer.bindPopup(popupHtml, { maxWidth: 360 });
         layer.on('mouseover', () => layer.setStyle({ weight: 2, color: '#fff' }));
