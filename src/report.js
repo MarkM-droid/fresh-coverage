@@ -329,11 +329,11 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
         <div class="intro-msa-stats">
           <div class="msa-stat">
             <div class="msa-stat-num">${msaConfirmed}</div>
-            <div class="msa-stat-label">MSAs confirmed<br><small>(full_fresh + ambient)</small></div>
+            <div class="msa-stat-label">MSAs with at least 1 ZIP code<br>with confirmed fresh grocery coverage</div>
           </div>
           <div class="msa-stat">
             <div class="msa-stat-num gray">${msaNone}</div>
-            <div class="msa-stat-label">MSAs showing none<br><small>of ${msaTotal} probed</small></div>
+            <div class="msa-stat-label">MSAs with no confirmed<br>fresh grocery coverage</div>
           </div>
         </div>
       </div>
@@ -352,17 +352,6 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
           ${facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${facilityMap.fulfillment_center} Standard Fulfillment Centers</span>` : ''}
           <span class="fac-tag ds">&#9679; ${(facilityMap.same_day_facility||0)+(facilityMap.fresh_distribution||0)+(facilityMap.sortation_center||0)+(facilityMap.delivery_station||0)+(facilityMap.distribution_center||0)+(facilityMap.warehouse||0)+(facilityMap.amazon_facility||0)+(facilityMap.returns_center||0)} Other Amazon Facilities</span>
         </div>
-      </div>
-
-      <div class="intro-divider"></div>
-
-      <!-- Download -->
-      <div class="intro-stat-block" style="text-align:center">
-        <div class="intro-stat-title">Data Export</div>
-        <a href="amazon-sameday-coverage-by-zip.csv" download class="dl-btn">
-          &#8595; Download ZIP Code Coverage List
-        </a>
-        <div class="intro-stat-sub" style="margin-top:6px">${csvTotalZips.toLocaleString()} ZIPs &nbsp;·&nbsp; coverage within 50mi of SSD facility</div>
       </div>
 
     </div>
