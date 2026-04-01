@@ -138,7 +138,9 @@ async function main() {
   `).all();
   const facilityMap = {};
   facilityByType.forEach(r => { facilityMap[r.type] = r.n; });
-  const totalLocations = facilityByType.reduce((a, r) => a + r.n, 0);
+  const totalLocationsMapped = facilityByType.reduce((a, r) => a + r.n, 0);
+  const totalLocationsAll = db.prepare("SELECT COUNT(*) as n FROM locations WHERE retailer_id='amazon_same_day' AND type != 'corporate'").get().n;
+  const totalLocations = totalLocationsMapped; // mapped (with coords)
 
   // ── Generate CSV download ─────────────────────────────────────────────────
   // Map MSA probe status for each ZIP via zip_master → MSA proximity
@@ -342,7 +344,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
       <div class="intro-stat-block">
         <div class="intro-stat-title">Amazon Facility Network</div>
         <div class="intro-stat-big">${totalLocations.toLocaleString()}</div>
-        <div class="intro-stat-sub">facilities identified</div>
+        <div class="intro-stat-sub">facilities mapped &nbsp;<small style="color:#888">(${totalLocationsAll.toLocaleString()} total identified)</small></div>
         <div class="intro-fac-breakdown">
           ${facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
           ${facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${facilityMap.fresh_hub} Amazon Fresh Dark Stores</span>` : ''}
