@@ -108,8 +108,64 @@ async function main() {
       msa_population: m.msa_population,
       status: m.status,
       zips_tested: m.zips_tested || [],
-      offer_types: [...offerTypes]
+      offer_types: [...offerTypes],
+      nearby_facilities: [] // populated below after facilities are loaded
     };
+  });
+
+  // ── Compute nearby facilities per MSA ────────────────────────────────────
+  // Load MSA centroids from GeoJSON
+  const msaGeoRaw = JSON.parse(readFileSync(join(PROJECT_ROOT, 'data', 'us_msas.geojson'), 'utf8'));
+  const msaCentroids = {};
+  msaGeoRaw.features.forEach(f => {
+    const p = f.properties;
+    const geom = f.geometry;
+    const coords = geom.type === 'Polygon' ? geom.coordinates[0] : geom.coordinates[0][0];
+    const lats = coords.map(c => c[1]);
+    const lngs = coords.map(c => c[0]);
+    msaCentroids[p.msa_id] = [lats.reduce((a,b)=>a+b,0)/lats.length, lngs.reduce((a,b)=>a+b,0)/lngs.length];
+  });
+
+  // Load grocery-capable facilities with coords
+  const groceryFacilities = db.prepare(`
+    SELECT address_raw, city, state, lat, lng, type
+    FROM locations
+    WHERE retailer_id='amazon_same_day'
+    AND type IN ('ssd_fulfillment','fresh_hub','whole_foods_node')
+    AND lat IS NOT NULL
+  `).all();
+
+  function distMi(lat1,lng1,lat2,lng2) {
+    const R=Math.PI/180, dlat=(lat2-lat1)*R, dlng=(lng2-lng1)*R;
+    const a=Math.sin(dlat/2)**2+Math.cos(lat1*R)*Math.cos(lat2*R)*Math.sin(dlng/2)**2;
+    return 6371*2*Math.asin(Math.sqrt(a))*0.621371;
+  }
+
+  const typeLabel = { ssd_fulfillment:'SSD', fresh_hub:'Fresh Dark Store', whole_foods_node:'Whole Foods' };
+
+  // Deduplicate facilities by rounded coords before distance calc
+  const seenFacCoords = new Set();
+  const uniqueFacilities = groceryFacilities.filter(f => {
+    const key = f.lat.toFixed(3)+','+f.lng.toFixed(3);
+    if (seenFacCoords.has(key)) return false;
+    seenFacCoords.add(key); return true;
+  });
+
+  Object.keys(msaDataForMap).forEach(msaId => {
+    const centroid = msaCentroids[msaId];
+    if (!centroid) return;
+    const [clat, clng] = centroid;
+    const nearby = uniqueFacilities
+      .map(f => ({ ...f, dist: Math.round(distMi(clat,clng,f.lat,f.lng)) }))
+      .filter(f => f.dist <= 60)
+      .sort((a,b) => a.dist - b.dist)
+      .slice(0, 8)
+      .map(f => {
+        const code = f.address_raw.includes(' - ') ? f.address_raw.split(' - ')[0] : null;
+        const loc = [f.city, f.state].filter(Boolean).join(', ') || f.address_raw.slice(0,30);
+        return { type: typeLabel[f.type] || f.type, code, loc, dist: f.dist };
+      });
+    msaDataForMap[msaId].nearby_facilities = nearby;
   });
 
   // ── Load facility data from SQLite ────────────────────────────────────────
@@ -596,17 +652,30 @@ async function initMsaLayer() {
         const msaId = String(feature.properties.msa_id);
         const d = MSA_DATA[msaId] || {};
         const name = d.msa_name || feature.properties.msa_name || ('MSA ' + msaId);
-        const pop = d.msa_population ? d.msa_population.toLocaleString() : (feature.properties.population ? Number(feature.properties.population).toLocaleString() : '—');
+        const pop = d.msa_population ? Number(d.msa_population).toLocaleString() : '—';
         const statusLabel = msaStatusLabel(d.status || null);
-        const zips = (d.zips_tested || []).join(', ') || 'not tested';
         const offers = (d.offer_types || []).length ? d.offer_types.join(', ') : '—';
+
+        // Nearby facilities section
+        const nearby = d.nearby_facilities || [];
+        const ssdNearby    = nearby.filter(f => f.type === 'SSD');
+        const darkNearby   = nearby.filter(f => f.type === 'Fresh Dark Store');
+        const wfNearby     = nearby.filter(f => f.type === 'Whole Foods');
+
+        let facilityHtml = '';
+        if (ssdNearby.length) facilityHtml += '<br><span style="color:#ef4444;font-size:11px">● SSD: ' + ssdNearby.map(f => (f.code||f.loc) + ' (' + f.dist + 'mi)').join(', ') + '</span>';
+        if (darkNearby.length) facilityHtml += '<br><span style="color:#f97316;font-size:11px">● Dark Store: ' + darkNearby.map(f => (f.code||f.loc) + ' (' + f.dist + 'mi)').join(', ') + '</span>';
+        if (wfNearby.length) facilityHtml += '<br><span style="color:#22c55e;font-size:11px">● Whole Foods: ' + wfNearby.length + ' store' + (wfNearby.length>1?'s':'') + ' within 60mi (nearest ' + wfNearby[0].dist + 'mi)</span>';
+        if (!nearby.length) facilityHtml = '<br><span style="color:#9ca3af;font-size:11px">No confirmed facilities within 60mi</span>';
+
         const popupHtml =
-          '<b>' + name + '</b>' +
-          '<br>' + statusLabel +
+          '<b style="font-size:14px">' + name + '</b>' +
           '<br><small style="color:#888">Population: ' + pop + '</small>' +
-          (d.zips_tested && d.zips_tested.length ? '<br><small style="color:#888">ZIPs tested: ' + zips + '</small>' : '') +
-          (d.offer_types && d.offer_types.length ? '<br><small style="color:#888">Offer types: ' + offers + '</small>' : '');
-        layer.bindPopup(popupHtml);
+          '<br>' + statusLabel +
+          (d.status !== 'none' && offers !== '—' ? '<br><small style="color:#aaa">Service types: ' + offers + '</small>' : '') +
+          '<br><b style="font-size:11px;color:#ccc">Facilities presumed serving this MSA:</b>' +
+          facilityHtml;
+        layer.bindPopup(popupHtml, { maxWidth: 360 });
         layer.on('mouseover', () => layer.setStyle({ weight: 2, color: '#fff' }));
         layer.on('mouseout',  () => layer.setStyle({ weight: 0.5, color: '#fff' }));
       }
