@@ -349,10 +349,8 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
           ${facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
           ${facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${facilityMap.fresh_hub} Amazon Fresh Dark Stores</span>` : ''}
           ${facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${facilityMap.whole_foods_node} Whole Foods Stores</span>` : ''}
-          ${facilityMap.same_day_facility ? `<span class="fac-tag fc">&#9679; ${facilityMap.same_day_facility} Same-Day Facilities</span>` : ''}
-          ${facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${facilityMap.fulfillment_center} Fulfillment Centers</span>` : ''}
-          ${facilityMap.fresh_distribution ? `<span class="fac-tag fresh">&#9679; ${facilityMap.fresh_distribution} Fresh Distribution</span>` : ''}
-          ${(facilityMap.sortation_center||0)+(facilityMap.delivery_station||0)+(facilityMap.distribution_center||0) > 0 ? `<span class="fac-tag ds">&#9679; ${(facilityMap.sortation_center||0)+(facilityMap.delivery_station||0)+(facilityMap.distribution_center||0)} Sort / Delivery / DC</span>` : ''}
+          ${facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${facilityMap.fulfillment_center} Standard Fulfillment Centers</span>` : ''}
+          <span class="fac-tag ds">&#9679; ${(facilityMap.same_day_facility||0)+(facilityMap.fresh_distribution||0)+(facilityMap.sortation_center||0)+(facilityMap.delivery_station||0)+(facilityMap.distribution_center||0)+(facilityMap.warehouse||0)+(facilityMap.amazon_facility||0)+(facilityMap.returns_center||0)} Other Amazon Facilities</span>
         </div>
       </div>
 
@@ -632,47 +630,67 @@ async function initMsaLayer() {
 initMsaLayer();
 
 // ── Layer 2: Facility network (per-type, default OFF) ─────────────────────────
+// 5-category facility taxonomy
 const facilityTypes = {
-  ssd_fulfillment:    { label:'SSD Fulfillment Centers',    color:'#ef4444', radius:8 },
-  fresh_hub:          { label:'Fresh Dark Stores',          color:'#f97316', radius:7 },
-  whole_foods_node:   { label:'Whole Foods',                color:'#22c55e', radius:5 },
-  fresh_distribution: { label:'Fresh Distribution',        color:'#fb923c', radius:6 },
-  same_day_facility:  { label:'Same-Day Facilities',        color:'#a855f7', radius:6 },
-  other:              { label:'Other Amazon Facilities',    color:'#6b7280', radius:3 }
+  ssd_fulfillment:    { label:'SSD Fulfillment Centers',       color:'#ef4444', radius:8,  grocery:true  },
+  fresh_hub:          { label:'Amazon Fresh Dark Stores',      color:'#f97316', radius:7,  grocery:true  },
+  whole_foods_node:   { label:'Whole Foods Stores',            color:'#22c55e', radius:5,  grocery:true  },
+  fulfillment_center: { label:'Standard Fulfillment Centers',  color:'#6366f1', radius:5,  grocery:false },
+  other:              { label:'Other Amazon Facilities',       color:'#6b7280', radius:3,  grocery:false }
 };
+
+// Map all other types to 'other' for display
+function getFacilityTypeKey(type) {
+  if (facilityTypes[type]) return type;
+  if (type === 'fulfillment_center') return 'fulfillment_center';
+  return 'other';
+}
 
 const facilityLayerGroups = {};
 Object.keys(facilityTypes).forEach(t => { facilityLayerGroups[t] = L.layerGroup(); });
 
 LOC_POINTS.forEach(p => {
-  const ftKey = facilityTypes[p.type] ? p.type : 'other';
+  const ftKey = getFacilityTypeKey(p.type);
   const ft = facilityTypes[ftKey];
   const marker = L.circleMarker([p.lat, p.lng], {
     radius: ft.radius,
     color: ft.color,
     fillColor: ft.color,
-    fillOpacity: 0.75,
+    fillOpacity: ft.grocery ? 0.8 : 0.5,
     weight: 1.5
   });
+
   const codeStr = p.facility_code ? '<b>' + p.facility_code + '</b> — ' : '';
-  const cityState = (p.city && p.state) ? p.city + ', ' + p.state : (p.city || p.state || '');
-  const tierLabel = p.confidence_tier === 'verified' ? '<span style="color:#34d399">● Verified</span>'
-    : p.confidence_tier === 'inferred' ? '<span style="color:#fbbf24">● Inferred</span>'
-    : '<span style="color:#9ca3af">● External list</span>';
+  const cityState = [p.city, p.state].filter(Boolean).join(', ');
+
+  // Source provenance label
+  const sourceLabel = {
+    'flex_drivers_wiki_full': 'r/AmazonFlexDrivers wiki',
+    'flex_drivers_wiki':      'r/AmazonFlexDrivers wiki',
+    'external_warehouse_list':'Community warehouse list',
+    'place_search_wf':        'Brave Place Search',
+    'place_search_wf2':       'Brave Place Search',
+    'manual_addition':        'Manually verified',
+  }[p.source_url] || (p.source_url?.startsWith('brave_place') ? 'Brave Place Search' : p.source_url || 'Unknown');
+
+  const groceryNote = ft.grocery
+    ? '<br><span style="color:#34d399;font-size:11px">✓ Confirmed fresh grocery capable</span>'
+    : '<br><span style="color:#9ca3af;font-size:11px">○ Grocery capability unconfirmed</span>';
+
   marker.bindPopup(
     codeStr + '<b>' + ft.label + '</b>' +
     (cityState ? '<br>' + cityState : '') +
-    '<br><small style="color:#888">' + (p.address_raw || '') + '</small>' +
-    '<br>' + tierLabel +
-    (p.capability_note ? '<br><em style="font-size:11px;color:#6b7280">' + p.capability_note + '</em>' : '') +
-    (p.source_url && !p.source_url.startsWith('brave_') ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source &rarr;</a>' : '')
+    (p.address_raw ? '<br><small style="color:#888">' + p.address_raw.slice(0,80) + '</small>' : '') +
+    groceryNote +
+    '<br><small style="color:#777">Source: ' + sourceLabel + '</small>' +
+    (p.source_url && p.source_url.startsWith('http') ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Reference &rarr;</a>' : '')
   );
   facilityLayerGroups[ftKey].addLayer(marker);
 });
 
 // ── Layer 3: 50-mile service circles (default OFF) ────────────────────────────
 const reachLayer = L.layerGroup();
-const REACH_TYPES = new Set(['ssd_fulfillment','fresh_hub','fresh_distribution','same_day_facility']);
+const REACH_TYPES = new Set(['ssd_fulfillment','fresh_hub']);
 LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   L.circle([p.lat, p.lng], {
     radius: 80467,
@@ -691,12 +709,11 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
 // ── Layer control ─────────────────────────────────────────────────────────────
 const overlayMaps = {
   '▦ MSA Coverage':                                    msaLayer,
-  '<span style="color:#ef4444">●</span> SSD Fulfillment Centers': facilityLayerGroups['ssd_fulfillment'],
-  '<span style="color:#f97316">●</span> Fresh Dark Stores':       facilityLayerGroups['fresh_hub'],
-  '<span style="color:#22c55e">●</span> Whole Foods':             facilityLayerGroups['whole_foods_node'],
-  '<span style="color:#fb923c">●</span> Fresh Distribution':      facilityLayerGroups['fresh_distribution'],
-  '<span style="color:#a855f7">●</span> Same-Day Facilities':     facilityLayerGroups['same_day_facility'],
-  '<span style="color:#6b7280">●</span> Other Amazon Facilities': facilityLayerGroups['other'],
+  '<span style="color:#ef4444">●</span> SSD Fulfillment Centers':      facilityLayerGroups['ssd_fulfillment'],
+  '<span style="color:#f97316">●</span> Amazon Fresh Dark Stores':    facilityLayerGroups['fresh_hub'],
+  '<span style="color:#22c55e">●</span> Whole Foods Stores':           facilityLayerGroups['whole_foods_node'],
+  '<span style="color:#6366f1">●</span> Standard Fulfillment Centers': facilityLayerGroups['fulfillment_center'],
+  '<span style="color:#6b7280">●</span> Other Amazon Facilities':      facilityLayerGroups['other'],
   '<span style="color:#ef4444">○</span> 50-Mile Service Circles': reachLayer
 };
 
