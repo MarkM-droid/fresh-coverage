@@ -161,6 +161,31 @@ async function main() {
       .forEach(r => { zipCoords[r.zip] = [r.lat, r.lng]; });
   }
 
+  // Identify 'expansion likely' MSAs: none status + SSD/dark store within 75mi
+  const ssdFacilities = uniqueFacilities.filter(f => ['ssd_fulfillment','fresh_hub'].includes(f.type));
+
+  Object.keys(msaDataForMap).forEach(msaId => {
+    const msa = msaDataForMap[msaId];
+    if (msa.status === 'none') {
+      const centroid = msaCentroids[msaId];
+      if (centroid) {
+        const [clat, clng] = centroid;
+        const nearestSSD = ssdFacilities
+          .map(f => ({ ...f, dist: distMi(clat, clng, f.lat, f.lng) }))
+          .filter(f => f.dist <= 75)
+          .sort((a,b) => a.dist - b.dist)[0];
+        if (nearestSSD) {
+          msa.expansion_signal = {
+            dist: Math.round(nearestSSD.dist),
+            type: typeLabel[nearestSSD.type] || nearestSSD.type,
+            code: nearestSSD.address_raw.includes(' - ') ? nearestSSD.address_raw.split(' - ')[0] : null,
+            loc: [nearestSSD.city, nearestSSD.state].filter(Boolean).join(', ')
+          };
+        }
+      }
+    }
+  });
+
   Object.keys(msaDataForMap).forEach(msaId => {
     const msa = msaDataForMap[msaId];
 
@@ -330,6 +355,8 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .map-legend span{display:inline-flex;align-items:center;gap:5px}
 .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
 
+/* Expansion toggle */
+.expansion-toggle{background:#fff;padding:8px 12px;border-radius:6px;box-shadow:0 1px 5px rgba(0,0,0,.2);margin-top:80px}
 /* Highlights rows */
 .intro-highlights{margin-top:6px}
 .highlight-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:13px;color:#374151}
@@ -444,10 +471,13 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
             <span class="hl-guide"><span style="display:inline-block;width:12px;height:12px;background:#10b981;border-radius:2px;margin-right:6px;vertical-align:middle"></span><strong>Green</strong> — MSA with verified same-day fresh grocery in at least 1 ZIP code</span>
           </div>
           <div class="highlight-row">
-            <span class="hl-guide"><span style="display:inline-block;width:12px;height:12px;background:#374151;border-radius:2px;margin-right:6px;vertical-align:middle"></span><strong>Gray</strong> — No confirmed coverage at tested ZIP codes</span>
+            <span class="hl-guide"><span style="display:inline-block;width:12px;height:12px;background:#f97316;border-radius:2px;margin-right:6px;vertical-align:middle"></span><strong>Orange</strong> — No coverage confirmed yet, but Amazon SSD/Fresh facility within 75mi (expansion likely)</span>
+          </div>
+          <div class="highlight-row">
+            <span class="hl-guide"><span style="display:inline-block;width:12px;height:12px;background:#374151;border-radius:2px;margin-right:6px;vertical-align:middle"></span><strong>Gray</strong> — No confirmed coverage, no nearby facility</span>
           </div>
           <div class="highlight-row" style="color:#64748b;font-size:12px;margin-top:6px">
-            Click any green MSA to see confirmed coverage type and nearby facilities
+            Click any shaded MSA to see coverage details and nearby facilities
           </div>
         </div>
 
@@ -468,8 +498,9 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 
   <div class="map-legend">
     <strong>MSA Status:</strong>
-    <span><span class="swatch" style="background:#10b981"></span>Confirmed (full_fresh / ambient)</span>
-    <span><span class="swatch" style="background:#374151"></span>Not available (none)</span>
+    <span><span class="swatch" style="background:#10b981"></span>Confirmed coverage</span>
+    <span><span class="swatch" style="background:#f97316"></span>Expansion likely (SSD within 75mi)</span>
+    <span><span class="swatch" style="background:#374151"></span>No coverage found</span>
     <span><span class="swatch" style="background:#1e293b"></span>Not probed</span>
   </div>
 
@@ -528,10 +559,6 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
       <li><strong>US MSA boundaries</strong> — Census CBSA (Core-Based Statistical Area) polygons, top 200 by population</li>
       <li><strong>US ZIP code database</strong> — 31,000+ ZIPs with coordinates and population (2020 Census)</li>
     </ul>
-
-    <h3>ZIP Code Coverage File</h3>
-    <p>The <strong>Download ZIP Code Coverage List</strong> button exports a CSV of ${csvTotalZips.toLocaleString()} US ZIP codes with their coverage status based on proximity to confirmed Amazon SSD / Fresh dark store facilities (50-mile radius — Amazon's publicly stated service range).</p>
-    <p><strong>Use cases:</strong> Join to customer address tables to quantify competitive exposure; identify markets outside Amazon's current service area; prioritize market analysis by competitive intensity.</p>
 
     <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated ${esc(generatedAt)}.</p>
   </section>
@@ -662,20 +689,25 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const msaLayer = L.layerGroup().addTo(map);
 let msaGeoLoaded = false;
 
-function msaStatusColor(status) {
+let showExpansion = true; // controlled by toggle
+
+function msaStatusColor(status, expansionSignal) {
   if (status === 'full_fresh' || status === 'ambient_fresh') return '#10b981';
+  if (status === 'none' && expansionSignal && showExpansion) return '#f97316'; // orange
   if (status === 'none') return '#374151';
   return '#1e293b';
 }
-function msaStatusOpacity(status) {
+function msaStatusOpacity(status, expansionSignal) {
   if (status === 'full_fresh' || status === 'ambient_fresh') return 0.6;
+  if (status === 'none' && expansionSignal && showExpansion) return 0.55;
   if (status === 'none') return 0.25;
   return 0.15;
 }
-function msaStatusLabel(status) {
-  if (status === 'full_fresh')    return '✅ Full Fresh — same-day perishable delivery confirmed';
-  if (status === 'ambient_fresh') return '🟡 Ambient Fresh — limited fresh delivery found';
-  if (status === 'none')          return '⚫ None — no same-day grocery found';
+function msaStatusLabel(status, expansionSignal) {
+  if (status === 'full_fresh')    return '✅ Confirmed — same-day perishable delivery verified';
+  if (status === 'ambient_fresh') return '🟡 Ambient — limited fresh delivery found';
+  if (status === 'none' && expansionSignal) return '🟠 Expansion Likely — no coverage confirmed yet, but Amazon SSD/Fresh facility within 75mi';
+  if (status === 'none')          return '⚫ None — no same-day grocery found at tested ZIPs';
   return '⬜ Not probed';
 }
 
@@ -694,9 +726,10 @@ async function initMsaLayer() {
         const msaId = String(feature.properties.msa_id);
         const d = MSA_DATA[msaId];
         const status = d ? d.status : null;
+        const exp = d ? d.expansion_signal : null;
         return {
-          fillColor: msaStatusColor(status),
-          fillOpacity: msaStatusOpacity(status),
+          fillColor: msaStatusColor(status, exp),
+          fillOpacity: msaStatusOpacity(status, exp),
           color: '#fff',
           weight: 0.5
         };
@@ -706,7 +739,7 @@ async function initMsaLayer() {
         const d = MSA_DATA[msaId] || {};
         const name = d.msa_name || feature.properties.msa_name || ('MSA ' + msaId);
         const pop = d.msa_population ? Number(d.msa_population).toLocaleString() : '—';
-        const statusLabel = msaStatusLabel(d.status || null);
+        const statusLabel = msaStatusLabel(d.status || null, d.expansion_signal);
         const offers = (d.offer_types || []).length ? d.offer_types.join(', ') : '—';
 
         // Nearby facilities section
@@ -721,10 +754,19 @@ async function initMsaLayer() {
         if (wfNearby.length) facilityHtml += '<br><span style="color:#22c55e;font-size:11px">● Whole Foods: ' + wfNearby.length + ' store' + (wfNearby.length>1?'s':'') + ' within 60mi (nearest ' + wfNearby[0].dist + 'mi)</span>';
         if (!nearby.length) facilityHtml = '<br><span style="color:#9ca3af;font-size:11px">No confirmed facilities within 60mi</span>';
 
+        // Expansion signal detail
+        let expansionHtml = '';
+        if (d.expansion_signal) {
+          const es = d.expansion_signal;
+          expansionHtml = '<br><span style="color:#f97316;font-size:11px">▶ Nearest SSD/Fresh facility: ' +
+            (es.code || es.type) + ' in ' + es.loc + ' (' + es.dist + 'mi away)</span>';
+        }
+
         const popupHtml =
           '<b style="font-size:14px">' + name + '</b>' +
           '<br><small style="color:#888">Population: ' + pop + '</small>' +
           '<br>' + statusLabel +
+          expansionHtml +
           (d.status !== 'none' && offers !== '—' ? '<br><small style="color:#aaa">Service types: ' + offers + '</small>' : '') +
           '<br><b style="font-size:11px;color:#ccc">Facilities presumed serving this MSA:</b>' +
           '<br><span style="font-size:10px;color:#6b7280;font-style:italic">Distances from ' + (d.distance_ref || 'MSA centroid') + '</span>' +
@@ -833,6 +875,31 @@ L.control.layers(null, overlayMaps, { collapsed: false, position: 'topright' }).
 
 map.on('overlayadd', e => {
   if (e.layer === msaLayer) initMsaLayer();
+});
+
+// ── Expansion signal toggle ───────────────────────────────────────────────────
+const expansionToggle = L.control({ position: 'topleft' });
+expansionToggle.onAdd = function() {
+  const div = L.DomUtil.create('div', 'expansion-toggle');
+  div.innerHTML = '<label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:12px;font-weight:600;color:#1e293b">' +
+    '<input type="checkbox" id="expansion-chk" checked style="cursor:pointer"> ' +
+    '<span style="display:inline-block;width:12px;height:12px;background:#f97316;border-radius:2px;flex-shrink:0"></span>' +
+    'Show Expansion Likely MSAs</label>';
+  L.DomEvent.disableClickPropagation(div);
+  return div;
+};
+expansionToggle.addTo(map);
+
+document.addEventListener('change', function(e) {
+  if (e.target.id === 'expansion-chk') {
+    showExpansion = e.target.checked;
+    // Redraw MSA layer
+    if (msaGeoLoaded) {
+      msaLayer.clearLayers();
+      msaGeoLoaded = false;
+      initMsaLayer();
+    }
+  }
 });
 <\/script>
 </body>
