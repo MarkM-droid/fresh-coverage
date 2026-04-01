@@ -32,7 +32,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const ZIP_TARGETS_PATH  = join(ROOT, 'data', 'msa_zip_targets.json');
+const ZIP_TARGETS_PATH  = join(ROOT, 'data', 'msa_zip_targets_v2.json');
 const RESULTS_PATH      = join(ROOT, 'data', 'msa_probe_v2_results.json');
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -74,14 +74,24 @@ async function setZip(page, zip) {
       await sleep(2000);
     }
 
+    // Handle interstitial if present
+    const contBtn = page.locator('input[value*="Continue"], button:has-text("Continue shopping")');
+    if (await contBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
+      await contBtn.click();
+      await sleep(2000);
+    }
+
     // Click the location widget
     const locationBtn = page.locator('#nav-global-location-popover-link');
     await locationBtn.click({ timeout: 8000 });
     await sleep(1500);
 
-    // Fill in ZIP
+    // Fill in ZIP — use evaluate to check DOM visibility (more reliable than Playwright isVisible)
     const zipInput = page.locator('#GLUXZipUpdateInput');
-    const visible = await zipInput.isVisible({ timeout: 5000 }).catch(() => false);
+    const visible = await page.evaluate(() => {
+      const el = document.getElementById('GLUXZipUpdateInput');
+      return !!el && el.offsetParent !== null;
+    }).catch(() => false);
     if (!visible) {
       console.warn(`  [setZip] ZIP input not visible for ${zip}`);
       return false;
@@ -233,7 +243,8 @@ async function parseAllOffers(page) {
  * parse the buybox + all offers panel.
  */
 async function searchAndProbe(page, keyword) {
-  const searchUrl = `https://www.amazon.com/s?k=${encodeURIComponent(keyword)}&i=amazonfresh`;
+  // No department filter — SSD items fulfill through main catalog, not amazonfresh storefront
+  const searchUrl = `https://www.amazon.com/s?k=${encodeURIComponent(keyword)}`;
   try {
     await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await sleep(jitter(2000, 800));
@@ -524,6 +535,14 @@ async function main() {
     console.log('\nLoading Amazon homepage...');
     await page.goto('https://www.amazon.com', { waitUntil: 'domcontentloaded', timeout: 30000 });
     await sleep(jitter(2500, 1000));
+
+    // Handle Amazon interstitial "Continue shopping" page (soft bot detection)
+    const continueBtn = page.locator('input[value*="Continue"], button:has-text("Continue shopping"), a:has-text("Continue shopping")');
+    if (await continueBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+      console.log('  [init] Interstitial detected — clicking Continue...');
+      await continueBtn.click();
+      await sleep(3000);
+    }
 
     if (opts.singleZip) {
       // ── Single ZIP mode ──

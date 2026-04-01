@@ -1,0 +1,6235 @@
+{
+  "10380": {
+    "msa_id": "10380",
+    "msa_name": "Aguadilla, PR",
+    "msa_population": 250435,
+    "primary_city": "Aguadilla",
+    "primary_state": "PR",
+    "zips": [],
+    "zip_details": []
+  },
+  "10420": {
+    "msa_id": "10420",
+    "msa_name": "Akron, OH",
+    "msa_population": 698398,
+    "primary_city": "Akron",
+    "primary_state": "OH",
+    "zips": [
+      "44312",
+      "44313",
+      "44310"
+    ],
+    "zip_details": [
+      {
+        "zip": "44312",
+        "city": "Akron",
+        "state": "OH",
+        "pop": 31887
+      },
+      {
+        "zip": "44313",
+        "city": "Akron",
+        "state": "OH",
+        "pop": 26729
+      },
+      {
+        "zip": "44310",
+        "city": "Akron",
+        "state": "OH",
+        "pop": 26325
+      }
+    ]
+  },
+  "10580": {
+    "msa_id": "10580",
+    "msa_name": "Albany-Schenectady-Troy, NY",
+    "msa_population": 904682,
+    "primary_city": "Albany",
+    "primary_state": "NY",
+    "zips": [
+      "12208",
+      "12206",
+      "12210"
+    ],
+    "zip_details": [
+      {
+        "zip": "12208",
+        "city": "Albany",
+        "state": "NY",
+        "pop": 20517
+      },
+      {
+        "zip": "12206",
+        "city": "Albany",
+        "state": "NY",
+        "pop": 15537
+      },
+      {
+        "zip": "12210",
+        "city": "Albany",
+        "state": "NY",
+        "pop": 11057
+      }
+    ]
+  },
+  "10740": {
+    "msa_id": "10740",
+    "msa_name": "Albuquerque, NM",
+    "msa_population": 923518,
+    "primary_city": "Albuquerque",
+    "primary_state": "NM",
+    "zips": [
+      "87121",
+      "87120",
+      "87111"
+    ],
+    "zip_details": [
+      {
+        "zip": "87121",
+        "city": "Albuquerque",
+        "state": "NM",
+        "pop": 77671
+      },
+      {
+        "zip": "87120",
+        "city": "Albuquerque",
+        "state": "NM",
+        "pop": 64398
+      },
+      {
+        "zip": "87111",
+        "city": "Albuquerque",
+        "state": "NM",
+        "pop": 57389
+      }
+    ]
+  },
+  "10900": {
+    "msa_id": "10900",
+    "msa_name": "Allentown-Bethlehem-Easton, PA-NJ",
+    "msa_population": 873555,
+    "primary_city": "Allentown",
+    "primary_state": "PA",
+    "zips": [
+      "18102",
+      "18103",
+      "18104"
+    ],
+    "zip_details": [
+      {
+        "zip": "18102",
+        "city": "Allentown",
+        "state": "PA",
+        "pop": 50702
+      },
+      {
+        "zip": "18103",
+        "city": "Allentown",
+        "state": "PA",
+        "pop": 46884
+      },
+      {
+        "zip": "18104",
+        "city": "Allentown",
+        "state": "PA",
+        "pop": 44217
+      }
+    ]
+  },
+  "11100": {
+    "msa_id": "11100",
+    "msa_name": "Amarillo, TX",
+    "msa_population": 273100,
+    "primary_city": "Amarillo",
+    "primary_state": "TX",
+    "zips": [
+      "79109",
+      "79107",
+      "79106"
+    ],
+    "zip_details": [
+      {
+        "zip": "79109",
+        "city": "Amarillo",
+        "state": "TX",
+        "pop": 43652
+      },
+      {
+        "zip": "79107",
+        "city": "Amarillo",
+        "state": "TX",
+        "pop": 34204
+      },
+      {
+        "zip": "79106",
+        "city": "Amarillo",
+        "state": "TX",
+        "pop": 28289
+      }
+    ]
+  },
+  "11260": {
+    "msa_id": "11260",
+    "msa_name": "Anchorage, AK",
+    "msa_population": 401314,
+    "primary_city": "Anchorage",
+    "primary_state": "AK",
+    "zips": [
+      "99504",
+      "99508",
+      "99507"
+    ],
+    "zip_details": [
+      {
+        "zip": "99504",
+        "city": "Anchorage",
+        "state": "AK",
+        "pop": 41739
+      },
+      {
+        "zip": "99508",
+        "city": "Anchorage",
+        "state": "AK",
+        "pop": 38042
+      },
+      {
+        "zip": "99507",
+        "city": "Anchorage",
+        "state": "AK",
+        "pop": 36403
+      }
+    ]
+  },
+  "11460": {
+    "msa_id": "11460",
+    "msa_name": "Ann Arbor, MI",
+    "msa_population": 365536,
+    "primary_city": "Ann Arbor",
+    "primary_state": "MI",
+    "zips": [
+      "48103",
+      "48104",
+      "48105"
+    ],
+    "zip_details": [
+      {
+        "zip": "48103",
+        "city": "Ann arbor",
+        "state": "MI",
+        "pop": 55078
+      },
+      {
+        "zip": "48104",
+        "city": "Ann arbor",
+        "state": "MI",
+        "pop": 44219
+      },
+      {
+        "zip": "48105",
+        "city": "Ann arbor",
+        "state": "MI",
+        "pop": 36918
+      }
+    ]
+  },
+  "11540": {
+    "msa_id": "11540",
+    "msa_name": "Appleton, WI",
+    "msa_population": 246433,
+    "primary_city": "Appleton",
+    "primary_state": "WI",
+    "zips": [
+      "54915",
+      "54914",
+      "54911"
+    ],
+    "zip_details": [
+      {
+        "zip": "54915",
+        "city": "Appleton",
+        "state": "WI",
+        "pop": 43401
+      },
+      {
+        "zip": "54914",
+        "city": "Appleton",
+        "state": "WI",
+        "pop": 30555
+      },
+      {
+        "zip": "54911",
+        "city": "Appleton",
+        "state": "WI",
+        "pop": 25911
+      }
+    ]
+  },
+  "11700": {
+    "msa_id": "11700",
+    "msa_name": "Asheville, NC",
+    "msa_population": 417202,
+    "primary_city": "Asheville",
+    "primary_state": "NC",
+    "zips": [
+      "28806",
+      "28803",
+      "28804"
+    ],
+    "zip_details": [
+      {
+        "zip": "28806",
+        "city": "Asheville",
+        "state": "NC",
+        "pop": 42901
+      },
+      {
+        "zip": "28803",
+        "city": "Asheville",
+        "state": "NC",
+        "pop": 34126
+      },
+      {
+        "zip": "28804",
+        "city": "Asheville",
+        "state": "NC",
+        "pop": 22959
+      }
+    ]
+  },
+  "12060": {
+    "msa_id": "12060",
+    "msa_name": "Atlanta-Sandy Springs-Roswell, GA",
+    "msa_population": 6305839,
+    "primary_city": "Atlanta",
+    "primary_state": "GA",
+    "zips": [
+      "30349",
+      "30331",
+      "30318"
+    ],
+    "zip_details": [
+      {
+        "zip": "30349",
+        "city": "Atlanta",
+        "state": "GA",
+        "pop": 75647
+      },
+      {
+        "zip": "30331",
+        "city": "Atlanta",
+        "state": "GA",
+        "pop": 65996
+      },
+      {
+        "zip": "30318",
+        "city": "Atlanta",
+        "state": "GA",
+        "pop": 57136
+      }
+    ]
+  },
+  "12100": {
+    "msa_id": "12100",
+    "msa_name": "Atlantic City-Hammonton, NJ",
+    "msa_population": 369823,
+    "primary_city": "Atlantic City",
+    "primary_state": "NJ",
+    "zips": [
+      "08401",
+      "08701",
+      "07055"
+    ],
+    "zip_details": [
+      {
+        "zip": "08401",
+        "city": "Atlantic city",
+        "state": "NJ",
+        "pop": 37793
+      },
+      {
+        "zip": "08701",
+        "city": "Lakewood",
+        "state": "NJ",
+        "pop": 104186
+      },
+      {
+        "zip": "07055",
+        "city": "Passaic",
+        "state": "NJ",
+        "pop": 69842
+      }
+    ]
+  },
+  "12260": {
+    "msa_id": "12260",
+    "msa_name": "Augusta-Richmond County, GA-SC",
+    "msa_population": 628186,
+    "primary_city": "Augusta",
+    "primary_state": "GA",
+    "zips": [
+      "30904",
+      "30901"
+    ],
+    "zip_details": [
+      {
+        "zip": "30904",
+        "city": "Augusta",
+        "state": "GA",
+        "pop": 27136
+      },
+      {
+        "zip": "30901",
+        "city": "Augusta",
+        "state": "GA",
+        "pop": 16394
+      }
+    ]
+  },
+  "12420": {
+    "msa_id": "12420",
+    "msa_name": "Austin-Round Rock-San Marcos, TX",
+    "msa_population": 2473275,
+    "primary_city": "Austin",
+    "primary_state": "TX",
+    "zips": [
+      "78745",
+      "78753",
+      "78748"
+    ],
+    "zip_details": [
+      {
+        "zip": "78745",
+        "city": "Austin",
+        "state": "TX",
+        "pop": 63287
+      },
+      {
+        "zip": "78753",
+        "city": "Austin",
+        "state": "TX",
+        "pop": 60035
+      },
+      {
+        "zip": "78748",
+        "city": "Austin",
+        "state": "TX",
+        "pop": 52076
+      }
+    ]
+  },
+  "12540": {
+    "msa_id": "12540",
+    "msa_name": "Bakersfield-Delano, CA",
+    "msa_population": 913820,
+    "primary_city": "Bakersfield",
+    "primary_state": "CA",
+    "zips": [
+      "93307",
+      "93306",
+      "93309"
+    ],
+    "zip_details": [
+      {
+        "zip": "93307",
+        "city": "Bakersfield",
+        "state": "CA",
+        "pop": 86273
+      },
+      {
+        "zip": "93306",
+        "city": "Bakersfield",
+        "state": "CA",
+        "pop": 74296
+      },
+      {
+        "zip": "93309",
+        "city": "Bakersfield",
+        "state": "CA",
+        "pop": 58709
+      }
+    ]
+  },
+  "12580": {
+    "msa_id": "12580",
+    "msa_name": "Baltimore-Columbia-Towson, MD",
+    "msa_population": 2834316,
+    "primary_city": "Baltimore",
+    "primary_state": "MD",
+    "zips": [
+      "21215",
+      "21206",
+      "21224"
+    ],
+    "zip_details": [
+      {
+        "zip": "21215",
+        "city": "Baltimore",
+        "state": "MD",
+        "pop": 55081
+      },
+      {
+        "zip": "21206",
+        "city": "Baltimore",
+        "state": "MD",
+        "pop": 51670
+      },
+      {
+        "zip": "21224",
+        "city": "Baltimore",
+        "state": "MD",
+        "pop": 48770
+      }
+    ]
+  },
+  "12940": {
+    "msa_id": "12940",
+    "msa_name": "Baton Rouge, LA",
+    "msa_population": 873661,
+    "primary_city": "Baton Rouge",
+    "primary_state": "LA",
+    "zips": [
+      "70816",
+      "70810",
+      "70808"
+    ],
+    "zip_details": [
+      {
+        "zip": "70816",
+        "city": "Baton rouge",
+        "state": "LA",
+        "pop": 41818
+      },
+      {
+        "zip": "70810",
+        "city": "Baton rouge",
+        "state": "LA",
+        "pop": 40179
+      },
+      {
+        "zip": "70808",
+        "city": "Baton rouge",
+        "state": "LA",
+        "pop": 36576
+      }
+    ]
+  },
+  "13140": {
+    "msa_id": "13140",
+    "msa_name": "Beaumont-Port Arthur, TX",
+    "msa_population": 395479,
+    "primary_city": "Beaumont",
+    "primary_state": "TX",
+    "zips": [
+      "77705",
+      "77706",
+      "77707"
+    ],
+    "zip_details": [
+      {
+        "zip": "77705",
+        "city": "Beaumont",
+        "state": "TX",
+        "pop": 40224
+      },
+      {
+        "zip": "77706",
+        "city": "Beaumont",
+        "state": "TX",
+        "pop": 29707
+      },
+      {
+        "zip": "77707",
+        "city": "Beaumont",
+        "state": "TX",
+        "pop": 18867
+      }
+    ]
+  },
+  "13460": {
+    "msa_id": "13460",
+    "msa_name": "Bend, OR",
+    "msa_population": 260919,
+    "primary_city": "Bend",
+    "primary_state": "OR",
+    "zips": [
+      "97701",
+      "97702"
+    ],
+    "zip_details": [
+      {
+        "zip": "97701",
+        "city": "Bend",
+        "state": "OR",
+        "pop": 74255
+      },
+      {
+        "zip": "97702",
+        "city": "Bend",
+        "state": "OR",
+        "pop": 50395
+      }
+    ]
+  },
+  "13820": {
+    "msa_id": "13820",
+    "msa_name": "Birmingham, AL",
+    "msa_population": 1184290,
+    "primary_city": "Birmingham",
+    "primary_state": "AL",
+    "zips": [
+      "35211",
+      "35205",
+      "35206"
+    ],
+    "zip_details": [
+      {
+        "zip": "35211",
+        "city": "Birmingham",
+        "state": "AL",
+        "pop": 24876
+      },
+      {
+        "zip": "35205",
+        "city": "Birmingham",
+        "state": "AL",
+        "pop": 20145
+      },
+      {
+        "zip": "35206",
+        "city": "Birmingham",
+        "state": "AL",
+        "pop": 17211
+      }
+    ]
+  },
+  "14260": {
+    "msa_id": "14260",
+    "msa_name": "Boise City, ID",
+    "msa_population": 826521,
+    "primary_city": "Boise City",
+    "primary_state": "ID",
+    "zips": [
+      "83709",
+      "83301",
+      "83686"
+    ],
+    "zip_details": [
+      {
+        "zip": "83709",
+        "city": "Boise",
+        "state": "ID",
+        "pop": 60449
+      },
+      {
+        "zip": "83301",
+        "city": "Twin falls",
+        "state": "ID",
+        "pop": 58230
+      },
+      {
+        "zip": "83686",
+        "city": "Nampa",
+        "state": "ID",
+        "pop": 52879
+      }
+    ]
+  },
+  "14460": {
+    "msa_id": "14460",
+    "msa_name": "Boston-Cambridge-Newton, MA-NH",
+    "msa_population": 4919179,
+    "primary_city": "Boston",
+    "primary_state": "MA",
+    "zips": [
+      "02115",
+      "02215",
+      "02116"
+    ],
+    "zip_details": [
+      {
+        "zip": "02115",
+        "city": "Boston",
+        "state": "MA",
+        "pop": 29134
+      },
+      {
+        "zip": "02215",
+        "city": "Boston",
+        "state": "MA",
+        "pop": 26243
+      },
+      {
+        "zip": "02116",
+        "city": "Boston",
+        "state": "MA",
+        "pop": 23007
+      }
+    ]
+  },
+  "14500": {
+    "msa_id": "14500",
+    "msa_name": "Boulder, CO",
+    "msa_population": 326831,
+    "primary_city": "Boulder",
+    "primary_state": "CO",
+    "zips": [
+      "80302",
+      "80304",
+      "80301"
+    ],
+    "zip_details": [
+      {
+        "zip": "80302",
+        "city": "Boulder",
+        "state": "CO",
+        "pop": 29422
+      },
+      {
+        "zip": "80304",
+        "city": "Boulder",
+        "state": "CO",
+        "pop": 26501
+      },
+      {
+        "zip": "80301",
+        "city": "Boulder",
+        "state": "CO",
+        "pop": 26010
+      }
+    ]
+  },
+  "14740": {
+    "msa_id": "14740",
+    "msa_name": "Bremerton-Silverdale-Port Orchard, WA",
+    "msa_population": 277658,
+    "primary_city": "Bremerton",
+    "primary_state": "WA",
+    "zips": [
+      "98312",
+      "98311",
+      "98310"
+    ],
+    "zip_details": [
+      {
+        "zip": "98312",
+        "city": "Bremerton",
+        "state": "WA",
+        "pop": 30437
+      },
+      {
+        "zip": "98311",
+        "city": "Bremerton",
+        "state": "WA",
+        "pop": 28042
+      },
+      {
+        "zip": "98310",
+        "city": "Bremerton",
+        "state": "WA",
+        "pop": 20431
+      }
+    ]
+  },
+  "14860": {
+    "msa_id": "14860",
+    "msa_name": "Bridgeport-Stamford-Danbury, CT",
+    "msa_population": 951558,
+    "primary_city": "Bridgeport",
+    "primary_state": "CT",
+    "zips": [
+      "06606",
+      "06604",
+      "06605"
+    ],
+    "zip_details": [
+      {
+        "zip": "06606",
+        "city": "Bridgeport",
+        "state": "CT",
+        "pop": 47040
+      },
+      {
+        "zip": "06604",
+        "city": "Bridgeport",
+        "state": "CT",
+        "pop": 26858
+      },
+      {
+        "zip": "06605",
+        "city": "Bridgeport",
+        "state": "CT",
+        "pop": 24541
+      }
+    ]
+  },
+  "15180": {
+    "msa_id": "15180",
+    "msa_name": "Brownsville-Harlingen, TX",
+    "msa_population": 426710,
+    "primary_city": "Brownsville",
+    "primary_state": "TX",
+    "zips": [
+      "78521",
+      "78520",
+      "78526"
+    ],
+    "zip_details": [
+      {
+        "zip": "78521",
+        "city": "Brownsville",
+        "state": "TX",
+        "pop": 89629
+      },
+      {
+        "zip": "78520",
+        "city": "Brownsville",
+        "state": "TX",
+        "pop": 59388
+      },
+      {
+        "zip": "78526",
+        "city": "Brownsville",
+        "state": "TX",
+        "pop": 50057
+      }
+    ]
+  },
+  "15380": {
+    "msa_id": "15380",
+    "msa_name": "Buffalo-Cheektowaga, NY",
+    "msa_population": 1155604,
+    "primary_city": "Buffalo",
+    "primary_state": "NY",
+    "zips": [
+      "14215",
+      "14207",
+      "14220"
+    ],
+    "zip_details": [
+      {
+        "zip": "14215",
+        "city": "Buffalo",
+        "state": "NY",
+        "pop": 41340
+      },
+      {
+        "zip": "14207",
+        "city": "Buffalo",
+        "state": "NY",
+        "pop": 23773
+      },
+      {
+        "zip": "14220",
+        "city": "Buffalo",
+        "state": "NY",
+        "pop": 22641
+      }
+    ]
+  },
+  "15940": {
+    "msa_id": "15940",
+    "msa_name": "Canton-Massillon, OH",
+    "msa_population": 399474,
+    "primary_city": "Canton",
+    "primary_state": "OH",
+    "zips": [
+      "44708",
+      "44705",
+      "44706"
+    ],
+    "zip_details": [
+      {
+        "zip": "44708",
+        "city": "Canton",
+        "state": "OH",
+        "pop": 24498
+      },
+      {
+        "zip": "44705",
+        "city": "Canton",
+        "state": "OH",
+        "pop": 19353
+      },
+      {
+        "zip": "44706",
+        "city": "Canton",
+        "state": "OH",
+        "pop": 16720
+      }
+    ]
+  },
+  "15980": {
+    "msa_id": "15980",
+    "msa_name": "Cape Coral-Fort Myers, FL",
+    "msa_population": 834573,
+    "primary_city": "Cape Coral",
+    "primary_state": "FL",
+    "zips": [
+      "33311",
+      "33024",
+      "33023"
+    ],
+    "zip_details": [
+      {
+        "zip": "33311",
+        "city": "Fort lauderdale",
+        "state": "FL",
+        "pop": 75705
+      },
+      {
+        "zip": "33024",
+        "city": "Pembroke pines",
+        "state": "FL",
+        "pop": 75701
+      },
+      {
+        "zip": "33023",
+        "city": "Miramar",
+        "state": "FL",
+        "pop": 74913
+      }
+    ]
+  },
+  "16300": {
+    "msa_id": "16300",
+    "msa_name": "Cedar Rapids, IA",
+    "msa_population": 275668,
+    "primary_city": "Cedar Rapids",
+    "primary_state": "IA",
+    "zips": [
+      "52402",
+      "52404",
+      "52405"
+    ],
+    "zip_details": [
+      {
+        "zip": "52402",
+        "city": "Cedar rapids",
+        "state": "IA",
+        "pop": 41471
+      },
+      {
+        "zip": "52404",
+        "city": "Cedar rapids",
+        "state": "IA",
+        "pop": 39628
+      },
+      {
+        "zip": "52405",
+        "city": "Cedar rapids",
+        "state": "IA",
+        "pop": 25942
+      }
+    ]
+  },
+  "16700": {
+    "msa_id": "16700",
+    "msa_name": "Charleston-North Charleston, SC",
+    "msa_population": 849417,
+    "primary_city": "Charleston",
+    "primary_state": "SC",
+    "zips": [
+      "29412",
+      "29414",
+      "29407"
+    ],
+    "zip_details": [
+      {
+        "zip": "29412",
+        "city": "Charleston",
+        "state": "SC",
+        "pop": 41049
+      },
+      {
+        "zip": "29414",
+        "city": "Charleston",
+        "state": "SC",
+        "pop": 39319
+      },
+      {
+        "zip": "29407",
+        "city": "Charleston",
+        "state": "SC",
+        "pop": 35385
+      }
+    ]
+  },
+  "16740": {
+    "msa_id": "16740",
+    "msa_name": "Charlotte-Concord-Gastonia, NC-SC",
+    "msa_population": 2805115,
+    "primary_city": "Charlotte",
+    "primary_state": "NC",
+    "zips": [
+      "28269",
+      "28277",
+      "28215"
+    ],
+    "zip_details": [
+      {
+        "zip": "28269",
+        "city": "Charlotte",
+        "state": "NC",
+        "pop": 79059
+      },
+      {
+        "zip": "28277",
+        "city": "Charlotte",
+        "state": "NC",
+        "pop": 70193
+      },
+      {
+        "zip": "28215",
+        "city": "Charlotte",
+        "state": "NC",
+        "pop": 64293
+      }
+    ]
+  },
+  "16860": {
+    "msa_id": "16860",
+    "msa_name": "Chattanooga, TN-GA",
+    "msa_population": 580353,
+    "primary_city": "Chattanooga",
+    "primary_state": "TN",
+    "zips": [
+      "37421",
+      "37405",
+      "37411"
+    ],
+    "zip_details": [
+      {
+        "zip": "37421",
+        "city": "Chattanooga",
+        "state": "TN",
+        "pop": 53050
+      },
+      {
+        "zip": "37405",
+        "city": "Chattanooga",
+        "state": "TN",
+        "pop": 18231
+      },
+      {
+        "zip": "37411",
+        "city": "Chattanooga",
+        "state": "TN",
+        "pop": 16801
+      }
+    ]
+  },
+  "16980": {
+    "msa_id": "16980",
+    "msa_name": "Chicago-Naperville-Elgin, IL-IN",
+    "msa_population": 9262559,
+    "primary_city": "Chicago",
+    "primary_state": "IL",
+    "zips": [
+      "60629",
+      "60618",
+      "60639"
+    ],
+    "zip_details": [
+      {
+        "zip": "60629",
+        "city": "Chicago",
+        "state": "IL",
+        "pop": 107930
+      },
+      {
+        "zip": "60618",
+        "city": "Chicago",
+        "state": "IL",
+        "pop": 94646
+      },
+      {
+        "zip": "60639",
+        "city": "Chicago",
+        "state": "IL",
+        "pop": 88515
+      }
+    ]
+  },
+  "17140": {
+    "msa_id": "17140",
+    "msa_name": "Cincinnati, OH-KY-IN",
+    "msa_population": 2272910,
+    "primary_city": "Cincinnati",
+    "primary_state": "OH",
+    "zips": [
+      "45231",
+      "45211",
+      "45237"
+    ],
+    "zip_details": [
+      {
+        "zip": "45231",
+        "city": "Cincinnati",
+        "state": "OH",
+        "pop": 41599
+      },
+      {
+        "zip": "45211",
+        "city": "Cincinnati",
+        "state": "OH",
+        "pop": 37038
+      },
+      {
+        "zip": "45237",
+        "city": "Cincinnati",
+        "state": "OH",
+        "pop": 22104
+      }
+    ]
+  },
+  "17300": {
+    "msa_id": "17300",
+    "msa_name": "Clarksville, TN-KY",
+    "msa_population": 336861,
+    "primary_city": "Clarksville",
+    "primary_state": "TN",
+    "zips": [
+      "37042",
+      "37040",
+      "37043"
+    ],
+    "zip_details": [
+      {
+        "zip": "37042",
+        "city": "Clarksville",
+        "state": "TN",
+        "pop": 80661
+      },
+      {
+        "zip": "37040",
+        "city": "Clarksville",
+        "state": "TN",
+        "pop": 52736
+      },
+      {
+        "zip": "37043",
+        "city": "Clarksville",
+        "state": "TN",
+        "pop": 49669
+      }
+    ]
+  },
+  "17410": {
+    "msa_id": "17410",
+    "msa_name": "Cleveland, OH",
+    "msa_population": 2158932,
+    "primary_city": "Cleveland",
+    "primary_state": "OH",
+    "zips": [
+      "44102",
+      "44111",
+      "44109"
+    ],
+    "zip_details": [
+      {
+        "zip": "44102",
+        "city": "Cleveland",
+        "state": "OH",
+        "pop": 44320
+      },
+      {
+        "zip": "44111",
+        "city": "Cleveland",
+        "state": "OH",
+        "pop": 42591
+      },
+      {
+        "zip": "44109",
+        "city": "Cleveland",
+        "state": "OH",
+        "pop": 39451
+      }
+    ]
+  },
+  "17780": {
+    "msa_id": "17780",
+    "msa_name": "College Station-Bryan, TX",
+    "msa_population": 280939,
+    "primary_city": "College Station",
+    "primary_state": "TX",
+    "zips": [
+      "77845",
+      "77840"
+    ],
+    "zip_details": [
+      {
+        "zip": "77845",
+        "city": "College station",
+        "state": "TX",
+        "pop": 68757
+      },
+      {
+        "zip": "77840",
+        "city": "College station",
+        "state": "TX",
+        "pop": 59700
+      }
+    ]
+  },
+  "17820": {
+    "msa_id": "17820",
+    "msa_name": "Colorado Springs, CO",
+    "msa_population": 768832,
+    "primary_city": "Colorado Springs",
+    "primary_state": "CO",
+    "zips": [
+      "80918",
+      "80916",
+      "80909"
+    ],
+    "zip_details": [
+      {
+        "zip": "80918",
+        "city": "Colorado springs",
+        "state": "CO",
+        "pop": 48905
+      },
+      {
+        "zip": "80916",
+        "city": "Colorado springs",
+        "state": "CO",
+        "pop": 41173
+      },
+      {
+        "zip": "80909",
+        "city": "Colorado springs",
+        "state": "CO",
+        "pop": 38826
+      }
+    ]
+  },
+  "17900": {
+    "msa_id": "17900",
+    "msa_name": "Columbia, SC",
+    "msa_population": 856889,
+    "primary_city": "Columbia",
+    "primary_state": "SC",
+    "zips": [
+      "29223",
+      "29229",
+      "29203"
+    ],
+    "zip_details": [
+      {
+        "zip": "29223",
+        "city": "Columbia",
+        "state": "SC",
+        "pop": 52895
+      },
+      {
+        "zip": "29229",
+        "city": "Columbia",
+        "state": "SC",
+        "pop": 50137
+      },
+      {
+        "zip": "29203",
+        "city": "Columbia",
+        "state": "SC",
+        "pop": 40638
+      }
+    ]
+  },
+  "17980": {
+    "msa_id": "17980",
+    "msa_name": "Columbus, GA-AL",
+    "msa_population": 329047,
+    "primary_city": "Columbus",
+    "primary_state": "GA",
+    "zips": [
+      "31907",
+      "31909",
+      "31904"
+    ],
+    "zip_details": [
+      {
+        "zip": "31907",
+        "city": "Columbus",
+        "state": "GA",
+        "pop": 58615
+      },
+      {
+        "zip": "31909",
+        "city": "Columbus",
+        "state": "GA",
+        "pop": 38486
+      },
+      {
+        "zip": "31904",
+        "city": "Columbus",
+        "state": "GA",
+        "pop": 32087
+      }
+    ]
+  },
+  "18140": {
+    "msa_id": "18140",
+    "msa_name": "Columbus, OH",
+    "msa_population": 2180271,
+    "primary_city": "Columbus",
+    "primary_state": "OH",
+    "zips": [
+      "43229",
+      "43207",
+      "43232"
+    ],
+    "zip_details": [
+      {
+        "zip": "43229",
+        "city": "Columbus",
+        "state": "OH",
+        "pop": 56760
+      },
+      {
+        "zip": "43207",
+        "city": "Columbus",
+        "state": "OH",
+        "pop": 47118
+      },
+      {
+        "zip": "43232",
+        "city": "Columbus",
+        "state": "OH",
+        "pop": 46914
+      }
+    ]
+  },
+  "18580": {
+    "msa_id": "18580",
+    "msa_name": "Corpus Christi, TX",
+    "msa_population": 446041,
+    "primary_city": "Corpus Christi",
+    "primary_state": "TX",
+    "zips": [
+      "78414",
+      "78412",
+      "78415"
+    ],
+    "zip_details": [
+      {
+        "zip": "78414",
+        "city": "Corpus christi",
+        "state": "TX",
+        "pop": 44014
+      },
+      {
+        "zip": "78412",
+        "city": "Corpus christi",
+        "state": "TX",
+        "pop": 42385
+      },
+      {
+        "zip": "78415",
+        "city": "Corpus christi",
+        "state": "TX",
+        "pop": 41976
+      }
+    ]
+  },
+  "18880": {
+    "msa_id": "18880",
+    "msa_name": "Crestview-Fort Walton Beach-Destin, FL",
+    "msa_population": 304818,
+    "primary_city": "Crestview",
+    "primary_state": "FL",
+    "zips": [
+      "32536",
+      "33311",
+      "33024"
+    ],
+    "zip_details": [
+      {
+        "zip": "32536",
+        "city": "Crestview",
+        "state": "FL",
+        "pop": 24601
+      },
+      {
+        "zip": "33311",
+        "city": "Fort lauderdale",
+        "state": "FL",
+        "pop": 75705
+      },
+      {
+        "zip": "33024",
+        "city": "Pembroke pines",
+        "state": "FL",
+        "pop": 75701
+      }
+    ]
+  },
+  "19100": {
+    "msa_id": "19100",
+    "msa_name": "Dallas-Fort Worth-Arlington, TX",
+    "msa_population": 8100037,
+    "primary_city": "Dallas",
+    "primary_state": "TX",
+    "zips": [
+      "75217",
+      "75228",
+      "75243"
+    ],
+    "zip_details": [
+      {
+        "zip": "75217",
+        "city": "Dallas",
+        "state": "TX",
+        "pop": 86811
+      },
+      {
+        "zip": "75228",
+        "city": "Dallas",
+        "state": "TX",
+        "pop": 75303
+      },
+      {
+        "zip": "75243",
+        "city": "Dallas",
+        "state": "TX",
+        "pop": 68253
+      }
+    ]
+  },
+  "19300": {
+    "msa_id": "19300",
+    "msa_name": "Daphne-Fairhope-Foley, AL",
+    "msa_population": 253507,
+    "primary_city": "Daphne",
+    "primary_state": "AL",
+    "zips": [
+      "36526",
+      "35242",
+      "36117"
+    ],
+    "zip_details": [
+      {
+        "zip": "36526",
+        "city": "Daphne",
+        "state": "AL",
+        "pop": 34788
+      },
+      {
+        "zip": "35242",
+        "city": "Shoal creek",
+        "state": "AL",
+        "pop": 56713
+      },
+      {
+        "zip": "36117",
+        "city": "Montgomery",
+        "state": "AL",
+        "pop": 53594
+      }
+    ]
+  },
+  "19340": {
+    "msa_id": "19340",
+    "msa_name": "Davenport-Moline-Rock Island, IA-IL",
+    "msa_population": 379869,
+    "primary_city": "Davenport",
+    "primary_state": "IA",
+    "zips": [
+      "52804",
+      "52806",
+      "52803"
+    ],
+    "zip_details": [
+      {
+        "zip": "52804",
+        "city": "Davenport",
+        "state": "IA",
+        "pop": 28169
+      },
+      {
+        "zip": "52806",
+        "city": "Davenport",
+        "state": "IA",
+        "pop": 27869
+      },
+      {
+        "zip": "52803",
+        "city": "Davenport",
+        "state": "IA",
+        "pop": 21291
+      }
+    ]
+  },
+  "19430": {
+    "msa_id": "19430",
+    "msa_name": "Dayton-Kettering-Beavercreek, OH",
+    "msa_population": 814363,
+    "primary_city": "Dayton",
+    "primary_state": "OH",
+    "zips": [
+      "45417",
+      "45440",
+      "45406"
+    ],
+    "zip_details": [
+      {
+        "zip": "45417",
+        "city": "Dayton",
+        "state": "OH",
+        "pop": 29072
+      },
+      {
+        "zip": "45440",
+        "city": "Dayton",
+        "state": "OH",
+        "pop": 21667
+      },
+      {
+        "zip": "45406",
+        "city": "Dayton",
+        "state": "OH",
+        "pop": 20393
+      }
+    ]
+  },
+  "19660": {
+    "msa_id": "19660",
+    "msa_name": "Deltona-Daytona Beach-Ormond Beach, FL",
+    "msa_population": 721796,
+    "primary_city": "Deltona",
+    "primary_state": "FL",
+    "zips": [
+      "32725",
+      "32738"
+    ],
+    "zip_details": [
+      {
+        "zip": "32725",
+        "city": "Deltona",
+        "state": "FL",
+        "pop": 49802
+      },
+      {
+        "zip": "32738",
+        "city": "Deltona",
+        "state": "FL",
+        "pop": 46727
+      }
+    ]
+  },
+  "19740": {
+    "msa_id": "19740",
+    "msa_name": "Denver-Aurora-Centennial, CO",
+    "msa_population": 3005131,
+    "primary_city": "Denver",
+    "primary_state": "CO",
+    "zips": [
+      "80219",
+      "80239",
+      "80210"
+    ],
+    "zip_details": [
+      {
+        "zip": "80219",
+        "city": "Denver",
+        "state": "CO",
+        "pop": 71795
+      },
+      {
+        "zip": "80239",
+        "city": "Denver",
+        "state": "CO",
+        "pop": 48835
+      },
+      {
+        "zip": "80210",
+        "city": "Denver",
+        "state": "CO",
+        "pop": 37786
+      }
+    ]
+  },
+  "19780": {
+    "msa_id": "19780",
+    "msa_name": "Des Moines-West Des Moines, IA",
+    "msa_population": 737164,
+    "primary_city": "Des Moines",
+    "primary_state": "IA",
+    "zips": [
+      "50315",
+      "50310",
+      "50320"
+    ],
+    "zip_details": [
+      {
+        "zip": "50315",
+        "city": "Des moines",
+        "state": "IA",
+        "pop": 36097
+      },
+      {
+        "zip": "50310",
+        "city": "Des moines",
+        "state": "IA",
+        "pop": 31965
+      },
+      {
+        "zip": "50320",
+        "city": "Des moines",
+        "state": "IA",
+        "pop": 23724
+      }
+    ]
+  },
+  "19820": {
+    "msa_id": "19820",
+    "msa_name": "Detroit-Warren-Dearborn, MI",
+    "msa_population": 4342304,
+    "primary_city": "Detroit",
+    "primary_state": "MI",
+    "zips": [
+      "48228",
+      "48235",
+      "48219"
+    ],
+    "zip_details": [
+      {
+        "zip": "48228",
+        "city": "Detroit",
+        "state": "MI",
+        "pop": 57698
+      },
+      {
+        "zip": "48235",
+        "city": "Detroit",
+        "state": "MI",
+        "pop": 46426
+      },
+      {
+        "zip": "48219",
+        "city": "Detroit",
+        "state": "MI",
+        "pop": 45503
+      }
+    ]
+  },
+  "20260": {
+    "msa_id": "20260",
+    "msa_name": "Duluth, MN-WI",
+    "msa_population": 281603,
+    "primary_city": "Duluth",
+    "primary_state": "MN",
+    "zips": [
+      "55803",
+      "55804",
+      "55812"
+    ],
+    "zip_details": [
+      {
+        "zip": "55803",
+        "city": "Duluth",
+        "state": "MN",
+        "pop": 17804
+      },
+      {
+        "zip": "55804",
+        "city": "Duluth",
+        "state": "MN",
+        "pop": 15416
+      },
+      {
+        "zip": "55812",
+        "city": "Duluth",
+        "state": "MN",
+        "pop": 10984
+      }
+    ]
+  },
+  "20500": {
+    "msa_id": "20500",
+    "msa_name": "Durham-Chapel Hill, NC",
+    "msa_population": 608879,
+    "primary_city": "Durham",
+    "primary_state": "NC",
+    "zips": [
+      "27703",
+      "27707",
+      "27705"
+    ],
+    "zip_details": [
+      {
+        "zip": "27703",
+        "city": "Durham",
+        "state": "NC",
+        "pop": 56071
+      },
+      {
+        "zip": "27707",
+        "city": "Durham",
+        "state": "NC",
+        "pop": 52008
+      },
+      {
+        "zip": "27705",
+        "city": "Durham",
+        "state": "NC",
+        "pop": 50530
+      }
+    ]
+  },
+  "21340": {
+    "msa_id": "21340",
+    "msa_name": "El Paso, TX",
+    "msa_population": 872063,
+    "primary_city": "El Paso",
+    "primary_state": "TX",
+    "zips": [
+      "79936",
+      "79938",
+      "79912"
+    ],
+    "zip_details": [
+      {
+        "zip": "79936",
+        "city": "El paso",
+        "state": "TX",
+        "pop": 108668
+      },
+      {
+        "zip": "79938",
+        "city": "El paso",
+        "state": "TX",
+        "pop": 83326
+      },
+      {
+        "zip": "79912",
+        "city": "El paso",
+        "state": "TX",
+        "pop": 79861
+      }
+    ]
+  },
+  "21500": {
+    "msa_id": "21500",
+    "msa_name": "Erie, PA",
+    "msa_population": 267571,
+    "primary_city": "Erie",
+    "primary_state": "PA",
+    "zips": [
+      "16509",
+      "16506",
+      "16504"
+    ],
+    "zip_details": [
+      {
+        "zip": "16509",
+        "city": "Erie",
+        "state": "PA",
+        "pop": 26838
+      },
+      {
+        "zip": "16506",
+        "city": "Erie",
+        "state": "PA",
+        "pop": 24163
+      },
+      {
+        "zip": "16504",
+        "city": "Erie",
+        "state": "PA",
+        "pop": 16571
+      }
+    ]
+  },
+  "21660": {
+    "msa_id": "21660",
+    "msa_name": "Eugene-Springfield, OR",
+    "msa_population": 381181,
+    "primary_city": "Eugene",
+    "primary_state": "OR",
+    "zips": [
+      "97402",
+      "97405",
+      "97404"
+    ],
+    "zip_details": [
+      {
+        "zip": "97402",
+        "city": "Eugene",
+        "state": "OR",
+        "pop": 52481
+      },
+      {
+        "zip": "97405",
+        "city": "Eugene",
+        "state": "OR",
+        "pop": 45184
+      },
+      {
+        "zip": "97404",
+        "city": "Eugene",
+        "state": "OR",
+        "pop": 34126
+      }
+    ]
+  },
+  "21780": {
+    "msa_id": "21780",
+    "msa_name": "Evansville, IN",
+    "msa_population": 270717,
+    "primary_city": "Evansville",
+    "primary_state": "IN",
+    "zips": [
+      "47714",
+      "47711",
+      "47712"
+    ],
+    "zip_details": [
+      {
+        "zip": "47714",
+        "city": "Evansville",
+        "state": "IN",
+        "pop": 34514
+      },
+      {
+        "zip": "47711",
+        "city": "Evansville",
+        "state": "IN",
+        "pop": 32961
+      },
+      {
+        "zip": "47712",
+        "city": "Evansville",
+        "state": "IN",
+        "pop": 26921
+      }
+    ]
+  },
+  "22020": {
+    "msa_id": "22020",
+    "msa_name": "Fargo, ND-MN",
+    "msa_population": 262620,
+    "primary_city": "Fargo",
+    "primary_state": "ND",
+    "zips": [
+      "58103",
+      "58104",
+      "58201"
+    ],
+    "zip_details": [
+      {
+        "zip": "58103",
+        "city": "Fargo",
+        "state": "ND",
+        "pop": 49209
+      },
+      {
+        "zip": "58104",
+        "city": "Briarwood",
+        "state": "ND",
+        "pop": 43925
+      },
+      {
+        "zip": "58201",
+        "city": "Grand forks",
+        "state": "ND",
+        "pop": 41096
+      }
+    ]
+  },
+  "22180": {
+    "msa_id": "22180",
+    "msa_name": "Fayetteville, NC",
+    "msa_population": 392336,
+    "primary_city": "Fayetteville",
+    "primary_state": "NC",
+    "zips": [
+      "28314",
+      "28306",
+      "28304"
+    ],
+    "zip_details": [
+      {
+        "zip": "28314",
+        "city": "Fayetteville",
+        "state": "NC",
+        "pop": 59189
+      },
+      {
+        "zip": "28306",
+        "city": "Fayetteville",
+        "state": "NC",
+        "pop": 43300
+      },
+      {
+        "zip": "28304",
+        "city": "Fayetteville",
+        "state": "NC",
+        "pop": 35605
+      }
+    ]
+  },
+  "22220": {
+    "msa_id": "22220",
+    "msa_name": "Fayetteville-Springdale-Rogers, AR",
+    "msa_population": 590295,
+    "primary_city": "Fayetteville",
+    "primary_state": "AR",
+    "zips": [
+      "72701",
+      "72703"
+    ],
+    "zip_details": [
+      {
+        "zip": "72701",
+        "city": "Fayetteville",
+        "state": "AR",
+        "pop": 45396
+      },
+      {
+        "zip": "72703",
+        "city": "Fayetteville",
+        "state": "AR",
+        "pop": 33223
+      }
+    ]
+  },
+  "22420": {
+    "msa_id": "22420",
+    "msa_name": "Flint, MI",
+    "msa_population": 401522,
+    "primary_city": "Flint",
+    "primary_state": "MI",
+    "zips": [
+      "48507",
+      "48503",
+      "48505"
+    ],
+    "zip_details": [
+      {
+        "zip": "48507",
+        "city": "Flint",
+        "state": "MI",
+        "pop": 30884
+      },
+      {
+        "zip": "48503",
+        "city": "Flint",
+        "state": "MI",
+        "pop": 26542
+      },
+      {
+        "zip": "48505",
+        "city": "Flint",
+        "state": "MI",
+        "pop": 19722
+      }
+    ]
+  },
+  "22660": {
+    "msa_id": "22660",
+    "msa_name": "Fort Collins-Loveland, CO",
+    "msa_population": 370771,
+    "primary_city": "Fort Collins",
+    "primary_state": "CO",
+    "zips": [
+      "80525",
+      "80526",
+      "80521"
+    ],
+    "zip_details": [
+      {
+        "zip": "80525",
+        "city": "Fort collins",
+        "state": "CO",
+        "pop": 56233
+      },
+      {
+        "zip": "80526",
+        "city": "Fort collins",
+        "state": "CO",
+        "pop": 45220
+      },
+      {
+        "zip": "80521",
+        "city": "Fort collins",
+        "state": "CO",
+        "pop": 37796
+      }
+    ]
+  },
+  "23060": {
+    "msa_id": "23060",
+    "msa_name": "Fort Wayne, IN",
+    "msa_population": 457842,
+    "primary_city": "Fort Wayne",
+    "primary_state": "IN",
+    "zips": [
+      "46835",
+      "46815",
+      "46825"
+    ],
+    "zip_details": [
+      {
+        "zip": "46835",
+        "city": "Fort wayne",
+        "state": "IN",
+        "pop": 35612
+      },
+      {
+        "zip": "46815",
+        "city": "Fort wayne",
+        "state": "IN",
+        "pop": 29183
+      },
+      {
+        "zip": "46825",
+        "city": "Fort wayne",
+        "state": "IN",
+        "pop": 28848
+      }
+    ]
+  },
+  "23420": {
+    "msa_id": "23420",
+    "msa_name": "Fresno, CA",
+    "msa_population": 1180020,
+    "primary_city": "Fresno",
+    "primary_state": "CA",
+    "zips": [
+      "93722",
+      "93727",
+      "93720"
+    ],
+    "zip_details": [
+      {
+        "zip": "93722",
+        "city": "Fresno",
+        "state": "CA",
+        "pop": 85811
+      },
+      {
+        "zip": "93727",
+        "city": "Fresno",
+        "state": "CA",
+        "pop": 84656
+      },
+      {
+        "zip": "93720",
+        "city": "Fresno",
+        "state": "CA",
+        "pop": 46725
+      }
+    ]
+  },
+  "23540": {
+    "msa_id": "23540",
+    "msa_name": "Gainesville, FL",
+    "msa_population": 350203,
+    "primary_city": "Gainesville",
+    "primary_state": "FL",
+    "zips": [
+      "32608",
+      "32607",
+      "32605"
+    ],
+    "zip_details": [
+      {
+        "zip": "32608",
+        "city": "Gainesville",
+        "state": "FL",
+        "pop": 50431
+      },
+      {
+        "zip": "32607",
+        "city": "Gainesville",
+        "state": "FL",
+        "pop": 30139
+      },
+      {
+        "zip": "32605",
+        "city": "Gainesville",
+        "state": "FL",
+        "pop": 26305
+      }
+    ]
+  },
+  "24340": {
+    "msa_id": "24340",
+    "msa_name": "Grand Rapids-Wyoming-Kentwood, MI",
+    "msa_population": 1162950,
+    "primary_city": "Grand Rapids",
+    "primary_state": "MI",
+    "zips": [
+      "49507",
+      "49503",
+      "49506"
+    ],
+    "zip_details": [
+      {
+        "zip": "49507",
+        "city": "Grand rapids",
+        "state": "MI",
+        "pop": 39731
+      },
+      {
+        "zip": "49503",
+        "city": "Grand rapids",
+        "state": "MI",
+        "pop": 37036
+      },
+      {
+        "zip": "49506",
+        "city": "Grand rapids",
+        "state": "MI",
+        "pop": 34058
+      }
+    ]
+  },
+  "24540": {
+    "msa_id": "24540",
+    "msa_name": "Greeley, CO",
+    "msa_population": 359442,
+    "primary_city": "Greeley",
+    "primary_state": "CO",
+    "zips": [
+      "80634",
+      "80013",
+      "80219"
+    ],
+    "zip_details": [
+      {
+        "zip": "80634",
+        "city": "Greeley",
+        "state": "CO",
+        "pop": 61810
+      },
+      {
+        "zip": "80013",
+        "city": "Aurora",
+        "state": "CO",
+        "pop": 74293
+      },
+      {
+        "zip": "80219",
+        "city": "Denver",
+        "state": "CO",
+        "pop": 71795
+      }
+    ]
+  },
+  "24580": {
+    "msa_id": "24580",
+    "msa_name": "Green Bay, WI",
+    "msa_population": 331882,
+    "primary_city": "Green Bay",
+    "primary_state": "WI",
+    "zips": [
+      "54313",
+      "54311",
+      "54302"
+    ],
+    "zip_details": [
+      {
+        "zip": "54313",
+        "city": "Green bay",
+        "state": "WI",
+        "pop": 40083
+      },
+      {
+        "zip": "54311",
+        "city": "Green bay",
+        "state": "WI",
+        "pop": 35754
+      },
+      {
+        "zip": "54302",
+        "city": "Green bay",
+        "state": "WI",
+        "pop": 31670
+      }
+    ]
+  },
+  "24660": {
+    "msa_id": "24660",
+    "msa_name": "Greensboro-High Point, NC",
+    "msa_population": 789842,
+    "primary_city": "Greensboro",
+    "primary_state": "NC",
+    "zips": [
+      "27406",
+      "27410",
+      "27407"
+    ],
+    "zip_details": [
+      {
+        "zip": "27406",
+        "city": "Greensboro",
+        "state": "NC",
+        "pop": 62757
+      },
+      {
+        "zip": "27410",
+        "city": "Greensboro",
+        "state": "NC",
+        "pop": 57466
+      },
+      {
+        "zip": "27407",
+        "city": "Greensboro",
+        "state": "NC",
+        "pop": 53237
+      }
+    ]
+  },
+  "24860": {
+    "msa_id": "24860",
+    "msa_name": "Greenville-Anderson-Greer, SC",
+    "msa_population": 975480,
+    "primary_city": "Greenville",
+    "primary_state": "SC",
+    "zips": [
+      "29607",
+      "29605",
+      "29615"
+    ],
+    "zip_details": [
+      {
+        "zip": "29607",
+        "city": "Greenville",
+        "state": "SC",
+        "pop": 40933
+      },
+      {
+        "zip": "29605",
+        "city": "Greenville",
+        "state": "SC",
+        "pop": 38808
+      },
+      {
+        "zip": "29615",
+        "city": "Greenville",
+        "state": "SC",
+        "pop": 37349
+      }
+    ]
+  },
+  "25060": {
+    "msa_id": "25060",
+    "msa_name": "Gulfport-Biloxi, MS",
+    "msa_population": 421916,
+    "primary_city": "Gulfport",
+    "primary_state": "MS",
+    "zips": [
+      "39503",
+      "39501",
+      "39507"
+    ],
+    "zip_details": [
+      {
+        "zip": "39503",
+        "city": "Gulfport",
+        "state": "MS",
+        "pop": 56418
+      },
+      {
+        "zip": "39501",
+        "city": "Gulfport",
+        "state": "MS",
+        "pop": 23807
+      },
+      {
+        "zip": "39507",
+        "city": "Gulfport",
+        "state": "MS",
+        "pop": 17004
+      }
+    ]
+  },
+  "25180": {
+    "msa_id": "25180",
+    "msa_name": "Hagerstown-Martinsburg, MD-WV",
+    "msa_population": 304506,
+    "primary_city": "Hagerstown",
+    "primary_state": "MD",
+    "zips": [
+      "21740",
+      "21742"
+    ],
+    "zip_details": [
+      {
+        "zip": "21740",
+        "city": "Hagerstown",
+        "state": "MD",
+        "pop": 60922
+      },
+      {
+        "zip": "21742",
+        "city": "Hagerstown",
+        "state": "MD",
+        "pop": 33425
+      }
+    ]
+  },
+  "25420": {
+    "msa_id": "25420",
+    "msa_name": "Harrisburg-Carlisle, PA",
+    "msa_population": 606055,
+    "primary_city": "Harrisburg",
+    "primary_state": "PA",
+    "zips": [
+      "17112",
+      "17110",
+      "17104"
+    ],
+    "zip_details": [
+      {
+        "zip": "17112",
+        "city": "Harrisburg",
+        "state": "PA",
+        "pop": 36080
+      },
+      {
+        "zip": "17110",
+        "city": "Harrisburg",
+        "state": "PA",
+        "pop": 25122
+      },
+      {
+        "zip": "17104",
+        "city": "Harrisburg",
+        "state": "PA",
+        "pop": 19765
+      }
+    ]
+  },
+  "25540": {
+    "msa_id": "25540",
+    "msa_name": "Hartford-West Hartford-East Hartford, CT",
+    "msa_population": 1151543,
+    "primary_city": "Hartford",
+    "primary_state": "CT",
+    "zips": [
+      "06106",
+      "06114",
+      "06112"
+    ],
+    "zip_details": [
+      {
+        "zip": "06106",
+        "city": "Hartford",
+        "state": "CT",
+        "pop": 38012
+      },
+      {
+        "zip": "06114",
+        "city": "Hartford",
+        "state": "CT",
+        "pop": 27823
+      },
+      {
+        "zip": "06112",
+        "city": "Hartford",
+        "state": "CT",
+        "pop": 19991
+      }
+    ]
+  },
+  "25860": {
+    "msa_id": "25860",
+    "msa_name": "Hickory-Lenoir-Morganton, NC",
+    "msa_population": 370030,
+    "primary_city": "Hickory",
+    "primary_state": "NC",
+    "zips": [
+      "28601",
+      "28602"
+    ],
+    "zip_details": [
+      {
+        "zip": "28601",
+        "city": "Hickory",
+        "state": "NC",
+        "pop": 50265
+      },
+      {
+        "zip": "28602",
+        "city": "Hickory",
+        "state": "NC",
+        "pop": 29467
+      }
+    ]
+  },
+  "26420": {
+    "msa_id": "26420",
+    "msa_name": "Houston-Pasadena-The Woodlands, TX",
+    "msa_population": 7510252,
+    "primary_city": "Houston",
+    "primary_state": "TX",
+    "zips": [
+      "77084",
+      "77083",
+      "77095"
+    ],
+    "zip_details": [
+      {
+        "zip": "77084",
+        "city": "Houston",
+        "state": "TX",
+        "pop": 108161
+      },
+      {
+        "zip": "77083",
+        "city": "Houston",
+        "state": "TX",
+        "pop": 78240
+      },
+      {
+        "zip": "77095",
+        "city": "Houston",
+        "state": "TX",
+        "pop": 73956
+      }
+    ]
+  },
+  "26580": {
+    "msa_id": "26580",
+    "msa_name": "Huntington-Ashland, WV-KY-OH",
+    "msa_population": 367192,
+    "primary_city": "Huntington",
+    "primary_state": "WV",
+    "zips": [
+      "25705",
+      "25701",
+      "25704"
+    ],
+    "zip_details": [
+      {
+        "zip": "25705",
+        "city": "Huntington",
+        "state": "WV",
+        "pop": 20690
+      },
+      {
+        "zip": "25701",
+        "city": "Huntington",
+        "state": "WV",
+        "pop": 19869
+      },
+      {
+        "zip": "25704",
+        "city": "Huntington",
+        "state": "WV",
+        "pop": 16540
+      }
+    ]
+  },
+  "26620": {
+    "msa_id": "26620",
+    "msa_name": "Huntsville, AL",
+    "msa_population": 527254,
+    "primary_city": "Huntsville",
+    "primary_state": "AL",
+    "zips": [
+      "35810",
+      "35803",
+      "35811"
+    ],
+    "zip_details": [
+      {
+        "zip": "35810",
+        "city": "Huntsville",
+        "state": "AL",
+        "pop": 30243
+      },
+      {
+        "zip": "35803",
+        "city": "Huntsville",
+        "state": "AL",
+        "pop": 26504
+      },
+      {
+        "zip": "35811",
+        "city": "Huntsville",
+        "state": "AL",
+        "pop": 26198
+      }
+    ]
+  },
+  "26900": {
+    "msa_id": "26900",
+    "msa_name": "Indianapolis-Carmel-Greenwood, IN",
+    "msa_population": 2139689,
+    "primary_city": "Indianapolis",
+    "primary_state": "IN",
+    "zips": [
+      "46222",
+      "46203",
+      "46220"
+    ],
+    "zip_details": [
+      {
+        "zip": "46222",
+        "city": "Indianapolis",
+        "state": "IN",
+        "pop": 38629
+      },
+      {
+        "zip": "46203",
+        "city": "Indianapolis",
+        "state": "IN",
+        "pop": 38184
+      },
+      {
+        "zip": "46220",
+        "city": "Indianapolis",
+        "state": "IN",
+        "pop": 37367
+      }
+    ]
+  },
+  "27140": {
+    "msa_id": "27140",
+    "msa_name": "Jackson, MS",
+    "msa_population": 609582,
+    "primary_city": "Jackson",
+    "primary_state": "MS",
+    "zips": [
+      "39212",
+      "39209",
+      "39211"
+    ],
+    "zip_details": [
+      {
+        "zip": "39212",
+        "city": "Jackson",
+        "state": "MS",
+        "pop": 32680
+      },
+      {
+        "zip": "39209",
+        "city": "Jackson",
+        "state": "MS",
+        "pop": 26835
+      },
+      {
+        "zip": "39211",
+        "city": "Jackson",
+        "state": "MS",
+        "pop": 23872
+      }
+    ]
+  },
+  "27260": {
+    "msa_id": "27260",
+    "msa_name": "Jacksonville, FL",
+    "msa_population": 1713240,
+    "primary_city": "Jacksonville",
+    "primary_state": "FL",
+    "zips": [
+      "32218",
+      "32210",
+      "32244"
+    ],
+    "zip_details": [
+      {
+        "zip": "32218",
+        "city": "Jacksonville",
+        "state": "FL",
+        "pop": 65878
+      },
+      {
+        "zip": "32210",
+        "city": "Jacksonville",
+        "state": "FL",
+        "pop": 62457
+      },
+      {
+        "zip": "32244",
+        "city": "Jacksonville",
+        "state": "FL",
+        "pop": 61190
+      }
+    ]
+  },
+  "28020": {
+    "msa_id": "28020",
+    "msa_name": "Kalamazoo-Portage, MI",
+    "msa_population": 262215,
+    "primary_city": "Kalamazoo",
+    "primary_state": "MI",
+    "zips": [
+      "49009",
+      "49006",
+      "49001"
+    ],
+    "zip_details": [
+      {
+        "zip": "49009",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "pop": 46734
+      },
+      {
+        "zip": "49006",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "pop": 27793
+      },
+      {
+        "zip": "49001",
+        "city": "Kalamazoo",
+        "state": "MI",
+        "pop": 21808
+      }
+    ]
+  },
+  "28140": {
+    "msa_id": "28140",
+    "msa_name": "Kansas City, MO-KS",
+    "msa_population": 2219865,
+    "primary_city": "Kansas City",
+    "primary_state": "MO",
+    "zips": [
+      "64119",
+      "64114",
+      "64155"
+    ],
+    "zip_details": [
+      {
+        "zip": "64119",
+        "city": "Kansas city",
+        "state": "MO",
+        "pop": 29450
+      },
+      {
+        "zip": "64114",
+        "city": "Kansas city",
+        "state": "MO",
+        "pop": 25314
+      },
+      {
+        "zip": "64155",
+        "city": "Kansas city",
+        "state": "MO",
+        "pop": 24099
+      }
+    ]
+  },
+  "28420": {
+    "msa_id": "28420",
+    "msa_name": "Kennewick-Richland, WA",
+    "msa_population": 314253,
+    "primary_city": "Kennewick",
+    "primary_state": "WA",
+    "zips": [
+      "99336",
+      "99337"
+    ],
+    "zip_details": [
+      {
+        "zip": "99336",
+        "city": "Kennewick",
+        "state": "WA",
+        "pop": 52259
+      },
+      {
+        "zip": "99337",
+        "city": "Kennewick",
+        "state": "WA",
+        "pop": 32080
+      }
+    ]
+  },
+  "28660": {
+    "msa_id": "28660",
+    "msa_name": "Killeen-Temple, TX",
+    "msa_population": 501334,
+    "primary_city": "Killeen",
+    "primary_state": "TX",
+    "zips": [
+      "76541",
+      "77494",
+      "77449"
+    ],
+    "zip_details": [
+      {
+        "zip": "76541",
+        "city": "Killeen",
+        "state": "TX",
+        "pop": 18396
+      },
+      {
+        "zip": "77494",
+        "city": "Park row",
+        "state": "TX",
+        "pop": 126310
+      },
+      {
+        "zip": "77449",
+        "city": "Park row",
+        "state": "TX",
+        "pop": 123157
+      }
+    ]
+  },
+  "28700": {
+    "msa_id": "28700",
+    "msa_name": "Kingsport-Bristol, TN-VA",
+    "msa_population": 312490,
+    "primary_city": "Kingsport",
+    "primary_state": "TN",
+    "zips": [
+      "37664",
+      "37013",
+      "37042"
+    ],
+    "zip_details": [
+      {
+        "zip": "37664",
+        "city": "Kingsport",
+        "state": "TN",
+        "pop": 28040
+      },
+      {
+        "zip": "37013",
+        "city": "Antioch",
+        "state": "TN",
+        "pop": 99109
+      },
+      {
+        "zip": "37042",
+        "city": "Clarksville",
+        "state": "TN",
+        "pop": 80661
+      }
+    ]
+  },
+  "28880": {
+    "msa_id": "28880",
+    "msa_name": "Kiryas Joel-Poughkeepsie-Newburgh, NY",
+    "msa_population": 704620,
+    "primary_city": "Kiryas Joel",
+    "primary_state": "NY",
+    "zips": [
+      "11368",
+      "11385",
+      "11211"
+    ],
+    "zip_details": [
+      {
+        "zip": "11368",
+        "city": "Corona",
+        "state": "NY",
+        "pop": 108661
+      },
+      {
+        "zip": "11385",
+        "city": "Ridgewood",
+        "state": "NY",
+        "pop": 105025
+      },
+      {
+        "zip": "11211",
+        "city": "Brooklyn",
+        "state": "NY",
+        "pop": 104561
+      }
+    ]
+  },
+  "28940": {
+    "msa_id": "28940",
+    "msa_name": "Knoxville, TN",
+    "msa_population": 947017,
+    "primary_city": "Knoxville",
+    "primary_state": "TN",
+    "zips": [
+      "37918",
+      "37923",
+      "37919"
+    ],
+    "zip_details": [
+      {
+        "zip": "37918",
+        "city": "Knoxville",
+        "state": "TN",
+        "pop": 45107
+      },
+      {
+        "zip": "37923",
+        "city": "Knoxville",
+        "state": "TN",
+        "pop": 31548
+      },
+      {
+        "zip": "37919",
+        "city": "Knoxville",
+        "state": "TN",
+        "pop": 29637
+      }
+    ]
+  },
+  "29180": {
+    "msa_id": "29180",
+    "msa_name": "Lafayette, LA",
+    "msa_population": 414288,
+    "primary_city": "Lafayette",
+    "primary_state": "LA",
+    "zips": [
+      "70506",
+      "70508",
+      "70503"
+    ],
+    "zip_details": [
+      {
+        "zip": "70506",
+        "city": "Lafayette",
+        "state": "LA",
+        "pop": 41212
+      },
+      {
+        "zip": "70508",
+        "city": "Lafayette",
+        "state": "LA",
+        "pop": 38704
+      },
+      {
+        "zip": "70503",
+        "city": "Lafayette",
+        "state": "LA",
+        "pop": 31542
+      }
+    ]
+  },
+  "29460": {
+    "msa_id": "29460",
+    "msa_name": "Lakeland-Winter Haven, FL",
+    "msa_population": 818330,
+    "primary_city": "Lakeland",
+    "primary_state": "FL",
+    "zips": [
+      "33801",
+      "33809",
+      "33803"
+    ],
+    "zip_details": [
+      {
+        "zip": "33801",
+        "city": "Lakeland",
+        "state": "FL",
+        "pop": 34406
+      },
+      {
+        "zip": "33809",
+        "city": "Lakeland",
+        "state": "FL",
+        "pop": 30646
+      },
+      {
+        "zip": "33803",
+        "city": "Lakeland",
+        "state": "FL",
+        "pop": 29875
+      }
+    ]
+  },
+  "29540": {
+    "msa_id": "29540",
+    "msa_name": "Lancaster, PA",
+    "msa_population": 558589,
+    "primary_city": "Lancaster",
+    "primary_state": "PA",
+    "zips": [
+      "17602",
+      "19120",
+      "19124"
+    ],
+    "zip_details": [
+      {
+        "zip": "17602",
+        "city": "Lancaster",
+        "state": "PA",
+        "pop": 50660
+      },
+      {
+        "zip": "19120",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 74270
+      },
+      {
+        "zip": "19124",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 71858
+      }
+    ]
+  },
+  "29620": {
+    "msa_id": "29620",
+    "msa_name": "Lansing-East Lansing, MI",
+    "msa_population": 473177,
+    "primary_city": "Lansing",
+    "primary_state": "MI",
+    "zips": [
+      "48911",
+      "48910",
+      "48917"
+    ],
+    "zip_details": [
+      {
+        "zip": "48911",
+        "city": "Lansing",
+        "state": "MI",
+        "pop": 40924
+      },
+      {
+        "zip": "48910",
+        "city": "Lansing",
+        "state": "MI",
+        "pop": 34989
+      },
+      {
+        "zip": "48917",
+        "city": "Lansing",
+        "state": "MI",
+        "pop": 32191
+      }
+    ]
+  },
+  "29700": {
+    "msa_id": "29700",
+    "msa_name": "Laredo, TX",
+    "msa_population": 269148,
+    "primary_city": "Laredo",
+    "primary_state": "TX",
+    "zips": [
+      "78041",
+      "78040"
+    ],
+    "zip_details": [
+      {
+        "zip": "78041",
+        "city": "Laredo",
+        "state": "TX",
+        "pop": 47207
+      },
+      {
+        "zip": "78040",
+        "city": "Laredo",
+        "state": "TX",
+        "pop": 39997
+      }
+    ]
+  },
+  "29820": {
+    "msa_id": "29820",
+    "msa_name": "Las Vegas-Henderson-North Las Vegas, NV",
+    "msa_population": 2336573,
+    "primary_city": "Las Vegas",
+    "primary_state": "NV",
+    "zips": [
+      "89108",
+      "89110",
+      "89115"
+    ],
+    "zip_details": [
+      {
+        "zip": "89108",
+        "city": "Las vegas",
+        "state": "NV",
+        "pop": 75201
+      },
+      {
+        "zip": "89110",
+        "city": "Las vegas",
+        "state": "NV",
+        "pop": 70865
+      },
+      {
+        "zip": "89115",
+        "city": "Las vegas",
+        "state": "NV",
+        "pop": 66378
+      }
+    ]
+  },
+  "30460": {
+    "msa_id": "30460",
+    "msa_name": "Lexington-Fayette, KY",
+    "msa_population": 520045,
+    "primary_city": "Lexington",
+    "primary_state": "KY",
+    "zips": [
+      "40509",
+      "40517",
+      "40515"
+    ],
+    "zip_details": [
+      {
+        "zip": "40509",
+        "city": "Lexington",
+        "state": "KY",
+        "pop": 42432
+      },
+      {
+        "zip": "40517",
+        "city": "Lexington",
+        "state": "KY",
+        "pop": 37358
+      },
+      {
+        "zip": "40515",
+        "city": "Lexington",
+        "state": "KY",
+        "pop": 36569
+      }
+    ]
+  },
+  "30700": {
+    "msa_id": "30700",
+    "msa_name": "Lincoln, NE",
+    "msa_population": 343620,
+    "primary_city": "Lincoln",
+    "primary_state": "NE",
+    "zips": [
+      "68516",
+      "68521",
+      "68506"
+    ],
+    "zip_details": [
+      {
+        "zip": "68516",
+        "city": "Lincoln",
+        "state": "NE",
+        "pop": 46626
+      },
+      {
+        "zip": "68521",
+        "city": "Lincoln",
+        "state": "NE",
+        "pop": 36166
+      },
+      {
+        "zip": "68506",
+        "city": "Lincoln",
+        "state": "NE",
+        "pop": 28161
+      }
+    ]
+  },
+  "30780": {
+    "msa_id": "30780",
+    "msa_name": "Little Rock-North Little Rock-Conway, AR",
+    "msa_population": 764582,
+    "primary_city": "Little Rock",
+    "primary_state": "AR",
+    "zips": [
+      "72209",
+      "72204",
+      "72223"
+    ],
+    "zip_details": [
+      {
+        "zip": "72209",
+        "city": "Little rock",
+        "state": "AR",
+        "pop": 31748
+      },
+      {
+        "zip": "72204",
+        "city": "Little rock",
+        "state": "AR",
+        "pop": 30204
+      },
+      {
+        "zip": "72223",
+        "city": "Little rock",
+        "state": "AR",
+        "pop": 24848
+      }
+    ]
+  },
+  "30980": {
+    "msa_id": "30980",
+    "msa_name": "Longview, TX",
+    "msa_population": 293498,
+    "primary_city": "Longview",
+    "primary_state": "TX",
+    "zips": [
+      "75605",
+      "75604",
+      "75602"
+    ],
+    "zip_details": [
+      {
+        "zip": "75605",
+        "city": "Longview",
+        "state": "TX",
+        "pop": 32438
+      },
+      {
+        "zip": "75604",
+        "city": "Longview",
+        "state": "TX",
+        "pop": 29922
+      },
+      {
+        "zip": "75602",
+        "city": "Longview",
+        "state": "TX",
+        "pop": 20576
+      }
+    ]
+  },
+  "31080": {
+    "msa_id": "31080",
+    "msa_name": "Los Angeles-Long Beach-Anaheim, CA",
+    "msa_population": 12799100,
+    "primary_city": "Los Angeles",
+    "primary_state": "CA",
+    "zips": [
+      "90011",
+      "90044",
+      "90003"
+    ],
+    "zip_details": [
+      {
+        "zip": "90011",
+        "city": "Los angeles",
+        "state": "CA",
+        "pop": 110750
+      },
+      {
+        "zip": "90044",
+        "city": "Los angeles",
+        "state": "CA",
+        "pop": 99980
+      },
+      {
+        "zip": "90003",
+        "city": "Los angeles",
+        "state": "CA",
+        "pop": 74117
+      }
+    ]
+  },
+  "31140": {
+    "msa_id": "31140",
+    "msa_name": "Louisville/Jefferson County, KY-IN",
+    "msa_population": 1364742,
+    "primary_city": "Louisville/Jefferson County",
+    "primary_state": "KY",
+    "zips": [
+      "40475",
+      "42101",
+      "41042"
+    ],
+    "zip_details": [
+      {
+        "zip": "40475",
+        "city": "Richmond",
+        "state": "KY",
+        "pop": 63422
+      },
+      {
+        "zip": "42101",
+        "city": "Plum springs",
+        "state": "KY",
+        "pop": 62715
+      },
+      {
+        "zip": "41042",
+        "city": "Florence",
+        "state": "KY",
+        "pop": 54730
+      }
+    ]
+  },
+  "31180": {
+    "msa_id": "31180",
+    "msa_name": "Lubbock, TX",
+    "msa_population": 360342,
+    "primary_city": "Lubbock",
+    "primary_state": "TX",
+    "zips": [
+      "79424",
+      "79423",
+      "79416"
+    ],
+    "zip_details": [
+      {
+        "zip": "79424",
+        "city": "Lubbock",
+        "state": "TX",
+        "pop": 49191
+      },
+      {
+        "zip": "79423",
+        "city": "Lubbock",
+        "state": "TX",
+        "pop": 42354
+      },
+      {
+        "zip": "79416",
+        "city": "Lubbock",
+        "state": "TX",
+        "pop": 34628
+      }
+    ]
+  },
+  "31340": {
+    "msa_id": "31340",
+    "msa_name": "Lynchburg, VA",
+    "msa_population": 265565,
+    "primary_city": "Lynchburg",
+    "primary_state": "VA",
+    "zips": [
+      "24501",
+      "24503",
+      "24504"
+    ],
+    "zip_details": [
+      {
+        "zip": "24501",
+        "city": "Lynchburg",
+        "state": "VA",
+        "pop": 27828
+      },
+      {
+        "zip": "24503",
+        "city": "Lynchburg",
+        "state": "VA",
+        "pop": 19682
+      },
+      {
+        "zip": "24504",
+        "city": "Lynchburg",
+        "state": "VA",
+        "pop": 9331
+      }
+    ]
+  },
+  "31540": {
+    "msa_id": "31540",
+    "msa_name": "Madison, WI",
+    "msa_population": 694345,
+    "primary_city": "Madison",
+    "primary_state": "WI",
+    "zips": [
+      "53711",
+      "53704",
+      "53703"
+    ],
+    "zip_details": [
+      {
+        "zip": "53711",
+        "city": "Madison",
+        "state": "WI",
+        "pop": 48455
+      },
+      {
+        "zip": "53704",
+        "city": "Madison",
+        "state": "WI",
+        "pop": 46614
+      },
+      {
+        "zip": "53703",
+        "city": "Madison",
+        "state": "WI",
+        "pop": 35834
+      }
+    ]
+  },
+  "31700": {
+    "msa_id": "31700",
+    "msa_name": "Manchester-Nashua, NH",
+    "msa_population": 427354,
+    "primary_city": "Manchester",
+    "primary_state": "NH",
+    "zips": [
+      "03103",
+      "03102",
+      "03104"
+    ],
+    "zip_details": [
+      {
+        "zip": "03103",
+        "city": "Manchester",
+        "state": "NH",
+        "pop": 36831
+      },
+      {
+        "zip": "03102",
+        "city": "Manchester",
+        "state": "NH",
+        "pop": 33951
+      },
+      {
+        "zip": "03104",
+        "city": "Manchester",
+        "state": "NH",
+        "pop": 32776
+      }
+    ]
+  },
+  "32580": {
+    "msa_id": "32580",
+    "msa_name": "McAllen-Edinburg-Mission, TX",
+    "msa_population": 898471,
+    "primary_city": "McAllen",
+    "primary_state": "TX",
+    "zips": [
+      "78504",
+      "78501",
+      "78503"
+    ],
+    "zip_details": [
+      {
+        "zip": "78504",
+        "city": "Mcallen",
+        "state": "TX",
+        "pop": 61182
+      },
+      {
+        "zip": "78501",
+        "city": "Mcallen",
+        "state": "TX",
+        "pop": 60299
+      },
+      {
+        "zip": "78503",
+        "city": "Mcallen",
+        "state": "TX",
+        "pop": 20703
+      }
+    ]
+  },
+  "32820": {
+    "msa_id": "32820",
+    "msa_name": "Memphis, TN-MS-AR",
+    "msa_population": 1335549,
+    "primary_city": "Memphis",
+    "primary_state": "TN",
+    "zips": [
+      "38128",
+      "38109",
+      "38127"
+    ],
+    "zip_details": [
+      {
+        "zip": "38128",
+        "city": "Memphis",
+        "state": "TN",
+        "pop": 46158
+      },
+      {
+        "zip": "38109",
+        "city": "Memphis",
+        "state": "TN",
+        "pop": 44846
+      },
+      {
+        "zip": "38127",
+        "city": "Memphis",
+        "state": "TN",
+        "pop": 43240
+      }
+    ]
+  },
+  "32900": {
+    "msa_id": "32900",
+    "msa_name": "Merced, CA",
+    "msa_population": 291920,
+    "primary_city": "Merced",
+    "primary_state": "CA",
+    "zips": [
+      "95348",
+      "90011",
+      "90650"
+    ],
+    "zip_details": [
+      {
+        "zip": "95348",
+        "city": "Merced",
+        "state": "CA",
+        "pop": 34302
+      },
+      {
+        "zip": "90011",
+        "city": "Los angeles",
+        "state": "CA",
+        "pop": 110750
+      },
+      {
+        "zip": "90650",
+        "city": "Norwalk",
+        "state": "CA",
+        "pop": 104524
+      }
+    ]
+  },
+  "33100": {
+    "msa_id": "33100",
+    "msa_name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+    "msa_population": 6183199,
+    "primary_city": "Miami",
+    "primary_state": "FL",
+    "zips": [
+      "33186",
+      "33125",
+      "33142"
+    ],
+    "zip_details": [
+      {
+        "zip": "33186",
+        "city": "Miami",
+        "state": "FL",
+        "pop": 69459
+      },
+      {
+        "zip": "33125",
+        "city": "Miami",
+        "state": "FL",
+        "pop": 60347
+      },
+      {
+        "zip": "33142",
+        "city": "Miami",
+        "state": "FL",
+        "pop": 59773
+      }
+    ]
+  },
+  "33340": {
+    "msa_id": "33340",
+    "msa_name": "Milwaukee-Waukesha, WI",
+    "msa_population": 1560424,
+    "primary_city": "Milwaukee",
+    "primary_state": "WI",
+    "zips": [
+      "53209",
+      "53218",
+      "53221"
+    ],
+    "zip_details": [
+      {
+        "zip": "53209",
+        "city": "Milwaukee",
+        "state": "WI",
+        "pop": 48321
+      },
+      {
+        "zip": "53218",
+        "city": "Milwaukee",
+        "state": "WI",
+        "pop": 42728
+      },
+      {
+        "zip": "53221",
+        "city": "Milwaukee",
+        "state": "WI",
+        "pop": 39602
+      }
+    ]
+  },
+  "33460": {
+    "msa_id": "33460",
+    "msa_name": "Minneapolis-St. Paul-Bloomington, MN-WI",
+    "msa_population": 3712020,
+    "primary_city": "Minneapolis",
+    "primary_state": "MN",
+    "zips": [
+      "55407",
+      "55414",
+      "55406"
+    ],
+    "zip_details": [
+      {
+        "zip": "55407",
+        "city": "Minneapolis",
+        "state": "MN",
+        "pop": 40792
+      },
+      {
+        "zip": "55414",
+        "city": "Minneapolis",
+        "state": "MN",
+        "pop": 36017
+      },
+      {
+        "zip": "55406",
+        "city": "Minneapolis",
+        "state": "MN",
+        "pop": 33709
+      }
+    ]
+  },
+  "33660": {
+    "msa_id": "33660",
+    "msa_name": "Mobile, AL",
+    "msa_population": 411640,
+    "primary_city": "Mobile",
+    "primary_state": "AL",
+    "zips": [
+      "36695",
+      "36608",
+      "36605"
+    ],
+    "zip_details": [
+      {
+        "zip": "36695",
+        "city": "Mobile",
+        "state": "AL",
+        "pop": 52524
+      },
+      {
+        "zip": "36608",
+        "city": "Mobile",
+        "state": "AL",
+        "pop": 36317
+      },
+      {
+        "zip": "36605",
+        "city": "Mobile",
+        "state": "AL",
+        "pop": 27035
+      }
+    ]
+  },
+  "33700": {
+    "msa_id": "33700",
+    "msa_name": "Modesto, CA",
+    "msa_population": 551430,
+    "primary_city": "Modesto",
+    "primary_state": "CA",
+    "zips": [
+      "95355",
+      "95350",
+      "95351"
+    ],
+    "zip_details": [
+      {
+        "zip": "95355",
+        "city": "Modesto",
+        "state": "CA",
+        "pop": 59272
+      },
+      {
+        "zip": "95350",
+        "city": "Modesto",
+        "state": "CA",
+        "pop": 54044
+      },
+      {
+        "zip": "95351",
+        "city": "Modesto",
+        "state": "CA",
+        "pop": 48844
+      }
+    ]
+  },
+  "33860": {
+    "msa_id": "33860",
+    "msa_name": "Montgomery, AL",
+    "msa_population": 385463,
+    "primary_city": "Montgomery",
+    "primary_state": "AL",
+    "zips": [
+      "36117",
+      "36116",
+      "36109"
+    ],
+    "zip_details": [
+      {
+        "zip": "36117",
+        "city": "Montgomery",
+        "state": "AL",
+        "pop": 53594
+      },
+      {
+        "zip": "36116",
+        "city": "Montgomery",
+        "state": "AL",
+        "pop": 45027
+      },
+      {
+        "zip": "36109",
+        "city": "Montgomery",
+        "state": "AL",
+        "pop": 24802
+      }
+    ]
+  },
+  "34820": {
+    "msa_id": "34820",
+    "msa_name": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+    "msa_population": 397478,
+    "primary_city": "Myrtle Beach",
+    "primary_state": "SC",
+    "zips": [
+      "29577",
+      "29572"
+    ],
+    "zip_details": [
+      {
+        "zip": "29577",
+        "city": "Myrtle beach",
+        "state": "SC",
+        "pop": 32858
+      },
+      {
+        "zip": "29572",
+        "city": "Myrtle beach",
+        "state": "SC",
+        "pop": 10163
+      }
+    ]
+  },
+  "34940": {
+    "msa_id": "34940",
+    "msa_name": "Naples-Marco Island, FL",
+    "msa_population": 404310,
+    "primary_city": "Naples",
+    "primary_state": "FL",
+    "zips": [
+      "33311",
+      "33024",
+      "33023"
+    ],
+    "zip_details": [
+      {
+        "zip": "33311",
+        "city": "Fort lauderdale",
+        "state": "FL",
+        "pop": 75705
+      },
+      {
+        "zip": "33024",
+        "city": "Pembroke pines",
+        "state": "FL",
+        "pop": 75701
+      },
+      {
+        "zip": "33023",
+        "city": "Miramar",
+        "state": "FL",
+        "pop": 74913
+      }
+    ]
+  },
+  "34980": {
+    "msa_id": "34980",
+    "msa_name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+    "msa_population": 2104235,
+    "primary_city": "Nashville",
+    "primary_state": "TN",
+    "zips": [
+      "37211",
+      "37207",
+      "37209"
+    ],
+    "zip_details": [
+      {
+        "zip": "37211",
+        "city": "Nashville",
+        "state": "TN",
+        "pop": 75199
+      },
+      {
+        "zip": "37207",
+        "city": "Nashville",
+        "state": "TN",
+        "pop": 39151
+      },
+      {
+        "zip": "37209",
+        "city": "Nashville",
+        "state": "TN",
+        "pop": 37852
+      }
+    ]
+  },
+  "35300": {
+    "msa_id": "35300",
+    "msa_name": "New Haven, CT",
+    "msa_population": 568158,
+    "primary_city": "New Haven",
+    "primary_state": "CT",
+    "zips": [
+      "06511",
+      "06515",
+      "06519"
+    ],
+    "zip_details": [
+      {
+        "zip": "06511",
+        "city": "New haven",
+        "state": "CT",
+        "pop": 53859
+      },
+      {
+        "zip": "06515",
+        "city": "New haven",
+        "state": "CT",
+        "pop": 18382
+      },
+      {
+        "zip": "06519",
+        "city": "New haven",
+        "state": "CT",
+        "pop": 15675
+      }
+    ]
+  },
+  "35380": {
+    "msa_id": "35380",
+    "msa_name": "New Orleans-Metairie, LA",
+    "msa_population": 962165,
+    "primary_city": "New Orleans",
+    "primary_state": "LA",
+    "zips": [
+      "70122",
+      "70119",
+      "70118"
+    ],
+    "zip_details": [
+      {
+        "zip": "70122",
+        "city": "New orleans",
+        "state": "LA",
+        "pop": 38977
+      },
+      {
+        "zip": "70119",
+        "city": "New orleans",
+        "state": "LA",
+        "pop": 37779
+      },
+      {
+        "zip": "70118",
+        "city": "New orleans",
+        "state": "LA",
+        "pop": 36963
+      }
+    ]
+  },
+  "35620": {
+    "msa_id": "35620",
+    "msa_name": "New York-Newark-Jersey City, NY-NJ",
+    "msa_population": 19498249,
+    "primary_city": "New York",
+    "primary_state": "NY",
+    "zips": [
+      "10025",
+      "10029",
+      "10002"
+    ],
+    "zip_details": [
+      {
+        "zip": "10025",
+        "city": "New york",
+        "state": "NY",
+        "pop": 92162
+      },
+      {
+        "zip": "10029",
+        "city": "New york",
+        "state": "NY",
+        "pop": 74617
+      },
+      {
+        "zip": "10002",
+        "city": "New york",
+        "state": "NY",
+        "pop": 74363
+      }
+    ]
+  },
+  "35840": {
+    "msa_id": "35840",
+    "msa_name": "North Port-Bradenton-Sarasota, FL",
+    "msa_population": 910108,
+    "primary_city": "North Port",
+    "primary_state": "FL",
+    "zips": [
+      "34287",
+      "33311",
+      "33024"
+    ],
+    "zip_details": [
+      {
+        "zip": "34287",
+        "city": "North port",
+        "state": "FL",
+        "pop": 27620
+      },
+      {
+        "zip": "33311",
+        "city": "Fort lauderdale",
+        "state": "FL",
+        "pop": 75705
+      },
+      {
+        "zip": "33024",
+        "city": "Pembroke pines",
+        "state": "FL",
+        "pop": 75701
+      }
+    ]
+  },
+  "35980": {
+    "msa_id": "35980",
+    "msa_name": "Norwich-New London-Willimantic, CT",
+    "msa_population": 279634,
+    "primary_city": "Norwich",
+    "primary_state": "CT",
+    "zips": [
+      "06360",
+      "06902",
+      "06010"
+    ],
+    "zip_details": [
+      {
+        "zip": "06360",
+        "city": "Norwich",
+        "state": "CT",
+        "pop": 36549
+      },
+      {
+        "zip": "06902",
+        "city": "Stamford",
+        "state": "CT",
+        "pop": 70199
+      },
+      {
+        "zip": "06010",
+        "city": "Bristol",
+        "state": "CT",
+        "pop": 60039
+      }
+    ]
+  },
+  "36100": {
+    "msa_id": "36100",
+    "msa_name": "Ocala, FL",
+    "msa_population": 409959,
+    "primary_city": "Ocala",
+    "primary_state": "FL",
+    "zips": [
+      "34472",
+      "34471",
+      "34482"
+    ],
+    "zip_details": [
+      {
+        "zip": "34472",
+        "city": "Ocala",
+        "state": "FL",
+        "pop": 31271
+      },
+      {
+        "zip": "34471",
+        "city": "Ocala",
+        "state": "FL",
+        "pop": 24635
+      },
+      {
+        "zip": "34482",
+        "city": "Ocala",
+        "state": "FL",
+        "pop": 23576
+      }
+    ]
+  },
+  "36260": {
+    "msa_id": "36260",
+    "msa_name": "Ogden, UT",
+    "msa_population": 658013,
+    "primary_city": "Ogden",
+    "primary_state": "UT",
+    "zips": [
+      "84404",
+      "84401",
+      "84403"
+    ],
+    "zip_details": [
+      {
+        "zip": "84404",
+        "city": "Ogden",
+        "state": "UT",
+        "pop": 64249
+      },
+      {
+        "zip": "84401",
+        "city": "Ogden",
+        "state": "UT",
+        "pop": 41324
+      },
+      {
+        "zip": "84403",
+        "city": "Ogden",
+        "state": "UT",
+        "pop": 36762
+      }
+    ]
+  },
+  "36420": {
+    "msa_id": "36420",
+    "msa_name": "Oklahoma City, OK",
+    "msa_population": 1477926,
+    "primary_city": "Oklahoma City",
+    "primary_state": "OK",
+    "zips": [
+      "73120",
+      "73112",
+      "73159"
+    ],
+    "zip_details": [
+      {
+        "zip": "73120",
+        "city": "Oklahoma city",
+        "state": "OK",
+        "pop": 35132
+      },
+      {
+        "zip": "73112",
+        "city": "Oklahoma city",
+        "state": "OK",
+        "pop": 33901
+      },
+      {
+        "zip": "73159",
+        "city": "Oklahoma city",
+        "state": "OK",
+        "pop": 33345
+      }
+    ]
+  },
+  "36500": {
+    "msa_id": "36500",
+    "msa_name": "Olympia-Lacey-Tumwater, WA",
+    "msa_population": 299003,
+    "primary_city": "Olympia",
+    "primary_state": "WA",
+    "zips": [
+      "98501",
+      "98502",
+      "98512"
+    ],
+    "zip_details": [
+      {
+        "zip": "98501",
+        "city": "Olympia",
+        "state": "WA",
+        "pop": 43584
+      },
+      {
+        "zip": "98502",
+        "city": "Olympia",
+        "state": "WA",
+        "pop": 35307
+      },
+      {
+        "zip": "98512",
+        "city": "Olympia",
+        "state": "WA",
+        "pop": 30833
+      }
+    ]
+  },
+  "36540": {
+    "msa_id": "36540",
+    "msa_name": "Omaha, NE-IA",
+    "msa_population": 984548,
+    "primary_city": "Omaha",
+    "primary_state": "NE",
+    "zips": [
+      "68104",
+      "68123",
+      "68116"
+    ],
+    "zip_details": [
+      {
+        "zip": "68104",
+        "city": "Omaha",
+        "state": "NE",
+        "pop": 37582
+      },
+      {
+        "zip": "68123",
+        "city": "Omaha",
+        "state": "NE",
+        "pop": 32542
+      },
+      {
+        "zip": "68116",
+        "city": "Omaha",
+        "state": "NE",
+        "pop": 32018
+      }
+    ]
+  },
+  "36740": {
+    "msa_id": "36740",
+    "msa_name": "Orlando-Kissimmee-Sanford, FL",
+    "msa_population": 2817933,
+    "primary_city": "Orlando",
+    "primary_state": "FL",
+    "zips": [
+      "32828",
+      "32818",
+      "32825"
+    ],
+    "zip_details": [
+      {
+        "zip": "32828",
+        "city": "Orlando",
+        "state": "FL",
+        "pop": 69913
+      },
+      {
+        "zip": "32818",
+        "city": "Orlando",
+        "state": "FL",
+        "pop": 61027
+      },
+      {
+        "zip": "32825",
+        "city": "Orlando",
+        "state": "FL",
+        "pop": 60254
+      }
+    ]
+  },
+  "37100": {
+    "msa_id": "37100",
+    "msa_name": "Oxnard-Thousand Oaks-Ventura, CA",
+    "msa_population": 829590,
+    "primary_city": "Oxnard",
+    "primary_state": "CA",
+    "zips": [
+      "93033",
+      "93030",
+      "93035"
+    ],
+    "zip_details": [
+      {
+        "zip": "93033",
+        "city": "Oxnard",
+        "state": "CA",
+        "pop": 84902
+      },
+      {
+        "zip": "93030",
+        "city": "Oxnard",
+        "state": "CA",
+        "pop": 59844
+      },
+      {
+        "zip": "93035",
+        "city": "Oxnard",
+        "state": "CA",
+        "pop": 28426
+      }
+    ]
+  },
+  "37340": {
+    "msa_id": "37340",
+    "msa_name": "Palm Bay-Melbourne-Titusville, FL",
+    "msa_population": 643979,
+    "primary_city": "Palm Bay",
+    "primary_state": "FL",
+    "zips": [
+      "32907",
+      "32909",
+      "32905"
+    ],
+    "zip_details": [
+      {
+        "zip": "32907",
+        "city": "Palm bay",
+        "state": "FL",
+        "pop": 46911
+      },
+      {
+        "zip": "32909",
+        "city": "Palm bay",
+        "state": "FL",
+        "pop": 31734
+      },
+      {
+        "zip": "32905",
+        "city": "Palm bay",
+        "state": "FL",
+        "pop": 23410
+      }
+    ]
+  },
+  "37860": {
+    "msa_id": "37860",
+    "msa_name": "Pensacola-Ferry Pass-Brent, FL",
+    "msa_population": 530090,
+    "primary_city": "Pensacola",
+    "primary_state": "FL",
+    "zips": [
+      "32514",
+      "32506",
+      "32526"
+    ],
+    "zip_details": [
+      {
+        "zip": "32514",
+        "city": "Pensacola",
+        "state": "FL",
+        "pop": 43323
+      },
+      {
+        "zip": "32506",
+        "city": "Pensacola",
+        "state": "FL",
+        "pop": 37604
+      },
+      {
+        "zip": "32526",
+        "city": "Pensacola",
+        "state": "FL",
+        "pop": 37484
+      }
+    ]
+  },
+  "37900": {
+    "msa_id": "37900",
+    "msa_name": "Peoria, IL",
+    "msa_population": 361989,
+    "primary_city": "Peoria",
+    "primary_state": "IL",
+    "zips": [
+      "61604",
+      "61615",
+      "61605"
+    ],
+    "zip_details": [
+      {
+        "zip": "61604",
+        "city": "Peoria",
+        "state": "IL",
+        "pop": 29362
+      },
+      {
+        "zip": "61615",
+        "city": "Peoria",
+        "state": "IL",
+        "pop": 21878
+      },
+      {
+        "zip": "61605",
+        "city": "Peoria",
+        "state": "IL",
+        "pop": 14556
+      }
+    ]
+  },
+  "37980": {
+    "msa_id": "37980",
+    "msa_name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+    "msa_population": 6246160,
+    "primary_city": "Philadelphia",
+    "primary_state": "PA",
+    "zips": [
+      "19120",
+      "19124",
+      "19111"
+    ],
+    "zip_details": [
+      {
+        "zip": "19120",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 74270
+      },
+      {
+        "zip": "19124",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 71858
+      },
+      {
+        "zip": "19111",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 67159
+      }
+    ]
+  },
+  "38060": {
+    "msa_id": "38060",
+    "msa_name": "Phoenix-Mesa-Chandler, AZ",
+    "msa_population": 5070110,
+    "primary_city": "Phoenix",
+    "primary_state": "AZ",
+    "zips": [
+      "85032",
+      "85041",
+      "85033"
+    ],
+    "zip_details": [
+      {
+        "zip": "85032",
+        "city": "Phoenix",
+        "state": "AZ",
+        "pop": 73212
+      },
+      {
+        "zip": "85041",
+        "city": "Phoenix",
+        "state": "AZ",
+        "pop": 64657
+      },
+      {
+        "zip": "85033",
+        "city": "Phoenix",
+        "state": "AZ",
+        "pop": 64388
+      }
+    ]
+  },
+  "38300": {
+    "msa_id": "38300",
+    "msa_name": "Pittsburgh, PA",
+    "msa_population": 2422725,
+    "primary_city": "Pittsburgh",
+    "primary_state": "PA",
+    "zips": [
+      "19120",
+      "19124",
+      "19111"
+    ],
+    "zip_details": [
+      {
+        "zip": "19120",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 74270
+      },
+      {
+        "zip": "19124",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 71858
+      },
+      {
+        "zip": "19111",
+        "city": "Philadelphia",
+        "state": "PA",
+        "pop": 67159
+      }
+    ]
+  },
+  "38660": {
+    "msa_id": "38660",
+    "msa_name": "Ponce, PR",
+    "msa_population": 266237,
+    "primary_city": "Ponce",
+    "primary_state": "PR",
+    "zips": [],
+    "zip_details": []
+  },
+  "38860": {
+    "msa_id": "38860",
+    "msa_name": "Portland-South Portland, ME",
+    "msa_population": 566329,
+    "primary_city": "Portland",
+    "primary_state": "ME",
+    "zips": [
+      "04103",
+      "04101",
+      "04102"
+    ],
+    "zip_details": [
+      {
+        "zip": "04103",
+        "city": "Portland",
+        "state": "ME",
+        "pop": 30628
+      },
+      {
+        "zip": "04101",
+        "city": "Portland",
+        "state": "ME",
+        "pop": 18179
+      },
+      {
+        "zip": "04102",
+        "city": "Portland",
+        "state": "ME",
+        "pop": 16968
+      }
+    ]
+  },
+  "38900": {
+    "msa_id": "38900",
+    "msa_name": "Portland-Vancouver-Hillsboro, OR-WA",
+    "msa_population": 2509925,
+    "primary_city": "Portland",
+    "primary_state": "OR",
+    "zips": [
+      "97229",
+      "97206",
+      "97202"
+    ],
+    "zip_details": [
+      {
+        "zip": "97229",
+        "city": "Portland",
+        "state": "OR",
+        "pop": 71529
+      },
+      {
+        "zip": "97206",
+        "city": "Portland",
+        "state": "OR",
+        "pop": 54248
+      },
+      {
+        "zip": "97202",
+        "city": "Portland",
+        "state": "OR",
+        "pop": 43744
+      }
+    ]
+  },
+  "38940": {
+    "msa_id": "38940",
+    "msa_name": "Port St. Lucie, FL",
+    "msa_population": 536901,
+    "primary_city": "Port St. Lucie",
+    "primary_state": "FL",
+    "zips": [
+      "33311",
+      "33024",
+      "33023"
+    ],
+    "zip_details": [
+      {
+        "zip": "33311",
+        "city": "Fort lauderdale",
+        "state": "FL",
+        "pop": 75705
+      },
+      {
+        "zip": "33024",
+        "city": "Pembroke pines",
+        "state": "FL",
+        "pop": 75701
+      },
+      {
+        "zip": "33023",
+        "city": "Miramar",
+        "state": "FL",
+        "pop": 74913
+      }
+    ]
+  },
+  "39150": {
+    "msa_id": "39150",
+    "msa_name": "Prescott Valley-Prescott, AZ",
+    "msa_population": 249081,
+    "primary_city": "Prescott Valley",
+    "primary_state": "AZ",
+    "zips": [
+      "86314",
+      "85364",
+      "85032"
+    ],
+    "zip_details": [
+      {
+        "zip": "86314",
+        "city": "Prescott valley",
+        "state": "AZ",
+        "pop": 39335
+      },
+      {
+        "zip": "85364",
+        "city": "Yuma",
+        "state": "AZ",
+        "pop": 73674
+      },
+      {
+        "zip": "85032",
+        "city": "Phoenix",
+        "state": "AZ",
+        "pop": 73212
+      }
+    ]
+  },
+  "39300": {
+    "msa_id": "39300",
+    "msa_name": "Providence-Warwick, RI-MA",
+    "msa_population": 1677803,
+    "primary_city": "Providence",
+    "primary_state": "RI",
+    "zips": [
+      "02908",
+      "02906",
+      "02903"
+    ],
+    "zip_details": [
+      {
+        "zip": "02908",
+        "city": "Providence",
+        "state": "RI",
+        "pop": 37792
+      },
+      {
+        "zip": "02906",
+        "city": "Providence",
+        "state": "RI",
+        "pop": 28254
+      },
+      {
+        "zip": "02903",
+        "city": "Providence",
+        "state": "RI",
+        "pop": 11443
+      }
+    ]
+  },
+  "39340": {
+    "msa_id": "39340",
+    "msa_name": "Provo-Orem-Lehi, UT",
+    "msa_population": 733218,
+    "primary_city": "Provo",
+    "primary_state": "UT",
+    "zips": [
+      "84604",
+      "84606",
+      "84601"
+    ],
+    "zip_details": [
+      {
+        "zip": "84604",
+        "city": "Provo",
+        "state": "UT",
+        "pop": 46099
+      },
+      {
+        "zip": "84606",
+        "city": "Provo",
+        "state": "UT",
+        "pop": 37351
+      },
+      {
+        "zip": "84601",
+        "city": "Provo",
+        "state": "UT",
+        "pop": 33771
+      }
+    ]
+  },
+  "39580": {
+    "msa_id": "39580",
+    "msa_name": "Raleigh-Cary, NC",
+    "msa_population": 1509231,
+    "primary_city": "Raleigh",
+    "primary_state": "NC",
+    "zips": [
+      "27610",
+      "27603",
+      "27616"
+    ],
+    "zip_details": [
+      {
+        "zip": "27610",
+        "city": "Raleigh",
+        "state": "NC",
+        "pop": 80973
+      },
+      {
+        "zip": "27603",
+        "city": "Raleigh",
+        "state": "NC",
+        "pop": 56826
+      },
+      {
+        "zip": "27616",
+        "city": "Raleigh",
+        "state": "NC",
+        "pop": 55997
+      }
+    ]
+  },
+  "39740": {
+    "msa_id": "39740",
+    "msa_name": "Reading, PA",
+    "msa_population": 432821,
+    "primary_city": "Reading",
+    "primary_state": "PA",
+    "zips": [
+      "19601",
+      "19604",
+      "19605"
+    ],
+    "zip_details": [
+      {
+        "zip": "19601",
+        "city": "Reading",
+        "state": "PA",
+        "pop": 33382
+      },
+      {
+        "zip": "19604",
+        "city": "Reading",
+        "state": "PA",
+        "pop": 29069
+      },
+      {
+        "zip": "19605",
+        "city": "Reading",
+        "state": "PA",
+        "pop": 18863
+      }
+    ]
+  },
+  "39900": {
+    "msa_id": "39900",
+    "msa_name": "Reno, NV",
+    "msa_population": 564527,
+    "primary_city": "Reno",
+    "primary_state": "NV",
+    "zips": [
+      "89502",
+      "89506",
+      "89509"
+    ],
+    "zip_details": [
+      {
+        "zip": "89502",
+        "city": "Reno",
+        "state": "NV",
+        "pop": 44881
+      },
+      {
+        "zip": "89506",
+        "city": "Reno",
+        "state": "NV",
+        "pop": 42742
+      },
+      {
+        "zip": "89509",
+        "city": "Reno",
+        "state": "NV",
+        "pop": 35558
+      }
+    ]
+  },
+  "40060": {
+    "msa_id": "40060",
+    "msa_name": "Richmond, VA",
+    "msa_population": 1350123,
+    "primary_city": "Richmond",
+    "primary_state": "VA",
+    "zips": [
+      "23223",
+      "23225",
+      "23224"
+    ],
+    "zip_details": [
+      {
+        "zip": "23223",
+        "city": "Richmond",
+        "state": "VA",
+        "pop": 53917
+      },
+      {
+        "zip": "23225",
+        "city": "Richmond",
+        "state": "VA",
+        "pop": 43454
+      },
+      {
+        "zip": "23224",
+        "city": "Richmond",
+        "state": "VA",
+        "pop": 40136
+      }
+    ]
+  },
+  "40140": {
+    "msa_id": "40140",
+    "msa_name": "Riverside-San Bernardino-Ontario, CA",
+    "msa_population": 4688053,
+    "primary_city": "Riverside",
+    "primary_state": "CA",
+    "zips": [
+      "92503",
+      "92504",
+      "92507"
+    ],
+    "zip_details": [
+      {
+        "zip": "92503",
+        "city": "Riverside",
+        "state": "CA",
+        "pop": 93032
+      },
+      {
+        "zip": "92504",
+        "city": "Riverside",
+        "state": "CA",
+        "pop": 62423
+      },
+      {
+        "zip": "92507",
+        "city": "Riverside",
+        "state": "CA",
+        "pop": 59612
+      }
+    ]
+  },
+  "40220": {
+    "msa_id": "40220",
+    "msa_name": "Roanoke, VA",
+    "msa_population": 313786,
+    "primary_city": "Roanoke",
+    "primary_state": "VA",
+    "zips": [
+      "24012",
+      "24017",
+      "24014"
+    ],
+    "zip_details": [
+      {
+        "zip": "24012",
+        "city": "Roanoke",
+        "state": "VA",
+        "pop": 30055
+      },
+      {
+        "zip": "24017",
+        "city": "Roanoke",
+        "state": "VA",
+        "pop": 24273
+      },
+      {
+        "zip": "24014",
+        "city": "Roanoke",
+        "state": "VA",
+        "pop": 16010
+      }
+    ]
+  },
+  "40380": {
+    "msa_id": "40380",
+    "msa_name": "Rochester, NY",
+    "msa_population": 1052087,
+    "primary_city": "Rochester",
+    "primary_state": "NY",
+    "zips": [
+      "14609",
+      "14612",
+      "14621"
+    ],
+    "zip_details": [
+      {
+        "zip": "14609",
+        "city": "Rochester",
+        "state": "NY",
+        "pop": 40081
+      },
+      {
+        "zip": "14612",
+        "city": "Rochester",
+        "state": "NY",
+        "pop": 34316
+      },
+      {
+        "zip": "14621",
+        "city": "Rochester",
+        "state": "NY",
+        "pop": 33757
+      }
+    ]
+  },
+  "40420": {
+    "msa_id": "40420",
+    "msa_name": "Rockford, IL",
+    "msa_population": 334124,
+    "primary_city": "Rockford",
+    "primary_state": "IL",
+    "zips": [
+      "61107",
+      "61108",
+      "61109"
+    ],
+    "zip_details": [
+      {
+        "zip": "61107",
+        "city": "Rockford",
+        "state": "IL",
+        "pop": 30412
+      },
+      {
+        "zip": "61108",
+        "city": "Rockford",
+        "state": "IL",
+        "pop": 29084
+      },
+      {
+        "zip": "61109",
+        "city": "Rockford",
+        "state": "IL",
+        "pop": 26462
+      }
+    ]
+  },
+  "40900": {
+    "msa_id": "40900",
+    "msa_name": "Sacramento-Roseville-Folsom, CA",
+    "msa_population": 2420608,
+    "primary_city": "Sacramento",
+    "primary_state": "CA",
+    "zips": [
+      "95823",
+      "95828",
+      "95843"
+    ],
+    "zip_details": [
+      {
+        "zip": "95823",
+        "city": "Sacramento",
+        "state": "CA",
+        "pop": 80842
+      },
+      {
+        "zip": "95828",
+        "city": "Sacramento",
+        "state": "CA",
+        "pop": 59139
+      },
+      {
+        "zip": "95843",
+        "city": "Sacramento",
+        "state": "CA",
+        "pop": 47928
+      }
+    ]
+  },
+  "41180": {
+    "msa_id": "41180",
+    "msa_name": "St. Louis, MO-IL",
+    "msa_population": 2795504,
+    "primary_city": "St. Louis",
+    "primary_state": "MO",
+    "zips": [
+      "63376",
+      "65807",
+      "65203"
+    ],
+    "zip_details": [
+      {
+        "zip": "63376",
+        "city": "Saint peters",
+        "state": "MO",
+        "pop": 75031
+      },
+      {
+        "zip": "65807",
+        "city": "Springfield",
+        "state": "MO",
+        "pop": 58366
+      },
+      {
+        "zip": "65203",
+        "city": "Columbia",
+        "state": "MO",
+        "pop": 58271
+      }
+    ]
+  },
+  "41420": {
+    "msa_id": "41420",
+    "msa_name": "Salem, OR",
+    "msa_population": 436546,
+    "primary_city": "Salem",
+    "primary_state": "OR",
+    "zips": [
+      "97301",
+      "97302",
+      "97306"
+    ],
+    "zip_details": [
+      {
+        "zip": "97301",
+        "city": "Salem",
+        "state": "OR",
+        "pop": 57194
+      },
+      {
+        "zip": "97302",
+        "city": "Salem",
+        "state": "OR",
+        "pop": 40113
+      },
+      {
+        "zip": "97306",
+        "city": "Salem",
+        "state": "OR",
+        "pop": 32741
+      }
+    ]
+  },
+  "41500": {
+    "msa_id": "41500",
+    "msa_name": "Salinas, CA",
+    "msa_population": 430723,
+    "primary_city": "Salinas",
+    "primary_state": "CA",
+    "zips": [
+      "93906",
+      "93905",
+      "93901"
+    ],
+    "zip_details": [
+      {
+        "zip": "93906",
+        "city": "Salinas",
+        "state": "CA",
+        "pop": 63733
+      },
+      {
+        "zip": "93905",
+        "city": "Salinas",
+        "state": "CA",
+        "pop": 61633
+      },
+      {
+        "zip": "93901",
+        "city": "Salinas",
+        "state": "CA",
+        "pop": 28089
+      }
+    ]
+  },
+  "41620": {
+    "msa_id": "41620",
+    "msa_name": "Salt Lake City-Murray, UT",
+    "msa_population": 1267864,
+    "primary_city": "Salt Lake City",
+    "primary_state": "UT",
+    "zips": [
+      "84106",
+      "84116",
+      "84128"
+    ],
+    "zip_details": [
+      {
+        "zip": "84106",
+        "city": "Salt lake city",
+        "state": "UT",
+        "pop": 35166
+      },
+      {
+        "zip": "84116",
+        "city": "Salt lake city",
+        "state": "UT",
+        "pop": 34588
+      },
+      {
+        "zip": "84128",
+        "city": "Salt lake city",
+        "state": "UT",
+        "pop": 27921
+      }
+    ]
+  },
+  "41700": {
+    "msa_id": "41700",
+    "msa_name": "San Antonio-New Braunfels, TX",
+    "msa_population": 2703999,
+    "primary_city": "San Antonio",
+    "primary_state": "TX",
+    "zips": [
+      "78245",
+      "78251",
+      "78250"
+    ],
+    "zip_details": [
+      {
+        "zip": "78245",
+        "city": "San antonio",
+        "state": "TX",
+        "pop": 76392
+      },
+      {
+        "zip": "78251",
+        "city": "San antonio",
+        "state": "TX",
+        "pop": 65885
+      },
+      {
+        "zip": "78250",
+        "city": "San antonio",
+        "state": "TX",
+        "pop": 62951
+      }
+    ]
+  },
+  "41740": {
+    "msa_id": "41740",
+    "msa_name": "San Diego-Chula Vista-Carlsbad, CA",
+    "msa_population": 3269973,
+    "primary_city": "San Diego",
+    "primary_state": "CA",
+    "zips": [
+      "92154",
+      "92126",
+      "92105"
+    ],
+    "zip_details": [
+      {
+        "zip": "92154",
+        "city": "San diego",
+        "state": "CA",
+        "pop": 89886
+      },
+      {
+        "zip": "92126",
+        "city": "San diego",
+        "state": "CA",
+        "pop": 83257
+      },
+      {
+        "zip": "92105",
+        "city": "San diego",
+        "state": "CA",
+        "pop": 75990
+      }
+    ]
+  },
+  "41860": {
+    "msa_id": "41860",
+    "msa_name": "San Francisco-Oakland-Fremont, CA",
+    "msa_population": 4566961,
+    "primary_city": "San Francisco",
+    "primary_state": "CA",
+    "zips": [
+      "94112",
+      "94110",
+      "94122"
+    ],
+    "zip_details": [
+      {
+        "zip": "94112",
+        "city": "San francisco",
+        "state": "CA",
+        "pop": 85053
+      },
+      {
+        "zip": "94110",
+        "city": "San francisco",
+        "state": "CA",
+        "pop": 72765
+      },
+      {
+        "zip": "94122",
+        "city": "San francisco",
+        "state": "CA",
+        "pop": 61248
+      }
+    ]
+  },
+  "41940": {
+    "msa_id": "41940",
+    "msa_name": "San Jose-Sunnyvale-Santa Clara, CA",
+    "msa_population": 1945767,
+    "primary_city": "San Jose",
+    "primary_state": "CA",
+    "zips": [
+      "95123",
+      "95127",
+      "95111"
+    ],
+    "zip_details": [
+      {
+        "zip": "95123",
+        "city": "San jose",
+        "state": "CA",
+        "pop": 70005
+      },
+      {
+        "zip": "95127",
+        "city": "San jose",
+        "state": "CA",
+        "pop": 63220
+      },
+      {
+        "zip": "95111",
+        "city": "San jose",
+        "state": "CA",
+        "pop": 61183
+      }
+    ]
+  },
+  "41980": {
+    "msa_id": "41980",
+    "msa_name": "San Juan-Bayamón-Caguas, PR",
+    "msa_population": 2037875,
+    "primary_city": "San Juan",
+    "primary_state": "PR",
+    "zips": [],
+    "zip_details": []
+  },
+  "42020": {
+    "msa_id": "42020",
+    "msa_name": "San Luis Obispo-Paso Robles, CA",
+    "msa_population": 281639,
+    "primary_city": "San Luis Obispo",
+    "primary_state": "CA",
+    "zips": [
+      "93405",
+      "93401"
+    ],
+    "zip_details": [
+      {
+        "zip": "93405",
+        "city": "San luis obispo",
+        "state": "CA",
+        "pop": 36285
+      },
+      {
+        "zip": "93401",
+        "city": "San luis obispo",
+        "state": "CA",
+        "pop": 28751
+      }
+    ]
+  },
+  "42100": {
+    "msa_id": "42100",
+    "msa_name": "Santa Cruz-Watsonville, CA",
+    "msa_population": 261547,
+    "primary_city": "Santa Cruz",
+    "primary_state": "CA",
+    "zips": [
+      "95062",
+      "95064",
+      "95065"
+    ],
+    "zip_details": [
+      {
+        "zip": "95062",
+        "city": "Santa cruz",
+        "state": "CA",
+        "pop": 36413
+      },
+      {
+        "zip": "95064",
+        "city": "Santa cruz",
+        "state": "CA",
+        "pop": 10622
+      },
+      {
+        "zip": "95065",
+        "city": "Santa cruz",
+        "state": "CA",
+        "pop": 8164
+      }
+    ]
+  },
+  "42200": {
+    "msa_id": "42200",
+    "msa_name": "Santa Maria-Santa Barbara, CA",
+    "msa_population": 441257,
+    "primary_city": "Santa Maria",
+    "primary_state": "CA",
+    "zips": [
+      "93454",
+      "90011",
+      "90650"
+    ],
+    "zip_details": [
+      {
+        "zip": "93454",
+        "city": "Santa maria",
+        "state": "CA",
+        "pop": 40600
+      },
+      {
+        "zip": "90011",
+        "city": "Los angeles",
+        "state": "CA",
+        "pop": 110750
+      },
+      {
+        "zip": "90650",
+        "city": "Norwalk",
+        "state": "CA",
+        "pop": 104524
+      }
+    ]
+  },
+  "42220": {
+    "msa_id": "42220",
+    "msa_name": "Santa Rosa-Petaluma, CA",
+    "msa_population": 481812,
+    "primary_city": "Santa Rosa",
+    "primary_state": "CA",
+    "zips": [
+      "95403",
+      "95407",
+      "95401"
+    ],
+    "zip_details": [
+      {
+        "zip": "95403",
+        "city": "Santa rosa",
+        "state": "CA",
+        "pop": 44716
+      },
+      {
+        "zip": "95407",
+        "city": "Santa rosa",
+        "state": "CA",
+        "pop": 42815
+      },
+      {
+        "zip": "95401",
+        "city": "Santa rosa",
+        "state": "CA",
+        "pop": 38872
+      }
+    ]
+  },
+  "42340": {
+    "msa_id": "42340",
+    "msa_name": "Savannah, GA",
+    "msa_population": 424935,
+    "primary_city": "Savannah",
+    "primary_state": "GA",
+    "zips": [
+      "31405",
+      "31406",
+      "31410"
+    ],
+    "zip_details": [
+      {
+        "zip": "31405",
+        "city": "Savannah",
+        "state": "GA",
+        "pop": 37929
+      },
+      {
+        "zip": "31406",
+        "city": "Savannah",
+        "state": "GA",
+        "pop": 35073
+      },
+      {
+        "zip": "31410",
+        "city": "Savannah",
+        "state": "GA",
+        "pop": 24626
+      }
+    ]
+  },
+  "42540": {
+    "msa_id": "42540",
+    "msa_name": "Scranton--Wilkes-Barre, PA",
+    "msa_population": 569413,
+    "primary_city": "Scranton",
+    "primary_state": "PA",
+    "zips": [
+      "18505",
+      "18504",
+      "18509"
+    ],
+    "zip_details": [
+      {
+        "zip": "18505",
+        "city": "Scranton",
+        "state": "PA",
+        "pop": 21671
+      },
+      {
+        "zip": "18504",
+        "city": "Scranton",
+        "state": "PA",
+        "pop": 20632
+      },
+      {
+        "zip": "18509",
+        "city": "Scranton",
+        "state": "PA",
+        "pop": 13786
+      }
+    ]
+  },
+  "42660": {
+    "msa_id": "42660",
+    "msa_name": "Seattle-Tacoma-Bellevue, WA",
+    "msa_population": 4044837,
+    "primary_city": "Seattle",
+    "primary_state": "WA",
+    "zips": [
+      "98115",
+      "98103",
+      "98105"
+    ],
+    "zip_details": [
+      {
+        "zip": "98115",
+        "city": "Seattle",
+        "state": "WA",
+        "pop": 55519
+      },
+      {
+        "zip": "98103",
+        "city": "Seattle",
+        "state": "WA",
+        "pop": 54194
+      },
+      {
+        "zip": "98105",
+        "city": "Seattle",
+        "state": "WA",
+        "pop": 52290
+      }
+    ]
+  },
+  "43340": {
+    "msa_id": "43340",
+    "msa_name": "Shreveport-Bossier City, LA",
+    "msa_population": 383295,
+    "primary_city": "Shreveport",
+    "primary_state": "LA",
+    "zips": [
+      "71118",
+      "71105",
+      "71108"
+    ],
+    "zip_details": [
+      {
+        "zip": "71118",
+        "city": "Shreveport",
+        "state": "LA",
+        "pop": 23585
+      },
+      {
+        "zip": "71105",
+        "city": "Shreveport",
+        "state": "LA",
+        "pop": 20660
+      },
+      {
+        "zip": "71108",
+        "city": "Shreveport",
+        "state": "LA",
+        "pop": 18943
+      }
+    ]
+  },
+  "43620": {
+    "msa_id": "43620",
+    "msa_name": "Sioux Falls, SD-MN",
+    "msa_population": 303827,
+    "primary_city": "Sioux Falls",
+    "primary_state": "SD",
+    "zips": [
+      "57106",
+      "57103",
+      "57104"
+    ],
+    "zip_details": [
+      {
+        "zip": "57106",
+        "city": "Sioux falls",
+        "state": "SD",
+        "pop": 47855
+      },
+      {
+        "zip": "57103",
+        "city": "Sioux falls",
+        "state": "SD",
+        "pop": 36761
+      },
+      {
+        "zip": "57104",
+        "city": "Sioux falls",
+        "state": "SD",
+        "pop": 26217
+      }
+    ]
+  },
+  "43640": {
+    "msa_id": "43640",
+    "msa_name": "Slidell-Mandeville-Covington, LA",
+    "msa_population": 275583,
+    "primary_city": "Slidell",
+    "primary_state": "LA",
+    "zips": [
+      "70458",
+      "70461",
+      "70460"
+    ],
+    "zip_details": [
+      {
+        "zip": "70458",
+        "city": "Slidell",
+        "state": "LA",
+        "pop": 37164
+      },
+      {
+        "zip": "70461",
+        "city": "Slidell",
+        "state": "LA",
+        "pop": 32900
+      },
+      {
+        "zip": "70460",
+        "city": "Slidell",
+        "state": "LA",
+        "pop": 22334
+      }
+    ]
+  },
+  "43780": {
+    "msa_id": "43780",
+    "msa_name": "South Bend-Mishawaka, IN-MI",
+    "msa_population": 324490,
+    "primary_city": "South Bend",
+    "primary_state": "IN",
+    "zips": [
+      "46614",
+      "46628",
+      "46619"
+    ],
+    "zip_details": [
+      {
+        "zip": "46614",
+        "city": "South bend",
+        "state": "IN",
+        "pop": 30505
+      },
+      {
+        "zip": "46628",
+        "city": "South bend",
+        "state": "IN",
+        "pop": 26532
+      },
+      {
+        "zip": "46619",
+        "city": "South bend",
+        "state": "IN",
+        "pop": 21048
+      }
+    ]
+  },
+  "43900": {
+    "msa_id": "43900",
+    "msa_name": "Spartanburg, SC",
+    "msa_population": 383327,
+    "primary_city": "Spartanburg",
+    "primary_state": "SC",
+    "zips": [
+      "29301",
+      "29316",
+      "29307"
+    ],
+    "zip_details": [
+      {
+        "zip": "29301",
+        "city": "Spartanburg",
+        "state": "SC",
+        "pop": 35585
+      },
+      {
+        "zip": "29316",
+        "city": "Spartanburg",
+        "state": "SC",
+        "pop": 27315
+      },
+      {
+        "zip": "29307",
+        "city": "Spartanburg",
+        "state": "SC",
+        "pop": 18583
+      }
+    ]
+  },
+  "44060": {
+    "msa_id": "44060",
+    "msa_name": "Spokane-Spokane Valley, WA",
+    "msa_population": 600292,
+    "primary_city": "Spokane",
+    "primary_state": "WA",
+    "zips": [
+      "99208",
+      "99205",
+      "99206"
+    ],
+    "zip_details": [
+      {
+        "zip": "99208",
+        "city": "Spokane",
+        "state": "WA",
+        "pop": 55092
+      },
+      {
+        "zip": "99205",
+        "city": "Spokane",
+        "state": "WA",
+        "pop": 43707
+      },
+      {
+        "zip": "99206",
+        "city": "Spokane",
+        "state": "WA",
+        "pop": 40510
+      }
+    ]
+  },
+  "44140": {
+    "msa_id": "44140",
+    "msa_name": "Springfield, MA",
+    "msa_population": 460291,
+    "primary_city": "Springfield",
+    "primary_state": "MA",
+    "zips": [
+      "01109",
+      "01108",
+      "01104"
+    ],
+    "zip_details": [
+      {
+        "zip": "01109",
+        "city": "Springfield",
+        "state": "MA",
+        "pop": 30684
+      },
+      {
+        "zip": "01108",
+        "city": "Springfield",
+        "state": "MA",
+        "pop": 26397
+      },
+      {
+        "zip": "01104",
+        "city": "Springfield",
+        "state": "MA",
+        "pop": 23150
+      }
+    ]
+  },
+  "44180": {
+    "msa_id": "44180",
+    "msa_name": "Springfield, MO",
+    "msa_population": 490886,
+    "primary_city": "Springfield",
+    "primary_state": "MO",
+    "zips": [
+      "65807",
+      "65802",
+      "65803"
+    ],
+    "zip_details": [
+      {
+        "zip": "65807",
+        "city": "Springfield",
+        "state": "MO",
+        "pop": 58366
+      },
+      {
+        "zip": "65802",
+        "city": "Springfield",
+        "state": "MO",
+        "pop": 47098
+      },
+      {
+        "zip": "65803",
+        "city": "Springfield",
+        "state": "MO",
+        "pop": 41897
+      }
+    ]
+  },
+  "44700": {
+    "msa_id": "44700",
+    "msa_name": "Stockton-Lodi, CA",
+    "msa_population": 800965,
+    "primary_city": "Stockton",
+    "primary_state": "CA",
+    "zips": [
+      "95206",
+      "95207",
+      "95209"
+    ],
+    "zip_details": [
+      {
+        "zip": "95206",
+        "city": "Stockton",
+        "state": "CA",
+        "pop": 65643
+      },
+      {
+        "zip": "95207",
+        "city": "Stockton",
+        "state": "CA",
+        "pop": 51652
+      },
+      {
+        "zip": "95209",
+        "city": "Stockton",
+        "state": "CA",
+        "pop": 44325
+      }
+    ]
+  },
+  "45060": {
+    "msa_id": "45060",
+    "msa_name": "Syracuse, NY",
+    "msa_population": 652956,
+    "primary_city": "Syracuse",
+    "primary_state": "NY",
+    "zips": [
+      "13210",
+      "13208",
+      "13204"
+    ],
+    "zip_details": [
+      {
+        "zip": "13210",
+        "city": "Syracuse",
+        "state": "NY",
+        "pop": 27172
+      },
+      {
+        "zip": "13208",
+        "city": "Syracuse",
+        "state": "NY",
+        "pop": 22560
+      },
+      {
+        "zip": "13204",
+        "city": "Syracuse",
+        "state": "NY",
+        "pop": 19264
+      }
+    ]
+  },
+  "45220": {
+    "msa_id": "45220",
+    "msa_name": "Tallahassee, FL",
+    "msa_population": 393414,
+    "primary_city": "Tallahassee",
+    "primary_state": "FL",
+    "zips": [
+      "32304",
+      "32303",
+      "32301"
+    ],
+    "zip_details": [
+      {
+        "zip": "32304",
+        "city": "Tallahassee",
+        "state": "FL",
+        "pop": 50298
+      },
+      {
+        "zip": "32303",
+        "city": "Tallahassee",
+        "state": "FL",
+        "pop": 49073
+      },
+      {
+        "zip": "32301",
+        "city": "Tallahassee",
+        "state": "FL",
+        "pop": 32552
+      }
+    ]
+  },
+  "45300": {
+    "msa_id": "45300",
+    "msa_name": "Tampa-St. Petersburg-Clearwater, FL",
+    "msa_population": 3342963,
+    "primary_city": "Tampa",
+    "primary_state": "FL",
+    "zips": [
+      "33647",
+      "33612",
+      "33614"
+    ],
+    "zip_details": [
+      {
+        "zip": "33647",
+        "city": "Tampa",
+        "state": "FL",
+        "pop": 74066
+      },
+      {
+        "zip": "33612",
+        "city": "Tampa",
+        "state": "FL",
+        "pop": 51347
+      },
+      {
+        "zip": "33614",
+        "city": "Tampa",
+        "state": "FL",
+        "pop": 49652
+      }
+    ]
+  },
+  "45780": {
+    "msa_id": "45780",
+    "msa_name": "Toledo, OH",
+    "msa_population": 600141,
+    "primary_city": "Toledo",
+    "primary_state": "OH",
+    "zips": [
+      "43615",
+      "43613",
+      "43614"
+    ],
+    "zip_details": [
+      {
+        "zip": "43615",
+        "city": "Toledo",
+        "state": "OH",
+        "pop": 39957
+      },
+      {
+        "zip": "43613",
+        "city": "Toledo",
+        "state": "OH",
+        "pop": 32811
+      },
+      {
+        "zip": "43614",
+        "city": "Toledo",
+        "state": "OH",
+        "pop": 29983
+      }
+    ]
+  },
+  "45940": {
+    "msa_id": "45940",
+    "msa_name": "Trenton-Princeton, NJ",
+    "msa_population": 381671,
+    "primary_city": "Trenton",
+    "primary_state": "NJ",
+    "zips": [
+      "08618",
+      "08638",
+      "08608"
+    ],
+    "zip_details": [
+      {
+        "zip": "08618",
+        "city": "Trenton",
+        "state": "NJ",
+        "pop": 37433
+      },
+      {
+        "zip": "08638",
+        "city": "Trenton",
+        "state": "NJ",
+        "pop": 22115
+      },
+      {
+        "zip": "08608",
+        "city": "Trenton",
+        "state": "NJ",
+        "pop": 866
+      }
+    ]
+  },
+  "46060": {
+    "msa_id": "46060",
+    "msa_name": "Tucson, AZ",
+    "msa_population": 1063162,
+    "primary_city": "Tucson",
+    "primary_state": "AZ",
+    "zips": [
+      "85706",
+      "85705",
+      "85710"
+    ],
+    "zip_details": [
+      {
+        "zip": "85706",
+        "city": "Tucson",
+        "state": "AZ",
+        "pop": 57712
+      },
+      {
+        "zip": "85705",
+        "city": "Tucson",
+        "state": "AZ",
+        "pop": 57449
+      },
+      {
+        "zip": "85710",
+        "city": "Tucson",
+        "state": "AZ",
+        "pop": 53002
+      }
+    ]
+  },
+  "46140": {
+    "msa_id": "46140",
+    "msa_name": "Tulsa, OK",
+    "msa_population": 1044287,
+    "primary_city": "Tulsa",
+    "primary_state": "OK",
+    "zips": [
+      "74133",
+      "74136",
+      "74137"
+    ],
+    "zip_details": [
+      {
+        "zip": "74133",
+        "city": "Tulsa",
+        "state": "OK",
+        "pop": 45958
+      },
+      {
+        "zip": "74136",
+        "city": "Tulsa",
+        "state": "OK",
+        "pop": 32139
+      },
+      {
+        "zip": "74137",
+        "city": "Tulsa",
+        "state": "OK",
+        "pop": 27341
+      }
+    ]
+  },
+  "46220": {
+    "msa_id": "46220",
+    "msa_name": "Tuscaloosa, AL",
+    "msa_population": 271223,
+    "primary_city": "Tuscaloosa",
+    "primary_state": "AL",
+    "zips": [
+      "35405",
+      "35401",
+      "35406"
+    ],
+    "zip_details": [
+      {
+        "zip": "35405",
+        "city": "Tuscaloosa",
+        "state": "AL",
+        "pop": 44449
+      },
+      {
+        "zip": "35401",
+        "city": "Tuscaloosa",
+        "state": "AL",
+        "pop": 37909
+      },
+      {
+        "zip": "35406",
+        "city": "Tuscaloosa",
+        "state": "AL",
+        "pop": 18391
+      }
+    ]
+  },
+  "46340": {
+    "msa_id": "46340",
+    "msa_name": "Tyler, TX",
+    "msa_population": 245209,
+    "primary_city": "Tyler",
+    "primary_state": "TX",
+    "zips": [
+      "75703",
+      "75701",
+      "75702"
+    ],
+    "zip_details": [
+      {
+        "zip": "75703",
+        "city": "Tyler",
+        "state": "TX",
+        "pop": 42955
+      },
+      {
+        "zip": "75701",
+        "city": "Tyler",
+        "state": "TX",
+        "pop": 36089
+      },
+      {
+        "zip": "75702",
+        "city": "Tyler",
+        "state": "TX",
+        "pop": 27678
+      }
+    ]
+  },
+  "46520": {
+    "msa_id": "46520",
+    "msa_name": "Urban Honolulu, HI",
+    "msa_population": 989408,
+    "primary_city": "Urban Honolulu",
+    "primary_state": "HI",
+    "zips": [
+      "96706",
+      "96797",
+      "96818"
+    ],
+    "zip_details": [
+      {
+        "zip": "96706",
+        "city": "Ewa beach",
+        "state": "HI",
+        "pop": 76081
+      },
+      {
+        "zip": "96797",
+        "city": "Waipahu",
+        "state": "HI",
+        "pop": 70684
+      },
+      {
+        "zip": "96818",
+        "city": "Honolulu",
+        "state": "HI",
+        "pop": 59923
+      }
+    ]
+  },
+  "46540": {
+    "msa_id": "46540",
+    "msa_name": "Utica-Rome, NY",
+    "msa_population": 287039,
+    "primary_city": "Utica",
+    "primary_state": "NY",
+    "zips": [
+      "13501",
+      "13502"
+    ],
+    "zip_details": [
+      {
+        "zip": "13501",
+        "city": "Utica",
+        "state": "NY",
+        "pop": 37132
+      },
+      {
+        "zip": "13502",
+        "city": "Utica",
+        "state": "NY",
+        "pop": 32437
+      }
+    ]
+  },
+  "46700": {
+    "msa_id": "46700",
+    "msa_name": "Vallejo, CA",
+    "msa_population": 449218,
+    "primary_city": "Vallejo",
+    "primary_state": "CA",
+    "zips": [
+      "94591",
+      "94590"
+    ],
+    "zip_details": [
+      {
+        "zip": "94591",
+        "city": "Vallejo",
+        "state": "CA",
+        "pop": 56333
+      },
+      {
+        "zip": "94590",
+        "city": "Vallejo",
+        "state": "CA",
+        "pop": 37378
+      }
+    ]
+  },
+  "47260": {
+    "msa_id": "47260",
+    "msa_name": "Virginia Beach-Chesapeake-Norfolk, VA-NC",
+    "msa_population": 1781671,
+    "primary_city": "Virginia Beach",
+    "primary_state": "VA",
+    "zips": [
+      "23464",
+      "23462",
+      "23456"
+    ],
+    "zip_details": [
+      {
+        "zip": "23464",
+        "city": "Virginia beach",
+        "state": "VA",
+        "pop": 77623
+      },
+      {
+        "zip": "23462",
+        "city": "Virginia beach",
+        "state": "VA",
+        "pop": 67963
+      },
+      {
+        "zip": "23456",
+        "city": "Virginia beach",
+        "state": "VA",
+        "pop": 57705
+      }
+    ]
+  },
+  "47300": {
+    "msa_id": "47300",
+    "msa_name": "Visalia, CA",
+    "msa_population": 479468,
+    "primary_city": "Visalia",
+    "primary_state": "CA",
+    "zips": [
+      "93291",
+      "93277",
+      "93292"
+    ],
+    "zip_details": [
+      {
+        "zip": "93291",
+        "city": "Visalia",
+        "state": "CA",
+        "pop": 58394
+      },
+      {
+        "zip": "93277",
+        "city": "Visalia",
+        "state": "CA",
+        "pop": 53114
+      },
+      {
+        "zip": "93292",
+        "city": "Visalia",
+        "state": "CA",
+        "pop": 42769
+      }
+    ]
+  },
+  "47380": {
+    "msa_id": "47380",
+    "msa_name": "Waco, TX",
+    "msa_population": 305370,
+    "primary_city": "Waco",
+    "primary_state": "TX",
+    "zips": [
+      "76706",
+      "76708",
+      "76710"
+    ],
+    "zip_details": [
+      {
+        "zip": "76706",
+        "city": "Waco",
+        "state": "TX",
+        "pop": 39667
+      },
+      {
+        "zip": "76708",
+        "city": "Waco",
+        "state": "TX",
+        "pop": 27095
+      },
+      {
+        "zip": "76710",
+        "city": "Waco",
+        "state": "TX",
+        "pop": 24607
+      }
+    ]
+  },
+  "47900": {
+    "msa_id": "47900",
+    "msa_name": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+    "msa_population": 6304449,
+    "primary_city": "Washington",
+    "primary_state": "DC",
+    "zips": [
+      "20011",
+      "20002",
+      "20019"
+    ],
+    "zip_details": [
+      {
+        "zip": "20011",
+        "city": "Washington",
+        "state": "DC",
+        "pop": 69686
+      },
+      {
+        "zip": "20002",
+        "city": "Washington",
+        "state": "DC",
+        "pop": 69141
+      },
+      {
+        "zip": "20019",
+        "city": "Washington",
+        "state": "DC",
+        "pop": 65769
+      }
+    ]
+  },
+  "47930": {
+    "msa_id": "47930",
+    "msa_name": "Waterbury-Shelton, CT",
+    "msa_population": 456128,
+    "primary_city": "Waterbury",
+    "primary_state": "CT",
+    "zips": [
+      "06708",
+      "06704",
+      "06705"
+    ],
+    "zip_details": [
+      {
+        "zip": "06708",
+        "city": "Waterbury",
+        "state": "CT",
+        "pop": 29727
+      },
+      {
+        "zip": "06704",
+        "city": "Waterbury",
+        "state": "CT",
+        "pop": 26209
+      },
+      {
+        "zip": "06705",
+        "city": "Waterbury",
+        "state": "CT",
+        "pop": 24910
+      }
+    ]
+  },
+  "48620": {
+    "msa_id": "48620",
+    "msa_name": "Wichita, KS",
+    "msa_population": 652939,
+    "primary_city": "Wichita",
+    "primary_state": "KS",
+    "zips": [
+      "67212",
+      "67217",
+      "67203"
+    ],
+    "zip_details": [
+      {
+        "zip": "67212",
+        "city": "Wichita",
+        "state": "KS",
+        "pop": 44396
+      },
+      {
+        "zip": "67217",
+        "city": "Wichita",
+        "state": "KS",
+        "pop": 31134
+      },
+      {
+        "zip": "67203",
+        "city": "Wichita",
+        "state": "KS",
+        "pop": 30064
+      }
+    ]
+  },
+  "48900": {
+    "msa_id": "48900",
+    "msa_name": "Wilmington, NC",
+    "msa_population": 467337,
+    "primary_city": "Wilmington",
+    "primary_state": "NC",
+    "zips": [
+      "28403",
+      "28412",
+      "28409"
+    ],
+    "zip_details": [
+      {
+        "zip": "28403",
+        "city": "Wilmington",
+        "state": "NC",
+        "pop": 42319
+      },
+      {
+        "zip": "28412",
+        "city": "Wilmington",
+        "state": "NC",
+        "pop": 38882
+      },
+      {
+        "zip": "28409",
+        "city": "Wilmington",
+        "state": "NC",
+        "pop": 36070
+      }
+    ]
+  },
+  "49180": {
+    "msa_id": "49180",
+    "msa_name": "Winston-Salem, NC",
+    "msa_population": 695630,
+    "primary_city": "Winston",
+    "primary_state": "NC",
+    "zips": [
+      "27610",
+      "28269",
+      "27587"
+    ],
+    "zip_details": [
+      {
+        "zip": "27610",
+        "city": "Raleigh",
+        "state": "NC",
+        "pop": 80973
+      },
+      {
+        "zip": "28269",
+        "city": "Charlotte",
+        "state": "NC",
+        "pop": 79059
+      },
+      {
+        "zip": "27587",
+        "city": "Wake forest",
+        "state": "NC",
+        "pop": 73345
+      }
+    ]
+  },
+  "49340": {
+    "msa_id": "49340",
+    "msa_name": "Worcester, MA",
+    "msa_population": 866866,
+    "primary_city": "Worcester",
+    "primary_state": "MA",
+    "zips": [
+      "01604",
+      "01605",
+      "01602"
+    ],
+    "zip_details": [
+      {
+        "zip": "01604",
+        "city": "Worcester",
+        "state": "MA",
+        "pop": 37633
+      },
+      {
+        "zip": "01605",
+        "city": "Worcester",
+        "state": "MA",
+        "pop": 27587
+      },
+      {
+        "zip": "01602",
+        "city": "Worcester",
+        "state": "MA",
+        "pop": 24363
+      }
+    ]
+  },
+  "49420": {
+    "msa_id": "49420",
+    "msa_name": "Yakima, WA",
+    "msa_population": 256643,
+    "primary_city": "Yakima",
+    "primary_state": "WA",
+    "zips": [
+      "98902",
+      "99301",
+      "98052"
+    ],
+    "zip_details": [
+      {
+        "zip": "98902",
+        "city": "Yakima",
+        "state": "WA",
+        "pop": 46728
+      },
+      {
+        "zip": "99301",
+        "city": "Pasco",
+        "state": "WA",
+        "pop": 81583
+      },
+      {
+        "zip": "98052",
+        "city": "Redmond",
+        "state": "WA",
+        "pop": 71940
+      }
+    ]
+  },
+  "49620": {
+    "msa_id": "49620",
+    "msa_name": "York-Hanover, PA",
+    "msa_population": 464640,
+    "primary_city": "York",
+    "primary_state": "PA",
+    "zips": [
+      "17403",
+      "17401"
+    ],
+    "zip_details": [
+      {
+        "zip": "17403",
+        "city": "York",
+        "state": "PA",
+        "pop": 39217
+      },
+      {
+        "zip": "17401",
+        "city": "York",
+        "state": "PA",
+        "pop": 16973
+      }
+    ]
+  },
+  "49660": {
+    "msa_id": "49660",
+    "msa_name": "Youngstown-Warren, OH",
+    "msa_population": 425969,
+    "primary_city": "Youngstown",
+    "primary_state": "OH",
+    "zips": [
+      "44511",
+      "44505",
+      "44509"
+    ],
+    "zip_details": [
+      {
+        "zip": "44511",
+        "city": "Youngstown",
+        "state": "OH",
+        "pop": 19605
+      },
+      {
+        "zip": "44505",
+        "city": "Youngstown",
+        "state": "OH",
+        "pop": 16955
+      },
+      {
+        "zip": "44509",
+        "city": "Youngstown",
+        "state": "OH",
+        "pop": 12062
+      }
+    ]
+  }
+}

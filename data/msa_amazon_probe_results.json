@@ -73,6 +73,117 @@
     },
     "probed_at": "2026-03-31T01:09:52.906Z"
   },
+  "12550": {
+    "msa_id": "28880",
+    "msa_name": "Kiryas Joel-Poughkeepsie-Newburgh, NY",
+    "msa_pop": "704620",
+    "zip": "12550",
+    "city": "Middle hope",
+    "state": "NY",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:17:03.748Z"
+  },
+  "13126": {
+    "msa_id": "45060",
+    "msa_name": "Syracuse, NY",
+    "msa_pop": "652956",
+    "zip": "13126",
+    "city": "Oswego",
+    "state": "NY",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:18:51.480Z"
+  },
+  "13440": {
+    "msa_id": "46540",
+    "msa_name": "Utica-Rome, NY",
+    "msa_pop": "287039",
+    "zip": "13440",
+    "city": "Rome",
+    "state": "NY",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:49:53.503Z"
+  },
   "14221": {
     "msa_id": "15380",
     "msa_name": "Buffalo-Cheektowaga, NY",
@@ -184,6 +295,154 @@
     },
     "probed_at": "2026-03-31T00:56:33.405Z"
   },
+  "16509": {
+    "msa_id": "21500",
+    "msa_name": "Erie, PA",
+    "msa_pop": "267571",
+    "zip": "16509",
+    "city": "Erie",
+    "state": "PA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:54:11.681Z"
+  },
+  "17011": {
+    "msa_id": "25420",
+    "msa_name": "Harrisburg-Carlisle, PA",
+    "msa_pop": "606055",
+    "zip": "17011",
+    "city": "Shiremanstown",
+    "state": "PA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:21:02.055Z"
+  },
+  "17331": {
+    "msa_id": "49620",
+    "msa_name": "York-Hanover, PA",
+    "msa_pop": "464640",
+    "zip": "17331",
+    "city": "Hanover",
+    "state": "PA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:28:35.340Z"
+  },
+  "17603": {
+    "msa_id": "29540",
+    "msa_name": "Lancaster, PA",
+    "msa_pop": "558589",
+    "zip": "17603",
+    "city": "Rohrerstown",
+    "state": "PA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:24:15.956Z"
+  },
   "18102": {
     "msa_id": "10900",
     "msa_name": "Allentown-Bethlehem-Easton, PA-NJ",
@@ -220,6 +479,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:10:58.119Z"
+  },
+  "18702": {
+    "msa_id": "42540",
+    "msa_name": "Scranton--Wilkes-Barre, PA",
+    "msa_pop": "569413",
+    "zip": "18702",
+    "city": "Hanover township",
+    "state": "PA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:22:49.635Z"
   },
   "19120": {
     "msa_id": "37980",
@@ -258,6 +554,43 @@
     },
     "probed_at": "2026-03-31T00:49:44.167Z"
   },
+  "19606": {
+    "msa_id": "39740",
+    "msa_name": "Reading, PA",
+    "msa_pop": "432821",
+    "zip": "19606",
+    "city": "Mount penn",
+    "state": "PA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:31:28.716Z"
+  },
   "21234": {
     "msa_id": "12580",
     "msa_name": "Baltimore-Columbia-Towson, MD",
@@ -294,6 +627,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:54:03.587Z"
+  },
+  "21740": {
+    "msa_id": "25180",
+    "msa_name": "Hagerstown-Martinsburg, MD-WV",
+    "msa_pop": "304506",
+    "zip": "21740",
+    "city": "Hagerstown",
+    "state": "MD",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:48:05.580Z"
   },
   "22193": {
     "msa_id": "47900",
@@ -406,6 +776,191 @@
     },
     "probed_at": "2026-03-31T01:00:08.856Z"
   },
+  "24018": {
+    "msa_id": "40220",
+    "msa_name": "Roanoke, VA",
+    "msa_pop": "313786",
+    "zip": "24018",
+    "city": "Cave spring",
+    "state": "VA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:46:38.881Z"
+  },
+  "24502": {
+    "msa_id": "31340",
+    "msa_name": "Lynchburg, VA",
+    "msa_pop": "265565",
+    "zip": "24502",
+    "city": "Timberlake",
+    "state": "VA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:54:33.572Z"
+  },
+  "25526": {
+    "msa_id": "26580",
+    "msa_name": "Huntington-Ashland, WV-KY-OH",
+    "msa_pop": "367192",
+    "zip": "25526",
+    "city": "Hurricane",
+    "state": "WV",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:41:37.348Z"
+  },
+  "27284": {
+    "msa_id": "49180",
+    "msa_name": "Winston-Salem, NC",
+    "msa_pop": "695630",
+    "zip": "27284",
+    "city": "Kernersville",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:17:46.801Z"
+  },
+  "27406": {
+    "msa_id": "24660",
+    "msa_name": "Greensboro-High Point, NC",
+    "msa_pop": "789842",
+    "zip": "27406",
+    "city": "Greensboro",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:14:53.915Z"
+  },
   "27610": {
     "msa_id": "39580",
     "msa_name": "Raleigh-Cary, NC",
@@ -443,6 +998,43 @@
     },
     "probed_at": "2026-03-31T01:01:36.782Z"
   },
+  "27703": {
+    "msa_id": "20500",
+    "msa_name": "Durham-Chapel Hill, NC",
+    "msa_pop": "608879",
+    "zip": "27703",
+    "city": "Durham",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:20:40.320Z"
+  },
   "28269": {
     "msa_id": "16740",
     "msa_name": "Charlotte-Concord-Gastonia, NC-SC",
@@ -479,6 +1071,154 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:54:45.837Z"
+  },
+  "28314": {
+    "msa_id": "22180",
+    "msa_name": "Fayetteville, NC",
+    "msa_pop": "392336",
+    "zip": "28314",
+    "city": "Fayetteville",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:37:59.512Z"
+  },
+  "28403": {
+    "msa_id": "48900",
+    "msa_name": "Wilmington, NC",
+    "msa_pop": "467337",
+    "zip": "28403",
+    "city": "Wilmington",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:28:13.243Z"
+  },
+  "28655": {
+    "msa_id": "25860",
+    "msa_name": "Hickory-Lenoir-Morganton, NC",
+    "msa_pop": "370030",
+    "zip": "28655",
+    "city": "Morganton",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:40:54.805Z"
+  },
+  "28806": {
+    "msa_id": "11700",
+    "msa_name": "Asheville, NC",
+    "msa_pop": "417202",
+    "zip": "28806",
+    "city": "Asheville",
+    "state": "NC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:34:02.611Z"
   },
   "29072": {
     "msa_id": "17900",
@@ -554,6 +1294,80 @@
     },
     "probed_at": "2026-03-31T01:12:24.364Z"
   },
+  "29526": {
+    "msa_id": "34820",
+    "msa_name": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+    "msa_pop": "397478",
+    "zip": "29526",
+    "city": "Conway",
+    "state": "SC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:36:55.677Z"
+  },
+  "29651": {
+    "msa_id": "43900",
+    "msa_name": "Spartanburg, SC",
+    "msa_pop": "383327",
+    "zip": "29651",
+    "city": "Greer",
+    "state": "SC",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:38:43.534Z"
+  },
   "29681": {
     "msa_id": "24860",
     "msa_name": "Greenville-Anderson-Greer, SC",
@@ -628,6 +1442,154 @@
     },
     "probed_at": "2026-03-31T00:49:01.423Z"
   },
+  "30906": {
+    "msa_id": "12260",
+    "msa_name": "Augusta-Richmond County, GA-SC",
+    "msa_pop": "628186",
+    "zip": "30906",
+    "city": "Peach orchard",
+    "state": "GA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:19:56.931Z"
+  },
+  "31419": {
+    "msa_id": "42340",
+    "msa_name": "Savannah, GA",
+    "msa_pop": "424935",
+    "zip": "31419",
+    "city": "M m",
+    "state": "GA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:33:18.751Z"
+  },
+  "31907": {
+    "msa_id": "17980",
+    "msa_name": "Columbus, GA-AL",
+    "msa_pop": "329047",
+    "zip": "31907",
+    "city": "Columbus",
+    "state": "GA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:45:12.518Z"
+  },
+  "32174": {
+    "msa_id": "19660",
+    "msa_name": "Deltona-Daytona Beach-Ormond Beach, FL",
+    "msa_pop": "721796",
+    "zip": "32174",
+    "city": "Ormond beach",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:16:41.777Z"
+  },
   "32218": {
     "msa_id": "27260",
     "msa_name": "Jacksonville, FL",
@@ -664,6 +1626,191 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:00:31.668Z"
+  },
+  "32304": {
+    "msa_id": "45220",
+    "msa_name": "Tallahassee, FL",
+    "msa_pop": "393414",
+    "zip": "32304",
+    "city": "Tallahassee",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:37:38.116Z"
+  },
+  "32514": {
+    "msa_id": "37860",
+    "msa_name": "Pensacola-Ferry Pass-Brent, FL",
+    "msa_pop": "530090",
+    "zip": "32514",
+    "city": "Pensacola",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:25:19.051Z"
+  },
+  "32547": {
+    "msa_id": "18880",
+    "msa_name": "Crestview-Fort Walton Beach-Destin, FL",
+    "msa_pop": "304818",
+    "zip": "32547",
+    "city": "Fort walton beac",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:47:43.488Z"
+  },
+  "32608": {
+    "msa_id": "23540",
+    "msa_name": "Gainesville, FL",
+    "msa_pop": "350203",
+    "zip": "32608",
+    "city": "Gainesville",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:43:24.426Z"
+  },
+  "32907": {
+    "msa_id": "37340",
+    "msa_name": "Palm Bay-Melbourne-Titusville, FL",
+    "msa_pop": "643979",
+    "zip": "32907",
+    "city": "Palm bay",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:19:34.890Z"
   },
   "33311": {
     "msa_id": "33100",
@@ -739,6 +1886,80 @@
     },
     "probed_at": "2026-03-31T00:52:58.793Z"
   },
+  "33810": {
+    "msa_id": "29460",
+    "msa_name": "Lakeland-Winter Haven, FL",
+    "msa_pop": "818330",
+    "zip": "33810",
+    "city": "Zcta 33810",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:13:49.303Z"
+  },
+  "34116": {
+    "msa_id": "34940",
+    "msa_name": "Naples-Marco Island, FL",
+    "msa_pop": "404310",
+    "zip": "34116",
+    "city": "Zcta 34116",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:35:29.542Z"
+  },
   "34135": {
     "msa_id": "15980",
     "msa_name": "Cape Coral-Fort Myers, FL",
@@ -813,6 +2034,43 @@
     },
     "probed_at": "2026-03-31T01:09:30.802Z"
   },
+  "34472": {
+    "msa_id": "36100",
+    "msa_name": "Ocala, FL",
+    "msa_pop": "409959",
+    "zip": "34472",
+    "city": "Ocala",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:35:08.261Z"
+  },
   "34787": {
     "msa_id": "36740",
     "msa_name": "Orlando-Kissimmee-Sanford, FL",
@@ -849,6 +2107,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:54:24.623Z"
+  },
+  "34953": {
+    "msa_id": "38940",
+    "msa_name": "Port St. Lucie, FL",
+    "msa_pop": "536901",
+    "zip": "34953",
+    "city": "Port saint lucie",
+    "state": "FL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:24:57.915Z"
   },
   "35242": {
     "msa_id": "13820",
@@ -887,6 +2182,191 @@
     },
     "probed_at": "2026-03-31T01:03:45.527Z"
   },
+  "35405": {
+    "msa_id": "46220",
+    "msa_name": "Tuscaloosa, AL",
+    "msa_pop": "271223",
+    "zip": "35405",
+    "city": "Tuscaloosa",
+    "state": "AL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:53:07.897Z"
+  },
+  "35758": {
+    "msa_id": "26620",
+    "msa_name": "Huntsville, AL",
+    "msa_pop": "527254",
+    "zip": "35758",
+    "city": "Triana",
+    "state": "AL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:25:41.761Z"
+  },
+  "36117": {
+    "msa_id": "33860",
+    "msa_name": "Montgomery, AL",
+    "msa_pop": "385463",
+    "zip": "36117",
+    "city": "Montgomery",
+    "state": "AL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:38:21.511Z"
+  },
+  "36532": {
+    "msa_id": "19300",
+    "msa_name": "Daphne-Fairhope-Foley, AL",
+    "msa_pop": "253507",
+    "zip": "36532",
+    "city": "Fairhope",
+    "state": "AL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:56:41.176Z"
+  },
+  "36695": {
+    "msa_id": "33660",
+    "msa_name": "Mobile, AL",
+    "msa_pop": "411640",
+    "zip": "36695",
+    "city": "Mobile",
+    "state": "AL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:34:46.724Z"
+  },
   "37013": {
     "msa_id": "34980",
     "msa_name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
@@ -923,6 +2403,117 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:59:26.502Z"
+  },
+  "37042": {
+    "msa_id": "17300",
+    "msa_name": "Clarksville, TN-KY",
+    "msa_pop": "336861",
+    "zip": "37042",
+    "city": "Clarksville",
+    "state": "TN",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:44:07.652Z"
+  },
+  "37421": {
+    "msa_id": "16860",
+    "msa_name": "Chattanooga, TN-GA",
+    "msa_pop": "580353",
+    "zip": "37421",
+    "city": "Chattanooga",
+    "state": "TN",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:22:27.556Z"
+  },
+  "37660": {
+    "msa_id": "28700",
+    "msa_name": "Kingsport-Bristol, TN-VA",
+    "msa_pop": "312490",
+    "zip": "37660",
+    "city": "Bloomingdale",
+    "state": "TN",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:47:00.117Z"
   },
   "37918": {
     "msa_id": "28940",
@@ -998,6 +2589,117 @@
     },
     "probed_at": "2026-03-31T01:03:02.299Z"
   },
+  "39110": {
+    "msa_id": "27140",
+    "msa_name": "Jackson, MS",
+    "msa_pop": "609582",
+    "zip": "39110",
+    "city": "Madison",
+    "state": "MS",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:20:18.651Z"
+  },
+  "39503": {
+    "msa_id": "25060",
+    "msa_name": "Gulfport-Biloxi, MS",
+    "msa_pop": "421916",
+    "zip": "39503",
+    "city": "Gulfport",
+    "state": "MS",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:33:40.589Z"
+  },
+  "40324": {
+    "msa_id": "30460",
+    "msa_name": "Lexington-Fayette, KY",
+    "msa_pop": "520045",
+    "zip": "40324",
+    "city": "Georgetown",
+    "state": "KY",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:26:03.021Z"
+  },
   "43123": {
     "msa_id": "18140",
     "msa_name": "Columbus, OH",
@@ -1034,6 +2736,80 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:58:20.818Z"
+  },
+  "43615": {
+    "msa_id": "45780",
+    "msa_name": "Toledo, OH",
+    "msa_pop": "600141",
+    "zip": "43615",
+    "city": "Toledo",
+    "state": "OH",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:21:44.864Z"
+  },
+  "44203": {
+    "msa_id": "10420",
+    "msa_name": "Akron, OH",
+    "msa_pop": "698398",
+    "zip": "44203",
+    "city": "Norton",
+    "state": "OH",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:17:25.604Z"
   },
   "44256": {
     "msa_id": "17410",
@@ -1072,6 +2848,80 @@
     },
     "probed_at": "2026-03-31T00:58:43.072Z"
   },
+  "44512": {
+    "msa_id": "49660",
+    "msa_name": "Youngstown-Warren, OH",
+    "msa_pop": "425969",
+    "zip": "44512",
+    "city": "Boardman",
+    "state": "OH",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:32:56.264Z"
+  },
+  "44646": {
+    "msa_id": "15940",
+    "msa_name": "Canton-Massillon, OH",
+    "msa_pop": "399474",
+    "zip": "44646",
+    "city": "Massillon",
+    "state": "OH",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:36:34.126Z"
+  },
   "45011": {
     "msa_id": "17140",
     "msa_name": "Cincinnati, OH-KY-IN",
@@ -1108,6 +2958,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:57:38.064Z"
+  },
+  "45424": {
+    "msa_id": "19430",
+    "msa_name": "Dayton-Kettering-Beavercreek, OH",
+    "msa_pop": "814363",
+    "zip": "45424",
+    "city": "Huber heights",
+    "state": "OH",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:14:11.057Z"
   },
   "46143": {
     "msa_id": "26900",
@@ -1146,6 +3033,80 @@
     },
     "probed_at": "2026-03-31T00:59:04.761Z"
   },
+  "46530": {
+    "msa_id": "43780",
+    "msa_name": "South Bend-Mishawaka, IN-MI",
+    "msa_pop": "324490",
+    "zip": "46530",
+    "city": "Granger",
+    "state": "IN",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:45:55.900Z"
+  },
+  "46835": {
+    "msa_id": "23060",
+    "msa_name": "Fort Wayne, IN",
+    "msa_pop": "457842",
+    "zip": "46835",
+    "city": "Fort wayne",
+    "state": "IN",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:29:18.223Z"
+  },
   "47150": {
     "msa_id": "31140",
     "msa_name": "Louisville/Jefferson County, KY-IN",
@@ -1182,6 +3143,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:02:19.923Z"
+  },
+  "47630": {
+    "msa_id": "21780",
+    "msa_name": "Evansville, IN",
+    "msa_pop": "270717",
+    "zip": "47630",
+    "city": "Newburgh",
+    "state": "IN",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:53:28.999Z"
   },
   "48180": {
     "msa_id": "19820",
@@ -1220,6 +3218,154 @@
     },
     "probed_at": "2026-03-31T00:51:54.354Z"
   },
+  "48197": {
+    "msa_id": "11460",
+    "msa_name": "Ann Arbor, MI",
+    "msa_pop": "365536",
+    "zip": "48197",
+    "city": "Ypsilanti",
+    "state": "MI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:41:58.805Z"
+  },
+  "48439": {
+    "msa_id": "22420",
+    "msa_name": "Flint, MI",
+    "msa_pop": "401522",
+    "zip": "48439",
+    "city": "Grand blanc",
+    "state": "MI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:35:51.557Z"
+  },
+  "48823": {
+    "msa_id": "29620",
+    "msa_name": "Lansing-East Lansing, MI",
+    "msa_pop": "473177",
+    "zip": "48823",
+    "city": "East lansing",
+    "state": "MI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:27:51.144Z"
+  },
+  "49009": {
+    "msa_id": "28020",
+    "msa_name": "Kalamazoo-Portage, MI",
+    "msa_pop": "262215",
+    "zip": "49009",
+    "city": "Kalamazoo",
+    "state": "MI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:55:16.266Z"
+  },
   "49424": {
     "msa_id": "24340",
     "msa_name": "Grand Rapids-Wyoming-Kentwood, MI",
@@ -1256,6 +3402,80 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:04:28.113Z"
+  },
+  "50317": {
+    "msa_id": "19780",
+    "msa_name": "Des Moines-West Des Moines, IA",
+    "msa_pop": "737164",
+    "zip": "50317",
+    "city": "Pleasant hill",
+    "state": "IA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:15:59.028Z"
+  },
+  "52302": {
+    "msa_id": "16300",
+    "msa_name": "Cedar Rapids, IA",
+    "msa_pop": "275668",
+    "zip": "52302",
+    "city": "Marion",
+    "state": "IA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:52:03.404Z"
   },
   "53215": {
     "msa_id": "33340",
@@ -1294,6 +3514,154 @@
     },
     "probed_at": "2026-03-31T01:01:15.424Z"
   },
+  "53711": {
+    "msa_id": "31540",
+    "msa_name": "Madison, WI",
+    "msa_pop": "694345",
+    "zip": "53711",
+    "city": "Madison",
+    "state": "WI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:18:08.488Z"
+  },
+  "54115": {
+    "msa_id": "24580",
+    "msa_name": "Green Bay, WI",
+    "msa_pop": "331882",
+    "zip": "54115",
+    "city": "De pere",
+    "state": "WI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:44:51.476Z"
+  },
+  "54880": {
+    "msa_id": "20260",
+    "msa_name": "Duluth, MN-WI",
+    "msa_pop": "281603",
+    "zip": "54880",
+    "city": "Superior",
+    "state": "WI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:50:37.358Z"
+  },
+  "54915": {
+    "msa_id": "11540",
+    "msa_name": "Appleton, WI",
+    "msa_pop": "246433",
+    "zip": "54915",
+    "city": "Appleton",
+    "state": "WI",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:57:24.853Z"
+  },
   "55106": {
     "msa_id": "33460",
     "msa_name": "Minneapolis-St. Paul-Bloomington, MN-WI",
@@ -1330,6 +3698,80 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:52:37.421Z"
+  },
+  "57106": {
+    "msa_id": "43620",
+    "msa_name": "Sioux Falls, SD-MN",
+    "msa_pop": "303827",
+    "zip": "57106",
+    "city": "Sioux falls",
+    "state": "SD",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:48:27.032Z"
+  },
+  "58103": {
+    "msa_id": "22020",
+    "msa_name": "Fargo, ND-MN",
+    "msa_pop": "262620",
+    "zip": "58103",
+    "city": "Fargo",
+    "state": "ND",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:54:54.775Z"
   },
   "60629": {
     "msa_id": "16980",
@@ -1368,6 +3810,117 @@
     },
     "probed_at": "2026-03-31T00:47:56.051Z"
   },
+  "61008": {
+    "msa_id": "40420",
+    "msa_name": "Rockford, IL",
+    "msa_pop": "334124",
+    "zip": "61008",
+    "city": "Belvidere",
+    "state": "IL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:44:29.722Z"
+  },
+  "61265": {
+    "msa_id": "19340",
+    "msa_name": "Davenport-Moline-Rock Island, IA-IL",
+    "msa_pop": "379869",
+    "zip": "61265",
+    "city": "Moline",
+    "state": "IL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:40:10.428Z"
+  },
+  "61554": {
+    "msa_id": "37900",
+    "msa_name": "Peoria, IL",
+    "msa_pop": "361989",
+    "zip": "61554",
+    "city": "Pekin",
+    "state": "IL",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:42:19.990Z"
+  },
   "63376": {
     "msa_id": "41180",
     "msa_name": "St. Louis, MO-IL",
@@ -1404,6 +3957,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:55:06.990Z"
+  },
+  "65807": {
+    "msa_id": "44180",
+    "msa_name": "Springfield, MO",
+    "msa_pop": "490886",
+    "zip": "65807",
+    "city": "Springfield",
+    "state": "MO",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:26:46.878Z"
   },
   "66062": {
     "msa_id": "28140",
@@ -1442,6 +4032,43 @@
     },
     "probed_at": "2026-03-31T00:57:59.433Z"
   },
+  "67212": {
+    "msa_id": "48620",
+    "msa_name": "Wichita, KS",
+    "msa_pop": "652939",
+    "zip": "67212",
+    "city": "Wichita",
+    "state": "KS",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:19:13.255Z"
+  },
   "68104": {
     "msa_id": "36540",
     "msa_name": "Omaha, NE-IA",
@@ -1478,6 +4105,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:06:59.957Z"
+  },
+  "68516": {
+    "msa_id": "30700",
+    "msa_name": "Lincoln, NE",
+    "msa_pop": "343620",
+    "zip": "68516",
+    "city": "Lincoln",
+    "state": "NE",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:43:45.769Z"
   },
   "70072": {
     "msa_id": "35380",
@@ -1516,6 +4180,80 @@
     },
     "probed_at": "2026-03-31T01:07:43.693Z"
   },
+  "70433": {
+    "msa_id": "43640",
+    "msa_name": "Slidell-Mandeville-Covington, LA",
+    "msa_pop": "275583",
+    "zip": "70433",
+    "city": "Covington",
+    "state": "LA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:52:24.843Z"
+  },
+  "70506": {
+    "msa_id": "29180",
+    "msa_name": "Lafayette, LA",
+    "msa_pop": "414288",
+    "zip": "70506",
+    "city": "Lafayette",
+    "state": "LA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:34:24.788Z"
+  },
   "70726": {
     "msa_id": "12940",
     "msa_name": "Baton Rouge, LA",
@@ -1552,6 +4290,117 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:10:36.596Z"
+  },
+  "71111": {
+    "msa_id": "43340",
+    "msa_name": "Shreveport-Bossier City, LA",
+    "msa_pop": "383295",
+    "zip": "71111",
+    "city": "Bossier city",
+    "state": "LA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:39:04.789Z"
+  },
+  "72076": {
+    "msa_id": "30780",
+    "msa_name": "Little Rock-North Little Rock-Conway, AR",
+    "msa_pop": "764582",
+    "zip": "72076",
+    "city": "Gravel ridge",
+    "state": "AR",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:15:37.307Z"
+  },
+  "72712": {
+    "msa_id": "22220",
+    "msa_name": "Fayetteville-Springdale-Rogers, AR",
+    "msa_pop": "590295",
+    "zip": "72712",
+    "city": "Bentonville",
+    "state": "AR",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:22:05.763Z"
   },
   "73099": {
     "msa_id": "36420",
@@ -1664,6 +4513,154 @@
     },
     "probed_at": "2026-03-31T00:48:18.004Z"
   },
+  "75605": {
+    "msa_id": "30980",
+    "msa_name": "Longview, TX",
+    "msa_pop": "293498",
+    "zip": "75605",
+    "city": "Longview",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:49:09.626Z"
+  },
+  "75703": {
+    "msa_id": "46340",
+    "msa_name": "Tyler, TX",
+    "msa_pop": "245209",
+    "zip": "75703",
+    "city": "Tyler",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:57:47.074Z"
+  },
+  "76549": {
+    "msa_id": "28660",
+    "msa_name": "Killeen-Temple, TX",
+    "msa_pop": "501334",
+    "zip": "76549",
+    "city": "Zcta 76549",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:26:24.854Z"
+  },
+  "76706": {
+    "msa_id": "47380",
+    "msa_name": "Waco, TX",
+    "msa_pop": "305370",
+    "zip": "76706",
+    "city": "Waco",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:47:21.789Z"
+  },
   "77494": {
     "msa_id": "26420",
     "msa_name": "Houston-Pasadena-The Woodlands, TX",
@@ -1701,6 +4698,117 @@
     },
     "probed_at": "2026-03-31T00:48:40.124Z"
   },
+  "77705": {
+    "msa_id": "13140",
+    "msa_name": "Beaumont-Port Arthur, TX",
+    "msa_pop": "395479",
+    "zip": "77705",
+    "city": "Beaumont",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:37:16.880Z"
+  },
+  "77845": {
+    "msa_id": "17780",
+    "msa_name": "College Station-Bryan, TX",
+    "msa_pop": "280939",
+    "zip": "77845",
+    "city": "College station",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:50:58.966Z"
+  },
+  "78046": {
+    "msa_id": "29700",
+    "msa_name": "Laredo, TX",
+    "msa_pop": "269148",
+    "zip": "78046",
+    "city": "Zcta 78046",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:53:50.606Z"
+  },
   "78130": {
     "msa_id": "41700",
     "msa_name": "San Antonio-New Braunfels, TX",
@@ -1737,6 +4845,80 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:55:28.763Z"
+  },
+  "78414": {
+    "msa_id": "18580",
+    "msa_name": "Corpus Christi, TX",
+    "msa_pop": "446041",
+    "zip": "78414",
+    "city": "Corpus christi",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:30:23.706Z"
+  },
+  "78521": {
+    "msa_id": "15180",
+    "msa_name": "Brownsville-Harlingen, TX",
+    "msa_pop": "426710",
+    "zip": "78521",
+    "city": "Brownsville",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:32:34.721Z"
   },
   "78572": {
     "msa_id": "32580",
@@ -1812,6 +4994,80 @@
     },
     "probed_at": "2026-03-31T00:56:11.971Z"
   },
+  "79109": {
+    "msa_id": "11100",
+    "msa_name": "Amarillo, TX",
+    "msa_pop": "273100",
+    "zip": "79109",
+    "city": "Amarillo",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:52:46.836Z"
+  },
+  "79424": {
+    "msa_id": "31180",
+    "msa_name": "Lubbock, TX",
+    "msa_pop": "360342",
+    "zip": "79424",
+    "city": "Lubbock",
+    "state": "TX",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:42:41.901Z"
+  },
   "79936": {
     "msa_id": "21340",
     "msa_name": "El Paso, TX",
@@ -1886,6 +5142,154 @@
     },
     "probed_at": "2026-03-31T00:53:41.789Z"
   },
+  "80501": {
+    "msa_id": "14500",
+    "msa_name": "Boulder, CO",
+    "msa_pop": "326831",
+    "zip": "80501",
+    "city": "Longmont",
+    "state": "CO",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:45:33.928Z"
+  },
+  "80525": {
+    "msa_id": "22660",
+    "msa_name": "Fort Collins-Loveland, CO",
+    "msa_pop": "370771",
+    "zip": "80525",
+    "city": "Fort collins",
+    "state": "CO",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:40:32.722Z"
+  },
+  "80634": {
+    "msa_id": "24540",
+    "msa_name": "Greeley, CO",
+    "msa_pop": "359442",
+    "zip": "80634",
+    "city": "Greeley",
+    "state": "CO",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:43:03.262Z"
+  },
+  "80918": {
+    "msa_id": "17820",
+    "msa_name": "Colorado Springs, CO",
+    "msa_pop": "768832",
+    "zip": "80918",
+    "city": "Colorado springs",
+    "state": "CO",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:15:15.374Z"
+  },
   "83709": {
     "msa_id": "14260",
     "msa_name": "Boise City, ID",
@@ -1922,6 +5326,80 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:13:28.046Z"
+  },
+  "84015": {
+    "msa_id": "36260",
+    "msa_name": "Ogden, UT",
+    "msa_pop": "658013",
+    "zip": "84015",
+    "city": "Clearfield",
+    "state": "UT",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:18:29.714Z"
+  },
+  "84043": {
+    "msa_id": "39340",
+    "msa_name": "Provo-Orem-Lehi, UT",
+    "msa_pop": "733218",
+    "zip": "84043",
+    "city": "Lehi",
+    "state": "UT",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:16:20.117Z"
   },
   "84095": {
     "msa_id": "41620",
@@ -2034,6 +5512,43 @@
     },
     "probed_at": "2026-03-31T01:05:33.117Z"
   },
+  "86314": {
+    "msa_id": "39150",
+    "msa_name": "Prescott Valley-Prescott, AZ",
+    "msa_pop": "249081",
+    "zip": "86314",
+    "city": "Prescott valley",
+    "state": "AZ",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:57:03.048Z"
+  },
   "87121": {
     "msa_id": "10740",
     "msa_name": "Albuquerque, NM",
@@ -2107,6 +5622,43 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:57:16.415Z"
+  },
+  "89502": {
+    "msa_id": "39900",
+    "msa_name": "Reno, NV",
+    "msa_pop": "564527",
+    "zip": "89502",
+    "city": "Reno",
+    "state": "NV",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:23:54.084Z"
   },
   "90011": {
     "msa_id": "31080",
@@ -2256,6 +5808,80 @@
     },
     "probed_at": "2026-03-31T01:13:06.828Z"
   },
+  "93117": {
+    "msa_id": "42200",
+    "msa_name": "Santa Maria-Santa Barbara, CA",
+    "msa_pop": "441257",
+    "zip": "93117",
+    "city": "Goleta",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:30:45.632Z"
+  },
+  "93257": {
+    "msa_id": "47300",
+    "msa_name": "Visalia, CA",
+    "msa_pop": "479468",
+    "zip": "93257",
+    "city": "Porterville",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:27:29.817Z"
+  },
   "93307": {
     "msa_id": "12540",
     "msa_name": "Bakersfield-Delano, CA",
@@ -2293,6 +5919,80 @@
     },
     "probed_at": "2026-03-31T01:09:09.063Z"
   },
+  "93446": {
+    "msa_id": "42020",
+    "msa_name": "San Luis Obispo-Paso Robles, CA",
+    "msa_pop": "281639",
+    "zip": "93446",
+    "city": "Adelaide",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:50:15.158Z"
+  },
+  "93635": {
+    "msa_id": "32900",
+    "msa_name": "Merced, CA",
+    "msa_pop": "291920",
+    "zip": "93635",
+    "city": "Los banos",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:49:31.664Z"
+  },
   "93722": {
     "msa_id": "23420",
     "msa_name": "Fresno, CA",
@@ -2329,6 +6029,80 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:04:06.826Z"
+  },
+  "93906": {
+    "msa_id": "41500",
+    "msa_name": "Salinas, CA",
+    "msa_pop": "430723",
+    "zip": "93906",
+    "city": "Salinas",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:31:50.796Z"
+  },
+  "94533": {
+    "msa_id": "46700",
+    "msa_name": "Vallejo, CA",
+    "msa_pop": "449218",
+    "zip": "94533",
+    "city": "Fairfield",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:30:01.974Z"
   },
   "94565": {
     "msa_id": "41860",
@@ -2403,6 +6177,154 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:59:47.704Z"
+  },
+  "95076": {
+    "msa_id": "42100",
+    "msa_name": "Santa Cruz-Watsonville, CA",
+    "msa_pop": "261547",
+    "zip": "95076",
+    "city": "La selva beach",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:55:37.453Z"
+  },
+  "95206": {
+    "msa_id": "44700",
+    "msa_name": "Stockton-Lodi, CA",
+    "msa_pop": "800965",
+    "zip": "95206",
+    "city": "Stockton",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:14:32.867Z"
+  },
+  "95355": {
+    "msa_id": "33700",
+    "msa_name": "Modesto, CA",
+    "msa_pop": "551430",
+    "zip": "95355",
+    "city": "Modesto",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:24:36.888Z"
+  },
+  "95403": {
+    "msa_id": "42220",
+    "msa_name": "Santa Rosa-Petaluma, CA",
+    "msa_pop": "481812",
+    "zip": "95403",
+    "city": "Santa rosa",
+    "state": "CA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:27:08.389Z"
   },
   "95823": {
     "msa_id": "40900",
@@ -2515,6 +6437,117 @@
     },
     "probed_at": "2026-03-31T00:55:50.266Z"
   },
+  "97301": {
+    "msa_id": "41420",
+    "msa_name": "Salem, OR",
+    "msa_pop": "436546",
+    "zip": "97301",
+    "city": "Salem",
+    "state": "OR",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:31:06.742Z"
+  },
+  "97402": {
+    "msa_id": "21660",
+    "msa_name": "Eugene-Springfield, OR",
+    "msa_pop": "381181",
+    "zip": "97402",
+    "city": "Eugene",
+    "state": "OR",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:39:48.773Z"
+  },
+  "97701": {
+    "msa_id": "13460",
+    "msa_name": "Bend, OR",
+    "msa_pop": "260919",
+    "zip": "97701",
+    "city": "Bend",
+    "state": "OR",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:55:58.852Z"
+  },
   "98052": {
     "msa_id": "42660",
     "msa_name": "Seattle-Tacoma-Bellevue, WA",
@@ -2551,6 +6584,228 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T00:52:15.888Z"
+  },
+  "98366": {
+    "msa_id": "14740",
+    "msa_name": "Bremerton-Silverdale-Port Orchard, WA",
+    "msa_pop": "277658",
+    "zip": "98366",
+    "city": "South park villa",
+    "state": "WA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:51:41.340Z"
+  },
+  "98501": {
+    "msa_id": "36500",
+    "msa_name": "Olympia-Lacey-Tumwater, WA",
+    "msa_pop": "299003",
+    "zip": "98501",
+    "city": "Olympia",
+    "state": "WA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:48:48.317Z"
+  },
+  "98902": {
+    "msa_id": "49420",
+    "msa_name": "Yakima, WA",
+    "msa_pop": "256643",
+    "zip": "98902",
+    "city": "Yakima",
+    "state": "WA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:56:20.320Z"
+  },
+  "99208": {
+    "msa_id": "44060",
+    "msa_name": "Spokane-Spokane Valley, WA",
+    "msa_pop": "600292",
+    "zip": "99208",
+    "city": "Spokane",
+    "state": "WA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:21:23.515Z"
+  },
+  "99301": {
+    "msa_id": "28420",
+    "msa_name": "Kennewick-Richland, WA",
+    "msa_pop": "314253",
+    "zip": "99301",
+    "city": "Pasco",
+    "state": "WA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:46:17.192Z"
+  },
+  "99654": {
+    "msa_id": "11260",
+    "msa_name": "Anchorage, AK",
+    "msa_pop": "401314",
+    "zip": "99654",
+    "city": "Wasilla",
+    "state": "AK",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:36:12.730Z"
   },
   "02301": {
     "msa_id": "14460",
@@ -2736,5 +6991,301 @@
       "reason": "found"
     },
     "probed_at": "2026-03-31T01:11:40.966Z"
+  },
+  "06516": {
+    "msa_id": "35300",
+    "msa_name": "New Haven, CT",
+    "msa_pop": "568158",
+    "zip": "06516",
+    "city": "West haven",
+    "state": "CT",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:23:11.061Z"
+  },
+  "04103": {
+    "msa_id": "38860",
+    "msa_name": "Portland-South Portland, ME",
+    "msa_pop": "566329",
+    "zip": "04103",
+    "city": "Portland",
+    "state": "ME",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:23:32.808Z"
+  },
+  "01085": {
+    "msa_id": "44140",
+    "msa_name": "Springfield, MA",
+    "msa_pop": "460291",
+    "zip": "01085",
+    "city": "Montgomery",
+    "state": "MA",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:28:56.526Z"
+  },
+  "06010": {
+    "msa_id": "47930",
+    "msa_name": "Waterbury-Shelton, CT",
+    "msa_pop": "456128",
+    "zip": "06010",
+    "city": "Bristol",
+    "state": "CT",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:29:40.134Z"
+  },
+  "03103": {
+    "msa_id": "31700",
+    "msa_name": "Manchester-Nashua, NH",
+    "msa_pop": "427354",
+    "zip": "03103",
+    "city": "Manchester",
+    "state": "NH",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:32:12.691Z"
+  },
+  "08540": {
+    "msa_id": "45940",
+    "msa_name": "Trenton-Princeton, NJ",
+    "msa_pop": "381671",
+    "zip": "08540",
+    "city": "Princeton",
+    "state": "NJ",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:39:26.560Z"
+  },
+  "08234": {
+    "msa_id": "12100",
+    "msa_name": "Atlantic City-Hammonton, NJ",
+    "msa_pop": "369823",
+    "zip": "08234",
+    "city": "Zcta 08234",
+    "state": "NJ",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:41:16.112Z"
+  },
+  "06360": {
+    "msa_id": "35980",
+    "msa_name": "Norwich-New London-Willimantic, CT",
+    "msa_pop": "279634",
+    "zip": "06360",
+    "city": "Norwich",
+    "state": "CT",
+    "status": "full_fresh_confirmed",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "asin": "B07ZLF9WQ5",
+      "name": "bananas",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "asin": "B08911ZP3Y",
+      "name": "strawberries",
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-03-31T01:51:20.185Z"
   }
 }

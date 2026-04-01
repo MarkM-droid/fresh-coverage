@@ -1,17 +1,18 @@
 /**
- * report.js — Generate reports/index.html with 4-layer Leaflet coverage map
+ * report.js — Generate reports/index.html with MSA-based coverage map
  *
- * Layers:
- *  1. Facility network (toggleable per type)
- *  2. DMA boundaries choropleth (toggleable)
- *  3. Confirmed cities (toggleable)
- *  4. 50-mile service reach circles (toggleable, default OFF)
+ * Tabs: Map | Methodology | Project Summary
+ *
+ * Map Layers:
+ *  1. MSA Coverage (default ON) — choropleth from msa_probe_v2_results.json
+ *  2. Facility Network (default OFF, per-type toggleable)
+ *  3. 50-mile service circles (default OFF)
  *
  * Usage: node src/report.js
  */
 
 import Database from 'better-sqlite3';
-import { existsSync, mkdirSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -19,75 +20,38 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
 const DB_PATH = join(PROJECT_ROOT, 'data', 'coverage.db');
 const REPORTS_DIR = join(PROJECT_ROOT, 'reports');
-
-const STATE_FIPS = {
-  AL:'01',AK:'02',AZ:'04',AR:'05',CA:'06',CO:'08',CT:'09',DE:'10',DC:'11',FL:'12',
-  GA:'13',HI:'15',ID:'16',IL:'17',IN:'18',IA:'19',KS:'20',KY:'21',LA:'22',ME:'23',
-  MD:'24',MA:'25',MI:'26',MN:'27',MS:'28',MO:'29',MT:'30',NE:'31',NV:'32',NH:'33',
-  NJ:'34',NM:'35',NY:'36',NC:'37',ND:'38',OH:'39',OK:'40',OR:'41',PA:'42',RI:'44',
-  SC:'45',SD:'46',TN:'47',TX:'48',UT:'49',VT:'50',VA:'51',WA:'53',WV:'54',WI:'55',WY:'56'
-};
+const MSA_PROBE_PATH = join(PROJECT_ROOT, 'data', 'msa_probe_v2_results.json');
 
 function log(msg) { console.log(`[report] ${new Date().toISOString()} ${msg}`); }
 function esc(str) {
   if (str == null) return '';
   return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-function fmt(unixTs) {
-  if (!unixTs) return '—';
-  return new Date(unixTs * 1000).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' });
-}
 
 /** Extract facility code from address_raw */
 function extractFacilityCode(addr) {
   if (!addr) return null;
-  // Match e.g. "DAL3 - 1234 Main St" or facility codes like VBX3, UAB7, etc.
   const dashMatch = addr.match(/^([A-Z][A-Z0-9]{2,5})\s*-\s*/);
   if (dashMatch) return dashMatch[1];
   const codeMatch = addr.match(/\b([A-Z][A-Z0-9]{2,5})\b/);
   return codeMatch ? codeMatch[1] : null;
 }
 
-/** Why a facility type is/isn't fresh-capable */
+/** Describe what a facility type means for fresh grocery */
 function facilityCapabilityNote(type) {
   switch (type) {
-    case 'ssd_fulfillment':   return 'Primary grocery node — SSD facility with temperature-controlled zones';
-    case 'fresh_hub':         return 'Amazon Fresh dark store — purpose-built fulfillment-only perishable facility';
-    case 'whole_foods_node':  return 'Whole Foods store serving as microfulfillment node';
-    case 'amazon_fresh_store':return 'Amazon Fresh store (closing) — may transition to online-only hub';
-    case 'fresh_distribution':return 'Fresh distribution — likely grocery-capable';
-    case 'same_day_facility': return 'Same-day facility — grocery capability unconfirmed';
-    case 'fulfillment_center':return 'Standard fulfillment center — does not typically handle perishables';
-    case 'delivery_station':  return 'Last-mile delivery station — not a fulfillment facility';
-    case 'sortation_center':  return 'Sortation center — package routing, not grocery fulfillment';
+    case 'ssd_fulfillment':    return 'Primary grocery node — SSD facility with temperature-controlled zones';
+    case 'fresh_hub':          return 'Amazon Fresh dark store — purpose-built fulfillment-only perishable facility';
+    case 'whole_foods_node':   return 'Whole Foods store serving as microfulfillment node';
+    case 'amazon_fresh_store': return 'Amazon Fresh store — may transition to online-only hub';
+    case 'fresh_distribution': return 'Fresh distribution — likely grocery-capable';
+    case 'same_day_facility':  return 'Same-day facility — grocery capability unconfirmed';
+    case 'fulfillment_center': return 'Standard fulfillment center — does not typically handle perishables';
+    case 'delivery_station':   return 'Last-mile delivery station — not a fulfillment facility';
+    case 'sortation_center':   return 'Sortation center — package routing, not grocery fulfillment';
     case 'distribution_center':return 'Distribution center — general logistics, not fresh-specific';
     default:                   return 'Amazon facility — grocery capability unconfirmed';
   }
-}
-
-function computeTimeline(db, retailers) {
-  const byDate = db.prepare(`
-    SELECT snapshot_date, retailer_id, total_cities_confirmed, total_cities_probed,
-           total_signals, dmas_with_coverage
-    FROM snapshot_totals
-    WHERE retailer_id = 'amazon_same_day'
-    ORDER BY snapshot_date ASC, retailer_id ASC
-  `).all();
-
-  const byDmaFirstSeen = {};
-  for (const r of retailers) {
-    byDmaFirstSeen[r.id] = db.prepare(`
-      SELECT d.id as dma_id, d.name as dma_name, d.tier,
-        MIN(s.snapshot_date) as first_confirmed_date
-      FROM snapshots s
-      JOIN dmas d ON d.id = s.dma_id
-      WHERE s.retailer_id = ? AND s.cities_confirmed > 0
-      GROUP BY s.dma_id
-      ORDER BY first_confirmed_date ASC
-    `).all(r.id);
-  }
-
-  return { byDate, byDmaFirstSeen };
 }
 
 async function main() {
@@ -95,52 +59,62 @@ async function main() {
     console.error('Database not found. Run npm run setup first.');
     process.exit(1);
   }
+  if (!existsSync(MSA_PROBE_PATH)) {
+    console.error('MSA probe data not found: ' + MSA_PROBE_PATH);
+    process.exit(1);
+  }
 
   const db = new Database(DB_PATH);
   db.pragma('journal_mode = WAL');
 
-  const retailers = db.prepare("SELECT * FROM retailers WHERE id = 'amazon_same_day'").all();
+  // ── Load MSA probe results ────────────────────────────────────────────────
+  const msaProbeRaw = JSON.parse(readFileSync(MSA_PROBE_PATH, 'utf8'));
+  const msaProbeArr = Object.values(msaProbeRaw);
 
-  // ── Data queries ─────────────────────────────────────────────────────────────
+  const msaTotal = msaProbeArr.length;
+  const msaConfirmed = msaProbeArr.filter(m => m.status === 'full_fresh' || m.status === 'ambient_fresh').length;
+  const msaNone = msaProbeArr.filter(m => m.status === 'none').length;
 
-  // Coverage rows for data table
-  const coverageRows = db.prepare(`
-    SELECT cc.city, cc.state, cc.available, cc.confidence, cc.source, cc.first_seen,
-           cc.dma_id, d.name AS dma_name, d.tier,
-           c.lat, c.lng,
-           cc.retailer_id, r.name AS retailer_name,
-           cc.source_url, cc.confidence_tier,
-           cc.evidence_snippet, cc.evidence_query
-    FROM city_coverage cc
-    LEFT JOIN cities c ON c.city=cc.city AND c.state=cc.state
-    LEFT JOIN dmas d ON d.id=cc.dma_id
-    JOIN retailers r ON r.id=cc.retailer_id
-    ORDER BY cc.state, cc.city
-  `).all();
+  // Find probe date (most recent probed_at)
+  const probeDates = msaProbeArr.map(m => m.probed_at).filter(Boolean).sort();
+  const probeDate = probeDates.length
+    ? new Date(probeDates[probeDates.length - 1]).toLocaleDateString('en-US', { month:'long', day:'numeric', year:'numeric' })
+    : 'March 2026';
 
-  // Map points — confirmed cities with coords
-  const mapPoints = db.prepare(`
-    SELECT cc.city, cc.state, cc.confidence_tier, cc.source, cc.source_url,
-           cc.evidence_snippet, cc.first_seen, cc.dma_id,
-           d.name AS dma_name,
-           c.lat, c.lng
-    FROM city_coverage cc
-    LEFT JOIN cities c ON c.city=cc.city AND c.state=cc.state
-    LEFT JOIN dmas d ON d.id=cc.dma_id
-    WHERE cc.available=1 AND c.lat IS NOT NULL AND c.lng IS NOT NULL
-    ORDER BY cc.state, cc.city
-  `).all().map(r => ({
-    lat: r.lat, lng: r.lng, city: r.city, state: r.state,
-    dma_name: r.dma_name || null,
-    confidence_tier: r.confidence_tier || 'verified',
-    source: r.source, source_url: r.source_url,
-    evidence_snippet: r.evidence_snippet ? r.evidence_snippet.slice(0, 200) : null,
-    first_seen: r.first_seen
-  }));
+  // Build a lookup map by msa_id (string) for the client-side JS
+  const msaDataForMap = {};
+  msaProbeArr.forEach(m => {
+    // Summarize offer types found across all ZIPs
+    const offerTypes = new Set();
+    if (m.zip_results) {
+      Object.values(m.zip_results).forEach(zipData => {
+        ['bananas','strawberries'].forEach(prod => {
+          const prodData = zipData[prod];
+          if (prodData && prodData.offers) {
+            prodData.offers.forEach(o => {
+              const sf = (o.ships_from || '').toLowerCase();
+              if (sf.includes('whole foods')) offerTypes.add('Whole Foods');
+              else if (sf.includes('amazonfresh') || sf.includes('amazon fresh')) offerTypes.add('AmazonFresh');
+              else if (sf.includes('amazon.com')) offerTypes.add('Amazon.com (same-day)');
+              else if (sf) offerTypes.add(o.ships_from.slice(0, 30));
+            });
+          }
+        });
+      });
+    }
+    msaDataForMap[m.msa_id] = {
+      msa_id: m.msa_id,
+      msa_name: m.msa_name,
+      msa_population: m.msa_population,
+      status: m.status,
+      zips_tested: m.zips_tested || [],
+      offer_types: [...offerTypes]
+    };
+  });
 
-  // Loc points — facilities by type (Layer 1)
+  // ── Load facility data from SQLite ────────────────────────────────────────
   const locPoints = db.prepare(`
-    SELECT address_raw, city, state, type, lat, lng, confidence_tier, source_url, dma_id
+    SELECT address_raw, city, state, type, lat, lng, confidence_tier, source_url
     FROM locations
     WHERE lat IS NOT NULL AND lng IS NOT NULL
       AND type != 'corporate'
@@ -156,306 +130,80 @@ async function main() {
     capability_note: facilityCapabilityNote(l.type || 'unknown')
   }));
 
-  // DMA data with top confirmed cities and evidence snippet
-  const topCitiesStmt = db.prepare(`
-    SELECT cc.city, cc.state FROM city_coverage cc
-    WHERE cc.dma_id=? AND cc.available=1
-    ORDER BY cc.first_seen ASC
-    LIMIT 5
-  `);
-  const dmaEvidenceStmt = db.prepare(`
-    SELECT source_url, snippet FROM signals
-    WHERE dma_id=? AND signal_type='confirmed_available'
-    ORDER BY confidence DESC LIMIT 1
-  `);
-
-  const dmaRows = db.prepare(`
-    SELECT d.id as dma_id, d.name as dma_name, d.tier, d.tv_homes,
-           d.place_probe_status, d.centroid_lat, d.centroid_lng,
-           COUNT(DISTINCT cc.city || cc.state) as cities_confirmed,
-           COUNT(DISTINCT c.id) as cities_total,
-           COALESCE(dc.cities_total - dc.cities_unknown, 0) as cities_probed
-    FROM dmas d
-    LEFT JOIN city_coverage cc ON cc.dma_id=d.id AND cc.available=1
-    LEFT JOIN cities c ON c.dma_id=d.id
-    LEFT JOIN dma_coverage dc ON dc.dma_id=d.id AND dc.retailer_id='amazon_same_day'
-    GROUP BY d.id
-    ORDER BY d.id ASC
-  `).all();
-
-  const dmaData = dmaRows.map(row => {
-    const topCities = topCitiesStmt.all(row.dma_id).map(c => c.city + ', ' + c.state);
-    const evidence = dmaEvidenceStmt.get(row.dma_id);
-    return {
-      ...row,
-      cities_probed: row.cities_probed || 0,
-      top_cities: topCities,
-      evidence_snippet: evidence?.snippet?.slice(0, 200) || null,
-      evidence_url: evidence?.source_url || null,
-      coverage_pct: row.cities_total > 0 ? (row.cities_confirmed / row.cities_total * 100) : 0
-    };
-  });
-
-  // County → DMA mapping for choropleth
-  const countyDmaVotes = {};
-  db.prepare(`
-    SELECT state, county, dma_id, COUNT(*) as cnt
-    FROM zip_master
-    WHERE dma_id IS NOT NULL AND county IS NOT NULL AND county != ''
-    GROUP BY state, county, dma_id
-  `).all().forEach(row => {
-    const fips = STATE_FIPS[row.state];
-    if (!fips) return;
-    const key = fips + '|' + row.county.toLowerCase().trim();
-    if (!countyDmaVotes[key] || countyDmaVotes[key].cnt < row.cnt) {
-      countyDmaVotes[key] = { dma_id: row.dma_id, cnt: row.cnt };
-    }
-  });
-  const countyToDma = {};
-  Object.entries(countyDmaVotes).forEach(([k, v]) => { countyToDma[k] = v.dma_id; });
-
-  const timeline = computeTimeline(db, retailers);
-
-  // ── Method stats ──────────────────────────────────────────────────────────────
-  const dmas_assessed = db.prepare("SELECT COUNT(*) as n FROM dmas WHERE place_probe_status != 'unprobed'").get().n;
-  const dmas_confirmed = db.prepare(`
-    SELECT COUNT(DISTINCT dma_id) as n FROM city_coverage WHERE available=1 AND dma_id IS NOT NULL
-  `).get().n;
-  const dmas_probable = db.prepare(`
-    SELECT COUNT(*) as n FROM dmas
-    WHERE place_probe_status='has_fresh'
-    AND id NOT IN (SELECT DISTINCT dma_id FROM city_coverage WHERE available=1 AND dma_id IS NOT NULL)
-  `).get().n;
-  const total_us_population = db.prepare('SELECT SUM(population) as n FROM zip_master').get().n || 0;
-
-  // Approximate population covered: ZIPs within ~50 miles of a confirmed SSD/Fresh hub facility
-  // We use a bounding box approximation: 0.75 degrees lat/lng ≈ 50 miles
-  const freshFacilities = db.prepare(`
-    SELECT lat, lng FROM locations
-    WHERE lat IS NOT NULL AND lng IS NOT NULL
-    AND type IN ('ssd_fulfillment','fresh_hub','fresh_distribution','same_day_facility')
-  `).all();
-
-  let population_covered = 0;
-  if (freshFacilities.length > 0) {
-    // For each zip, check if it's within ~50 miles (0.725 deg lat) of any fresh facility
-    const zipsWithPop = db.prepare(`
-      SELECT zip, lat, lng, population FROM zip_master
-      WHERE lat IS NOT NULL AND lng IS NOT NULL AND population IS NOT NULL
-    `).all();
-    const covered = new Set();
-    for (const zip of zipsWithPop) {
-      for (const fac of freshFacilities) {
-        const dlat = Math.abs(zip.lat - fac.lat);
-        const dlng = Math.abs(zip.lng - fac.lng);
-        if (dlat < 0.75 && dlng < 0.75) {
-          covered.add(zip.zip);
-          break;
-        }
-      }
-    }
-    for (const z of zipsWithPop) {
-      if (covered.has(z.zip)) population_covered += (z.population || 0);
-    }
-  }
-
   // Facility counts by type for intro panel
   const facilityByType = db.prepare(`
     SELECT type, COUNT(*) as n FROM locations
-    WHERE retailer_id='amazon_same_day' AND type != 'corporate' AND lat IS NOT NULL
+    WHERE type != 'corporate' AND lat IS NOT NULL
     GROUP BY type ORDER BY n DESC
   `).all();
   const facilityMap = {};
-  facilityByType.forEach(r => facilityMap[r.type] = r.n);
+  facilityByType.forEach(r => { facilityMap[r.type] = r.n; });
+  const totalLocations = facilityByType.reduce((a, r) => a + r.n, 0);
 
-  // ZIP coverage stats
-  // Coverage stats based on Amazon's stated 50-mile service radius from confirmed SSD/Fresh facilities
-  // Pre-computed by scripts — see data/coverage_stats_50mi.json
-  let covStats50mi = { coveredZips:9539, totalZips:31095, zipPct:31, coveredPop:193000000, totalPop:317333551, popPct:61, coveredTV:95000000, totalTV:127956490, tvPct:74 };
-  try {
-    const { readFileSync: rfs } = await import('fs');
-    covStats50mi = JSON.parse(rfs(join(PROJECT_ROOT,'data','coverage_stats_50mi.json'),'utf8'));
-  } catch(e) {}
+  // ── Generate CSV download ─────────────────────────────────────────────────
+  // Map MSA probe status for each ZIP via zip_master → MSA proximity
+  // Strategy: look at confirmed SSD/fresh facilities, mark ZIPs within 50mi
+  const freshFacilities = db.prepare(`
+    SELECT lat, lng FROM locations
+    WHERE lat IS NOT NULL AND lng IS NOT NULL
+      AND type IN ('ssd_fulfillment','fresh_hub','fresh_distribution','same_day_facility')
+  `).all();
 
-  const zipStats = {
-    total_zips: covStats50mi.totalZips,
-    covered_zips: covStats50mi.coveredZips,
-    total_pop: covStats50mi.totalPop,
-    covered_pop: covStats50mi.coveredPop
-  };
-  const tvStats = {
-    total_tv: covStats50mi.totalTV,
-    covered_tv: covStats50mi.coveredTV
-  };
-  const zipCovPct = covStats50mi.zipPct;
-  const popCovPct2 = covStats50mi.popPct;
-  const tvCovPct = covStats50mi.tvPct;
+  const zipsWithPop = db.prepare(`
+    SELECT z.zip, z.city, z.state, z.population, z.lat, z.lng,
+           d.name AS dma_name, d.tier AS dma_tier
+    FROM zip_master z
+    LEFT JOIN dmas d ON d.id = z.dma_id
+    WHERE z.lat IS NOT NULL AND z.lng IS NOT NULL AND z.population IS NOT NULL
+    ORDER BY z.state, z.zip
+  `).all();
 
-  const methodStats = {
-    probesDone: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='done'").get().n,
-    probesPending: db.prepare("SELECT COUNT(*) as n FROM probe_queue WHERE status='pending'").get().n,
-    avgConfidence: db.prepare("SELECT ROUND(AVG(confidence),1) as a FROM city_coverage WHERE available=1").get().a,
-    totalLocations: db.prepare("SELECT COUNT(*) as n FROM locations WHERE type != 'corporate'").get().n,
-    dmas_assessed, dmas_confirmed, dmas_probable,
-    dmas_total: 209,
-    population_covered,
-    total_us_population,
-    facilityMap,
-    zipStats, tvStats, zipCovPct, popCovPct2, tvCovPct
-  };
+  const csvRows = ['zip,city,state,population,dma_name,dma_tier,amazon_sameday_msa_status,amazon_sameday_50mi_coverage,notes'];
+  let csvCoveredZips = 0, csvTotalZips = 0, csvCoveredPop = 0, csvTotalPop = 0;
 
-  // ── New this week ─────────────────────────────────────────────────────────────
-  const oneWeekAgo = Math.floor(Date.now() / 1000) - 86400 * 7;
-  const newThisWeek = db.prepare(`
-    SELECT cc.city, cc.state, cc.retailer_id, r.name AS retailer_name,
-           d.name AS dma_name, cc.first_seen
-    FROM city_coverage cc
-    JOIN retailers r ON r.id=cc.retailer_id
-    LEFT JOIN dmas d ON d.id=cc.dma_id
-    WHERE cc.available=1 AND cc.first_seen >= ?
-    ORDER BY cc.first_seen DESC LIMIT 100
-  `).all(oneWeekAgo);
+  for (const zip of zipsWithPop) {
+    csvTotalZips++;
+    csvTotalPop += (zip.population || 0);
 
-  // ── Summary stats ─────────────────────────────────────────────────────────────
-  const TOTAL_TV_HOMES = db.prepare('SELECT SUM(tv_homes) as t FROM dmas').get().t || 1;
-  const summaries = {};
-  const CITY_TARGET = 2300;
-  const DMA_ADDRESSABLE = 190;
+    // Check 50mi proximity
+    let within50mi = false;
+    for (const fac of freshFacilities) {
+      const dlat = Math.abs(zip.lat - fac.lat);
+      const dlng = Math.abs(zip.lng - fac.lng);
+      if (dlat < 0.75 && dlng < 0.75) { within50mi = true; break; }
+    }
+    if (within50mi) { csvCoveredZips++; csvCoveredPop += (zip.population || 0); }
 
-  for (const r of retailers) {
-    const base = db.prepare(`
-      SELECT
-        COUNT(*) FILTER (WHERE cc.available = 1) AS covered,
-        COUNT(DISTINCT cc.dma_id) FILTER (WHERE cc.available = 1 AND cc.dma_id IS NOT NULL) AS dmas_covered,
-        COUNT(DISTINCT cc.state) FILTER (WHERE cc.available = 1) AS states,
-        MAX(cc.first_seen) AS last_checked
-      FROM city_coverage cc WHERE cc.retailer_id = ?
-    `).get(r.id);
-
-    const coveredTvHomes = db.prepare(`
-      SELECT COALESCE(SUM(d.tv_homes), 0) as tv_homes
-      FROM dmas d WHERE d.id IN (
-        SELECT DISTINCT dma_id FROM city_coverage
-        WHERE retailer_id=? AND available=1 AND dma_id IS NOT NULL
-      )
-    `).get(r.id).tv_homes;
-
-    summaries[r.id] = {
-      ...base, covered_tv_homes: coveredTvHomes,
-      city_pct: ((base.covered / CITY_TARGET) * 100).toFixed(1),
-      dma_pct: ((base.dmas_covered / DMA_ADDRESSABLE) * 100).toFixed(1),
-      pop_pct: ((coveredTvHomes / TOTAL_TV_HOMES) * 100).toFixed(1),
-    };
+    const coverage50mi = within50mi ? 'within_50mi_of_ssd_facility' : 'outside_50mi_radius';
+    const note = '';
+    csvRows.push([zip.zip, zip.city, zip.state, zip.population||0,
+      zip.dma_name||'', zip.dma_tier||'', '', coverage50mi, note].join(','));
   }
+
+  const csvPath = join(PROJECT_ROOT, 'docs', 'amazon-sameday-coverage-by-zip.csv');
+  if (!existsSync(join(PROJECT_ROOT, 'docs'))) mkdirSync(join(PROJECT_ROOT, 'docs'), { recursive: true });
+  writeFileSync(csvPath, csvRows.join('\n'));
+  log(`CSV written → ${csvPath} (${csvCoveredZips} covered ZIPs of ${csvTotalZips})`);
 
   db.close();
 
-  // ── Build HTML ────────────────────────────────────────────────────────────────
+  // ── Build HTML ────────────────────────────────────────────────────────────
   const generatedAt = new Date().toLocaleString('en-US', {
     month:'short', day:'numeric', year:'numeric',
     hour:'2-digit', minute:'2-digit', timeZoneName:'short'
   });
-  const generatedDate = new Date().toLocaleDateString('en-US', { month:'long', day:'numeric', year:'numeric' });
 
-  const retailerColors = {};
-  const palette = ['#e74c3c','#3498db','#2ecc71','#f39c12','#9b59b6','#1abc9c'];
-  retailers.forEach((r, i) => { retailerColors[r.id] = palette[i % palette.length]; });
-
-  function availLabel(a) {
-    if (a === 1) return 'Available';
-    if (a === 0) return 'Not Available';
-    return 'Unknown';
-  }
-
-  function provenanceHtml(r) {
-    const tierIcon = r.confidence_tier === 'verified' ? '✅' : r.confidence_tier === 'inferred' ? '🟡' : '⚫';
-    const parts = [`${tierIcon} ${esc(r.source) || 'unknown'}`];
-    if (r.evidence_query) parts.push(`Query: <em>${esc(r.evidence_query)}</em>`);
-    if (r.evidence_snippet) parts.push(`"${esc(r.evidence_snippet.slice(0,200))}${r.evidence_snippet.length > 200 ? '…' : ''}"`);
-    if (r.source_url) parts.push(`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">Source &rarr;</a>`);
-    return parts.join('<br>');
-  }
-
-  const tableRows = coverageRows.map(r => `
-<tr data-retailer="${esc(r.retailer_id)}" data-state="${esc(r.state)}" data-avail="${r.available}" class="has-provenance">
-  <td>${esc(r.city)}</td>
-  <td>${esc(r.state)}</td>
-  <td>${esc(r.dma_name) || '—'}</td>
-  <td>${esc(r.tier) || '—'}</td>
-  <td>${esc(r.retailer_name)}</td>
-  <td class="avail-${r.available===1?'yes':r.available===0?'no':'unk'}">${availLabel(r.available)}</td>
-  <td>${r.confidence != null ? r.confidence+'%' : '—'}</td>
-  <td class="provenance-cell">
-    ${r.confidence_tier === 'verified' ? '✅' : r.confidence_tier === 'inferred' ? '🟡' : '⚫'} ${esc(r.source) || '—'}
-    <div class="provenance-tooltip">${provenanceHtml(r)}</div>
-  </td>
-  <td>${fmt(r.first_seen)}</td>
-</tr>`).join('');
-
-  const retailerFilterOpts = retailers.map(r =>
-    `<option value="${esc(r.id)}">${esc(r.name)}</option>`).join('');
-
-  const newRows = newThisWeek.length
-    ? newThisWeek.map(r => `<tr><td>${esc(r.city)}</td><td>${esc(r.state)}</td><td>${esc(r.dma_name)||'—'}</td><td>${esc(r.retailer_name)}</td><td>${fmt(r.first_seen)}</td></tr>`).join('')
-    : '<tr><td colspan="5" style="color:#888;text-align:center">No new coverage this week</td></tr>';
-
-  const summaryCards = retailers.map(r => {
-    const s = summaries[r.id] || {};
-    const covered = s.covered ?? 0;
-    const dmasCovered = s.dmas_covered ?? 0;
-    const cityPct = s.city_pct ?? '0.0';
-    const dmaPct = s.dma_pct ?? '0.0';
-    const color = retailerColors[r.id];
-    return `
-    <div class="card-group" style="border-top:4px solid ${color}">
-      <div class="card-group-name">${esc(r.name)} &nbsp;·&nbsp; updated ${fmt(s.last_checked)}</div>
-      <div class="card-trio">
-        <div class="card-tracker">
-          <div class="tracker-pct" style="color:${color}">${cityPct}%</div>
-          <div class="tracker-label">DMA Coverage</div>
-          <div class="tracker-detail">${covered.toLocaleString()} confirmed locations</div>
-          <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(cityPct,100)}%;background:${color}"></div></div>
-        </div>
-        <div class="card-tracker">
-          <div class="tracker-pct" style="color:${color}">${dmaPct}%</div>
-          <div class="tracker-label">DMA Reach</div>
-          <div class="tracker-detail">${dmasCovered} / 190 addressable DMAs &nbsp;·&nbsp; ${s.states ?? 0} states</div>
-          <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(dmaPct,100)}%;background:${color}"></div></div>
-        </div>
-        <div class="card-tracker">
-          <div class="tracker-pct" style="color:${color}">${s.pop_pct ?? '0.0'}%</div>
-          <div class="tracker-label">TV Household Reach</div>
-          <div class="tracker-detail">${Math.round((s.covered_tv_homes||0)/1e6*10)/10}M / ${Math.round(TOTAL_TV_HOMES/1e6)}M TV households</div>
-          <div class="tracker-bar"><div class="tracker-fill" style="width:${Math.min(s.pop_pct??0,100)}%;background:${color}"></div></div>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-
-  // Completeness stats for banner
-  const dmasAssessedPct = Math.round(methodStats.dmas_assessed / methodStats.dmas_total * 100);
-  const popCovPct = methodStats.total_us_population > 0
-    ? Math.round(methodStats.population_covered / methodStats.total_us_population * 100)
-    : 0;
-
-  // JSON data for map
-  const mapPointsJson = JSON.stringify(mapPoints);
+  const msaDataJson = JSON.stringify(msaDataForMap);
   const locPointsJson = JSON.stringify(locPoints);
-  const dmaDataJson = JSON.stringify(dmaData);
-  const countyToDmaJson = JSON.stringify(countyToDma);
-  const timelineDataJson = JSON.stringify(timeline.byDate);
-  const dmaFirstSeenJson = JSON.stringify(timeline.byDmaFirstSeen);
-  const retailerColorsJson = JSON.stringify(retailerColors);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Amazon Same-Day Grocery Coverage Tracker</title>
+<title>Amazon Same-Day Grocery Coverage</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"><\/script>
 <style>
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:13px;color:#222;background:#f5f6f8}
@@ -467,18 +215,37 @@ nav button{background:none;border:none;color:#aab;padding:10px 16px;cursor:point
 nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .view{display:none;padding:24px 28px}
 .view.active{display:block}
-/* Summary cards */
-.cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px}
-.card-group{background:#fff;border-radius:8px;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.1);margin-bottom:16px}
-.card-group-name{font-size:13px;font-weight:700;color:#555;margin-bottom:14px;text-transform:uppercase;letter-spacing:.4px}
-.card-trio{display:flex;gap:24px;flex-wrap:wrap}
-.card-tracker{flex:1;min-width:180px}
-.tracker-pct{font-size:36px;font-weight:800;line-height:1}
-.tracker-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#666;margin:4px 0 2px}
-.tracker-detail{font-size:12px;color:#888;margin-bottom:8px}
-.tracker-bar{height:6px;background:#eee;border-radius:3px;overflow:hidden}
-.tracker-fill{height:100%;border-radius:3px;transition:width .4s ease}
-/* Completeness banner */
+
+/* Intro panel */
+.intro-panel{background:linear-gradient(135deg,#1a1a2e 0%,#162040 100%);color:#dde;border-radius:10px;padding:18px 22px;margin-bottom:14px}
+.intro-purpose{font-size:13px;color:#aac;margin-bottom:14px;line-height:1.6;border-bottom:1px solid #2a3a5e;padding-bottom:12px}
+.intro-purpose strong{color:#cde}
+.intro-stats-grid{display:flex;gap:0;flex-wrap:wrap;align-items:flex-start}
+.intro-stat-block{flex:1;min-width:200px;padding:0 20px}
+.intro-stat-block:first-child{padding-left:0}
+.intro-stat-title{font-size:11px;font-weight:700;color:#88a;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.intro-stat-big{font-size:36px;font-weight:800;color:#4a90e2;line-height:1}
+.intro-stat-sub{font-size:11px;color:#88a;margin-top:2px}
+.intro-fac-breakdown{margin-top:8px;display:flex;flex-direction:column;gap:3px}
+.fac-tag{font-size:12px;color:#bbd}
+.fac-tag.ssd{color:#ef4444}.fac-tag.fresh{color:#f97316}.fac-tag.wf{color:#22c55e}
+.fac-tag.fc{color:#9ca3af}.fac-tag.ds{color:#6b7280}
+.intro-divider{width:1px;background:#2a3a5e;align-self:stretch;margin:0 4px}
+.intro-msa-stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:4px}
+.msa-stat{text-align:center}
+.msa-stat-num{font-size:32px;font-weight:800;color:#10b981;line-height:1}
+.msa-stat-num.gray{color:#9ca3af}
+.msa-stat-label{font-size:11px;color:#88a;margin-top:2px;line-height:1.4}
+.dl-btn{display:inline-block;margin-top:8px;padding:10px 18px;background:#3b82f6;color:#fff;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:background .15s}
+.dl-btn:hover{background:#2563eb}
+
+/* Map */
+#map{height:580px;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.12);margin-bottom:12px}
+.map-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:#555;align-items:center}
+.map-legend strong{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
+.map-legend span{display:inline-flex;align-items:center;gap:5px}
+.swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+
 /* Project summary */
 .proj-grid{display:flex;flex-direction:column;gap:20px;margin-top:16px}
 .proj-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:18px 22px}
@@ -492,68 +259,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 .proj-source{background:#fff;border:1px solid #e2e8f0;border-radius:6px;padding:12px 14px}
 .proj-source-name{font-size:13px;font-weight:700;color:#1e293b;margin-bottom:4px}
 .proj-source-desc{font-size:12px;color:#64748b;line-height:1.5}
-/* Intro panel */
-.intro-panel{background:linear-gradient(135deg,#1a1a2e 0%,#162040 100%);color:#dde;border-radius:10px;padding:18px 22px;margin-bottom:14px}
-.intro-purpose{font-size:13px;color:#aac;margin-bottom:14px;line-height:1.6;border-bottom:1px solid #2a3a5e;padding-bottom:12px}
-.intro-purpose strong{color:#cde}
-.intro-stats-grid{display:flex;gap:0;flex-wrap:wrap;align-items:flex-start}
-.intro-stat-block{flex:1;min-width:200px;padding:0 20px}
-.intro-stat-block:first-child{padding-left:0}
-.intro-stat-title{font-size:11px;font-weight:700;color:#88a;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
-.intro-stat-big{font-size:36px;font-weight:800;color:#4a90e2;line-height:1}
-.intro-stat-sub{font-size:11px;color:#88a;margin-top:2px}
-.intro-fac-breakdown{margin-top:8px;display:flex;flex-direction:column;gap:3px}
-.fac-tag{font-size:12px;color:#bbd}.fac-tag.ssd{color:#ef4444}.fac-tag.fresh{color:#f97316}.fac-tag.wf{color:#22c55e}.fac-tag.fd{color:#fb923c}.fac-tag.fc{color:#9ca3af}.fac-tag.ds{color:#6b7280}
-.intro-divider{width:1px;background:#2a3a5e;align-self:stretch;margin:0 4px}
-.intro-reach-row{display:flex;gap:20px;flex-wrap:wrap}
-.reach-item{text-align:center}
-.reach-num{font-size:28px;font-weight:800;color:#10b981;line-height:1}
-.reach-label{font-size:11px;color:#88a;margin-top:2px;line-height:1.4}
-.dl-btn{display:inline-block;margin-top:8px;padding:10px 18px;background:#3b82f6;color:#fff;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:background .15s}
-.dl-btn:hover{background:#2563eb}
-/* Legacy completeness banner refs */
-.completeness-banner{display:none}
-/* Map */
-#map{height:560px;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.12);margin-bottom:12px}
-.choropleth-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:#555}
-.choropleth-legend span{display:inline-flex;align-items:center;gap:5px}
-.choropleth-legend .swatch{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
-/* Data table */
-section{margin-bottom:32px}
-h2{font-size:14px;font-weight:700;color:#333;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #e8e8e8}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-th{background:#f0f2f5;padding:9px 11px;text-align:left;font-size:11px;font-weight:700;color:#555;cursor:pointer;white-space:nowrap;user-select:none}
-th:hover{background:#e4e8ee}
-th.asc::after{content:' ▲';font-size:9px}th.desc::after{content:' ▼';font-size:9px}
-td{padding:7px 11px;border-top:1px solid #f0f0f0}
-tr:hover td{background:#fafbff}
-.avail-yes{color:#1a8040;font-weight:600}
-.avail-no{color:#c0392b}
-.avail-unk{color:#999}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-.filters input,.filters select{padding:6px 10px;border:1px solid #ccc;border-radius:6px;font-size:12px;background:#fff}
-.pager{margin-top:10px;display:flex;gap:8px;align-items:center}
-.pager button{padding:4px 12px;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer;font-size:12px}
-.pager button:disabled{opacity:.4;cursor:default}
-#row-info{font-size:11px;color:#888;margin-left:4px}
-a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
-.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:700;background:#e8f5e9;color:#1a8040;margin-left:6px}
-/* Provenance tooltip */
-.provenance-cell{position:relative;cursor:help}
-.provenance-tooltip{display:none;position:absolute;right:0;top:100%;z-index:999;background:#1e293b;border:1px solid #334155;border-radius:8px;padding:10px 14px;width:340px;font-size:12px;line-height:1.6;color:#cbd5e1;white-space:normal;text-align:left;box-shadow:0 4px 20px rgba(0,0,0,.4)}
-.provenance-tooltip a{color:#60a5fa}
-.provenance-cell:hover .provenance-tooltip{display:block}
-/* Timeline */
-#timeline-view{background:#111126;color:#dde;min-height:calc(100vh - 100px)}
-#timeline-view h2{color:#dde;border-bottom-color:#2a3a5e}
-.tl-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
-.tl-chart-box{background:#1a1a2e;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
-.tl-chart-box.full{grid-column:1/-1}
-.tl-chart-box h3{margin:0 0 14px;font-size:13px;font-weight:700;color:#aac;text-transform:uppercase;letter-spacing:.5px}
-.tl-stat-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
-.tl-stat{background:#1a1a2e;border-radius:8px;padding:14px 18px;flex:1;min-width:140px}
-.tl-stat-n{font-size:28px;font-weight:800;color:#4a90e2}
-.tl-stat-label{font-size:11px;color:#88a;margin-top:3px}
+
 /* Methodology */
 .methodology{max-width:860px;margin:0 auto;padding:10px 0 40px}
 .methodology h2{font-size:22px;margin-bottom:6px;border-bottom:2px solid #e0e0e0;padding-bottom:10px}
@@ -561,24 +267,38 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 .methodology p,.methodology li{font-size:14px;line-height:1.7;color:#444;margin-bottom:8px}
 .methodology ul{padding-left:22px;margin-bottom:12px}
 .method-intro{font-size:15px;color:#333;margin-bottom:20px;line-height:1.8}
-.method-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:16px 0}
-.method-col{background:#f8f9fb;border-radius:8px;padding:16px 20px;border:1px solid #e0e5f0}
-.method-col h4{margin:0 0 10px;font-size:13px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.4px}
 .method-table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:13px}
 .method-table th{background:#f0f4ff;font-weight:700;padding:8px 12px;text-align:left;border-bottom:2px solid #ccd}
 .method-table td{padding:7px 12px;border-bottom:1px solid #eee;vertical-align:top}
 .method-table tr:hover td{background:#f9faff}
-.confidence-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
-.confidence-table th{background:#1a1a2e;color:#dde;padding:8px 14px;text-align:left}
-.confidence-table td{padding:8px 14px;border-bottom:1px solid #e8e8e8}
-.confidence-table tr:nth-child(even) td{background:#f8f9fb}
 .method-footer{margin-top:32px;font-size:12px;color:#999;border-top:1px solid #eee;padding-top:12px}
-/* Leaflet layer control override */
+
+/* Leaflet layer control */
 .leaflet-control-layers{font-size:12px}
 .leaflet-control-layers-selector{margin-right:5px}
+
+/* Password overlay */
+#pw-overlay{position:fixed;inset:0;background:rgba(10,10,30,.92);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+#pw-overlay h2{color:#dde;font-size:22px;margin:0}
+#pw-overlay p{color:#88a;font-size:13px;margin:0}
+#pw-input{padding:10px 18px;font-size:15px;border-radius:6px;border:2px solid #334;background:#1a1a2e;color:#dde;outline:none;width:260px;text-align:center}
+#pw-input:focus{border-color:#4a90e2}
+#pw-error{color:#ef4444;font-size:12px;min-height:16px}
+#pw-btn{padding:10px 28px;background:#3b82f6;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer}
+#pw-btn:hover{background:#2563eb}
 </style>
 </head>
 <body>
+
+<!-- Password overlay -->
+<div id="pw-overlay">
+  <h2>🛒 Amazon Same-Day Grocery Coverage</h2>
+  <p>Rivendell Advisors — Research Portal</p>
+  <input id="pw-input" type="password" placeholder="Enter password" autocomplete="off"/>
+  <div id="pw-error"></div>
+  <button id="pw-btn">Access Report</button>
+</div>
+
 <header>
   <h1>🛒 Amazon Same-Day Grocery Coverage</h1>
   <span>Rivendell Advisors &nbsp;·&nbsp; ${esc(generatedAt)}</span>
@@ -592,64 +312,57 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 <!-- MAP VIEW -->
 <div id="map-view" class="view active">
 
-  <!-- Intro Panel -->
   <div class="intro-panel">
     <div class="intro-purpose">
-      <strong>Purpose:</strong> Analyze Amazon&#39;s Same-Day fresh grocery delivery coverage in the U.S. using publicly available information.
-      For a full description of methodology and confidence in the analysis, see the <strong>Methodology</strong> tab above.
-      &nbsp;·&nbsp; <em>${esc(generatedDate)}</em>
+      <strong>Purpose:</strong> Confirm Amazon's same-day perishable grocery delivery coverage across the top 200 US MSAs using direct Amazon.com product probes.
+      Pass criterion: strawberries available for same-day delivery (cold chain confirmed).
+      &nbsp;·&nbsp; <em>Probe date: ${esc(probeDate)}</em>
     </div>
 
     <div class="intro-stats-grid">
 
-      <!-- Facility inventory -->
+      <!-- MSA probe results -->
       <div class="intro-stat-block">
-        <div class="intro-stat-title">Amazon Facility Network</div>
-        <div class="intro-stat-big">${methodStats.totalLocations.toLocaleString()}</div>
-        <div class="intro-stat-sub">facilities identified</div>
-        <div class="intro-fac-breakdown">
-          ${methodStats.facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${methodStats.facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
-          ${methodStats.facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${methodStats.facilityMap.fresh_hub} Amazon Fresh Dark Stores</span>` : ''}
-          ${methodStats.facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${methodStats.facilityMap.whole_foods_node} Whole Foods Stores</span>` : ''}
-          ${methodStats.facilityMap.fresh_distribution ? `<span class="fac-tag fd">&#9679; ${methodStats.facilityMap.fresh_distribution} Fresh Distribution</span>` : ''}
-          ${methodStats.facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.fulfillment_center} Fulfillment Centers</span>` : ''}
-          ${methodStats.facilityMap.same_day_facility ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.same_day_facility} Same-Day Facilities</span>` : ''}
-          ${methodStats.facilityMap.amazon_facility ? `<span class="fac-tag fc">&#9679; ${methodStats.facilityMap.amazon_facility} Other Amazon Facilities</span>` : ''}
-          ${(methodStats.facilityMap.sortation_center||0) + (methodStats.facilityMap.distribution_center||0) + (methodStats.facilityMap.delivery_station||0) + (methodStats.facilityMap.warehouse||0) > 0 ? `<span class="fac-tag ds">&#9679; ${(methodStats.facilityMap.sortation_center||0)+(methodStats.facilityMap.distribution_center||0)+(methodStats.facilityMap.delivery_station||0)+(methodStats.facilityMap.warehouse||0)} Sortation / Delivery / DC</span>` : ''}
+        <div class="intro-stat-title">MSA Coverage (Top 200)</div>
+        <div class="intro-msa-stats">
+          <div class="msa-stat">
+            <div class="msa-stat-num">${msaConfirmed}</div>
+            <div class="msa-stat-label">MSAs confirmed<br><small>(full_fresh + ambient)</small></div>
+          </div>
+          <div class="msa-stat">
+            <div class="msa-stat-num gray">${msaNone}</div>
+            <div class="msa-stat-label">MSAs showing none<br><small>of ${msaTotal} probed</small></div>
+          </div>
         </div>
       </div>
 
       <div class="intro-divider"></div>
 
-      <!-- Coverage reach -->
+      <!-- Facility network -->
       <div class="intro-stat-block">
-        <div class="intro-stat-title">Estimated Coverage Reach</div>
-        <div class="intro-stat-sub" style="margin-bottom:8px">Within 50-mile radius of confirmed SSD or Fresh dark store facility<br><small style="color:#667">(Amazon&#39;s publicly stated service range)</small></div>
-        <div class="intro-reach-row">
-          <div class="reach-item">
-            <div class="reach-num">${methodStats.zipCovPct}%</div>
-            <div class="reach-label">of US ZIP codes<br><small>${Math.round(methodStats.zipStats.covered_zips/1000)}k of ${Math.round(methodStats.zipStats.total_zips/1000)}k</small></div>
-          </div>
-          <div class="reach-item">
-            <div class="reach-num">${methodStats.tvCovPct}%</div>
-            <div class="reach-label">of US TV households<br><small>${Math.round(methodStats.tvStats.covered_tv/1e6)}M of ${Math.round(methodStats.tvStats.total_tv/1e6)}M</small></div>
-          </div>
-          <div class="reach-item">
-            <div class="reach-num">${methodStats.popCovPct2}%</div>
-            <div class="reach-label">of US population<br><small>${Math.round(methodStats.zipStats.covered_pop/1e6)}M of ${Math.round(methodStats.zipStats.total_pop/1e6)}M</small></div>
-          </div>
+        <div class="intro-stat-title">Amazon Facility Network</div>
+        <div class="intro-stat-big">${totalLocations.toLocaleString()}</div>
+        <div class="intro-stat-sub">facilities identified</div>
+        <div class="intro-fac-breakdown">
+          ${facilityMap.ssd_fulfillment ? `<span class="fac-tag ssd">&#9679; ${facilityMap.ssd_fulfillment} SSD Fulfillment Centers</span>` : ''}
+          ${facilityMap.fresh_hub ? `<span class="fac-tag fresh">&#9679; ${facilityMap.fresh_hub} Amazon Fresh Dark Stores</span>` : ''}
+          ${facilityMap.whole_foods_node ? `<span class="fac-tag wf">&#9679; ${facilityMap.whole_foods_node} Whole Foods Stores</span>` : ''}
+          ${facilityMap.same_day_facility ? `<span class="fac-tag fc">&#9679; ${facilityMap.same_day_facility} Same-Day Facilities</span>` : ''}
+          ${facilityMap.fulfillment_center ? `<span class="fac-tag fc">&#9679; ${facilityMap.fulfillment_center} Fulfillment Centers</span>` : ''}
+          ${facilityMap.fresh_distribution ? `<span class="fac-tag fresh">&#9679; ${facilityMap.fresh_distribution} Fresh Distribution</span>` : ''}
+          ${(facilityMap.sortation_center||0)+(facilityMap.delivery_station||0)+(facilityMap.distribution_center||0) > 0 ? `<span class="fac-tag ds">&#9679; ${(facilityMap.sortation_center||0)+(facilityMap.delivery_station||0)+(facilityMap.distribution_center||0)} Sort / Delivery / DC</span>` : ''}
         </div>
       </div>
 
       <div class="intro-divider"></div>
 
       <!-- Download -->
-      <div class="intro-stat-block" style="justify-content:center;text-align:center">
+      <div class="intro-stat-block" style="text-align:center">
         <div class="intro-stat-title">Data Export</div>
         <a href="amazon-sameday-coverage-by-zip.csv" download class="dl-btn">
           &#8595; Download ZIP Code Coverage List
         </a>
-        <div class="intro-stat-sub" style="margin-top:6px">${methodStats.zipStats.total_zips.toLocaleString()} ZIPs &nbsp;·&nbsp; within 50mi of SSD facility / outside radius</div>
+        <div class="intro-stat-sub" style="margin-top:6px">${csvTotalZips.toLocaleString()} ZIPs &nbsp;·&nbsp; coverage within 50mi of SSD facility</div>
       </div>
 
     </div>
@@ -657,14 +370,75 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
 
   <div id="map"></div>
 
-  <div class="choropleth-legend" id="dma-legend" style="margin-top:4px">
-    <strong style="margin-right:6px;color:#555;font-size:11px;font-weight:700;text-transform:uppercase">DMA Status:</strong>
-    <span><span class="swatch" style="background:#10b981"></span>Confirmed coverage</span>
-    <span><span class="swatch" style="background:#f59e0b"></span>Likely (Fresh facility)</span>
-    <span><span class="swatch" style="background:#6366f1"></span>Possible (Amazon facility)</span>
-    <span><span class="swatch" style="background:#374151"></span>Unlikely (no facility)</span>
-    <span><span class="swatch" style="background:#1e293b"></span>Not assessed</span>
+  <div class="map-legend">
+    <strong>MSA Status:</strong>
+    <span><span class="swatch" style="background:#10b981"></span>Confirmed (full_fresh / ambient)</span>
+    <span><span class="swatch" style="background:#374151"></span>Not available (none)</span>
+    <span><span class="swatch" style="background:#1e293b"></span>Not probed</span>
   </div>
+
+</div>
+
+<!-- METHODOLOGY -->
+<div id="methodology-view" class="view">
+  <section class="methodology">
+    <h2>Methodology</h2>
+
+    <h3>1. What We're Tracking</h3>
+    <p class="method-intro">Amazon same-day perishable grocery delivery — available to Prime members across ~${msaConfirmed} of the top 200 US MSAs as of ${esc(probeDate)}. This is the service that delivers fresh produce, meat, and dairy within 2 hours, fulfilled by Amazon Fresh dark stores, Whole Foods, or SSD facilities.</p>
+
+    <h3>2. How We Confirmed Coverage</h3>
+    <p>We probed Amazon.com directly for each MSA. For 3 ZIP codes per MSA (near the city center), we searched for <strong>bananas</strong> and <strong>strawberries</strong> (fresh produce) and examined the main offer panel plus the "Other sellers" listing for same-day delivery options.</p>
+    <p><strong>Pass criteria:</strong> Strawberries available for same-day delivery — cold chain confirmed. This is the most reliable proxy for Amazon's fresh grocery coverage because strawberries require refrigeration and cannot be shipped via standard ground carriers.</p>
+    <ul>
+      <li>3 ZIP codes tested per MSA, selected near each city center</li>
+      <li>Both products (bananas + strawberries) checked per ZIP</li>
+      <li>Main offer box and "Other sellers" panel both inspected</li>
+      <li>Pass = at least one ZIP in the MSA confirmed same-day delivery</li>
+    </ul>
+
+    <h3>3. Offer Types Observed</h3>
+    <table class="method-table">
+      <thead>
+        <tr><th>Offer Type</th><th>Ships From</th><th>What It Means</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>AmazonFresh</strong></td><td>AmazonFresh</td><td>Amazon Fresh dark store (U-prefix facility) — purpose-built perishable fulfillment</td></tr>
+        <tr><td><strong>Whole Foods</strong></td><td>Whole Foods Market</td><td>Whole Foods store acting as microfulfillment node for 2-hour grocery delivery</td></tr>
+        <tr><td><strong>SSD / Prime</strong></td><td>Amazon.com (hours delivery)</td><td>Sub-Same-Day fulfillment center (V-prefix) — temperature-controlled grocery zones</td></tr>
+        <tr><td><strong>Amazon Standard</strong></td><td>Amazon.com (overnight)</td><td>Nature TBD — appears for some grocery items; under investigation</td></tr>
+      </tbody>
+    </table>
+
+    <h3>4. Facility Network</h3>
+    <p>${totalLocations.toLocaleString()}+ Amazon facilities mapped across the US. Key fresh grocery-capable types:</p>
+    <ul>
+      <li><strong>SSD Fulfillment Centers (V-prefix):</strong> ${facilityMap.ssd_fulfillment || 0} unique facilities — Amazon's primary same-day grocery nodes with temperature-controlled zones</li>
+      <li><strong>Amazon Fresh Dark Stores (U-prefix):</strong> ${facilityMap.fresh_hub || 0} facilities — purpose-built perishable fulfillment, no customer-facing retail</li>
+      <li><strong>Whole Foods Stores:</strong> ${facilityMap.whole_foods_node || 0} stores — now Amazon's primary consumer-facing grocery platform following Fresh store closings</li>
+    </ul>
+
+    <h3>5. Known Limitations</h3>
+    <ul>
+      <li><strong>ZIP selection:</strong> Tested 3 ZIPs per MSA near city center; outer areas of large MSAs may differ. A confirmed MSA means at least one ZIP passed, not universal coverage.</li>
+      <li><strong>Offer type correlation:</strong> "Ships from Amazon.com" with same-day delivery could be SSD, fresh distribution, or another system — we are still mapping which facility types serve which regions.</li>
+      <li><strong>Point in time:</strong> Probe conducted ${esc(probeDate)}. Amazon expands continuously; actual coverage today may be broader.</li>
+    </ul>
+
+    <h3>6. Data Sources</h3>
+    <ul>
+      <li><strong>Amazon.com direct probe</strong> — primary coverage signal; automated browser sessions checking product availability per ZIP</li>
+      <li><strong>Amazon facility network</strong> — community-maintained lists (gortofreight.com, r/AmazonFlexDrivers wiki) plus Brave Place Search POI data</li>
+      <li><strong>US MSA boundaries</strong> — Census CBSA (Core-Based Statistical Area) polygons, top 200 by population</li>
+      <li><strong>US ZIP code database</strong> — 31,000+ ZIPs with coordinates and population (2020 Census)</li>
+    </ul>
+
+    <h3>ZIP Code Coverage File</h3>
+    <p>The <strong>Download ZIP Code Coverage List</strong> button exports a CSV of ${csvTotalZips.toLocaleString()} US ZIP codes with their coverage status based on proximity to confirmed Amazon SSD / Fresh dark store facilities (50-mile radius — Amazon's publicly stated service range).</p>
+    <p><strong>Use cases:</strong> Join to customer address tables to quantify competitive exposure; identify markets outside Amazon's current service area; prioritize market analysis by competitive intensity.</p>
+
+    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated ${esc(generatedAt)}.</p>
+  </section>
 </div>
 
 <!-- PROJECT SUMMARY -->
@@ -678,44 +452,30 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
       <div class="proj-card">
         <div class="proj-card-title">⏱ Time Investment</div>
         <table class="proj-table">
-          <tr><td>Project duration</td><td><strong>8 days</strong> (March 22–29, 2026)</td></tr>
+          <tr><td>Project duration</td><td><strong>~10 days</strong> (March–April 2026)</td></tr>
           <tr><td>Human direction &amp; review</td><td><strong>~15–20 hours</strong> — strategic framing, validation, spot-checks, methodology decisions</td></tr>
           <tr><td>AI execution</td><td><strong>~continuous</strong> — coding, data pipelines, web probing, debugging, report generation</td></tr>
           <tr><td>Estimated traditional team cost</td><td><strong>$200,000–$500,000+</strong> — 3–4 engineers, 2–3 months, standard consulting rates</td></tr>
-          <tr><td>Actual API cost</td><td><strong>$15.20</strong> in Brave Search API queries</td></tr>
+          <tr><td>Actual API cost</td><td><strong>&lt; $20</strong> in search API queries</td></tr>
         </table>
       </div>
 
       <div class="proj-card">
         <div class="proj-card-title">💻 Code &amp; Development</div>
         <table class="proj-table">
-          <tr><td>Lines of code written</td><td><strong>5,487</strong> lines of JavaScript</td></tr>
-          <tr><td>Git commits</td><td><strong>75</strong> iterative releases</td></tr>
-          <tr><td>Source files</td><td><strong>12</strong> scripts (data pipelines, probes, report generator)</td></tr>
+          <tr><td>Lines of code written</td><td><strong>5,000+</strong> lines of JavaScript</td></tr>
+          <tr><td>Source files</td><td><strong>12+</strong> scripts (data pipelines, probes, report generator)</td></tr>
           <tr><td>Dashboard</td><td>Single-file HTML/CSS/JS report with Leaflet maps, auto-published to GitHub Pages</td></tr>
         </table>
       </div>
 
       <div class="proj-card">
-        <div class="proj-card-title">🗄 Database Scale</div>
+        <div class="proj-card-title">🗄 Coverage Data</div>
         <table class="proj-table">
-          <tr><td>Total database rows</td><td><strong>83,198</strong> across 10 tables</td></tr>
-          <tr><td>US ZIP codes</td><td><strong>31,913</strong> with DMA assignment and population</td></tr>
-          <tr><td>US cities/towns</td><td><strong>29,738</strong> with geospatial coordinates</td></tr>
-          <tr><td>Nielsen DMA markets</td><td><strong>209</strong> fully mapped to county boundaries</td></tr>
-          <tr><td>Amazon facility locations</td><td><strong>1,530+</strong> with coordinates and type classification</td></tr>
-          <tr><td>Coverage signals logged</td><td><strong>13,411</strong> web search results analyzed</td></tr>
-          <tr><td>Confirmed coverage locations</td><td><strong>362</strong> verified by evidence</td></tr>
-        </table>
-      </div>
-
-      <div class="proj-card">
-        <div class="proj-card-title">🔍 Research Scope</div>
-        <table class="proj-table">
-          <tr><td>Total web searches executed</td><td><strong>3,040</strong> targeted Brave API queries</td></tr>
-          <tr><td>DMAs probed</td><td><strong>190 of 209</strong> (19 micro-markets skipped, &lt;100K TV homes)</td></tr>
-          <tr><td>Search methods per DMA</td><td><strong>6</strong> — news, Amazon newsroom, facility codes, Reddit, job postings, Facebook</td></tr>
-          <tr><td>Place Search sweeps</td><td><strong>300+</strong> geographic POI queries for facility discovery</td></tr>
+          <tr><td>MSAs directly probed</td><td><strong>${msaTotal}</strong> of top 200 US metro areas</td></tr>
+          <tr><td>MSAs confirmed with fresh delivery</td><td><strong>${msaConfirmed}</strong> (${Math.round(msaConfirmed/msaTotal*100)}%)</td></tr>
+          <tr><td>Amazon facility locations mapped</td><td><strong>${totalLocations.toLocaleString()}+</strong> with coordinates and type classification</td></tr>
+          <tr><td>US ZIP codes assessed</td><td><strong>${csvTotalZips.toLocaleString()}</strong> with 50-mile coverage proximity</td></tr>
         </table>
       </div>
 
@@ -723,36 +483,28 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
         <div class="proj-card-title">📚 Data Sources</div>
         <div class="proj-sources-grid">
           <div class="proj-source">
-            <div class="proj-source-name">US ZIP Code Database</div>
-            <div class="proj-source-desc">31,913 ZIP codes with city, state, county, DMA assignment. Population data from 2020 US Census (41,483 ZCTAs via Kaggle). Centroid coordinates for geospatial analysis.</div>
-          </div>
-          <div class="proj-source">
-            <div class="proj-source-name">Nielsen DMA Boundaries</div>
-            <div class="proj-source-desc">All 209 US Designated Market Areas mapped to county-level polygons. Used as the primary geographic unit for market analysis — reflects real logistics catchment areas.</div>
+            <div class="proj-source-name">Amazon.com Direct Probe</div>
+            <div class="proj-source-desc">200 MSAs probed directly via automated browser sessions. Searched for bananas and strawberries in 3 ZIP codes per MSA. Checked main offer + Other sellers panel. Pass = same-day delivery available for fresh produce.</div>
           </div>
           <div class="proj-source">
             <div class="proj-source-name">Amazon Facility Network</div>
-            <div class="proj-source-desc">Community-maintained warehouse list (~1,042 entries from gortofreight.com); r/AmazonFlexDrivers wiki (2,007 US entries with GPS and type labels including V-prefix SSD codes); Brave Place Search POI index (200M+ locations). Combined: 1,530+ facilities classified by type.</div>
+            <div class="proj-source-desc">Community-maintained warehouse list (gortofreight.com); r/AmazonFlexDrivers wiki (2,000+ US entries with GPS and type labels including V-prefix SSD and U-prefix Fresh codes); Brave Place Search POI index. Combined: ${totalLocations.toLocaleString()}+ facilities classified by type.</div>
           </div>
           <div class="proj-source">
             <div class="proj-source-name">Whole Foods Store Locations</div>
-            <div class="proj-source-desc">532 US store locations assembled via Brave Place Search sweeps across all major DMAs. Verified against Amazon and Whole Foods press releases. Near-complete coverage of the ~530 US store network.</div>
+            <div class="proj-source-desc">${facilityMap.whole_foods_node || 532} US store locations assembled via Brave Place Search sweeps. Verified against Amazon and Whole Foods press releases. Near-complete coverage of the ~530 US store network.</div>
           </div>
           <div class="proj-source">
-            <div class="proj-source-name">Amazon Sub-Same-Day (SSD) Network</div>
-            <div class="proj-source-desc">67 unique SSD fulfillment centers (V-prefix codes) and 65 Amazon Fresh dark stores (U-prefix) with GPS coordinates from the Amazon Flex Drivers community wiki. Cross-referenced against MWPVL research, TaxJar, Wikipedia, and news sources.</div>
+            <div class="proj-source-name">US MSA Boundaries</div>
+            <div class="proj-source-desc">Census CBSA (Core-Based Statistical Area) polygon boundaries for the top 200 US MSAs by population. Used as the primary geographic unit for coverage mapping — reflects real metro-area market footprints.</div>
           </div>
           <div class="proj-source">
-            <div class="proj-source-name">Web Search Signals</div>
-            <div class="proj-source-desc">13,411 signals from targeted Brave Search API queries — local news, Amazon newsroom (aboutamazon.com), Reddit communities (r/AmazonFlexDrivers, r/FASCAmazon), Amazon job postings, and public social media. Used to confirm or infer coverage in each DMA.</div>
+            <div class="proj-source-name">US ZIP Code Database</div>
+            <div class="proj-source-desc">31,000+ ZIP codes with city, state, coordinates, and population (2020 US Census). Used for proximity calculations and the downloadable coverage CSV.</div>
           </div>
           <div class="proj-source">
             <div class="proj-source-name">Amazon Public Statements</div>
-            <div class="proj-source-desc">Amazon press releases confirming same-day grocery launch cities; Amazon&#39;s January 2026 announcement closing all Amazon Fresh stores; Business Insider analysis of internal Amazon documents on the SSD network expansion.</div>
-          </div>
-          <div class="proj-source">
-            <div class="proj-source-name">US City &amp; Geographic Data</div>
-            <div class="proj-source-desc">29,738 US cities and towns with geospatial coordinates. US county GeoJSON dissolved into 188 DMA polygon shapes for the choropleth map. ZIP centroid data for proximity calculations.</div>
+            <div class="proj-source-desc">Amazon press releases on same-day grocery launch cities; January 2026 announcement closing all Amazon Fresh stores; Business Insider analysis of internal Amazon documents on the SSD network expansion.</div>
           </div>
         </div>
       </div>
@@ -763,92 +515,29 @@ a{color:#4a90e2;text-decoration:none}a:hover{text-decoration:underline}
   </section>
 </div>
 
-<!-- METHODOLOGY -->
-<div id="methodology-view" class="view">
-  <section class="methodology">
-    <h2>Methodology</h2>
-
-    <h3>What We're Tracking</h3>
-    <p class="method-intro">In December 2025, Amazon announced same-day perishable grocery delivery across the US for Prime members — then subsequently closed all Amazon Fresh physical stores to double down on Whole Foods + delivery infrastructure. This tracker maps that footprint using publicly available data: which DMAs have confirmed coverage, which have the physical infrastructure that likely enables it, and how the picture is evolving.</p>
-
-    <h3>How We Know What We Know</h3>
-    <div class="method-cols">
-      <div class="method-col">
-        <h4>🏭 Physical Infrastructure</h4>
-        <p>We mapped Amazon's facility network from multiple sources: community-maintained facility lists, Brave Place Search POI data, and Amazon job postings. Key facility types:</p>
-        <ul>
-          <li><strong>Sub-Same-Day (SSD) fulfillment centers</strong> (V-prefix codes) — Amazon's dedicated same-day grocery nodes, featuring temperature-controlled zones for perishables. These are the primary facilities enabling fresh grocery delivery and are the most reliable indicator of coverage.</li>
-          <li><strong>Amazon Fresh dark stores</strong> (U-prefix) — purpose-built fulfillment-only facilities for perishable grocery with no customer-facing retail presence, predating the SSD build-out</li>
-          <li><strong>Whole Foods stores</strong> (C-prefix) — now serving as microfulfillment nodes following Amazon's January 2026 decision to close all Amazon Fresh physical stores and consolidate grocery delivery through Whole Foods</li>
-        </ul>
-        <p style="font-size:12px;color:#888;margin-top:8px">Facility presence is a strong signal but not confirmation — standard delivery stations and fulfillment centers for general merchandise do not handle perishables.</p>
-      </div>
-      <div class="method-col">
-        <h4>🔍 Coverage Verification</h4>
-        <p>For each DMA with Amazon infrastructure, we ran targeted web searches across 6 channels:</p>
-        <ul>
-          <li>Local and trade news</li>
-          <li>Amazon's own newsroom</li>
-          <li>Facility-code-specific searches</li>
-          <li>Reddit communities</li>
-          <li>Amazon job postings (expansion signals)</li>
-          <li>Public Facebook posts and community groups</li>
-        </ul>
-        <p style="font-size:12px;color:#888;margin-top:8px">Confirmed coverage requires finding explicit evidence of same-day grocery availability in that DMA.</p>
-      </div>
-    </div>
-
-    <h3>Confidence Model</h3>
-    <table class="confidence-table">
-      <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
-      <tbody>
-        <tr><td><span style="color:#10b981;font-size:16px">●</span> <strong>Confirmed</strong></td><td>Direct evidence: news article, Amazon announcement, or community report of same-day grocery delivery in this area</td></tr>
-        <tr><td><span style="color:#f59e0b;font-size:16px">●</span> <strong>Probable</strong></td><td>Sub-Same-Day (SSD) or Fresh facility found in DMA; coverage not yet confirmed by external evidence</td></tr>
-        <tr><td><span style="color:#6366f1;font-size:16px">●</span> <strong>Possible</strong></td><td>Amazon logistics facility present in DMA; no fresh-capable infrastructure confirmed</td></tr>
-        <tr><td><span style="color:#374151;font-size:16px">●</span> <strong>Unlikely</strong></td><td>No Amazon facility found within this DMA after Place Search</td></tr>
-        <tr><td><span style="color:#888;font-size:16px">●</span> <strong>Unknown</strong></td><td>DMA not yet assessed</td></tr>
-      </tbody>
-    </table>
-
-    <h3>Known Limitations</h3>
-    <ul>
-      <li><strong>Facility presence ≠ grocery coverage.</strong> The most important caveat — Sub-Same-Day (SSD) facilities enable grocery delivery, but standard fulfillment centers and delivery stations do not.</li>
-      <li><strong>Amazon&#39;s coverage expands continuously.</strong> The stated coverage figures from December 2025 are likely already outdated; the actual footprint today is larger. Data has a date.</li>
-      <li><strong>DMA-level assessment may miss sub-DMA variation.</strong> In large metros (New York, LA), coverage may be uneven across zip codes and boroughs. DMA-confirmed means at least one city in the DMA has evidence — not necessarily universal coverage throughout.</li>
-    </ul>
-
-    <h3>Downloadable ZIP Code Coverage File</h3>
-    <p>The <strong>Download ZIP Code Coverage List</strong> button on the map view exports a CSV file containing every US ZIP code with a population record (${methodStats.zipStats.total_zips.toLocaleString()} ZIPs) and its assessed Amazon same-day grocery coverage status.</p>
-    <p><strong>How it was built:</strong> Coverage status is assigned based on proximity to confirmed Amazon Sub-Same-Day (SSD) or Fresh dark store facilities using Amazon's publicly stated 50-mile service radius. Each ZIP code centroid is compared against the coordinates of all known SSD and Fresh dark store locations. ZIPs whose centroids fall within 50 miles of a confirmed facility are classified as <em>within_50mi_of_ssd_facility</em>; all others are classified as <em>outside_50mi_radius</em>.</p>
-    <p><strong>How clients can use it:</strong> The file is designed to be joined directly to internal customer or store databases using ZIP code as the key. A retailer can, for example:</p>
-    <ul>
-      <li>Join to their customer address table to quantify what share of their customer base is currently in Amazon's same-day grocery service area</li>
-      <li>Join to their store location file to identify which stores compete with Amazon same-day delivery today</li>
-      <li>Filter to <em>outside_50mi_radius</em> ZIPs to identify markets where Amazon is not yet competing — potential expansion or acquisition targets</li>
-      <li>Use the DMA and facility status columns to prioritize market analysis by competitive intensity</li>
-    </ul>
-    <p style="font-size:12px;color:#888">Note: the 50-mile radius is Amazon's stated service range. Actual delivery boundaries may vary by specific zip code. This file should be treated as a directional competitive intelligence tool, not a definitive delivery availability check.</p>
-
-    <h3>Coverage Statistics</h3>
-    <table class="method-table">
-      <thead><tr><th>Metric</th><th>Value</th></tr></thead>
-      <tbody>
-        <tr><td>DMAs assessed</td><td>${methodStats.dmas_assessed} of ${methodStats.dmas_total} (${dmasAssessedPct}%)</td></tr>
-        <tr><td>DMAs with confirmed coverage</td><td>${methodStats.dmas_confirmed}</td></tr>
-        <tr><td>DMAs with Fresh/SSD facility (probable)</td><td>${methodStats.dmas_probable}</td></tr>
-        <tr><td>US population near a Fresh/SSD facility</td><td>~${Math.round(methodStats.population_covered/1e6)}M of ${Math.round(methodStats.total_us_population/1e6)}M (${popCovPct}%)</td></tr>
-        <tr><td>Facility locations tracked</td><td>${methodStats.totalLocations.toLocaleString()}</td></tr>
-        <tr><td>Search probes completed</td><td>${methodStats.probesDone.toLocaleString()}</td></tr>
-        <tr><td>Search probes queued</td><td>${methodStats.probesPending.toLocaleString()}</td></tr>
-        <tr><td>Avg confidence score (confirmed locations)</td><td>${methodStats.avgConfidence}%</td></tr>
-      </tbody>
-    </table>
-
-    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated ${esc(generatedAt)}.</p>
-  </section>
-</div>
-
 <script>
+// ── Password overlay ──────────────────────────────────────────────────────────
+(function() {
+  const PASS = 'Amazon';
+  const KEY  = 'fresh_cov_auth';
+  const overlay = document.getElementById('pw-overlay');
+  if (sessionStorage.getItem(KEY) === '1') { overlay.remove(); return; }
+  const input = document.getElementById('pw-input');
+  const errEl = document.getElementById('pw-error');
+  function tryPass() {
+    if (input.value === PASS) {
+      sessionStorage.setItem(KEY, '1');
+      overlay.remove();
+    } else {
+      errEl.textContent = 'Incorrect password.';
+      input.value = '';
+      input.focus();
+    }
+  }
+  document.getElementById('pw-btn').addEventListener('click', tryPass);
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') tryPass(); });
+})();
+
 // ── View switcher ─────────────────────────────────────────────────────────────
 function showView(id, btn) {
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
@@ -859,406 +548,161 @@ function showView(id, btn) {
 }
 
 // ── Map data ──────────────────────────────────────────────────────────────────
-const MAP_POINTS = ${mapPointsJson};
+const MSA_DATA = ${msaDataJson};
 const LOC_POINTS = ${locPointsJson};
-const DMA_DATA_ARR = ${dmaDataJson};
-const COUNTY_TO_DMA = ${countyToDmaJson};
-window.TIMELINE_DATA = ${timelineDataJson};
-window.DMA_FIRST_SEEN = ${dmaFirstSeenJson};
-const RETAILER_COLORS = ${retailerColorsJson};
-
-// Build DMA lookup map
-const DMA_MAP = {};
-DMA_DATA_ARR.forEach(d => { DMA_MAP[d.dma_id] = d; });
 
 // ── Initialize Leaflet map ────────────────────────────────────────────────────
 const map = L.map('map').setView([38.5, -96], 4);
 window._map = map;
 
-const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© <a href="https://openstreetmap.org">OpenStreetMap</a>',
   maxZoom: 18
 }).addTo(map);
 
-// ── Layer 1: Facility network (per-type layer groups) ─────────────────────────
-const facilityTypes = {
-  ssd_fulfillment:    { label:'SSD Fulfillment',        color:'#ef4444', radius:10 },
-  fresh_hub:          { label:'Fresh Dark Stores',             color:'#f97316', radius:8 },
-  fresh_distribution: { label:'Fresh Distribution',     color:'#fb923c', radius:8 },
-  whole_foods_node:   { label:'Whole Foods Nodes',      color:'#22c55e', radius:6 },
-  amazon_fresh_store: { label:'Amazon Fresh (Closing)', color:'#3b82f6', radius:6 },
-  same_day_facility:  { label:'Same-Day Facilities',    color:'#a855f7', radius:7 },
-  other:              { label:'Other Amazon Facilities', color:'#6b7280', radius:4 }
-};
+// ── Layer 1: MSA Coverage choropleth (default ON) ─────────────────────────────
+const msaLayer = L.layerGroup().addTo(map);
+let msaGeoLoaded = false;
 
-function getFacilityStyle(type) {
-  return facilityTypes[type] || facilityTypes.other;
+function msaStatusColor(status) {
+  if (status === 'full_fresh' || status === 'ambient_fresh') return '#10b981';
+  if (status === 'none') return '#374151';
+  return '#1e293b';
+}
+function msaStatusOpacity(status) {
+  if (status === 'full_fresh' || status === 'ambient_fresh') return 0.6;
+  if (status === 'none') return 0.25;
+  return 0.15;
+}
+function msaStatusLabel(status) {
+  if (status === 'full_fresh')    return '✅ Full Fresh — same-day perishable delivery confirmed';
+  if (status === 'ambient_fresh') return '🟡 Ambient Fresh — limited fresh delivery found';
+  if (status === 'none')          return '⚫ None — no same-day grocery found';
+  return '⬜ Not probed';
 }
 
-const facilityLayerGroups = {};
-Object.keys(facilityTypes).forEach(t => {
-  facilityLayerGroups[t] = L.layerGroup();
-});
-
-LOC_POINTS.forEach(p => {
-  const style = getFacilityStyle(p.type);
-  const layerKey = facilityTypes[p.type] ? p.type : 'other';
-
-  const marker = L.circleMarker([p.lat, p.lng], {
-    radius: style.radius,
-    color: style.color,
-    fillColor: style.color,
-    fillOpacity: 0.75,
-    weight: 1.5
-  });
-
-  const codeStr = p.facility_code ? '<b>' + p.facility_code + '</b> — ' : '';
-  const tierBadge = p.confidence_tier === 'inferred' ? '<span style="color:#fbbf24">● Inferred (Place Search)</span>'
-    : p.confidence_tier === 'verified' ? '<span style="color:#34d399">● Verified</span>'
-    : '<span style="color:#9ca3af">● External list (unverified)</span>';
-  const cityState = (p.city && p.state) ? p.city + ', ' + p.state : (p.city || p.state || '');
-
-  marker.bindPopup(
-    codeStr + '<b>' + (style.label) + '</b>' +
-    (cityState ? '<br>' + cityState : '') +
-    '<br><small style="color:#888">' + (p.address_raw || '') + '</small>' +
-    '<br>' + tierBadge +
-    (p.capability_note ? '<br><em style="font-size:11px;color:#6b7280">' + p.capability_note + '</em>' : '') +
-    (p.source_url && !p.source_url.startsWith('brave_') ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source &rarr;</a>' : '')
-  );
-
-  facilityLayerGroups[layerKey].addLayer(marker);
-});
-
-// ── Layer 2: DMA boundaries (county choropleth) ───────────────────────────────
-const dmaLayer = L.layerGroup();
-let dmaGeoLoaded = false;
-
-function dmaStatus(d) {
-  if (!d) return 'unknown';
-  if (d.cities_confirmed > 0) return 'confirmed';
-  if (d.place_probe_status === 'has_fresh') return 'likely';
-  if (d.place_probe_status === 'has_facility') return 'possible';
-  if (d.place_probe_status === 'no_facility') return 'unlikely';
-  return 'unknown';
-}
-function dmaColor(d) {
-  switch(dmaStatus(d)) {
-    case 'confirmed': return '#10b981';
-    case 'likely':    return '#f59e0b';
-    case 'possible':  return '#6366f1';
-    case 'unlikely':  return '#374151';
-    default:          return '#1e293b';
-  }
-}
-function dmaOpacity(d) {
-  switch(dmaStatus(d)) {
-    case 'confirmed': return 0.75;
-    case 'likely':    return 0.65;
-    case 'possible':  return 0.55;
-    case 'unlikely':  return 0.3;
-    default:          return 0.2;
-  }
-}
-
-async function initDmaLayer() {
-  if (dmaGeoLoaded) return;
-  dmaGeoLoaded = true;
+async function initMsaLayer() {
+  if (msaGeoLoaded) return;
+  msaGeoLoaded = true;
   try {
     const geoUrl = (window.location.hostname === 'localhost' || window.location.protocol === 'file:')
-      ? '../data/us_dmas.geojson'
-      : 'us_dmas.geojson';
+      ? '../data/us_msas.geojson'
+      : 'us_msas.geojson';
     const resp = await fetch(geoUrl);
     const geojson = await resp.json();
 
     L.geoJSON(geojson, {
       style: feature => {
-        // DMA GeoJSON — each feature IS a DMA, dma_id is a direct property
-        const dmaId = feature.properties.dma_id;
-        const d = dmaId ? DMA_MAP[dmaId] : null;
-        return { fillColor: dmaColor(d), fillOpacity: dmaOpacity(d), color: '#fff', weight: 0.5 };
+        const msaId = String(feature.properties.msa_id);
+        const d = MSA_DATA[msaId];
+        const status = d ? d.status : null;
+        return {
+          fillColor: msaStatusColor(status),
+          fillOpacity: msaStatusOpacity(status),
+          color: '#fff',
+          weight: 0.5
+        };
       },
       onEachFeature: (feature, layer) => {
-        const dmaId = feature.properties.dma_id;
-        const d = dmaId ? DMA_MAP[dmaId] : null;
-        const status = dmaStatus(d);
-        const statusLabel = {
-          confirmed: '✅ Confirmed coverage',
-          likely:    '🟡 Likely (Fresh facility found)',
-          possible:  '🔵 Possible (Amazon facility)',
-          unlikely:  '⚫ Unlikely (no facility found)',
-          unknown:   '⬜ Not yet assessed'
-        }[status] || '—';
-        layer.bindPopup(
-          '<b>' + (feature.properties.name || d?.dma_name || 'DMA ' + dmaId) + '</b>' +
+        const msaId = String(feature.properties.msa_id);
+        const d = MSA_DATA[msaId] || {};
+        const name = d.msa_name || feature.properties.msa_name || ('MSA ' + msaId);
+        const pop = d.msa_population ? d.msa_population.toLocaleString() : (feature.properties.population ? Number(feature.properties.population).toLocaleString() : '—');
+        const statusLabel = msaStatusLabel(d.status || null);
+        const zips = (d.zips_tested || []).join(', ') || 'not tested';
+        const offers = (d.offer_types || []).length ? d.offer_types.join(', ') : '—';
+        const popupHtml =
+          '<b>' + name + '</b>' +
           '<br>' + statusLabel +
-          (d && d.cities_confirmed > 0
-            ? '<br>Confirmed locations: <b>' + d.cities_confirmed + '</b>' +
-              (d.top_cities && d.top_cities.length ? ' <small>(' + d.top_cities.slice(0,3).join(', ') + ')</small>' : '')
-            : '') +
-          (d?.evidence_snippet ? '<br><small style="color:#888">"' + d.evidence_snippet.slice(0,150) + '…"</small>' : '') +
-          (d?.evidence_url ? '<br><a href="' + d.evidence_url + '" target="_blank" style="font-size:11px">Evidence &rarr;</a>' : '')
-        );
-        layer.on('mouseover', function() { layer.setStyle({ weight: 2, color: '#fff' }); });
-        layer.on('mouseout', function() { layer.setStyle({ weight: 0.5, color: '#fff' }); });
+          '<br><small style="color:#888">Population: ' + pop + '</small>' +
+          (d.zips_tested && d.zips_tested.length ? '<br><small style="color:#888">ZIPs tested: ' + zips + '</small>' : '') +
+          (d.offer_types && d.offer_types.length ? '<br><small style="color:#888">Offer types: ' + offers + '</small>' : '');
+        layer.bindPopup(popupHtml);
+        layer.on('mouseover', () => layer.setStyle({ weight: 2, color: '#fff' }));
+        layer.on('mouseout',  () => layer.setStyle({ weight: 0.5, color: '#fff' }));
       }
-    }).addTo(dmaLayer);
+    }).addTo(msaLayer);
   } catch(e) {
-    console.error('Failed to load county GeoJSON:', e);
+    console.error('Failed to load MSA GeoJSON:', e);
   }
 }
 
-// ── Layer 3: Confirmed cities ─────────────────────────────────────────────────
-const citiesLayer = L.layerGroup();
-MAP_POINTS.forEach(p => {
-  const color = p.confidence_tier === 'verified' ? '#10b981' : '#f59e0b';
+initMsaLayer();
+
+// ── Layer 2: Facility network (per-type, default OFF) ─────────────────────────
+const facilityTypes = {
+  ssd_fulfillment:    { label:'SSD Fulfillment Centers',    color:'#ef4444', radius:8 },
+  fresh_hub:          { label:'Fresh Dark Stores',          color:'#f97316', radius:7 },
+  whole_foods_node:   { label:'Whole Foods',                color:'#22c55e', radius:5 },
+  fresh_distribution: { label:'Fresh Distribution',        color:'#fb923c', radius:6 },
+  same_day_facility:  { label:'Same-Day Facilities',        color:'#a855f7', radius:6 },
+  other:              { label:'Other Amazon Facilities',    color:'#6b7280', radius:3 }
+};
+
+const facilityLayerGroups = {};
+Object.keys(facilityTypes).forEach(t => { facilityLayerGroups[t] = L.layerGroup(); });
+
+LOC_POINTS.forEach(p => {
+  const ftKey = facilityTypes[p.type] ? p.type : 'other';
+  const ft = facilityTypes[ftKey];
   const marker = L.circleMarker([p.lat, p.lng], {
-    radius: 6, color: color, fillColor: color, fillOpacity: 0.8, weight: 1.5
+    radius: ft.radius,
+    color: ft.color,
+    fillColor: ft.color,
+    fillOpacity: 0.75,
+    weight: 1.5
   });
+  const codeStr = p.facility_code ? '<b>' + p.facility_code + '</b> — ' : '';
+  const cityState = (p.city && p.state) ? p.city + ', ' + p.state : (p.city || p.state || '');
+  const tierLabel = p.confidence_tier === 'verified' ? '<span style="color:#34d399">● Verified</span>'
+    : p.confidence_tier === 'inferred' ? '<span style="color:#fbbf24">● Inferred</span>'
+    : '<span style="color:#9ca3af">● External list</span>';
   marker.bindPopup(
-    '<b>' + p.city + ', ' + p.state + '</b>' +
-    (p.dma_name ? '<br><small>DMA: ' + p.dma_name + '</small>' : '') +
-    '<br><span style="color:' + color + '">' +
-      (p.confidence_tier === 'verified' ? '✅ Verified' : '🟡 Inferred') + '</span>' +
-    '<br><small style="color:#888">' + (p.source || '') + '</small>' +
-    (p.evidence_snippet ? '<br><small style="color:#aaa">"' + p.evidence_snippet + '…"</small>' : '') +
-    (p.source_url ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source &rarr;</a>' : '') +
-    (p.first_seen ? '<br><small style="color:#aaa">First seen: ' + new Date(p.first_seen*1000).toLocaleDateString() + '</small>' : '')
+    codeStr + '<b>' + ft.label + '</b>' +
+    (cityState ? '<br>' + cityState : '') +
+    '<br><small style="color:#888">' + (p.address_raw || '') + '</small>' +
+    '<br>' + tierLabel +
+    (p.capability_note ? '<br><em style="font-size:11px;color:#6b7280">' + p.capability_note + '</em>' : '') +
+    (p.source_url && !p.source_url.startsWith('brave_') ? '<br><a href="' + p.source_url + '" target="_blank" style="font-size:11px">Source &rarr;</a>' : '')
   );
-  citiesLayer.addLayer(marker);
+  facilityLayerGroups[ftKey].addLayer(marker);
 });
 
-// ── Layer 4: 50-mile service reach circles (SSD/Fresh only) ──────────────────
+// ── Layer 3: 50-mile service circles (default OFF) ────────────────────────────
 const reachLayer = L.layerGroup();
 const REACH_TYPES = new Set(['ssd_fulfillment','fresh_hub','fresh_distribution','same_day_facility']);
 LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
-  const circle = L.circle([p.lat, p.lng], {
-    radius: 80467,  // 50 miles in meters (Amazon's publicly stated service radius)
+  L.circle([p.lat, p.lng], {
+    radius: 80467,
     color: '#ef4444',
     weight: 1.5,
     dashArray: '6 4',
     fillColor: '#ef4444',
-    fillOpacity: 0.06
-  });
-  circle.bindPopup(
-    '<b>50-mile service radius</b>' +
-    '<br>' + (p.facility_code || p.address_raw || '') +
-    '<br><em style="font-size:11px;color:#888">50-mile service radius &#8212; per Amazon&#39;s publicly stated range</em>'
-  );
-  reachLayer.addLayer(circle);
+    fillOpacity: 0.05
+  }).bindPopup(
+    '<b>50-mile radius</b> &mdash; Amazon stated service range' +
+    (p.facility_code ? '<br>' + p.facility_code : '') +
+    (p.address_raw ? '<br><small style="color:#888">' + p.address_raw + '</small>' : '')
+  ).addTo(reachLayer);
 });
 
-// ── Add all layers to map + control ──────────────────────────────────────────
-// Default: show DMA layer + cities layer; SSD/Fresh facilities on; others off; reach circles off
-dmaLayer.addTo(map);
-initDmaLayer();
-citiesLayer.addTo(map);
-facilityLayerGroups['ssd_fulfillment'].addTo(map);
-facilityLayerGroups['fresh_hub'].addTo(map);
-facilityLayerGroups['fresh_distribution'].addTo(map);
-facilityLayerGroups['whole_foods_node'].addTo(map);
-// Others default off: amazon_fresh_store, same_day_facility, other, reachLayer
-
+// ── Layer control ─────────────────────────────────────────────────────────────
 const overlayMaps = {
-  '<span style="color:#1a1a2e">▦</span> DMA Boundaries': dmaLayer,
-  '<span style="color:#10b981">●</span> Confirmed Cities': citiesLayer,
+  '▦ MSA Coverage':                                    msaLayer,
   '<span style="color:#ef4444">●</span> SSD Fulfillment Centers': facilityLayerGroups['ssd_fulfillment'],
-  '<span style="color:#f97316">●</span> Fresh Dark Stores': facilityLayerGroups['fresh_hub'],
-  '<span style="color:#fb923c">●</span> Fresh Distribution': facilityLayerGroups['fresh_distribution'],
-  '<span style="color:#22c55e">●</span> Whole Foods Nodes': facilityLayerGroups['whole_foods_node'],
-  '<span style="color:#a855f7">●</span> Same-Day Facilities (unclassified)': facilityLayerGroups['same_day_facility'],
+  '<span style="color:#f97316">●</span> Fresh Dark Stores':       facilityLayerGroups['fresh_hub'],
+  '<span style="color:#22c55e">●</span> Whole Foods':             facilityLayerGroups['whole_foods_node'],
+  '<span style="color:#fb923c">●</span> Fresh Distribution':      facilityLayerGroups['fresh_distribution'],
+  '<span style="color:#a855f7">●</span> Same-Day Facilities':     facilityLayerGroups['same_day_facility'],
   '<span style="color:#6b7280">●</span> Other Amazon Facilities': facilityLayerGroups['other'],
-  '<span style="color:#ef4444">○</span> 50-Mile Service Reach (hypothesis)': reachLayer
+  '<span style="color:#ef4444">○</span> 50-Mile Service Circles': reachLayer
 };
 
-L.control.layers({ 'OpenStreetMap': osmLayer }, overlayMaps, {
-  collapsed: false,
-  position: 'topright'
-}).addTo(map);
+L.control.layers(null, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
 
-// When DMA layer is toggled, load the geojson if not done yet
-map.on('overlayadd', function(e) {
-  if (e.layer === dmaLayer) initDmaLayer();
+map.on('overlayadd', e => {
+  if (e.layer === msaLayer) initMsaLayer();
 });
-
-// ── Data table ────────────────────────────────────────────────────────────────
-(function() {
-  const tbody = document.getElementById('cov-body');
-  const allRows = Array.from(tbody.querySelectorAll('tr'));
-  let filtered = allRows.slice();
-  let sortCol = -1, sortDir = 1, page = 0;
-  const PAGE = 250;
-
-  const states = [...new Set(allRows.map(r => r.dataset.state).filter(Boolean))].sort();
-  const stateEl = document.getElementById('filter-state');
-  states.forEach(s => { const o = document.createElement('option'); o.value=s; o.textContent=s; stateEl.appendChild(o); });
-
-  function applyFilter() {
-    const txt = document.getElementById('filter-text').value.toLowerCase();
-    const state = stateEl.value;
-    const retailer = document.getElementById('filter-retailer').value;
-    const avail = document.getElementById('filter-avail').value;
-    filtered = allRows.filter(row => {
-      if (state && row.dataset.state !== state) return false;
-      if (retailer && row.dataset.retailer !== retailer) return false;
-      if (avail !== '' && row.dataset.avail !== avail) return false;
-      if (txt) {
-        const t = Array.from(row.cells).map(c=>c.textContent).join(' ').toLowerCase();
-        if (!t.includes(txt)) return false;
-      }
-      return true;
-    });
-    if (sortCol >= 0) doSort();
-    page = 0; render();
-  }
-
-  function doSort() {
-    filtered.sort((a, b) => {
-      const av = a.cells[sortCol]?.innerText?.trim() ?? '';
-      const bv = b.cells[sortCol]?.innerText?.trim() ?? '';
-      const an = parseFloat(av), bn = parseFloat(bv);
-      if (!isNaN(an) && !isNaN(bn)) return sortDir * (an - bn);
-      return sortDir * av.localeCompare(bv);
-    });
-  }
-
-  function render() {
-    const start = page * PAGE;
-    const slice = filtered.slice(start, start + PAGE);
-    tbody.innerHTML = '';
-    slice.forEach(r => tbody.appendChild(r));
-    const end = Math.min(start + slice.length, filtered.length);
-    document.getElementById('row-info').textContent = filtered.length + ' rows matching filters';
-    document.getElementById('page-info').textContent = 'Page ' + (page+1) + '/' + Math.max(1, Math.ceil(filtered.length/PAGE));
-    document.getElementById('row-info2').textContent = 'Showing ' + (start+1) + '–' + end;
-    document.getElementById('prev-btn').disabled = page === 0;
-    document.getElementById('next-btn').disabled = end >= filtered.length;
-  }
-
-  document.getElementById('cov-table').querySelectorAll('th[data-col]').forEach(th => {
-    th.addEventListener('click', () => {
-      const col = parseInt(th.dataset.col);
-      if (sortCol === col) sortDir *= -1; else { sortCol = col; sortDir = 1; }
-      document.querySelectorAll('#cov-table th').forEach(h => h.classList.remove('asc','desc'));
-      th.classList.add(sortDir===1?'asc':'desc');
-      doSort(); page = 0; render();
-    });
-  });
-
-  document.getElementById('prev-btn').addEventListener('click', () => { page--; render(); });
-  document.getElementById('next-btn').addEventListener('click', () => { page++; render(); });
-  ['filter-text','filter-state','filter-retailer','filter-avail'].forEach(id => {
-    document.getElementById(id).addEventListener('input', applyFilter);
-  });
-
-  render();
-})();
-
-// ── Timeline charts ────────────────────────────────────────────────────────────
-let _timelineInited = false;
-function initTimeline() {
-  if (_timelineInited) return;
-  _timelineInited = true;
-
-  const tlData = window.TIMELINE_DATA || [];
-  const dmaFirstSeen = window.DMA_FIRST_SEEN || {};
-  const retailerIds = [...new Set(tlData.map(d => d.retailer_id))];
-  const allDates = [...new Set(tlData.map(d => d.snapshot_date))].sort();
-
-  const statsEl = document.getElementById('tl-stats');
-  statsEl.innerHTML = '';
-  for (const rid of retailerIds) {
-    const latest = tlData.filter(d => d.retailer_id === rid).slice(-1)[0];
-    if (!latest) continue;
-    const color = RETAILER_COLORS[rid] || '#4a90e2';
-    statsEl.innerHTML += \`
-      <div class="tl-stat" style="border-top:3px solid \${color}">
-        <div class="tl-stat-n">\${latest.total_cities_confirmed}</div>
-        <div class="tl-stat-label">\${rid} — confirmed locations</div>
-      </div>
-      <div class="tl-stat" style="border-top:3px solid \${color}">
-        <div class="tl-stat-n">\${latest.dmas_with_coverage}</div>
-        <div class="tl-stat-label">\${rid} — DMAs with coverage</div>
-      </div>
-      <div class="tl-stat" style="border-top:3px solid \${color}">
-        <div class="tl-stat-n">\${latest.total_signals}</div>
-        <div class="tl-stat-label">\${rid} — total signals</div>
-      </div>
-    \`;
-  }
-
-  const chartDefaults = {
-    plugins: { legend: { labels: { color: '#aac', font: { size: 11 } } } },
-    scales: {
-      x: { ticks: { color: '#88a', font: { size: 10 } }, grid: { color: '#1e2a4e' } },
-      y: { ticks: { color: '#88a', font: { size: 10 } }, grid: { color: '#1e2a4e' } }
-    }
-  };
-
-  // Growth chart
-  new Chart(document.getElementById('chart-growth'), {
-    type: 'line',
-    data: {
-      labels: allDates,
-      datasets: retailerIds.map(rid => {
-        const color = RETAILER_COLORS[rid] || '#4a90e2';
-        return {
-          label: rid,
-          data: allDates.map(d => { const r = tlData.find(x => x.retailer_id===rid && x.snapshot_date===d); return r ? r.total_cities_confirmed : null; }),
-          borderColor: color, backgroundColor: color + '33',
-          pointBackgroundColor: color, pointRadius: 4, tension: 0.3, fill: false, spanGaps: true
-        };
-      })
-    },
-    options: { responsive: true, ...chartDefaults }
-  });
-
-  // DMA unlock chart
-  const tierColors = { mega:'#e74c3c', large:'#f39c12', mid:'#3498db', small:'#2ecc71' };
-  const tiers = ['mega','large','mid','small'];
-  const primaryRid = retailerIds.find(r => (dmaFirstSeen[r] || []).length > 0) || retailerIds[0];
-  const firstSeenRows = dmaFirstSeen[primaryRid] || [];
-  const dmaUnlockByDate = {};
-  for (const row of firstSeenRows) {
-    const d = row.first_confirmed_date;
-    if (!d) continue;
-    if (!dmaUnlockByDate[d]) dmaUnlockByDate[d] = { mega:0, large:0, mid:0, small:0 };
-    const tier = row.tier || 'small';
-    dmaUnlockByDate[d][tier] = (dmaUnlockByDate[d][tier] || 0) + 1;
-  }
-  const dmaUnlockDates = Object.keys(dmaUnlockByDate).sort();
-  const xLabels = dmaUnlockDates.length ? dmaUnlockDates : allDates;
-  new Chart(document.getElementById('chart-dma-unlock'), {
-    type: 'bar',
-    data: {
-      labels: xLabels,
-      datasets: tiers.map(tier => ({
-        label: tier,
-        data: xLabels.map(d => dmaUnlockByDate[d]?.[tier] || 0),
-        backgroundColor: tierColors[tier] || '#888',
-        stack: 'dma'
-      }))
-    },
-    options: { responsive: true, ...chartDefaults, scales: { x: { ...chartDefaults.scales.x, stacked: true }, y: { ...chartDefaults.scales.y, stacked: true } } }
-  });
-
-  // Signals chart
-  new Chart(document.getElementById('chart-signals'), {
-    type: 'bar',
-    data: {
-      labels: allDates,
-      datasets: retailerIds.map(rid => {
-        const color = RETAILER_COLORS[rid] || '#4a90e2';
-        return {
-          label: rid,
-          data: allDates.map(d => { const r = tlData.find(x => x.retailer_id===rid && x.snapshot_date===d); return r ? r.total_signals : 0; }),
-          backgroundColor: color + 'cc'
-        };
-      })
-    },
-    options: { responsive: true, ...chartDefaults }
-  });
-}
 <\/script>
 </body>
 </html>`;
@@ -1266,7 +710,7 @@ function initTimeline() {
   if (!existsSync(REPORTS_DIR)) mkdirSync(REPORTS_DIR, { recursive: true });
   const out = join(REPORTS_DIR, 'index.html');
   writeFileSync(out, html);
-  log(`Report written → ${out} (${mapPoints.length} city points, ${locPoints.length} facility points, ${dmaData.length} DMAs)`);
+  log(`Report written → ${out} (${msaConfirmed}/${msaTotal} MSAs confirmed, ${locPoints.length} facility points)`);
 }
 
 main().catch(err => { console.error('Fatal:', err); process.exit(1); });
