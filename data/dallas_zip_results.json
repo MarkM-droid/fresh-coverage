@@ -1,0 +1,8183 @@
+{
+  "75001": {
+    "zip": "75001",
+    "city": "Addison",
+    "state": "TX",
+    "lat": 32.96,
+    "lng": -96.8385,
+    "pop": 15418,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:04:42.002Z"
+  },
+  "75002": {
+    "zip": "75002",
+    "city": "Allen",
+    "state": "TX",
+    "lat": 33.0934,
+    "lng": -96.6454,
+    "pop": 73916,
+    "status": "full_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-04-02T05:17:51.376Z"
+  },
+  "75006": {
+    "zip": "75006",
+    "city": "Carrollton",
+    "state": "TX",
+    "lat": 32.9657,
+    "lng": -96.8825,
+    "pop": 52231,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:54:33.287Z"
+  },
+  "75007": {
+    "zip": "75007",
+    "city": "Carrollton",
+    "state": "TX",
+    "lat": 33.0033,
+    "lng": -96.882,
+    "pop": 57513,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:39:02.138Z"
+  },
+  "75009": {
+    "zip": "75009",
+    "city": "Celina",
+    "state": "TX",
+    "lat": 33.3103,
+    "lng": -96.7673,
+    "pop": 15348,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:06:06.687Z"
+  },
+  "75010": {
+    "zip": "75010",
+    "city": "Carrollton",
+    "state": "TX",
+    "lat": 33.0304,
+    "lng": -96.8777,
+    "pop": 30784,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:19:52.793Z"
+  },
+  "75013": {
+    "zip": "75013",
+    "city": "Zcta 75013",
+    "state": "TX",
+    "lat": 33.1186,
+    "lng": -96.6773,
+    "pop": 42956,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:17:10.145Z"
+  },
+  "75019": {
+    "zip": "75019",
+    "city": "Coppell",
+    "state": "TX",
+    "lat": 32.9673,
+    "lng": -96.9805,
+    "pop": 43137,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:14:19.509Z"
+  },
+  "75020": {
+    "zip": "75020",
+    "city": "Denison",
+    "state": "TX",
+    "lat": 33.745,
+    "lng": -96.5496,
+    "pop": 23216,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:11:30.554Z"
+  },
+  "75021": {
+    "zip": "75021",
+    "city": "Denison",
+    "state": "TX",
+    "lat": 33.7169,
+    "lng": -96.5235,
+    "pop": 9454,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:27:12.258Z"
+  },
+  "75022": {
+    "zip": "75022",
+    "city": "Zcta 75022",
+    "state": "TX",
+    "lat": 33.0268,
+    "lng": -97.1193,
+    "pop": 28773,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:34:09.288Z"
+  },
+  "75023": {
+    "zip": "75023",
+    "city": "Plano",
+    "state": "TX",
+    "lat": 33.055,
+    "lng": -96.7365,
+    "pop": 50923,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:58:23.507Z"
+  },
+  "75024": {
+    "zip": "75024",
+    "city": "Plano",
+    "state": "TX",
+    "lat": 33.0752,
+    "lng": -96.7843,
+    "pop": 43041,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:15:44.814Z"
+  },
+  "75025": {
+    "zip": "75025",
+    "city": "Plano",
+    "state": "TX",
+    "lat": 33.0784,
+    "lng": -96.7291,
+    "pop": 54653,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:41:52.150Z"
+  },
+  "75028": {
+    "zip": "75028",
+    "city": "Flower mound",
+    "state": "TX",
+    "lat": 33.0383,
+    "lng": -97.0745,
+    "pop": 48641,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:05:28.042Z"
+  },
+  "75032": {
+    "zip": "75032",
+    "city": "Zcta 75032",
+    "state": "TX",
+    "lat": 32.886,
+    "lng": -96.4095,
+    "pop": 33956,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:00:40.396Z"
+  },
+  "75034": {
+    "zip": "75034",
+    "city": "Frisco",
+    "state": "TX",
+    "lat": 33.1499,
+    "lng": -96.8241,
+    "pop": 116155,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:05:27.253Z"
+  },
+  "75035": {
+    "zip": "75035",
+    "city": "Zcta 75035",
+    "state": "TX",
+    "lat": 33.1377,
+    "lng": -96.7524,
+    "pop": 80269,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:11:10.148Z"
+  },
+  "75038": {
+    "zip": "75038",
+    "city": "Irving",
+    "state": "TX",
+    "lat": 32.8653,
+    "lng": -96.9905,
+    "pop": 29886,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:25:54.278Z"
+  },
+  "75039": {
+    "zip": "75039",
+    "city": "Irving",
+    "state": "TX",
+    "lat": 32.8697,
+    "lng": -96.9389,
+    "pop": 20627,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:32:58.563Z"
+  },
+  "75040": {
+    "zip": "75040",
+    "city": "Garland",
+    "state": "TX",
+    "lat": 32.9227,
+    "lng": -96.6248,
+    "pop": 61508,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:29:11.349Z"
+  },
+  "75041": {
+    "zip": "75041",
+    "city": "Garland",
+    "state": "TX",
+    "lat": 32.8794,
+    "lng": -96.6411,
+    "pop": 31250,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:15:14.721Z"
+  },
+  "75042": {
+    "zip": "75042",
+    "city": "Garland",
+    "state": "TX",
+    "lat": 32.9185,
+    "lng": -96.6775,
+    "pop": 37458,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:42:22.294Z"
+  },
+  "75043": {
+    "zip": "75043",
+    "city": "Garland",
+    "state": "TX",
+    "lat": 32.8565,
+    "lng": -96.5999,
+    "pop": 62721,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:26:20.847Z"
+  },
+  "75044": {
+    "zip": "75044",
+    "city": "Garland",
+    "state": "TX",
+    "lat": 32.9522,
+    "lng": -96.6654,
+    "pop": 45284,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:11:07.645Z"
+  },
+  "75048": {
+    "zip": "75048",
+    "city": "Sachse",
+    "state": "TX",
+    "lat": 32.9643,
+    "lng": -96.6012,
+    "pop": 26062,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:51:53.797Z"
+  },
+  "75050": {
+    "zip": "75050",
+    "city": "Grand prairie",
+    "state": "TX",
+    "lat": 32.7649,
+    "lng": -97.0112,
+    "pop": 43190,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:12:55.005Z"
+  },
+  "75051": {
+    "zip": "75051",
+    "city": "Grand prairie",
+    "state": "TX",
+    "lat": 32.7115,
+    "lng": -97.0069,
+    "pop": 41317,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:21:46.501Z"
+  },
+  "75052": {
+    "zip": "75052",
+    "city": "Grand prairie",
+    "state": "TX",
+    "lat": 32.6605,
+    "lng": -97.0311,
+    "pop": 94060,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:08:20.090Z"
+  },
+  "75056": {
+    "zip": "75056",
+    "city": "The colony",
+    "state": "TX",
+    "lat": 33.094,
+    "lng": -96.8836,
+    "pop": 59674,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:33:25.503Z"
+  },
+  "75057": {
+    "zip": "75057",
+    "city": "Lewisville",
+    "state": "TX",
+    "lat": 33.0532,
+    "lng": -96.9999,
+    "pop": 16670,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:00:01.751Z"
+  },
+  "75058": {
+    "zip": "75058",
+    "city": "Gunter",
+    "state": "TX",
+    "lat": 33.4495,
+    "lng": -96.7341,
+    "pop": 3329,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:03:09.379Z"
+  },
+  "75060": {
+    "zip": "75060",
+    "city": "Irving",
+    "state": "TX",
+    "lat": 32.8023,
+    "lng": -96.9597,
+    "pop": 49307,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:01:13.168Z"
+  },
+  "75061": {
+    "zip": "75061",
+    "city": "Irving",
+    "state": "TX",
+    "lat": 32.8267,
+    "lng": -96.9633,
+    "pop": 53983,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:46:06.160Z"
+  },
+  "75062": {
+    "zip": "75062",
+    "city": "Irving",
+    "state": "TX",
+    "lat": 32.8479,
+    "lng": -96.974,
+    "pop": 49296,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:02:38.592Z"
+  },
+  "75063": {
+    "zip": "75063",
+    "city": "Irving",
+    "state": "TX",
+    "lat": 32.9247,
+    "lng": -96.9598,
+    "pop": 39831,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:28:52.498Z"
+  },
+  "75065": {
+    "zip": "75065",
+    "city": "Lake dallas",
+    "state": "TX",
+    "lat": 33.1219,
+    "lng": -97.0237,
+    "pop": 13026,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:15:15.533Z"
+  },
+  "75067": {
+    "zip": "75067",
+    "city": "Highland village",
+    "state": "TX",
+    "lat": 33.0198,
+    "lng": -96.9925,
+    "pop": 67197,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:24:56.362Z"
+  },
+  "75068": {
+    "zip": "75068",
+    "city": "Lakewood village",
+    "state": "TX",
+    "lat": 33.1768,
+    "lng": -96.9583,
+    "pop": 69656,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:20:41.070Z"
+  },
+  "75069": {
+    "zip": "75069",
+    "city": "Mc kinney",
+    "state": "TX",
+    "lat": 33.1976,
+    "lng": -96.6153,
+    "pop": 37582,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:40:57.335Z"
+  },
+  "75070": {
+    "zip": "75070",
+    "city": "Mc kinney",
+    "state": "TX",
+    "lat": 33.1976,
+    "lng": -96.6153,
+    "pop": 109085,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:06:52.343Z"
+  },
+  "75074": {
+    "zip": "75074",
+    "city": "Plano",
+    "state": "TX",
+    "lat": 33.0277,
+    "lng": -96.6777,
+    "pop": 53459,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:50:21.671Z"
+  },
+  "75075": {
+    "zip": "75075",
+    "city": "Plano",
+    "state": "TX",
+    "lat": 33.025,
+    "lng": -96.7397,
+    "pop": 37310,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:43:47.071Z"
+  },
+  "75077": {
+    "zip": "75077",
+    "city": "Zcta 75077",
+    "state": "TX",
+    "lat": 33.0775,
+    "lng": -97.0704,
+    "pop": 38764,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:36:18.403Z"
+  },
+  "75078": {
+    "zip": "75078",
+    "city": "Prosper",
+    "state": "TX",
+    "lat": 33.2362,
+    "lng": -96.7954,
+    "pop": 34300,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:59:17.285Z"
+  },
+  "75080": {
+    "zip": "75080",
+    "city": "Richardson",
+    "state": "TX",
+    "lat": 32.966,
+    "lng": -96.7452,
+    "pop": 53708,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:47:31.250Z"
+  },
+  "75081": {
+    "zip": "75081",
+    "city": "Richardson",
+    "state": "TX",
+    "lat": 32.9462,
+    "lng": -96.7058,
+    "pop": 40825,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:27:27.114Z"
+  },
+  "75082": {
+    "zip": "75082",
+    "city": "Richardson",
+    "state": "TX",
+    "lat": 32.9865,
+    "lng": -96.686,
+    "pop": 23418,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:09:42.072Z"
+  },
+  "75087": {
+    "zip": "75087",
+    "city": "Heath",
+    "state": "TX",
+    "lat": 32.9492,
+    "lng": -96.4418,
+    "pop": 36718,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:50:51.591Z"
+  },
+  "75088": {
+    "zip": "75088",
+    "city": "Rowlett",
+    "state": "TX",
+    "lat": 32.9031,
+    "lng": -96.5472,
+    "pop": 26823,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:44:47.636Z"
+  },
+  "75089": {
+    "zip": "75089",
+    "city": "Zcta 75089",
+    "state": "TX",
+    "lat": 32.9346,
+    "lng": -96.5544,
+    "pop": 37310,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:45:11.835Z"
+  },
+  "75090": {
+    "zip": "75090",
+    "city": "Sherman",
+    "state": "TX",
+    "lat": 33.6435,
+    "lng": -96.6075,
+    "pop": 25732,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:53:17.731Z"
+  },
+  "75092": {
+    "zip": "75092",
+    "city": "Sherman",
+    "state": "TX",
+    "lat": 33.6372,
+    "lng": -96.6184,
+    "pop": 26297,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:49:03.226Z"
+  },
+  "75093": {
+    "zip": "75093",
+    "city": "Plano",
+    "state": "TX",
+    "lat": 33.0299,
+    "lng": -96.7889,
+    "pop": 47908,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:06:53.061Z"
+  },
+  "75094": {
+    "zip": "75094",
+    "city": "Murphy",
+    "state": "TX",
+    "lat": 33.0148,
+    "lng": -96.6189,
+    "pop": 23408,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:11:07.352Z"
+  },
+  "75098": {
+    "zip": "75098",
+    "city": "Wylie",
+    "state": "TX",
+    "lat": 33.0041,
+    "lng": -96.5394,
+    "pop": 58717,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:36:13.505Z"
+  },
+  "75101": {
+    "zip": "75101",
+    "city": "Bardwell",
+    "state": "TX",
+    "lat": 32.2731,
+    "lng": -96.703,
+    "pop": 643,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:27:00.551Z"
+  },
+  "75102": {
+    "zip": "75102",
+    "city": "Barry",
+    "state": "TX",
+    "lat": 32.1014,
+    "lng": -96.6251,
+    "pop": 1455,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:18:00.828Z"
+  },
+  "75104": {
+    "zip": "75104",
+    "city": "Cedar hill",
+    "state": "TX",
+    "lat": 32.5885,
+    "lng": -96.9438,
+    "pop": 48821,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:04:03.271Z"
+  },
+  "75105": {
+    "zip": "75105",
+    "city": "Chatfield",
+    "state": "TX",
+    "lat": 32.2954,
+    "lng": -96.3887,
+    "pop": 248,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:30:26.632Z"
+  },
+  "75110": {
+    "zip": "75110",
+    "city": "Corsicana",
+    "state": "TX",
+    "lat": 32.0868,
+    "lng": -96.4762,
+    "pop": 29665,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:26:17.803Z"
+  },
+  "75114": {
+    "zip": "75114",
+    "city": "Crandall",
+    "state": "TX",
+    "lat": 32.6279,
+    "lng": -96.4558,
+    "pop": 6870,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:37:43.142Z"
+  },
+  "75115": {
+    "zip": "75115",
+    "city": "De soto",
+    "state": "TX",
+    "lat": 32.6041,
+    "lng": -96.8653,
+    "pop": 53118,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:51:46.227Z"
+  },
+  "75116": {
+    "zip": "75116",
+    "city": "Duncanville",
+    "state": "TX",
+    "lat": 32.6587,
+    "lng": -96.9114,
+    "pop": 19755,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:37:37.543Z"
+  },
+  "75119": {
+    "zip": "75119",
+    "city": "Ennis",
+    "state": "TX",
+    "lat": 32.3321,
+    "lng": -96.6224,
+    "pop": 28901,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:31:19.370Z"
+  },
+  "75124": {
+    "zip": "75124",
+    "city": "Eustace",
+    "state": "TX",
+    "lat": 32.2965,
+    "lng": -96.0137,
+    "pop": 4985,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:47:45.057Z"
+  },
+  "75125": {
+    "zip": "75125",
+    "city": "Ferris",
+    "state": "TX",
+    "lat": 32.5223,
+    "lng": -96.6643,
+    "pop": 7664,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:35:04.610Z"
+  },
+  "75126": {
+    "zip": "75126",
+    "city": "Forney",
+    "state": "TX",
+    "lat": 32.7491,
+    "lng": -96.4598,
+    "pop": 52078,
+    "status": "full_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "probed_at": "2026-04-02T05:56:59.114Z"
+  },
+  "75132": {
+    "zip": "75132",
+    "city": "Fate",
+    "state": "TX",
+    "lat": 32.9415,
+    "lng": -96.3814,
+    "pop": 2326,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:12:31.237Z"
+  },
+  "75134": {
+    "zip": "75134",
+    "city": "Lancaster",
+    "state": "TX",
+    "lat": 32.6161,
+    "lng": -96.783,
+    "pop": 20759,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:29:46.653Z"
+  },
+  "75135": {
+    "zip": "75135",
+    "city": "Caddo mills",
+    "state": "TX",
+    "lat": 33.0683,
+    "lng": -96.2391,
+    "pop": 7183,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:36:13.135Z"
+  },
+  "75137": {
+    "zip": "75137",
+    "city": "Duncanville",
+    "state": "TX",
+    "lat": 32.6347,
+    "lng": -96.9113,
+    "pop": 19341,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:40:27.883Z"
+  },
+  "75141": {
+    "zip": "75141",
+    "city": "Hutchins",
+    "state": "TX",
+    "lat": 32.6396,
+    "lng": -96.707,
+    "pop": 5814,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:43:05.340Z"
+  },
+  "75142": {
+    "zip": "75142",
+    "city": "Kaufman",
+    "state": "TX",
+    "lat": 32.546,
+    "lng": -96.2852,
+    "pop": 21746,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:23:18.598Z"
+  },
+  "75143": {
+    "zip": "75143",
+    "city": "Seven points",
+    "state": "TX",
+    "lat": 32.2486,
+    "lng": -96.2161,
+    "pop": 14336,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:11:04.511Z"
+  },
+  "75144": {
+    "zip": "75144",
+    "city": "Kerens",
+    "state": "TX",
+    "lat": 32.1275,
+    "lng": -96.2298,
+    "pop": 3414,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:01:21.544Z"
+  },
+  "75146": {
+    "zip": "75146",
+    "city": "Lancaster",
+    "state": "TX",
+    "lat": 32.5914,
+    "lng": -96.7728,
+    "pop": 20663,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:31:33.546Z"
+  },
+  "75147": {
+    "zip": "75147",
+    "city": "Gun barrel city",
+    "state": "TX",
+    "lat": 32.3685,
+    "lng": -96.0685,
+    "pop": 6951,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:36:59.433Z"
+  },
+  "75148": {
+    "zip": "75148",
+    "city": "Malakoff",
+    "state": "TX",
+    "lat": 32.1705,
+    "lng": -96.006,
+    "pop": 6396,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:38:04.470Z"
+  },
+  "75149": {
+    "zip": "75149",
+    "city": "Mesquite",
+    "state": "TX",
+    "lat": 32.7678,
+    "lng": -96.6082,
+    "pop": 57758,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:37:38.349Z"
+  },
+  "75150": {
+    "zip": "75150",
+    "city": "Mesquite",
+    "state": "TX",
+    "lat": 32.8154,
+    "lng": -96.6307,
+    "pop": 61863,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:27:45.772Z"
+  },
+  "75152": {
+    "zip": "75152",
+    "city": "Palmer",
+    "state": "TX",
+    "lat": 32.4387,
+    "lng": -96.6794,
+    "pop": 5194,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:47:21.828Z"
+  },
+  "75153": {
+    "zip": "75153",
+    "city": "Powell",
+    "state": "TX",
+    "lat": 32.1196,
+    "lng": -96.3327,
+    "pop": 571,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:27:23.146Z"
+  },
+  "75154": {
+    "zip": "75154",
+    "city": "Ovilla",
+    "state": "TX",
+    "lat": 32.5185,
+    "lng": -96.8071,
+    "pop": 42192,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:20:21.808Z"
+  },
+  "75155": {
+    "zip": "75155",
+    "city": "Rice",
+    "state": "TX",
+    "lat": 32.2258,
+    "lng": -96.4606,
+    "pop": 2971,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:04:38.361Z"
+  },
+  "75158": {
+    "zip": "75158",
+    "city": "Scurry",
+    "state": "TX",
+    "lat": 32.4818,
+    "lng": -96.3925,
+    "pop": 4337,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:56:16.606Z"
+  },
+  "75159": {
+    "zip": "75159",
+    "city": "Seagoville",
+    "state": "TX",
+    "lat": 32.6525,
+    "lng": -96.558,
+    "pop": 20857,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:28:21.130Z"
+  },
+  "75160": {
+    "zip": "75160",
+    "city": "Terrell",
+    "state": "TX",
+    "lat": 32.7515,
+    "lng": -96.2831,
+    "pop": 24494,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:59:42.943Z"
+  },
+  "75161": {
+    "zip": "75161",
+    "city": "Zcta 75161",
+    "state": "TX",
+    "lat": 32.7332,
+    "lng": -96.195,
+    "pop": 7483,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:35:50.296Z"
+  },
+  "75163": {
+    "zip": "75163",
+    "city": "Trinidad",
+    "state": "TX",
+    "lat": 32.1383,
+    "lng": -96.0831,
+    "pop": 2590,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:08:58.571Z"
+  },
+  "75164": {
+    "zip": "75164",
+    "city": "Josephine",
+    "state": "TX",
+    "lat": 33.0612,
+    "lng": -96.3072,
+    "pop": 788,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:24:25.793Z"
+  },
+  "75165": {
+    "zip": "75165",
+    "city": "Waxahachie",
+    "state": "TX",
+    "lat": 32.3808,
+    "lng": -96.8374,
+    "pop": 44571,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:11:30.284Z"
+  },
+  "75166": {
+    "zip": "75166",
+    "city": "Lavon",
+    "state": "TX",
+    "lat": 33.0139,
+    "lng": -96.4377,
+    "pop": 4624,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:55:10.467Z"
+  },
+  "75167": {
+    "zip": "75167",
+    "city": "Zcta 75167",
+    "state": "TX",
+    "lat": 32.3773,
+    "lng": -96.9162,
+    "pop": 12091,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:19:34.584Z"
+  },
+  "75169": {
+    "zip": "75169",
+    "city": "Wills point",
+    "state": "TX",
+    "lat": 32.7283,
+    "lng": -96.0079,
+    "pop": 12937,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:15:38.432Z"
+  },
+  "75172": {
+    "zip": "75172",
+    "city": "Wilmer",
+    "state": "TX",
+    "lat": 32.5981,
+    "lng": -96.6838,
+    "pop": 4814,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:50:34.356Z"
+  },
+  "75173": {
+    "zip": "75173",
+    "city": "Nevada",
+    "state": "TX",
+    "lat": 33.0593,
+    "lng": -96.3877,
+    "pop": 4953,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:49:10.079Z"
+  },
+  "75180": {
+    "zip": "75180",
+    "city": "Balch springs",
+    "state": "TX",
+    "lat": 32.7287,
+    "lng": -96.6228,
+    "pop": 23939,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:04:00.311Z"
+  },
+  "75181": {
+    "zip": "75181",
+    "city": "Mesquite",
+    "state": "TX",
+    "lat": 32.7272,
+    "lng": -96.5669,
+    "pop": 25264,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:54:42.284Z"
+  },
+  "75182": {
+    "zip": "75182",
+    "city": "Mesquite",
+    "state": "TX",
+    "lat": 32.797,
+    "lng": -96.5616,
+    "pop": 6199,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:41:18.053Z"
+  },
+  "75189": {
+    "zip": "75189",
+    "city": "Royse city",
+    "state": "TX",
+    "lat": 32.9628,
+    "lng": -96.3648,
+    "pop": 30842,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:18:27.792Z"
+  },
+  "75201": {
+    "zip": "75201",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7904,
+    "lng": -96.8044,
+    "pop": 18032,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:48:17.076Z"
+  },
+  "75202": {
+    "zip": "75202",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7781,
+    "lng": -96.8054,
+    "pop": 2739,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:07:50.495Z"
+  },
+  "75203": {
+    "zip": "75203",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.746,
+    "lng": -96.807,
+    "pop": 18295,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:46:53.806Z"
+  },
+  "75204": {
+    "zip": "75204",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8038,
+    "lng": -96.7851,
+    "pop": 32032,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:10:59.295Z"
+  },
+  "75205": {
+    "zip": "75205",
+    "city": "Village",
+    "state": "TX",
+    "lat": 32.826,
+    "lng": -96.7843,
+    "pop": 24726,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:57:32.364Z"
+  },
+  "75206": {
+    "zip": "75206",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.831,
+    "lng": -96.7692,
+    "pop": 39653,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:30:18.099Z"
+  },
+  "75207": {
+    "zip": "75207",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7939,
+    "lng": -96.8319,
+    "pop": 7715,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:34:40.221Z"
+  },
+  "75208": {
+    "zip": "75208",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7492,
+    "lng": -96.8389,
+    "pop": 30064,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:24:05.716Z"
+  },
+  "75209": {
+    "zip": "75209",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8456,
+    "lng": -96.826,
+    "pop": 14558,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:10:41.916Z"
+  },
+  "75210": {
+    "zip": "75210",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7699,
+    "lng": -96.743,
+    "pop": 9504,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:26:48.645Z"
+  },
+  "75211": {
+    "zip": "75211",
+    "city": "Cockrell hill",
+    "state": "TX",
+    "lat": 32.7319,
+    "lng": -96.9057,
+    "pop": 77920,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:12:34.352Z"
+  },
+  "75212": {
+    "zip": "75212",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7829,
+    "lng": -96.8714,
+    "pop": 28017,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:37:20.409Z"
+  },
+  "75214": {
+    "zip": "75214",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8248,
+    "lng": -96.7498,
+    "pop": 34658,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:57:52.044Z"
+  },
+  "75215": {
+    "zip": "75215",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7582,
+    "lng": -96.7623,
+    "pop": 17184,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:52:56.403Z"
+  },
+  "75216": {
+    "zip": "75216",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7086,
+    "lng": -96.7955,
+    "pop": 54253,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:43:17.181Z"
+  },
+  "75217": {
+    "zip": "75217",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7244,
+    "lng": -96.6755,
+    "pop": 86811,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:09:45.007Z"
+  },
+  "75218": {
+    "zip": "75218",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8463,
+    "lng": -96.6972,
+    "pop": 22712,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:18:36.683Z"
+  },
+  "75219": {
+    "zip": "75219",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8132,
+    "lng": -96.8142,
+    "pop": 24038,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:02:34.389Z"
+  },
+  "75220": {
+    "zip": "75220",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8681,
+    "lng": -96.8622,
+    "pop": 41110,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:24:36.397Z"
+  },
+  "75223": {
+    "zip": "75223",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7942,
+    "lng": -96.7475,
+    "pop": 15002,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:07:31.650Z"
+  },
+  "75224": {
+    "zip": "75224",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7114,
+    "lng": -96.8387,
+    "pop": 37602,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:39:07.418Z"
+  },
+  "75225": {
+    "zip": "75225",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8628,
+    "lng": -96.7918,
+    "pop": 22108,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:21:28.673Z"
+  },
+  "75226": {
+    "zip": "75226",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7887,
+    "lng": -96.7676,
+    "pop": 4774,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:53:23.637Z"
+  },
+  "75227": {
+    "zip": "75227",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7672,
+    "lng": -96.6836,
+    "pop": 60632,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:30:35.958Z"
+  },
+  "75228": {
+    "zip": "75228",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.825,
+    "lng": -96.6784,
+    "pop": 75303,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:15:24.564Z"
+  },
+  "75229": {
+    "zip": "75229",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8958,
+    "lng": -96.8588,
+    "pop": 32739,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:09:09.541Z"
+  },
+  "75230": {
+    "zip": "75230",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8999,
+    "lng": -96.7897,
+    "pop": 27402,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:40:30.605Z"
+  },
+  "75231": {
+    "zip": "75231",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8756,
+    "lng": -96.7495,
+    "pop": 40987,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:26:02.402Z"
+  },
+  "75232": {
+    "zip": "75232",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.6647,
+    "lng": -96.8384,
+    "pop": 32823,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:07:44.340Z"
+  },
+  "75233": {
+    "zip": "75233",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7046,
+    "lng": -96.8725,
+    "pop": 16920,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:54:21.505Z"
+  },
+  "75234": {
+    "zip": "75234",
+    "city": "Farmers branch",
+    "state": "TX",
+    "lat": 32.9245,
+    "lng": -96.8938,
+    "pop": 39644,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:31:42.888Z"
+  },
+  "75235": {
+    "zip": "75235",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8252,
+    "lng": -96.8388,
+    "pop": 19198,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:41:52.720Z"
+  },
+  "75236": {
+    "zip": "75236",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.69,
+    "lng": -96.9177,
+    "pop": 16920,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:55:46.410Z"
+  },
+  "75237": {
+    "zip": "75237",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.659,
+    "lng": -96.8765,
+    "pop": 21607,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:26:08.618Z"
+  },
+  "75238": {
+    "zip": "75238",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.877,
+    "lng": -96.708,
+    "pop": 33396,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:04:54.270Z"
+  },
+  "75240": {
+    "zip": "75240",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.9374,
+    "lng": -96.7872,
+    "pop": 26841,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:43:22.085Z"
+  },
+  "75241": {
+    "zip": "75241",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.6722,
+    "lng": -96.7774,
+    "pop": 30863,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:18:04.082Z"
+  },
+  "75243": {
+    "zip": "75243",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.9103,
+    "lng": -96.7285,
+    "pop": 68253,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:23:30.575Z"
+  },
+  "75244": {
+    "zip": "75244",
+    "city": "Farmers branch",
+    "state": "TX",
+    "lat": 32.9322,
+    "lng": -96.8353,
+    "pop": 13552,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:13:52.408Z"
+  },
+  "75246": {
+    "zip": "75246",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7948,
+    "lng": -96.7697,
+    "pop": 2553,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:10:23.506Z"
+  },
+  "75247": {
+    "zip": "75247",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.8152,
+    "lng": -96.8703,
+    "pop": 772,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:25:51.357Z"
+  },
+  "75248": {
+    "zip": "75248",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.9682,
+    "lng": -96.7942,
+    "pop": 37602,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:39:31.765Z"
+  },
+  "75249": {
+    "zip": "75249",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.636,
+    "lng": -96.9493,
+    "pop": 18374,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:44:03.816Z"
+  },
+  "75251": {
+    "zip": "75251",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.9189,
+    "lng": -96.7751,
+    "pop": 3750,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:59:51.377Z"
+  },
+  "75252": {
+    "zip": "75252",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.9968,
+    "lng": -96.7921,
+    "pop": 27880,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:37:40.083Z"
+  },
+  "75253": {
+    "zip": "75253",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.6833,
+    "lng": -96.5964,
+    "pop": 24666,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:58:57.517Z"
+  },
+  "75287": {
+    "zip": "75287",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 33.0005,
+    "lng": -96.8314,
+    "pop": 55060,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:40:26.878Z"
+  },
+  "75401": {
+    "zip": "75401",
+    "city": "Greenville",
+    "state": "TX",
+    "lat": 33.1854,
+    "lng": -96.1304,
+    "pop": 20689,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:30:09.134Z"
+  },
+  "75402": {
+    "zip": "75402",
+    "city": "Greenville",
+    "state": "TX",
+    "lat": 33.1047,
+    "lng": -96.0927,
+    "pop": 17463,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:51:31.062Z"
+  },
+  "75407": {
+    "zip": "75407",
+    "city": "Princeton",
+    "state": "TX",
+    "lat": 33.1555,
+    "lng": -96.4981,
+    "pop": 18371,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:45:28.282Z"
+  },
+  "75409": {
+    "zip": "75409",
+    "city": "Anna",
+    "state": "TX",
+    "lat": 33.3445,
+    "lng": -96.5639,
+    "pop": 16750,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:58:36.484Z"
+  },
+  "75413": {
+    "zip": "75413",
+    "city": "Bailey",
+    "state": "TX",
+    "lat": 33.43,
+    "lng": -96.1662,
+    "pop": 287,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:29:20.934Z"
+  },
+  "75414": {
+    "zip": "75414",
+    "city": "Bells",
+    "state": "TX",
+    "lat": 33.6178,
+    "lng": -96.4237,
+    "pop": 3394,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:01:44.487Z"
+  },
+  "75418": {
+    "zip": "75418",
+    "city": "Bonham",
+    "state": "TX",
+    "lat": 33.5806,
+    "lng": -96.1836,
+    "pop": 14570,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:09:18.516Z"
+  },
+  "75423": {
+    "zip": "75423",
+    "city": "Celeste",
+    "state": "TX",
+    "lat": 33.2649,
+    "lng": -96.2076,
+    "pop": 3423,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:00:57.595Z"
+  },
+  "75424": {
+    "zip": "75424",
+    "city": "Blue ridge",
+    "state": "TX",
+    "lat": 33.3061,
+    "lng": -96.3901,
+    "pop": 2891,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:06:26.096Z"
+  },
+  "75438": {
+    "zip": "75438",
+    "city": "Dodd city",
+    "state": "TX",
+    "lat": 33.5647,
+    "lng": -96.0619,
+    "pop": 973,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:23:16.912Z"
+  },
+  "75439": {
+    "zip": "75439",
+    "city": "Ector",
+    "state": "TX",
+    "lat": 33.5819,
+    "lng": -96.2735,
+    "pop": 1186,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:20:17.904Z"
+  },
+  "75442": {
+    "zip": "75442",
+    "city": "Farmersville",
+    "state": "TX",
+    "lat": 33.1659,
+    "lng": -96.3686,
+    "pop": 9558,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:25:23.840Z"
+  },
+  "75447": {
+    "zip": "75447",
+    "city": "Ivanhoe",
+    "state": "TX",
+    "lat": 33.7612,
+    "lng": -96.1193,
+    "pop": 1201,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:19:53.577Z"
+  },
+  "75452": {
+    "zip": "75452",
+    "city": "Leonard",
+    "state": "TX",
+    "lat": 33.3796,
+    "lng": -96.2475,
+    "pop": 4673,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:53:46.055Z"
+  },
+  "75454": {
+    "zip": "75454",
+    "city": "Melissa",
+    "state": "TX",
+    "lat": 33.2841,
+    "lng": -96.574,
+    "pop": 11848,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:20:59.661Z"
+  },
+  "75459": {
+    "zip": "75459",
+    "city": "Howe",
+    "state": "TX",
+    "lat": 33.5311,
+    "lng": -96.6777,
+    "pop": 5260,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:46:59.115Z"
+  },
+  "75474": {
+    "zip": "75474",
+    "city": "Quinlan",
+    "state": "TX",
+    "lat": 32.8983,
+    "lng": -96.1261,
+    "pop": 15912,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:03:16.404Z"
+  },
+  "75475": {
+    "zip": "75475",
+    "city": "Randolph",
+    "state": "TX",
+    "lat": 33.4846,
+    "lng": -96.2541,
+    "pop": 111,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:31:14.294Z"
+  },
+  "75476": {
+    "zip": "75476",
+    "city": "Ravenna",
+    "state": "TX",
+    "lat": 33.7098,
+    "lng": -96.1452,
+    "pop": 1031,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:22:52.292Z"
+  },
+  "75479": {
+    "zip": "75479",
+    "city": "Savoy",
+    "state": "TX",
+    "lat": 33.6066,
+    "lng": -96.3502,
+    "pop": 1987,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:15:02.488Z"
+  },
+  "75488": {
+    "zip": "75488",
+    "city": "Telephone",
+    "state": "TX",
+    "lat": 33.7979,
+    "lng": -96.0449,
+    "pop": 747,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:26:37.429Z"
+  },
+  "75489": {
+    "zip": "75489",
+    "city": "Tom bean",
+    "state": "TX",
+    "lat": 33.5193,
+    "lng": -96.4843,
+    "pop": 1110,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:21:42.221Z"
+  },
+  "75490": {
+    "zip": "75490",
+    "city": "Trenton",
+    "state": "TX",
+    "lat": 33.4235,
+    "lng": -96.3398,
+    "pop": 2633,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:08:35.114Z"
+  },
+  "75491": {
+    "zip": "75491",
+    "city": "Whitewright",
+    "state": "TX",
+    "lat": 33.519,
+    "lng": -96.451,
+    "pop": 4781,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:51:59.014Z"
+  },
+  "75492": {
+    "zip": "75492",
+    "city": "Windom",
+    "state": "TX",
+    "lat": 33.5633,
+    "lng": -96.002,
+    "pop": 369,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:28:33.844Z"
+  },
+  "75495": {
+    "zip": "75495",
+    "city": "Van alstyne",
+    "state": "TX",
+    "lat": 33.4292,
+    "lng": -96.5486,
+    "pop": 8621,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:30:25.202Z"
+  },
+  "75496": {
+    "zip": "75496",
+    "city": "Wolfe city",
+    "state": "TX",
+    "lat": 33.3605,
+    "lng": -96.0691,
+    "pop": 3450,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:00:34.852Z"
+  },
+  "76001": {
+    "zip": "76001",
+    "city": "Zcta 76001",
+    "state": "TX",
+    "lat": 32.6289,
+    "lng": -97.1517,
+    "pop": 37231,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:46:36.848Z"
+  },
+  "76002": {
+    "zip": "76002",
+    "city": "Zcta 76002",
+    "state": "TX",
+    "lat": 32.6255,
+    "lng": -97.0784,
+    "pop": 36302,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:53:39.128Z"
+  },
+  "76006": {
+    "zip": "76006",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.7785,
+    "lng": -97.0834,
+    "pop": 24057,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:01:08.695Z"
+  },
+  "76008": {
+    "zip": "76008",
+    "city": "Aledo",
+    "state": "TX",
+    "lat": 32.7004,
+    "lng": -97.6039,
+    "pop": 20288,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:34:22.538Z"
+  },
+  "76009": {
+    "zip": "76009",
+    "city": "Alvarado",
+    "state": "TX",
+    "lat": 32.4395,
+    "lng": -97.213,
+    "pop": 19618,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:39:02.472Z"
+  },
+  "76010": {
+    "zip": "76010",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.7204,
+    "lng": -97.0826,
+    "pop": 59526,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:34:50.257Z"
+  },
+  "76011": {
+    "zip": "76011",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.7582,
+    "lng": -97.1003,
+    "pop": 22878,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:17:11.000Z"
+  },
+  "76012": {
+    "zip": "76012",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.754,
+    "lng": -97.1348,
+    "pop": 26730,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:46:12.783Z"
+  },
+  "76013": {
+    "zip": "76013",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.7199,
+    "lng": -97.1442,
+    "pop": 34763,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:56:28.515Z"
+  },
+  "76014": {
+    "zip": "76014",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.6954,
+    "lng": -97.0876,
+    "pop": 33289,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:06:19.378Z"
+  },
+  "76015": {
+    "zip": "76015",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.6931,
+    "lng": -97.1347,
+    "pop": 17773,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:49:42.644Z"
+  },
+  "76016": {
+    "zip": "76016",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.6889,
+    "lng": -97.1905,
+    "pop": 31705,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:13:49.783Z"
+  },
+  "76017": {
+    "zip": "76017",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.6555,
+    "lng": -97.1599,
+    "pop": 46312,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:09:42.571Z"
+  },
+  "76018": {
+    "zip": "76018",
+    "city": "Arlington",
+    "state": "TX",
+    "lat": 32.6548,
+    "lng": -97.092,
+    "pop": 28353,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:35:55.339Z"
+  },
+  "76020": {
+    "zip": "76020",
+    "city": "Azle",
+    "state": "TX",
+    "lat": 32.9035,
+    "lng": -97.5412,
+    "pop": 30487,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:21:18.026Z"
+  },
+  "76021": {
+    "zip": "76021",
+    "city": "Bedford",
+    "state": "TX",
+    "lat": 32.8536,
+    "lng": -97.1358,
+    "pop": 35168,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:55:03.539Z"
+  },
+  "76022": {
+    "zip": "76022",
+    "city": "Bedford",
+    "state": "TX",
+    "lat": 32.8297,
+    "lng": -97.1454,
+    "pop": 13945,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:12:29.243Z"
+  },
+  "76023": {
+    "zip": "76023",
+    "city": "Boyd",
+    "state": "TX",
+    "lat": 33.0594,
+    "lng": -97.5868,
+    "pop": 7090,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:36:36.126Z"
+  },
+  "76028": {
+    "zip": "76028",
+    "city": "Burleson",
+    "state": "TX",
+    "lat": 32.5316,
+    "lng": -97.309,
+    "pop": 72493,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:19:16.495Z"
+  },
+  "76031": {
+    "zip": "76031",
+    "city": "Cleburne",
+    "state": "TX",
+    "lat": 32.3485,
+    "lng": -97.3311,
+    "pop": 18432,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:42:39.231Z"
+  },
+  "76034": {
+    "zip": "76034",
+    "city": "Colleyville",
+    "state": "TX",
+    "lat": 32.8872,
+    "lng": -97.146,
+    "pop": 26693,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:47:38.002Z"
+  },
+  "76035": {
+    "zip": "76035",
+    "city": "Cresson",
+    "state": "TX",
+    "lat": 32.5343,
+    "lng": -97.6158,
+    "pop": 2373,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:12:08.385Z"
+  },
+  "76036": {
+    "zip": "76036",
+    "city": "Crowley",
+    "state": "TX",
+    "lat": 32.5814,
+    "lng": -97.3703,
+    "pop": 27835,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:39:05.429Z"
+  },
+  "76039": {
+    "zip": "76039",
+    "city": "Euless",
+    "state": "TX",
+    "lat": 32.8582,
+    "lng": -97.0832,
+    "pop": 37896,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:37:43.339Z"
+  },
+  "76040": {
+    "zip": "76040",
+    "city": "Euless",
+    "state": "TX",
+    "lat": 32.8264,
+    "lng": -97.0972,
+    "pop": 33419,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:03:28.725Z"
+  },
+  "76041": {
+    "zip": "76041",
+    "city": "Forreston",
+    "state": "TX",
+    "lat": 32.2486,
+    "lng": -96.8232,
+    "pop": 514,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:27:47.456Z"
+  },
+  "76043": {
+    "zip": "76043",
+    "city": "Glen rose",
+    "state": "TX",
+    "lat": 32.2298,
+    "lng": -97.7629,
+    "pop": 7525,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:35:27.778Z"
+  },
+  "76044": {
+    "zip": "76044",
+    "city": "Godley",
+    "state": "TX",
+    "lat": 32.4282,
+    "lng": -97.5349,
+    "pop": 5407,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:45:34.193Z"
+  },
+  "76048": {
+    "zip": "76048",
+    "city": "Granbury",
+    "state": "TX",
+    "lat": 32.425,
+    "lng": -97.7742,
+    "pop": 24586,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:59:20.718Z"
+  },
+  "76049": {
+    "zip": "76049",
+    "city": "Granbury",
+    "state": "TX",
+    "lat": 32.4488,
+    "lng": -97.7285,
+    "pop": 30062,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:24:29.077Z"
+  },
+  "76050": {
+    "zip": "76050",
+    "city": "Grandview",
+    "state": "TX",
+    "lat": 32.2704,
+    "lng": -97.1792,
+    "pop": 6094,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:41:40.621Z"
+  },
+  "76051": {
+    "zip": "76051",
+    "city": "Grapevine",
+    "state": "TX",
+    "lat": 32.9328,
+    "lng": -97.0808,
+    "pop": 54130,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:44:40.695Z"
+  },
+  "76052": {
+    "zip": "76052",
+    "city": "Haslet",
+    "state": "TX",
+    "lat": 32.9557,
+    "lng": -97.3372,
+    "pop": 23080,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:14:21.540Z"
+  },
+  "76053": {
+    "zip": "76053",
+    "city": "Hurst",
+    "state": "TX",
+    "lat": 32.8211,
+    "lng": -97.1756,
+    "pop": 30317,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:22:41.545Z"
+  },
+  "76054": {
+    "zip": "76054",
+    "city": "Hurst",
+    "state": "TX",
+    "lat": 32.8558,
+    "lng": -97.1755,
+    "pop": 12178,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:19:11.977Z"
+  },
+  "76055": {
+    "zip": "76055",
+    "city": "Itasca",
+    "state": "TX",
+    "lat": 32.1636,
+    "lng": -97.146,
+    "pop": 3181,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:03:53.760Z"
+  },
+  "76058": {
+    "zip": "76058",
+    "city": "Joshua",
+    "state": "TX",
+    "lat": 32.4663,
+    "lng": -97.4011,
+    "pop": 21037,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:26:55.880Z"
+  },
+  "76059": {
+    "zip": "76059",
+    "city": "Keene",
+    "state": "TX",
+    "lat": 32.3937,
+    "lng": -97.3287,
+    "pop": 5716,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:44:52.358Z"
+  },
+  "76060": {
+    "zip": "76060",
+    "city": "Kennedale",
+    "state": "TX",
+    "lat": 32.6432,
+    "lng": -97.2139,
+    "pop": 8606,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:31:50.300Z"
+  },
+  "76061": {
+    "zip": "76061",
+    "city": "Lillian",
+    "state": "TX",
+    "lat": 32.5065,
+    "lng": -97.1875,
+    "pop": 59,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:32:01.511Z"
+  },
+  "76063": {
+    "zip": "76063",
+    "city": "Mansfield",
+    "state": "TX",
+    "lat": 32.5773,
+    "lng": -97.1416,
+    "pop": 76609,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:13:59.414Z"
+  },
+  "76064": {
+    "zip": "76064",
+    "city": "Maypearl",
+    "state": "TX",
+    "lat": 32.2993,
+    "lng": -97.0271,
+    "pop": 2100,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:13:17.733Z"
+  },
+  "76065": {
+    "zip": "76065",
+    "city": "Midlothian",
+    "state": "TX",
+    "lat": 32.4757,
+    "lng": -96.9936,
+    "pop": 38800,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:34:54.845Z"
+  },
+  "76066": {
+    "zip": "76066",
+    "city": "Millsap",
+    "state": "TX",
+    "lat": 32.7457,
+    "lng": -97.9561,
+    "pop": 4106,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:58:03.280Z"
+  },
+  "76070": {
+    "zip": "76070",
+    "city": "Nemo",
+    "state": "TX",
+    "lat": 32.2713,
+    "lng": -97.6567,
+    "pop": 955,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:23:40.550Z"
+  },
+  "76071": {
+    "zip": "76071",
+    "city": "Newark",
+    "state": "TX",
+    "lat": 33.007,
+    "lng": -97.4923,
+    "pop": 4173,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:57:40.060Z"
+  },
+  "76073": {
+    "zip": "76073",
+    "city": "Paradise",
+    "state": "TX",
+    "lat": 33.0826,
+    "lng": -97.6974,
+    "pop": 6237,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:39:53.089Z"
+  },
+  "76077": {
+    "zip": "76077",
+    "city": "Rainbow",
+    "state": "TX",
+    "lat": 32.2812,
+    "lng": -97.7065,
+    "pop": 333,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:28:57.630Z"
+  },
+  "76078": {
+    "zip": "76078",
+    "city": "Rhome",
+    "state": "TX",
+    "lat": 33.054,
+    "lng": -97.4817,
+    "pop": 9024,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:28:59.970Z"
+  },
+  "76082": {
+    "zip": "76082",
+    "city": "Springtown",
+    "state": "TX",
+    "lat": 32.966,
+    "lng": -97.6836,
+    "pop": 21151,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:26:32.359Z"
+  },
+  "76084": {
+    "zip": "76084",
+    "city": "Venus",
+    "state": "TX",
+    "lat": 32.433,
+    "lng": -97.1087,
+    "pop": 9574,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:23:59.230Z"
+  },
+  "76086": {
+    "zip": "76086",
+    "city": "Weatherford",
+    "state": "TX",
+    "lat": 32.7549,
+    "lng": -97.7899,
+    "pop": 23161,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:12:55.781Z"
+  },
+  "76087": {
+    "zip": "76087",
+    "city": "Weatherford",
+    "state": "TX",
+    "lat": 32.7495,
+    "lng": -97.6894,
+    "pop": 29119,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:30:56.471Z"
+  },
+  "76088": {
+    "zip": "76088",
+    "city": "Zcta 76088",
+    "state": "TX",
+    "lat": 32.8478,
+    "lng": -97.8606,
+    "pop": 12610,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:16:20.819Z"
+  },
+  "76092": {
+    "zip": "76092",
+    "city": "Grapevine",
+    "state": "TX",
+    "lat": 32.9485,
+    "lng": -97.1524,
+    "pop": 31837,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:12:24.386Z"
+  },
+  "76093": {
+    "zip": "76093",
+    "city": "Rio vista",
+    "state": "TX",
+    "lat": 32.2532,
+    "lng": -97.3678,
+    "pop": 2930,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:05:01.510Z"
+  },
+  "76102": {
+    "zip": "76102",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7589,
+    "lng": -97.328,
+    "pop": 10632,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:22:49.026Z"
+  },
+  "76103": {
+    "zip": "76103",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.747,
+    "lng": -97.2604,
+    "pop": 16848,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:57:11.684Z"
+  },
+  "76104": {
+    "zip": "76104",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7256,
+    "lng": -97.3184,
+    "pop": 17653,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:51:08.036Z"
+  },
+  "76105": {
+    "zip": "76105",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7233,
+    "lng": -97.269,
+    "pop": 22922,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:15:46.531Z"
+  },
+  "76106": {
+    "zip": "76106",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7968,
+    "lng": -97.356,
+    "pop": 38906,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:34:31.861Z"
+  },
+  "76107": {
+    "zip": "76107",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7392,
+    "lng": -97.3852,
+    "pop": 29377,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:28:06.964Z"
+  },
+  "76108": {
+    "zip": "76108",
+    "city": "White settlement",
+    "state": "TX",
+    "lat": 32.7822,
+    "lng": -97.4969,
+    "pop": 42902,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:18:35.167Z"
+  },
+  "76109": {
+    "zip": "76109",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7002,
+    "lng": -97.3789,
+    "pop": 23725,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:06:51.010Z"
+  },
+  "76110": {
+    "zip": "76110",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7065,
+    "lng": -97.3375,
+    "pop": 33720,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:02:03.633Z"
+  },
+  "76111": {
+    "zip": "76111",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7824,
+    "lng": -97.3003,
+    "pop": 22567,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:20:02.877Z"
+  },
+  "76112": {
+    "zip": "76112",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7493,
+    "lng": -97.2181,
+    "pop": 42218,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:19:59.602Z"
+  },
+  "76114": {
+    "zip": "76114",
+    "city": "River oaks",
+    "state": "TX",
+    "lat": 32.7796,
+    "lng": -97.3928,
+    "pop": 27151,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:41:56.285Z"
+  },
+  "76115": {
+    "zip": "76115",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6796,
+    "lng": -97.3336,
+    "pop": 21907,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:22:54.248Z"
+  },
+  "76116": {
+    "zip": "76116",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.723,
+    "lng": -97.4483,
+    "pop": 50371,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:59:48.633Z"
+  },
+  "76117": {
+    "zip": "76117",
+    "city": "Haltom city",
+    "state": "TX",
+    "lat": 32.8087,
+    "lng": -97.2709,
+    "pop": 32191,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:09:34.184Z"
+  },
+  "76118": {
+    "zip": "76118",
+    "city": "North richland h",
+    "state": "TX",
+    "lat": 32.8013,
+    "lng": -97.1952,
+    "pop": 16594,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:01:27.565Z"
+  },
+  "76119": {
+    "zip": "76119",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6914,
+    "lng": -97.2675,
+    "pop": 52279,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:53:09.889Z"
+  },
+  "76120": {
+    "zip": "76120",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.7639,
+    "lng": -97.1781,
+    "pop": 19941,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:36:11.774Z"
+  },
+  "76123": {
+    "zip": "76123",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6254,
+    "lng": -97.3658,
+    "pop": 37075,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:49:26.186Z"
+  },
+  "76126": {
+    "zip": "76126",
+    "city": "Benbrook",
+    "state": "TX",
+    "lat": 32.64,
+    "lng": -97.5448,
+    "pop": 23844,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:05:25.932Z"
+  },
+  "76127": {
+    "zip": "76127",
+    "city": "Carswell afb",
+    "state": "TX",
+    "lat": 32.7254,
+    "lng": -97.3208,
+    "pop": 2038,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:14:40.803Z"
+  },
+  "76131": {
+    "zip": "76131",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8632,
+    "lng": -97.3377,
+    "pop": 47377,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:08:17.958Z"
+  },
+  "76132": {
+    "zip": "76132",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6711,
+    "lng": -97.4056,
+    "pop": 26265,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:50:29.202Z"
+  },
+  "76133": {
+    "zip": "76133",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6526,
+    "lng": -97.3758,
+    "pop": 53694,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:48:56.972Z"
+  },
+  "76134": {
+    "zip": "76134",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6469,
+    "lng": -97.3325,
+    "pop": 28852,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:32:44.376Z"
+  },
+  "76135": {
+    "zip": "76135",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8248,
+    "lng": -97.4519,
+    "pop": 20233,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:34:46.217Z"
+  },
+  "76137": {
+    "zip": "76137",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8664,
+    "lng": -97.2891,
+    "pop": 59983,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:32:00.823Z"
+  },
+  "76140": {
+    "zip": "76140",
+    "city": "Everman",
+    "state": "TX",
+    "lat": 32.6192,
+    "lng": -97.2735,
+    "pop": 30930,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:16:39.494Z"
+  },
+  "76148": {
+    "zip": "76148",
+    "city": "Watauga",
+    "state": "TX",
+    "lat": 32.8621,
+    "lng": -97.2508,
+    "pop": 23679,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:08:16.329Z"
+  },
+  "76155": {
+    "zip": "76155",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8247,
+    "lng": -97.0503,
+    "pop": 6329,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:39:29.969Z"
+  },
+  "76177": {
+    "zip": "76177",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.9448,
+    "lng": -97.3124,
+    "pop": 10814,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:22:25.062Z"
+  },
+  "76179": {
+    "zip": "76179",
+    "city": "Saginaw",
+    "state": "TX",
+    "lat": 32.9074,
+    "lng": -97.4257,
+    "pop": 69066,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:22:05.654Z"
+  },
+  "76180": {
+    "zip": "76180",
+    "city": "North richland h",
+    "state": "TX",
+    "lat": 32.84,
+    "lng": -97.225,
+    "pop": 37117,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:48:01.751Z"
+  },
+  "76201": {
+    "zip": "76201",
+    "city": "Denton",
+    "state": "TX",
+    "lat": 33.2289,
+    "lng": -97.1314,
+    "pop": 29447,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:27:42.598Z"
+  },
+  "76205": {
+    "zip": "76205",
+    "city": "Denton",
+    "state": "TX",
+    "lat": 33.1903,
+    "lng": -97.1282,
+    "pop": 21657,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:24:43.900Z"
+  },
+  "76207": {
+    "zip": "76207",
+    "city": "Denton",
+    "state": "TX",
+    "lat": 33.2285,
+    "lng": -97.1813,
+    "pop": 14794,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:08:57.055Z"
+  },
+  "76208": {
+    "zip": "76208",
+    "city": "Denton",
+    "state": "TX",
+    "lat": 33.2117,
+    "lng": -97.0612,
+    "pop": 24992,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:56:07.440Z"
+  },
+  "76225": {
+    "zip": "76225",
+    "city": "Alvord",
+    "state": "TX",
+    "lat": 33.3698,
+    "lng": -97.6885,
+    "pop": 2688,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:08:11.752Z"
+  },
+  "76226": {
+    "zip": "76226",
+    "city": "Argyle",
+    "state": "TX",
+    "lat": 33.1062,
+    "lng": -97.16,
+    "pop": 29240,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:29:31.523Z"
+  },
+  "76227": {
+    "zip": "76227",
+    "city": "Aubrey",
+    "state": "TX",
+    "lat": 33.292,
+    "lng": -96.9879,
+    "pop": 36392,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:52:14.609Z"
+  },
+  "76230": {
+    "zip": "76230",
+    "city": "Bowie",
+    "state": "TX",
+    "lat": 33.5568,
+    "lng": -97.8373,
+    "pop": 9633,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:23:35.525Z"
+  },
+  "76233": {
+    "zip": "76233",
+    "city": "Collinsville",
+    "state": "TX",
+    "lat": 33.558,
+    "lng": -96.9014,
+    "pop": 3317,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:03:32.703Z"
+  },
+  "76234": {
+    "zip": "76234",
+    "city": "Decatur",
+    "state": "TX",
+    "lat": 33.2351,
+    "lng": -97.574,
+    "pop": 18937,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T08:42:16.530Z"
+  },
+  "76238": {
+    "zip": "76238",
+    "city": "Era",
+    "state": "TX",
+    "lat": 33.4965,
+    "lng": -97.3859,
+    "pop": 276,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:29:43.410Z"
+  },
+  "76239": {
+    "zip": "76239",
+    "city": "Forestburg",
+    "state": "TX",
+    "lat": 33.5398,
+    "lng": -97.5848,
+    "pop": 1310,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:19:10.596Z"
+  },
+  "76240": {
+    "zip": "76240",
+    "city": "Lake kiowa",
+    "state": "TX",
+    "lat": 33.6547,
+    "lng": -97.1583,
+    "pop": 28546,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T07:34:31.097Z"
+  },
+  "76247": {
+    "zip": "76247",
+    "city": "Justin",
+    "state": "TX",
+    "lat": 33.0734,
+    "lng": -97.3093,
+    "pop": 12542,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:17:46.365Z"
+  },
+  "76248": {
+    "zip": "76248",
+    "city": "Keller",
+    "state": "TX",
+    "lat": 32.9276,
+    "lng": -97.2489,
+    "pop": 39641,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:33:07.364Z"
+  },
+  "76249": {
+    "zip": "76249",
+    "city": "Krum",
+    "state": "TX",
+    "lat": 33.2734,
+    "lng": -97.2675,
+    "pop": 8196,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:33:15.387Z"
+  },
+  "76250": {
+    "zip": "76250",
+    "city": "Lindsay",
+    "state": "TX",
+    "lat": 33.636,
+    "lng": -97.2214,
+    "pop": 894,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:24:03.142Z"
+  },
+  "76251": {
+    "zip": "76251",
+    "city": "Montague",
+    "state": "TX",
+    "lat": 33.6639,
+    "lng": -97.7282,
+    "pop": 763,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:26:13.717Z"
+  },
+  "76252": {
+    "zip": "76252",
+    "city": "Muenster",
+    "state": "TX",
+    "lat": 33.6595,
+    "lng": -97.3624,
+    "pop": 2441,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:10:45.365Z"
+  },
+  "76253": {
+    "zip": "76253",
+    "city": "Myra",
+    "state": "TX",
+    "lat": 33.6178,
+    "lng": -97.309,
+    "pop": 383,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:28:10.310Z"
+  },
+  "76255": {
+    "zip": "76255",
+    "city": "Nocona",
+    "state": "TX",
+    "lat": 33.7982,
+    "lng": -97.727,
+    "pop": 5477,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:45:13.401Z"
+  },
+  "76258": {
+    "zip": "76258",
+    "city": "Pilot point",
+    "state": "TX",
+    "lat": 33.371,
+    "lng": -96.9446,
+    "pop": 6926,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:37:21.679Z"
+  },
+  "76259": {
+    "zip": "76259",
+    "city": "Ponder",
+    "state": "TX",
+    "lat": 33.1774,
+    "lng": -97.2848,
+    "pop": 5738,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:44:30.440Z"
+  },
+  "76262": {
+    "zip": "76262",
+    "city": "Trophy club",
+    "state": "TX",
+    "lat": 33.0211,
+    "lng": -97.2127,
+    "pop": 41158,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T06:23:10.813Z"
+  },
+  "76264": {
+    "zip": "76264",
+    "city": "Sadler",
+    "state": "TX",
+    "lat": 33.731,
+    "lng": -96.84,
+    "pop": 1368,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:18:24.312Z"
+  },
+  "76265": {
+    "zip": "76265",
+    "city": "Saint jo",
+    "state": "TX",
+    "lat": 33.744,
+    "lng": -97.5568,
+    "pop": 1464,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:17:37.920Z"
+  },
+  "76266": {
+    "zip": "76266",
+    "city": "Sanger",
+    "state": "TX",
+    "lat": 33.3563,
+    "lng": -97.1814,
+    "pop": 16571,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:02:52.759Z"
+  },
+  "76268": {
+    "zip": "76268",
+    "city": "Southmayd",
+    "state": "TX",
+    "lat": 33.6304,
+    "lng": -96.7692,
+    "pop": 224,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:30:50.366Z"
+  },
+  "76270": {
+    "zip": "76270",
+    "city": "Sunset",
+    "state": "TX",
+    "lat": 33.4539,
+    "lng": -97.7709,
+    "pop": 1932,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:15:45.999Z"
+  },
+  "76271": {
+    "zip": "76271",
+    "city": "Tioga",
+    "state": "TX",
+    "lat": 33.4675,
+    "lng": -96.9097,
+    "pop": 1984,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:15:24.279Z"
+  },
+  "76272": {
+    "zip": "76272",
+    "city": "Valley view",
+    "state": "TX",
+    "lat": 33.5022,
+    "lng": -97.2311,
+    "pop": 4404,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:55:55.798Z"
+  },
+  "76273": {
+    "zip": "76273",
+    "city": "Whitesboro",
+    "state": "TX",
+    "lat": 33.659,
+    "lng": -96.879,
+    "pop": 9429,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:27:34.908Z"
+  },
+  "76426": {
+    "zip": "76426",
+    "city": "Bridgeport",
+    "state": "TX",
+    "lat": 33.187,
+    "lng": -97.781,
+    "pop": 12694,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:16:00.144Z"
+  },
+  "76431": {
+    "zip": "76431",
+    "city": "Chico",
+    "state": "TX",
+    "lat": 33.3193,
+    "lng": -97.8031,
+    "pop": 3708,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:00:12.851Z"
+  },
+  "76462": {
+    "zip": "76462",
+    "city": "Lipan",
+    "state": "TX",
+    "lat": 32.5072,
+    "lng": -97.9536,
+    "pop": 4412,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:55:33.369Z"
+  },
+  "76476": {
+    "zip": "76476",
+    "city": "Tolar",
+    "state": "TX",
+    "lat": 32.3772,
+    "lng": -97.8802,
+    "pop": 3151,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:04:15.410Z"
+  },
+  "76487": {
+    "zip": "76487",
+    "city": "Poolville",
+    "state": "TX",
+    "lat": 32.968,
+    "lng": -97.8472,
+    "pop": 2230,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:12:54.989Z"
+  },
+  "76626": {
+    "zip": "76626",
+    "city": "Blooming grove",
+    "state": "TX",
+    "lat": 32.0758,
+    "lng": -96.701,
+    "pop": 1294,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:19:32.239Z"
+  },
+  "76627": {
+    "zip": "76627",
+    "city": "Blum",
+    "state": "TX",
+    "lat": 32.1052,
+    "lng": -97.3652,
+    "pop": 1334,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:18:47.253Z"
+  },
+  "76628": {
+    "zip": "76628",
+    "city": "Brandon",
+    "state": "TX",
+    "lat": 32.0457,
+    "lng": -96.9606,
+    "pop": 101,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:31:36.938Z"
+  },
+  "76636": {
+    "zip": "76636",
+    "city": "Covington",
+    "state": "TX",
+    "lat": 32.1595,
+    "lng": -97.2591,
+    "pop": 1509,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:17:14.508Z"
+  },
+  "76641": {
+    "zip": "76641",
+    "city": "Frost",
+    "state": "TX",
+    "lat": 32.0275,
+    "lng": -96.7684,
+    "pop": 1687,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:16:30.938Z"
+  },
+  "76645": {
+    "zip": "76645",
+    "city": "Hillsboro",
+    "state": "TX",
+    "lat": 32.0149,
+    "lng": -97.1198,
+    "pop": 10513,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:23:12.329Z"
+  },
+  "76651": {
+    "zip": "76651",
+    "city": "Italy",
+    "state": "TX",
+    "lat": 32.1785,
+    "lng": -96.8823,
+    "pop": 4084,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T09:58:25.668Z"
+  },
+  "76652": {
+    "zip": "76652",
+    "city": "Kopperl",
+    "state": "TX",
+    "lat": 32.1035,
+    "lng": -97.5421,
+    "pop": 1089,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:22:05.865Z"
+  },
+  "76666": {
+    "zip": "76666",
+    "city": "Mertens",
+    "state": "TX",
+    "lat": 32.0275,
+    "lng": -96.8981,
+    "pop": 254,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:30:05.418Z"
+  },
+  "76670": {
+    "zip": "76670",
+    "city": "Milford",
+    "state": "TX",
+    "lat": 32.1482,
+    "lng": -96.9612,
+    "pop": 1617,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:16:52.234Z"
+  },
+  "76671": {
+    "zip": "76671",
+    "city": "Morgan",
+    "state": "TX",
+    "lat": 32.0195,
+    "lng": -97.5608,
+    "pop": 1748,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:16:08.944Z"
+  },
+  "76690": {
+    "zip": "76690",
+    "city": "Walnut springs",
+    "state": "TX",
+    "lat": 32.0593,
+    "lng": -97.7514,
+    "pop": 1081,
+    "status": "none",
+    "offers": [],
+    "bananas": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T10:22:29.068Z"
+  }
+}

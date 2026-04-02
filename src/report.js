@@ -860,6 +860,38 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   ).addTo(reachLayer);
 });
 
+// ── Dallas ZIP probe layer (OFF by default) ───────────────────────────────────
+const dallasLayer = L.layerGroup();
+let dallasLoaded = false;
+
+async function initDallasLayer() {
+  if (dallasLoaded) return;
+  dallasLoaded = true;
+  try {
+    const url = (window.location.hostname === 'localhost' || window.location.protocol === 'file:')
+      ? '../data/dallas_zip_probe.geojson' : 'dallas_zip_probe.geojson';
+    const resp = await fetch(url);
+    const geojson = await resp.json();
+    L.geoJSON(geojson, {
+      pointToLayer: (feature, latlng) => {
+        const s = feature.properties.status;
+        const color = s === 'full_fresh' ? '#10b981' : s === 'ambient_fresh' ? '#3b82f6' : '#9ca3af';
+        return L.circleMarker(latlng, { radius: 5, color, fillColor: color, fillOpacity: 0.7, weight: 1 });
+      },
+      onEachFeature: (feature, layer) => {
+        const p = feature.properties;
+        layer.bindPopup(
+          '<b>' + p.zip + ' — ' + p.city + ', ' + p.state + '</b>' +
+          '<br>Population: ' + (p.pop||0).toLocaleString() +
+          '<br>Status: ' + p.status +
+          (p.offers && p.offers.length ? '<br>Offers: ' + p.offers.join(', ') : '') +
+          '<br><small style="color:#888">Dallas MSA ZIP-level probe</small>'
+        );
+      }
+    }).addTo(dallasLayer);
+  } catch(e) { console.error('Dallas layer error:', e); }
+}
+
 // ── Layer control ─────────────────────────────────────────────────────────────
 const overlayMaps = {
   '▦ MSA Coverage':                                    msaLayer,
@@ -868,13 +900,15 @@ const overlayMaps = {
   '<span style="color:#166534">●</span> Whole Foods Stores':           facilityLayerGroups['whole_foods_node'],
   '<span style="color:#6366f1">●</span> Standard Fulfillment Centers': facilityLayerGroups['fulfillment_center'],
   '<span style="color:#6b7280">●</span> Other Amazon Facilities':      facilityLayerGroups['other'],
-  '<span style="color:#ef4444">○</span> 50-Mile Service Circles': reachLayer
+  '<span style="color:#ef4444">○</span> 50-Mile Service Circles': reachLayer,
+  '<span style="color:#3b82f6">●</span> Dallas ZIP Probe (all 313 ZIPs)': dallasLayer
 };
 
 L.control.layers(null, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
 
 map.on('overlayadd', e => {
   if (e.layer === msaLayer) initMsaLayer();
+  if (e.layer === dallasLayer) initDallasLayer();
 });
 
 // ── Expansion signal toggle ───────────────────────────────────────────────────
