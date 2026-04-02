@@ -4973,7 +4973,7 @@
   },
   "41980": {
     "msa_id": "41980",
-    "msa_name": "San Juan-Bayamón-Caguas, PR",
+    "msa_name": "San Juan-Bayam\u00f3n-Caguas, PR",
     "msa_population": 2037875,
     "primary_city": "San Juan",
     "primary_state": "PR",
@@ -6229,6 +6229,38 @@
         "city": "Youngstown",
         "state": "OH",
         "pop": 12062
+      }
+    ]
+  },
+  "43300": {
+    "msa_id": "43300",
+    "msa_name": "Sherman-Denison, TX",
+    "msa_population": 146907,
+    "primary_city": "Sherman",
+    "primary_state": "TX",
+    "zips": [
+      "75092",
+      "75090",
+      "75020"
+    ],
+    "zip_details": [
+      {
+        "zip": "75092",
+        "city": "Sherman",
+        "state": "TX",
+        "pop": 26297
+      },
+      {
+        "zip": "75090",
+        "city": "Sherman",
+        "state": "TX",
+        "pop": 25732
+      },
+      {
+        "zip": "75020",
+        "city": "Denison",
+        "state": "TX",
+        "pop": 23216
       }
     ]
   }

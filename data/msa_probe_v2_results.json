@@ -57291,7 +57291,7 @@
   },
   "41980": {
     "msa_id": "41980",
-    "msa_name": "San Juan-Bayamón-Caguas, PR",
+    "msa_name": "San Juan-Bayam\u00f3n-Caguas, PR",
     "msa_population": 2037875,
     "status": "none",
     "zips_tested": [],
@@ -65768,5 +65768,65 @@
       }
     },
     "probed_at": "2026-04-01T10:07:16.407Z"
+  },
+  "43300": {
+    "msa_id": "43300",
+    "msa_name": "Sherman-Denison, TX",
+    "msa_population": 146907,
+    "status": "ambient_fresh",
+    "zips_tested": [
+      "75092",
+      "75090",
+      "75020"
+    ],
+    "zip_results": {
+      "75092": {
+        "bananas": {
+          "available": true,
+          "offers": [
+            "AmazonFresh",
+            "WholeFoods",
+            "SSD_Prime"
+          ]
+        },
+        "strawberries": {
+          "available": false,
+          "reason": "unavailable"
+        },
+        "status": "ambient_fresh"
+      },
+      "75090": {
+        "bananas": {
+          "available": true,
+          "offers": [
+            "AmazonFresh",
+            "WholeFoods",
+            "SSD_Prime"
+          ]
+        },
+        "strawberries": {
+          "available": false,
+          "reason": "unavailable"
+        },
+        "status": "ambient_fresh"
+      },
+      "75020": {
+        "bananas": {
+          "available": false,
+          "reason": "unavailable"
+        },
+        "strawberries": {
+          "available": false,
+          "reason": "unavailable"
+        },
+        "status": "none"
+      }
+    },
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "probed_at": "2026-04-02T21:45:00.000Z"
   }
 }
