@@ -705,7 +705,7 @@ function msaStatusOpacity(status, expansionSignal) {
 }
 function msaStatusLabel(status, expansionSignal) {
   if (status === 'full_fresh')    return '✅ Confirmed — same-day perishable delivery verified';
-  if (status === 'ambient_fresh') return '🟡 Ambient — limited fresh delivery found';
+  if (status === 'ambient_fresh') return '✅ Confirmed — fresh grocery delivery verified (ambient probe)';
   if (status === 'none' && expansionSignal) return '🟠 Expansion Likely — no coverage confirmed yet, but Amazon SSD/Fresh facility within 75mi';
   if (status === 'none')          return '⚫ None — no same-day grocery found at tested ZIPs';
   return '⬜ Not probed';

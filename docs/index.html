@@ -111,7 +111,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 
 <header>
   <h1>🛒 Amazon Same-Day Grocery Coverage</h1>
-  <span>Rivendell Advisors &nbsp;·&nbsp; Apr 2, 2026, 02:43 PM PDT</span>
+  <span>Rivendell Advisors &nbsp;·&nbsp; Apr 2, 2026, 05:37 PM PDT</span>
 </header>
 <nav>
   <button class="active" onclick="showView('map-view',this)">🗺 Map</button>
@@ -253,7 +253,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
       <li><strong>US ZIP code database</strong> — 31,000+ ZIPs with coordinates and population (2020 Census)</li>
     </ul>
 
-    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Apr 2, 2026, 02:43 PM PDT.</p>
+    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Apr 2, 2026, 05:37 PM PDT.</p>
   </section>
 </div>
 
@@ -329,7 +329,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
 
     </div>
 
-    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Apr 2, 2026, 02:43 PM PDT.</p>
+    <p class="method-footer">Research conducted by Rivendell Advisors LLC. Generated Apr 2, 2026, 05:37 PM PDT.</p>
   </section>
 </div>
 
@@ -398,7 +398,7 @@ function msaStatusOpacity(status, expansionSignal) {
 }
 function msaStatusLabel(status, expansionSignal) {
   if (status === 'full_fresh')    return '✅ Confirmed — same-day perishable delivery verified';
-  if (status === 'ambient_fresh') return '🟡 Ambient — limited fresh delivery found';
+  if (status === 'ambient_fresh') return '✅ Confirmed — fresh grocery delivery verified (ambient probe)';
   if (status === 'none' && expansionSignal) return '🟠 Expansion Likely — no coverage confirmed yet, but Amazon SSD/Fresh facility within 75mi';
   if (status === 'none')          return '⚫ None — no same-day grocery found at tested ZIPs';
   return '⬜ Not probed';

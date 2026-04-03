@@ -1,0 +1,86 @@
+{
+  "75034": {
+    "zip": "75034",
+    "city": "Frisco",
+    "state": "TX",
+    "lat": 33.1499,
+    "lng": -96.8241,
+    "pop": 116155,
+    "bucket": "0-15mi",
+    "ssd_dist": 14,
+    "available": true,
+    "primary_ships_from": null,
+    "primary_delivery": "Today 8 PM - 11 PM. Order within 2 hrs 9 mins {\"merchan",
+    "primary_type": null,
+    "all_offers": [],
+    "all_types": [],
+    "probed_at": "2026-04-02T21:51:20.414Z"
+  },
+  "75052": {
+    "zip": "75052",
+    "city": "Grand prairie",
+    "state": "TX",
+    "lat": 32.6605,
+    "lng": -97.0311,
+    "pop": 94060,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:08:20.090Z",
+    "ssd_dist": 10,
+    "bucket": "0-15mi",
+    "available": false,
+    "reason": "unavailable"
+  },
+  "75070": {
+    "zip": "75070",
+    "city": "Mc kinney",
+    "state": "TX",
+    "lat": 33.1976,
+    "lng": -96.6153,
+    "pop": 109085,
+    "bucket": "0-15mi",
+    "ssd_dist": 15,
+    "available": true,
+    "primary_ships_from": null,
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 6 hrs 8 mins {\"merchant",
+    "primary_type": null,
+    "all_offers": [],
+    "all_types": [],
+    "probed_at": "2026-04-02T21:52:12.949Z"
+  },
+  "75217": {
+    "zip": "75217",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7244,
+    "lng": -96.6755,
+    "pop": 86811,
+    "bucket": "0-15mi",
+    "ssd_dist": 13,
+    "available": true,
+    "primary_ships_from": null,
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 6 hrs 6 mins {\"merchant",
+    "primary_type": null,
+    "all_offers": [],
+    "all_types": [],
+    "probed_at": "2026-04-02T21:54:25.076Z"
+  }
+}
