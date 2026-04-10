@@ -1,891 +1,891 @@
-msa_id,msa_name,zip,city,state,population,coverage_status,offer_types,source
-19100,"Dallas-Fort Worth-Arlington, TX",75001,Addison,TX,15418,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75002,Allen,TX,73916,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75006,Carrollton,TX,52231,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75007,Carrollton,TX,57513,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75009,Celina,TX,15348,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75010,Carrollton,TX,30784,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75013,Zcta 75013,TX,42956,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75019,Coppell,TX,43137,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75020,Denison,TX,23216,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75021,Denison,TX,9454,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75022,Zcta 75022,TX,28773,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75023,Plano,TX,50923,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75024,Plano,TX,43041,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75025,Plano,TX,54653,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75028,Flower mound,TX,48641,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75032,Zcta 75032,TX,33956,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75034,Frisco,TX,116155,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75035,Zcta 75035,TX,80269,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75038,Irving,TX,29886,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75039,Irving,TX,20627,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75040,Garland,TX,61508,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75041,Garland,TX,31250,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75042,Garland,TX,37458,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75043,Garland,TX,62721,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75044,Garland,TX,45284,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75048,Sachse,TX,26062,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75050,Grand prairie,TX,43190,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75051,Grand prairie,TX,41317,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75052,Grand prairie,TX,94060,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75056,The colony,TX,59674,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75057,Lewisville,TX,16670,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75058,Gunter,TX,3329,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75060,Irving,TX,49307,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75061,Irving,TX,53983,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75062,Irving,TX,49296,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75063,Irving,TX,39831,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75065,Lake dallas,TX,13026,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75067,Highland village,TX,67197,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75068,Lakewood village,TX,69656,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75069,Mc kinney,TX,37582,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75070,Mc kinney,TX,109085,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75074,Plano,TX,53459,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75075,Plano,TX,37310,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75077,Zcta 75077,TX,38764,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75078,Prosper,TX,34300,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75080,Richardson,TX,53708,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75081,Richardson,TX,40825,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75082,Richardson,TX,23418,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75087,Heath,TX,36718,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75088,Rowlett,TX,26823,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75089,Zcta 75089,TX,37310,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75090,Sherman,TX,25732,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75092,Sherman,TX,26297,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75093,Plano,TX,47908,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75094,Murphy,TX,23408,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75098,Wylie,TX,58717,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75101,Bardwell,TX,643,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75102,Barry,TX,1455,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75104,Cedar hill,TX,48821,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75105,Chatfield,TX,248,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75110,Corsicana,TX,29665,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75114,Crandall,TX,6870,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75115,De soto,TX,53118,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75116,Duncanville,TX,19755,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75119,Ennis,TX,28901,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75124,Eustace,TX,4985,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75125,Ferris,TX,7664,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75126,Forney,TX,52078,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75132,Fate,TX,2326,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75134,Lancaster,TX,20759,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75135,Caddo mills,TX,7183,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75137,Duncanville,TX,19341,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75141,Hutchins,TX,5814,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75142,Kaufman,TX,21746,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75143,Seven points,TX,14336,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75144,Kerens,TX,3414,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75146,Lancaster,TX,20663,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75147,Gun barrel city,TX,6951,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75148,Malakoff,TX,6396,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75149,Mesquite,TX,57758,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75150,Mesquite,TX,61863,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75152,Palmer,TX,5194,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75153,Powell,TX,571,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75154,Ovilla,TX,42192,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75155,Rice,TX,2971,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75158,Scurry,TX,4337,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75159,Seagoville,TX,20857,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75160,Terrell,TX,24494,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75161,Zcta 75161,TX,7483,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75163,Trinidad,TX,2590,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75164,Josephine,TX,788,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75165,Waxahachie,TX,44571,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75166,Lavon,TX,4624,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75167,Zcta 75167,TX,12091,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75169,Wills point,TX,12937,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75172,Wilmer,TX,4814,full_fresh,"AmazonFresh, SSD_Prime",zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75173,Nevada,TX,4953,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75180,Balch springs,TX,23939,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75181,Mesquite,TX,25264,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75182,Mesquite,TX,6199,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75189,Royse city,TX,30842,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75201,Dallas,TX,18032,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75202,Dallas,TX,2739,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75203,Dallas,TX,18295,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75204,Dallas,TX,32032,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75205,Village,TX,24726,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75206,Dallas,TX,39653,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75207,Dallas,TX,7715,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75208,Dallas,TX,30064,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75209,Dallas,TX,14558,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75210,Dallas,TX,9504,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75211,Cockrell hill,TX,77920,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75212,Dallas,TX,28017,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75214,Dallas,TX,34658,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75215,Dallas,TX,17184,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75216,Dallas,TX,54253,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75217,Dallas,TX,86811,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75218,Dallas,TX,22712,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75219,Dallas,TX,24038,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75220,Dallas,TX,41110,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75223,Dallas,TX,15002,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75224,Dallas,TX,37602,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75225,Dallas,TX,22108,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75226,Dallas,TX,4774,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75227,Dallas,TX,60632,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75228,Dallas,TX,75303,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75229,Dallas,TX,32739,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75230,Dallas,TX,27402,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75231,Dallas,TX,40987,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75232,Dallas,TX,32823,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75233,Dallas,TX,16920,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75234,Farmers branch,TX,39644,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75235,Dallas,TX,19198,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75236,Dallas,TX,16920,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75237,Dallas,TX,21607,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75238,Dallas,TX,33396,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75240,Dallas,TX,26841,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75241,Dallas,TX,30863,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75243,Dallas,TX,68253,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75244,Farmers branch,TX,13552,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75246,Dallas,TX,2553,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75247,Dallas,TX,772,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75248,Dallas,TX,37602,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75249,Dallas,TX,18374,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75251,Dallas,TX,3750,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75252,Dallas,TX,27880,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75253,Dallas,TX,24666,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75287,Dallas,TX,55060,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75401,Greenville,TX,20689,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75402,Greenville,TX,17463,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75407,Princeton,TX,18371,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75409,Anna,TX,16750,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75413,Bailey,TX,287,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75414,Bells,TX,3394,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75418,Bonham,TX,14570,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75423,Celeste,TX,3423,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75424,Blue ridge,TX,2891,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75438,Dodd city,TX,973,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75439,Ector,TX,1186,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75442,Farmersville,TX,9558,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75447,Ivanhoe,TX,1201,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75452,Leonard,TX,4673,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75454,Melissa,TX,11848,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75459,Howe,TX,5260,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75474,Quinlan,TX,15912,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75475,Randolph,TX,111,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75476,Ravenna,TX,1031,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75479,Savoy,TX,1987,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75488,Telephone,TX,747,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75489,Tom bean,TX,1110,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75490,Trenton,TX,2633,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75491,Whitewright,TX,4781,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75492,Windom,TX,369,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75495,Van alstyne,TX,8621,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",75496,Wolfe city,TX,3450,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76001,Zcta 76001,TX,37231,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76002,Zcta 76002,TX,36302,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76006,Arlington,TX,24057,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76008,Aledo,TX,20288,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76009,Alvarado,TX,19618,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76010,Arlington,TX,59526,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76011,Arlington,TX,22878,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76012,Arlington,TX,26730,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76013,Arlington,TX,34763,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76014,Arlington,TX,33289,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76015,Arlington,TX,17773,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76016,Arlington,TX,31705,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76017,Arlington,TX,46312,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76018,Arlington,TX,28353,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76020,Azle,TX,30487,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76021,Bedford,TX,35168,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76022,Bedford,TX,13945,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76023,Boyd,TX,7090,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76028,Burleson,TX,72493,full_fresh,"AmazonFresh, SSD_Prime",zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76031,Cleburne,TX,18432,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76034,Colleyville,TX,26693,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76035,Cresson,TX,2373,full_fresh,"AmazonFresh, SSD_Prime",zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76036,Crowley,TX,27835,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76039,Euless,TX,37896,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76040,Euless,TX,33419,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76041,Forreston,TX,514,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76043,Glen rose,TX,7525,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76044,Godley,TX,5407,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76048,Granbury,TX,24586,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76049,Granbury,TX,30062,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76050,Grandview,TX,6094,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76051,Grapevine,TX,54130,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76052,Haslet,TX,23080,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76053,Hurst,TX,30317,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76054,Hurst,TX,12178,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76055,Itasca,TX,3181,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76058,Joshua,TX,21037,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76059,Keene,TX,5716,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76060,Kennedale,TX,8606,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76061,Lillian,TX,59,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76063,Mansfield,TX,76609,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76064,Maypearl,TX,2100,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76065,Midlothian,TX,38800,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76066,Millsap,TX,4106,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76070,Nemo,TX,955,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76071,Newark,TX,4173,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76073,Paradise,TX,6237,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76077,Rainbow,TX,333,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76078,Rhome,TX,9024,full_fresh,"AmazonFresh, SSD_Prime",zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76082,Springtown,TX,21151,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76084,Venus,TX,9574,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76086,Weatherford,TX,23161,full_fresh,"AmazonFresh, SSD_Prime",zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76087,Weatherford,TX,29119,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76088,Zcta 76088,TX,12610,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76092,Grapevine,TX,31837,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76093,Rio vista,TX,2930,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76102,Fort worth,TX,10632,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76103,Fort worth,TX,16848,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76104,Fort worth,TX,17653,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76105,Fort worth,TX,22922,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76106,Fort worth,TX,38906,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76107,Fort worth,TX,29377,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76108,White settlement,TX,42902,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76109,Fort worth,TX,23725,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76110,Fort worth,TX,33720,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76111,Fort worth,TX,22567,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76112,Fort worth,TX,42218,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76114,River oaks,TX,27151,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76115,Fort worth,TX,21907,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76116,Fort worth,TX,50371,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76117,Haltom city,TX,32191,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76118,North richland h,TX,16594,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76119,Fort worth,TX,52279,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76120,Fort worth,TX,19941,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76123,Fort worth,TX,37075,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76126,Benbrook,TX,23844,full_fresh,"AmazonFresh, SSD_Prime",zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76127,Carswell afb,TX,2038,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76131,Fort worth,TX,47377,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76132,Fort worth,TX,26265,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76133,Fort worth,TX,53694,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76134,Fort worth,TX,28852,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76135,Fort worth,TX,20233,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76137,Fort worth,TX,59983,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76140,Everman,TX,30930,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76148,Watauga,TX,23679,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76155,Fort worth,TX,6329,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76177,Fort worth,TX,10814,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76179,Saginaw,TX,69066,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76180,North richland h,TX,37117,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76201,Denton,TX,29447,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76205,Denton,TX,21657,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76207,Denton,TX,14794,full_fresh,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76208,Denton,TX,24992,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76225,Alvord,TX,2688,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76226,Argyle,TX,29240,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76227,Aubrey,TX,36392,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76230,Bowie,TX,9633,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76233,Collinsville,TX,3317,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76234,Decatur,TX,18937,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76238,Era,TX,276,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76239,Forestburg,TX,1310,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76240,Lake kiowa,TX,28546,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76247,Justin,TX,12542,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76248,Keller,TX,39641,full_fresh,SSD_Prime,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76249,Krum,TX,8196,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76250,Lindsay,TX,894,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76251,Montague,TX,763,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76252,Muenster,TX,2441,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76253,Myra,TX,383,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76255,Nocona,TX,5477,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76258,Pilot point,TX,6926,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76259,Ponder,TX,5738,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76262,Trophy club,TX,41158,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76264,Sadler,TX,1368,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76265,Saint jo,TX,1464,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76266,Sanger,TX,16571,error,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76268,Southmayd,TX,224,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76270,Sunset,TX,1932,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76271,Tioga,TX,1984,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76272,Valley view,TX,4404,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76273,Whitesboro,TX,9429,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76426,Bridgeport,TX,12694,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76431,Chico,TX,3708,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76462,Lipan,TX,4412,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76476,Tolar,TX,3151,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76487,Poolville,TX,2230,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76626,Blooming grove,TX,1294,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76627,Blum,TX,1334,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76628,Brandon,TX,101,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76636,Covington,TX,1509,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76641,Frost,TX,1687,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76645,Hillsboro,TX,10513,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76651,Italy,TX,4084,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76652,Kopperl,TX,1089,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76666,Mertens,TX,254,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76670,Milford,TX,1617,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76671,Morgan,TX,1748,none,,zip_level_probe
-19100,"Dallas-Fort Worth-Arlington, TX",76690,Walnut springs,TX,1081,none,,zip_level_probe
-10420,"Akron, OH",44312,Akron,OH,31887,full_fresh,,msa_level_probe
-10420,"Akron, OH",44313,Akron,OH,26729,full_fresh,,msa_level_probe
-10420,"Akron, OH",44310,Akron,OH,26325,full_fresh,,msa_level_probe
-10580,"Albany-Schenectady-Troy, NY",12208,Albany,NY,20517,full_fresh,,msa_level_probe
-10580,"Albany-Schenectady-Troy, NY",12206,Albany,NY,15537,full_fresh,,msa_level_probe
-10580,"Albany-Schenectady-Troy, NY",12210,Albany,NY,11057,full_fresh,,msa_level_probe
-10740,"Albuquerque, NM",87121,Albuquerque,NM,77671,full_fresh,,msa_level_probe
-10740,"Albuquerque, NM",87120,Albuquerque,NM,64398,full_fresh,,msa_level_probe
-10740,"Albuquerque, NM",87111,Albuquerque,NM,57389,full_fresh,,msa_level_probe
-10900,"Allentown-Bethlehem-Easton, PA-NJ",18102,Allentown,PA,50702,full_fresh,,msa_level_probe
-10900,"Allentown-Bethlehem-Easton, PA-NJ",18103,Allentown,PA,46884,full_fresh,,msa_level_probe
-10900,"Allentown-Bethlehem-Easton, PA-NJ",18104,Allentown,PA,44217,ambient_fresh,,msa_level_probe
-11100,"Amarillo, TX",79109,Amarillo,TX,43652,none,,msa_level_probe
-11100,"Amarillo, TX",79107,Amarillo,TX,34204,none,,msa_level_probe
-11100,"Amarillo, TX",79106,Amarillo,TX,28289,none,,msa_level_probe
-11260,"Anchorage, AK",99504,Anchorage,AK,41739,none,,msa_level_probe
-11260,"Anchorage, AK",99508,Anchorage,AK,38042,none,,msa_level_probe
-11260,"Anchorage, AK",99507,Anchorage,AK,36403,none,,msa_level_probe
-11460,"Ann Arbor, MI",48103,Ann arbor,MI,55078,full_fresh,,msa_level_probe
-11460,"Ann Arbor, MI",48104,Ann arbor,MI,44219,full_fresh,,msa_level_probe
-11460,"Ann Arbor, MI",48105,Ann arbor,MI,36918,full_fresh,,msa_level_probe
-11540,"Appleton, WI",54915,Appleton,WI,43401,none,,msa_level_probe
-11540,"Appleton, WI",54914,Appleton,WI,30555,none,,msa_level_probe
-11540,"Appleton, WI",54911,Appleton,WI,25911,none,,msa_level_probe
-11700,"Asheville, NC",28806,Asheville,NC,42901,full_fresh,,msa_level_probe
-11700,"Asheville, NC",28803,Asheville,NC,34126,full_fresh,,msa_level_probe
-11700,"Asheville, NC",28804,Asheville,NC,22959,full_fresh,,msa_level_probe
-12060,"Atlanta-Sandy Springs-Roswell, GA",30349,Atlanta,GA,75647,full_fresh,,msa_level_probe
-12060,"Atlanta-Sandy Springs-Roswell, GA",30331,Atlanta,GA,65996,full_fresh,,msa_level_probe
-12060,"Atlanta-Sandy Springs-Roswell, GA",30318,Atlanta,GA,57136,full_fresh,,msa_level_probe
-12100,"Atlantic City-Hammonton, NJ",08401,Atlantic city,NJ,37793,none,,msa_level_probe
-12100,"Atlantic City-Hammonton, NJ",08701,Lakewood,NJ,104186,full_fresh,,msa_level_probe
-12100,"Atlantic City-Hammonton, NJ",07055,Passaic,NJ,69842,full_fresh,,msa_level_probe
-12260,"Augusta-Richmond County, GA-SC",30904,Augusta,GA,27136,none,,msa_level_probe
-12260,"Augusta-Richmond County, GA-SC",30901,Augusta,GA,16394,none,,msa_level_probe
-12420,"Austin-Round Rock-San Marcos, TX",78745,Austin,TX,63287,full_fresh,,msa_level_probe
-12420,"Austin-Round Rock-San Marcos, TX",78753,Austin,TX,60035,full_fresh,,msa_level_probe
-12420,"Austin-Round Rock-San Marcos, TX",78748,Austin,TX,52076,full_fresh,,msa_level_probe
-12540,"Bakersfield-Delano, CA",93307,Bakersfield,CA,86273,full_fresh,,msa_level_probe
-12540,"Bakersfield-Delano, CA",93306,Bakersfield,CA,74296,full_fresh,,msa_level_probe
-12540,"Bakersfield-Delano, CA",93309,Bakersfield,CA,58709,full_fresh,,msa_level_probe
-12580,"Baltimore-Columbia-Towson, MD",21215,Baltimore,MD,55081,full_fresh,,msa_level_probe
-12580,"Baltimore-Columbia-Towson, MD",21206,Baltimore,MD,51670,full_fresh,,msa_level_probe
-12580,"Baltimore-Columbia-Towson, MD",21224,Baltimore,MD,48770,full_fresh,,msa_level_probe
-12940,"Baton Rouge, LA",70816,Baton rouge,LA,41818,full_fresh,,msa_level_probe
-12940,"Baton Rouge, LA",70810,Baton rouge,LA,40179,full_fresh,,msa_level_probe
-12940,"Baton Rouge, LA",70808,Baton rouge,LA,36576,full_fresh,,msa_level_probe
-13140,"Beaumont-Port Arthur, TX",77705,Beaumont,TX,40224,none,,msa_level_probe
-13140,"Beaumont-Port Arthur, TX",77706,Beaumont,TX,29707,none,,msa_level_probe
-13140,"Beaumont-Port Arthur, TX",77707,Beaumont,TX,18867,none,,msa_level_probe
-13460,"Bend, OR",97701,Bend,OR,74255,none,,msa_level_probe
-13460,"Bend, OR",97702,Bend,OR,50395,none,,msa_level_probe
-13820,"Birmingham, AL",35211,Birmingham,AL,24876,full_fresh,,msa_level_probe
-13820,"Birmingham, AL",35205,Birmingham,AL,20145,full_fresh,,msa_level_probe
-13820,"Birmingham, AL",35206,Birmingham,AL,17211,full_fresh,,msa_level_probe
-14260,"Boise City, ID",83709,Boise,ID,60449,full_fresh,,msa_level_probe
-14260,"Boise City, ID",83301,Twin falls,ID,58230,none,,msa_level_probe
-14260,"Boise City, ID",83686,Nampa,ID,52879,full_fresh,,msa_level_probe
-14460,"Boston-Cambridge-Newton, MA-NH",02115,Boston,MA,29134,full_fresh,,msa_level_probe
-14460,"Boston-Cambridge-Newton, MA-NH",02215,Boston,MA,26243,full_fresh,,msa_level_probe
-14460,"Boston-Cambridge-Newton, MA-NH",02116,Boston,MA,23007,full_fresh,,msa_level_probe
-14500,"Boulder, CO",80302,Boulder,CO,29422,full_fresh,,msa_level_probe
-14500,"Boulder, CO",80304,Boulder,CO,26501,full_fresh,,msa_level_probe
-14500,"Boulder, CO",80301,Boulder,CO,26010,full_fresh,,msa_level_probe
-14740,"Bremerton-Silverdale-Port Orchard, WA",98312,Bremerton,WA,30437,ambient_fresh,,msa_level_probe
-14740,"Bremerton-Silverdale-Port Orchard, WA",98311,Bremerton,WA,28042,none,,msa_level_probe
-14740,"Bremerton-Silverdale-Port Orchard, WA",98310,Bremerton,WA,20431,none,,msa_level_probe
-14860,"Bridgeport-Stamford-Danbury, CT",06606,Bridgeport,CT,47040,full_fresh,,msa_level_probe
-14860,"Bridgeport-Stamford-Danbury, CT",06604,Bridgeport,CT,26858,full_fresh,,msa_level_probe
-14860,"Bridgeport-Stamford-Danbury, CT",06605,Bridgeport,CT,24541,full_fresh,,msa_level_probe
-15180,"Brownsville-Harlingen, TX",78521,Brownsville,TX,89629,none,,msa_level_probe
-15180,"Brownsville-Harlingen, TX",78520,Brownsville,TX,59388,none,,msa_level_probe
-15180,"Brownsville-Harlingen, TX",78526,Brownsville,TX,50057,none,,msa_level_probe
-15380,"Buffalo-Cheektowaga, NY",14215,Buffalo,NY,41340,full_fresh,,msa_level_probe
-15380,"Buffalo-Cheektowaga, NY",14207,Buffalo,NY,23773,full_fresh,,msa_level_probe
-15380,"Buffalo-Cheektowaga, NY",14220,Buffalo,NY,22641,full_fresh,,msa_level_probe
-15940,"Canton-Massillon, OH",44708,Canton,OH,24498,full_fresh,,msa_level_probe
-15940,"Canton-Massillon, OH",44705,Canton,OH,19353,full_fresh,,msa_level_probe
-15940,"Canton-Massillon, OH",44706,Canton,OH,16720,full_fresh,,msa_level_probe
-15980,"Cape Coral-Fort Myers, FL",33311,Fort lauderdale,FL,75705,full_fresh,,msa_level_probe
-15980,"Cape Coral-Fort Myers, FL",33024,Pembroke pines,FL,75701,full_fresh,,msa_level_probe
-15980,"Cape Coral-Fort Myers, FL",33023,Miramar,FL,74913,full_fresh,,msa_level_probe
-16300,"Cedar Rapids, IA",52402,Cedar rapids,IA,41471,none,,msa_level_probe
-16300,"Cedar Rapids, IA",52404,Cedar rapids,IA,39628,none,,msa_level_probe
-16300,"Cedar Rapids, IA",52405,Cedar rapids,IA,25942,none,,msa_level_probe
-16700,"Charleston-North Charleston, SC",29412,Charleston,SC,41049,full_fresh,,msa_level_probe
-16700,"Charleston-North Charleston, SC",29414,Charleston,SC,39319,full_fresh,,msa_level_probe
-16700,"Charleston-North Charleston, SC",29407,Charleston,SC,35385,full_fresh,,msa_level_probe
-16740,"Charlotte-Concord-Gastonia, NC-SC",28269,Charlotte,NC,79059,full_fresh,,msa_level_probe
-16740,"Charlotte-Concord-Gastonia, NC-SC",28277,Charlotte,NC,70193,full_fresh,,msa_level_probe
-16740,"Charlotte-Concord-Gastonia, NC-SC",28215,Charlotte,NC,64293,full_fresh,,msa_level_probe
-16860,"Chattanooga, TN-GA",37421,Chattanooga,TN,53050,full_fresh,,msa_level_probe
-16860,"Chattanooga, TN-GA",37405,Chattanooga,TN,18231,full_fresh,,msa_level_probe
-16860,"Chattanooga, TN-GA",37411,Chattanooga,TN,16801,full_fresh,,msa_level_probe
-16980,"Chicago-Naperville-Elgin, IL-IN",60629,Chicago,IL,107930,full_fresh,,msa_level_probe
-16980,"Chicago-Naperville-Elgin, IL-IN",60618,Chicago,IL,94646,full_fresh,,msa_level_probe
-16980,"Chicago-Naperville-Elgin, IL-IN",60639,Chicago,IL,88515,full_fresh,,msa_level_probe
-17140,"Cincinnati, OH-KY-IN",45231,Cincinnati,OH,41599,full_fresh,,msa_level_probe
-17140,"Cincinnati, OH-KY-IN",45211,Cincinnati,OH,37038,full_fresh,,msa_level_probe
-17140,"Cincinnati, OH-KY-IN",45237,Cincinnati,OH,22104,full_fresh,,msa_level_probe
-17300,"Clarksville, TN-KY",37042,Clarksville,TN,80661,none,,msa_level_probe
-17300,"Clarksville, TN-KY",37040,Clarksville,TN,52736,none,,msa_level_probe
-17300,"Clarksville, TN-KY",37043,Clarksville,TN,49669,full_fresh,,msa_level_probe
-17410,"Cleveland, OH",44102,Cleveland,OH,44320,full_fresh,,msa_level_probe
-17410,"Cleveland, OH",44111,Cleveland,OH,42591,full_fresh,,msa_level_probe
-17410,"Cleveland, OH",44109,Cleveland,OH,39451,full_fresh,,msa_level_probe
-17780,"College Station-Bryan, TX",77845,College station,TX,68757,none,,msa_level_probe
-17780,"College Station-Bryan, TX",77840,College station,TX,59700,none,,msa_level_probe
-17820,"Colorado Springs, CO",80918,Colorado springs,CO,48905,full_fresh,,msa_level_probe
-17820,"Colorado Springs, CO",80916,Colorado springs,CO,41173,full_fresh,,msa_level_probe
-17820,"Colorado Springs, CO",80909,Colorado springs,CO,38826,full_fresh,,msa_level_probe
-17900,"Columbia, SC",29223,Columbia,SC,52895,full_fresh,,msa_level_probe
-17900,"Columbia, SC",29229,Columbia,SC,50137,full_fresh,,msa_level_probe
-17900,"Columbia, SC",29203,Columbia,SC,40638,full_fresh,,msa_level_probe
-17980,"Columbus, GA-AL",31907,Columbus,GA,58615,none,,msa_level_probe
-17980,"Columbus, GA-AL",31909,Columbus,GA,38486,none,,msa_level_probe
-17980,"Columbus, GA-AL",31904,Columbus,GA,32087,none,,msa_level_probe
-18140,"Columbus, OH",43229,Columbus,OH,56760,full_fresh,,msa_level_probe
-18140,"Columbus, OH",43207,Columbus,OH,47118,full_fresh,,msa_level_probe
-18140,"Columbus, OH",43232,Columbus,OH,46914,full_fresh,,msa_level_probe
-18580,"Corpus Christi, TX",78414,Corpus christi,TX,44014,none,,msa_level_probe
-18580,"Corpus Christi, TX",78412,Corpus christi,TX,42385,none,,msa_level_probe
-18580,"Corpus Christi, TX",78415,Corpus christi,TX,41976,none,,msa_level_probe
-18880,"Crestview-Fort Walton Beach-Destin, FL",32536,Crestview,FL,24601,none,,msa_level_probe
-18880,"Crestview-Fort Walton Beach-Destin, FL",33311,Fort lauderdale,FL,75705,full_fresh,,msa_level_probe
-18880,"Crestview-Fort Walton Beach-Destin, FL",33024,Pembroke pines,FL,75701,full_fresh,,msa_level_probe
-19300,"Daphne-Fairhope-Foley, AL",36526,Daphne,AL,34788,none,,msa_level_probe
-19300,"Daphne-Fairhope-Foley, AL",35242,Shoal creek,AL,56713,full_fresh,,msa_level_probe
-19300,"Daphne-Fairhope-Foley, AL",36117,Montgomery,AL,53594,none,,msa_level_probe
-19340,"Davenport-Moline-Rock Island, IA-IL",52804,Davenport,IA,28169,none,,msa_level_probe
-19340,"Davenport-Moline-Rock Island, IA-IL",52806,Davenport,IA,27869,none,,msa_level_probe
-19340,"Davenport-Moline-Rock Island, IA-IL",52803,Davenport,IA,21291,none,,msa_level_probe
-19430,"Dayton-Kettering-Beavercreek, OH",45417,Dayton,OH,29072,full_fresh,,msa_level_probe
-19430,"Dayton-Kettering-Beavercreek, OH",45440,Dayton,OH,21667,full_fresh,,msa_level_probe
-19430,"Dayton-Kettering-Beavercreek, OH",45406,Dayton,OH,20393,full_fresh,,msa_level_probe
-19660,"Deltona-Daytona Beach-Ormond Beach, FL",32725,Deltona,FL,49802,full_fresh,,msa_level_probe
-19660,"Deltona-Daytona Beach-Ormond Beach, FL",32738,Deltona,FL,46727,full_fresh,,msa_level_probe
-19740,"Denver-Aurora-Centennial, CO",80219,Denver,CO,71795,full_fresh,,msa_level_probe
-19740,"Denver-Aurora-Centennial, CO",80239,Denver,CO,48835,full_fresh,,msa_level_probe
-19740,"Denver-Aurora-Centennial, CO",80210,Denver,CO,37786,full_fresh,,msa_level_probe
-19780,"Des Moines-West Des Moines, IA",50315,Des moines,IA,36097,full_fresh,,msa_level_probe
-19780,"Des Moines-West Des Moines, IA",50310,Des moines,IA,31965,full_fresh,,msa_level_probe
-19780,"Des Moines-West Des Moines, IA",50320,Des moines,IA,23724,full_fresh,,msa_level_probe
-19820,"Detroit-Warren-Dearborn, MI",48228,Detroit,MI,57698,full_fresh,,msa_level_probe
-19820,"Detroit-Warren-Dearborn, MI",48235,Detroit,MI,46426,full_fresh,,msa_level_probe
-19820,"Detroit-Warren-Dearborn, MI",48219,Detroit,MI,45503,full_fresh,,msa_level_probe
-20260,"Duluth, MN-WI",55803,Duluth,MN,17804,none,,msa_level_probe
-20260,"Duluth, MN-WI",55804,Duluth,MN,15416,none,,msa_level_probe
-20260,"Duluth, MN-WI",55812,Duluth,MN,10984,none,,msa_level_probe
-20500,"Durham-Chapel Hill, NC",27703,Durham,NC,56071,full_fresh,,msa_level_probe
-20500,"Durham-Chapel Hill, NC",27707,Durham,NC,52008,full_fresh,,msa_level_probe
-20500,"Durham-Chapel Hill, NC",27705,Durham,NC,50530,full_fresh,,msa_level_probe
-21340,"El Paso, TX",79936,El paso,TX,108668,full_fresh,,msa_level_probe
-21340,"El Paso, TX",79938,El paso,TX,83326,full_fresh,,msa_level_probe
-21340,"El Paso, TX",79912,El paso,TX,79861,full_fresh,,msa_level_probe
-21500,"Erie, PA",16509,Erie,PA,26838,none,,msa_level_probe
-21500,"Erie, PA",16506,Erie,PA,24163,none,,msa_level_probe
-21500,"Erie, PA",16504,Erie,PA,16571,none,,msa_level_probe
-21660,"Eugene-Springfield, OR",97402,Eugene,OR,52481,full_fresh,,msa_level_probe
-21660,"Eugene-Springfield, OR",97405,Eugene,OR,45184,full_fresh,,msa_level_probe
-21660,"Eugene-Springfield, OR",97404,Eugene,OR,34126,full_fresh,,msa_level_probe
-21780,"Evansville, IN",47714,Evansville,IN,34514,none,,msa_level_probe
-21780,"Evansville, IN",47711,Evansville,IN,32961,none,,msa_level_probe
-21780,"Evansville, IN",47712,Evansville,IN,26921,none,,msa_level_probe
-22020,"Fargo, ND-MN",58103,Fargo,ND,49209,none,,msa_level_probe
-22020,"Fargo, ND-MN",58104,Briarwood,ND,43925,none,,msa_level_probe
-22020,"Fargo, ND-MN",58201,Grand forks,ND,41096,none,,msa_level_probe
-22180,"Fayetteville, NC",28314,Fayetteville,NC,59189,none,,msa_level_probe
-22180,"Fayetteville, NC",28306,Fayetteville,NC,43300,none,,msa_level_probe
-22180,"Fayetteville, NC",28304,Fayetteville,NC,35605,none,,msa_level_probe
-22220,"Fayetteville-Springdale-Rogers, AR",72701,Fayetteville,AR,45396,none,,msa_level_probe
-22220,"Fayetteville-Springdale-Rogers, AR",72703,Fayetteville,AR,33223,none,,msa_level_probe
-22420,"Flint, MI",48507,Flint,MI,30884,full_fresh,,msa_level_probe
-22420,"Flint, MI",48503,Flint,MI,26542,ambient_fresh,,msa_level_probe
-22420,"Flint, MI",48505,Flint,MI,19722,ambient_fresh,,msa_level_probe
-22660,"Fort Collins-Loveland, CO",80525,Fort collins,CO,56233,full_fresh,,msa_level_probe
-22660,"Fort Collins-Loveland, CO",80526,Fort collins,CO,45220,full_fresh,,msa_level_probe
-22660,"Fort Collins-Loveland, CO",80521,Fort collins,CO,37796,full_fresh,,msa_level_probe
-23060,"Fort Wayne, IN",46835,Fort wayne,IN,35612,none,,msa_level_probe
-23060,"Fort Wayne, IN",46815,Fort wayne,IN,29183,none,,msa_level_probe
-23060,"Fort Wayne, IN",46825,Fort wayne,IN,28848,none,,msa_level_probe
-23420,"Fresno, CA",93722,Fresno,CA,85811,full_fresh,,msa_level_probe
-23420,"Fresno, CA",93727,Fresno,CA,84656,full_fresh,,msa_level_probe
-23420,"Fresno, CA",93720,Fresno,CA,46725,full_fresh,,msa_level_probe
-23540,"Gainesville, FL",32608,Gainesville,FL,50431,full_fresh,,msa_level_probe
-23540,"Gainesville, FL",32607,Gainesville,FL,30139,full_fresh,,msa_level_probe
-23540,"Gainesville, FL",32605,Gainesville,FL,26305,full_fresh,,msa_level_probe
-24340,"Grand Rapids-Wyoming-Kentwood, MI",49507,Grand rapids,MI,39731,full_fresh,,msa_level_probe
-24340,"Grand Rapids-Wyoming-Kentwood, MI",49503,Grand rapids,MI,37036,full_fresh,,msa_level_probe
-24340,"Grand Rapids-Wyoming-Kentwood, MI",49506,Grand rapids,MI,34058,full_fresh,,msa_level_probe
-24540,"Greeley, CO",80634,Greeley,CO,61810,full_fresh,,msa_level_probe
-24540,"Greeley, CO",80013,Aurora,CO,74293,full_fresh,,msa_level_probe
-24540,"Greeley, CO",80219,Denver,CO,71795,full_fresh,,msa_level_probe
-24580,"Green Bay, WI",54313,Green bay,WI,40083,none,,msa_level_probe
-24580,"Green Bay, WI",54311,Green bay,WI,35754,none,,msa_level_probe
-24580,"Green Bay, WI",54302,Green bay,WI,31670,none,,msa_level_probe
-24660,"Greensboro-High Point, NC",27406,Greensboro,NC,62757,full_fresh,,msa_level_probe
-24660,"Greensboro-High Point, NC",27410,Greensboro,NC,57466,full_fresh,,msa_level_probe
-24660,"Greensboro-High Point, NC",27407,Greensboro,NC,53237,full_fresh,,msa_level_probe
-24860,"Greenville-Anderson-Greer, SC",29607,Greenville,SC,40933,full_fresh,,msa_level_probe
-24860,"Greenville-Anderson-Greer, SC",29605,Greenville,SC,38808,full_fresh,,msa_level_probe
-24860,"Greenville-Anderson-Greer, SC",29615,Greenville,SC,37349,full_fresh,,msa_level_probe
-25060,"Gulfport-Biloxi, MS",39503,Gulfport,MS,56418,none,,msa_level_probe
-25060,"Gulfport-Biloxi, MS",39501,Gulfport,MS,23807,none,,msa_level_probe
-25060,"Gulfport-Biloxi, MS",39507,Gulfport,MS,17004,none,,msa_level_probe
-25180,"Hagerstown-Martinsburg, MD-WV",21740,Hagerstown,MD,60922,full_fresh,,msa_level_probe
-25180,"Hagerstown-Martinsburg, MD-WV",21742,Hagerstown,MD,33425,full_fresh,,msa_level_probe
-25420,"Harrisburg-Carlisle, PA",17112,Harrisburg,PA,36080,full_fresh,,msa_level_probe
-25420,"Harrisburg-Carlisle, PA",17110,Harrisburg,PA,25122,full_fresh,,msa_level_probe
-25420,"Harrisburg-Carlisle, PA",17104,Harrisburg,PA,19765,full_fresh,,msa_level_probe
-25540,"Hartford-West Hartford-East Hartford, CT",06106,Hartford,CT,38012,full_fresh,,msa_level_probe
-25540,"Hartford-West Hartford-East Hartford, CT",06114,Hartford,CT,27823,full_fresh,,msa_level_probe
-25540,"Hartford-West Hartford-East Hartford, CT",06112,Hartford,CT,19991,full_fresh,,msa_level_probe
-25860,"Hickory-Lenoir-Morganton, NC",28601,Hickory,NC,50265,none,,msa_level_probe
-25860,"Hickory-Lenoir-Morganton, NC",28602,Hickory,NC,29467,none,,msa_level_probe
-26420,"Houston-Pasadena-The Woodlands, TX",77084,Houston,TX,108161,full_fresh,,msa_level_probe
-26420,"Houston-Pasadena-The Woodlands, TX",77083,Houston,TX,78240,full_fresh,,msa_level_probe
-26420,"Houston-Pasadena-The Woodlands, TX",77095,Houston,TX,73956,full_fresh,,msa_level_probe
-26580,"Huntington-Ashland, WV-KY-OH",25705,Huntington,WV,20690,none,,msa_level_probe
-26580,"Huntington-Ashland, WV-KY-OH",25701,Huntington,WV,19869,none,,msa_level_probe
-26580,"Huntington-Ashland, WV-KY-OH",25704,Huntington,WV,16540,none,,msa_level_probe
-26620,"Huntsville, AL",35810,Huntsville,AL,30243,full_fresh,,msa_level_probe
-26620,"Huntsville, AL",35803,Huntsville,AL,26504,full_fresh,,msa_level_probe
-26620,"Huntsville, AL",35811,Huntsville,AL,26198,full_fresh,,msa_level_probe
-26900,"Indianapolis-Carmel-Greenwood, IN",46222,Indianapolis,IN,38629,full_fresh,,msa_level_probe
-26900,"Indianapolis-Carmel-Greenwood, IN",46203,Indianapolis,IN,38184,full_fresh,,msa_level_probe
-26900,"Indianapolis-Carmel-Greenwood, IN",46220,Indianapolis,IN,37367,full_fresh,,msa_level_probe
-27140,"Jackson, MS",39212,Jackson,MS,32680,full_fresh,,msa_level_probe
-27140,"Jackson, MS",39209,Jackson,MS,26835,full_fresh,,msa_level_probe
-27140,"Jackson, MS",39211,Jackson,MS,23872,full_fresh,,msa_level_probe
-27260,"Jacksonville, FL",32218,Jacksonville,FL,65878,full_fresh,,msa_level_probe
-27260,"Jacksonville, FL",32210,Jacksonville,FL,62457,full_fresh,,msa_level_probe
-27260,"Jacksonville, FL",32244,Jacksonville,FL,61190,full_fresh,,msa_level_probe
-28020,"Kalamazoo-Portage, MI",49009,Kalamazoo,MI,46734,none,,msa_level_probe
-28020,"Kalamazoo-Portage, MI",49006,Kalamazoo,MI,27793,none,,msa_level_probe
-28020,"Kalamazoo-Portage, MI",49001,Kalamazoo,MI,21808,none,,msa_level_probe
-28140,"Kansas City, MO-KS",64119,Kansas city,MO,29450,full_fresh,,msa_level_probe
-28140,"Kansas City, MO-KS",64114,Kansas city,MO,25314,full_fresh,,msa_level_probe
-28140,"Kansas City, MO-KS",64155,Kansas city,MO,24099,full_fresh,,msa_level_probe
-28420,"Kennewick-Richland, WA",99336,Kennewick,WA,52259,none,,msa_level_probe
-28420,"Kennewick-Richland, WA",99337,Kennewick,WA,32080,none,,msa_level_probe
-28660,"Killeen-Temple, TX",76541,Killeen,TX,18396,none,,msa_level_probe
-28660,"Killeen-Temple, TX",77494,Park row,TX,126310,ambient_fresh,,msa_level_probe
-28660,"Killeen-Temple, TX",77449,Park row,TX,123157,full_fresh,,msa_level_probe
-28700,"Kingsport-Bristol, TN-VA",37664,Kingsport,TN,28040,none,,msa_level_probe
-28700,"Kingsport-Bristol, TN-VA",37013,Antioch,TN,99109,full_fresh,,msa_level_probe
-28700,"Kingsport-Bristol, TN-VA",37042,Clarksville,TN,80661,none,,msa_level_probe
-28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",11368,Corona,NY,108661,full_fresh,,msa_level_probe
-28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",11385,Ridgewood,NY,105025,full_fresh,,msa_level_probe
-28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",11211,Brooklyn,NY,104561,full_fresh,,msa_level_probe
-28940,"Knoxville, TN",37918,Knoxville,TN,45107,full_fresh,,msa_level_probe
-28940,"Knoxville, TN",37923,Knoxville,TN,31548,full_fresh,,msa_level_probe
-28940,"Knoxville, TN",37919,Knoxville,TN,29637,full_fresh,,msa_level_probe
-29180,"Lafayette, LA",70506,Lafayette,LA,41212,none,,msa_level_probe
-29180,"Lafayette, LA",70508,Lafayette,LA,38704,none,,msa_level_probe
-29180,"Lafayette, LA",70503,Lafayette,LA,31542,none,,msa_level_probe
-29460,"Lakeland-Winter Haven, FL",33801,Lakeland,FL,34406,none,,msa_level_probe
-29460,"Lakeland-Winter Haven, FL",33809,Lakeland,FL,30646,none,,msa_level_probe
-29460,"Lakeland-Winter Haven, FL",33803,Lakeland,FL,29875,none,,msa_level_probe
-29540,"Lancaster, PA",17602,Lancaster,PA,50660,full_fresh,,msa_level_probe
-29540,"Lancaster, PA",19120,Philadelphia,PA,74270,full_fresh,,msa_level_probe
-29540,"Lancaster, PA",19124,Philadelphia,PA,71858,full_fresh,,msa_level_probe
-29620,"Lansing-East Lansing, MI",48911,Lansing,MI,40924,full_fresh,,msa_level_probe
-29620,"Lansing-East Lansing, MI",48910,Lansing,MI,34989,full_fresh,,msa_level_probe
-29620,"Lansing-East Lansing, MI",48917,Lansing,MI,32191,full_fresh,,msa_level_probe
-29700,"Laredo, TX",78041,Laredo,TX,47207,none,,msa_level_probe
-29700,"Laredo, TX",78040,Laredo,TX,39997,none,,msa_level_probe
-29820,"Las Vegas-Henderson-North Las Vegas, NV",89108,Las vegas,NV,75201,full_fresh,,msa_level_probe
-29820,"Las Vegas-Henderson-North Las Vegas, NV",89110,Las vegas,NV,70865,full_fresh,,msa_level_probe
-29820,"Las Vegas-Henderson-North Las Vegas, NV",89115,Las vegas,NV,66378,full_fresh,,msa_level_probe
-30460,"Lexington-Fayette, KY",40509,Lexington,KY,42432,full_fresh,,msa_level_probe
-30460,"Lexington-Fayette, KY",40517,Lexington,KY,37358,full_fresh,,msa_level_probe
-30460,"Lexington-Fayette, KY",40515,Lexington,KY,36569,full_fresh,,msa_level_probe
-30700,"Lincoln, NE",68516,Lincoln,NE,46626,full_fresh,,msa_level_probe
-30700,"Lincoln, NE",68521,Lincoln,NE,36166,full_fresh,,msa_level_probe
-30700,"Lincoln, NE",68506,Lincoln,NE,28161,full_fresh,,msa_level_probe
-30780,"Little Rock-North Little Rock-Conway, AR",72209,Little rock,AR,31748,full_fresh,,msa_level_probe
-30780,"Little Rock-North Little Rock-Conway, AR",72204,Little rock,AR,30204,full_fresh,,msa_level_probe
-30780,"Little Rock-North Little Rock-Conway, AR",72223,Little rock,AR,24848,full_fresh,,msa_level_probe
-30980,"Longview, TX",75605,Longview,TX,32438,none,,msa_level_probe
-30980,"Longview, TX",75604,Longview,TX,29922,none,,msa_level_probe
-30980,"Longview, TX",75602,Longview,TX,20576,none,,msa_level_probe
-31080,"Los Angeles-Long Beach-Anaheim, CA",90011,Los angeles,CA,110750,full_fresh,,msa_level_probe
-31080,"Los Angeles-Long Beach-Anaheim, CA",90044,Los angeles,CA,99980,full_fresh,,msa_level_probe
-31080,"Los Angeles-Long Beach-Anaheim, CA",90003,Los angeles,CA,74117,full_fresh,,msa_level_probe
-31140,"Louisville/Jefferson County, KY-IN",40475,Richmond,KY,63422,full_fresh,,msa_level_probe
-31140,"Louisville/Jefferson County, KY-IN",42101,Plum springs,KY,62715,none,,msa_level_probe
-31140,"Louisville/Jefferson County, KY-IN",41042,Florence,KY,54730,full_fresh,,msa_level_probe
-31180,"Lubbock, TX",79424,Lubbock,TX,49191,none,,msa_level_probe
-31180,"Lubbock, TX",79423,Lubbock,TX,42354,none,,msa_level_probe
-31180,"Lubbock, TX",79416,Lubbock,TX,34628,none,,msa_level_probe
-31340,"Lynchburg, VA",24501,Lynchburg,VA,27828,none,,msa_level_probe
-31340,"Lynchburg, VA",24503,Lynchburg,VA,19682,none,,msa_level_probe
-31340,"Lynchburg, VA",24504,Lynchburg,VA,9331,none,,msa_level_probe
-31540,"Madison, WI",53711,Madison,WI,48455,ambient_fresh,,msa_level_probe
-31540,"Madison, WI",53704,Madison,WI,46614,ambient_fresh,,msa_level_probe
-31540,"Madison, WI",53703,Madison,WI,35834,ambient_fresh,,msa_level_probe
-31700,"Manchester-Nashua, NH",03103,Manchester,NH,36831,full_fresh,,msa_level_probe
-31700,"Manchester-Nashua, NH",03102,Manchester,NH,33951,full_fresh,,msa_level_probe
-31700,"Manchester-Nashua, NH",03104,Manchester,NH,32776,full_fresh,,msa_level_probe
-32580,"McAllen-Edinburg-Mission, TX",78504,Mcallen,TX,61182,none,,msa_level_probe
-32580,"McAllen-Edinburg-Mission, TX",78501,Mcallen,TX,60299,none,,msa_level_probe
-32580,"McAllen-Edinburg-Mission, TX",78503,Mcallen,TX,20703,none,,msa_level_probe
-32820,"Memphis, TN-MS-AR",38128,Memphis,TN,46158,full_fresh,,msa_level_probe
-32820,"Memphis, TN-MS-AR",38109,Memphis,TN,44846,full_fresh,,msa_level_probe
-32820,"Memphis, TN-MS-AR",38127,Memphis,TN,43240,full_fresh,,msa_level_probe
-32900,"Merced, CA",95348,Merced,CA,34302,none,,msa_level_probe
-32900,"Merced, CA",90011,Los angeles,CA,110750,full_fresh,,msa_level_probe
-32900,"Merced, CA",90650,Norwalk,CA,104524,full_fresh,,msa_level_probe
-33100,"Miami-Fort Lauderdale-West Palm Beach, FL",33186,Miami,FL,69459,full_fresh,,msa_level_probe
-33100,"Miami-Fort Lauderdale-West Palm Beach, FL",33125,Miami,FL,60347,full_fresh,,msa_level_probe
-33100,"Miami-Fort Lauderdale-West Palm Beach, FL",33142,Miami,FL,59773,full_fresh,,msa_level_probe
-33340,"Milwaukee-Waukesha, WI",53209,Milwaukee,WI,48321,full_fresh,,msa_level_probe
-33340,"Milwaukee-Waukesha, WI",53218,Milwaukee,WI,42728,full_fresh,,msa_level_probe
-33340,"Milwaukee-Waukesha, WI",53221,Milwaukee,WI,39602,full_fresh,,msa_level_probe
-33460,"Minneapolis-St. Paul-Bloomington, MN-WI",55407,Minneapolis,MN,40792,full_fresh,,msa_level_probe
-33460,"Minneapolis-St. Paul-Bloomington, MN-WI",55414,Minneapolis,MN,36017,full_fresh,,msa_level_probe
-33460,"Minneapolis-St. Paul-Bloomington, MN-WI",55406,Minneapolis,MN,33709,full_fresh,,msa_level_probe
-33660,"Mobile, AL",36695,Mobile,AL,52524,none,,msa_level_probe
-33660,"Mobile, AL",36608,Mobile,AL,36317,none,,msa_level_probe
-33660,"Mobile, AL",36605,Mobile,AL,27035,none,,msa_level_probe
-33700,"Modesto, CA",95355,Modesto,CA,59272,full_fresh,,msa_level_probe
-33700,"Modesto, CA",95350,Modesto,CA,54044,full_fresh,,msa_level_probe
-33700,"Modesto, CA",95351,Modesto,CA,48844,full_fresh,,msa_level_probe
-33860,"Montgomery, AL",36117,Montgomery,AL,53594,none,,msa_level_probe
-33860,"Montgomery, AL",36116,Montgomery,AL,45027,none,,msa_level_probe
-33860,"Montgomery, AL",36109,Montgomery,AL,24802,none,,msa_level_probe
-34820,"Myrtle Beach-Conway-North Myrtle Beach, SC",29577,Myrtle beach,SC,32858,full_fresh,,msa_level_probe
-34820,"Myrtle Beach-Conway-North Myrtle Beach, SC",29572,Myrtle beach,SC,10163,full_fresh,,msa_level_probe
-34940,"Naples-Marco Island, FL",33311,Fort lauderdale,FL,75705,full_fresh,,msa_level_probe
-34940,"Naples-Marco Island, FL",33024,Pembroke pines,FL,75701,full_fresh,,msa_level_probe
-34940,"Naples-Marco Island, FL",33023,Miramar,FL,74913,full_fresh,,msa_level_probe
-34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",37211,Nashville,TN,75199,full_fresh,,msa_level_probe
-34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",37207,Nashville,TN,39151,full_fresh,,msa_level_probe
-34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",37209,Nashville,TN,37852,full_fresh,,msa_level_probe
-35300,"New Haven, CT",06511,New haven,CT,53859,full_fresh,,msa_level_probe
-35300,"New Haven, CT",06515,New haven,CT,18382,full_fresh,,msa_level_probe
-35300,"New Haven, CT",06519,New haven,CT,15675,full_fresh,,msa_level_probe
-35380,"New Orleans-Metairie, LA",70122,New orleans,LA,38977,full_fresh,,msa_level_probe
-35380,"New Orleans-Metairie, LA",70119,New orleans,LA,37779,none,,msa_level_probe
-35380,"New Orleans-Metairie, LA",70118,New orleans,LA,36963,full_fresh,,msa_level_probe
-35620,"New York-Newark-Jersey City, NY-NJ",10025,New york,NY,92162,full_fresh,,msa_level_probe
-35620,"New York-Newark-Jersey City, NY-NJ",10029,New york,NY,74617,full_fresh,,msa_level_probe
-35620,"New York-Newark-Jersey City, NY-NJ",10002,New york,NY,74363,ambient_fresh,,msa_level_probe
-35840,"North Port-Bradenton-Sarasota, FL",34287,North port,FL,27620,none,,msa_level_probe
-35840,"North Port-Bradenton-Sarasota, FL",33311,Fort lauderdale,FL,75705,full_fresh,,msa_level_probe
-35840,"North Port-Bradenton-Sarasota, FL",33024,Pembroke pines,FL,75701,full_fresh,,msa_level_probe
-35980,"Norwich-New London-Willimantic, CT",06360,Norwich,CT,36549,full_fresh,,msa_level_probe
-35980,"Norwich-New London-Willimantic, CT",06902,Stamford,CT,70199,full_fresh,,msa_level_probe
-35980,"Norwich-New London-Willimantic, CT",06010,Bristol,CT,60039,full_fresh,,msa_level_probe
-36100,"Ocala, FL",34472,Ocala,FL,31271,none,,msa_level_probe
-36100,"Ocala, FL",34471,Ocala,FL,24635,full_fresh,,msa_level_probe
-36100,"Ocala, FL",34482,Ocala,FL,23576,full_fresh,,msa_level_probe
-36260,"Ogden, UT",84404,Ogden,UT,64249,none,,msa_level_probe
-36260,"Ogden, UT",84401,Ogden,UT,41324,none,,msa_level_probe
-36260,"Ogden, UT",84403,Ogden,UT,36762,none,,msa_level_probe
-36420,"Oklahoma City, OK",73120,Oklahoma city,OK,35132,full_fresh,,msa_level_probe
-36420,"Oklahoma City, OK",73112,Oklahoma city,OK,33901,full_fresh,,msa_level_probe
-36420,"Oklahoma City, OK",73159,Oklahoma city,OK,33345,full_fresh,,msa_level_probe
-36500,"Olympia-Lacey-Tumwater, WA",98501,Olympia,WA,43584,none,,msa_level_probe
-36500,"Olympia-Lacey-Tumwater, WA",98502,Olympia,WA,35307,none,,msa_level_probe
-36500,"Olympia-Lacey-Tumwater, WA",98512,Olympia,WA,30833,none,,msa_level_probe
-36540,"Omaha, NE-IA",68104,Omaha,NE,37582,full_fresh,,msa_level_probe
-36540,"Omaha, NE-IA",68123,Omaha,NE,32542,full_fresh,,msa_level_probe
-36540,"Omaha, NE-IA",68116,Omaha,NE,32018,full_fresh,,msa_level_probe
-36740,"Orlando-Kissimmee-Sanford, FL",32828,Orlando,FL,69913,full_fresh,,msa_level_probe
-36740,"Orlando-Kissimmee-Sanford, FL",32818,Orlando,FL,61027,full_fresh,,msa_level_probe
-36740,"Orlando-Kissimmee-Sanford, FL",32825,Orlando,FL,60254,full_fresh,,msa_level_probe
-37100,"Oxnard-Thousand Oaks-Ventura, CA",93033,Oxnard,CA,84902,ambient_fresh,,msa_level_probe
-37100,"Oxnard-Thousand Oaks-Ventura, CA",93030,Oxnard,CA,59844,ambient_fresh,,msa_level_probe
-37100,"Oxnard-Thousand Oaks-Ventura, CA",93035,Oxnard,CA,28426,ambient_fresh,,msa_level_probe
-37340,"Palm Bay-Melbourne-Titusville, FL",32907,Palm bay,FL,46911,full_fresh,,msa_level_probe
-37340,"Palm Bay-Melbourne-Titusville, FL",32909,Palm bay,FL,31734,full_fresh,,msa_level_probe
-37340,"Palm Bay-Melbourne-Titusville, FL",32905,Palm bay,FL,23410,full_fresh,,msa_level_probe
-37860,"Pensacola-Ferry Pass-Brent, FL",32514,Pensacola,FL,43323,none,,msa_level_probe
-37860,"Pensacola-Ferry Pass-Brent, FL",32506,Pensacola,FL,37604,none,,msa_level_probe
-37860,"Pensacola-Ferry Pass-Brent, FL",32526,Pensacola,FL,37484,none,,msa_level_probe
-37900,"Peoria, IL",61604,Peoria,IL,29362,none,,msa_level_probe
-37900,"Peoria, IL",61615,Peoria,IL,21878,none,,msa_level_probe
-37900,"Peoria, IL",61605,Peoria,IL,14556,none,,msa_level_probe
-37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",19120,Philadelphia,PA,74270,ambient_fresh,,msa_level_probe
-37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",19124,Philadelphia,PA,71858,ambient_fresh,,msa_level_probe
-37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",19111,Philadelphia,PA,67159,full_fresh,,msa_level_probe
-38060,"Phoenix-Mesa-Chandler, AZ",85032,Phoenix,AZ,73212,full_fresh,,msa_level_probe
-38060,"Phoenix-Mesa-Chandler, AZ",85041,Phoenix,AZ,64657,full_fresh,,msa_level_probe
-38060,"Phoenix-Mesa-Chandler, AZ",85033,Phoenix,AZ,64388,full_fresh,,msa_level_probe
-38300,"Pittsburgh, PA",19120,Philadelphia,PA,74270,ambient_fresh,,msa_level_probe
-38300,"Pittsburgh, PA",19124,Philadelphia,PA,71858,full_fresh,,msa_level_probe
-38300,"Pittsburgh, PA",19111,Philadelphia,PA,67159,full_fresh,,msa_level_probe
-38860,"Portland-South Portland, ME",04103,Portland,ME,30628,ambient_fresh,,msa_level_probe
-38860,"Portland-South Portland, ME",04101,Portland,ME,18179,ambient_fresh,,msa_level_probe
-38860,"Portland-South Portland, ME",04102,Portland,ME,16968,ambient_fresh,,msa_level_probe
-38900,"Portland-Vancouver-Hillsboro, OR-WA",97229,Portland,OR,71529,full_fresh,,msa_level_probe
-38900,"Portland-Vancouver-Hillsboro, OR-WA",97206,Portland,OR,54248,full_fresh,,msa_level_probe
-38900,"Portland-Vancouver-Hillsboro, OR-WA",97202,Portland,OR,43744,full_fresh,,msa_level_probe
-38940,"Port St. Lucie, FL",33311,Fort lauderdale,FL,75705,full_fresh,,msa_level_probe
-38940,"Port St. Lucie, FL",33024,Pembroke pines,FL,75701,full_fresh,,msa_level_probe
-38940,"Port St. Lucie, FL",33023,Miramar,FL,74913,full_fresh,,msa_level_probe
-39150,"Prescott Valley-Prescott, AZ",86314,Prescott valley,AZ,39335,none,,msa_level_probe
-39150,"Prescott Valley-Prescott, AZ",85364,Yuma,AZ,73674,none,,msa_level_probe
-39150,"Prescott Valley-Prescott, AZ",85032,Phoenix,AZ,73212,full_fresh,,msa_level_probe
-39300,"Providence-Warwick, RI-MA",02908,Providence,RI,37792,full_fresh,,msa_level_probe
-39300,"Providence-Warwick, RI-MA",02906,Providence,RI,28254,full_fresh,,msa_level_probe
-39300,"Providence-Warwick, RI-MA",02903,Providence,RI,11443,full_fresh,,msa_level_probe
-39340,"Provo-Orem-Lehi, UT",84604,Provo,UT,46099,full_fresh,,msa_level_probe
-39340,"Provo-Orem-Lehi, UT",84606,Provo,UT,37351,full_fresh,,msa_level_probe
-39340,"Provo-Orem-Lehi, UT",84601,Provo,UT,33771,full_fresh,,msa_level_probe
-39580,"Raleigh-Cary, NC",27610,Raleigh,NC,80973,full_fresh,,msa_level_probe
-39580,"Raleigh-Cary, NC",27603,Raleigh,NC,56826,full_fresh,,msa_level_probe
-39580,"Raleigh-Cary, NC",27616,Raleigh,NC,55997,full_fresh,,msa_level_probe
-39740,"Reading, PA",19601,Reading,PA,33382,full_fresh,,msa_level_probe
-39740,"Reading, PA",19604,Reading,PA,29069,none,,msa_level_probe
-39740,"Reading, PA",19605,Reading,PA,18863,full_fresh,,msa_level_probe
-39900,"Reno, NV",89502,Reno,NV,44881,full_fresh,,msa_level_probe
-39900,"Reno, NV",89506,Reno,NV,42742,full_fresh,,msa_level_probe
-39900,"Reno, NV",89509,Reno,NV,35558,none,,msa_level_probe
-40060,"Richmond, VA",23223,Richmond,VA,53917,ambient_fresh,,msa_level_probe
-40060,"Richmond, VA",23225,Richmond,VA,43454,ambient_fresh,,msa_level_probe
-40060,"Richmond, VA",23224,Richmond,VA,40136,ambient_fresh,,msa_level_probe
-40140,"Riverside-San Bernardino-Ontario, CA",92503,Riverside,CA,93032,full_fresh,,msa_level_probe
-40140,"Riverside-San Bernardino-Ontario, CA",92504,Riverside,CA,62423,full_fresh,,msa_level_probe
-40140,"Riverside-San Bernardino-Ontario, CA",92507,Riverside,CA,59612,full_fresh,,msa_level_probe
-40220,"Roanoke, VA",24012,Roanoke,VA,30055,none,,msa_level_probe
-40220,"Roanoke, VA",24017,Roanoke,VA,24273,none,,msa_level_probe
-40220,"Roanoke, VA",24014,Roanoke,VA,16010,none,,msa_level_probe
-40380,"Rochester, NY",14609,Rochester,NY,40081,full_fresh,,msa_level_probe
-40380,"Rochester, NY",14612,Rochester,NY,34316,full_fresh,,msa_level_probe
-40380,"Rochester, NY",14621,Rochester,NY,33757,full_fresh,,msa_level_probe
-40420,"Rockford, IL",61107,Rockford,IL,30412,none,,msa_level_probe
-40420,"Rockford, IL",61108,Rockford,IL,29084,none,,msa_level_probe
-40420,"Rockford, IL",61109,Rockford,IL,26462,none,,msa_level_probe
-40900,"Sacramento-Roseville-Folsom, CA",95823,Sacramento,CA,80842,full_fresh,,msa_level_probe
-40900,"Sacramento-Roseville-Folsom, CA",95828,Sacramento,CA,59139,full_fresh,,msa_level_probe
-40900,"Sacramento-Roseville-Folsom, CA",95843,Sacramento,CA,47928,full_fresh,,msa_level_probe
-41180,"St. Louis, MO-IL",63376,Saint peters,MO,75031,full_fresh,,msa_level_probe
-41180,"St. Louis, MO-IL",65807,Springfield,MO,58366,none,,msa_level_probe
-41180,"St. Louis, MO-IL",65203,Columbia,MO,58271,none,,msa_level_probe
-41420,"Salem, OR",97301,Salem,OR,57194,none,,msa_level_probe
-41420,"Salem, OR",97302,Salem,OR,40113,none,,msa_level_probe
-41420,"Salem, OR",97306,Salem,OR,32741,none,,msa_level_probe
-41500,"Salinas, CA",93906,Salinas,CA,63733,none,,msa_level_probe
-41500,"Salinas, CA",93905,Salinas,CA,61633,none,,msa_level_probe
-41500,"Salinas, CA",93901,Salinas,CA,28089,none,,msa_level_probe
-41620,"Salt Lake City-Murray, UT",84106,Salt lake city,UT,35166,full_fresh,,msa_level_probe
-41620,"Salt Lake City-Murray, UT",84116,Salt lake city,UT,34588,full_fresh,,msa_level_probe
-41620,"Salt Lake City-Murray, UT",84128,Salt lake city,UT,27921,none,,msa_level_probe
-41700,"San Antonio-New Braunfels, TX",78245,San antonio,TX,76392,full_fresh,,msa_level_probe
-41700,"San Antonio-New Braunfels, TX",78251,San antonio,TX,65885,full_fresh,,msa_level_probe
-41700,"San Antonio-New Braunfels, TX",78250,San antonio,TX,62951,full_fresh,,msa_level_probe
-41740,"San Diego-Chula Vista-Carlsbad, CA",92154,San diego,CA,89886,full_fresh,,msa_level_probe
-41740,"San Diego-Chula Vista-Carlsbad, CA",92126,San diego,CA,83257,full_fresh,,msa_level_probe
-41740,"San Diego-Chula Vista-Carlsbad, CA",92105,San diego,CA,75990,full_fresh,,msa_level_probe
-41860,"San Francisco-Oakland-Fremont, CA",94112,San francisco,CA,85053,full_fresh,,msa_level_probe
-41860,"San Francisco-Oakland-Fremont, CA",94110,San francisco,CA,72765,full_fresh,,msa_level_probe
-41860,"San Francisco-Oakland-Fremont, CA",94122,San francisco,CA,61248,full_fresh,,msa_level_probe
-41940,"San Jose-Sunnyvale-Santa Clara, CA",95123,San jose,CA,70005,full_fresh,,msa_level_probe
-41940,"San Jose-Sunnyvale-Santa Clara, CA",95127,San jose,CA,63220,full_fresh,,msa_level_probe
-41940,"San Jose-Sunnyvale-Santa Clara, CA",95111,San jose,CA,61183,full_fresh,,msa_level_probe
-42020,"San Luis Obispo-Paso Robles, CA",93405,San luis obispo,CA,36285,none,,msa_level_probe
-42020,"San Luis Obispo-Paso Robles, CA",93401,San luis obispo,CA,28751,none,,msa_level_probe
-42100,"Santa Cruz-Watsonville, CA",95062,Santa cruz,CA,36413,none,,msa_level_probe
-42100,"Santa Cruz-Watsonville, CA",95064,Santa cruz,CA,10622,none,,msa_level_probe
-42100,"Santa Cruz-Watsonville, CA",95065,Santa cruz,CA,8164,none,,msa_level_probe
-42200,"Santa Maria-Santa Barbara, CA",93454,Santa maria,CA,40600,none,,msa_level_probe
-42200,"Santa Maria-Santa Barbara, CA",90011,Los angeles,CA,110750,full_fresh,,msa_level_probe
-42200,"Santa Maria-Santa Barbara, CA",90650,Norwalk,CA,104524,full_fresh,,msa_level_probe
-42220,"Santa Rosa-Petaluma, CA",95403,Santa rosa,CA,44716,full_fresh,,msa_level_probe
-42220,"Santa Rosa-Petaluma, CA",95407,Santa rosa,CA,42815,full_fresh,,msa_level_probe
-42220,"Santa Rosa-Petaluma, CA",95401,Santa rosa,CA,38872,full_fresh,,msa_level_probe
-42340,"Savannah, GA",31405,Savannah,GA,37929,full_fresh,,msa_level_probe
-42340,"Savannah, GA",31406,Savannah,GA,35073,full_fresh,,msa_level_probe
-42340,"Savannah, GA",31410,Savannah,GA,24626,full_fresh,,msa_level_probe
-42540,"Scranton--Wilkes-Barre, PA",18505,Scranton,PA,21671,full_fresh,,msa_level_probe
-42540,"Scranton--Wilkes-Barre, PA",18504,Scranton,PA,20632,full_fresh,,msa_level_probe
-42540,"Scranton--Wilkes-Barre, PA",18509,Scranton,PA,13786,full_fresh,,msa_level_probe
-42660,"Seattle-Tacoma-Bellevue, WA",98115,Seattle,WA,55519,full_fresh,,msa_level_probe
-42660,"Seattle-Tacoma-Bellevue, WA",98103,Seattle,WA,54194,full_fresh,,msa_level_probe
-42660,"Seattle-Tacoma-Bellevue, WA",98105,Seattle,WA,52290,full_fresh,,msa_level_probe
-43340,"Shreveport-Bossier City, LA",71118,Shreveport,LA,23585,none,,msa_level_probe
-43340,"Shreveport-Bossier City, LA",71105,Shreveport,LA,20660,none,,msa_level_probe
-43340,"Shreveport-Bossier City, LA",71108,Shreveport,LA,18943,none,,msa_level_probe
-43620,"Sioux Falls, SD-MN",57106,Sioux falls,SD,47855,none,,msa_level_probe
-43620,"Sioux Falls, SD-MN",57103,Sioux falls,SD,36761,none,,msa_level_probe
-43620,"Sioux Falls, SD-MN",57104,Sioux falls,SD,26217,none,,msa_level_probe
-43640,"Slidell-Mandeville-Covington, LA",70458,Slidell,LA,37164,none,,msa_level_probe
-43640,"Slidell-Mandeville-Covington, LA",70461,Slidell,LA,32900,none,,msa_level_probe
-43640,"Slidell-Mandeville-Covington, LA",70460,Slidell,LA,22334,none,,msa_level_probe
-43780,"South Bend-Mishawaka, IN-MI",46614,South bend,IN,30505,full_fresh,,msa_level_probe
-43780,"South Bend-Mishawaka, IN-MI",46628,South bend,IN,26532,full_fresh,,msa_level_probe
-43780,"South Bend-Mishawaka, IN-MI",46619,South bend,IN,21048,full_fresh,,msa_level_probe
-43900,"Spartanburg, SC",29301,Spartanburg,SC,35585,full_fresh,,msa_level_probe
-43900,"Spartanburg, SC",29316,Spartanburg,SC,27315,full_fresh,,msa_level_probe
-43900,"Spartanburg, SC",29307,Spartanburg,SC,18583,none,,msa_level_probe
-44060,"Spokane-Spokane Valley, WA",99208,Spokane,WA,55092,none,,msa_level_probe
-44060,"Spokane-Spokane Valley, WA",99205,Spokane,WA,43707,none,,msa_level_probe
-44060,"Spokane-Spokane Valley, WA",99206,Spokane,WA,40510,none,,msa_level_probe
-44140,"Springfield, MA",01109,Springfield,MA,30684,full_fresh,,msa_level_probe
-44140,"Springfield, MA",01108,Springfield,MA,26397,full_fresh,,msa_level_probe
-44140,"Springfield, MA",01104,Springfield,MA,23150,full_fresh,,msa_level_probe
-44180,"Springfield, MO",65807,Springfield,MO,58366,none,,msa_level_probe
-44180,"Springfield, MO",65802,Springfield,MO,47098,none,,msa_level_probe
-44180,"Springfield, MO",65803,Springfield,MO,41897,none,,msa_level_probe
-44700,"Stockton-Lodi, CA",95206,Stockton,CA,65643,full_fresh,,msa_level_probe
-44700,"Stockton-Lodi, CA",95207,Stockton,CA,51652,full_fresh,,msa_level_probe
-44700,"Stockton-Lodi, CA",95209,Stockton,CA,44325,full_fresh,,msa_level_probe
-45060,"Syracuse, NY",13210,Syracuse,NY,27172,none,,msa_level_probe
-45060,"Syracuse, NY",13208,Syracuse,NY,22560,none,,msa_level_probe
-45060,"Syracuse, NY",13204,Syracuse,NY,19264,none,,msa_level_probe
-45220,"Tallahassee, FL",32304,Tallahassee,FL,50298,full_fresh,,msa_level_probe
-45220,"Tallahassee, FL",32303,Tallahassee,FL,49073,full_fresh,,msa_level_probe
-45220,"Tallahassee, FL",32301,Tallahassee,FL,32552,full_fresh,,msa_level_probe
-45300,"Tampa-St. Petersburg-Clearwater, FL",33647,Tampa,FL,74066,full_fresh,,msa_level_probe
-45300,"Tampa-St. Petersburg-Clearwater, FL",33612,Tampa,FL,51347,full_fresh,,msa_level_probe
-45300,"Tampa-St. Petersburg-Clearwater, FL",33614,Tampa,FL,49652,full_fresh,,msa_level_probe
-45780,"Toledo, OH",43615,Toledo,OH,39957,none,,msa_level_probe
-45780,"Toledo, OH",43613,Toledo,OH,32811,none,,msa_level_probe
-45780,"Toledo, OH",43614,Toledo,OH,29983,none,,msa_level_probe
-45940,"Trenton-Princeton, NJ",08618,Trenton,NJ,37433,full_fresh,,msa_level_probe
-45940,"Trenton-Princeton, NJ",08638,Trenton,NJ,22115,full_fresh,,msa_level_probe
-45940,"Trenton-Princeton, NJ",08608,Trenton,NJ,866,full_fresh,,msa_level_probe
-46060,"Tucson, AZ",85706,Tucson,AZ,57712,full_fresh,,msa_level_probe
-46060,"Tucson, AZ",85705,Tucson,AZ,57449,full_fresh,,msa_level_probe
-46060,"Tucson, AZ",85710,Tucson,AZ,53002,full_fresh,,msa_level_probe
-46140,"Tulsa, OK",74133,Tulsa,OK,45958,full_fresh,,msa_level_probe
-46140,"Tulsa, OK",74136,Tulsa,OK,32139,full_fresh,,msa_level_probe
-46140,"Tulsa, OK",74137,Tulsa,OK,27341,full_fresh,,msa_level_probe
-46220,"Tuscaloosa, AL",35405,Tuscaloosa,AL,44449,none,,msa_level_probe
-46220,"Tuscaloosa, AL",35401,Tuscaloosa,AL,37909,none,,msa_level_probe
-46220,"Tuscaloosa, AL",35406,Tuscaloosa,AL,18391,none,,msa_level_probe
-46340,"Tyler, TX",75703,Tyler,TX,42955,none,,msa_level_probe
-46340,"Tyler, TX",75701,Tyler,TX,36089,none,,msa_level_probe
-46340,"Tyler, TX",75702,Tyler,TX,27678,none,,msa_level_probe
-46520,"Urban Honolulu, HI",96706,Ewa beach,HI,76081,none,,msa_level_probe
-46520,"Urban Honolulu, HI",96797,Waipahu,HI,70684,full_fresh,,msa_level_probe
-46520,"Urban Honolulu, HI",96818,Honolulu,HI,59923,full_fresh,,msa_level_probe
-46540,"Utica-Rome, NY",13501,Utica,NY,37132,none,,msa_level_probe
-46540,"Utica-Rome, NY",13502,Utica,NY,32437,none,,msa_level_probe
-46700,"Vallejo, CA",94591,Vallejo,CA,56333,full_fresh,,msa_level_probe
-46700,"Vallejo, CA",94590,Vallejo,CA,37378,full_fresh,,msa_level_probe
-47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",23464,Virginia beach,VA,77623,full_fresh,,msa_level_probe
-47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",23462,Virginia beach,VA,67963,full_fresh,,msa_level_probe
-47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",23456,Virginia beach,VA,57705,full_fresh,,msa_level_probe
-47300,"Visalia, CA",93291,Visalia,CA,58394,full_fresh,,msa_level_probe
-47300,"Visalia, CA",93277,Visalia,CA,53114,full_fresh,,msa_level_probe
-47300,"Visalia, CA",93292,Visalia,CA,42769,full_fresh,,msa_level_probe
-47380,"Waco, TX",76706,Waco,TX,39667,none,,msa_level_probe
-47380,"Waco, TX",76708,Waco,TX,27095,none,,msa_level_probe
-47380,"Waco, TX",76710,Waco,TX,24607,none,,msa_level_probe
-47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",20011,Washington,DC,69686,ambient_fresh,,msa_level_probe
-47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",20002,Washington,DC,69141,full_fresh,,msa_level_probe
-47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",20019,Washington,DC,65769,full_fresh,,msa_level_probe
-47930,"Waterbury-Shelton, CT",06708,Waterbury,CT,29727,full_fresh,,msa_level_probe
-47930,"Waterbury-Shelton, CT",06704,Waterbury,CT,26209,full_fresh,,msa_level_probe
-47930,"Waterbury-Shelton, CT",06705,Waterbury,CT,24910,full_fresh,,msa_level_probe
-48620,"Wichita, KS",67212,Wichita,KS,44396,full_fresh,,msa_level_probe
-48620,"Wichita, KS",67217,Wichita,KS,31134,full_fresh,,msa_level_probe
-48620,"Wichita, KS",67203,Wichita,KS,30064,full_fresh,,msa_level_probe
-48900,"Wilmington, NC",28403,Wilmington,NC,42319,full_fresh,,msa_level_probe
-48900,"Wilmington, NC",28412,Wilmington,NC,38882,full_fresh,,msa_level_probe
-48900,"Wilmington, NC",28409,Wilmington,NC,36070,full_fresh,,msa_level_probe
-49180,"Winston-Salem, NC",27610,Raleigh,NC,80973,full_fresh,,msa_level_probe
-49180,"Winston-Salem, NC",28269,Charlotte,NC,79059,full_fresh,,msa_level_probe
-49180,"Winston-Salem, NC",27587,Wake forest,NC,73345,full_fresh,,msa_level_probe
-49340,"Worcester, MA",01604,Worcester,MA,37633,full_fresh,,msa_level_probe
-49340,"Worcester, MA",01605,Worcester,MA,27587,full_fresh,,msa_level_probe
-49340,"Worcester, MA",01602,Worcester,MA,24363,full_fresh,,msa_level_probe
-49420,"Yakima, WA",98902,Yakima,WA,46728,none,,msa_level_probe
-49420,"Yakima, WA",99301,Pasco,WA,81583,none,,msa_level_probe
-49420,"Yakima, WA",98052,Redmond,WA,71940,full_fresh,,msa_level_probe
-49620,"York-Hanover, PA",17403,York,PA,39217,full_fresh,,msa_level_probe
-49620,"York-Hanover, PA",17401,York,PA,16973,full_fresh,,msa_level_probe
-49660,"Youngstown-Warren, OH",44511,Youngstown,OH,19605,none,,msa_level_probe
-49660,"Youngstown-Warren, OH",44505,Youngstown,OH,16955,none,,msa_level_probe
-49660,"Youngstown-Warren, OH",44509,Youngstown,OH,12062,none,,msa_level_probe
-43300,"Sherman-Denison, TX",75092,Sherman,TX,26297,ambient_fresh,"AmazonFresh, WholeFoods, SSD_Prime",msa_level_probe
-43300,"Sherman-Denison, TX",75090,Sherman,TX,25732,ambient_fresh,"AmazonFresh, WholeFoods, SSD_Prime",msa_level_probe
-43300,"Sherman-Denison, TX",75020,Denison,TX,23216,none,"AmazonFresh, WholeFoods, SSD_Prime",msa_level_probe
+msa_id,msa_name,zip,city,state,population,coverage_status,offer_types,presumed_facility,source
+19100,"Dallas-Fort Worth-Arlington, TX",75001,Addison,TX,15418,full_fresh,,"VTX2 (SSD Fulfillment Center, 4.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75002,Allen,TX,73916,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75006,Carrollton,TX,52231,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 2.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75007,Carrollton,TX,57513,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 4.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75009,Celina,TX,15348,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75010,Carrollton,TX,30784,full_fresh,,"VTX2 (SSD Fulfillment Center, 6.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75013,Zcta 75013,TX,42956,full_fresh,,"VTX8 (SSD Fulfillment Center, 8.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75019,Coppell,TX,43137,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75020,Denison,TX,23216,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75021,Denison,TX,9454,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75022,Zcta 75022,TX,28773,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 13.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75023,Plano,TX,50923,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 6.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75024,Plano,TX,43041,full_fresh,,"VTX8 (SSD Fulfillment Center, 9.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75025,Plano,TX,54653,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 7.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75028,Flower mound,TX,48641,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75032,Zcta 75032,TX,33956,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75034,Frisco,TX,116155,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 14.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75035,Zcta 75035,TX,80269,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 11.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75038,Irving,TX,29886,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 7.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75039,Irving,TX,20627,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 5.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75040,Garland,TX,61508,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 5.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75041,Garland,TX,31250,full_fresh,,"VTX8 (SSD Fulfillment Center, 7.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75042,Garland,TX,37458,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 5.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75043,Garland,TX,62721,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 9.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75044,Garland,TX,45284,full_fresh,,"VTX8 (SSD Fulfillment Center, 2.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75048,Sachse,TX,26062,full_fresh,,"VTX8 (SSD Fulfillment Center, 4.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75050,Grand prairie,TX,43190,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 7.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75051,Grand prairie,TX,41317,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 7.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75052,Grand prairie,TX,94060,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 10.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75056,The colony,TX,59674,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 10.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75057,Lewisville,TX,16670,full_fresh,,"VTX2 (SSD Fulfillment Center, 9.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75058,Gunter,TX,3329,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75060,Irving,TX,49307,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 5.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75061,Irving,TX,53983,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 6.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75062,Irving,TX,49296,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 7.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75063,Irving,TX,39831,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 3.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75065,Lake dallas,TX,13026,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75067,Highland village,TX,67197,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 7.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75068,Lakewood village,TX,69656,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75069,Mc kinney,TX,37582,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75070,Mc kinney,TX,109085,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 14.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75074,Plano,TX,53459,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 2.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75075,Plano,TX,37310,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 5.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75077,Zcta 75077,TX,38764,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 13.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75078,Prosper,TX,34300,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75080,Richardson,TX,53708,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 5.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75081,Richardson,TX,40825,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 3.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75082,Richardson,TX,23418,full_fresh,,"VTX8 (SSD Fulfillment Center, 1.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75087,Heath,TX,36718,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75088,Rowlett,TX,26823,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75089,Zcta 75089,TX,37310,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75090,Sherman,TX,25732,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75092,Sherman,TX,26297,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75093,Plano,TX,47908,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 7.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75094,Murphy,TX,23408,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75098,Wylie,TX,58717,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75101,Bardwell,TX,643,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75102,Barry,TX,1455,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75104,Cedar hill,TX,48821,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 11.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75105,Chatfield,TX,248,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75110,Corsicana,TX,29665,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75114,Crandall,TX,6870,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75115,De soto,TX,53118,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 10.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75116,Duncanville,TX,19755,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 6.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75119,Ennis,TX,28901,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75124,Eustace,TX,4985,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75125,Ferris,TX,7664,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75126,Forney,TX,52078,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75132,Fate,TX,2326,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75134,Lancaster,TX,20759,full_fresh,,"VTX3 (SSD Fulfillment Center, 11.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75135,Caddo mills,TX,7183,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75137,Duncanville,TX,19341,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 8.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75141,Hutchins,TX,5814,full_fresh,,"VTX3 (SSD Fulfillment Center, 13.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75142,Kaufman,TX,21746,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75143,Seven points,TX,14336,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75144,Kerens,TX,3414,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75146,Lancaster,TX,20663,full_fresh,,"VTX3 (SSD Fulfillment Center, 13.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75147,Gun barrel city,TX,6951,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75148,Malakoff,TX,6396,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75149,Mesquite,TX,57758,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 15.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75150,Mesquite,TX,61863,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 12.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75152,Palmer,TX,5194,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75153,Powell,TX,571,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75154,Ovilla,TX,42192,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75155,Rice,TX,2971,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75158,Scurry,TX,4337,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75159,Seagoville,TX,20857,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75160,Terrell,TX,24494,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75161,Zcta 75161,TX,7483,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75163,Trinidad,TX,2590,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75164,Josephine,TX,788,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75165,Waxahachie,TX,44571,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75166,Lavon,TX,4624,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75167,Zcta 75167,TX,12091,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75169,Wills point,TX,12937,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75172,Wilmer,TX,4814,full_fresh,"AmazonFresh, SSD_Prime","VTX3 (SSD Fulfillment Center, 16.0mi) | UTX4 (Amazon Fresh Dark Store, 18.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75173,Nevada,TX,4953,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75180,Balch springs,TX,23939,full_fresh,,"VTX3 (SSD Fulfillment Center, 15.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75181,Mesquite,TX,25264,full_fresh,,"VTX3 (SSD Fulfillment Center, 18.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75182,Mesquite,TX,6199,full_fresh,,"VTX8 (SSD Fulfillment Center, 14.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75189,Royse city,TX,30842,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75201,Dallas,TX,18032,full_fresh,,"VTX3 (SSD Fulfillment Center, 5.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75202,Dallas,TX,2739,full_fresh,,"VTX3 (SSD Fulfillment Center, 5.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75203,Dallas,TX,18295,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 4.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75204,Dallas,TX,32032,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 7.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75205,Village,TX,24726,full_fresh,,"VTX3 (SSD Fulfillment Center, 7.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75206,Dallas,TX,39653,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 8.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75207,Dallas,TX,7715,full_fresh,,"VTX3 (SSD Fulfillment Center, 4.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75208,Dallas,TX,30064,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 2.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75209,Dallas,TX,14558,full_fresh,,"VTX3 (SSD Fulfillment Center, 7.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75210,Dallas,TX,9504,full_fresh,,"VTX3 (SSD Fulfillment Center, 8.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75211,Cockrell hill,TX,77920,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 1.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75212,Dallas,TX,28017,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 2.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75214,Dallas,TX,34658,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 9.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75215,Dallas,TX,17184,full_fresh,,"VTX3 (SSD Fulfillment Center, 7.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75216,Dallas,TX,54253,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 6.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75217,Dallas,TX,86811,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 12.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75218,Dallas,TX,22712,full_fresh,,"VTX8 (SSD Fulfillment Center, 10.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75219,Dallas,TX,24038,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 6.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75220,Dallas,TX,41110,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 5.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75223,Dallas,TX,15002,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 8.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75224,Dallas,TX,37602,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 4.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75225,Dallas,TX,22108,full_fresh,,"VTX2 (SSD Fulfillment Center, 8.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75226,Dallas,TX,4774,full_fresh,,"VTX3 (SSD Fulfillment Center, 7.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75227,Dallas,TX,60632,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 12.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75228,Dallas,TX,75303,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 11.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75229,Dallas,TX,32739,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 4.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75230,Dallas,TX,27402,full_fresh,,"VTX2 (SSD Fulfillment Center, 7.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75231,Dallas,TX,40987,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 9.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75232,Dallas,TX,32823,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75233,Dallas,TX,16920,full_fresh,,"VTX3 (SSD Fulfillment Center, 3.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75234,Farmers branch,TX,39644,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 1.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75235,Dallas,TX,19198,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 5.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75236,Dallas,TX,16920,full_fresh,,"VTX3 (SSD Fulfillment Center, 4.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75237,Dallas,TX,21607,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 6.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75238,Dallas,TX,33396,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 8.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75240,Dallas,TX,26841,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75241,Dallas,TX,30863,full_fresh,,"VTX3 (SSD Fulfillment Center, 8.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75243,Dallas,TX,68253,full_fresh,SSD_Prime,"VTX8 (SSD Fulfillment Center, 6.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75244,Farmers branch,TX,13552,full_fresh,,"VTX2 (SSD Fulfillment Center, 4.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75246,Dallas,TX,2553,full_fresh,,"VTX3 (SSD Fulfillment Center, 7.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75247,Dallas,TX,772,full_fresh,,"VTX3 (SSD Fulfillment Center, 4.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75248,Dallas,TX,37602,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 6.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75249,Dallas,TX,18374,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 8.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75251,Dallas,TX,3750,full_fresh,,"VTX2 (SSD Fulfillment Center, 8.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75252,Dallas,TX,27880,full_fresh,,"VTX8 (SSD Fulfillment Center, 7.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75253,Dallas,TX,24666,full_fresh,,"VTX3 (SSD Fulfillment Center, 17.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75287,Dallas,TX,55060,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 6.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75401,Greenville,TX,20689,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75402,Greenville,TX,17463,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75407,Princeton,TX,18371,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75409,Anna,TX,16750,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75413,Bailey,TX,287,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75414,Bells,TX,3394,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75418,Bonham,TX,14570,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75423,Celeste,TX,3423,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75424,Blue ridge,TX,2891,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75438,Dodd city,TX,973,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75439,Ector,TX,1186,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75442,Farmersville,TX,9558,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75447,Ivanhoe,TX,1201,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75452,Leonard,TX,4673,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75454,Melissa,TX,11848,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75459,Howe,TX,5260,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75474,Quinlan,TX,15912,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75475,Randolph,TX,111,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75476,Ravenna,TX,1031,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75479,Savoy,TX,1987,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75488,Telephone,TX,747,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75489,Tom bean,TX,1110,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75490,Trenton,TX,2633,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75491,Whitewright,TX,4781,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75492,Windom,TX,369,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75495,Van alstyne,TX,8621,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",75496,Wolfe city,TX,3450,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76001,Zcta 76001,TX,37231,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 17.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76002,Zcta 76002,TX,36302,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 14.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76006,Arlington,TX,24057,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 11.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76008,Aledo,TX,20288,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 41.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76009,Alvarado,TX,19618,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76010,Arlington,TX,59526,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 11.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76011,Arlington,TX,22878,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 12.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76012,Arlington,TX,26730,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 14.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76013,Arlington,TX,34763,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 15.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76014,Arlington,TX,33289,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 12.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76015,Arlington,TX,17773,full_fresh,,"VTX3 (SSD Fulfillment Center, 14.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76016,Arlington,TX,31705,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 18.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76017,Arlington,TX,46312,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 17.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76018,Arlington,TX,28353,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 13.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76020,Azle,TX,30487,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 36.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76021,Bedford,TX,35168,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 14.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76022,Bedford,TX,13945,full_fresh,,"VTX2 (SSD Fulfillment Center, 15.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76023,Boyd,TX,7090,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76028,Burleson,TX,72493,full_fresh,"AmazonFresh, SSD_Prime","VTX3 (SSD Fulfillment Center, 28.9mi) | UTX7 (Amazon Fresh Dark Store, 20.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76031,Cleburne,TX,18432,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76034,Colleyville,TX,26693,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 14.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76035,Cresson,TX,2373,full_fresh,"AmazonFresh, SSD_Prime","VTX3 (SSD Fulfillment Center, 44.9mi) | UTX7 (Amazon Fresh Dark Store, 25.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76036,Crowley,TX,27835,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76039,Euless,TX,37896,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 11.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76040,Euless,TX,33419,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 13.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76041,Forreston,TX,514,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76043,Glen rose,TX,7525,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76044,Godley,TX,5407,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76048,Granbury,TX,24586,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76049,Granbury,TX,30062,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76050,Grandview,TX,6094,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76051,Grapevine,TX,54130,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 10.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76052,Haslet,TX,23080,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 24.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76053,Hurst,TX,30317,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 17.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76054,Hurst,TX,12178,full_fresh,,"VTX2 (SSD Fulfillment Center, 16.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76055,Itasca,TX,3181,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76058,Joshua,TX,21037,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76059,Keene,TX,5716,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76060,Kennedale,TX,8606,full_fresh,,"VTX3 (SSD Fulfillment Center, 20.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76061,Lillian,TX,59,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76063,Mansfield,TX,76609,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 19.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76064,Maypearl,TX,2100,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76065,Midlothian,TX,38800,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76066,Millsap,TX,4106,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76070,Nemo,TX,955,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76071,Newark,TX,4173,full_fresh,,"VTX2 (SSD Fulfillment Center, 34.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76073,Paradise,TX,6237,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76077,Rainbow,TX,333,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76078,Rhome,TX,9024,full_fresh,"AmazonFresh, SSD_Prime","VTX2 (SSD Fulfillment Center, 34.0mi) | UTX7 (Amazon Fresh Dark Store, 17.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76082,Springtown,TX,21151,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76084,Venus,TX,9574,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76086,Weatherford,TX,23161,full_fresh,"AmazonFresh, SSD_Prime","VTX3 (SSD Fulfillment Center, 52.4mi) | UTX7 (Amazon Fresh Dark Store, 25.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76087,Weatherford,TX,29119,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76088,Zcta 76088,TX,12610,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76092,Grapevine,TX,31837,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 14.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76093,Rio vista,TX,2930,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76102,Fort worth,TX,10632,full_fresh,,"VTX3 (SSD Fulfillment Center, 25.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76103,Fort worth,TX,16848,full_fresh,,"VTX3 (SSD Fulfillment Center, 21.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76104,Fort worth,TX,17653,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 25.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76105,Fort worth,TX,22922,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 22.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76106,Fort worth,TX,38906,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 27.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76107,Fort worth,TX,29377,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 28.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76108,White settlement,TX,42902,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 35.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76109,Fort worth,TX,23725,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 28.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76110,Fort worth,TX,33720,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 26.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76111,Fort worth,TX,22567,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 24.0mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76112,Fort worth,TX,42218,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 19.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76114,River oaks,TX,27151,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 29.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76115,Fort worth,TX,21907,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 26.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76116,Fort worth,TX,50371,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 32.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76117,Haltom city,TX,32191,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 22.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76118,North richland h,TX,16594,full_fresh,,"VTX3 (SSD Fulfillment Center, 18.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76119,Fort worth,TX,52279,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 22.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76120,Fort worth,TX,19941,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 16.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76123,Fort worth,TX,37075,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76126,Benbrook,TX,23844,full_fresh,"AmazonFresh, SSD_Prime","VTX3 (SSD Fulfillment Center, 38.9mi) | UTX7 (Amazon Fresh Dark Store, 17.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76127,Carswell afb,TX,2038,full_fresh,,"VTX3 (SSD Fulfillment Center, 25.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76131,Fort worth,TX,47377,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 25.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76132,Fort worth,TX,26265,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 30.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76133,Fort worth,TX,53694,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 29.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76134,Fort worth,TX,28852,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 26.8mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76135,Fort worth,TX,20233,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 32.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76137,Fort worth,TX,59983,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 22.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76140,Everman,TX,30930,full_fresh,SSD_Prime,"VTX3 (SSD Fulfillment Center, 24.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76148,Watauga,TX,23679,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 20.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76155,Fort worth,TX,6329,full_fresh,,"VTX3 (SSD Fulfillment Center, 10.6mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76177,Fort worth,TX,10814,full_fresh,,"VTX2 (SSD Fulfillment Center, 23.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76179,Saginaw,TX,69066,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 30.1mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76180,North richland h,TX,37117,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 19.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76201,Denton,TX,29447,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 23.5mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76205,Denton,TX,21657,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 21.3mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76207,Denton,TX,14794,full_fresh,,"VTX2 (SSD Fulfillment Center, 25.2mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76208,Denton,TX,24992,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76225,Alvord,TX,2688,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76226,Argyle,TX,29240,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 18.4mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76227,Aubrey,TX,36392,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76230,Bowie,TX,9633,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76233,Collinsville,TX,3317,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76234,Decatur,TX,18937,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76238,Era,TX,276,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76239,Forestburg,TX,1310,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76240,Lake kiowa,TX,28546,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76247,Justin,TX,12542,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 24.9mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76248,Keller,TX,39641,full_fresh,SSD_Prime,"VTX2 (SSD Fulfillment Center, 19.7mi)",zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76249,Krum,TX,8196,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76250,Lindsay,TX,894,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76251,Montague,TX,763,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76252,Muenster,TX,2441,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76253,Myra,TX,383,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76255,Nocona,TX,5477,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76258,Pilot point,TX,6926,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76259,Ponder,TX,5738,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76262,Trophy club,TX,41158,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76264,Sadler,TX,1368,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76265,Saint jo,TX,1464,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76266,Sanger,TX,16571,error,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76268,Southmayd,TX,224,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76270,Sunset,TX,1932,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76271,Tioga,TX,1984,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76272,Valley view,TX,4404,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76273,Whitesboro,TX,9429,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76426,Bridgeport,TX,12694,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76431,Chico,TX,3708,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76462,Lipan,TX,4412,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76476,Tolar,TX,3151,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76487,Poolville,TX,2230,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76626,Blooming grove,TX,1294,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76627,Blum,TX,1334,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76628,Brandon,TX,101,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76636,Covington,TX,1509,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76641,Frost,TX,1687,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76645,Hillsboro,TX,10513,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76651,Italy,TX,4084,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76652,Kopperl,TX,1089,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76666,Mertens,TX,254,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76670,Milford,TX,1617,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76671,Morgan,TX,1748,none,,,zip_level_probe
+19100,"Dallas-Fort Worth-Arlington, TX",76690,Walnut springs,TX,1081,none,,,zip_level_probe
+10420,"Akron, OH",44312,Akron,OH,31887,full_fresh,,"VOH1 (SSD Fulfillment Center, 31.2mi)",msa_level_probe
+10420,"Akron, OH",44313,Akron,OH,26729,full_fresh,,"VOH1 (SSD Fulfillment Center, 22.2mi)",msa_level_probe
+10420,"Akron, OH",44310,Akron,OH,26325,full_fresh,,"VOH1 (SSD Fulfillment Center, 25.2mi)",msa_level_probe
+10580,"Albany-Schenectady-Troy, NY",12208,Albany,NY,20517,full_fresh,,"VNJ4 (SSD Fulfillment Center, 123.8mi)",msa_level_probe
+10580,"Albany-Schenectady-Troy, NY",12206,Albany,NY,15537,full_fresh,,"VNJ4 (SSD Fulfillment Center, 124.9mi)",msa_level_probe
+10580,"Albany-Schenectady-Troy, NY",12210,Albany,NY,11057,full_fresh,,"VNJ4 (SSD Fulfillment Center, 124.2mi)",msa_level_probe
+10740,"Albuquerque, NM",87121,Albuquerque,NM,77671,full_fresh,,"V351 (SSD Fulfillment Center, 4.8mi)",msa_level_probe
+10740,"Albuquerque, NM",87120,Albuquerque,NM,64398,full_fresh,,"V351 (SSD Fulfillment Center, 7.1mi)",msa_level_probe
+10740,"Albuquerque, NM",87111,Albuquerque,NM,57389,full_fresh,,"V351 (SSD Fulfillment Center, 16.4mi)",msa_level_probe
+10900,"Allentown-Bethlehem-Easton, PA-NJ",18102,Allentown,PA,50702,full_fresh,,"VNJ3 (SSD Fulfillment Center, 49.8mi)",msa_level_probe
+10900,"Allentown-Bethlehem-Easton, PA-NJ",18103,Allentown,PA,46884,full_fresh,,"VNJ3 (SSD Fulfillment Center, 48.4mi)",msa_level_probe
+10900,"Allentown-Bethlehem-Easton, PA-NJ",18104,Allentown,PA,44217,ambient_fresh,,"VNJ3 (SSD Fulfillment Center, 51.2mi)",msa_level_probe
+11100,"Amarillo, TX",79109,Amarillo,TX,43652,none,,,msa_level_probe
+11100,"Amarillo, TX",79107,Amarillo,TX,34204,none,,,msa_level_probe
+11100,"Amarillo, TX",79106,Amarillo,TX,28289,none,,,msa_level_probe
+11260,"Anchorage, AK",99504,Anchorage,AK,41739,none,,,msa_level_probe
+11260,"Anchorage, AK",99508,Anchorage,AK,38042,none,,,msa_level_probe
+11260,"Anchorage, AK",99507,Anchorage,AK,36403,none,,,msa_level_probe
+11460,"Ann Arbor, MI",48103,Ann arbor,MI,55078,full_fresh,,"VMI1 (SSD Fulfillment Center, 37.9mi)",msa_level_probe
+11460,"Ann Arbor, MI",48104,Ann arbor,MI,44219,full_fresh,,"VMI1 (SSD Fulfillment Center, 35.5mi)",msa_level_probe
+11460,"Ann Arbor, MI",48105,Ann arbor,MI,36918,full_fresh,,"VMI1 (SSD Fulfillment Center, 33.6mi)",msa_level_probe
+11540,"Appleton, WI",54915,Appleton,WI,43401,none,,,msa_level_probe
+11540,"Appleton, WI",54914,Appleton,WI,30555,none,,,msa_level_probe
+11540,"Appleton, WI",54911,Appleton,WI,25911,none,,,msa_level_probe
+11700,"Asheville, NC",28806,Asheville,NC,42901,full_fresh,,"VNC2 (SSD Fulfillment Center, 101.4mi)",msa_level_probe
+11700,"Asheville, NC",28803,Asheville,NC,34126,full_fresh,,"VNC2 (SSD Fulfillment Center, 96.0mi)",msa_level_probe
+11700,"Asheville, NC",28804,Asheville,NC,22959,full_fresh,,"VNC2 (SSD Fulfillment Center, 99.6mi)",msa_level_probe
+12060,"Atlanta-Sandy Springs-Roswell, GA",30349,Atlanta,GA,75647,full_fresh,,"VGA2 (SSD Fulfillment Center, 14.3mi)",msa_level_probe
+12060,"Atlanta-Sandy Springs-Roswell, GA",30331,Atlanta,GA,65996,full_fresh,,"VGA2 (SSD Fulfillment Center, 7.1mi)",msa_level_probe
+12060,"Atlanta-Sandy Springs-Roswell, GA",30318,Atlanta,GA,57136,full_fresh,,"VGA2 (SSD Fulfillment Center, 10.7mi)",msa_level_probe
+12100,"Atlantic City-Hammonton, NJ",08401,Atlantic city,NJ,37793,none,,,msa_level_probe
+12100,"Atlantic City-Hammonton, NJ",08701,Lakewood,NJ,104186,full_fresh,,"VNJ2 (SSD Fulfillment Center, 17.2mi)",msa_level_probe
+12100,"Atlantic City-Hammonton, NJ",07055,Passaic,NJ,69842,full_fresh,,"VNJ4 (SSD Fulfillment Center, 5.0mi)",msa_level_probe
+12260,"Augusta-Richmond County, GA-SC",30904,Augusta,GA,27136,none,,,msa_level_probe
+12260,"Augusta-Richmond County, GA-SC",30901,Augusta,GA,16394,none,,,msa_level_probe
+12420,"Austin-Round Rock-San Marcos, TX",78745,Austin,TX,63287,full_fresh,,"VTX9 (SSD Fulfillment Center, 13.9mi)",msa_level_probe
+12420,"Austin-Round Rock-San Marcos, TX",78753,Austin,TX,60035,full_fresh,,"VTX9 (SSD Fulfillment Center, 5.3mi)",msa_level_probe
+12420,"Austin-Round Rock-San Marcos, TX",78748,Austin,TX,52076,full_fresh,,"VTX9 (SSD Fulfillment Center, 16.6mi)",msa_level_probe
+12540,"Bakersfield-Delano, CA",93307,Bakersfield,CA,86273,full_fresh,,"V061 (SSD Fulfillment Center, 103.3mi)",msa_level_probe
+12540,"Bakersfield-Delano, CA",93306,Bakersfield,CA,74296,full_fresh,,"V061 (SSD Fulfillment Center, 100.8mi)",msa_level_probe
+12540,"Bakersfield-Delano, CA",93309,Bakersfield,CA,58709,full_fresh,,"V061 (SSD Fulfillment Center, 100.9mi)",msa_level_probe
+12580,"Baltimore-Columbia-Towson, MD",21215,Baltimore,MD,55081,full_fresh,,"VMD1 (SSD Fulfillment Center, 12.7mi)",msa_level_probe
+12580,"Baltimore-Columbia-Towson, MD",21206,Baltimore,MD,51670,full_fresh,,"VMD1 (SSD Fulfillment Center, 16.4mi)",msa_level_probe
+12580,"Baltimore-Columbia-Towson, MD",21224,Baltimore,MD,48770,full_fresh,,"VMD1 (SSD Fulfillment Center, 13.6mi)",msa_level_probe
+12940,"Baton Rouge, LA",70816,Baton rouge,LA,41818,full_fresh,,"V281 (SSD Fulfillment Center, 159.7mi)",msa_level_probe
+12940,"Baton Rouge, LA",70810,Baton rouge,LA,40179,full_fresh,,"V281 (SSD Fulfillment Center, 165.0mi)",msa_level_probe
+12940,"Baton Rouge, LA",70808,Baton rouge,LA,36576,full_fresh,,"V281 (SSD Fulfillment Center, 163.4mi)",msa_level_probe
+13140,"Beaumont-Port Arthur, TX",77705,Beaumont,TX,40224,none,,,msa_level_probe
+13140,"Beaumont-Port Arthur, TX",77706,Beaumont,TX,29707,none,,,msa_level_probe
+13140,"Beaumont-Port Arthur, TX",77707,Beaumont,TX,18867,none,,,msa_level_probe
+13460,"Bend, OR",97701,Bend,OR,74255,none,,,msa_level_probe
+13460,"Bend, OR",97702,Bend,OR,50395,none,,,msa_level_probe
+13820,"Birmingham, AL",35211,Birmingham,AL,24876,full_fresh,,"VGA2 (SSD Fulfillment Center, 129.7mi)",msa_level_probe
+13820,"Birmingham, AL",35205,Birmingham,AL,20145,full_fresh,,"VGA2 (SSD Fulfillment Center, 126.6mi)",msa_level_probe
+13820,"Birmingham, AL",35206,Birmingham,AL,17211,full_fresh,,"VGA2 (SSD Fulfillment Center, 121.0mi)",msa_level_probe
+14260,"Boise City, ID",83709,Boise,ID,60449,full_fresh,,"VUT1 (SSD Fulfillment Center, 290.7mi)",msa_level_probe
+14260,"Boise City, ID",83301,Twin falls,ID,58230,none,,,msa_level_probe
+14260,"Boise City, ID",83686,Nampa,ID,52879,full_fresh,,"VUT1 (SSD Fulfillment Center, 300.0mi)",msa_level_probe
+14460,"Boston-Cambridge-Newton, MA-NH",02115,Boston,MA,29134,full_fresh,,"VMA2 (SSD Fulfillment Center, 24.8mi)",msa_level_probe
+14460,"Boston-Cambridge-Newton, MA-NH",02215,Boston,MA,26243,full_fresh,,"VMA2 (SSD Fulfillment Center, 25.1mi)",msa_level_probe
+14460,"Boston-Cambridge-Newton, MA-NH",02116,Boston,MA,23007,full_fresh,,"VMA2 (SSD Fulfillment Center, 25.1mi)",msa_level_probe
+14500,"Boulder, CO",80302,Boulder,CO,29422,full_fresh,,"VCO1 (SSD Fulfillment Center, 22.0mi)",msa_level_probe
+14500,"Boulder, CO",80304,Boulder,CO,26501,full_fresh,,"VCO1 (SSD Fulfillment Center, 22.6mi)",msa_level_probe
+14500,"Boulder, CO",80301,Boulder,CO,26010,full_fresh,,"VCO1 (SSD Fulfillment Center, 21.0mi)",msa_level_probe
+14740,"Bremerton-Silverdale-Port Orchard, WA",98312,Bremerton,WA,30437,ambient_fresh,,"VWA2 (SSD Fulfillment Center, 23.1mi)",msa_level_probe
+14740,"Bremerton-Silverdale-Port Orchard, WA",98311,Bremerton,WA,28042,none,,,msa_level_probe
+14740,"Bremerton-Silverdale-Port Orchard, WA",98310,Bremerton,WA,20431,none,,,msa_level_probe
+14860,"Bridgeport-Stamford-Danbury, CT",06606,Bridgeport,CT,47040,full_fresh,,"VNY5 (SSD Fulfillment Center, 32.3mi)",msa_level_probe
+14860,"Bridgeport-Stamford-Danbury, CT",06604,Bridgeport,CT,26858,full_fresh,,"VNY5 (SSD Fulfillment Center, 30.5mi)",msa_level_probe
+14860,"Bridgeport-Stamford-Danbury, CT",06605,Bridgeport,CT,24541,full_fresh,,"VNY5 (SSD Fulfillment Center, 29.4mi)",msa_level_probe
+15180,"Brownsville-Harlingen, TX",78521,Brownsville,TX,89629,none,,,msa_level_probe
+15180,"Brownsville-Harlingen, TX",78520,Brownsville,TX,59388,none,,,msa_level_probe
+15180,"Brownsville-Harlingen, TX",78526,Brownsville,TX,50057,none,,,msa_level_probe
+15380,"Buffalo-Cheektowaga, NY",14215,Buffalo,NY,41340,full_fresh,,"VOH1 (SSD Fulfillment Center, 187.7mi)",msa_level_probe
+15380,"Buffalo-Cheektowaga, NY",14207,Buffalo,NY,23773,full_fresh,,"VOH1 (SSD Fulfillment Center, 184.7mi)",msa_level_probe
+15380,"Buffalo-Cheektowaga, NY",14220,Buffalo,NY,22641,full_fresh,,"VOH1 (SSD Fulfillment Center, 184.1mi)",msa_level_probe
+15940,"Canton-Massillon, OH",44708,Canton,OH,24498,full_fresh,,"VOH1 (SSD Fulfillment Center, 44.4mi)",msa_level_probe
+15940,"Canton-Massillon, OH",44705,Canton,OH,19353,full_fresh,,"VOH1 (SSD Fulfillment Center, 45.8mi)",msa_level_probe
+15940,"Canton-Massillon, OH",44706,Canton,OH,16720,full_fresh,,"VOH1 (SSD Fulfillment Center, 47.4mi)",msa_level_probe
+15980,"Cape Coral-Fort Myers, FL",33311,Fort lauderdale,FL,75705,full_fresh,,"VFL3 (SSD Fulfillment Center, 8.6mi)",msa_level_probe
+15980,"Cape Coral-Fort Myers, FL",33024,Pembroke pines,FL,75701,full_fresh,,"VFL3 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+15980,"Cape Coral-Fort Myers, FL",33023,Miramar,FL,74913,full_fresh,,"VFL2 (SSD Fulfillment Center, 12.3mi)",msa_level_probe
+16300,"Cedar Rapids, IA",52402,Cedar rapids,IA,41471,none,,,msa_level_probe
+16300,"Cedar Rapids, IA",52404,Cedar rapids,IA,39628,none,,,msa_level_probe
+16300,"Cedar Rapids, IA",52405,Cedar rapids,IA,25942,none,,,msa_level_probe
+16700,"Charleston-North Charleston, SC",29412,Charleston,SC,41049,full_fresh,,"VNC2 (SSD Fulfillment Center, 190.1mi)",msa_level_probe
+16700,"Charleston-North Charleston, SC",29414,Charleston,SC,39319,full_fresh,,"VNC2 (SSD Fulfillment Center, 181.7mi)",msa_level_probe
+16700,"Charleston-North Charleston, SC",29407,Charleston,SC,35385,full_fresh,,"VNC2 (SSD Fulfillment Center, 183.9mi)",msa_level_probe
+16740,"Charlotte-Concord-Gastonia, NC-SC",28269,Charlotte,NC,79059,full_fresh,,"VNC2 (SSD Fulfillment Center, 5.9mi)",msa_level_probe
+16740,"Charlotte-Concord-Gastonia, NC-SC",28277,Charlotte,NC,70193,full_fresh,,"VNC2 (SSD Fulfillment Center, 22.0mi)",msa_level_probe
+16740,"Charlotte-Concord-Gastonia, NC-SC",28215,Charlotte,NC,64293,full_fresh,,"VNC2 (SSD Fulfillment Center, 10.2mi)",msa_level_probe
+16860,"Chattanooga, TN-GA",37421,Chattanooga,TN,53050,full_fresh,,"VGA1 (SSD Fulfillment Center, 91.1mi)",msa_level_probe
+16860,"Chattanooga, TN-GA",37405,Chattanooga,TN,18231,full_fresh,,"VGA2 (SSD Fulfillment Center, 98.2mi)",msa_level_probe
+16860,"Chattanooga, TN-GA",37411,Chattanooga,TN,16801,full_fresh,,"VGA2 (SSD Fulfillment Center, 93.4mi)",msa_level_probe
+16980,"Chicago-Naperville-Elgin, IL-IN",60629,Chicago,IL,107930,full_fresh,,"VIL4 (SSD Fulfillment Center, 8.8mi)",msa_level_probe
+16980,"Chicago-Naperville-Elgin, IL-IN",60618,Chicago,IL,94646,full_fresh,,"VIL4 (SSD Fulfillment Center, 3.4mi)",msa_level_probe
+16980,"Chicago-Naperville-Elgin, IL-IN",60639,Chicago,IL,88515,full_fresh,,"VIL4 (SSD Fulfillment Center, 1.4mi)",msa_level_probe
+17140,"Cincinnati, OH-KY-IN",45231,Cincinnati,OH,41599,full_fresh,,"VOH2 (SSD Fulfillment Center, 5.9mi)",msa_level_probe
+17140,"Cincinnati, OH-KY-IN",45211,Cincinnati,OH,37038,full_fresh,,"VOH2 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+17140,"Cincinnati, OH-KY-IN",45237,Cincinnati,OH,22104,full_fresh,,"VOH2 (SSD Fulfillment Center, 7.8mi)",msa_level_probe
+17300,"Clarksville, TN-KY",37042,Clarksville,TN,80661,none,,,msa_level_probe
+17300,"Clarksville, TN-KY",37040,Clarksville,TN,52736,none,,,msa_level_probe
+17300,"Clarksville, TN-KY",37043,Clarksville,TN,49669,full_fresh,,"VTN1 (SSD Fulfillment Center, 43.2mi)",msa_level_probe
+17410,"Cleveland, OH",44102,Cleveland,OH,44320,full_fresh,,"VOH1 (SSD Fulfillment Center, 7.6mi)",msa_level_probe
+17410,"Cleveland, OH",44111,Cleveland,OH,42591,full_fresh,,"VOH1 (SSD Fulfillment Center, 5.5mi)",msa_level_probe
+17410,"Cleveland, OH",44109,Cleveland,OH,39451,full_fresh,,"VOH1 (SSD Fulfillment Center, 7.5mi)",msa_level_probe
+17780,"College Station-Bryan, TX",77845,College station,TX,68757,none,,,msa_level_probe
+17780,"College Station-Bryan, TX",77840,College station,TX,59700,none,,,msa_level_probe
+17820,"Colorado Springs, CO",80918,Colorado springs,CO,48905,full_fresh,,"V081 (SSD Fulfillment Center, 10.1mi)",msa_level_probe
+17820,"Colorado Springs, CO",80916,Colorado springs,CO,41173,full_fresh,,"V081 (SSD Fulfillment Center, 2.7mi)",msa_level_probe
+17820,"Colorado Springs, CO",80909,Colorado springs,CO,38826,full_fresh,,"V081 (SSD Fulfillment Center, 6.3mi)",msa_level_probe
+17900,"Columbia, SC",29223,Columbia,SC,52895,full_fresh,,"VNC2 (SSD Fulfillment Center, 89.2mi)",msa_level_probe
+17900,"Columbia, SC",29229,Columbia,SC,50137,full_fresh,,"VNC2 (SSD Fulfillment Center, 85.4mi)",msa_level_probe
+17900,"Columbia, SC",29203,Columbia,SC,40638,full_fresh,,"VNC2 (SSD Fulfillment Center, 91.2mi)",msa_level_probe
+17980,"Columbus, GA-AL",31907,Columbus,GA,58615,none,,,msa_level_probe
+17980,"Columbus, GA-AL",31909,Columbus,GA,38486,none,,,msa_level_probe
+17980,"Columbus, GA-AL",31904,Columbus,GA,32087,none,,,msa_level_probe
+18140,"Columbus, OH",43229,Columbus,OH,56760,full_fresh,,"VOH3 (SSD Fulfillment Center, 17.2mi)",msa_level_probe
+18140,"Columbus, OH",43207,Columbus,OH,47118,full_fresh,,"VOH3 (SSD Fulfillment Center, 4.8mi)",msa_level_probe
+18140,"Columbus, OH",43232,Columbus,OH,46914,full_fresh,,"VOH3 (SSD Fulfillment Center, 8.0mi)",msa_level_probe
+18580,"Corpus Christi, TX",78414,Corpus christi,TX,44014,none,,,msa_level_probe
+18580,"Corpus Christi, TX",78412,Corpus christi,TX,42385,none,,,msa_level_probe
+18580,"Corpus Christi, TX",78415,Corpus christi,TX,41976,none,,,msa_level_probe
+18880,"Crestview-Fort Walton Beach-Destin, FL",32536,Crestview,FL,24601,none,,,msa_level_probe
+18880,"Crestview-Fort Walton Beach-Destin, FL",33311,Fort lauderdale,FL,75705,full_fresh,,"VFL3 (SSD Fulfillment Center, 8.6mi)",msa_level_probe
+18880,"Crestview-Fort Walton Beach-Destin, FL",33024,Pembroke pines,FL,75701,full_fresh,,"VFL3 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+19300,"Daphne-Fairhope-Foley, AL",36526,Daphne,AL,34788,none,,,msa_level_probe
+19300,"Daphne-Fairhope-Foley, AL",35242,Shoal creek,AL,56713,full_fresh,,"VGA2 (SSD Fulfillment Center, 122.4mi)",msa_level_probe
+19300,"Daphne-Fairhope-Foley, AL",36117,Montgomery,AL,53594,none,,,msa_level_probe
+19340,"Davenport-Moline-Rock Island, IA-IL",52804,Davenport,IA,28169,none,,,msa_level_probe
+19340,"Davenport-Moline-Rock Island, IA-IL",52806,Davenport,IA,27869,none,,,msa_level_probe
+19340,"Davenport-Moline-Rock Island, IA-IL",52803,Davenport,IA,21291,none,,,msa_level_probe
+19430,"Dayton-Kettering-Beavercreek, OH",45417,Dayton,OH,29072,full_fresh,,"VOH2 (SSD Fulfillment Center, 33.3mi)",msa_level_probe
+19430,"Dayton-Kettering-Beavercreek, OH",45440,Dayton,OH,21667,full_fresh,,"VOH2 (SSD Fulfillment Center, 31.9mi)",msa_level_probe
+19430,"Dayton-Kettering-Beavercreek, OH",45406,Dayton,OH,20393,full_fresh,,"VOH2 (SSD Fulfillment Center, 35.4mi)",msa_level_probe
+19660,"Deltona-Daytona Beach-Ormond Beach, FL",32725,Deltona,FL,49802,full_fresh,,"VFL1 (SSD Fulfillment Center, 32.5mi)",msa_level_probe
+19660,"Deltona-Daytona Beach-Ormond Beach, FL",32738,Deltona,FL,46727,full_fresh,,"VFL1 (SSD Fulfillment Center, 34.5mi)",msa_level_probe
+19740,"Denver-Aurora-Centennial, CO",80219,Denver,CO,71795,full_fresh,,"VCO1 (SSD Fulfillment Center, 8.4mi)",msa_level_probe
+19740,"Denver-Aurora-Centennial, CO",80239,Denver,CO,48835,full_fresh,,"VCO1 (SSD Fulfillment Center, 7.8mi)",msa_level_probe
+19740,"Denver-Aurora-Centennial, CO",80210,Denver,CO,37786,full_fresh,,"VCO1 (SSD Fulfillment Center, 8.9mi)",msa_level_probe
+19780,"Des Moines-West Des Moines, IA",50315,Des moines,IA,36097,full_fresh,,"V311 (SSD Fulfillment Center, 133.3mi)",msa_level_probe
+19780,"Des Moines-West Des Moines, IA",50310,Des moines,IA,31965,full_fresh,,"V311 (SSD Fulfillment Center, 131.8mi)",msa_level_probe
+19780,"Des Moines-West Des Moines, IA",50320,Des moines,IA,23724,full_fresh,,"V311 (SSD Fulfillment Center, 135.2mi)",msa_level_probe
+19820,"Detroit-Warren-Dearborn, MI",48228,Detroit,MI,57698,full_fresh,,"VMI1 (SSD Fulfillment Center, 10.5mi)",msa_level_probe
+19820,"Detroit-Warren-Dearborn, MI",48235,Detroit,MI,46426,full_fresh,,"VMI1 (SSD Fulfillment Center, 6.3mi)",msa_level_probe
+19820,"Detroit-Warren-Dearborn, MI",48219,Detroit,MI,45503,full_fresh,,"VMI1 (SSD Fulfillment Center, 8.8mi)",msa_level_probe
+20260,"Duluth, MN-WI",55803,Duluth,MN,17804,none,,,msa_level_probe
+20260,"Duluth, MN-WI",55804,Duluth,MN,15416,none,,,msa_level_probe
+20260,"Duluth, MN-WI",55812,Duluth,MN,10984,none,,,msa_level_probe
+20500,"Durham-Chapel Hill, NC",27703,Durham,NC,56071,full_fresh,,"VNC3 (SSD Fulfillment Center, 4.9mi)",msa_level_probe
+20500,"Durham-Chapel Hill, NC",27707,Durham,NC,52008,full_fresh,,"VNC3 (SSD Fulfillment Center, 6.3mi)",msa_level_probe
+20500,"Durham-Chapel Hill, NC",27705,Durham,NC,50530,full_fresh,,"VNC3 (SSD Fulfillment Center, 9.8mi)",msa_level_probe
+21340,"El Paso, TX",79936,El paso,TX,108668,full_fresh,,"VLP1 (SSD Fulfillment Center, 6.1mi)",msa_level_probe
+21340,"El Paso, TX",79938,El paso,TX,83326,full_fresh,,"VLP1 (SSD Fulfillment Center, 18.9mi)",msa_level_probe
+21340,"El Paso, TX",79912,El paso,TX,79861,full_fresh,,"VLP1 (SSD Fulfillment Center, 19.4mi)",msa_level_probe
+21500,"Erie, PA",16509,Erie,PA,26838,none,,,msa_level_probe
+21500,"Erie, PA",16506,Erie,PA,24163,none,,,msa_level_probe
+21500,"Erie, PA",16504,Erie,PA,16571,none,,,msa_level_probe
+21660,"Eugene-Springfield, OR",97402,Eugene,OR,52481,full_fresh,,"VOR3 (SSD Fulfillment Center, 108.2mi)",msa_level_probe
+21660,"Eugene-Springfield, OR",97405,Eugene,OR,45184,full_fresh,,"VOR3 (SSD Fulfillment Center, 110.5mi)",msa_level_probe
+21660,"Eugene-Springfield, OR",97404,Eugene,OR,34126,full_fresh,,"VOR3 (SSD Fulfillment Center, 105.3mi)",msa_level_probe
+21780,"Evansville, IN",47714,Evansville,IN,34514,none,,,msa_level_probe
+21780,"Evansville, IN",47711,Evansville,IN,32961,none,,,msa_level_probe
+21780,"Evansville, IN",47712,Evansville,IN,26921,none,,,msa_level_probe
+22020,"Fargo, ND-MN",58103,Fargo,ND,49209,none,,,msa_level_probe
+22020,"Fargo, ND-MN",58104,Briarwood,ND,43925,none,,,msa_level_probe
+22020,"Fargo, ND-MN",58201,Grand forks,ND,41096,none,,,msa_level_probe
+22180,"Fayetteville, NC",28314,Fayetteville,NC,59189,none,,,msa_level_probe
+22180,"Fayetteville, NC",28306,Fayetteville,NC,43300,none,,,msa_level_probe
+22180,"Fayetteville, NC",28304,Fayetteville,NC,35605,none,,,msa_level_probe
+22220,"Fayetteville-Springdale-Rogers, AR",72701,Fayetteville,AR,45396,none,,,msa_level_probe
+22220,"Fayetteville-Springdale-Rogers, AR",72703,Fayetteville,AR,33223,none,,,msa_level_probe
+22420,"Flint, MI",48507,Flint,MI,30884,full_fresh,,"VMI1 (SSD Fulfillment Center, 48.0mi)",msa_level_probe
+22420,"Flint, MI",48503,Flint,MI,26542,ambient_fresh,,"VMI1 (SSD Fulfillment Center, 48.1mi)",msa_level_probe
+22420,"Flint, MI",48505,Flint,MI,19722,ambient_fresh,,"VMI1 (SSD Fulfillment Center, 51.2mi)",msa_level_probe
+22660,"Fort Collins-Loveland, CO",80525,Fort collins,CO,56233,full_fresh,,"VCO1 (SSD Fulfillment Center, 50.7mi)",msa_level_probe
+22660,"Fort Collins-Loveland, CO",80526,Fort collins,CO,45220,full_fresh,,"VCO1 (SSD Fulfillment Center, 51.6mi)",msa_level_probe
+22660,"Fort Collins-Loveland, CO",80521,Fort collins,CO,37796,full_fresh,,"VCO1 (SSD Fulfillment Center, 53.9mi)",msa_level_probe
+23060,"Fort Wayne, IN",46835,Fort wayne,IN,35612,none,,,msa_level_probe
+23060,"Fort Wayne, IN",46815,Fort wayne,IN,29183,none,,,msa_level_probe
+23060,"Fort Wayne, IN",46825,Fort wayne,IN,28848,none,,,msa_level_probe
+23420,"Fresno, CA",93722,Fresno,CA,85811,full_fresh,,"V061 (SSD Fulfillment Center, 9.9mi)",msa_level_probe
+23420,"Fresno, CA",93727,Fresno,CA,84656,full_fresh,,"V061 (SSD Fulfillment Center, 5.8mi)",msa_level_probe
+23420,"Fresno, CA",93720,Fresno,CA,46725,full_fresh,,"V061 (SSD Fulfillment Center, 12.1mi)",msa_level_probe
+23540,"Gainesville, FL",32608,Gainesville,FL,50431,full_fresh,,"VFL1 (SSD Fulfillment Center, 98.1mi)",msa_level_probe
+23540,"Gainesville, FL",32607,Gainesville,FL,30139,full_fresh,,"VFL1 (SSD Fulfillment Center, 100.4mi)",msa_level_probe
+23540,"Gainesville, FL",32605,Gainesville,FL,26305,full_fresh,,"VFL1 (SSD Fulfillment Center, 101.1mi)",msa_level_probe
+24340,"Grand Rapids-Wyoming-Kentwood, MI",49507,Grand rapids,MI,39731,full_fresh,,"VIL2 (SSD Fulfillment Center, 124.7mi)",msa_level_probe
+24340,"Grand Rapids-Wyoming-Kentwood, MI",49503,Grand rapids,MI,37036,full_fresh,,"VIL2 (SSD Fulfillment Center, 125.9mi)",msa_level_probe
+24340,"Grand Rapids-Wyoming-Kentwood, MI",49506,Grand rapids,MI,34058,full_fresh,,"VIL2 (SSD Fulfillment Center, 126.5mi)",msa_level_probe
+24540,"Greeley, CO",80634,Greeley,CO,61810,full_fresh,,"VCO1 (SSD Fulfillment Center, 43.3mi)",msa_level_probe
+24540,"Greeley, CO",80013,Aurora,CO,74293,full_fresh,,"VCO1 (SSD Fulfillment Center, 14.4mi)",msa_level_probe
+24540,"Greeley, CO",80219,Denver,CO,71795,full_fresh,,"VCO1 (SSD Fulfillment Center, 8.4mi)",msa_level_probe
+24580,"Green Bay, WI",54313,Green bay,WI,40083,none,,,msa_level_probe
+24580,"Green Bay, WI",54311,Green bay,WI,35754,none,,,msa_level_probe
+24580,"Green Bay, WI",54302,Green bay,WI,31670,none,,,msa_level_probe
+24660,"Greensboro-High Point, NC",27406,Greensboro,NC,62757,full_fresh,,"VNC3 (SSD Fulfillment Center, 53.1mi)",msa_level_probe
+24660,"Greensboro-High Point, NC",27410,Greensboro,NC,57466,full_fresh,,"VNC3 (SSD Fulfillment Center, 59.5mi)",msa_level_probe
+24660,"Greensboro-High Point, NC",27407,Greensboro,NC,53237,full_fresh,,"VNC3 (SSD Fulfillment Center, 57.7mi)",msa_level_probe
+24860,"Greenville-Anderson-Greer, SC",29607,Greenville,SC,40933,full_fresh,,"VNC2 (SSD Fulfillment Center, 94.2mi)",msa_level_probe
+24860,"Greenville-Anderson-Greer, SC",29605,Greenville,SC,38808,full_fresh,,"VNC2 (SSD Fulfillment Center, 97.2mi)",msa_level_probe
+24860,"Greenville-Anderson-Greer, SC",29615,Greenville,SC,37349,full_fresh,,"VNC2 (SSD Fulfillment Center, 91.5mi)",msa_level_probe
+25060,"Gulfport-Biloxi, MS",39503,Gulfport,MS,56418,none,,,msa_level_probe
+25060,"Gulfport-Biloxi, MS",39501,Gulfport,MS,23807,none,,,msa_level_probe
+25060,"Gulfport-Biloxi, MS",39507,Gulfport,MS,17004,none,,,msa_level_probe
+25180,"Hagerstown-Martinsburg, MD-WV",21740,Hagerstown,MD,60922,full_fresh,,"VMD1 (SSD Fulfillment Center, 61.0mi)",msa_level_probe
+25180,"Hagerstown-Martinsburg, MD-WV",21742,Hagerstown,MD,33425,full_fresh,,"VMD1 (SSD Fulfillment Center, 60.0mi)",msa_level_probe
+25420,"Harrisburg-Carlisle, PA",17112,Harrisburg,PA,36080,full_fresh,,"VHL1 (SSD Fulfillment Center, 78.7mi)",msa_level_probe
+25420,"Harrisburg-Carlisle, PA",17110,Harrisburg,PA,25122,full_fresh,,"VMD1 (SSD Fulfillment Center, 78.5mi)",msa_level_probe
+25420,"Harrisburg-Carlisle, PA",17104,Harrisburg,PA,19765,full_fresh,,"VMD1 (SSD Fulfillment Center, 75.4mi)",msa_level_probe
+25540,"Hartford-West Hartford-East Hartford, CT",06106,Hartford,CT,38012,full_fresh,,"VNY5 (SSD Fulfillment Center, 77.4mi)",msa_level_probe
+25540,"Hartford-West Hartford-East Hartford, CT",06114,Hartford,CT,27823,full_fresh,,"VNY5 (SSD Fulfillment Center, 77.2mi)",msa_level_probe
+25540,"Hartford-West Hartford-East Hartford, CT",06112,Hartford,CT,19991,full_fresh,,"VNY5 (SSD Fulfillment Center, 79.8mi)",msa_level_probe
+25860,"Hickory-Lenoir-Morganton, NC",28601,Hickory,NC,50265,none,,,msa_level_probe
+25860,"Hickory-Lenoir-Morganton, NC",28602,Hickory,NC,29467,none,,,msa_level_probe
+26420,"Houston-Pasadena-The Woodlands, TX",77084,Houston,TX,108161,full_fresh,,"VTX5 (SSD Fulfillment Center, 7.8mi)",msa_level_probe
+26420,"Houston-Pasadena-The Woodlands, TX",77083,Houston,TX,78240,full_fresh,,"VTX5 (SSD Fulfillment Center, 12.6mi)",msa_level_probe
+26420,"Houston-Pasadena-The Woodlands, TX",77095,Houston,TX,73956,full_fresh,,"VTX5 (SSD Fulfillment Center, 7.7mi)",msa_level_probe
+26580,"Huntington-Ashland, WV-KY-OH",25705,Huntington,WV,20690,none,,,msa_level_probe
+26580,"Huntington-Ashland, WV-KY-OH",25701,Huntington,WV,19869,none,,,msa_level_probe
+26580,"Huntington-Ashland, WV-KY-OH",25704,Huntington,WV,16540,none,,,msa_level_probe
+26620,"Huntsville, AL",35810,Huntsville,AL,30243,full_fresh,,"VTN1 (SSD Fulfillment Center, 91.9mi)",msa_level_probe
+26620,"Huntsville, AL",35803,Huntsville,AL,26504,full_fresh,,"VTN1 (SSD Fulfillment Center, 103.0mi)",msa_level_probe
+26620,"Huntsville, AL",35811,Huntsville,AL,26198,full_fresh,,"VTN1 (SSD Fulfillment Center, 92.1mi)",msa_level_probe
+26900,"Indianapolis-Carmel-Greenwood, IN",46222,Indianapolis,IN,38629,full_fresh,,"VIN9 (SSD Fulfillment Center, 14.1mi)",msa_level_probe
+26900,"Indianapolis-Carmel-Greenwood, IN",46203,Indianapolis,IN,38184,full_fresh,,"VIN9 (SSD Fulfillment Center, 9.0mi)",msa_level_probe
+26900,"Indianapolis-Carmel-Greenwood, IN",46220,Indianapolis,IN,37367,full_fresh,,"VIN9 (SSD Fulfillment Center, 17.3mi)",msa_level_probe
+27140,"Jackson, MS",39212,Jackson,MS,32680,full_fresh,,"V281 (SSD Fulfillment Center, 26.1mi)",msa_level_probe
+27140,"Jackson, MS",39209,Jackson,MS,26835,full_fresh,,"V281 (SSD Fulfillment Center, 21.0mi)",msa_level_probe
+27140,"Jackson, MS",39211,Jackson,MS,23872,full_fresh,,"V281 (SSD Fulfillment Center, 15.5mi)",msa_level_probe
+27260,"Jacksonville, FL",32218,Jacksonville,FL,65878,full_fresh,,"VFL1 (SSD Fulfillment Center, 138.2mi)",msa_level_probe
+27260,"Jacksonville, FL",32210,Jacksonville,FL,62457,full_fresh,,"VFL1 (SSD Fulfillment Center, 126.3mi)",msa_level_probe
+27260,"Jacksonville, FL",32244,Jacksonville,FL,61190,full_fresh,,"VFL1 (SSD Fulfillment Center, 123.3mi)",msa_level_probe
+28020,"Kalamazoo-Portage, MI",49009,Kalamazoo,MI,46734,none,,,msa_level_probe
+28020,"Kalamazoo-Portage, MI",49006,Kalamazoo,MI,27793,none,,,msa_level_probe
+28020,"Kalamazoo-Portage, MI",49001,Kalamazoo,MI,21808,none,,,msa_level_probe
+28140,"Kansas City, MO-KS",64119,Kansas city,MO,29450,full_fresh,,"VMO1 (SSD Fulfillment Center, 23.9mi)",msa_level_probe
+28140,"Kansas City, MO-KS",64114,Kansas city,MO,25314,full_fresh,,"VMO1 (SSD Fulfillment Center, 8.0mi)",msa_level_probe
+28140,"Kansas City, MO-KS",64155,Kansas city,MO,24099,full_fresh,,"VMO1 (SSD Fulfillment Center, 29.3mi)",msa_level_probe
+28420,"Kennewick-Richland, WA",99336,Kennewick,WA,52259,none,,,msa_level_probe
+28420,"Kennewick-Richland, WA",99337,Kennewick,WA,32080,none,,,msa_level_probe
+28660,"Killeen-Temple, TX",76541,Killeen,TX,18396,none,,,msa_level_probe
+28660,"Killeen-Temple, TX",77494,Park row,TX,126310,ambient_fresh,,"VTX5 (SSD Fulfillment Center, 19.3mi)",msa_level_probe
+28660,"Killeen-Temple, TX",77449,Park row,TX,123157,full_fresh,,"VTX5 (SSD Fulfillment Center, 12.2mi)",msa_level_probe
+28700,"Kingsport-Bristol, TN-VA",37664,Kingsport,TN,28040,none,,,msa_level_probe
+28700,"Kingsport-Bristol, TN-VA",37013,Antioch,TN,99109,full_fresh,,"VTN1 (SSD Fulfillment Center, 3.6mi)",msa_level_probe
+28700,"Kingsport-Bristol, TN-VA",37042,Clarksville,TN,80661,none,,,msa_level_probe
+28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",11368,Corona,NY,108661,full_fresh,,"VNJ4 (SSD Fulfillment Center, 21.1mi)",msa_level_probe
+28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",11385,Ridgewood,NY,105025,full_fresh,,"VNJ4 (SSD Fulfillment Center, 21.1mi)",msa_level_probe
+28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",11211,Brooklyn,NY,104561,full_fresh,,"VNJ4 (SSD Fulfillment Center, 18.5mi)",msa_level_probe
+28940,"Knoxville, TN",37918,Knoxville,TN,45107,full_fresh,,"VGA1 (SSD Fulfillment Center, 144.9mi)",msa_level_probe
+28940,"Knoxville, TN",37923,Knoxville,TN,31548,full_fresh,,"VGA1 (SSD Fulfillment Center, 136.2mi)",msa_level_probe
+28940,"Knoxville, TN",37919,Knoxville,TN,29637,full_fresh,,"VGA1 (SSD Fulfillment Center, 135.8mi)",msa_level_probe
+29180,"Lafayette, LA",70506,Lafayette,LA,41212,none,,,msa_level_probe
+29180,"Lafayette, LA",70508,Lafayette,LA,38704,none,,,msa_level_probe
+29180,"Lafayette, LA",70503,Lafayette,LA,31542,none,,,msa_level_probe
+29460,"Lakeland-Winter Haven, FL",33801,Lakeland,FL,34406,none,,,msa_level_probe
+29460,"Lakeland-Winter Haven, FL",33809,Lakeland,FL,30646,none,,,msa_level_probe
+29460,"Lakeland-Winter Haven, FL",33803,Lakeland,FL,29875,none,,,msa_level_probe
+29540,"Lancaster, PA",17602,Lancaster,PA,50660,full_fresh,,"VHL1 (SSD Fulfillment Center, 44.8mi)",msa_level_probe
+29540,"Lancaster, PA",19120,Philadelphia,PA,74270,full_fresh,,"VNJ3 (SSD Fulfillment Center, 16.3mi)",msa_level_probe
+29540,"Lancaster, PA",19124,Philadelphia,PA,71858,full_fresh,,"VNJ3 (SSD Fulfillment Center, 15.0mi)",msa_level_probe
+29620,"Lansing-East Lansing, MI",48911,Lansing,MI,40924,full_fresh,,"VMI1 (SSD Fulfillment Center, 77.0mi)",msa_level_probe
+29620,"Lansing-East Lansing, MI",48910,Lansing,MI,34989,full_fresh,,"VMI1 (SSD Fulfillment Center, 75.8mi)",msa_level_probe
+29620,"Lansing-East Lansing, MI",48917,Lansing,MI,32191,full_fresh,,"VMI1 (SSD Fulfillment Center, 80.1mi)",msa_level_probe
+29700,"Laredo, TX",78041,Laredo,TX,47207,none,,,msa_level_probe
+29700,"Laredo, TX",78040,Laredo,TX,39997,none,,,msa_level_probe
+29820,"Las Vegas-Henderson-North Las Vegas, NV",89108,Las vegas,NV,75201,full_fresh,,"VNV2 (SSD Fulfillment Center, 11.2mi)",msa_level_probe
+29820,"Las Vegas-Henderson-North Las Vegas, NV",89110,Las vegas,NV,70865,full_fresh,,"VNV2 (SSD Fulfillment Center, 11.2mi)",msa_level_probe
+29820,"Las Vegas-Henderson-North Las Vegas, NV",89115,Las vegas,NV,66378,full_fresh,,"VNV2 (SSD Fulfillment Center, 13.6mi)",msa_level_probe
+30460,"Lexington-Fayette, KY",40509,Lexington,KY,42432,full_fresh,,"VOH2 (SSD Fulfillment Center, 89.2mi)",msa_level_probe
+30460,"Lexington-Fayette, KY",40517,Lexington,KY,37358,full_fresh,,"VOH2 (SSD Fulfillment Center, 90.9mi)",msa_level_probe
+30460,"Lexington-Fayette, KY",40515,Lexington,KY,36569,full_fresh,,"VOH2 (SSD Fulfillment Center, 92.3mi)",msa_level_probe
+30700,"Lincoln, NE",68516,Lincoln,NE,46626,full_fresh,,"V311 (SSD Fulfillment Center, 38.3mi)",msa_level_probe
+30700,"Lincoln, NE",68521,Lincoln,NE,36166,full_fresh,,"V311 (SSD Fulfillment Center, 36.5mi)",msa_level_probe
+30700,"Lincoln, NE",68506,Lincoln,NE,28161,full_fresh,,"V311 (SSD Fulfillment Center, 36.6mi)",msa_level_probe
+30780,"Little Rock-North Little Rock-Conway, AR",72209,Little rock,AR,31748,full_fresh,,"V471 (SSD Fulfillment Center, 141.3mi)",msa_level_probe
+30780,"Little Rock-North Little Rock-Conway, AR",72204,Little rock,AR,30204,full_fresh,,"V471 (SSD Fulfillment Center, 139.7mi)",msa_level_probe
+30780,"Little Rock-North Little Rock-Conway, AR",72223,Little rock,AR,24848,full_fresh,,"V471 (SSD Fulfillment Center, 147.5mi)",msa_level_probe
+30980,"Longview, TX",75605,Longview,TX,32438,none,,,msa_level_probe
+30980,"Longview, TX",75604,Longview,TX,29922,none,,,msa_level_probe
+30980,"Longview, TX",75602,Longview,TX,20576,none,,,msa_level_probe
+31080,"Los Angeles-Long Beach-Anaheim, CA",90011,Los angeles,CA,110750,full_fresh,,"VAX3 (SSD Fulfillment Center, 8.8mi)",msa_level_probe
+31080,"Los Angeles-Long Beach-Anaheim, CA",90044,Los angeles,CA,99980,full_fresh,,"VAX3 (SSD Fulfillment Center, 5.1mi)",msa_level_probe
+31080,"Los Angeles-Long Beach-Anaheim, CA",90003,Los angeles,CA,74117,full_fresh,,"VAX3 (SSD Fulfillment Center, 5.7mi)",msa_level_probe
+31140,"Louisville/Jefferson County, KY-IN",40475,Richmond,KY,63422,full_fresh,,"VOH2 (SSD Fulfillment Center, 107.2mi)",msa_level_probe
+31140,"Louisville/Jefferson County, KY-IN",42101,Plum springs,KY,62715,none,,,msa_level_probe
+31140,"Louisville/Jefferson County, KY-IN",41042,Florence,KY,54730,full_fresh,,"VOH2 (SSD Fulfillment Center, 23.2mi)",msa_level_probe
+31180,"Lubbock, TX",79424,Lubbock,TX,49191,none,,,msa_level_probe
+31180,"Lubbock, TX",79423,Lubbock,TX,42354,none,,,msa_level_probe
+31180,"Lubbock, TX",79416,Lubbock,TX,34628,none,,,msa_level_probe
+31340,"Lynchburg, VA",24501,Lynchburg,VA,27828,none,,,msa_level_probe
+31340,"Lynchburg, VA",24503,Lynchburg,VA,19682,none,,,msa_level_probe
+31340,"Lynchburg, VA",24504,Lynchburg,VA,9331,none,,,msa_level_probe
+31540,"Madison, WI",53711,Madison,WI,48455,ambient_fresh,,"VWI1 (SSD Fulfillment Center, 62.9mi)",msa_level_probe
+31540,"Madison, WI",53704,Madison,WI,46614,ambient_fresh,,"VWI1 (SSD Fulfillment Center, 57.8mi)",msa_level_probe
+31540,"Madison, WI",53703,Madison,WI,35834,ambient_fresh,,"VWI1 (SSD Fulfillment Center, 59.3mi)",msa_level_probe
+31700,"Manchester-Nashua, NH",03103,Manchester,NH,36831,full_fresh,,"VMA2 (SSD Fulfillment Center, 71.0mi)",msa_level_probe
+31700,"Manchester-Nashua, NH",03102,Manchester,NH,33951,full_fresh,,"VMA2 (SSD Fulfillment Center, 73.5mi)",msa_level_probe
+31700,"Manchester-Nashua, NH",03104,Manchester,NH,32776,full_fresh,,"VMA2 (SSD Fulfillment Center, 73.7mi)",msa_level_probe
+32580,"McAllen-Edinburg-Mission, TX",78504,Mcallen,TX,61182,none,,,msa_level_probe
+32580,"McAllen-Edinburg-Mission, TX",78501,Mcallen,TX,60299,none,,,msa_level_probe
+32580,"McAllen-Edinburg-Mission, TX",78503,Mcallen,TX,20703,none,,,msa_level_probe
+32820,"Memphis, TN-MS-AR",38128,Memphis,TN,46158,full_fresh,,"V471 (SSD Fulfillment Center, 1.3mi)",msa_level_probe
+32820,"Memphis, TN-MS-AR",38109,Memphis,TN,44846,full_fresh,,"V471 (SSD Fulfillment Center, 14.9mi)",msa_level_probe
+32820,"Memphis, TN-MS-AR",38127,Memphis,TN,43240,full_fresh,,"V471 (SSD Fulfillment Center, 4.3mi)",msa_level_probe
+32900,"Merced, CA",95348,Merced,CA,34302,none,,,msa_level_probe
+32900,"Merced, CA",90011,Los angeles,CA,110750,full_fresh,,"VAX3 (SSD Fulfillment Center, 8.8mi)",msa_level_probe
+32900,"Merced, CA",90650,Norwalk,CA,104524,full_fresh,,"VAX3 (SSD Fulfillment Center, 11.5mi)",msa_level_probe
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL",33186,Miami,FL,69459,full_fresh,,"VFL2 (SSD Fulfillment Center, 13.7mi)",msa_level_probe
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL",33125,Miami,FL,60347,full_fresh,,"VFL2 (SSD Fulfillment Center, 2.8mi)",msa_level_probe
+33100,"Miami-Fort Lauderdale-West Palm Beach, FL",33142,Miami,FL,59773,full_fresh,,"VFL2 (SSD Fulfillment Center, 1.7mi)",msa_level_probe
+33340,"Milwaukee-Waukesha, WI",53209,Milwaukee,WI,48321,full_fresh,,"VWI1 (SSD Fulfillment Center, 13.5mi)",msa_level_probe
+33340,"Milwaukee-Waukesha, WI",53218,Milwaukee,WI,42728,full_fresh,,"VWI1 (SSD Fulfillment Center, 11.2mi)",msa_level_probe
+33340,"Milwaukee-Waukesha, WI",53221,Milwaukee,WI,39602,full_fresh,,"VWI1 (SSD Fulfillment Center, 15.6mi)",msa_level_probe
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI",55407,Minneapolis,MN,40792,full_fresh,,"VMN1 (SSD Fulfillment Center, 14.0mi)",msa_level_probe
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI",55414,Minneapolis,MN,36017,full_fresh,,"VMN1 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI",55406,Minneapolis,MN,33709,full_fresh,,"VMN1 (SSD Fulfillment Center, 14.7mi)",msa_level_probe
+33660,"Mobile, AL",36695,Mobile,AL,52524,none,,,msa_level_probe
+33660,"Mobile, AL",36608,Mobile,AL,36317,none,,,msa_level_probe
+33660,"Mobile, AL",36605,Mobile,AL,27035,none,,,msa_level_probe
+33700,"Modesto, CA",95355,Modesto,CA,59272,full_fresh,,"VCA5 (SSD Fulfillment Center, 78.7mi)",msa_level_probe
+33700,"Modesto, CA",95350,Modesto,CA,54044,full_fresh,,"VCA2 (SSD Fulfillment Center, 75.5mi)",msa_level_probe
+33700,"Modesto, CA",95351,Modesto,CA,48844,full_fresh,,"VCA2 (SSD Fulfillment Center, 76.4mi)",msa_level_probe
+33860,"Montgomery, AL",36117,Montgomery,AL,53594,none,,,msa_level_probe
+33860,"Montgomery, AL",36116,Montgomery,AL,45027,none,,,msa_level_probe
+33860,"Montgomery, AL",36109,Montgomery,AL,24802,none,,,msa_level_probe
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC",29577,Myrtle beach,SC,32858,full_fresh,,"VNC3 (SSD Fulfillment Center, 152.6mi)",msa_level_probe
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC",29572,Myrtle beach,SC,10163,full_fresh,,"VNC3 (SSD Fulfillment Center, 148.5mi)",msa_level_probe
+34940,"Naples-Marco Island, FL",33311,Fort lauderdale,FL,75705,full_fresh,,"VFL3 (SSD Fulfillment Center, 8.6mi)",msa_level_probe
+34940,"Naples-Marco Island, FL",33024,Pembroke pines,FL,75701,full_fresh,,"VFL3 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+34940,"Naples-Marco Island, FL",33023,Miramar,FL,74913,full_fresh,,"VFL2 (SSD Fulfillment Center, 12.3mi)",msa_level_probe
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",37211,Nashville,TN,75199,full_fresh,,"VTN1 (SSD Fulfillment Center, 3.4mi)",msa_level_probe
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",37207,Nashville,TN,39151,full_fresh,,"VTN1 (SSD Fulfillment Center, 9.3mi)",msa_level_probe
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",37209,Nashville,TN,37852,full_fresh,,"VTN1 (SSD Fulfillment Center, 10.5mi)",msa_level_probe
+35300,"New Haven, CT",06511,New haven,CT,53859,full_fresh,,"VNY5 (SSD Fulfillment Center, 45.5mi)",msa_level_probe
+35300,"New Haven, CT",06515,New haven,CT,18382,full_fresh,,"VNY5 (SSD Fulfillment Center, 45.2mi)",msa_level_probe
+35300,"New Haven, CT",06519,New haven,CT,15675,full_fresh,,"VNY5 (SSD Fulfillment Center, 44.1mi)",msa_level_probe
+35380,"New Orleans-Metairie, LA",70122,New orleans,LA,38977,full_fresh,,"V281 (SSD Fulfillment Center, 179.0mi)",msa_level_probe
+35380,"New Orleans-Metairie, LA",70119,New orleans,LA,37779,none,,,msa_level_probe
+35380,"New Orleans-Metairie, LA",70118,New orleans,LA,36963,full_fresh,,"V281 (SSD Fulfillment Center, 182.9mi)",msa_level_probe
+35620,"New York-Newark-Jersey City, NY-NJ",10025,New york,NY,92162,full_fresh,,"VNJ4 (SSD Fulfillment Center, 14.4mi)",msa_level_probe
+35620,"New York-Newark-Jersey City, NY-NJ",10029,New york,NY,74617,full_fresh,,"VNJ4 (SSD Fulfillment Center, 15.7mi)",msa_level_probe
+35620,"New York-Newark-Jersey City, NY-NJ",10002,New york,NY,74363,ambient_fresh,,"VNJ4 (SSD Fulfillment Center, 17.0mi)",msa_level_probe
+35840,"North Port-Bradenton-Sarasota, FL",34287,North port,FL,27620,none,,,msa_level_probe
+35840,"North Port-Bradenton-Sarasota, FL",33311,Fort lauderdale,FL,75705,full_fresh,,"VFL3 (SSD Fulfillment Center, 8.6mi)",msa_level_probe
+35840,"North Port-Bradenton-Sarasota, FL",33024,Pembroke pines,FL,75701,full_fresh,,"VFL3 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+35980,"Norwich-New London-Willimantic, CT",06360,Norwich,CT,36549,full_fresh,,"VMA2 (SSD Fulfillment Center, 63.0mi)",msa_level_probe
+35980,"Norwich-New London-Willimantic, CT",06902,Stamford,CT,70199,full_fresh,,"VNY5 (SSD Fulfillment Center, 21.5mi)",msa_level_probe
+35980,"Norwich-New London-Willimantic, CT",06010,Bristol,CT,60039,full_fresh,,"VNY5 (SSD Fulfillment Center, 68.0mi)",msa_level_probe
+36100,"Ocala, FL",34472,Ocala,FL,31271,none,,,msa_level_probe
+36100,"Ocala, FL",34471,Ocala,FL,24635,full_fresh,,"VFL1 (SSD Fulfillment Center, 63.9mi)",msa_level_probe
+36100,"Ocala, FL",34482,Ocala,FL,23576,full_fresh,,"VFL1 (SSD Fulfillment Center, 72.7mi)",msa_level_probe
+36260,"Ogden, UT",84404,Ogden,UT,64249,none,,,msa_level_probe
+36260,"Ogden, UT",84401,Ogden,UT,41324,none,,,msa_level_probe
+36260,"Ogden, UT",84403,Ogden,UT,36762,none,,,msa_level_probe
+36420,"Oklahoma City, OK",73120,Oklahoma city,OK,35132,full_fresh,,"V401 (SSD Fulfillment Center, 105.8mi)",msa_level_probe
+36420,"Oklahoma City, OK",73112,Oklahoma city,OK,33901,full_fresh,,"V401 (SSD Fulfillment Center, 108.3mi)",msa_level_probe
+36420,"Oklahoma City, OK",73159,Oklahoma city,OK,33345,full_fresh,,"V401 (SSD Fulfillment Center, 111.6mi)",msa_level_probe
+36500,"Olympia-Lacey-Tumwater, WA",98501,Olympia,WA,43584,none,,,msa_level_probe
+36500,"Olympia-Lacey-Tumwater, WA",98502,Olympia,WA,35307,none,,,msa_level_probe
+36500,"Olympia-Lacey-Tumwater, WA",98512,Olympia,WA,30833,none,,,msa_level_probe
+36540,"Omaha, NE-IA",68104,Omaha,NE,37582,full_fresh,,"V311 (SSD Fulfillment Center, 12.0mi)",msa_level_probe
+36540,"Omaha, NE-IA",68123,Omaha,NE,32542,full_fresh,,"V311 (SSD Fulfillment Center, 10.5mi)",msa_level_probe
+36540,"Omaha, NE-IA",68116,Omaha,NE,32018,full_fresh,,"V311 (SSD Fulfillment Center, 9.5mi)",msa_level_probe
+36740,"Orlando-Kissimmee-Sanford, FL",32828,Orlando,FL,69913,full_fresh,,"VFL1 (SSD Fulfillment Center, 17.1mi)",msa_level_probe
+36740,"Orlando-Kissimmee-Sanford, FL",32818,Orlando,FL,61027,full_fresh,,"VFL1 (SSD Fulfillment Center, 8.7mi)",msa_level_probe
+36740,"Orlando-Kissimmee-Sanford, FL",32825,Orlando,FL,60254,full_fresh,,"VFL1 (SSD Fulfillment Center, 12.6mi)",msa_level_probe
+37100,"Oxnard-Thousand Oaks-Ventura, CA",93033,Oxnard,CA,84902,ambient_fresh,,"VAX3 (SSD Fulfillment Center, 54.8mi)",msa_level_probe
+37100,"Oxnard-Thousand Oaks-Ventura, CA",93030,Oxnard,CA,59844,ambient_fresh,,"VAX3 (SSD Fulfillment Center, 56.2mi)",msa_level_probe
+37100,"Oxnard-Thousand Oaks-Ventura, CA",93035,Oxnard,CA,28426,ambient_fresh,,"VAX3 (SSD Fulfillment Center, 57.5mi)",msa_level_probe
+37340,"Palm Bay-Melbourne-Titusville, FL",32907,Palm bay,FL,46911,full_fresh,,"VFL1 (SSD Fulfillment Center, 55.8mi)",msa_level_probe
+37340,"Palm Bay-Melbourne-Titusville, FL",32909,Palm bay,FL,31734,full_fresh,,"VFL1 (SSD Fulfillment Center, 59.0mi)",msa_level_probe
+37340,"Palm Bay-Melbourne-Titusville, FL",32905,Palm bay,FL,23410,full_fresh,,"VFL1 (SSD Fulfillment Center, 59.1mi)",msa_level_probe
+37860,"Pensacola-Ferry Pass-Brent, FL",32514,Pensacola,FL,43323,none,,,msa_level_probe
+37860,"Pensacola-Ferry Pass-Brent, FL",32506,Pensacola,FL,37604,none,,,msa_level_probe
+37860,"Pensacola-Ferry Pass-Brent, FL",32526,Pensacola,FL,37484,none,,,msa_level_probe
+37900,"Peoria, IL",61604,Peoria,IL,29362,none,,,msa_level_probe
+37900,"Peoria, IL",61615,Peoria,IL,21878,none,,,msa_level_probe
+37900,"Peoria, IL",61605,Peoria,IL,14556,none,,,msa_level_probe
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",19120,Philadelphia,PA,74270,ambient_fresh,,"VNJ3 (SSD Fulfillment Center, 16.3mi)",msa_level_probe
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",19124,Philadelphia,PA,71858,ambient_fresh,,"VNJ3 (SSD Fulfillment Center, 15.0mi)",msa_level_probe
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",19111,Philadelphia,PA,67159,full_fresh,,"VNJ3 (SSD Fulfillment Center, 13.9mi)",msa_level_probe
+38060,"Phoenix-Mesa-Chandler, AZ",85032,Phoenix,AZ,73212,full_fresh,,"VAZ1 (SSD Fulfillment Center, 14.9mi)",msa_level_probe
+38060,"Phoenix-Mesa-Chandler, AZ",85041,Phoenix,AZ,64657,full_fresh,,"VAZ1 (SSD Fulfillment Center, 2.5mi)",msa_level_probe
+38060,"Phoenix-Mesa-Chandler, AZ",85033,Phoenix,AZ,64388,full_fresh,,"VAZ2 (SSD Fulfillment Center, 5.4mi)",msa_level_probe
+38300,"Pittsburgh, PA",19120,Philadelphia,PA,74270,ambient_fresh,,"VNJ3 (SSD Fulfillment Center, 16.3mi)",msa_level_probe
+38300,"Pittsburgh, PA",19124,Philadelphia,PA,71858,full_fresh,,"VNJ3 (SSD Fulfillment Center, 15.0mi)",msa_level_probe
+38300,"Pittsburgh, PA",19111,Philadelphia,PA,67159,full_fresh,,"VNJ3 (SSD Fulfillment Center, 13.9mi)",msa_level_probe
+38860,"Portland-South Portland, ME",04103,Portland,ME,30628,ambient_fresh,,"VMA2 (SSD Fulfillment Center, 123.2mi)",msa_level_probe
+38860,"Portland-South Portland, ME",04101,Portland,ME,18179,ambient_fresh,,"VMA2 (SSD Fulfillment Center, 121.8mi)",msa_level_probe
+38860,"Portland-South Portland, ME",04102,Portland,ME,16968,ambient_fresh,,"VMA2 (SSD Fulfillment Center, 121.3mi)",msa_level_probe
+38900,"Portland-Vancouver-Hillsboro, OR-WA",97229,Portland,OR,71529,full_fresh,,"VOR3 (SSD Fulfillment Center, 8.0mi)",msa_level_probe
+38900,"Portland-Vancouver-Hillsboro, OR-WA",97206,Portland,OR,54248,full_fresh,,"VOR3 (SSD Fulfillment Center, 8.1mi)",msa_level_probe
+38900,"Portland-Vancouver-Hillsboro, OR-WA",97202,Portland,OR,43744,full_fresh,,"VOR3 (SSD Fulfillment Center, 7.5mi)",msa_level_probe
+38940,"Port St. Lucie, FL",33311,Fort lauderdale,FL,75705,full_fresh,,"VFL3 (SSD Fulfillment Center, 8.6mi)",msa_level_probe
+38940,"Port St. Lucie, FL",33024,Pembroke pines,FL,75701,full_fresh,,"VFL3 (SSD Fulfillment Center, 12.5mi)",msa_level_probe
+38940,"Port St. Lucie, FL",33023,Miramar,FL,74913,full_fresh,,"VFL2 (SSD Fulfillment Center, 12.3mi)",msa_level_probe
+39150,"Prescott Valley-Prescott, AZ",86314,Prescott valley,AZ,39335,none,,,msa_level_probe
+39150,"Prescott Valley-Prescott, AZ",85364,Yuma,AZ,73674,none,,,msa_level_probe
+39150,"Prescott Valley-Prescott, AZ",85032,Phoenix,AZ,73212,full_fresh,,"VAZ1 (SSD Fulfillment Center, 14.9mi)",msa_level_probe
+39300,"Providence-Warwick, RI-MA",02908,Providence,RI,37792,full_fresh,,"VMA2 (SSD Fulfillment Center, 23.8mi)",msa_level_probe
+39300,"Providence-Warwick, RI-MA",02906,Providence,RI,28254,full_fresh,,"VMA2 (SSD Fulfillment Center, 22.0mi)",msa_level_probe
+39300,"Providence-Warwick, RI-MA",02903,Providence,RI,11443,full_fresh,,"VMA2 (SSD Fulfillment Center, 23.4mi)",msa_level_probe
+39340,"Provo-Orem-Lehi, UT",84604,Provo,UT,46099,full_fresh,,"VUT1 (SSD Fulfillment Center, 41.5mi)",msa_level_probe
+39340,"Provo-Orem-Lehi, UT",84606,Provo,UT,37351,full_fresh,,"VUT1 (SSD Fulfillment Center, 43.3mi)",msa_level_probe
+39340,"Provo-Orem-Lehi, UT",84601,Provo,UT,33771,full_fresh,,"VUT1 (SSD Fulfillment Center, 42.7mi)",msa_level_probe
+39580,"Raleigh-Cary, NC",27610,Raleigh,NC,80973,full_fresh,,"VNC3 (SSD Fulfillment Center, 16.7mi)",msa_level_probe
+39580,"Raleigh-Cary, NC",27603,Raleigh,NC,56826,full_fresh,,"VNC3 (SSD Fulfillment Center, 17.3mi)",msa_level_probe
+39580,"Raleigh-Cary, NC",27616,Raleigh,NC,55997,full_fresh,,"VNC3 (SSD Fulfillment Center, 17.3mi)",msa_level_probe
+39740,"Reading, PA",19601,Reading,PA,33382,full_fresh,,"VHL1 (SSD Fulfillment Center, 50.6mi)",msa_level_probe
+39740,"Reading, PA",19604,Reading,PA,29069,none,,,msa_level_probe
+39740,"Reading, PA",19605,Reading,PA,18863,full_fresh,,"VHL1 (SSD Fulfillment Center, 53.2mi)",msa_level_probe
+39900,"Reno, NV",89502,Reno,NV,44881,full_fresh,,"VCA5 (SSD Fulfillment Center, 110.9mi)",msa_level_probe
+39900,"Reno, NV",89506,Reno,NV,42742,full_fresh,,"VCA5 (SSD Fulfillment Center, 111.8mi)",msa_level_probe
+39900,"Reno, NV",89509,Reno,NV,35558,none,,,msa_level_probe
+40060,"Richmond, VA",23223,Richmond,VA,53917,ambient_fresh,,"V511 (SSD Fulfillment Center, 71.9mi)",msa_level_probe
+40060,"Richmond, VA",23225,Richmond,VA,43454,ambient_fresh,,"V511 (SSD Fulfillment Center, 74.8mi)",msa_level_probe
+40060,"Richmond, VA",23224,Richmond,VA,40136,ambient_fresh,,"V511 (SSD Fulfillment Center, 72.5mi)",msa_level_probe
+40140,"Riverside-San Bernardino-Ontario, CA",92503,Riverside,CA,93032,full_fresh,,"VAX2 (SSD Fulfillment Center, 5.8mi)",msa_level_probe
+40140,"Riverside-San Bernardino-Ontario, CA",92504,Riverside,CA,62423,full_fresh,,"VAX2 (SSD Fulfillment Center, 8.5mi)",msa_level_probe
+40140,"Riverside-San Bernardino-Ontario, CA",92507,Riverside,CA,59612,full_fresh,,"VAX2 (SSD Fulfillment Center, 13.7mi)",msa_level_probe
+40220,"Roanoke, VA",24012,Roanoke,VA,30055,none,,,msa_level_probe
+40220,"Roanoke, VA",24017,Roanoke,VA,24273,none,,,msa_level_probe
+40220,"Roanoke, VA",24014,Roanoke,VA,16010,none,,,msa_level_probe
+40380,"Rochester, NY",14609,Rochester,NY,40081,full_fresh,,"VNJ4 (SSD Fulfillment Center, 233.2mi)",msa_level_probe
+40380,"Rochester, NY",14612,Rochester,NY,34316,full_fresh,,"VNJ4 (SSD Fulfillment Center, 240.8mi)",msa_level_probe
+40380,"Rochester, NY",14621,Rochester,NY,33757,full_fresh,,"VNJ4 (SSD Fulfillment Center, 235.2mi)",msa_level_probe
+40420,"Rockford, IL",61107,Rockford,IL,30412,none,,,msa_level_probe
+40420,"Rockford, IL",61108,Rockford,IL,29084,none,,,msa_level_probe
+40420,"Rockford, IL",61109,Rockford,IL,26462,none,,,msa_level_probe
+40900,"Sacramento-Roseville-Folsom, CA",95823,Sacramento,CA,80842,full_fresh,,"VCA5 (SSD Fulfillment Center, 16.7mi)",msa_level_probe
+40900,"Sacramento-Roseville-Folsom, CA",95828,Sacramento,CA,59139,full_fresh,,"VCA5 (SSD Fulfillment Center, 17.6mi)",msa_level_probe
+40900,"Sacramento-Roseville-Folsom, CA",95843,Sacramento,CA,47928,full_fresh,,"VCA5 (SSD Fulfillment Center, 11.2mi)",msa_level_probe
+41180,"St. Louis, MO-IL",63376,Saint peters,MO,75031,full_fresh,,"VMO2 (SSD Fulfillment Center, 28.9mi)",msa_level_probe
+41180,"St. Louis, MO-IL",65807,Springfield,MO,58366,none,,,msa_level_probe
+41180,"St. Louis, MO-IL",65203,Columbia,MO,58271,none,,,msa_level_probe
+41420,"Salem, OR",97301,Salem,OR,57194,none,,,msa_level_probe
+41420,"Salem, OR",97302,Salem,OR,40113,none,,,msa_level_probe
+41420,"Salem, OR",97306,Salem,OR,32741,none,,,msa_level_probe
+41500,"Salinas, CA",93906,Salinas,CA,63733,none,,,msa_level_probe
+41500,"Salinas, CA",93905,Salinas,CA,61633,none,,,msa_level_probe
+41500,"Salinas, CA",93901,Salinas,CA,28089,none,,,msa_level_probe
+41620,"Salt Lake City-Murray, UT",84106,Salt lake city,UT,35166,full_fresh,,"VUT1 (SSD Fulfillment Center, 11.2mi)",msa_level_probe
+41620,"Salt Lake City-Murray, UT",84116,Salt lake city,UT,34588,full_fresh,,"VUT1 (SSD Fulfillment Center, 5.9mi)",msa_level_probe
+41620,"Salt Lake City-Murray, UT",84128,Salt lake city,UT,27921,none,,,msa_level_probe
+41700,"San Antonio-New Braunfels, TX",78245,San antonio,TX,76392,full_fresh,,"VTX7 (SSD Fulfillment Center, 18.3mi)",msa_level_probe
+41700,"San Antonio-New Braunfels, TX",78251,San antonio,TX,65885,full_fresh,,"VTX7 (SSD Fulfillment Center, 16.1mi)",msa_level_probe
+41700,"San Antonio-New Braunfels, TX",78250,San antonio,TX,62951,full_fresh,,"VTX7 (SSD Fulfillment Center, 17.3mi)",msa_level_probe
+41740,"San Diego-Chula Vista-Carlsbad, CA",92154,San diego,CA,89886,full_fresh,,"VCA7 (SSD Fulfillment Center, 7.3mi)",msa_level_probe
+41740,"San Diego-Chula Vista-Carlsbad, CA",92126,San diego,CA,83257,full_fresh,,"VCA4 (SSD Fulfillment Center, 7.8mi)",msa_level_probe
+41740,"San Diego-Chula Vista-Carlsbad, CA",92105,San diego,CA,75990,full_fresh,,"VCA7 (SSD Fulfillment Center, 14.7mi)",msa_level_probe
+41860,"San Francisco-Oakland-Fremont, CA",94112,San francisco,CA,85053,full_fresh,,"VCA2 (SSD Fulfillment Center, 4.0mi)",msa_level_probe
+41860,"San Francisco-Oakland-Fremont, CA",94110,San francisco,CA,72765,full_fresh,,"VCA2 (SSD Fulfillment Center, 5.3mi)",msa_level_probe
+41860,"San Francisco-Oakland-Fremont, CA",94122,San francisco,CA,61248,full_fresh,,"VCA2 (SSD Fulfillment Center, 7.6mi)",msa_level_probe
+41940,"San Jose-Sunnyvale-Santa Clara, CA",95123,San jose,CA,70005,full_fresh,,"VCA2 (SSD Fulfillment Center, 42.9mi)",msa_level_probe
+41940,"San Jose-Sunnyvale-Santa Clara, CA",95127,San jose,CA,63220,full_fresh,,"VCA2 (SSD Fulfillment Center, 37.9mi)",msa_level_probe
+41940,"San Jose-Sunnyvale-Santa Clara, CA",95111,San jose,CA,61183,full_fresh,,"VCA2 (SSD Fulfillment Center, 41.3mi)",msa_level_probe
+42020,"San Luis Obispo-Paso Robles, CA",93405,San luis obispo,CA,36285,none,,,msa_level_probe
+42020,"San Luis Obispo-Paso Robles, CA",93401,San luis obispo,CA,28751,none,,,msa_level_probe
+42100,"Santa Cruz-Watsonville, CA",95062,Santa cruz,CA,36413,none,,,msa_level_probe
+42100,"Santa Cruz-Watsonville, CA",95064,Santa cruz,CA,10622,none,,,msa_level_probe
+42100,"Santa Cruz-Watsonville, CA",95065,Santa cruz,CA,8164,none,,,msa_level_probe
+42200,"Santa Maria-Santa Barbara, CA",93454,Santa maria,CA,40600,none,,,msa_level_probe
+42200,"Santa Maria-Santa Barbara, CA",90011,Los angeles,CA,110750,full_fresh,,"VAX3 (SSD Fulfillment Center, 8.8mi)",msa_level_probe
+42200,"Santa Maria-Santa Barbara, CA",90650,Norwalk,CA,104524,full_fresh,,"VAX3 (SSD Fulfillment Center, 11.5mi)",msa_level_probe
+42220,"Santa Rosa-Petaluma, CA",95403,Santa rosa,CA,44716,full_fresh,,"VCA3 (SSD Fulfillment Center, 40.0mi)",msa_level_probe
+42220,"Santa Rosa-Petaluma, CA",95407,Santa rosa,CA,42815,full_fresh,,"VCA3 (SSD Fulfillment Center, 35.5mi)",msa_level_probe
+42220,"Santa Rosa-Petaluma, CA",95401,Santa rosa,CA,38872,full_fresh,,"VCA3 (SSD Fulfillment Center, 38.0mi)",msa_level_probe
+42340,"Savannah, GA",31405,Savannah,GA,37929,full_fresh,,"VGA1 (SSD Fulfillment Center, 222.2mi)",msa_level_probe
+42340,"Savannah, GA",31406,Savannah,GA,35073,full_fresh,,"VGA1 (SSD Fulfillment Center, 225.5mi)",msa_level_probe
+42340,"Savannah, GA",31410,Savannah,GA,24626,full_fresh,,"VGA1 (SSD Fulfillment Center, 229.0mi)",msa_level_probe
+42540,"Scranton--Wilkes-Barre, PA",18505,Scranton,PA,21671,full_fresh,,"VNJ4 (SSD Fulfillment Center, 83.0mi)",msa_level_probe
+42540,"Scranton--Wilkes-Barre, PA",18504,Scranton,PA,20632,full_fresh,,"VNJ4 (SSD Fulfillment Center, 84.6mi)",msa_level_probe
+42540,"Scranton--Wilkes-Barre, PA",18509,Scranton,PA,13786,full_fresh,,"VNJ4 (SSD Fulfillment Center, 83.2mi)",msa_level_probe
+42660,"Seattle-Tacoma-Bellevue, WA",98115,Seattle,WA,55519,full_fresh,,"VBBA (SSD Fulfillment Center, 10.0mi)",msa_level_probe
+42660,"Seattle-Tacoma-Bellevue, WA",98103,Seattle,WA,54194,full_fresh,,"VBBA (SSD Fulfillment Center, 11.2mi)",msa_level_probe
+42660,"Seattle-Tacoma-Bellevue, WA",98105,Seattle,WA,52290,full_fresh,,"VBBA (SSD Fulfillment Center, 11.5mi)",msa_level_probe
+43340,"Shreveport-Bossier City, LA",71118,Shreveport,LA,23585,none,,,msa_level_probe
+43340,"Shreveport-Bossier City, LA",71105,Shreveport,LA,20660,none,,,msa_level_probe
+43340,"Shreveport-Bossier City, LA",71108,Shreveport,LA,18943,none,,,msa_level_probe
+43620,"Sioux Falls, SD-MN",57106,Sioux falls,SD,47855,none,,,msa_level_probe
+43620,"Sioux Falls, SD-MN",57103,Sioux falls,SD,36761,none,,,msa_level_probe
+43620,"Sioux Falls, SD-MN",57104,Sioux falls,SD,26217,none,,,msa_level_probe
+43640,"Slidell-Mandeville-Covington, LA",70458,Slidell,LA,37164,none,,,msa_level_probe
+43640,"Slidell-Mandeville-Covington, LA",70461,Slidell,LA,32900,none,,,msa_level_probe
+43640,"Slidell-Mandeville-Covington, LA",70460,Slidell,LA,22334,none,,,msa_level_probe
+43780,"South Bend-Mishawaka, IN-MI",46614,South bend,IN,30505,full_fresh,,"VIL1 (SSD Fulfillment Center, 76.9mi)",msa_level_probe
+43780,"South Bend-Mishawaka, IN-MI",46628,South bend,IN,26532,full_fresh,,"VIL1 (SSD Fulfillment Center, 74.6mi)",msa_level_probe
+43780,"South Bend-Mishawaka, IN-MI",46619,South bend,IN,21048,full_fresh,,"VIL1 (SSD Fulfillment Center, 73.3mi)",msa_level_probe
+43900,"Spartanburg, SC",29301,Spartanburg,SC,35585,full_fresh,,"VNC2 (SSD Fulfillment Center, 71.2mi)",msa_level_probe
+43900,"Spartanburg, SC",29316,Spartanburg,SC,27315,full_fresh,,"VNC2 (SSD Fulfillment Center, 69.2mi)",msa_level_probe
+43900,"Spartanburg, SC",29307,Spartanburg,SC,18583,none,,,msa_level_probe
+44060,"Spokane-Spokane Valley, WA",99208,Spokane,WA,55092,none,,,msa_level_probe
+44060,"Spokane-Spokane Valley, WA",99205,Spokane,WA,43707,none,,,msa_level_probe
+44060,"Spokane-Spokane Valley, WA",99206,Spokane,WA,40510,none,,,msa_level_probe
+44140,"Springfield, MA",01109,Springfield,MA,30684,full_fresh,,"VMA2 (SSD Fulfillment Center, 79.1mi)",msa_level_probe
+44140,"Springfield, MA",01108,Springfield,MA,26397,full_fresh,,"VMA2 (SSD Fulfillment Center, 79.2mi)",msa_level_probe
+44140,"Springfield, MA",01104,Springfield,MA,23150,full_fresh,,"VMA2 (SSD Fulfillment Center, 80.4mi)",msa_level_probe
+44180,"Springfield, MO",65807,Springfield,MO,58366,none,,,msa_level_probe
+44180,"Springfield, MO",65802,Springfield,MO,47098,none,,,msa_level_probe
+44180,"Springfield, MO",65803,Springfield,MO,41897,none,,,msa_level_probe
+44700,"Stockton-Lodi, CA",95206,Stockton,CA,65643,full_fresh,,"VCA5 (SSD Fulfillment Center, 55.8mi)",msa_level_probe
+44700,"Stockton-Lodi, CA",95207,Stockton,CA,51652,full_fresh,,"VCA5 (SSD Fulfillment Center, 50.0mi)",msa_level_probe
+44700,"Stockton-Lodi, CA",95209,Stockton,CA,44325,full_fresh,,"VCA5 (SSD Fulfillment Center, 47.4mi)",msa_level_probe
+45060,"Syracuse, NY",13210,Syracuse,NY,27172,none,,,msa_level_probe
+45060,"Syracuse, NY",13208,Syracuse,NY,22560,none,,,msa_level_probe
+45060,"Syracuse, NY",13204,Syracuse,NY,19264,none,,,msa_level_probe
+45220,"Tallahassee, FL",32304,Tallahassee,FL,50298,full_fresh,,"VFL7 (SSD Fulfillment Center, 199.3mi)",msa_level_probe
+45220,"Tallahassee, FL",32303,Tallahassee,FL,49073,full_fresh,,"VFL7 (SSD Fulfillment Center, 201.5mi)",msa_level_probe
+45220,"Tallahassee, FL",32301,Tallahassee,FL,32552,full_fresh,,"VFL7 (SSD Fulfillment Center, 196.2mi)",msa_level_probe
+45300,"Tampa-St. Petersburg-Clearwater, FL",33647,Tampa,FL,74066,full_fresh,,"VFL4 (SSD Fulfillment Center, 8.0mi)",msa_level_probe
+45300,"Tampa-St. Petersburg-Clearwater, FL",33612,Tampa,FL,51347,full_fresh,,"VFL7 (SSD Fulfillment Center, 5.0mi)",msa_level_probe
+45300,"Tampa-St. Petersburg-Clearwater, FL",33614,Tampa,FL,49652,full_fresh,,"VFL7 (SSD Fulfillment Center, 1.8mi)",msa_level_probe
+45780,"Toledo, OH",43615,Toledo,OH,39957,none,,,msa_level_probe
+45780,"Toledo, OH",43613,Toledo,OH,32811,none,,,msa_level_probe
+45780,"Toledo, OH",43614,Toledo,OH,29983,none,,,msa_level_probe
+45940,"Trenton-Princeton, NJ",08618,Trenton,NJ,37433,full_fresh,,"VNJ3 (SSD Fulfillment Center, 10.6mi)",msa_level_probe
+45940,"Trenton-Princeton, NJ",08638,Trenton,NJ,22115,full_fresh,,"VNJ3 (SSD Fulfillment Center, 11.7mi)",msa_level_probe
+45940,"Trenton-Princeton, NJ",08608,Trenton,NJ,866,full_fresh,,"VNJ3 (SSD Fulfillment Center, 9.7mi)",msa_level_probe
+46060,"Tucson, AZ",85706,Tucson,AZ,57712,full_fresh,,"V041 (SSD Fulfillment Center, 6.2mi)",msa_level_probe
+46060,"Tucson, AZ",85705,Tucson,AZ,57449,full_fresh,,"V041 (SSD Fulfillment Center, 12.8mi)",msa_level_probe
+46060,"Tucson, AZ",85710,Tucson,AZ,53002,full_fresh,,"V041 (SSD Fulfillment Center, 5.8mi)",msa_level_probe
+46140,"Tulsa, OK",74133,Tulsa,OK,45958,full_fresh,,"V401 (SSD Fulfillment Center, 11.8mi)",msa_level_probe
+46140,"Tulsa, OK",74136,Tulsa,OK,32139,full_fresh,,"V401 (SSD Fulfillment Center, 12.1mi)",msa_level_probe
+46140,"Tulsa, OK",74137,Tulsa,OK,27341,full_fresh,,"V401 (SSD Fulfillment Center, 13.8mi)",msa_level_probe
+46220,"Tuscaloosa, AL",35405,Tuscaloosa,AL,44449,none,,,msa_level_probe
+46220,"Tuscaloosa, AL",35401,Tuscaloosa,AL,37909,none,,,msa_level_probe
+46220,"Tuscaloosa, AL",35406,Tuscaloosa,AL,18391,none,,,msa_level_probe
+46340,"Tyler, TX",75703,Tyler,TX,42955,none,,,msa_level_probe
+46340,"Tyler, TX",75701,Tyler,TX,36089,none,,,msa_level_probe
+46340,"Tyler, TX",75702,Tyler,TX,27678,none,,,msa_level_probe
+46520,"Urban Honolulu, HI",96706,Ewa beach,HI,76081,none,,,msa_level_probe
+46520,"Urban Honolulu, HI",96797,Waipahu,HI,70684,full_fresh,,"VCA2 (SSD Fulfillment Center, 2398.3mi)",msa_level_probe
+46520,"Urban Honolulu, HI",96818,Honolulu,HI,59923,full_fresh,,"VCA2 (SSD Fulfillment Center, 2395.7mi)",msa_level_probe
+46540,"Utica-Rome, NY",13501,Utica,NY,37132,none,,,msa_level_probe
+46540,"Utica-Rome, NY",13502,Utica,NY,32437,none,,,msa_level_probe
+46700,"Vallejo, CA",94591,Vallejo,CA,56333,full_fresh,,"VCA3 (SSD Fulfillment Center, 9.6mi)",msa_level_probe
+46700,"Vallejo, CA",94590,Vallejo,CA,37378,full_fresh,,"VCA3 (SSD Fulfillment Center, 8.8mi)",msa_level_probe
+47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",23464,Virginia beach,VA,77623,full_fresh,,"V511 (SSD Fulfillment Center, 16.5mi)",msa_level_probe
+47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",23462,Virginia beach,VA,67963,full_fresh,,"V511 (SSD Fulfillment Center, 18.0mi)",msa_level_probe
+47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",23456,Virginia beach,VA,57705,full_fresh,,"V511 (SSD Fulfillment Center, 24.8mi)",msa_level_probe
+47300,"Visalia, CA",93291,Visalia,CA,58394,full_fresh,,"V061 (SSD Fulfillment Center, 34.3mi)",msa_level_probe
+47300,"Visalia, CA",93277,Visalia,CA,53114,full_fresh,,"V061 (SSD Fulfillment Center, 36.2mi)",msa_level_probe
+47300,"Visalia, CA",93292,Visalia,CA,42769,full_fresh,,"V061 (SSD Fulfillment Center, 35.8mi)",msa_level_probe
+47380,"Waco, TX",76706,Waco,TX,39667,none,,,msa_level_probe
+47380,"Waco, TX",76708,Waco,TX,27095,none,,,msa_level_probe
+47380,"Waco, TX",76710,Waco,TX,24607,none,,,msa_level_probe
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",20011,Washington,DC,69686,ambient_fresh,,"VDC1 (SSD Fulfillment Center, 13.6mi)",msa_level_probe
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",20002,Washington,DC,69141,full_fresh,,"VDC1 (SSD Fulfillment Center, 12.4mi)",msa_level_probe
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",20019,Washington,DC,65769,full_fresh,,"VDC1 (SSD Fulfillment Center, 14.5mi)",msa_level_probe
+47930,"Waterbury-Shelton, CT",06708,Waterbury,CT,29727,full_fresh,,"VNY5 (SSD Fulfillment Center, 57.1mi)",msa_level_probe
+47930,"Waterbury-Shelton, CT",06704,Waterbury,CT,26209,full_fresh,,"VNY5 (SSD Fulfillment Center, 59.2mi)",msa_level_probe
+47930,"Waterbury-Shelton, CT",06705,Waterbury,CT,24910,full_fresh,,"VNY5 (SSD Fulfillment Center, 58.2mi)",msa_level_probe
+48620,"Wichita, KS",67212,Wichita,KS,44396,full_fresh,,"V401 (SSD Fulfillment Center, 135.4mi)",msa_level_probe
+48620,"Wichita, KS",67217,Wichita,KS,31134,full_fresh,,"V401 (SSD Fulfillment Center, 128.6mi)",msa_level_probe
+48620,"Wichita, KS",67203,Wichita,KS,30064,full_fresh,,"V401 (SSD Fulfillment Center, 132.9mi)",msa_level_probe
+48900,"Wilmington, NC",28403,Wilmington,NC,42319,full_fresh,,"VNC3 (SSD Fulfillment Center, 128.3mi)",msa_level_probe
+48900,"Wilmington, NC",28412,Wilmington,NC,38882,full_fresh,,"VNC3 (SSD Fulfillment Center, 131.8mi)",msa_level_probe
+48900,"Wilmington, NC",28409,Wilmington,NC,36070,full_fresh,,"VNC3 (SSD Fulfillment Center, 132.2mi)",msa_level_probe
+49180,"Winston-Salem, NC",27610,Raleigh,NC,80973,full_fresh,,"VNC3 (SSD Fulfillment Center, 16.7mi)",msa_level_probe
+49180,"Winston-Salem, NC",28269,Charlotte,NC,79059,full_fresh,,"VNC2 (SSD Fulfillment Center, 5.9mi)",msa_level_probe
+49180,"Winston-Salem, NC",27587,Wake forest,NC,73345,full_fresh,,"VNC3 (SSD Fulfillment Center, 17.8mi)",msa_level_probe
+49340,"Worcester, MA",01604,Worcester,MA,37633,full_fresh,,"VMA2 (SSD Fulfillment Center, 42.7mi)",msa_level_probe
+49340,"Worcester, MA",01605,Worcester,MA,27587,full_fresh,,"VMA2 (SSD Fulfillment Center, 44.5mi)",msa_level_probe
+49340,"Worcester, MA",01602,Worcester,MA,24363,full_fresh,,"VMA2 (SSD Fulfillment Center, 46.3mi)",msa_level_probe
+49420,"Yakima, WA",98902,Yakima,WA,46728,none,,,msa_level_probe
+49420,"Yakima, WA",99301,Pasco,WA,81583,none,,,msa_level_probe
+49420,"Yakima, WA",98052,Redmond,WA,71940,full_fresh,,"VBBA (SSD Fulfillment Center, 13.0mi)",msa_level_probe
+49620,"York-Hanover, PA",17403,York,PA,39217,full_fresh,,"VMD1 (SSD Fulfillment Center, 53.8mi)",msa_level_probe
+49620,"York-Hanover, PA",17401,York,PA,16973,full_fresh,,"VMD1 (SSD Fulfillment Center, 54.8mi)",msa_level_probe
+49660,"Youngstown-Warren, OH",44511,Youngstown,OH,19605,none,,,msa_level_probe
+49660,"Youngstown-Warren, OH",44505,Youngstown,OH,16955,none,,,msa_level_probe
+49660,"Youngstown-Warren, OH",44509,Youngstown,OH,12062,none,,,msa_level_probe
+43300,"Sherman-Denison, TX",75092,Sherman,TX,26297,ambient_fresh,"AmazonFresh, WholeFoods, SSD_Prime","VTX8 (SSD Fulfillment Center, 44.8mi) | UTX4 (Amazon Fresh Dark Store, 57.4mi) | C134 (Whole Foods Store, 35.1mi)",msa_level_probe
+43300,"Sherman-Denison, TX",75090,Sherman,TX,25732,ambient_fresh,"AmazonFresh, WholeFoods, SSD_Prime","VTX8 (SSD Fulfillment Center, 45.3mi) | UTX4 (Amazon Fresh Dark Store, 58.0mi) | C134 (Whole Foods Store, 35.6mi)",msa_level_probe
+43300,"Sherman-Denison, TX",75020,Denison,TX,23216,none,"AmazonFresh, WholeFoods, SSD_Prime",,msa_level_probe
