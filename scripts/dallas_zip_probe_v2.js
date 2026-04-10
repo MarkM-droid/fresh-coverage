@@ -53,6 +53,37 @@ async function probeZip(zip, city, state, lat, lng, pop) {
     }
 
     const checkProduct = async (keyword) => {
+      // Known-good ASINs to try first before falling back to search
+      const knownAsins = {
+        strawberries: ['B000P6J0SM', 'B002B8Z98W', 'B08911ZP3Y'],
+        bananas: ['B07ZLF9WQ5', 'B07ZLFPXHC']
+      };
+
+      // Try known ASINs first
+      for (const asin of (knownAsins[keyword] || [])) {
+        await page.goto(`https://www.amazon.com/dp/${asin}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+        await sleep(1500);
+        const body = (await page.locator('body').textContent().catch(()=>'')).toLowerCase();
+        if (!body.includes('currently unavailable') && !body.includes("we don't know when")) {
+          // Product is available — parse offers
+          const buyboxText = await page.locator('#buybox,#rightCol').first().textContent().catch(()=>'');
+          const fullBody = buyboxText.toLowerCase();
+          await page.locator('a:has-text("other"), #buybox-see-all-buying-choices-announce').first().click().catch(()=>{});
+          await sleep(1500);
+          const panelText = (await page.locator('#aod-container').first().textContent().catch(()=>'')).toLowerCase();
+          const combined = fullBody + ' ' + panelText;
+          const offers = new Set();
+          if (combined.includes('amazonfresh')||combined.includes('amazon fresh')) offers.add('AmazonFresh');
+          if (combined.includes('whole foods')) offers.add('WholeFoods');
+          if ((combined.includes('today')||combined.includes('hour'))&&(combined.includes('amazon.com')||combined.includes('prime'))) offers.add('SSD_Prime');
+          const addToCart = await page.locator('#add-to-cart-button').isVisible({timeout:1500}).catch(()=>false);
+          if (addToCart || offers.size > 0) {
+            return { available: true, reason: 'found_known_asin', offers:[...offers], asin };
+          }
+        }
+      }
+
+      // Fallback to natural language search
       await page.goto(`https://www.amazon.com/s?k=${encodeURIComponent(keyword)}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
       await sleep(1500);
 
@@ -75,19 +106,33 @@ async function probeZip(zip, city, state, lat, lng, pop) {
 
       const freshKws = keyword==='bananas' ? ['banana','bunch'] : ['strawberr'];
       const rejectKws = ['flavor','chip','candy','powder','protein','bar','cake','bread','snack','mix'];
-      let asin = candidates[0].asin;
-      for (const c of candidates) {
-        const tl = c.title.toLowerCase();
-        if (freshKws.some(k=>tl.includes(k)) && !rejectKws.some(k=>tl.includes(k))) { asin=c.asin; break; }
+      
+      // Sort candidates — fresh ones first
+      const sorted = candidates.sort((a,b) => {
+        const aFresh = freshKws.some(k=>a.title.toLowerCase().includes(k)) ? 1 : 0;
+        const bFresh = freshKws.some(k=>b.title.toLowerCase().includes(k)) ? 1 : 0;
+        return bFresh - aFresh;
+      });
+
+      // Try ALL candidates until one is available — don't give up on first unavailable
+      let foundAsin = null;
+      let foundBody = '';
+      for (const candidate of sorted.slice(0, 8)) {
+        await page.goto(`https://www.amazon.com/dp/${candidate.asin}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+        await sleep(1000);
+        const body = (await page.locator('body').textContent().catch(()=>'')).toLowerCase();
+        if (!body.includes('currently unavailable') && !body.includes("we don't know when")) {
+          foundAsin = candidate.asin;
+          foundBody = body;
+          break;
+        }
       }
 
-      await page.goto(`https://www.amazon.com/dp/${asin}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
-      await sleep(1500);
-
-      const body = (await page.locator('body').textContent().catch(()=>'')).toLowerCase();
-      if (body.includes('currently unavailable') || body.includes("we don't know when")) {
+      if (!foundAsin) {
         return { available: false, reason: 'unavailable', offers: [] };
       }
+
+      const body = foundBody;
 
       // Click other sellers
       await page.locator('a:has-text("other"), #buybox-see-all-buying-choices-announce').first().click().catch(()=>{});

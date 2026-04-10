@@ -10,11 +10,11 @@
     "ssd_dist": 14,
     "available": true,
     "primary_ships_from": null,
-    "primary_delivery": "Today 8 PM - 11 PM. Order within 2 hrs 9 mins {\"merchan",
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 3 hrs 22 mins {\"merchan",
     "primary_type": null,
     "all_offers": [],
     "all_types": [],
-    "probed_at": "2026-04-02T21:51:20.414Z"
+    "probed_at": "2026-04-03T00:38:34.653Z"
   },
   "75052": {
     "zip": "75052",
@@ -49,6 +49,63 @@
     "available": false,
     "reason": "unavailable"
   },
+  "75067": {
+    "zip": "75067",
+    "city": "Highland village",
+    "state": "TX",
+    "lat": 33.0198,
+    "lng": -96.9925,
+    "pop": 67197,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:24:56.362Z",
+    "ssd_dist": 19,
+    "bucket": "15-25mi",
+    "available": false,
+    "reason": "unavailable"
+  },
+  "75068": {
+    "zip": "75068",
+    "city": "Lakewood village",
+    "state": "TX",
+    "lat": 33.1768,
+    "lng": -96.9583,
+    "pop": 69656,
+    "bucket": "15-25mi",
+    "ssd_dist": 21,
+    "available": true,
+    "primary_ships_from": "Whole Foods Market Sold by Whol",
+    "primary_delivery": null,
+    "primary_type": "WholeFoods",
+    "all_offers": [
+      {
+        "ships_from": "Whole Foods Market Sold by Whole Foods M",
+        "delivery": null
+      }
+    ],
+    "all_types": [
+      "WholeFoods"
+    ],
+    "probed_at": "2026-04-03T00:43:50.278Z"
+  },
   "75070": {
     "zip": "75070",
     "city": "Mc kinney",
@@ -60,11 +117,59 @@
     "ssd_dist": 15,
     "available": true,
     "primary_ships_from": null,
-    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 6 hrs 8 mins {\"merchant",
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 3 hrs 21 mins {\"merchan",
     "primary_type": null,
     "all_offers": [],
     "all_types": [],
-    "probed_at": "2026-04-02T21:52:12.949Z"
+    "probed_at": "2026-04-03T00:39:26.605Z"
+  },
+  "75090": {
+    "zip": "75090",
+    "city": "Sherman",
+    "state": "TX",
+    "lat": 33.6435,
+    "lng": -96.6075,
+    "pop": 25732,
+    "bucket": "35-50mi",
+    "ssd_dist": 45,
+    "available": true,
+    "primary_ships_from": "Whole Foods Market Sold by Whol",
+    "primary_delivery": null,
+    "primary_type": "WholeFoods",
+    "all_offers": [
+      {
+        "ships_from": "Whole Foods Market Sold by Whole Foods M",
+        "delivery": null
+      }
+    ],
+    "all_types": [
+      "WholeFoods"
+    ],
+    "probed_at": "2026-04-03T00:54:25.147Z"
+  },
+  "75092": {
+    "zip": "75092",
+    "city": "Sherman",
+    "state": "TX",
+    "lat": 33.6372,
+    "lng": -96.6184,
+    "pop": 26297,
+    "bucket": "35-50mi",
+    "ssd_dist": 45,
+    "available": true,
+    "primary_ships_from": "Whole Foods Market Sold by Whol",
+    "primary_delivery": null,
+    "primary_type": "WholeFoods",
+    "all_offers": [
+      {
+        "ships_from": "Whole Foods Market Sold by Whole Foods M",
+        "delivery": null
+      }
+    ],
+    "all_types": [
+      "WholeFoods"
+    ],
+    "probed_at": "2026-04-03T00:53:32.448Z"
   },
   "75217": {
     "zip": "75217",
@@ -73,14 +178,221 @@
     "lat": 32.7244,
     "lng": -96.6755,
     "pop": 86811,
-    "bucket": "0-15mi",
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:09:45.007Z",
     "ssd_dist": 13,
+    "bucket": "0-15mi",
+    "available": false,
+    "reason": "unavailable"
+  },
+  "76020": {
+    "zip": "76020",
+    "city": "Azle",
+    "state": "TX",
+    "lat": 32.9035,
+    "lng": -97.5412,
+    "pop": 30487,
+    "bucket": "35-50mi",
+    "ssd_dist": 39,
     "available": true,
     "primary_ships_from": null,
-    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 6 hrs 6 mins {\"merchant",
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 3 hrs 8 mins {\"merchant",
     "primary_type": null,
     "all_offers": [],
     "all_types": [],
-    "probed_at": "2026-04-02T21:54:25.076Z"
+    "probed_at": "2026-04-03T00:51:46.711Z"
+  },
+  "76028": {
+    "zip": "76028",
+    "city": "Burleson",
+    "state": "TX",
+    "lat": 32.5316,
+    "lng": -97.309,
+    "pop": 72493,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:19:16.495Z",
+    "ssd_dist": 29,
+    "bucket": "25-35mi",
+    "available": false,
+    "reason": "unavailable"
+  },
+  "76063": {
+    "zip": "76063",
+    "city": "Mansfield",
+    "state": "TX",
+    "lat": 32.5773,
+    "lng": -97.1416,
+    "pop": 76609,
+    "bucket": "15-25mi",
+    "ssd_dist": 19,
+    "available": true,
+    "primary_ships_from": null,
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 3 hrs 17 mins {\"merchan",
+    "primary_type": null,
+    "all_offers": [],
+    "all_types": [],
+    "probed_at": "2026-04-03T00:42:58.095Z"
+  },
+  "76087": {
+    "zip": "76087",
+    "city": "Weatherford",
+    "state": "TX",
+    "lat": 32.7495,
+    "lng": -97.6894,
+    "pop": 29119,
+    "bucket": "35-50mi",
+    "ssd_dist": 47,
+    "available": true,
+    "primary_ships_from": "Whole Foods Market Sold by Whol",
+    "primary_delivery": null,
+    "primary_type": "WholeFoods",
+    "all_offers": [
+      {
+        "ships_from": "Whole Foods Market Sold by Whole Foods M",
+        "delivery": null
+      }
+    ],
+    "all_types": [
+      "WholeFoods"
+    ],
+    "probed_at": "2026-04-03T00:52:39.192Z"
+  },
+  "76116": {
+    "zip": "76116",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.723,
+    "lng": -97.4483,
+    "pop": 50371,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:59:48.633Z",
+    "ssd_dist": 33,
+    "bucket": "25-35mi",
+    "available": false,
+    "reason": "unavailable"
+  },
+  "76133": {
+    "zip": "76133",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6526,
+    "lng": -97.3758,
+    "pop": 53694,
+    "bucket": "25-35mi",
+    "ssd_dist": 29,
+    "available": true,
+    "primary_ships_from": null,
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 3 hrs 11 mins {\"merchan",
+    "primary_type": null,
+    "all_offers": [],
+    "all_types": [],
+    "probed_at": "2026-04-03T00:49:33.574Z"
+  },
+  "76137": {
+    "zip": "76137",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8664,
+    "lng": -97.2891,
+    "pop": 59983,
+    "status": "ambient_fresh",
+    "offers": [
+      "AmazonFresh",
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "WholeFoods",
+        "SSD_Prime"
+      ],
+      "reason": "found"
+    },
+    "strawberries": {
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
+    },
+    "probed_at": "2026-04-02T05:32:00.823Z",
+    "ssd_dist": 25,
+    "bucket": "15-25mi",
+    "available": false,
+    "reason": "unavailable"
+  },
+  "76179": {
+    "zip": "76179",
+    "city": "Saginaw",
+    "state": "TX",
+    "lat": 32.9074,
+    "lng": -97.4257,
+    "pop": 69066,
+    "bucket": "25-35mi",
+    "ssd_dist": 33,
+    "available": true,
+    "primary_ships_from": null,
+    "primary_delivery": "Overnight 4 AM - 8 AM. Order within 3 hrs 11 mins {\"merchan",
+    "primary_type": null,
+    "all_offers": [],
+    "all_types": [],
+    "probed_at": "2026-04-03T00:48:41.239Z"
   }
 }

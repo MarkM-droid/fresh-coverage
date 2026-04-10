@@ -120,20 +120,27 @@ async function checkProduct(keyword) {
 
   if (!candidates.length) return { available: false, reason: 'no_results', offers: [] };
 
-  // Pick best fresh candidate
-  let asin = candidates[0].asin;
-  for (const c of candidates) {
-    const tl = c.title.toLowerCase();
-    if (freshKws.some(k => tl.includes(k)) && !rejectKws.some(k => tl.includes(k))) {
-      asin = c.asin; break;
+  // Sort: fresh-matching titles first
+  candidates.sort((a,b) => {
+    const aF = freshKws.some(k=>a.title.toLowerCase().includes(k)) && !rejectKws.some(k=>a.title.toLowerCase().includes(k)) ? 1 : 0;
+    const bF = freshKws.some(k=>b.title.toLowerCase().includes(k)) && !rejectKws.some(k=>b.title.toLowerCase().includes(k)) ? 1 : 0;
+    return bF - aF;
+  });
+
+  // Try ALL candidates until one is available — don't stop at first unavailable
+  let foundAsin = null, bodyText = '';
+  for (const candidate of candidates.slice(0, 8)) {
+    await page.goto(`https://www.amazon.com/dp/${candidate.asin}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+    await sleep(jitter(1200, 500));
+    const bt = (await page.locator('body').textContent().catch(()=>'')).toLowerCase();
+    if (!bt.includes('currently unavailable') && !bt.includes("we don't know when")) {
+      foundAsin = candidate.asin;
+      bodyText = bt;
+      break;
     }
   }
 
-  await page.goto(`https://www.amazon.com/dp/${asin}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
-  await sleep(jitter(2000, 800));
-
-  const bodyText = (await page.locator('body').textContent().catch(() => '')).toLowerCase();
-  if (bodyText.includes('currently unavailable') || bodyText.includes("we don't know when")) {
+  if (!foundAsin) {
     return { available: false, reason: 'unavailable', offers: [] };
   }
 

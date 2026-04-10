@@ -6,60 +6,26 @@
     "lat": 32.96,
     "lng": -96.8385,
     "pop": 15418,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:04:42.002Z"
+    "probed_at": "2026-04-03T23:26:19.510Z"
   },
   "75002": {
     "zip": "75002",
     "city": "Allen",
-    "state": "TX",
-    "lat": 33.0934,
-    "lng": -96.6454,
-    "pop": 73916,
-    "status": "full_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "probed_at": "2026-04-02T05:17:51.376Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T16:54:01.230Z"
   },
   "75006": {
     "zip": "75006",
@@ -68,27 +34,25 @@
     "lat": 32.9657,
     "lng": -96.8825,
     "pop": 52231,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:54:33.287Z"
+    "probed_at": "2026-04-03T17:57:33.270Z"
   },
   "75007": {
     "zip": "75007",
@@ -97,56 +61,32 @@
     "lat": 33.0033,
     "lng": -96.882,
     "pop": 57513,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:39:02.138Z"
+    "probed_at": "2026-04-03T17:29:45.994Z"
   },
   "75009": {
     "zip": "75009",
     "city": "Celina",
-    "state": "TX",
-    "lat": 33.3103,
-    "lng": -96.7673,
-    "pop": 15348,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:06:06.687Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T23:27:44.579Z"
   },
   "75010": {
     "zip": "75010",
@@ -155,27 +95,19 @@
     "lat": 33.0304,
     "lng": -96.8777,
     "pop": 30784,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:19:52.793Z"
+    "probed_at": "2026-04-03T20:20:18.374Z"
   },
   "75013": {
     "zip": "75013",
@@ -184,27 +116,19 @@
     "lat": 33.1186,
     "lng": -96.6773,
     "pop": 42956,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:17:10.145Z"
+    "probed_at": "2026-04-03T18:32:59.154Z"
   },
   "75019": {
     "zip": "75019",
@@ -213,27 +137,19 @@
     "lat": 32.9673,
     "lng": -96.9805,
     "pop": 43137,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T06:14:19.509Z"
+    "probed_at": "2026-04-03T18:27:59.106Z"
   },
   "75020": {
     "zip": "75020",
@@ -254,7 +170,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:11:30.554Z"
+    "probed_at": "2026-04-03T21:50:53.848Z"
   },
   "75021": {
     "zip": "75021",
@@ -275,7 +191,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:27:12.258Z"
+    "probed_at": "2026-04-04T00:09:55.668Z"
   },
   "75022": {
     "zip": "75022",
@@ -284,27 +200,25 @@
     "lat": 33.0268,
     "lng": -97.1193,
     "pop": 28773,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:34:09.288Z"
+    "probed_at": "2026-04-03T20:48:14.739Z"
   },
   "75023": {
     "zip": "75023",
@@ -313,27 +227,25 @@
     "lat": 33.055,
     "lng": -96.7365,
     "pop": 50923,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:58:23.507Z"
+    "probed_at": "2026-04-03T18:01:21.416Z"
   },
   "75024": {
     "zip": "75024",
@@ -342,27 +254,19 @@
     "lat": 33.0752,
     "lng": -96.7843,
     "pop": 43041,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:15:44.814Z"
+    "probed_at": "2026-04-03T18:30:30.053Z"
   },
   "75025": {
     "zip": "75025",
@@ -371,27 +275,25 @@
     "lat": 33.0784,
     "lng": -96.7291,
     "pop": 54653,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:41:52.150Z"
+    "probed_at": "2026-04-03T17:34:48.677Z"
   },
   "75028": {
     "zip": "75028",
@@ -400,56 +302,26 @@
     "lat": 33.0383,
     "lng": -97.0745,
     "pop": 48641,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T06:05:28.042Z"
+    "probed_at": "2026-04-03T18:12:46.199Z"
   },
   "75032": {
     "zip": "75032",
     "city": "Zcta 75032",
-    "state": "TX",
-    "lat": 32.886,
-    "lng": -96.4095,
-    "pop": 33956,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:00:40.396Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T19:44:46.008Z"
   },
   "75034": {
     "zip": "75034",
@@ -458,27 +330,25 @@
     "lat": 33.1499,
     "lng": -96.8241,
     "pop": 116155,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:05:27.253Z"
+    "probed_at": "2026-04-03T16:34:56.355Z"
   },
   "75035": {
     "zip": "75035",
@@ -487,27 +357,25 @@
     "lat": 33.1377,
     "lng": -96.7524,
     "pop": 80269,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:11:10.148Z"
+    "probed_at": "2026-04-03T16:45:01.784Z"
   },
   "75038": {
     "zip": "75038",
@@ -516,27 +384,25 @@
     "lat": 32.8653,
     "lng": -96.9905,
     "pop": 29886,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:25:54.278Z"
+    "probed_at": "2026-04-03T20:31:37.382Z"
   },
   "75039": {
     "zip": "75039",
@@ -545,27 +411,25 @@
     "lat": 32.8697,
     "lng": -96.9389,
     "pop": 20627,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:32:58.563Z"
+    "probed_at": "2026-04-03T22:30:07.502Z"
   },
   "75040": {
     "zip": "75040",
@@ -574,27 +438,25 @@
     "lat": 32.9227,
     "lng": -96.6248,
     "pop": 61508,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:29:11.349Z"
+    "probed_at": "2026-04-03T17:13:08.924Z"
   },
   "75041": {
     "zip": "75041",
@@ -603,27 +465,19 @@
     "lat": 32.8794,
     "lng": -96.6411,
     "pop": 31250,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:15:14.721Z"
+    "probed_at": "2026-04-03T20:11:15.346Z"
   },
   "75042": {
     "zip": "75042",
@@ -632,27 +486,25 @@
     "lat": 32.9185,
     "lng": -96.6775,
     "pop": 37458,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:42:22.294Z"
+    "probed_at": "2026-04-03T19:18:42.159Z"
   },
   "75043": {
     "zip": "75043",
@@ -661,27 +513,25 @@
     "lat": 32.8565,
     "lng": -96.5999,
     "pop": 62721,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:26:20.847Z"
+    "probed_at": "2026-04-03T17:08:05.579Z"
   },
   "75044": {
     "zip": "75044",
@@ -690,27 +540,19 @@
     "lat": 32.9522,
     "lng": -96.6654,
     "pop": 45284,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:11:07.645Z"
+    "probed_at": "2026-04-03T18:22:50.745Z"
   },
   "75048": {
     "zip": "75048",
@@ -719,27 +561,19 @@
     "lat": 32.9643,
     "lng": -96.6012,
     "pop": 26062,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:51:53.797Z"
+    "probed_at": "2026-04-03T21:17:29.975Z"
   },
   "75050": {
     "zip": "75050",
@@ -748,27 +582,25 @@
     "lat": 32.7649,
     "lng": -97.0112,
     "pop": 43190,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:12:55.005Z"
+    "probed_at": "2026-04-03T18:26:40.553Z"
   },
   "75051": {
     "zip": "75051",
@@ -777,27 +609,25 @@
     "lat": 32.7115,
     "lng": -97.0069,
     "pop": 41317,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:21:46.501Z"
+    "probed_at": "2026-04-03T18:41:50.273Z"
   },
   "75052": {
     "zip": "75052",
@@ -806,27 +636,25 @@
     "lat": 32.6605,
     "lng": -97.0311,
     "pop": 94060,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:08:20.090Z"
+    "probed_at": "2026-04-03T16:39:58.757Z"
   },
   "75056": {
     "zip": "75056",
@@ -835,27 +663,25 @@
     "lat": 33.094,
     "lng": -96.8836,
     "pop": 59674,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:33:25.503Z"
+    "probed_at": "2026-04-03T17:20:42.772Z"
   },
   "75057": {
     "zip": "75057",
@@ -864,56 +690,26 @@
     "lat": 33.0532,
     "lng": -96.9999,
     "pop": 16670,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:00:01.751Z"
+    "probed_at": "2026-04-03T23:18:34.181Z"
   },
   "75058": {
     "zip": "75058",
     "city": "Gunter",
-    "state": "TX",
-    "lat": 33.4495,
-    "lng": -96.7341,
-    "pop": 3329,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T10:03:09.379Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T01:26:13.843Z"
   },
   "75060": {
     "zip": "75060",
@@ -922,27 +718,25 @@
     "lat": 32.8023,
     "lng": -96.9597,
     "pop": 49307,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:01:13.168Z"
+    "probed_at": "2026-04-03T18:06:25.661Z"
   },
   "75061": {
     "zip": "75061",
@@ -951,27 +745,25 @@
     "lat": 32.8267,
     "lng": -96.9633,
     "pop": 53983,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:46:06.160Z"
+    "probed_at": "2026-04-03T17:42:23.725Z"
   },
   "75062": {
     "zip": "75062",
@@ -980,27 +772,25 @@
     "lat": 32.8479,
     "lng": -96.974,
     "pop": 49296,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:02:38.592Z"
+    "probed_at": "2026-04-03T18:08:57.652Z"
   },
   "75063": {
     "zip": "75063",
@@ -1009,27 +799,25 @@
     "lat": 32.9247,
     "lng": -96.9598,
     "pop": 39831,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:28:52.498Z"
+    "probed_at": "2026-04-03T18:53:13.715Z"
   },
   "75065": {
     "zip": "75065",
@@ -1038,27 +826,19 @@
     "lat": 33.1219,
     "lng": -97.0237,
     "pop": 13026,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:15:15.533Z"
+    "probed_at": "2026-04-03T23:44:08.146Z"
   },
   "75067": {
     "zip": "75067",
@@ -1067,85 +847,39 @@
     "lat": 33.0198,
     "lng": -96.9925,
     "pop": 67197,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:24:56.362Z"
+    "probed_at": "2026-04-03T17:05:34.114Z"
   },
   "75068": {
     "zip": "75068",
     "city": "Lakewood village",
-    "state": "TX",
-    "lat": 33.1768,
-    "lng": -96.9583,
-    "pop": 69656,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T05:20:41.070Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T16:57:58.763Z"
   },
   "75069": {
     "zip": "75069",
     "city": "Mc kinney",
-    "state": "TX",
-    "lat": 33.1976,
-    "lng": -96.6153,
-    "pop": 37582,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:40:57.335Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T19:16:08.744Z"
   },
   "75070": {
     "zip": "75070",
@@ -1154,27 +888,25 @@
     "lat": 33.1976,
     "lng": -96.6153,
     "pop": 109085,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:06:52.343Z"
+    "probed_at": "2026-04-03T16:37:27.844Z"
   },
   "75074": {
     "zip": "75074",
@@ -1183,27 +915,25 @@
     "lat": 33.0277,
     "lng": -96.6777,
     "pop": 53459,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:50:21.671Z"
+    "probed_at": "2026-04-03T17:50:00.102Z"
   },
   "75075": {
     "zip": "75075",
@@ -1212,27 +942,25 @@
     "lat": 33.025,
     "lng": -96.7397,
     "pop": 37310,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:43:47.071Z"
+    "probed_at": "2026-04-03T19:21:13.727Z"
   },
   "75077": {
     "zip": "75077",
@@ -1241,56 +969,32 @@
     "lat": 33.0775,
     "lng": -97.0704,
     "pop": 38764,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:36:18.403Z"
+    "probed_at": "2026-04-03T19:07:09.681Z"
   },
   "75078": {
     "zip": "75078",
     "city": "Prosper",
-    "state": "TX",
-    "lat": 33.2362,
-    "lng": -96.7954,
-    "pop": 34300,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:59:17.285Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T19:43:19.595Z"
   },
   "75080": {
     "zip": "75080",
@@ -1299,27 +1003,25 @@
     "lat": 32.966,
     "lng": -96.7452,
     "pop": 53708,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:47:31.250Z"
+    "probed_at": "2026-04-03T17:44:56.374Z"
   },
   "75081": {
     "zip": "75081",
@@ -1328,27 +1030,25 @@
     "lat": 32.9462,
     "lng": -96.7058,
     "pop": 40825,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:27:27.114Z"
+    "probed_at": "2026-04-03T18:50:41.787Z"
   },
   "75082": {
     "zip": "75082",
@@ -1357,172 +1057,54 @@
     "lat": 32.9865,
     "lng": -96.686,
     "pop": 23418,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:09:42.072Z"
+    "probed_at": "2026-04-03T21:48:10.157Z"
   },
   "75087": {
     "zip": "75087",
     "city": "Heath",
-    "state": "TX",
-    "lat": 32.9492,
-    "lng": -96.4418,
-    "pop": 36718,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:50:51.591Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T19:30:23.024Z"
   },
   "75088": {
     "zip": "75088",
     "city": "Rowlett",
-    "state": "TX",
-    "lat": 32.9031,
-    "lng": -96.5472,
-    "pop": 26823,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:44:47.636Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T21:06:00.526Z"
   },
   "75089": {
     "zip": "75089",
     "city": "Zcta 75089",
-    "state": "TX",
-    "lat": 32.9346,
-    "lng": -96.5544,
-    "pop": 37310,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:45:11.835Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T19:22:38.977Z"
   },
   "75090": {
     "zip": "75090",
     "city": "Sherman",
-    "state": "TX",
-    "lat": 33.6435,
-    "lng": -96.6075,
-    "pop": 25732,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:53:17.731Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T21:18:53.520Z"
   },
   "75092": {
     "zip": "75092",
     "city": "Sherman",
-    "state": "TX",
-    "lat": 33.6372,
-    "lng": -96.6184,
-    "pop": 26297,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:49:03.226Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T21:12:26.459Z"
   },
   "75093": {
     "zip": "75093",
@@ -1531,85 +1113,39 @@
     "lat": 33.0299,
     "lng": -96.7889,
     "pop": 47908,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:06:53.061Z"
+    "probed_at": "2026-04-03T18:15:17.405Z"
   },
   "75094": {
     "zip": "75094",
     "city": "Murphy",
-    "state": "TX",
-    "lat": 33.0148,
-    "lng": -96.6189,
-    "pop": 23408,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T08:11:07.352Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T21:49:35.829Z"
   },
   "75098": {
     "zip": "75098",
     "city": "Wylie",
-    "state": "TX",
-    "lat": 33.0041,
-    "lng": -96.5394,
-    "pop": 58717,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T05:36:13.505Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T17:24:40.326Z"
   },
   "75101": {
     "zip": "75101",
@@ -1630,7 +1166,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:27:00.551Z"
+    "probed_at": "2026-04-04T02:26:26.860Z"
   },
   "75102": {
     "zip": "75102",
@@ -1651,7 +1187,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:18:00.828Z"
+    "probed_at": "2026-04-04T02:02:35.441Z"
   },
   "75104": {
     "zip": "75104",
@@ -1660,27 +1196,25 @@
     "lat": 32.5885,
     "lng": -96.9438,
     "pop": 48821,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:04:03.271Z"
+    "probed_at": "2026-04-03T18:11:29.479Z"
   },
   "75105": {
     "zip": "75105",
@@ -1701,7 +1235,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:30:26.632Z"
+    "probed_at": "2026-04-04T02:37:34.044Z"
   },
   "75110": {
     "zip": "75110",
@@ -1722,7 +1256,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:26:17.803Z"
+    "probed_at": "2026-04-03T20:32:54.737Z"
   },
   "75114": {
     "zip": "75114",
@@ -1743,7 +1277,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:37:43.142Z"
+    "probed_at": "2026-04-04T00:35:52.860Z"
   },
   "75115": {
     "zip": "75115",
@@ -1752,27 +1286,25 @@
     "lat": 32.6041,
     "lng": -96.8653,
     "pop": 53118,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:51:46.227Z"
+    "probed_at": "2026-04-03T17:52:30.312Z"
   },
   "75116": {
     "zip": "75116",
@@ -1781,27 +1313,25 @@
     "lat": 32.6587,
     "lng": -96.9114,
     "pop": 19755,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:37:37.543Z"
+    "probed_at": "2026-04-03T22:40:12.825Z"
   },
   "75119": {
     "zip": "75119",
@@ -1822,7 +1352,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:31:19.370Z"
+    "probed_at": "2026-04-03T20:43:12.869Z"
   },
   "75124": {
     "zip": "75124",
@@ -1843,15 +1373,22 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:47:45.057Z"
+    "probed_at": "2026-04-04T00:56:26.649Z"
   },
   "75125": {
     "zip": "75125",
     "city": "Ferris",
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:23:01.429Z"
+  },
+  "75126": {
+    "zip": "75126",
+    "city": "Forney",
     "state": "TX",
-    "lat": 32.5223,
-    "lng": -96.6643,
-    "pop": 7664,
+    "lat": 32.7491,
+    "lng": -96.4598,
+    "pop": 52078,
     "status": "none",
     "offers": [],
     "bananas": {
@@ -1864,40 +1401,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:35:04.610Z"
-  },
-  "75126": {
-    "zip": "75126",
-    "city": "Forney",
-    "state": "TX",
-    "lat": 32.7491,
-    "lng": -96.4598,
-    "pop": 52078,
-    "status": "full_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "probed_at": "2026-04-02T05:56:59.114Z"
+    "probed_at": "2026-04-03T17:58:49.636Z"
   },
   "75132": {
     "zip": "75132",
@@ -1918,7 +1422,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:12:31.237Z"
+    "probed_at": "2026-04-04T01:46:02.466Z"
   },
   "75134": {
     "zip": "75134",
@@ -1927,27 +1431,19 @@
     "lat": 32.6161,
     "lng": -96.783,
     "pop": 20759,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:29:46.653Z"
+    "probed_at": "2026-04-03T22:23:49.263Z"
   },
   "75135": {
     "zip": "75135",
@@ -1961,14 +1457,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_cart"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:36:13.135Z"
+    "probed_at": "2026-04-04T00:29:48.532Z"
   },
   "75137": {
     "zip": "75137",
@@ -1977,27 +1473,25 @@
     "lat": 32.6347,
     "lng": -96.9113,
     "pop": 19341,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:40:27.883Z"
+    "probed_at": "2026-04-03T22:44:10.896Z"
   },
   "75141": {
     "zip": "75141",
@@ -2006,27 +1500,19 @@
     "lat": 32.6396,
     "lng": -96.707,
     "pop": 5814,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:43:05.340Z"
+    "probed_at": "2026-04-04T00:47:12.549Z"
   },
   "75142": {
     "zip": "75142",
@@ -2047,7 +1533,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:23:18.598Z"
+    "probed_at": "2026-04-03T22:12:19.737Z"
   },
   "75143": {
     "zip": "75143",
@@ -2068,7 +1554,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:11:04.511Z"
+    "probed_at": "2026-04-03T23:37:54.884Z"
   },
   "75144": {
     "zip": "75144",
@@ -2089,7 +1575,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:01:21.544Z"
+    "probed_at": "2026-04-04T01:23:32.190Z"
   },
   "75146": {
     "zip": "75146",
@@ -2098,27 +1584,19 @@
     "lat": 32.5914,
     "lng": -96.7728,
     "pop": 20663,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:31:33.546Z"
+    "probed_at": "2026-04-03T22:27:36.350Z"
   },
   "75147": {
     "zip": "75147",
@@ -2139,7 +1617,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:36:59.433Z"
+    "probed_at": "2026-04-04T00:33:21.447Z"
   },
   "75148": {
     "zip": "75148",
@@ -2160,7 +1638,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:38:04.470Z"
+    "probed_at": "2026-04-04T00:37:09.235Z"
   },
   "75149": {
     "zip": "75149",
@@ -2169,27 +1647,25 @@
     "lat": 32.7678,
     "lng": -96.6082,
     "pop": 57758,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:37:38.349Z"
+    "probed_at": "2026-04-03T17:27:13.289Z"
   },
   "75150": {
     "zip": "75150",
@@ -2198,27 +1674,25 @@
     "lat": 32.8154,
     "lng": -96.6307,
     "pop": 61863,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:27:45.772Z"
+    "probed_at": "2026-04-03T17:10:36.992Z"
   },
   "75152": {
     "zip": "75152",
@@ -2239,7 +1713,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:47:21.828Z"
+    "probed_at": "2026-04-04T00:55:10.579Z"
   },
   "75153": {
     "zip": "75153",
@@ -2260,7 +1734,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:27:23.146Z"
+    "probed_at": "2026-04-04T02:27:40.042Z"
   },
   "75154": {
     "zip": "75154",
@@ -2281,7 +1755,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T06:20:21.808Z"
+    "probed_at": "2026-04-03T18:39:18.921Z"
   },
   "75155": {
     "zip": "75155",
@@ -2302,7 +1776,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:04:38.361Z"
+    "probed_at": "2026-04-04T01:31:20.696Z"
   },
   "75158": {
     "zip": "75158",
@@ -2323,36 +1797,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:56:16.606Z"
+    "probed_at": "2026-04-04T01:10:55.398Z"
   },
   "75159": {
     "zip": "75159",
     "city": "Seagoville",
-    "state": "TX",
-    "lat": 32.6525,
-    "lng": -96.558,
-    "pop": 20857,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T08:28:21.130Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T22:21:18.201Z"
   },
   "75160": {
     "zip": "75160",
@@ -2373,7 +1825,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:59:42.943Z"
+    "probed_at": "2026-04-03T21:30:29.005Z"
   },
   "75161": {
     "zip": "75161",
@@ -2387,14 +1839,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_cart"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:35:50.296Z"
+    "probed_at": "2026-04-04T00:27:32.127Z"
   },
   "75163": {
     "zip": "75163",
@@ -2408,14 +1860,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
     "strawberries": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
-    "probed_at": "2026-04-02T10:08:58.571Z"
+    "probed_at": "2026-04-04T01:37:51.653Z"
   },
   "75164": {
     "zip": "75164",
@@ -2436,7 +1888,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:24:25.793Z"
+    "probed_at": "2026-04-04T02:20:16.692Z"
   },
   "75165": {
     "zip": "75165",
@@ -2457,36 +1909,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T06:11:30.284Z"
+    "probed_at": "2026-04-03T18:24:09.507Z"
   },
   "75166": {
     "zip": "75166",
     "city": "Lavon",
-    "state": "TX",
-    "lat": 33.0139,
-    "lng": -96.4377,
-    "pop": 4624,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:55:10.467Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T01:07:02.634Z"
   },
   "75167": {
     "zip": "75167",
@@ -2507,7 +1937,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:19:34.584Z"
+    "probed_at": "2026-04-03T23:54:20.261Z"
   },
   "75169": {
     "zip": "75169",
@@ -2528,7 +1958,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:15:38.432Z"
+    "probed_at": "2026-04-03T23:45:25.647Z"
   },
   "75172": {
     "zip": "75172",
@@ -2537,56 +1967,35 @@
     "lat": 32.5981,
     "lng": -96.6838,
     "pop": 4814,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
       "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
         "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:50:34.356Z"
+    "probed_at": "2026-04-04T01:00:22.206Z"
   },
   "75173": {
     "zip": "75173",
     "city": "Nevada",
-    "state": "TX",
-    "lat": 33.0593,
-    "lng": -96.3877,
-    "pop": 4953,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:49:10.079Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:57:50.167Z"
   },
   "75180": {
     "zip": "75180",
@@ -2595,27 +2004,19 @@
     "lat": 32.7287,
     "lng": -96.6228,
     "pop": 23939,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:04:00.311Z"
+    "probed_at": "2026-04-03T21:38:05.637Z"
   },
   "75181": {
     "zip": "75181",
@@ -2624,27 +2025,19 @@
     "lat": 32.7272,
     "lng": -96.5669,
     "pop": 25264,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:54:42.284Z"
+    "probed_at": "2026-04-03T21:21:26.037Z"
   },
   "75182": {
     "zip": "75182",
@@ -2653,27 +2046,19 @@
     "lat": 32.797,
     "lng": -96.5616,
     "pop": 6199,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:41:18.053Z"
+    "probed_at": "2026-04-04T00:43:25.319Z"
   },
   "75189": {
     "zip": "75189",
@@ -2694,7 +2079,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:18:27.792Z"
+    "probed_at": "2026-04-03T20:17:47.628Z"
   },
   "75201": {
     "zip": "75201",
@@ -2703,27 +2088,19 @@
     "lat": 32.7904,
     "lng": -96.8044,
     "pop": 18032,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:48:17.076Z"
+    "probed_at": "2026-04-03T22:58:12.637Z"
   },
   "75202": {
     "zip": "75202",
@@ -2732,27 +2109,19 @@
     "lat": 32.7781,
     "lng": -96.8054,
     "pop": 2739,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T10:07:50.495Z"
+    "probed_at": "2026-04-04T01:36:31.381Z"
   },
   "75203": {
     "zip": "75203",
@@ -2761,27 +2130,23 @@
     "lat": 32.746,
     "lng": -96.807,
     "pop": 18295,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:46:53.806Z"
+    "probed_at": "2026-04-03T22:55:40.763Z"
   },
   "75204": {
     "zip": "75204",
@@ -2790,27 +2155,25 @@
     "lat": 32.8038,
     "lng": -96.7851,
     "pop": 32032,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:10:59.295Z"
+    "probed_at": "2026-04-03T20:03:40.840Z"
   },
   "75205": {
     "zip": "75205",
@@ -2819,27 +2182,19 @@
     "lat": 32.826,
     "lng": -96.7843,
     "pop": 24726,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:57:32.364Z"
+    "probed_at": "2026-04-03T21:25:24.292Z"
   },
   "75206": {
     "zip": "75206",
@@ -2848,27 +2203,25 @@
     "lat": 32.831,
     "lng": -96.7692,
     "pop": 39653,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:30:18.099Z"
+    "probed_at": "2026-04-03T18:55:45.682Z"
   },
   "75207": {
     "zip": "75207",
@@ -2877,27 +2230,19 @@
     "lat": 32.7939,
     "lng": -96.8319,
     "pop": 7715,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:34:40.221Z"
+    "probed_at": "2026-04-04T00:21:37.563Z"
   },
   "75208": {
     "zip": "75208",
@@ -2906,27 +2251,25 @@
     "lat": 32.7492,
     "lng": -96.8389,
     "pop": 30064,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:24:05.716Z"
+    "probed_at": "2026-04-03T20:27:51.168Z"
   },
   "75209": {
     "zip": "75209",
@@ -2935,27 +2278,19 @@
     "lat": 32.8456,
     "lng": -96.826,
     "pop": 14558,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:10:41.916Z"
+    "probed_at": "2026-04-03T23:36:36.114Z"
   },
   "75210": {
     "zip": "75210",
@@ -2964,27 +2299,19 @@
     "lat": 32.7699,
     "lng": -96.743,
     "pop": 9504,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:26:48.645Z"
+    "probed_at": "2026-04-04T00:08:38.749Z"
   },
   "75211": {
     "zip": "75211",
@@ -2993,27 +2320,25 @@
     "lat": 32.7319,
     "lng": -96.9057,
     "pop": 77920,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:12:34.352Z"
+    "probed_at": "2026-04-03T16:47:32.629Z"
   },
   "75212": {
     "zip": "75212",
@@ -3022,27 +2347,25 @@
     "lat": 32.7829,
     "lng": -96.8714,
     "pop": 28017,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:37:20.409Z"
+    "probed_at": "2026-04-03T20:54:31.768Z"
   },
   "75214": {
     "zip": "75214",
@@ -3051,27 +2374,25 @@
     "lat": 32.8248,
     "lng": -96.7498,
     "pop": 34658,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:57:52.044Z"
+    "probed_at": "2026-04-03T19:41:54.186Z"
   },
   "75215": {
     "zip": "75215",
@@ -3080,27 +2401,19 @@
     "lat": 32.7582,
     "lng": -96.7623,
     "pop": 17184,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:52:56.403Z"
+    "probed_at": "2026-04-03T23:07:02.479Z"
   },
   "75216": {
     "zip": "75216",
@@ -3109,27 +2422,25 @@
     "lat": 32.7086,
     "lng": -96.7955,
     "pop": 54253,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:43:17.181Z"
+    "probed_at": "2026-04-03T17:37:20.430Z"
   },
   "75217": {
     "zip": "75217",
@@ -3138,27 +2449,25 @@
     "lat": 32.7244,
     "lng": -96.6755,
     "pop": 86811,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:09:45.007Z"
+    "probed_at": "2026-04-03T16:42:29.983Z"
   },
   "75218": {
     "zip": "75218",
@@ -3167,27 +2476,19 @@
     "lat": 32.8463,
     "lng": -96.6972,
     "pop": 22712,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:18:36.683Z"
+    "probed_at": "2026-04-03T22:03:30.511Z"
   },
   "75219": {
     "zip": "75219",
@@ -3196,27 +2497,25 @@
     "lat": 32.8132,
     "lng": -96.8142,
     "pop": 24038,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:02:34.389Z"
+    "probed_at": "2026-04-03T21:35:34.213Z"
   },
   "75220": {
     "zip": "75220",
@@ -3225,27 +2524,25 @@
     "lat": 32.8681,
     "lng": -96.8622,
     "pop": 41110,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:24:36.397Z"
+    "probed_at": "2026-04-03T18:45:40.061Z"
   },
   "75223": {
     "zip": "75223",
@@ -3254,27 +2551,25 @@
     "lat": 32.7942,
     "lng": -96.7475,
     "pop": 15002,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:07:31.650Z"
+    "probed_at": "2026-04-03T23:30:16.748Z"
   },
   "75224": {
     "zip": "75224",
@@ -3283,27 +2578,25 @@
     "lat": 32.7114,
     "lng": -96.8387,
     "pop": 37602,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:39:07.418Z"
+    "probed_at": "2026-04-03T19:12:11.854Z"
   },
   "75225": {
     "zip": "75225",
@@ -3312,27 +2605,19 @@
     "lat": 32.8628,
     "lng": -96.7918,
     "pop": 22108,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:21:28.673Z"
+    "probed_at": "2026-04-03T22:08:33.614Z"
   },
   "75226": {
     "zip": "75226",
@@ -3341,27 +2626,19 @@
     "lat": 32.7887,
     "lng": -96.7676,
     "pop": 4774,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:53:23.637Z"
+    "probed_at": "2026-04-04T01:04:20.089Z"
   },
   "75227": {
     "zip": "75227",
@@ -3370,27 +2647,25 @@
     "lat": 32.7672,
     "lng": -96.6836,
     "pop": 60632,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:30:35.958Z"
+    "probed_at": "2026-04-03T17:15:39.703Z"
   },
   "75228": {
     "zip": "75228",
@@ -3399,27 +2674,25 @@
     "lat": 32.825,
     "lng": -96.6784,
     "pop": 75303,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:15:24.564Z"
+    "probed_at": "2026-04-03T16:52:35.950Z"
   },
   "75229": {
     "zip": "75229",
@@ -3428,27 +2701,25 @@
     "lat": 32.8958,
     "lng": -96.8588,
     "pop": 32739,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:09:09.541Z"
+    "probed_at": "2026-04-03T19:58:38.493Z"
   },
   "75230": {
     "zip": "75230",
@@ -3457,27 +2728,19 @@
     "lat": 32.8999,
     "lng": -96.7897,
     "pop": 27402,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:40:30.605Z"
+    "probed_at": "2026-04-03T21:00:49.518Z"
   },
   "75231": {
     "zip": "75231",
@@ -3486,27 +2749,25 @@
     "lat": 32.8756,
     "lng": -96.7495,
     "pop": 40987,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:26:02.402Z"
+    "probed_at": "2026-04-03T18:48:11.326Z"
   },
   "75232": {
     "zip": "75232",
@@ -3515,27 +2776,19 @@
     "lat": 32.6647,
     "lng": -96.8384,
     "pop": 32823,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:07:44.340Z"
+    "probed_at": "2026-04-03T19:56:08.368Z"
   },
   "75233": {
     "zip": "75233",
@@ -3544,27 +2797,19 @@
     "lat": 32.7046,
     "lng": -96.8725,
     "pop": 16920,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:54:21.505Z"
+    "probed_at": "2026-04-03T23:09:33.738Z"
   },
   "75234": {
     "zip": "75234",
@@ -3573,27 +2818,25 @@
     "lat": 32.9245,
     "lng": -96.8938,
     "pop": 39644,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:31:42.888Z"
+    "probed_at": "2026-04-03T18:58:17.460Z"
   },
   "75235": {
     "zip": "75235",
@@ -3602,27 +2845,25 @@
     "lat": 32.8252,
     "lng": -96.8388,
     "pop": 19198,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:41:52.720Z"
+    "probed_at": "2026-04-03T22:46:42.489Z"
   },
   "75236": {
     "zip": "75236",
@@ -3631,27 +2872,19 @@
     "lat": 32.69,
     "lng": -96.9177,
     "pop": 16920,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:55:46.410Z"
+    "probed_at": "2026-04-03T23:12:04.776Z"
   },
   "75237": {
     "zip": "75237",
@@ -3660,27 +2893,25 @@
     "lat": 32.659,
     "lng": -96.8765,
     "pop": 21607,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:26:08.618Z"
+    "probed_at": "2026-04-03T22:17:22.133Z"
   },
   "75238": {
     "zip": "75238",
@@ -3689,27 +2920,25 @@
     "lat": 32.877,
     "lng": -96.708,
     "pop": 33396,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:04:54.270Z"
+    "probed_at": "2026-04-03T19:52:22.260Z"
   },
   "75240": {
     "zip": "75240",
@@ -3718,27 +2947,19 @@
     "lat": 32.9374,
     "lng": -96.7872,
     "pop": 26841,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:43:22.085Z"
+    "probed_at": "2026-04-03T21:04:37.172Z"
   },
   "75241": {
     "zip": "75241",
@@ -3747,27 +2968,19 @@
     "lat": 32.6722,
     "lng": -96.7774,
     "pop": 30863,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:18:04.082Z"
+    "probed_at": "2026-04-03T20:16:31.591Z"
   },
   "75243": {
     "zip": "75243",
@@ -3776,27 +2989,25 @@
     "lat": 32.9103,
     "lng": -96.7285,
     "pop": 68253,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:23:30.575Z"
+    "probed_at": "2026-04-03T17:03:03.159Z"
   },
   "75244": {
     "zip": "75244",
@@ -3805,27 +3016,19 @@
     "lat": 32.9322,
     "lng": -96.8353,
     "pop": 13552,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:13:52.408Z"
+    "probed_at": "2026-04-03T23:42:58.605Z"
   },
   "75246": {
     "zip": "75246",
@@ -3834,27 +3037,19 @@
     "lat": 32.7948,
     "lng": -96.7697,
     "pop": 2553,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T10:10:23.506Z"
+    "probed_at": "2026-04-04T01:40:19.327Z"
   },
   "75247": {
     "zip": "75247",
@@ -3863,27 +3058,19 @@
     "lat": 32.8152,
     "lng": -96.8703,
     "pop": 772,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T10:25:51.357Z"
+    "probed_at": "2026-04-04T02:22:46.508Z"
   },
   "75248": {
     "zip": "75248",
@@ -3892,19 +3079,25 @@
     "lat": 32.9682,
     "lng": -96.7942,
     "pop": 37602,
-    "status": "none",
-    "offers": [],
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
     "bananas": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:39:31.765Z"
+    "probed_at": "2026-04-03T19:14:43.509Z"
   },
   "75249": {
     "zip": "75249",
@@ -3913,27 +3106,25 @@
     "lat": 32.636,
     "lng": -96.9493,
     "pop": 18374,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:44:03.816Z"
+    "probed_at": "2026-04-03T22:51:46.631Z"
   },
   "75251": {
     "zip": "75251",
@@ -3942,27 +3133,19 @@
     "lat": 32.9189,
     "lng": -96.7751,
     "pop": 3750,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:59:51.377Z"
+    "probed_at": "2026-04-04T01:18:27.847Z"
   },
   "75252": {
     "zip": "75252",
@@ -3971,19 +3154,19 @@
     "lat": 32.9968,
     "lng": -96.7921,
     "pop": 27880,
-    "status": "none",
+    "status": "full_fresh",
     "offers": [],
     "bananas": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:37:40.083Z"
+    "probed_at": "2026-04-03T20:57:01.889Z"
   },
   "75253": {
     "zip": "75253",
@@ -3992,27 +3175,19 @@
     "lat": 32.6833,
     "lng": -96.5964,
     "pop": 24666,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:58:57.517Z"
+    "probed_at": "2026-04-03T21:27:55.635Z"
   },
   "75287": {
     "zip": "75287",
@@ -4021,27 +3196,25 @@
     "lat": 33.0005,
     "lng": -96.8314,
     "pop": 55060,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:40:26.878Z"
+    "probed_at": "2026-04-03T17:32:16.835Z"
   },
   "75401": {
     "zip": "75401",
@@ -4062,7 +3235,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:30:09.134Z"
+    "probed_at": "2026-04-03T22:25:05.718Z"
   },
   "75402": {
     "zip": "75402",
@@ -4083,65 +3256,21 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:51:31.062Z"
+    "probed_at": "2026-04-03T23:04:31.134Z"
   },
   "75407": {
     "zip": "75407",
     "city": "Princeton",
-    "state": "TX",
-    "lat": 33.1555,
-    "lng": -96.4981,
-    "pop": 18371,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T08:45:28.282Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T22:53:10.219Z"
   },
   "75409": {
     "zip": "75409",
     "city": "Anna",
-    "state": "TX",
-    "lat": 33.3445,
-    "lng": -96.5639,
-    "pop": 16750,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T08:58:36.484Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T23:16:01.375Z"
   },
   "75413": {
     "zip": "75413",
@@ -4162,7 +3291,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:29:20.934Z"
+    "probed_at": "2026-04-04T02:33:50.789Z"
   },
   "75414": {
     "zip": "75414",
@@ -4183,7 +3312,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:01:44.487Z"
+    "probed_at": "2026-04-04T01:24:48.689Z"
   },
   "75418": {
     "zip": "75418",
@@ -4204,7 +3333,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:09:18.516Z"
+    "probed_at": "2026-04-03T23:34:04.076Z"
   },
   "75423": {
     "zip": "75423",
@@ -4225,36 +3354,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:00:57.595Z"
+    "probed_at": "2026-04-04T01:22:15.303Z"
   },
   "75424": {
     "zip": "75424",
     "city": "Blue ridge",
-    "state": "TX",
-    "lat": 33.3061,
-    "lng": -96.3901,
-    "pop": 2891,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T10:06:26.096Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T01:34:00.372Z"
   },
   "75438": {
     "zip": "75438",
@@ -4275,7 +3382,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:23:16.912Z"
+    "probed_at": "2026-04-04T02:16:34.149Z"
   },
   "75439": {
     "zip": "75439",
@@ -4296,36 +3403,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:20:17.904Z"
+    "probed_at": "2026-04-04T02:10:11.873Z"
   },
   "75442": {
     "zip": "75442",
     "city": "Farmersville",
-    "state": "TX",
-    "lat": 33.1659,
-    "lng": -96.3686,
-    "pop": 9558,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:25:23.840Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:06:06.454Z"
   },
   "75447": {
     "zip": "75447",
@@ -4346,7 +3431,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:19:53.577Z"
+    "probed_at": "2026-04-04T02:08:54.703Z"
   },
   "75452": {
     "zip": "75452",
@@ -4367,65 +3452,21 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:53:46.055Z"
+    "probed_at": "2026-04-04T01:05:37.746Z"
   },
   "75454": {
     "zip": "75454",
     "city": "Melissa",
-    "state": "TX",
-    "lat": 33.2841,
-    "lng": -96.574,
-    "pop": 11848,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:20:59.661Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T23:55:46.114Z"
   },
   "75459": {
     "zip": "75459",
     "city": "Howe",
-    "state": "TX",
-    "lat": 33.5311,
-    "lng": -96.6777,
-    "pop": 5260,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:46:59.115Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:53:52.431Z"
   },
   "75474": {
     "zip": "75474",
@@ -4446,7 +3487,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:03:16.404Z"
+    "probed_at": "2026-04-03T23:23:47.985Z"
   },
   "75475": {
     "zip": "75475",
@@ -4467,7 +3508,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:31:14.294Z"
+    "probed_at": "2026-04-04T02:40:03.753Z"
   },
   "75476": {
     "zip": "75476",
@@ -4488,7 +3529,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:22:52.292Z"
+    "probed_at": "2026-04-04T02:15:18.372Z"
   },
   "75479": {
     "zip": "75479",
@@ -4509,7 +3550,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:15:02.488Z"
+    "probed_at": "2026-04-04T01:52:23.870Z"
   },
   "75488": {
     "zip": "75488",
@@ -4530,36 +3571,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:26:37.429Z"
+    "probed_at": "2026-04-04T02:25:12.457Z"
   },
   "75489": {
     "zip": "75489",
     "city": "Tom bean",
-    "state": "TX",
-    "lat": 33.5193,
-    "lng": -96.4843,
-    "pop": 1110,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T10:21:42.221Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T02:11:35.383Z"
   },
   "75490": {
     "zip": "75490",
@@ -4573,43 +3592,21 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
     "strawberries": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
-    "probed_at": "2026-04-02T10:08:35.114Z"
+    "probed_at": "2026-04-04T01:37:24.628Z"
   },
   "75491": {
     "zip": "75491",
     "city": "Whitewright",
-    "state": "TX",
-    "lat": 33.519,
-    "lng": -96.451,
-    "pop": 4781,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:51:59.014Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T01:01:47.673Z"
   },
   "75492": {
     "zip": "75492",
@@ -4630,36 +3627,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:28:33.844Z"
+    "probed_at": "2026-04-04T02:31:22.396Z"
   },
   "75495": {
     "zip": "75495",
     "city": "Van alstyne",
-    "state": "TX",
-    "lat": 33.4292,
-    "lng": -96.5486,
-    "pop": 8621,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:30:25.202Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:15:08.780Z"
   },
   "75496": {
     "zip": "75496",
@@ -4680,7 +3655,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:00:34.852Z"
+    "probed_at": "2026-04-04T01:20:57.851Z"
   },
   "76001": {
     "zip": "76001",
@@ -4689,27 +3664,25 @@
     "lat": 32.6289,
     "lng": -97.1517,
     "pop": 37231,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:46:36.848Z"
+    "probed_at": "2026-04-03T19:25:11.040Z"
   },
   "76002": {
     "zip": "76002",
@@ -4718,27 +3691,25 @@
     "lat": 32.6255,
     "lng": -97.0784,
     "pop": 36302,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:53:39.128Z"
+    "probed_at": "2026-04-03T19:34:19.858Z"
   },
   "76006": {
     "zip": "76006",
@@ -4747,27 +3718,25 @@
     "lat": 32.7785,
     "lng": -97.0834,
     "pop": 24057,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:01:08.695Z"
+    "probed_at": "2026-04-03T21:33:02.330Z"
   },
   "76008": {
     "zip": "76008",
@@ -4776,56 +3745,32 @@
     "lat": 32.7004,
     "lng": -97.6039,
     "pop": 20288,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:34:22.538Z"
+    "probed_at": "2026-04-03T22:32:38.665Z"
   },
   "76009": {
     "zip": "76009",
     "city": "Alvarado",
-    "state": "TX",
-    "lat": 32.4395,
-    "lng": -97.213,
-    "pop": 19618,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T08:39:02.472Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T22:41:38.013Z"
   },
   "76010": {
     "zip": "76010",
@@ -4834,27 +3779,25 @@
     "lat": 32.7204,
     "lng": -97.0826,
     "pop": 59526,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:34:50.257Z"
+    "probed_at": "2026-04-03T17:23:14.952Z"
   },
   "76011": {
     "zip": "76011",
@@ -4863,27 +3806,25 @@
     "lat": 32.7582,
     "lng": -97.1003,
     "pop": 22878,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:17:11.000Z"
+    "probed_at": "2026-04-03T22:00:58.141Z"
   },
   "76012": {
     "zip": "76012",
@@ -4892,27 +3833,25 @@
     "lat": 32.754,
     "lng": -97.1348,
     "pop": 26730,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:46:12.783Z"
+    "probed_at": "2026-04-03T21:08:33.409Z"
   },
   "76013": {
     "zip": "76013",
@@ -4921,27 +3860,25 @@
     "lat": 32.7199,
     "lng": -97.1442,
     "pop": 34763,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:56:28.515Z"
+    "probed_at": "2026-04-03T19:39:21.964Z"
   },
   "76014": {
     "zip": "76014",
@@ -4950,27 +3887,25 @@
     "lat": 32.6954,
     "lng": -97.0876,
     "pop": 33289,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:06:19.378Z"
+    "probed_at": "2026-04-03T19:54:53.289Z"
   },
   "76015": {
     "zip": "76015",
@@ -4979,27 +3914,19 @@
     "lat": 32.6931,
     "lng": -97.1347,
     "pop": 17773,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:49:42.644Z"
+    "probed_at": "2026-04-03T23:00:43.367Z"
   },
   "76016": {
     "zip": "76016",
@@ -5008,27 +3935,25 @@
     "lat": 32.6889,
     "lng": -97.1905,
     "pop": 31705,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:13:49.783Z"
+    "probed_at": "2026-04-03T20:08:43.975Z"
   },
   "76017": {
     "zip": "76017",
@@ -5037,27 +3962,25 @@
     "lat": 32.6555,
     "lng": -97.1599,
     "pop": 46312,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:09:42.571Z"
+    "probed_at": "2026-04-03T18:20:18.902Z"
   },
   "76018": {
     "zip": "76018",
@@ -5066,27 +3989,25 @@
     "lat": 32.6548,
     "lng": -97.092,
     "pop": 28353,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:35:55.339Z"
+    "probed_at": "2026-04-03T20:52:00.928Z"
   },
   "76020": {
     "zip": "76020",
@@ -5095,27 +4016,25 @@
     "lat": 32.9035,
     "lng": -97.5412,
     "pop": 30487,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:21:18.026Z"
+    "probed_at": "2026-04-03T20:22:50.018Z"
   },
   "76021": {
     "zip": "76021",
@@ -5124,27 +4043,25 @@
     "lat": 32.8536,
     "lng": -97.1358,
     "pop": 35168,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:55:03.539Z"
+    "probed_at": "2026-04-03T19:36:49.980Z"
   },
   "76022": {
     "zip": "76022",
@@ -5153,27 +4070,19 @@
     "lat": 32.8297,
     "lng": -97.1454,
     "pop": 13945,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:12:29.243Z"
+    "probed_at": "2026-04-03T23:40:26.675Z"
   },
   "76023": {
     "zip": "76023",
@@ -5187,14 +4096,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_cart"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:36:36.126Z"
+    "probed_at": "2026-04-04T00:32:03.588Z"
   },
   "76028": {
     "zip": "76028",
@@ -5203,27 +4112,28 @@
     "lat": 32.5316,
     "lng": -97.309,
     "pop": 72493,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
       "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
         "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:19:16.495Z"
+    "probed_at": "2026-04-03T16:56:33.194Z"
   },
   "76031": {
     "zip": "76031",
@@ -5244,7 +4154,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:42:39.231Z"
+    "probed_at": "2026-04-03T22:49:15.070Z"
   },
   "76034": {
     "zip": "76034",
@@ -5253,27 +4163,25 @@
     "lat": 32.8872,
     "lng": -97.146,
     "pop": 26693,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:47:38.002Z"
+    "probed_at": "2026-04-03T21:11:02.975Z"
   },
   "76035": {
     "zip": "76035",
@@ -5282,27 +4190,28 @@
     "lat": 32.5343,
     "lng": -97.6158,
     "pop": 2373,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
       "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
         "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T10:12:08.385Z"
+    "probed_at": "2026-04-04T01:43:14.511Z"
   },
   "76036": {
     "zip": "76036",
@@ -5311,27 +4220,19 @@
     "lat": 32.5814,
     "lng": -97.3703,
     "pop": 27835,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:39:05.429Z"
+    "probed_at": "2026-04-03T20:58:17.795Z"
   },
   "76039": {
     "zip": "76039",
@@ -5340,27 +4241,25 @@
     "lat": 32.8582,
     "lng": -97.0832,
     "pop": 37896,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:37:43.339Z"
+    "probed_at": "2026-04-03T19:09:40.904Z"
   },
   "76040": {
     "zip": "76040",
@@ -5369,27 +4268,25 @@
     "lat": 32.8264,
     "lng": -97.0972,
     "pop": 33419,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:03:28.725Z"
+    "probed_at": "2026-04-03T19:49:50.400Z"
   },
   "76041": {
     "zip": "76041",
@@ -5410,7 +4307,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:27:47.456Z"
+    "probed_at": "2026-04-04T02:28:53.760Z"
   },
   "76043": {
     "zip": "76043",
@@ -5424,14 +4321,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_cart"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:35:27.778Z"
+    "probed_at": "2026-04-04T00:25:17.371Z"
   },
   "76044": {
     "zip": "76044",
@@ -5452,7 +4349,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:45:34.193Z"
+    "probed_at": "2026-04-04T00:52:27.135Z"
   },
   "76048": {
     "zip": "76048",
@@ -5473,7 +4370,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:59:20.718Z"
+    "probed_at": "2026-04-03T21:29:12.480Z"
   },
   "76049": {
     "zip": "76049",
@@ -5494,7 +4391,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:24:29.077Z"
+    "probed_at": "2026-04-03T20:29:05.463Z"
   },
   "76050": {
     "zip": "76050",
@@ -5515,7 +4412,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:41:40.621Z"
+    "probed_at": "2026-04-04T00:44:41.667Z"
   },
   "76051": {
     "zip": "76051",
@@ -5524,27 +4421,25 @@
     "lat": 32.9328,
     "lng": -97.0808,
     "pop": 54130,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:44:40.695Z"
+    "probed_at": "2026-04-03T17:39:52.292Z"
   },
   "76052": {
     "zip": "76052",
@@ -5553,27 +4448,25 @@
     "lat": 32.9557,
     "lng": -97.3372,
     "pop": 23080,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:14:21.540Z"
+    "probed_at": "2026-04-03T21:55:56.494Z"
   },
   "76053": {
     "zip": "76053",
@@ -5582,27 +4475,25 @@
     "lat": 32.8211,
     "lng": -97.1756,
     "pop": 30317,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:22:41.545Z"
+    "probed_at": "2026-04-03T20:25:21.399Z"
   },
   "76054": {
     "zip": "76054",
@@ -5611,27 +4502,19 @@
     "lat": 32.8558,
     "lng": -97.1755,
     "pop": 12178,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:19:11.977Z"
+    "probed_at": "2026-04-03T23:53:02.446Z"
   },
   "76055": {
     "zip": "76055",
@@ -5652,7 +4535,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:03:53.760Z"
+    "probed_at": "2026-04-04T01:28:48.677Z"
   },
   "76058": {
     "zip": "76058",
@@ -5673,7 +4556,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:26:55.880Z"
+    "probed_at": "2026-04-03T22:19:53.626Z"
   },
   "76059": {
     "zip": "76059",
@@ -5694,7 +4577,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:44:52.358Z"
+    "probed_at": "2026-04-04T00:49:54.277Z"
   },
   "76060": {
     "zip": "76060",
@@ -5703,27 +4586,19 @@
     "lat": 32.6432,
     "lng": -97.2139,
     "pop": 8606,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:31:50.300Z"
+    "probed_at": "2026-04-04T00:17:41.026Z"
   },
   "76061": {
     "zip": "76061",
@@ -5744,7 +4619,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:32:01.511Z"
+    "probed_at": "2026-04-04T02:42:35.501Z"
   },
   "76063": {
     "zip": "76063",
@@ -5753,27 +4628,25 @@
     "lat": 32.5773,
     "lng": -97.1416,
     "pop": 76609,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:13:59.414Z"
+    "probed_at": "2026-04-03T16:50:03.783Z"
   },
   "76064": {
     "zip": "76064",
@@ -5794,7 +4667,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:13:17.733Z"
+    "probed_at": "2026-04-04T01:48:35.559Z"
   },
   "76065": {
     "zip": "76065",
@@ -5815,7 +4688,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T06:34:54.845Z"
+    "probed_at": "2026-04-03T19:04:38.863Z"
   },
   "76066": {
     "zip": "76066",
@@ -5836,7 +4709,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:58:03.280Z"
+    "probed_at": "2026-04-04T01:14:42.489Z"
   },
   "76070": {
     "zip": "76070",
@@ -5857,7 +4730,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:23:40.550Z"
+    "probed_at": "2026-04-04T02:17:48.636Z"
   },
   "76071": {
     "zip": "76071",
@@ -5866,27 +4739,19 @@
     "lat": 33.007,
     "lng": -97.4923,
     "pop": 4173,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:57:40.060Z"
+    "probed_at": "2026-04-04T01:13:26.597Z"
   },
   "76073": {
     "zip": "76073",
@@ -5907,7 +4772,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:39:53.089Z"
+    "probed_at": "2026-04-04T00:40:55.339Z"
   },
   "76077": {
     "zip": "76077",
@@ -5928,7 +4793,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:28:57.630Z"
+    "probed_at": "2026-04-04T02:32:36.679Z"
   },
   "76078": {
     "zip": "76078",
@@ -5937,27 +4802,28 @@
     "lat": 33.054,
     "lng": -97.4817,
     "pop": 9024,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
       "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
         "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:28:59.970Z"
+    "probed_at": "2026-04-04T00:13:43.245Z"
   },
   "76082": {
     "zip": "76082",
@@ -5978,7 +4844,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:26:32.359Z"
+    "probed_at": "2026-04-03T22:18:36.442Z"
   },
   "76084": {
     "zip": "76084",
@@ -5999,7 +4865,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:23:59.230Z"
+    "probed_at": "2026-04-04T00:04:39.173Z"
   },
   "76086": {
     "zip": "76086",
@@ -6008,56 +4874,35 @@
     "lat": 32.7549,
     "lng": -97.7899,
     "pop": 23161,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
       "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
         "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:12:55.781Z"
+    "probed_at": "2026-04-03T21:53:25.027Z"
   },
   "76087": {
     "zip": "76087",
     "city": "Weatherford",
-    "state": "TX",
-    "lat": 32.7495,
-    "lng": -97.6894,
-    "pop": 29119,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:30:56.471Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T20:41:54.178Z"
   },
   "76088": {
     "zip": "76088",
@@ -6078,7 +4923,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:16:20.819Z"
+    "probed_at": "2026-04-03T23:47:59.946Z"
   },
   "76092": {
     "zip": "76092",
@@ -6087,27 +4932,25 @@
     "lat": 32.9485,
     "lng": -97.1524,
     "pop": 31837,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:12:24.386Z"
+    "probed_at": "2026-04-03T20:06:12.356Z"
   },
   "76093": {
     "zip": "76093",
@@ -6128,7 +4971,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:05:01.510Z"
+    "probed_at": "2026-04-04T01:32:35.809Z"
   },
   "76102": {
     "zip": "76102",
@@ -6137,19 +4980,19 @@
     "lat": 32.7589,
     "lng": -97.328,
     "pop": 10632,
-    "status": "none",
+    "status": "full_fresh",
     "offers": [],
     "bananas": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:22:49.026Z"
+    "probed_at": "2026-04-04T00:00:49.860Z"
   },
   "76103": {
     "zip": "76103",
@@ -6158,27 +5001,19 @@
     "lat": 32.747,
     "lng": -97.2604,
     "pop": 16848,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:57:11.684Z"
+    "probed_at": "2026-04-03T23:14:36.407Z"
   },
   "76104": {
     "zip": "76104",
@@ -6187,27 +5022,23 @@
     "lat": 32.7256,
     "lng": -97.3184,
     "pop": 17653,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:51:08.036Z"
+    "probed_at": "2026-04-03T23:03:13.909Z"
   },
   "76105": {
     "zip": "76105",
@@ -6216,27 +5047,25 @@
     "lat": 32.7233,
     "lng": -97.269,
     "pop": 22922,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:15:46.531Z"
+    "probed_at": "2026-04-03T21:58:27.111Z"
   },
   "76106": {
     "zip": "76106",
@@ -6245,27 +5074,25 @@
     "lat": 32.7968,
     "lng": -97.356,
     "pop": 38906,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:34:31.861Z"
+    "probed_at": "2026-04-03T19:03:20.094Z"
   },
   "76107": {
     "zip": "76107",
@@ -6274,19 +5101,25 @@
     "lat": 32.7392,
     "lng": -97.3852,
     "pop": 29377,
-    "status": "none",
-    "offers": [],
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
     "bananas": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:28:06.964Z"
+    "probed_at": "2026-04-03T20:37:57.687Z"
   },
   "76108": {
     "zip": "76108",
@@ -6295,27 +5128,25 @@
     "lat": 32.7822,
     "lng": -97.4969,
     "pop": 42902,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:18:35.167Z"
+    "probed_at": "2026-04-03T18:35:30.499Z"
   },
   "76109": {
     "zip": "76109",
@@ -6324,27 +5155,25 @@
     "lat": 32.7002,
     "lng": -97.3789,
     "pop": 23725,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:06:51.010Z"
+    "probed_at": "2026-04-03T21:43:07.817Z"
   },
   "76110": {
     "zip": "76110",
@@ -6353,27 +5182,25 @@
     "lat": 32.7065,
     "lng": -97.3375,
     "pop": 33720,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:02:03.633Z"
+    "probed_at": "2026-04-03T19:47:18.934Z"
   },
   "76111": {
     "zip": "76111",
@@ -6382,27 +5209,25 @@
     "lat": 32.7824,
     "lng": -97.3003,
     "pop": 22567,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:20:02.877Z"
+    "probed_at": "2026-04-03T22:06:02.285Z"
   },
   "76112": {
     "zip": "76112",
@@ -6411,27 +5236,25 @@
     "lat": 32.7493,
     "lng": -97.2181,
     "pop": 42218,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:19:59.602Z"
+    "probed_at": "2026-04-03T18:38:01.370Z"
   },
   "76114": {
     "zip": "76114",
@@ -6440,27 +5263,25 @@
     "lat": 32.7796,
     "lng": -97.3928,
     "pop": 27151,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:41:56.285Z"
+    "probed_at": "2026-04-03T21:03:21.358Z"
   },
   "76115": {
     "zip": "76115",
@@ -6469,27 +5290,25 @@
     "lat": 32.6796,
     "lng": -97.3336,
     "pop": 21907,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:22:54.248Z"
+    "probed_at": "2026-04-03T22:11:04.998Z"
   },
   "76116": {
     "zip": "76116",
@@ -6498,27 +5317,25 @@
     "lat": 32.723,
     "lng": -97.4483,
     "pop": 50371,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:59:48.633Z"
+    "probed_at": "2026-04-03T18:03:53.885Z"
   },
   "76117": {
     "zip": "76117",
@@ -6527,19 +5344,25 @@
     "lat": 32.8087,
     "lng": -97.2709,
     "pop": 32191,
-    "status": "none",
-    "offers": [],
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
     "bananas": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:09:34.184Z"
+    "probed_at": "2026-04-03T20:01:10.236Z"
   },
   "76118": {
     "zip": "76118",
@@ -6548,27 +5371,19 @@
     "lat": 32.8013,
     "lng": -97.1952,
     "pop": 16594,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:01:27.565Z"
+    "probed_at": "2026-04-03T23:21:05.622Z"
   },
   "76119": {
     "zip": "76119",
@@ -6577,27 +5392,25 @@
     "lat": 32.6914,
     "lng": -97.2675,
     "pop": 52279,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:53:09.889Z"
+    "probed_at": "2026-04-03T17:55:02.382Z"
   },
   "76120": {
     "zip": "76120",
@@ -6606,27 +5419,25 @@
     "lat": 32.7639,
     "lng": -97.1781,
     "pop": 19941,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:36:11.774Z"
+    "probed_at": "2026-04-03T22:37:41.080Z"
   },
   "76123": {
     "zip": "76123",
@@ -6635,209 +5446,6 @@
     "lat": 32.6254,
     "lng": -97.3658,
     "pop": 37075,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:49:26.186Z"
-  },
-  "76126": {
-    "zip": "76126",
-    "city": "Benbrook",
-    "state": "TX",
-    "lat": 32.64,
-    "lng": -97.5448,
-    "pop": 23844,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T08:05:25.932Z"
-  },
-  "76127": {
-    "zip": "76127",
-    "city": "Carswell afb",
-    "state": "TX",
-    "lat": 32.7254,
-    "lng": -97.3208,
-    "pop": 2038,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T10:14:40.803Z"
-  },
-  "76131": {
-    "zip": "76131",
-    "city": "Fort worth",
-    "state": "TX",
-    "lat": 32.8632,
-    "lng": -97.3377,
-    "pop": 47377,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:08:17.958Z"
-  },
-  "76132": {
-    "zip": "76132",
-    "city": "Fort worth",
-    "state": "TX",
-    "lat": 32.6711,
-    "lng": -97.4056,
-    "pop": 26265,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:50:29.202Z"
-  },
-  "76133": {
-    "zip": "76133",
-    "city": "Fort worth",
-    "state": "TX",
-    "lat": 32.6526,
-    "lng": -97.3758,
-    "pop": 53694,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T05:48:56.972Z"
-  },
-  "76134": {
-    "zip": "76134",
-    "city": "Fort worth",
-    "state": "TX",
-    "lat": 32.6469,
-    "lng": -97.3325,
-    "pop": 28852,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:32:44.376Z"
-  },
-  "76135": {
-    "zip": "76135",
-    "city": "Fort worth",
-    "state": "TX",
-    "lat": 32.8248,
-    "lng": -97.4519,
-    "pop": 20233,
     "status": "none",
     "offers": [],
     "bananas": {
@@ -6850,7 +5458,193 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:34:46.217Z"
+    "probed_at": "2026-04-03T19:28:59.285Z"
+  },
+  "76126": {
+    "zip": "76126",
+    "city": "Benbrook",
+    "state": "TX",
+    "lat": 32.64,
+    "lng": -97.5448,
+    "pop": 23844,
+    "status": "full_fresh",
+    "offers": [
+      "AmazonFresh",
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "AmazonFresh",
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-03T21:40:36.141Z"
+  },
+  "76127": {
+    "zip": "76127",
+    "city": "Carswell afb",
+    "state": "TX",
+    "lat": 32.7254,
+    "lng": -97.3208,
+    "pop": 2038,
+    "status": "full_fresh",
+    "offers": [],
+    "bananas": {
+      "available": true,
+      "offers": [],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-04T01:51:07.086Z"
+  },
+  "76131": {
+    "zip": "76131",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8632,
+    "lng": -97.3377,
+    "pop": 47377,
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-03T18:17:47.983Z"
+  },
+  "76132": {
+    "zip": "76132",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6711,
+    "lng": -97.4056,
+    "pop": 26265,
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-03T21:14:58.844Z"
+  },
+  "76133": {
+    "zip": "76133",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6526,
+    "lng": -97.3758,
+    "pop": 53694,
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-03T17:47:28.250Z"
+  },
+  "76134": {
+    "zip": "76134",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.6469,
+    "lng": -97.3325,
+    "pop": 28852,
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-03T20:45:44.513Z"
+  },
+  "76135": {
+    "zip": "76135",
+    "city": "Fort worth",
+    "state": "TX",
+    "lat": 32.8248,
+    "lng": -97.4519,
+    "pop": 20233,
+    "status": "full_fresh",
+    "offers": [
+      "SSD_Prime"
+    ],
+    "bananas": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "strawberries": {
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
+    },
+    "probed_at": "2026-04-03T22:35:10.856Z"
   },
   "76137": {
     "zip": "76137",
@@ -6859,27 +5653,25 @@
     "lat": 32.8664,
     "lng": -97.2891,
     "pop": 59983,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:32:00.823Z"
+    "probed_at": "2026-04-03T17:18:10.978Z"
   },
   "76140": {
     "zip": "76140",
@@ -6888,27 +5680,25 @@
     "lat": 32.6192,
     "lng": -97.2735,
     "pop": 30930,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:16:39.494Z"
+    "probed_at": "2026-04-03T20:13:47.426Z"
   },
   "76148": {
     "zip": "76148",
@@ -6917,27 +5707,25 @@
     "lat": 32.8621,
     "lng": -97.2508,
     "pop": 23679,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:08:16.329Z"
+    "probed_at": "2026-04-03T21:45:38.492Z"
   },
   "76155": {
     "zip": "76155",
@@ -6946,27 +5734,19 @@
     "lat": 32.8247,
     "lng": -97.0503,
     "pop": 6329,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:39:29.969Z"
+    "probed_at": "2026-04-04T00:39:39.257Z"
   },
   "76177": {
     "zip": "76177",
@@ -6975,27 +5755,19 @@
     "lat": 32.9448,
     "lng": -97.3124,
     "pop": 10814,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:22:25.062Z"
+    "probed_at": "2026-04-03T23:58:18.519Z"
   },
   "76179": {
     "zip": "76179",
@@ -7004,27 +5776,25 @@
     "lat": 32.9074,
     "lng": -97.4257,
     "pop": 69066,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T05:22:05.654Z"
+    "probed_at": "2026-04-03T17:00:31.211Z"
   },
   "76180": {
     "zip": "76180",
@@ -7033,27 +5803,25 @@
     "lat": 32.84,
     "lng": -97.225,
     "pop": 37117,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:48:01.751Z"
+    "probed_at": "2026-04-03T19:27:42.325Z"
   },
   "76201": {
     "zip": "76201",
@@ -7062,27 +5830,25 @@
     "lat": 33.2289,
     "lng": -97.1314,
     "pop": 29447,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:27:42.598Z"
+    "probed_at": "2026-04-03T20:35:25.937Z"
   },
   "76205": {
     "zip": "76205",
@@ -7091,27 +5857,25 @@
     "lat": 33.1903,
     "lng": -97.1282,
     "pop": 21657,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T08:24:43.900Z"
+    "probed_at": "2026-04-03T22:14:50.682Z"
   },
   "76207": {
     "zip": "76207",
@@ -7120,56 +5884,26 @@
     "lat": 33.2285,
     "lng": -97.1813,
     "pop": 14794,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "full_fresh",
+    "offers": [],
     "bananas": {
       "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "offers": [],
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:08:57.055Z"
+    "probed_at": "2026-04-03T23:32:48.079Z"
   },
   "76208": {
     "zip": "76208",
     "city": "Denton",
-    "state": "TX",
-    "lat": 33.2117,
-    "lng": -97.0612,
-    "pop": 24992,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T07:56:07.440Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T21:22:51.380Z"
   },
   "76225": {
     "zip": "76225",
@@ -7183,14 +5917,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
     "strawberries": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
-    "probed_at": "2026-04-02T10:08:11.752Z"
+    "probed_at": "2026-04-04T01:36:57.469Z"
   },
   "76226": {
     "zip": "76226",
@@ -7199,56 +5933,32 @@
     "lat": 33.1062,
     "lng": -97.16,
     "pop": 29240,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T07:29:31.523Z"
+    "probed_at": "2026-04-03T20:40:29.008Z"
   },
   "76227": {
     "zip": "76227",
     "city": "Aubrey",
-    "state": "TX",
-    "lat": 33.292,
-    "lng": -96.9879,
-    "pop": 36392,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T06:52:14.609Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T19:31:47.750Z"
   },
   "76230": {
     "zip": "76230",
@@ -7269,7 +5979,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:23:35.525Z"
+    "probed_at": "2026-04-04T00:03:22.147Z"
   },
   "76233": {
     "zip": "76233",
@@ -7290,7 +6000,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:03:32.703Z"
+    "probed_at": "2026-04-04T01:27:30.924Z"
   },
   "76234": {
     "zip": "76234",
@@ -7311,7 +6021,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T08:42:16.530Z"
+    "probed_at": "2026-04-03T22:47:58.729Z"
   },
   "76238": {
     "zip": "76238",
@@ -7332,7 +6042,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:29:43.410Z"
+    "probed_at": "2026-04-04T02:35:06.470Z"
   },
   "76239": {
     "zip": "76239",
@@ -7353,7 +6063,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:19:10.596Z"
+    "probed_at": "2026-04-04T02:06:22.710Z"
   },
   "76240": {
     "zip": "76240",
@@ -7374,7 +6084,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T07:34:31.097Z"
+    "probed_at": "2026-04-03T20:49:30.547Z"
   },
   "76247": {
     "zip": "76247",
@@ -7383,27 +6093,23 @@
     "lat": 33.0734,
     "lng": -97.3093,
     "pop": 12542,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
+      "available": true,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T09:17:46.365Z"
+    "probed_at": "2026-04-03T23:50:31.372Z"
   },
   "76248": {
     "zip": "76248",
@@ -7412,56 +6118,32 @@
     "lat": 32.9276,
     "lng": -97.2489,
     "pop": 39641,
-    "status": "ambient_fresh",
+    "status": "full_fresh",
     "offers": [
-      "AmazonFresh",
-      "WholeFoods",
       "SSD_Prime"
     ],
     "bananas": {
       "available": true,
       "offers": [
-        "AmazonFresh",
-        "WholeFoods",
         "SSD_Prime"
       ],
-      "reason": "found"
+      "reason": "found_known_asin"
     },
     "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
+      "available": true,
+      "offers": [
+        "SSD_Prime"
+      ],
+      "reason": "found_known_asin"
     },
-    "probed_at": "2026-04-02T06:33:07.364Z"
+    "probed_at": "2026-04-03T19:00:48.644Z"
   },
   "76249": {
     "zip": "76249",
     "city": "Krum",
-    "state": "TX",
-    "lat": 33.2734,
-    "lng": -97.2675,
-    "pop": 8196,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:33:15.387Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:19:05.576Z"
   },
   "76250": {
     "zip": "76250",
@@ -7482,7 +6164,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:24:03.142Z"
+    "probed_at": "2026-04-04T02:19:03.086Z"
   },
   "76251": {
     "zip": "76251",
@@ -7503,7 +6185,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:26:13.717Z"
+    "probed_at": "2026-04-04T02:23:59.336Z"
   },
   "76252": {
     "zip": "76252",
@@ -7517,14 +6199,14 @@
     "bananas": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
     "strawberries": {
       "available": false,
       "offers": [],
-      "reason": "unavailable"
+      "reason": "no_results"
     },
-    "probed_at": "2026-04-02T10:10:45.365Z"
+    "probed_at": "2026-04-04T01:40:46.409Z"
   },
   "76253": {
     "zip": "76253",
@@ -7545,7 +6227,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:28:10.310Z"
+    "probed_at": "2026-04-04T02:30:08.127Z"
   },
   "76255": {
     "zip": "76255",
@@ -7566,7 +6248,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:45:13.401Z"
+    "probed_at": "2026-04-04T00:51:10.286Z"
   },
   "76258": {
     "zip": "76258",
@@ -7587,36 +6269,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:37:21.679Z"
+    "probed_at": "2026-04-04T00:34:37.122Z"
   },
   "76259": {
     "zip": "76259",
     "city": "Ponder",
-    "state": "TX",
-    "lat": 33.1774,
-    "lng": -97.2848,
-    "pop": 5738,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:44:30.440Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-04T00:48:37.149Z"
   },
   "76262": {
     "zip": "76262",
@@ -7625,27 +6285,19 @@
     "lat": 33.0211,
     "lng": -97.2127,
     "pop": 41158,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
+    "status": "none",
+    "offers": [],
     "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
+      "available": false,
+      "offers": [],
+      "reason": "unavailable"
     },
     "strawberries": {
       "available": false,
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T06:23:10.813Z"
+    "probed_at": "2026-04-03T18:43:08.373Z"
   },
   "76264": {
     "zip": "76264",
@@ -7666,7 +6318,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:18:24.312Z"
+    "probed_at": "2026-04-04T02:03:50.849Z"
   },
   "76265": {
     "zip": "76265",
@@ -7687,36 +6339,14 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:17:37.920Z"
+    "probed_at": "2026-04-04T02:01:19.311Z"
   },
   "76266": {
     "zip": "76266",
     "city": "Sanger",
-    "state": "TX",
-    "lat": 33.3563,
-    "lng": -97.1814,
-    "pop": 16571,
-    "status": "ambient_fresh",
-    "offers": [
-      "AmazonFresh",
-      "WholeFoods",
-      "SSD_Prime"
-    ],
-    "bananas": {
-      "available": true,
-      "offers": [
-        "AmazonFresh",
-        "WholeFoods",
-        "SSD_Prime"
-      ],
-      "reason": "found"
-    },
-    "strawberries": {
-      "available": false,
-      "offers": [],
-      "reason": "unavailable"
-    },
-    "probed_at": "2026-04-02T09:02:52.759Z"
+    "status": "error",
+    "error": "asin is not defined",
+    "probed_at": "2026-04-03T23:22:31.793Z"
   },
   "76268": {
     "zip": "76268",
@@ -7737,7 +6367,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:30:50.366Z"
+    "probed_at": "2026-04-04T02:38:48.406Z"
   },
   "76270": {
     "zip": "76270",
@@ -7758,7 +6388,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:15:45.999Z"
+    "probed_at": "2026-04-04T01:54:55.752Z"
   },
   "76271": {
     "zip": "76271",
@@ -7779,7 +6409,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:15:24.279Z"
+    "probed_at": "2026-04-04T01:53:40.537Z"
   },
   "76272": {
     "zip": "76272",
@@ -7800,7 +6430,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:55:55.798Z"
+    "probed_at": "2026-04-04T01:09:37.531Z"
   },
   "76273": {
     "zip": "76273",
@@ -7821,7 +6451,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:27:34.908Z"
+    "probed_at": "2026-04-04T00:11:12.347Z"
   },
   "76426": {
     "zip": "76426",
@@ -7842,7 +6472,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:16:00.144Z"
+    "probed_at": "2026-04-03T23:46:43.954Z"
   },
   "76431": {
     "zip": "76431",
@@ -7863,7 +6493,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:00:12.851Z"
+    "probed_at": "2026-04-04T01:19:44.081Z"
   },
   "76462": {
     "zip": "76462",
@@ -7884,7 +6514,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:55:33.369Z"
+    "probed_at": "2026-04-04T01:08:20.999Z"
   },
   "76476": {
     "zip": "76476",
@@ -7905,7 +6535,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:04:15.410Z"
+    "probed_at": "2026-04-04T01:30:04.757Z"
   },
   "76487": {
     "zip": "76487",
@@ -7926,7 +6556,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:12:54.989Z"
+    "probed_at": "2026-04-04T01:47:18.721Z"
   },
   "76626": {
     "zip": "76626",
@@ -7947,7 +6577,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:19:32.239Z"
+    "probed_at": "2026-04-04T02:07:38.854Z"
   },
   "76627": {
     "zip": "76627",
@@ -7968,7 +6598,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:18:47.253Z"
+    "probed_at": "2026-04-04T02:05:06.530Z"
   },
   "76628": {
     "zip": "76628",
@@ -7989,7 +6619,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:31:36.938Z"
+    "probed_at": "2026-04-04T02:41:19.831Z"
   },
   "76636": {
     "zip": "76636",
@@ -8010,7 +6640,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:17:14.508Z"
+    "probed_at": "2026-04-04T02:00:02.207Z"
   },
   "76641": {
     "zip": "76641",
@@ -8031,7 +6661,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:16:30.938Z"
+    "probed_at": "2026-04-04T01:57:28.176Z"
   },
   "76645": {
     "zip": "76645",
@@ -8052,7 +6682,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:23:12.329Z"
+    "probed_at": "2026-04-04T00:02:05.854Z"
   },
   "76651": {
     "zip": "76651",
@@ -8073,7 +6703,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T09:58:25.668Z"
+    "probed_at": "2026-04-04T01:15:56.942Z"
   },
   "76652": {
     "zip": "76652",
@@ -8094,7 +6724,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:22:05.865Z"
+    "probed_at": "2026-04-04T02:12:50.115Z"
   },
   "76666": {
     "zip": "76666",
@@ -8115,7 +6745,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:30:05.418Z"
+    "probed_at": "2026-04-04T02:36:20.673Z"
   },
   "76670": {
     "zip": "76670",
@@ -8136,7 +6766,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:16:52.234Z"
+    "probed_at": "2026-04-04T01:58:44.998Z"
   },
   "76671": {
     "zip": "76671",
@@ -8157,7 +6787,7 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:16:08.944Z"
+    "probed_at": "2026-04-04T01:56:10.551Z"
   },
   "76690": {
     "zip": "76690",
@@ -8178,6 +6808,6 @@
       "offers": [],
       "reason": "unavailable"
     },
-    "probed_at": "2026-04-02T10:22:29.068Z"
+    "probed_at": "2026-04-04T02:14:04.743Z"
   }
 }

@@ -479,6 +479,10 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
           <div class="highlight-row" style="color:#64748b;font-size:12px;margin-top:6px">
             Click any shaded MSA to see coverage details and nearby facilities
           </div>
+          <div class="highlight-row" style="margin-top:10px;border-top:1px solid #e2e8f0;padding-top:10px">
+            <a href="amazon-fresh-coverage-by-zip.csv" download class="dl-btn">&#8595; Download ZIP-Level Probe Results</a>
+            <div style="font-size:11px;color:#64748b;margin-top:4px">862 ZIPs probed &nbsp;·&nbsp; MSA, ZIP, city, status, offer types</div>
+          </div>
         </div>
 
         <div class="intro-stat-title" style="margin-top:14px">Amazon Facility Network</div>
