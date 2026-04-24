@@ -1,0 +1,74 @@
+{
+  "11368": {
+    "zip": "11368",
+    "city": "Corona",
+    "state": "NY",
+    "pop": 108661,
+    "msa_id": "35620",
+    "msa_name": "New York-Newark-Jersey City, NY-NJ",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
+    },
+    "bananas": {
+      "available": false,
+      "asin": "B07ZLF9WQ5",
+      "offers": []
+    }
+  },
+  "60629": {
+    "zip": "60629",
+    "city": "Chicago",
+    "state": "IL",
+    "pop": 107930,
+    "msa_id": "16980",
+    "msa_name": "Chicago-Naperville-Elgin, IL-IN",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
+  "90011": {
+    "zip": "90011",
+    "city": "Los angeles",
+    "state": "CA",
+    "pop": 110750,
+    "msa_id": "31080",
+    "msa_name": "Los Angeles-Long Beach-Anaheim, CA",
+    "status": "full_fresh",
+    "offers": [],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": []
+    },
+    "bananas": {
+      "available": true,
+      "asin": "B07ZLF9G83",
+      "offers": []
+    }
+  }
+}

@@ -579,8 +579,11 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
       <div class="proj-card">
         <div class="proj-card-title">⏱ Time Investment</div>
         <table class="proj-table">
-          <tr><td>Project duration</td><td><strong>~11 days</strong> (March 22 – April 1, 2026)</td></tr>
-          <tr><td>Human direction &amp; review</td><td><strong>~20–25 hours</strong> — strategic framing, methodology decisions, validation, spot-checks</td></tr>
+          <tr><td>Project start</td><td><strong>March 22, 2026</strong></td></tr>
+          <tr><td>Phase 1 — MSA probe (200 MSAs, 3 ZIPs each)</td><td><strong>March 22 – April 1, 2026</strong> — 144/200 MSAs confirmed with same-day fresh delivery</td></tr>
+          <tr><td>Phase 2 — Dallas deep dive (313 ZIPs)</td><td><strong>April 1–4, 2026</strong> — 164 ZIPs confirmed, service radius empirically validated at ~25mi from SSD</td></tr>
+          <tr><td>Phase 3 — Full ZIP probe (13,513 ZIPs, 200 MSAs)</td><td><strong>April 23, 2026 – ongoing</strong> — breadth-first sweep, 1 ZIP per MSA per pass for maximum coverage at any stop point</td></tr>
+          <tr><td>Human direction &amp; review</td><td><strong>~30–35 hours</strong> — strategic framing, methodology decisions, validation, spot-checks</td></tr>
           <tr><td>AI execution</td><td><strong>~continuous</strong> — coding, data pipelines, Amazon probing, debugging, map generation</td></tr>
           <tr><td>Estimated traditional team cost</td><td><strong>$200,000–$500,000+</strong> — 3–4 engineers, 2–3 months, standard consulting rates</td></tr>
           <tr><td>Actual API cost</td><td><strong>&lt; $25</strong> in search API queries (Brave Search)</td></tr>
@@ -590,9 +593,9 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
       <div class="proj-card">
         <div class="proj-card-title">💻 Code &amp; Development</div>
         <table class="proj-table">
-          <tr><td>Lines of code written</td><td><strong>5,000+</strong> lines of JavaScript + Python</td></tr>
-          <tr><td>Source files</td><td><strong>15+</strong> scripts (data pipelines, Amazon probe, facility enrichment, report generator)</td></tr>
-          <tr><td>Git commits</td><td><strong>80+</strong> iterative releases over 11 days</td></tr>
+          <tr><td>Lines of code written</td><td><strong>7,000+</strong> lines of JavaScript + Python</td></tr>
+          <tr><td>Source files</td><td><strong>20+</strong> scripts (data pipelines, Amazon probe, facility enrichment, report generator)</td></tr>
+          <tr><td>Git commits</td><td><strong>100+</strong> iterative releases over 5 weeks</td></tr>
           <tr><td>Dashboard</td><td>Single-file HTML/CSS/JS with Leaflet maps, auto-published to GitHub Pages daily</td></tr>
         </table>
       </div>
@@ -602,7 +605,9 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
         <table class="proj-table">
           <tr><td>MSAs directly probed</td><td><strong>${msaTotal}</strong> of top 200 US metro areas (~78% of US population)</td></tr>
           <tr><td>MSAs confirmed with fresh delivery</td><td><strong>${msaConfirmed}</strong> (${Math.round(msaConfirmed/msaTotal*100)}%) — representing ~72% of US population</td></tr>
-          <tr><td>ZIP codes tested per MSA</td><td><strong>3</strong> city-center ZIPs, bananas + strawberries each</td></tr>
+          <tr><td>ZIP codes tested (Phase 1)</td><td><strong>3</strong> city-center ZIPs per MSA, bananas + strawberries each</td></tr>
+          <tr><td>ZIP codes tested (Phase 2 — Dallas)</td><td><strong>313</strong> ZIPs — every ZIP in the DFW MSA</td></tr>
+          <tr><td>ZIP codes in Phase 3 sweep</td><td><strong>13,513</strong> ZIPs across 198 MSAs — breadth-first, ongoing</td></tr>
           <tr><td>Amazon facility locations mapped</td><td><strong>${totalLocations.toLocaleString()}</strong> with coordinates (${totalLocationsAll.toLocaleString()} total identified)</td></tr>
           <tr><td>Whole Foods stores mapped</td><td><strong>${facilityMap.whole_foods_node || 551}</strong> of ~553 US locations</td></tr>
         </table>
