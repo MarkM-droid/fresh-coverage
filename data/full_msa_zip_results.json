@@ -10070,6 +10070,32 @@
       "offers": []
     }
   },
+  "27409": {
+    "zip": "27409",
+    "city": "Greensboro",
+    "state": "NC",
+    "pop": 15799,
+    "msa_id": "24660",
+    "msa_name": "Greensboro-High Point, NC",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
   "27410": {
     "zip": "27410",
     "city": "Greensboro",
@@ -13380,6 +13406,32 @@
       "available": false,
       "asin": null,
       "offers": []
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
+  "29401": {
+    "zip": "29401",
+    "city": "Charleston",
+    "state": "SC",
+    "pop": 9360,
+    "msa_id": "16700",
+    "msa_name": "Charleston-North Charleston, SC",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
     },
     "bananas": {
       "available": false,
@@ -21074,6 +21126,32 @@
       "available": false,
       "asin": null,
       "offers": []
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
+  "34233": {
+    "zip": "34233",
+    "city": "Sarasota",
+    "state": "FL",
+    "pop": 18560,
+    "msa_id": "35840",
+    "msa_name": "North Port-Bradenton-Sarasota, FL",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
     },
     "bananas": {
       "available": false,
@@ -29818,6 +29896,26 @@
       "offers": []
     }
   },
+  "44314": {
+    "zip": "44314",
+    "city": "Akron",
+    "state": "OH",
+    "pop": 18388,
+    "msa_id": "10420",
+    "msa_name": "Akron, OH",
+    "status": "full_fresh",
+    "offers": [],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": []
+    },
+    "bananas": {
+      "available": true,
+      "asin": "B07ZLFPXHC",
+      "offers": []
+    }
+  },
   "44319": {
     "zip": "44319",
     "city": "Akron",
@@ -31161,6 +31259,32 @@
       "available": false,
       "asin": null,
       "offers": []
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
+  "45405": {
+    "zip": "45405",
+    "city": "Dayton",
+    "state": "OH",
+    "pop": 18133,
+    "msa_id": "19430",
+    "msa_name": "Dayton-Kettering-Beavercreek, OH",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
     },
     "bananas": {
       "available": false,
@@ -46402,6 +46526,32 @@
       "offers": []
     }
   },
+  "75009": {
+    "zip": "75009",
+    "city": "Celina",
+    "state": "TX",
+    "pop": 15348,
+    "msa_id": "19100",
+    "msa_name": "Dallas-Fort Worth-Arlington, TX",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
   "75032": {
     "zip": "75032",
     "city": "Zcta 75032",
@@ -52311,6 +52461,32 @@
     "city": "San elizario",
     "state": "TX",
     "pop": 11605,
+    "msa_id": "21340",
+    "msa_name": "El Paso, TX",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
+  "79901": {
+    "zip": "79901",
+    "city": "El paso",
+    "state": "TX",
+    "pop": 8821,
     "msa_id": "21340",
     "msa_name": "El Paso, TX",
     "status": "none",
@@ -59800,6 +59976,32 @@
       "available": false,
       "asin": null,
       "offers": []
+    },
+    "bananas": {
+      "available": false,
+      "asin": null,
+      "offers": []
+    }
+  },
+  "93015": {
+    "zip": "93015",
+    "city": "Bardsdale",
+    "state": "CA",
+    "pop": 18182,
+    "msa_id": "37100",
+    "msa_name": "Oxnard-Thousand Oaks-Ventura, CA",
+    "status": "none",
+    "offers": [
+      "WholeFoods",
+      "SSD_Prime"
+    ],
+    "strawberries": {
+      "available": true,
+      "asin": "B08911ZP3Y",
+      "offers": [
+        "WholeFoods",
+        "SSD_Prime"
+      ]
     },
     "bananas": {
       "available": false,

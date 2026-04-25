@@ -912,36 +912,38 @@ LOC_POINTS.filter(p => REACH_TYPES.has(p.type)).forEach(p => {
   ).addTo(reachLayer);
 });
 
-// ── Dallas ZIP probe layer (OFF by default) ───────────────────────────────────
-const dallasLayer = L.layerGroup();
-let dallasLoaded = false;
+// ── ZIP Detail layer (all probed ZIPs — OFF by default) ─────────────────────
+const zipDetailLayer = L.layerGroup();
+let zipDetailLoaded = false;
 
-async function initDallasLayer() {
-  if (dallasLoaded) return;
-  dallasLoaded = true;
+async function initZipDetailLayer() {
+  if (zipDetailLoaded) return;
+  zipDetailLoaded = true;
   try {
     const url = (window.location.hostname === 'localhost' || window.location.protocol === 'file:')
-      ? '../data/dallas_zip_probe.geojson' : 'dallas_zip_probe.geojson';
+      ? '../docs/zip_detail.geojson' : 'zip_detail.geojson';
     const resp = await fetch(url);
     const geojson = await resp.json();
     L.geoJSON(geojson, {
       pointToLayer: (feature, latlng) => {
         const s = feature.properties.status;
-        const color = s === 'full_fresh' ? '#10b981' : s === 'ambient_fresh' ? '#3b82f6' : '#9ca3af';
-        return L.circleMarker(latlng, { radius: 5, color, fillColor: color, fillOpacity: 0.7, weight: 1 });
+        const color = s === 'full_fresh' ? '#10b981' : s === 'ambient_fresh' ? '#3b82f6' : s === 'none' ? '#9ca3af' : '#f59e0b';
+        return L.circleMarker(latlng, { radius: 4, color, fillColor: color, fillOpacity: 0.75, weight: 1 });
       },
       onEachFeature: (feature, layer) => {
         const p = feature.properties;
+        const statusLabel = p.status === 'full_fresh' ? '✅ Full Fresh' : p.status === 'ambient_fresh' ? '🟡 Ambient Fresh' : p.status === 'none' ? '❌ No coverage' : p.status;
         layer.bindPopup(
           '<b>' + p.zip + ' — ' + p.city + ', ' + p.state + '</b>' +
-          '<br>Population: ' + (p.pop||0).toLocaleString() +
-          '<br>Status: ' + p.status +
+          (p.msa_name ? '<br><small>' + p.msa_name + '</small>' : '') +
+          '<br>Status: ' + statusLabel +
           (p.offers && p.offers.length ? '<br>Offers: ' + p.offers.join(', ') : '') +
-          '<br><small style="color:#888">Dallas MSA ZIP-level probe</small>'
+          (p.pop ? '<br>Population: ' + (p.pop||0).toLocaleString() : '') +
+          '<br><small style="color:#888">Source: ' + (p.source||'probe') + '</small>'
         );
       }
-    }).addTo(dallasLayer);
-  } catch(e) { console.error('Dallas layer error:', e); }
+    }).addTo(zipDetailLayer);
+  } catch(e) { console.error('ZIP detail layer error:', e); }
 }
 
 // ── Layer control ─────────────────────────────────────────────────────────────
@@ -953,12 +955,13 @@ const overlayMaps = {
   '<span style="color:#6366f1">●</span> Standard Fulfillment Centers': facilityLayerGroups['fulfillment_center'],
   '<span style="color:#6b7280">●</span> Other Amazon Facilities':      facilityLayerGroups['other'],
   '<span style="color:#ef4444">○</span> 50-Mile Service Circles': reachLayer,
-  '<span style="color:#3b82f6">●</span> Dallas ZIP Probe (all 313 ZIPs)': dallasLayer
+  '<span style="color:#10b981">●</span> ZIP Detail (all probed ZIPs)': zipDetailLayer
 };
 
 L.control.layers(null, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
 
 map.on('overlayadd', e => {
+  if (e.name && e.name.includes('ZIP Detail')) initZipDetailLayer();
   if (e.layer === msaLayer) initMsaLayer();
   if (e.layer === dallasLayer) initDallasLayer();
 });
