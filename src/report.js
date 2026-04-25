@@ -21,6 +21,7 @@ const PROJECT_ROOT = join(__dirname, '..');
 const DB_PATH = join(PROJECT_ROOT, 'data', 'coverage.db');
 const REPORTS_DIR = join(PROJECT_ROOT, 'reports');
 const MSA_PROBE_PATH = join(PROJECT_ROOT, 'data', 'msa_probe_v2_results.json');
+const PHASE3_ZIP_PATH = join(PROJECT_ROOT, 'data', 'full_msa_zip_results.json');
 
 function log(msg) { console.log(`[report] ${new Date().toISOString()} ${msg}`); }
 function esc(str) {
@@ -67,13 +68,52 @@ async function main() {
   const db = new Database(DB_PATH);
   db.pragma('journal_mode = WAL');
 
-  // ── Load MSA probe results ────────────────────────────────────────────────
+  // ── Load MSA probe results (Phase 1) ────────────────────────────────────────
   const msaProbeRaw = JSON.parse(readFileSync(MSA_PROBE_PATH, 'utf8'));
   const msaProbeArr = Object.values(msaProbeRaw);
 
+  // ── Load Phase 3 ZIP probe results (ground truth) ────────────────────────────
+  let phase3ByMsa = {}; // keyed by msa_id: { confirmed: bool, allNone: bool, zipCount: number }
+  let phase3TotalZips = 0;
+  let phase3TotalMsas = 0;
+  if (existsSync(PHASE3_ZIP_PATH)) {
+    const p3Raw = JSON.parse(readFileSync(PHASE3_ZIP_PATH, 'utf8'));
+    phase3TotalZips = Object.keys(p3Raw).length;
+    for (const [zip, data] of Object.entries(p3Raw)) {
+      const msaId = data.msa_id;
+      if (!msaId) continue;
+      if (!phase3ByMsa[msaId]) phase3ByMsa[msaId] = { confirmed: false, allNone: true, zipCount: 0 };
+      phase3ByMsa[msaId].zipCount++;
+      if (data.status === 'full_fresh' || data.status === 'ambient_fresh') {
+        phase3ByMsa[msaId].confirmed = true;
+        phase3ByMsa[msaId].allNone = false;
+      } else if (data.status !== 'none') {
+        phase3ByMsa[msaId].allNone = false;
+      }
+    }
+    phase3TotalMsas = Object.keys(phase3ByMsa).length;
+    log(`Phase 3 data loaded: ${phase3TotalZips} ZIPs across ${phase3TotalMsas} MSAs`);
+  }
+
+  // ── Merge Phase 3 into effective MSA status ───────────────────────────────────
+  // Phase 3 is ground truth when it has data for an MSA.
+  // Fall back to Phase 1 only when Phase 3 has no data for that MSA.
+  function effectiveMsaStatus(m) {
+    const p3 = phase3ByMsa[m.msa_id];
+    if (p3) {
+      if (p3.confirmed) return 'full_fresh';   // at least one ZIP confirmed
+      if (p3.allNone)   return 'none';          // all ZIPs tested → no coverage
+      return 'none';                            // has data, none confirmed
+    }
+    return m.status; // no Phase 3 data yet → Phase 1 result
+  }
+
   const msaTotal = msaProbeArr.length;
-  const msaConfirmed = msaProbeArr.filter(m => m.status === 'full_fresh' || m.status === 'ambient_fresh').length;
-  const msaNone = msaProbeArr.filter(m => m.status === 'none').length;
+  const msaConfirmed = msaProbeArr.filter(m => {
+    const s = effectiveMsaStatus(m);
+    return s === 'full_fresh' || s === 'ambient_fresh';
+  }).length;
+  const msaNone = msaProbeArr.filter(m => effectiveMsaStatus(m) === 'none').length;
 
   // Find probe date (most recent probed_at)
   const probeDates = msaProbeArr.map(m => m.probed_at).filter(Boolean).sort();
@@ -106,7 +146,9 @@ async function main() {
       msa_id: m.msa_id,
       msa_name: m.msa_name,
       msa_population: m.msa_population,
-      status: m.status,
+      status: effectiveMsaStatus(m),
+      status_phase1: m.status,
+      phase3_zips: phase3ByMsa[m.msa_id]?.zipCount || 0,
       zips_tested: m.zips_tested || [],
       offer_types: [...offerTypes],
       nearby_facilities: [] // populated below after facilities are loaded
@@ -573,6 +615,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
   <section class="methodology">
     <h2>Project Summary</h2>
     <p class="method-intro">This page documents the scope and scale of the analysis — both to illustrate the exhaustiveness of the research and to demonstrate what modern AI-assisted development makes possible.</p>
+    ${phase3TotalZips > 0 ? `<div style="background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:#166534"><strong>🔬 Phase 3 probe in progress:</strong> ${phase3TotalZips.toLocaleString()} ZIPs scanned across ${phase3TotalMsas} MSAs — breadth-first full ZIP sweep. Results are incorporated into MSA coverage status above as ground truth.</div>` : ''}
 
     <div class="proj-grid">
 
@@ -582,7 +625,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
           <tr><td>Project start</td><td><strong>March 22, 2026</strong></td></tr>
           <tr><td>Phase 1 — MSA probe (200 MSAs, 3 ZIPs each)</td><td><strong>March 22 – April 1, 2026</strong> — 144/200 MSAs confirmed with same-day fresh delivery</td></tr>
           <tr><td>Phase 2 — Dallas deep dive (313 ZIPs)</td><td><strong>April 1–4, 2026</strong> — 164 ZIPs confirmed, service radius empirically validated at ~25mi from SSD</td></tr>
-          <tr><td>Phase 3 — Full ZIP probe (13,513 ZIPs, 200 MSAs)</td><td><strong>April 23, 2026 – ongoing</strong> — breadth-first sweep, 1 ZIP per MSA per pass for maximum coverage at any stop point</td></tr>
+          <tr><td>Phase 3 — Full ZIP probe (13,513 ZIPs, 200 MSAs)</td><td><strong>April 23, 2026 – ongoing</strong> — breadth-first sweep, 1 ZIP per MSA per pass for maximum coverage at any stop point. <strong>${phase3TotalZips.toLocaleString()} ZIPs scanned across ${phase3TotalMsas} MSAs so far.</strong></td></tr>
           <tr><td>Human direction &amp; review</td><td><strong>~30–35 hours</strong> — strategic framing, methodology decisions, validation, spot-checks</td></tr>
           <tr><td>AI execution</td><td><strong>~continuous</strong> — coding, data pipelines, Amazon probing, debugging, map generation</td></tr>
           <tr><td>Estimated traditional team cost</td><td><strong>$200,000–$500,000+</strong> — 3–4 engineers, 2–3 months, standard consulting rates</td></tr>
@@ -607,7 +650,7 @@ nav button.active,nav button:hover{color:#fff;border-bottom-color:#4a90e2}
           <tr><td>MSAs confirmed with fresh delivery</td><td><strong>${msaConfirmed}</strong> (${Math.round(msaConfirmed/msaTotal*100)}%) — representing ~72% of US population</td></tr>
           <tr><td>ZIP codes tested (Phase 1)</td><td><strong>3</strong> city-center ZIPs per MSA, bananas + strawberries each</td></tr>
           <tr><td>ZIP codes tested (Phase 2 — Dallas)</td><td><strong>313</strong> ZIPs — every ZIP in the DFW MSA</td></tr>
-          <tr><td>ZIP codes in Phase 3 sweep</td><td><strong>13,513</strong> ZIPs across 198 MSAs — breadth-first, ongoing</td></tr>
+          <tr><td>ZIP codes in Phase 3 sweep</td><td><strong>${phase3TotalZips.toLocaleString()}</strong> ZIPs across ${phase3TotalMsas} MSAs scanned so far — breadth-first, ongoing (target: 13,513 ZIPs)</td></tr>
           <tr><td>Amazon facility locations mapped</td><td><strong>${totalLocations.toLocaleString()}</strong> with coordinates (${totalLocationsAll.toLocaleString()} total identified)</td></tr>
           <tr><td>Whole Foods stores mapped</td><td><strong>${facilityMap.whole_foods_node || 551}</strong> of ~553 US locations</td></tr>
         </table>
